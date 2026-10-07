@@ -1,0 +1,16 @@
+# Experiment 4: re-run an experiment with J-space removed / edited.
+# Change `base` (collab | imposter | peer_selection | tom_validation) and copy that
+# experiment's keys below. Each J-space ablation is paired with a random-direction
+# control of equal rank.
+experiment: ablation
+base: imposter
+out_dir: runs
+endpoints_file: configs/endpoints.yaml
+interventions: [none, jspace_light, random_k5, jspace_medium, random_k10, jspace_heavy,
+                random_k25, jspace_peer_span, suppress_words, steer_suspicion]
+# --- keys for the base experiment (imposter) ---
+agents: {reviewer: qwen3-1.7b, peer: qwen3-1.7b}
+peer_mode: scripted
+n_items: 20
+max_new_tokens: 120
+record: {top_k: 10}

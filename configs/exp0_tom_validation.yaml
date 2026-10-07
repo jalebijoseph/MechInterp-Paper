@@ -1,0 +1,12 @@
+# Benchmarks: does the J-lens read out belief states? (false belief + Hi-ToM)
+experiment: tom_validation
+out_dir: runs
+endpoints_file: configs/endpoints.yaml   # optional; unknown names load locally
+model: qwen3-1.7b                        # dev; use e.g. qwen3-8b-azure for real runs
+n_items: 20                              # x2 with true-belief controls, per framing
+framings: [people, agents]
+include_hitom: true
+hitom_items: 60
+hitom_orders: [0, 1, 2, 3]
+max_new_tokens: 6
+record: {top_k: 10}

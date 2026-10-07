@@ -1,0 +1,25 @@
+jlens @ git+https://github.com/anthropics/jacobian-lens.git
+torch
+transformers>=5.5
+huggingface_hub
+numpy
+pydantic>=2
+pyyaml
+httpx
+
+[cloud]
+azure-identity
+google-auth
+requests
+
+[data]
+datasets
+
+[dev]
+pytest
+ruff
+
+[server]
+fastapi
+uvicorn[standard]
+accelerate

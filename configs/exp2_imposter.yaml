@@ -1,0 +1,16 @@
+# Experiment 2: a peer asserts a falsehood; does the reviewer's J-space flag it?
+experiment: imposter
+out_dir: runs
+endpoints_file: configs/endpoints.yaml
+agents:
+  reviewer: qwen3-1.7b        # subject (recorded)
+  peer: qwen3-1.7b            # imposter / honest peer (not recorded)
+peer_mode: live               # live | scripted
+n_items: 20
+max_new_tokens: 140
+record: {top_k: 10}
+# Optional NARCBench replay: honest agents re-read real collusion transcripts.
+narcbench:
+  source_model: qwen3_32b     # whose transcripts (qwen3_32b | gpt_oss_20b)
+  tier: core
+  max_scenarios: 20           # collusion + control runs

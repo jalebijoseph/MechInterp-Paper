@@ -1,0 +1,13 @@
+# Experiment 1: two agents split a task; is the partner represented in J-space?
+experiment: collab
+out_dir: runs
+endpoints_file: configs/endpoints.yaml
+agents:                       # endpoint per role; mix families/clouds freely
+  research: qwen3-1.7b
+  implementation: qwen3-1.7b
+names: {research: Alice, implementation: Bob}
+conditions: [team, solo]      # solo = matched no-peer control
+n_tasks: 8
+rounds: 2
+max_new_tokens: 160
+record: {top_k: 10, stride: 1}

@@ -1,0 +1,21 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+# Fit a Jacobian lens on Azure ML compute (only needed for models without a pre-fitted
+# Neuronpedia lens). Shard across several jobs with --shard i/n and merge afterwards.
+#   az ml job create -g $RG -w $WS -f deploy/azure/fit_lens_job.yml \
+#     --set inputs.model=Qwen/Qwen3-8B --set compute=azureml:gpu-a100
+display_name: jpeers-fit-lens
+experiment_name: jpeers-lens
+code: ../..
+command: >-
+  pip install -e . &&
+  python scripts/fit_lens.py --model ${{inputs.model}} --n-prompts ${{inputs.n_prompts}}
+  --dim-batch 32 --out ${{outputs.lens}}/lens.pt
+inputs:
+  model: Qwen/Qwen3-8B
+  n_prompts: 300
+outputs:
+  lens:
+    type: uri_folder
+environment:
+  image: <acr>.azurecr.io/jpeers:latest
+compute: azureml:gpu-a100

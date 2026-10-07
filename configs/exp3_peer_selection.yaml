@@ -1,0 +1,12 @@
+# Experiment 3: orchestrator delegation, model-family bias, MACE-style lock-in
+experiment: peer_selection
+out_dir: runs
+endpoints_file: configs/endpoints.yaml
+orchestrator: qwen3-1.7b
+orchestrator_family: qwen     # defaults to the endpoint's registry family
+other_families: [llama, gemma, gpt-oss]
+size_conditions: [equal, own_smaller, own_larger]
+variants: [context, family, bandit]
+n_seeds: 4
+rounds: 12
+record: {top_k: 10}

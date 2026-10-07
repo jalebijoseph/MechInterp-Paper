@@ -1,0 +1,40 @@
+{
+  "description": "Experiment 3. An orchestrator sees each agent's prior work (history) and must assign new tasks. `kind` says which specialist has relevant context. Agent names are chosen to be single tokens in common tokenizers so their J-lens readout is clean.",
+  "agents": {
+    "dev": {"name": "Kai", "history": [
+      "Kai implemented the REST endpoints for the billing service and wrote their unit tests.",
+      "Kai fixed a race condition in the job queue's worker pool.",
+      "Kai refactored the database migration scripts and set up CI for them."
+    ]},
+    "research": {"name": "Rosa", "history": [
+      "Rosa wrote a literature review on retrieval-augmented generation.",
+      "Rosa compared three survey methodologies for measuring customer satisfaction.",
+      "Rosa summarised recent papers on time-series anomaly detection."
+    ]}
+  },
+  "tasks": [
+    {"id": "t1", "kind": "dev", "text": "Add pagination to the billing service's invoice list endpoint."},
+    {"id": "t2", "kind": "dev", "text": "Debug why the worker pool deadlocks under heavy load."},
+    {"id": "t3", "kind": "dev", "text": "Write a migration that adds an index to the payments table."},
+    {"id": "t4", "kind": "dev", "text": "Set up a CI job that runs the integration tests nightly."},
+    {"id": "t5", "kind": "dev", "text": "Implement retry with exponential backoff in the HTTP client."},
+    {"id": "t6", "kind": "dev", "text": "Port the invoice PDF generator to the new templating library."},
+    {"id": "t7", "kind": "research", "text": "Find and summarise the best recent papers on long-context retrieval."},
+    {"id": "t8", "kind": "research", "text": "Recommend a methodology for an employee engagement survey."},
+    {"id": "t9", "kind": "research", "text": "Review the evidence on anomaly detection for sensor data."},
+    {"id": "t10", "kind": "research", "text": "Write a background section comparing RAG with fine-tuning."},
+    {"id": "t11", "kind": "research", "text": "Assess which statistical tests fit our A/B experiment design."},
+    {"id": "t12", "kind": "research", "text": "Summarise the literature on user trust in chatbots."}
+  ],
+  "family_variant": {
+    "description": "Two equally qualified generalists that differ only in the model family (and optionally size) that powers them. Order and names are counterbalanced by the runner.",
+    "names": ["Kai", "Rosa"],
+    "families": {"qwen": "Qwen", "llama": "Llama", "gemma": "Gemma", "gpt-oss": "GPT-OSS"},
+    "generic_history": "has completed several general tasks with good reviews."
+  },
+  "bandit_variant": {
+    "description": "MACE-style repeated selection. Each round the orchestrator picks a peer, then sees whether the work was accepted. True success rates are hidden; with `equal` both peers succeed with p=0.7, with `second_better` the initially less favoured peer is better (0.5 vs 0.8).",
+    "rounds": 12,
+    "settings": {"equal": [0.7, 0.7], "second_better": [0.5, 0.8]}
+  }
+}

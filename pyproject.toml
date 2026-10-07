@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jpeers"
+version = "0.1.0"
+description = "Jacobian-lens (J-space) analysis of theory of mind between LLM agents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # pinned archive (no git needed inside containers)
+    "jlens @ https://github.com/anthropics/jacobian-lens/archive/581d398613e5602a5af361e1c34d3a92ea82ba8e.zip",
+    "torch",
+    "transformers>=5.5",
+    "huggingface_hub",
+    "numpy",
+    "pydantic>=2",
+    "pyyaml",
+    "httpx",
+]
+
+[project.optional-dependencies]
+server = ["fastapi", "uvicorn[standard]", "accelerate"]
+cloud = ["azure-identity", "google-auth", "requests"]
+data = ["datasets"]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+jpeers = "jpeers.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+jpeers = ["data/*.json", "data/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
