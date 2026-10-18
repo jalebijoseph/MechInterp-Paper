@@ -189,6 +189,18 @@ def bootstrap_ci(values: Iterable[float], n: int = 2000, alpha: float = 0.05,
         np.quantile(means, 1 - alpha / 2))
 
 
+def binomial_test(successes: int, n: int, p0: float) -> float:
+    """Exact two-sided binomial p-value: is a rate of ``successes / n`` different from
+    chance ``p0``? (Sums the probabilities of outcomes no more likely than the one seen.)"""
+    if n == 0:
+        return float("nan")
+    from math import comb
+
+    probs = [comb(n, k) * p0 ** k * (1 - p0) ** (n - k) for k in range(n + 1)]
+    seen = probs[successes]
+    return float(min(1.0, sum(p for p in probs if p <= seen * (1 + 1e-9))))
+
+
 def paired_permutation_test(a: Iterable[float], b: Iterable[float], n: int = 5000,
                             seed: int = 0) -> float:
     """Two-sided sign-flip p-value for the mean of paired differences ``a[i] - b[i]``

@@ -29,7 +29,7 @@ import re
 
 import numpy as np
 
-from jpeers.analysis import rank_summary, word_ranks
+from jpeers.analysis import binomial_test, rank_summary, word_ranks
 from jpeers.benchmarks import false_belief_items, load_hitom
 from jpeers.experiments.common import (
     intervention_conditions,
@@ -193,13 +193,17 @@ def run(cfg: dict) -> dict:
         if rs[0]["true_rank"] is not None:
             row["true_mrr"] = rank_summary(ranks(rs, "true_rank"))["mrr"]
             row["decoy_mrr"] = rank_summary(ranks(rs, "decoy_rank"))["mrr"]
+            row["chance"] = 0.5
         else:  # Hi-ToM: chance of beating every other noun
             row["chance"] = mean(1 / (r["n_competitors"] + 1) for r in rs)
         # belief beats decoy(s) at each site; real belief tracking predicts above chance
-        # on false-belief items AND controls, and already at story_end / question
+        # on false-belief items AND controls, and already at story_end / question.
+        # p_<key>: exact binomial test of the rate against chance.
         for key in [*(f"beats_{s}" for s in SITES), "beats_answer_logit",
                     "beats_answer_output"]:
-            row[key] = mean(r[key] for r in rs if r[key] is not None)
+            vals = [r[key] for r in rs if r[key] is not None]
+            row[key] = mean(vals)
+            row[f"p_{key}"] = binomial_test(sum(vals), len(vals), row["chance"])
         rows.append(row)
     return write_summary(writer.dir, {"rows": rows, "items": per_item,
                                       "hitom_skipped_not_single_token": skipped}, rows,

@@ -6,6 +6,7 @@ from fastapi.testclient import TestClient
 from jpeers import server
 from jpeers.analysis import (
     bag_similarity,
+    binomial_test,
     content_uptake,
     group_ranks,
     jspace_bag,
@@ -47,6 +48,12 @@ def test_server_routes(tiny_model, monkeypatch):
     assert client.post("/generate", json=body).status_code == 401
     assert client.post("/generate", json=body,
                        headers={"Authorization": "Bearer secret"}).status_code == 200
+
+
+def test_binomial_test():
+    assert binomial_test(5, 10, 0.5) == 1.0
+    assert abs(binomial_test(10, 10, 0.5) - 2 / 1024) < 1e-12  # all-heads or all-tails
+    assert binomial_test(3, 10, 0.1) < 0.1 < binomial_test(1, 10, 0.1)
 
 
 def test_paired_permutation_test():

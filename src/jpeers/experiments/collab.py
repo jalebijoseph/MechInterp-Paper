@@ -40,7 +40,7 @@ from jpeers.analysis import (
     content_uptake,
     jspace_bag,
     lens_mrrs,
-    permutation_test,
+    paired_permutation_test,
 )
 from jpeers.benchmarks import load_task_bank
 from jpeers.experiments.common import (
@@ -155,16 +155,29 @@ def run(cfg: dict) -> dict:
         rs = [r for r in per_turn if r["condition"] == cond and r["framing"] == framing]
         rows.append({"condition": cond, "framing": framing, "turns": len(rs),
                      **{m: mean(r.get(m) for r in rs) for m in metrics}})
-    # team vs each control: named_solo (name present, no collaboration) is the main one
+    # team vs each control (named_solo is the main one), paired by task: turns within a
+    # conversation are not independent, so each task contributes one mean per framing
     tests: dict[str, dict] = {}
     for cond in {c for c, _ in keys}:
-        team = [r for r in per_turn if r["condition"] == cond and r["framing"] == "team"]
+        def task_means(framing: str, cond: str = cond) -> dict[str, dict[str, float]]:
+            out: dict[str, dict[str, float]] = {}
+            for t in dict.fromkeys(r["task"] for r in per_turn):
+                rs = [r for r in per_turn if (r["condition"], r["framing"], r["task"])
+                      == (cond, framing, t)]
+                if rs:
+                    out[t] = {m: mean(r.get(m) for r in rs) for m in metrics}
+            return out
+
+        team = task_means("team")
         for control in ("named_solo", "solo"):
-            ctl = [r for r in per_turn if r["condition"] == cond and r["framing"] == control]
-            if team and ctl:
+            ctl = task_means(control)
+            common = [t for t in team if t in ctl]
+            if common:
                 tests.setdefault(cond, {})[f"team_vs_{control}"] = {
-                    m: permutation_test([r.get(m, float("nan")) for r in team],
-                                        [r.get(m, float("nan")) for r in ctl])
-                    for m in metrics}
+                    "n_tasks": len(common),
+                    **{m: {"diff": mean(team[t][m] - ctl[t][m] for t in common),
+                           "p": paired_permutation_test([team[t][m] for t in common],
+                                                        [ctl[t][m] for t in common])}
+                       for m in metrics}}
     return write_summary(writer.dir, {"rows": rows, "p_values": tests, "turns": per_turn},
                          rows, "Exp. 1 collaboration: peer representation in J-space")
