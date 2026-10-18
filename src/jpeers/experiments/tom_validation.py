@@ -25,6 +25,7 @@ hitom_orders, max_new_tokens, interventions.
 from __future__ import annotations
 
 import logging
+import re
 
 import numpy as np
 
@@ -52,18 +53,22 @@ SITES = ("story_end", "question", "answer")
 
 
 def _ask(endpoint, writer, rec_cfg, story: str, question: str, watch: list[str], ivs,
-         max_new_tokens: int, tag: str, extra: dict):
+         max_new_tokens: int, tag: str, extra: dict, suffix: str = ""):
     # Record the story, the question and the answer prefill. Only at the answer position
     # is the model about to say the belief word; the earlier sites test whether J-space
-    # holds the belief before the model is asked for it.
-    spans = [SpanQuery(label="story", text=story), SpanQuery(label="question", text=question),
+    # holds the belief before the model is asked for it. ``suffix`` (e.g. Hi-ToM's list
+    # of choices) follows the question but is outside the "question" span, so the
+    # question site is not scored on a list that spells out every candidate.
+    # Only the story's last token is read, so record just its tail (long Hi-ToM stories).
+    spans = [SpanQuery(label="story_tail", text=story[-40:]),
+             SpanQuery(label="question", text=question),
              SpanQuery(label="answer", text="Answer:")]
     req = GenerateRequest(
         messages=[{"role": "system", "content": SYSTEM},
-                  {"role": "user", "content": f"{story}\n\nQuestion: {question}"}],
+                  {"role": "user", "content": f"{story}\n\nQuestion: {question}{suffix}"}],
         assistant_prefill="Answer:", max_new_tokens=max_new_tokens, spans=spans,
         record=record_spec(rec_cfg, watch, scope="spans",
-                           labels=["story", "question", "answer"]),
+                           labels=["story_tail", "question", "answer"]),
         interventions=ivs)
     resp = endpoint.generate(req)
     trace = JSpaceTrace.from_response(resp)
@@ -86,15 +91,29 @@ def _best(trace: JSpaceTrace, word: str, mask: np.ndarray, lens: str = "jlens"
 def _site_masks(trace: JSpaceTrace, last: np.ndarray) -> dict[str, np.ndarray]:
     """story_end: last story token (story read, question not yet asked); question: the
     question tokens; answer: the decision position after the "Answer:" prefill."""
-    story = trace.spans.get("story", [])
+    story = trace.spans.get("story_tail", [])
     story_end = trace.mask((story[-1][1] - 1, story[-1][1])) if story else last & False
     return {"story_end": story_end, "question": trace.mask("question"), "answer": last}
 
 
+def _beats_all(trace: JSpaceTrace, target: str, competitors: list[str], mask: np.ndarray,
+               lens: str) -> bool | None:
+    """Does ``target`` outrank every competitor at this site (None if not readable)?"""
+    b = _best(trace, target, mask, lens)
+    ds = [d for c in competitors if (d := _best(trace, c, mask, lens)) is not None]
+    return None if b is None or not ds else b < min(ds)
+
+
 def _beats(trace: JSpaceTrace, it, mask: np.ndarray, lens: str) -> bool | None:
     """Does the belief word outrank the decoy at this site (None if not readable)?"""
-    b, d = _best(trace, it.belief_answer, mask, lens), _best(trace, it.decoy, mask, lens)
-    return None if b is None or d is None else b < d
+    return _beats_all(trace, it.belief_answer, [it.decoy], mask, lens)
+
+
+def hitom_nouns(choices: str) -> list[str]:
+    """Container nouns of Hi-ToM choices ("A. blue_drawer, B. green_treasure_chest" ->
+    ["drawer", "chest"]), deduplicated in order."""
+    return list(dict.fromkeys(c.split("_")[-1]
+                              for c in re.findall(r"[a-z]+(?:_[a-z]+)+", choices)))
 
 
 def run(cfg: dict) -> dict:
@@ -132,21 +151,32 @@ def run(cfg: dict) -> dict:
         if cfg.get("include_hitom", False):
             for it in load_hitom(orders=tuple(cfg.get("hitom_orders", [0, 1, 2])),
                                  max_items=cfg.get("hitom_items", 40)):
+                # Decoys: the other container nouns among the choices. Choices that share
+                # the answer's noun (blue_drawer vs green_drawer) cannot be told apart by
+                # single-word readouts, so the test is "answer noun beats every other
+                # noun" (chance ~ 1 / number of distinct nouns).
                 noun = it.answer.split("_")[-1]
-                q = f"{it.question}\nChoices: {it.choices}\nAnswer with the exact choice text."
+                others = [n for n in hitom_nouns(it.choices) if n != noun]
+                suffix = f"\nChoices: {it.choices}\nAnswer with the exact choice text."
                 try:
-                    resp, trace = _ask(endpoint, writer, cfg, it.story, q, [noun], ivs, 12,
-                                       f"{cond}/hitom", {"item": it.id})
-                except ValueError as exc:  # answer noun is not a single token
+                    resp, trace = _ask(endpoint, writer, cfg, it.story, it.question,
+                                       [noun, *others], ivs, 12, f"{cond}/hitom",
+                                       {"item": it.id}, suffix=suffix)
+                except ValueError as exc:  # a noun is not a single token
                     logger.warning("skipping %s: %s", it.id, exc)
                     skipped.append(it.id)
                     continue
                 last = trace.mask((resp.prompt_len - 1, resp.prompt_len))
-                per_item.append({"condition": cond, "framing": f"hitom-o{it.order}",
-                                 "item": it.id, "false_belief": it.order > 0,
-                                 "belief_rank": _best(trace, noun, last), "true_rank": None,
-                                 "correct": it.answer.replace("_", " ") in resp.text.replace(
-                                     "_", " "), "answer": resp.text})
+                row = {"condition": cond, "framing": f"hitom-o{it.order}", "item": it.id,
+                       "false_belief": it.order > 0, "belief_rank": _best(trace, noun, last),
+                       "true_rank": None, "n_competitors": len(others),
+                       "correct": it.answer.replace("_", " ") in resp.text.replace("_", " "),
+                       "answer": resp.text}
+                for site, mask in _site_masks(trace, last).items():
+                    row[f"beats_{site}"] = _beats_all(trace, noun, others, mask, "jlens")
+                for lens in ("logit", "output"):
+                    row[f"beats_answer_{lens}"] = _beats_all(trace, noun, others, last, lens)
+                per_item.append(row)
 
     def ranks(rs: list[dict], key: str) -> np.ndarray:
         return np.array([r[key] for r in rs if r[key] is not None], dtype=float)
@@ -163,11 +193,13 @@ def run(cfg: dict) -> dict:
         if rs[0]["true_rank"] is not None:
             row["true_mrr"] = rank_summary(ranks(rs, "true_rank"))["mrr"]
             row["decoy_mrr"] = rank_summary(ranks(rs, "decoy_rank"))["mrr"]
-            # belief beats decoy at each site; real belief tracking predicts > 0.5 on
-            # false-belief items AND controls, and already at story_end / question
-            for key in [*(f"beats_{s}" for s in SITES), "beats_answer_logit",
-                        "beats_answer_output"]:
-                row[key] = mean(r[key] for r in rs if r[key] is not None)
+        else:  # Hi-ToM: chance of beating every other noun
+            row["chance"] = mean(1 / (r["n_competitors"] + 1) for r in rs)
+        # belief beats decoy(s) at each site; real belief tracking predicts above chance
+        # on false-belief items AND controls, and already at story_end / question
+        for key in [*(f"beats_{s}" for s in SITES), "beats_answer_logit",
+                    "beats_answer_output"]:
+            row[key] = mean(r[key] for r in rs if r[key] is not None)
         rows.append(row)
     return write_summary(writer.dir, {"rows": rows, "items": per_item,
                                       "hitom_skipped_not_single_token": skipped}, rows,

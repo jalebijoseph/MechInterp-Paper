@@ -3,11 +3,17 @@
 Two agents split a task (research vs implementation) and talk for ``rounds`` rounds.
 
 Conditions:
-    team  -- each agent is told it works with the named partner; partner messages are
-             shown as "[Bob]: ...".
-    solo  -- control. Same task halves and the *same partner text*, but each agent is
-             told it works alone and partner text is shown as anonymous "[Shared notes]".
-             Content exposure is matched; only the social framing differs.
+    team        -- each agent is told it works with the named partner; partner messages
+                   are shown as "[Bob]: ...".
+    named_solo  -- main control. Same content, same named partner, partner messages still
+                   shown as "[Bob]: ...", but the agent is told it works alone and Bob
+                   works separately. Only the collaboration differs, so a team effect
+                   cannot come from the name being in the prompt.
+    solo        -- weaker control. Same content, but the partner is unnamed and their
+                   text is shown as anonymous "[Shared notes]".
+
+Keywords never appear in the goal or either brief, so a keyword in J-space is not a
+copy of a prompt word (tests/test_scenarios.py).
 
 Readouts per turn (workspace band, recorded on the reading span and on generation):
     partner_name_mrr     partner's name in J-space while writing
@@ -19,7 +25,7 @@ Readouts per turn (workspace band, recorded on the reading span and on generatio
 
 Each MRR also comes as ``_logit`` (logit-lens baseline), ``_output`` (the model's own
 next-token prediction) and ``_beyond`` (J-lens at positions where the word is not among
-the next 3 tokens). Best case for the hypothesis: team > solo on partner_name /
+the next 3 tokens). Best case for the hypothesis: team > named_solo on partner_name /
 partner_kw while writing, with own_kw unchanged, and the gap holding in ``_beyond`` and
 exceeding the ``_output`` gap.
 
@@ -51,14 +57,22 @@ from jpeers.harness import Agent, Conversation
 TEAM_WORDS = ["team", "together", "partner", "colleague", "we", "collaborate"]
 
 
-def _system(name: str, partner: str, role: str, other_role: str, task: dict, team: bool) -> str:
+def _system(name: str, partner: str, role: str, other_role: str, task: dict,
+            framing: str) -> str:
     mine, theirs = task[role]["brief"], task[other_role]["brief"]
-    if team:
+    if framing == "team":
         return (f"You are {name}, the {role} specialist on a two-agent team with {partner}, "
                 f"the {other_role} specialist.\nTeam goal: {task['goal']}\n"
                 f"Your part: {mine}\n{partner}'s part: {theirs}\n"
                 f"Work with {partner}: build on their messages and keep the joint plan "
                 "consistent. Reply in under 120 words.")
+    if framing == "named_solo":
+        # Same content and the same named partner as "team"; only the collaboration is
+        # removed, so team vs named_solo cannot be explained by the name being present.
+        return (f"You are {name}, a {role} specialist working alone.\nGoal: {task['goal']}\n"
+                f"Your part: {mine}\n{partner} works separately on a related workstream: "
+                f"{theirs}\nYou may see {partner}'s notes; use them if relevant. "
+                "Reply in under 120 words.")
     # Same information as the team prompt (incl. the other half of the task); only the
     # social framing differs: no named partner, the other half is "handled elsewhere".
     return (f"You are {name}, a {role} specialist working alone.\nGoal: {task['goal']}\n"
@@ -77,8 +91,7 @@ def run(cfg: dict) -> dict:
     per_turn: list[dict] = []
 
     for cond_iv, iv_spec in intervention_conditions(cfg).items():
-        for framing in cfg.get("conditions", ["team", "solo"]):
-            team = framing == "team"
+        for framing in cfg.get("conditions", ["team", "named_solo", "solo"]):
             for task in bank:
                 agents = []
                 for role, other in (("research", "implementation"),
@@ -88,12 +101,12 @@ def run(cfg: dict) -> dict:
                              *task[other]["keywords"]]
                     agents.append(Agent(
                         name=name, endpoint=endpoints[role],
-                        system_prompt=_system(name, partner, role, other, task, team),
+                        system_prompt=_system(name, partner, role, other, task, framing),
                         max_new_tokens=cfg.get("max_new_tokens", 160), watch=watch,
                         interventions=resolved(iv_spec, peer=partner, self_name=name)))
                 tag = f"{cond_iv}/{framing}/{task['id']}"
                 conv = Conversation(agents, pool, writer=writer,
-                                    peer_framing="agent" if team else "document",
+                                    peer_framing="document" if framing == "solo" else "agent",
                                     record_defaults=record_spec(cfg, [], scope="spans"), tag=tag,
                                     extra={"condition": cond_iv, "framing": framing,
                                            "task": task["id"]})
@@ -142,13 +155,16 @@ def run(cfg: dict) -> dict:
         rs = [r for r in per_turn if r["condition"] == cond and r["framing"] == framing]
         rows.append({"condition": cond, "framing": framing, "turns": len(rs),
                      **{m: mean(r.get(m) for r in rs) for m in metrics}})
-    tests = {}
+    # team vs each control: named_solo (name present, no collaboration) is the main one
+    tests: dict[str, dict] = {}
     for cond in {c for c, _ in keys}:
         team = [r for r in per_turn if r["condition"] == cond and r["framing"] == "team"]
-        solo = [r for r in per_turn if r["condition"] == cond and r["framing"] == "solo"]
-        if team and solo:
-            tests[cond] = {m: permutation_test([r.get(m, float("nan")) for r in team],
-                                               [r.get(m, float("nan")) for r in solo])
-                           for m in metrics}
-    return write_summary(writer.dir, {"rows": rows, "p_team_vs_solo": tests, "turns": per_turn},
+        for control in ("named_solo", "solo"):
+            ctl = [r for r in per_turn if r["condition"] == cond and r["framing"] == control]
+            if team and ctl:
+                tests.setdefault(cond, {})[f"team_vs_{control}"] = {
+                    m: permutation_test([r.get(m, float("nan")) for r in team],
+                                        [r.get(m, float("nan")) for r in ctl])
+                    for m in metrics}
+    return write_summary(writer.dir, {"rows": rows, "p_values": tests, "turns": per_turn},
                          rows, "Exp. 1 collaboration: peer representation in J-space")

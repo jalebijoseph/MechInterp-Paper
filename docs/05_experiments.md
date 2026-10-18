@@ -49,19 +49,23 @@ the answer.
 **Question.** When two agents split a task, does each represent the partner (who they
 are, and what the partner is working on) in J-space?
 
-**Design.** 8 tasks × {team, solo} × 2 agents × `rounds`. In *team*, agents are told
-about the named partner and see `[Bob]: ...`. In *solo*, the partner's text is still
-shown but as anonymous `[Shared notes]`, and the agent is told it works alone. So
-content exposure is identical and only the social framing differs.
+**Design.** 8 tasks × {team, named_solo, solo} × 2 agents × `rounds`. In *team*, agents
+are told about the named partner and see `[Bob]: ...`. In *named_solo* (the main
+control) the agent is told it works alone while Bob works separately; Bob is still
+named and still shown as `[Bob]: ...`, so only the collaboration differs. In *solo* the
+partner's text is shown as anonymous `[Shared notes]`. Content exposure is identical in
+all three. Keywords appear in no prompt (`tests/test_scenarios.py`), so a keyword in
+J-space is not a copy of the prompt.
 
 **Readouts** (recorded on the partner's last message and on the agent's own reply):
 `partner_name_mrr` (while writing and while reading), `team_mrr`, `partner_kw_mrr` vs
 `own_kw_mrr`, `uptake` (share of J-space top tokens taken from the partner's message),
 and `cross_agent_cosine` (overlap of the two agents' J-space bags in the same round).
-Permutation tests compare team vs solo.
+Permutation tests compare team vs named_solo and team vs solo.
 
 **Proposal flags.** Same results analysed (cross-agent cosine high), no teamwork content
-(team_mrr ≈ solo), and the best case: partner_kw_mrr team > solo with own_kw unchanged.
+(team_mrr ≈ named_solo), and the best case: partner_kw_mrr team > named_solo with own_kw
+unchanged, holding in `_beyond`.
 
 ## Exp. 2: imposter (`configs/exp2_imposter.yaml`)
 

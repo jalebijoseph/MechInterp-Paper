@@ -1,5 +1,5 @@
 {
-  "description": "Experiment 3. An orchestrator sees each agent's prior work (history) and must assign new tasks. `kind` says which specialist has relevant context. Agent names are chosen to be single tokens in common tokenizers so their J-lens readout is clean.",
+  "description": "Experiment 3. An orchestrator sees each agent's prior work (history) and must assign new tasks. `kind` says which specialist has relevant context. Tasks share no content words with either history, so the right assignment needs the kind of work, not word matching (checked by tests/test_scenarios.py). Agent names are single tokens in common tokenizers so their J-lens readout is clean.",
   "agents": {
     "dev": {"name": "Kai", "history": [
       "Kai implemented the REST endpoints for the billing service and wrote their unit tests.",
@@ -13,18 +13,18 @@
     ]}
   },
   "tasks": [
-    {"id": "t1", "kind": "dev", "text": "Add pagination to the billing service's invoice list endpoint."},
-    {"id": "t2", "kind": "dev", "text": "Debug why the worker pool deadlocks under heavy load."},
-    {"id": "t3", "kind": "dev", "text": "Write a migration that adds an index to the payments table."},
-    {"id": "t4", "kind": "dev", "text": "Set up a CI job that runs the integration tests nightly."},
-    {"id": "t5", "kind": "dev", "text": "Implement retry with exponential backoff in the HTTP client."},
-    {"id": "t6", "kind": "dev", "text": "Port the invoice PDF generator to the new templating library."},
-    {"id": "t7", "kind": "research", "text": "Find and summarise the best recent papers on long-context retrieval."},
-    {"id": "t8", "kind": "research", "text": "Recommend a methodology for an employee engagement survey."},
-    {"id": "t9", "kind": "research", "text": "Review the evidence on anomaly detection for sensor data."},
-    {"id": "t10", "kind": "research", "text": "Write a background section comparing RAG with fine-tuning."},
-    {"id": "t11", "kind": "research", "text": "Assess which statistical tests fit our A/B experiment design."},
-    {"id": "t12", "kind": "research", "text": "Summarise the literature on user trust in chatbots."}
+    {"id": "t1", "kind": "dev", "text": "Add pagination to the invoice list page."},
+    {"id": "t2", "kind": "dev", "text": "Resolve a deadlock that appears when many threads save at once."},
+    {"id": "t3", "kind": "dev", "text": "Add an index to the payments table to speed up searches."},
+    {"id": "t4", "kind": "dev", "text": "Create a nightly build that runs the integration suite."},
+    {"id": "t5", "kind": "dev", "text": "Add retry with exponential backoff to the HTTP client."},
+    {"id": "t6", "kind": "dev", "text": "Port the PDF generator to the new templating library."},
+    {"id": "t7", "kind": "research", "text": "Find the strongest published evidence on long-context language models."},
+    {"id": "t8", "kind": "research", "text": "Recommend a questionnaire design for an employee engagement study."},
+    {"id": "t9", "kind": "research", "text": "Explain what is known about spotting faulty sensor readings."},
+    {"id": "t10", "kind": "research", "text": "Draft a background section contrasting prompting with fine-tuning."},
+    {"id": "t11", "kind": "research", "text": "Assess which significance checks suit our A/B experiment."},
+    {"id": "t12", "kind": "research", "text": "Compile prior findings on how people come to trust chatbots."}
   ],
   "family_variant": {
     "description": "Two equally qualified generalists that differ only in the model family (and optionally size) that powers them. Order and names are counterbalanced by the runner.",

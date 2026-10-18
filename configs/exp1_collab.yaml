@@ -6,7 +6,7 @@ agents:                       # endpoint per role; mix families/clouds freely
   research: qwen3-1.7b
   implementation: qwen3-1.7b
 names: {research: Alice, implementation: Bob}
-conditions: [team, solo]      # solo = matched no-peer control
+conditions: [team, named_solo, solo]  # named_solo = main control (name, no collaboration)
 n_tasks: 8
 rounds: 2
 max_new_tokens: 160
