@@ -55,6 +55,49 @@ def test_watch_rank_matches_direct_computation(tiny_model):
     assert np.array_equal(tr.topk_ids[:, li, 0], logits.argmax(-1).numpy())
 
 
+def test_baselines_match_direct_computation(tiny_model):
+    req = GenerateRequest(prompt="Alice and Bob are working together", max_new_tokens=0,
+                          record=RecordSpec(watch=["Bob"]))
+    tr = JSpaceTrace.from_response(tiny_model.generate(req))
+    ids, _ = tiny_model.encode(req.prompt, True)
+    from jlens import ActivationRecorder
+
+    with torch.no_grad(), ActivationRecorder(tiny_model.lm.layers, at=[1]) as rec:
+        model_logits = tiny_model.hf(input_ids=ids).logits[0].float()
+    cand = tiny_model.word_token_ids("Bob")
+
+    def ranks(lg):
+        return torch.stack([(lg > lg[:, c:c + 1]).sum(-1) for c in cand]).min(0).values.numpy()
+
+    logit_lens = tiny_model.lens_logits(1, rec.activations[1][0], use_jacobian=False)
+    li = tr.layers.index(1)
+    assert np.array_equal(tr.watch_ranks_logit[:, li, 0], ranks(logit_lens))
+    assert np.array_equal(tr.output_ranks[:, 0], ranks(model_logits))
+
+
+def test_baselines_can_be_turned_off(tiny_model):
+    req = GenerateRequest(prompt="Alice met Bob", max_new_tokens=2,
+                          record=RecordSpec(watch=["Bob"], baselines=[]))
+    tr = JSpaceTrace.from_response(tiny_model.generate(req))
+    assert tr.watch_ranks_logit is None and tr.output_ranks is None
+
+
+def test_upcoming_mask_and_lens_mrrs(tiny_model):
+    from jpeers.analysis import lens_mrrs, upcoming_mask
+
+    req = GenerateRequest(prompt="Alice and Bob are working together with Bob", max_new_tokens=0,
+                          record=RecordSpec(watch=["Bob"]))
+    tr = JSpaceTrace.from_response(tiny_model.generate(req))
+    up = upcoming_mask(tr, ["Bob"], horizon=1)
+    # exactly the positions whose next token is " Bob"
+    expected = [tr.tokens[p + 1] == " Bob" if p + 1 < len(tr.tokens) else False
+                for p in tr.positions]
+    assert up.tolist() == expected and up.any()
+    out = lens_mrrs(tr, ["Bob"], np.ones(len(tr.positions), bool), "bob")
+    assert set(out) == {"bob", "bob_logit", "bob_output", "bob_beyond"}
+    assert all(0 <= v <= 1 for v in out.values())
+
+
 def test_position_selectors(tiny_model):
     req = GenerateRequest(messages=MSGS, max_new_tokens=3,
                           record=RecordSpec(positions=PositionSelector(scope="generated")))

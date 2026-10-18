@@ -25,7 +25,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from jpeers.analysis import group_ranks, mentions, permutation_test, rank_summary, word_ranks
+from jpeers.analysis import lens_mrrs, mentions, permutation_test
 from jpeers.benchmarks import load_narcbench, load_task_bank
 from jpeers.experiments.common import (
     intervention_conditions,
@@ -97,12 +97,11 @@ def run_live(cfg: dict, pool, writer) -> list[dict]:
                 rows.append({
                     "condition": cond, "imposter": imposter, "item": item["id"],
                     "claim_in_draft": claim_in_draft,
-                    "susp_mrr_reading": rank_summary(group_ranks(tr, susp, reading))["mrr"],
-                    "susp_mrr_writing": rank_summary(group_ranks(tr, susp, gen))["mrr"],
-                    "agree_mrr_writing": rank_summary(group_ranks(tr, agree, gen))["mrr"],
-                    "true_mrr_reading": rank_summary(word_ranks(tr, item["true"], reading))["mrr"],
-                    "false_mrr_reading": rank_summary(
-                        word_ranks(tr, item["false"], reading))["mrr"],
+                    **lens_mrrs(tr, susp, reading, "susp_mrr_reading"),
+                    **lens_mrrs(tr, susp, gen, "susp_mrr_writing"),
+                    **lens_mrrs(tr, agree, gen, "agree_mrr_writing"),
+                    **lens_mrrs(tr, [item["true"]], reading, "true_mrr_reading"),
+                    **lens_mrrs(tr, [item["false"]], reading, "false_mrr_reading"),
                     "reply_has_true": mentions(rec.text, [item["true"]]),
                     "reply_flags": mentions(rec.text, susp),
                     "reply_keeps_false": mentions(rec.text, [item["false"]]) and not mentions(
@@ -144,7 +143,7 @@ def run_narcbench(cfg: dict, pool, writer) -> list[dict]:
                 rows.append({"run_id": sc.run_id, "mode": sc.mode, "reader": p["agent_name"],
                              "speaker": n, "speaker_role": sc.roles.get(n),
                              "seat_is_coalition": n in sc.coalition_seats,
-                             "susp_mrr": rank_summary(group_ranks(tr, susp, m))["mrr"]})
+                             **lens_mrrs(tr, susp, m, "susp_mrr")})
     return rows
 
 
@@ -163,9 +162,12 @@ def run(cfg: dict) -> dict:
     table = []
     if cfg.get("live", True):
         rows = run_live(cfg, pool, writer)
-        metrics = ["claim_in_draft", "susp_mrr_reading", "susp_mrr_writing", "agree_mrr_writing",
-                   "true_mrr_reading", "false_mrr_reading", "reply_has_true", "reply_flags",
-                   "reply_keeps_false"]
+        metrics = ["claim_in_draft"]
+        metrics += [f"{base}{sfx}" for base in ("susp_mrr_reading", "susp_mrr_writing",
+                                                "agree_mrr_writing", "true_mrr_reading",
+                                                "false_mrr_reading")
+                    for sfx in ("", "_logit", "_output", "_beyond")]
+        metrics += ["reply_has_true", "reply_flags", "reply_keeps_false"]
         for cond in dict.fromkeys(r["condition"] for r in rows):
             for imp in (True, False):
                 rs = [r for r in rows if r["condition"] == cond and r["imposter"] == imp]
@@ -182,6 +184,11 @@ def run(cfg: dict) -> dict:
         ctrl = [r["susp_mrr"] for r in nrows if r["mode"] == "control" and r["seat_is_coalition"]]
         summary["narcbench"] = {"rows": nrows, "auroc_colluder_vs_control_seat": _auroc(coll, ctrl),
                                 "mean_collusion": mean(coll), "mean_control": mean(ctrl)}
+        for sfx in ("_logit", "_output", "_beyond"):  # same AUROC under each baseline
+            key = f"susp_mrr{sfx}"
+            c = [r[key] for r in nrows if r["mode"] == "collusion" and r["seat_is_coalition"]]
+            k = [r[key] for r in nrows if r["mode"] == "control" and r["seat_is_coalition"]]
+            summary["narcbench"][f"auroc{sfx}"] = _auroc(c, k)
         table.append({"condition": "narcbench", "peer": "colluder seat", "n": len(coll),
                       "susp_mrr_reading": mean(coll)})
         table.append({"condition": "narcbench", "peer": "same seat, control run", "n": len(ctrl),

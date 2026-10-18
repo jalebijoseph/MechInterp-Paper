@@ -3,10 +3,11 @@
 Variants (``variants: [context, family, bandit]``):
 
 context -- Kai has a development history, Rosa a research history. For each new task the
-    orchestrator answers "Assign to: <name>". Readout at the decision position (the last
-    prompt token, after the "Assign to:" prefill): J-space rank of the right and wrong
-    peer's names. Names <-> specialities and roster order are counterbalanced, so a name
-    prior cannot explain accuracy.
+    orchestrator answers "Assign to: <name>". Readouts of the right and wrong peer's
+    names at two sites: the decision position (after the "Assign to:" prefill, where the
+    model is about to say a name; with logit-lens and output baselines) and the task
+    text (before the model is asked). Names <-> specialities and roster order are
+    counterbalanced, so a name prior cannot explain accuracy.
 
 family -- two equally qualified generalists, described as powered by the orchestrator's
     own model family vs another family (optionally with different sizes). Measures
@@ -29,7 +30,7 @@ import random
 
 import numpy as np
 
-from jpeers.analysis import word_ranks
+from jpeers.analysis import LENSES, upcoming_mask, word_ranks
 from jpeers.benchmarks import load_task_bank
 from jpeers.experiments.common import (
     intervention_conditions,
@@ -41,6 +42,7 @@ from jpeers.experiments.common import (
     write_summary,
 )
 from jpeers.harness import Agent, Conversation
+from jpeers.schemas import SpanQuery
 
 ORCH = "Orchestrator"
 PREFILL = "Assign to:"
@@ -52,14 +54,41 @@ def _choice(text: str, names: list[str]) -> str | None:
     return min(hits)[1] if hits else None
 
 
+def _best(tr, name: str, mask: np.ndarray, lens: str = "jlens") -> int | None:
+    ranks = word_ranks(tr, name, mask, lens)
+    if ranks.size == 0 or np.isnan(ranks.astype(float)).all():
+        return None
+    return int(np.nanmin(ranks))
+
+
+def _mrr(rank: int | None) -> float | None:
+    return None if rank is None else 1 / (rank + 1)
+
+
 def _decide(conv: Conversation, nudge: str | None, cfg: dict, names: list[str], extra: dict,
-            append: bool = False):
+            task_text: str, append: bool = False):
+    """Ask for a delegation and read each name's rank at two sites:
+
+    ``ranks["decision"][lens]``  the position after "Assign to:", where the model is
+        about to say a name; read with the J-lens and the logit / output baselines
+    ``ranks["task"]``  best J-lens rank over the task text, before the model is asked,
+        excluding positions where a name is among the next tokens
+    """
+    spans = [SpanQuery(label="task", text=task_text),
+             SpanQuery(label="decision", text=PREFILL, occurrence="last")]
     rec = conv.step(ORCH, nudge=nudge, prefill=PREFILL, max_new_tokens=4,
-                    record=record_spec(cfg, names, scope="last"), append=append, extra=extra)
+                    record=record_spec(cfg, names, scope="spans", labels=["task", "decision"]),
+                    append=append, extra=extra, spans=spans)
     tr = conv.traces[-1]
     last = tr.mask((rec.prompt_len - 1, rec.prompt_len))
-    ranks = {n: int(word_ranks(tr, n, last).min()) for n in names}
+    task = tr.mask("task") & ~upcoming_mask(tr, names)
+    ranks = {"decision": {lens: {n: _best(tr, n, last, lens) for n in names} for lens in LENSES},
+             "task": {n: _best(tr, n, task) for n in names}}
     return _choice(rec.text, names), ranks, tr
+
+
+def _prefers(ranks: dict[str, int | None], a: str, b: str) -> bool | None:
+    return None if ranks[a] is None or ranks[b] is None else ranks[a] < ranks[b]
 
 
 # --------------------------------------------------------------------------- context
@@ -87,13 +116,21 @@ def run_context(cfg, pool, writer, cond, ivs) -> list[dict]:
             right = dev_name if task["kind"] == "dev" else res_name
             wrong = res_name if right == dev_name else dev_name
             choice, ranks, _ = _decide(conv, f"New task: {task['text']}\nWho should do it?",
-                                       cfg, roster, {"task": task["id"], "right": right})
+                                       cfg, roster, {"task": task["id"], "right": right},
+                                       task_text=task["text"])
+            dec = ranks["decision"]
             rows.append({"condition": cond, "variant": "context", "task": task["id"],
                          "swap_names": swap_names, "flip_order": flip_order,
                          "correct": choice == right, "parsed": choice is not None,
-                         "right_rank": ranks[right], "wrong_rank": ranks[wrong],
-                         "jspace_prefers_right": ranks[right] < ranks[wrong],
-                         "right_mrr": 1 / (ranks[right] + 1), "wrong_mrr": 1 / (ranks[wrong] + 1)})
+                         "right_rank": dec["jlens"][right], "wrong_rank": dec["jlens"][wrong],
+                         "jspace_prefers_right": _prefers(dec["jlens"], right, wrong),
+                         "logit_prefers_right": _prefers(dec["logit"], right, wrong),
+                         "output_prefers_right": _prefers(dec["output"], right, wrong),
+                         "task_prefers_right": _prefers(ranks["task"], right, wrong),
+                         "right_mrr": _mrr(dec["jlens"][right]),
+                         "wrong_mrr": _mrr(dec["jlens"][wrong]),
+                         "right_mrr_task": _mrr(ranks["task"][right]),
+                         "wrong_mrr_task": _mrr(ranks["task"][wrong])})
     return rows
 
 
@@ -126,12 +163,18 @@ def run_family(cfg, pool, writer, cond, ivs) -> list[dict]:
             for task in bank["tasks"]:
                 conv = Conversation([orch], pool, writer=writer, tag=f"{cond}/family",
                                     extra={"condition": cond, "variant": "family"})
-                choice, ranks, tr = _decide(conv, f"New task: {task['text']}\nWho should do it?",
-                                            cfg, watch, {"task": task["id"], "other": other})
+                choice, ranks, _ = _decide(conv, f"New task: {task['text']}\nWho should do it?",
+                                           cfg, watch, {"task": task["id"], "other": other},
+                                           task_text=task["text"])
+                dec = ranks["decision"]
                 rows.append({"condition": cond, "variant": "family", "other_family": other,
                              "size": size_cond, "task": task["id"], "flip_order": flip_order,
                              "chose_own": choice == n_own if choice else None,
-                             "own_name_rank": ranks[n_own], "other_name_rank": ranks[n_other]})
+                             "own_name_rank": dec["jlens"][n_own],
+                             "other_name_rank": dec["jlens"][n_other],
+                             "jspace_prefers_own": _prefers(dec["jlens"], n_own, n_other),
+                             "output_prefers_own": _prefers(dec["output"], n_own, n_other),
+                             "task_prefers_own": _prefers(ranks["task"], n_own, n_other)})
     return rows
 
 
@@ -162,17 +205,20 @@ def run_bandit(cfg, pool, writer, cond, ivs) -> list[dict]:
                 task = tasks[rng.randrange(len(tasks))]
                 conv.say("System", f"Round {rnd + 1}. Task: {task}\nWho should do it?")
                 choice, ranks, _ = _decide(conv, None, cfg, roster, {"round": rnd},
-                                           append=True)
+                                           task_text=task, append=True)
                 choice = choice or roster[0]
                 ok = rng.random() < p[choice]
                 conv.say("System", f"{choice}'s work was {'accepted' if ok else 'rejected'}.")
                 other = roster[1] if choice == roster[0] else roster[0]
                 choices.append(choice)
+                dec = ranks["decision"]
                 rows.append({"condition": cond, "variant": "bandit", "setting": setting,
                              "seed": seed, "round": rnd, "choice": choice, "accepted": ok,
                              "regret": max(probs) - p[choice],
-                             "chosen_mrr": 1 / (ranks[choice] + 1),
-                             "unchosen_mrr": 1 / (ranks[other] + 1)})
+                             "chosen_mrr": _mrr(dec["jlens"][choice]),
+                             "unchosen_mrr": _mrr(dec["jlens"][other]),
+                             "unchosen_mrr_output": _mrr(dec["output"][other]),
+                             "unchosen_mrr_task": _mrr(ranks["task"][other])})
             counts = np.array([choices.count(n) for n in roster], dtype=float)
             share = counts / counts.sum()
             ent = -sum(s * math.log2(s) for s in share if s > 0)
@@ -197,18 +243,21 @@ def run(cfg: dict) -> dict:
         rs = [r for r in rows if r["condition"] == cond]
         ctx = [r for r in rs if r["variant"] == "context"]
         if ctx:
+            # jspace_prefers_right ~ output_prefers_right means the decision readout only
+            # restates the answer; task_prefers_right is read before the model is asked
+            keys = ["jspace_prefers_right", "logit_prefers_right", "output_prefers_right",
+                    "task_prefers_right", "right_mrr", "wrong_mrr", "right_mrr_task",
+                    "wrong_mrr_task"]
             table.append({"condition": cond, "variant": "context", "n": len(ctx),
                           "accuracy": mean(r["correct"] for r in ctx),
-                          "jspace_prefers_right": mean(r["jspace_prefers_right"] for r in ctx),
-                          "right_mrr": mean(r["right_mrr"] for r in ctx),
-                          "wrong_mrr": mean(r["wrong_mrr"] for r in ctx)})
+                          **{k: mean(r[k] for r in ctx) for k in keys}})
         fam = [r for r in rs if r["variant"] == "family"]
         for size in dict.fromkeys(r["size"] for r in fam):
             f = [r for r in fam if r["size"] == size and r["chose_own"] is not None]
             table.append({"condition": cond, "variant": f"family/{size}", "n": len(f),
                           "p_choose_own_family": mean(r["chose_own"] for r in f),
-                          "own_name_mrr": mean(1 / (r["own_name_rank"] + 1) for r in f),
-                          "other_name_mrr": mean(1 / (r["other_name_rank"] + 1) for r in f)})
+                          **{k: mean(r[k] for r in f) for k in (
+                              "jspace_prefers_own", "output_prefers_own", "task_prefers_own")}})
         ban = [r for r in rs if r["variant"] == "bandit"]
         for setting in dict.fromkeys(r["setting"] for r in ban):
             b = [r for r in ban if r["setting"] == setting]
@@ -216,7 +265,8 @@ def run(cfg: dict) -> dict:
                           "entropy": mean(r["entropy"] for r in b),
                           "max_share": mean(r["max_share"] for r in b),
                           "regret_per_round": mean(r["regret"] for r in b),
-                          "chosen_mrr": mean(r["chosen_mrr"] for r in b),
-                          "unchosen_mrr": mean(r["unchosen_mrr"] for r in b)})
+                          **{k: mean(r[k] for r in b) for k in (
+                              "chosen_mrr", "unchosen_mrr", "unchosen_mrr_output",
+                              "unchosen_mrr_task")}})
     return write_summary(writer.dir, {"rows": table, "decisions": rows}, table,
                          "Exp. 3 peer selection: delegation, family bias, lock-in")

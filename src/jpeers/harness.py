@@ -178,8 +178,8 @@ class Conversation:
 
     def step(self, name: str, *, nudge: str | None = None, prefill: str = "",
              interventions: list[InterventionSpec] | None = None, max_new_tokens: int | None = None,
-             record: RecordSpec | None = None, append: bool = True, extra: dict | None = None
-             ) -> TurnRecord:
+             record: RecordSpec | None = None, append: bool = True, extra: dict | None = None,
+             spans: list[SpanQuery] | None = None) -> TurnRecord:
         """Let agent ``name`` speak once.
 
         Args:
@@ -187,9 +187,11 @@ class Conversation:
             prefill: Teacher-forced start of the reply (e.g. ``"Assign to:"``).
             interventions: Override the agent's interventions for this turn.
             append: Add the reply to the shared transcript.
+            spans: Extra labelled spans for this turn (e.g. the task text).
         """
         agent = self.agents[name]
         messages, queries = self.view_for(agent)
+        queries += spans or []
         if nudge:
             messages = _merge_same_role(messages + [{"role": "user", "content": nudge}])
         rec_spec = (record or self.record_defaults).model_copy(deep=True)

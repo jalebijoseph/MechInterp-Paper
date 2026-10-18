@@ -99,6 +99,12 @@ class RecordSpec(BaseModel):
     max_positions: int = 4096  # cap on recorded prompt positions (keeps the latest)
     include_model_logits: bool = False
     lens: Literal["jacobian", "logit"] = "jacobian"  # "logit" = logit-lens baseline
+    # Baselines recorded alongside every watch rank, at the same positions:
+    #   logit  -- the same layer read without the Jacobian (does J add anything?)
+    #   output -- rank in the model's own next-token prediction (is the readout just
+    #             what the model is about to say?)
+    baselines: list[Literal["logit", "output"]] = Field(
+        default_factory=lambda: ["logit", "output"])
 
 
 # --------------------------------------------------------------------------- request / response

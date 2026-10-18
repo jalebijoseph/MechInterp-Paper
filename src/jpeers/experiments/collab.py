@@ -17,8 +17,11 @@ Readouts per turn (workspace band, recorded on the reading span and on generatio
     uptake               share of J-space tokens taken from the partner's last message
     cross_agent_cosine   similarity of the two agents' J-space bags in the same round
 
-Best case for the hypothesis: team > solo on partner_name / partner_kw while writing,
-with own_kw unchanged.
+Each MRR also comes as ``_logit`` (logit-lens baseline), ``_output`` (the model's own
+next-token prediction) and ``_beyond`` (J-lens at positions where the word is not among
+the next 3 tokens). Best case for the hypothesis: team > solo on partner_name /
+partner_kw while writing, with own_kw unchanged, and the gap holding in ``_beyond`` and
+exceeding the ``_output`` gap.
 
 Config keys: agents.{research,implementation} (endpoint names), names, n_tasks, rounds,
 conditions, max_new_tokens, interventions (Exp. 4).
@@ -29,11 +32,9 @@ from __future__ import annotations
 from jpeers.analysis import (
     bag_similarity,
     content_uptake,
-    group_ranks,
     jspace_bag,
+    lens_mrrs,
     permutation_test,
-    rank_summary,
-    word_ranks,
 )
 from jpeers.benchmarks import load_task_bank
 from jpeers.experiments.common import (
@@ -113,21 +114,17 @@ def run(cfg: dict) -> dict:
                         row = {
                             "condition": cond_iv, "framing": framing, "task": task["id"],
                             "round": rnd, "agent": name, "role": role,
-                            "partner_name_mrr": rank_summary(
-                                word_ranks(trace, partner, gen))["mrr"],
-                            "team_mrr": rank_summary(group_ranks(trace, TEAM_WORDS, gen))["mrr"],
-                            "partner_kw_mrr": rank_summary(
-                                group_ranks(trace, task[other]["keywords"], gen))["mrr"],
-                            "own_kw_mrr": rank_summary(
-                                group_ranks(trace, task[role]["keywords"], gen))["mrr"],
+                            **lens_mrrs(trace, [partner], gen, "partner_name_mrr"),
+                            **lens_mrrs(trace, TEAM_WORDS, gen, "team_mrr"),
+                            **lens_mrrs(trace, task[other]["keywords"], gen, "partner_kw_mrr"),
+                            **lens_mrrs(trace, task[role]["keywords"], gen, "own_kw_mrr"),
                             "text_mentions_partner": partner.lower() in rec.text.lower(),
                         }
                         if peer_texts:
                             row["uptake"] = content_uptake(trace, gen, peer_texts[-1],
                                                            own_ctx)["uptake"]
-                            reading = trace.mask("peer_last")
-                            row["partner_name_mrr_reading"] = rank_summary(
-                                word_ranks(trace, partner, reading))["mrr"]
+                            row.update(lens_mrrs(trace, [partner], trace.mask("peer_last"),
+                                                 "partner_name_mrr_reading"))
                         bags[name] = jspace_bag(trace, gen)
                         per_turn.append(row)
                     if len(bags) == 2:
@@ -135,8 +132,10 @@ def run(cfg: dict) -> dict:
                         per_turn[-1]["cross_agent_cosine"] = sim["cosine"]
                         per_turn[-2]["cross_agent_cosine"] = sim["cosine"]
 
-    metrics = ["partner_name_mrr", "partner_name_mrr_reading", "team_mrr", "partner_kw_mrr",
-               "own_kw_mrr", "uptake", "cross_agent_cosine", "text_mentions_partner"]
+    metrics = [f"{base}{sfx}" for base in ("partner_name_mrr", "partner_name_mrr_reading",
+                                           "team_mrr", "partner_kw_mrr", "own_kw_mrr")
+               for sfx in ("", "_logit", "_output", "_beyond")]
+    metrics += ["uptake", "cross_agent_cosine", "text_mentions_partner"]
     rows = []
     keys = sorted({(r["condition"], r["framing"]) for r in per_turn})
     for cond, framing in keys:

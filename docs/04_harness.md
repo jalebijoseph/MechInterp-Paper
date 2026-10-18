@@ -71,8 +71,11 @@ For every recorded (position, layer): the top-k J-lens tokens and their logits, 
 **full-vocabulary rank** of every watch word (best over its surface forms). Defaults:
 every band layer, every position after the first 4 (attention sinks), k = 10, word-like
 tokens only for the top-k display. Ranks are computed over the whole vocabulary,
-unfiltered. Set `RecordSpec(when="pre")` to read J-space before this layer's
-interventions, or `lens="logit"` for the logit-lens baseline.
+unfiltered. By default every watch rank also comes with two baselines at the same
+positions: `watch_ranks_logit` (logit lens) and `output_ranks` (the model's own
+next-token prediction). Set `RecordSpec(baselines=[])` to skip them,
+`RecordSpec(when="pre")` to read J-space before this layer's interventions, or
+`lens="logit"` to make the logit lens the main readout.
 
 Trace size: about `P × L × (2K + W)` numbers per turn, sent as compressed `.npz` (base64).
 A 1500-token prompt with 16 band layers and K = 10 is roughly 0.3–0.6 MB. Raise `stride`

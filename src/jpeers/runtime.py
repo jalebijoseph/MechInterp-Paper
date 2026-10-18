@@ -258,7 +258,8 @@ class LensedModel:
         arrays = run.finish()
         vocab = {}
         if arrays is not None:
-            for i in np.unique(arrays["topk_ids"]).tolist():
+            watched = [i for ids in run.watch_ids for i in ids]
+            for i in [*np.unique(arrays["topk_ids"]).tolist(), *watched]:
                 vocab[int(i)] = self.vocab_strings[i]
         return GenerateResponse(
             model=self.spec.name,
@@ -288,6 +289,7 @@ class _LayerRecord:
     topk_ids: list[np.ndarray] = field(default_factory=list)
     topk_logits: list[np.ndarray] = field(default_factory=list)
     watch_ranks: list[np.ndarray] = field(default_factory=list)
+    watch_ranks_logit: list[np.ndarray] = field(default_factory=list)
 
 
 class _Run:
@@ -308,6 +310,7 @@ class _Run:
             self.record_layers = model.band(self.rec.layers)[:: max(1, self.rec.stride)]
         self.buffers = {layer: _LayerRecord() for layer in self.record_layers}
         self.model_top1: list[np.ndarray] = []
+        self.output_ranks: list[torch.Tensor] = []
 
         self.watch_words = list(self.rec.watch)
         self.watch_ids = [model.word_token_ids(w) for w in self.watch_words]
@@ -419,25 +422,17 @@ class _Run:
         idx = mask.nonzero(as_tuple=True)[0]
         buf = self.buffers[layer]
         use_j = self.rec.lens == "jacobian"
+        logit_baseline = use_j and "logit" in self.rec.baselines and self.watch_ids
         K = self.rec.top_k
         for start in range(0, len(idx), _CHUNK):
             sub = idx[start:start + _CHUNK]
-            logits = self.m.lens_logits(layer, h[sub.to(h.device)], use_jacobian=use_j)
-            if self._watch_flat is not None:
-                if self._watch_flat.device != logits.device:
-                    self._watch_flat = self._watch_flat.to(logits.device)
-                    self._watch_owner = self._watch_owner.to(logits.device)
-                w_ids = self._watch_flat
-                w_logit = logits[:, w_ids].contiguous()  # [n, C]
-                asc = logits.sort(dim=-1).values
-                # rank = number of vocab entries with a strictly higher logit
-                ranks = logits.shape[-1] - torch.searchsorted(asc, w_logit, right=True)
-                owner = self._watch_owner
-                per_word = torch.full((len(sub), len(self.watch_ids)), self.m.vocab_size,
-                                      device=logits.device, dtype=ranks.dtype)
-                per_word = per_word.scatter_reduce(
-                    1, owner.expand(len(sub), -1), ranks, reduce="amin")
-                buf.watch_ranks.append(per_word.to(torch.int32))
+            hs = h[sub.to(h.device)]
+            logits = self.m.lens_logits(layer, hs, use_jacobian=use_j)
+            if self.watch_ids:
+                buf.watch_ranks.append(self._watch_ranks(logits))
+            if logit_baseline:
+                buf.watch_ranks_logit.append(self._watch_ranks(
+                    self.m.lens_logits(layer, hs, use_jacobian=False)))
             if self.rec.word_like_only:
                 logits = logits.masked_fill(~self.m.word_like_on(logits.device), float("-inf"))
             top = logits.topk(K, dim=-1)
@@ -445,9 +440,37 @@ class _Run:
             buf.topk_logits.append(top.values.to(torch.float16))
             buf.positions.append(pos[sub].numpy())
 
+    def _watch_ranks(self, logits: torch.Tensor) -> torch.Tensor:
+        """Full-vocabulary rank of every watch word (best over its token ids) for each
+        row of ``logits`` ``[n, V]`` -> ``[n, W]`` int32."""
+        if self._watch_flat.device != logits.device:
+            self._watch_flat = self._watch_flat.to(logits.device)
+            self._watch_owner = self._watch_owner.to(logits.device)
+        w_logit = logits[:, self._watch_flat].contiguous()  # [n, C]
+        asc = logits.sort(dim=-1).values
+        # rank = number of vocab entries with a strictly higher logit
+        ranks = logits.shape[-1] - torch.searchsorted(asc, w_logit, right=True)
+        per_word = torch.full((len(logits), len(self.watch_ids)), self.m.vocab_size,
+                              device=logits.device, dtype=ranks.dtype)
+        per_word = per_word.scatter_reduce(
+            1, self._watch_owner.expand(len(logits), -1), ranks, reduce="amin")
+        return per_word.to(torch.int32)
+
     def note_model_logits(self, logits: torch.Tensor) -> None:
-        if self.rec.enabled and self.rec.include_model_logits:
+        """Called with the model's own next-token logits ``[seq, V]`` after each forward.
+        Records the ``output`` baseline: each watch word's rank in what the model is
+        actually about to say, at the same positions the lens readout records."""
+        if not self.rec.enabled:
+            return
+        if self.rec.include_model_logits:
             self.model_top1.append(logits.argmax(-1))
+        if "output" in self.rec.baselines and self.watch_ids and self.record_layers:
+            pos = torch.arange(self.offset, self.offset + logits.shape[0])
+            mask = self._mask(self.rec.positions, pos) & (pos >= self._record_floor)
+            idx = mask.nonzero(as_tuple=True)[0].to(logits.device)
+            for start in range(0, len(idx), _CHUNK):
+                self.output_ranks.append(
+                    self._watch_ranks(logits[idx[start:start + _CHUNK]].float()))
 
     def finish(self) -> dict[str, np.ndarray] | None:
         """Stack the per-chunk buffers (kept on device during generation to avoid a
@@ -467,6 +490,10 @@ class _Run:
         }
         if self.watch_ids:
             out["watch_ranks"] = stack("watch_ranks")
+            if self.buffers[self.record_layers[0]].watch_ranks_logit:
+                out["watch_ranks_logit"] = stack("watch_ranks_logit")
+            if self.output_ranks:
+                out["output_ranks"] = torch.cat([t.cpu() for t in self.output_ranks]).numpy()
         else:
             out["watch_ranks"] = np.zeros((len(out["positions"]), len(self.record_layers), 0),
                                           dtype=np.int32)

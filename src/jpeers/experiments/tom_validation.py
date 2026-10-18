@@ -2,11 +2,18 @@
 
 Before asking whether agents model each other, check that the lens can see ToM content
 at all. For false-belief items the protagonist's belief (e.g. "box") differs from the
-world state (e.g. "basket"). At the answer position we read the lens rank of both words
-across the workspace band:
+world state (e.g. "basket"). We read the lens rank of the belief word and the decoy
+(reality on false-belief items, the stale answer on controls) at three sites:
 
-    belief_rank < true_rank on false-belief items  -> J-space represents the belief
-    accuracy                                       -> does the model answer correctly
+    story_end  last story token: the story is read, the question not yet asked
+    question   the question tokens
+    answer     the decision position after "Answer:" (also read with the logit-lens and
+               output baselines)
+
+At ``answer`` the model is about to say its answer, so J-space agreeing with the answer
+there shows little: ``beats_answer`` close to ``beats_answer_output`` means the J-lens
+only restates the output. Belief tracking in J-space predicts ``beats_story_end`` and
+``beats_question`` > 0.5 on false-belief items *and* controls.
 
 ``framing: agents`` runs the same items rewritten as LLM agents sharing a workspace.
 Hi-ToM items add higher-order (2nd-4th order) beliefs.
@@ -33,7 +40,7 @@ from jpeers.experiments.common import (
     write_summary,
 )
 from jpeers.harness import TurnRecord
-from jpeers.schemas import GenerateRequest
+from jpeers.schemas import GenerateRequest, SpanQuery
 from jpeers.trace import JSpaceTrace
 
 logger = logging.getLogger(__name__)
@@ -41,13 +48,23 @@ logger = logging.getLogger(__name__)
 SYSTEM = "Read the story and answer the question with a single word."
 
 
+SITES = ("story_end", "question", "answer")
+
+
 def _ask(endpoint, writer, rec_cfg, story: str, question: str, watch: list[str], ivs,
          max_new_tokens: int, tag: str, extra: dict):
+    # Record the story, the question and the answer prefill. Only at the answer position
+    # is the model about to say the belief word; the earlier sites test whether J-space
+    # holds the belief before the model is asked for it.
+    spans = [SpanQuery(label="story", text=story), SpanQuery(label="question", text=question),
+             SpanQuery(label="answer", text="Answer:")]
     req = GenerateRequest(
         messages=[{"role": "system", "content": SYSTEM},
                   {"role": "user", "content": f"{story}\n\nQuestion: {question}"}],
-        assistant_prefill="Answer:", max_new_tokens=max_new_tokens,
-        record=record_spec(rec_cfg, watch, scope="last"), interventions=ivs)
+        assistant_prefill="Answer:", max_new_tokens=max_new_tokens, spans=spans,
+        record=record_spec(rec_cfg, watch, scope="spans",
+                           labels=["story", "question", "answer"]),
+        interventions=ivs)
     resp = endpoint.generate(req)
     trace = JSpaceTrace.from_response(resp)
     writer.write(TurnRecord(index=0, agent="subject", endpoint=endpoint.name, model=resp.model,
@@ -56,6 +73,28 @@ def _ask(endpoint, writer, rec_cfg, story: str, question: str, watch: list[str],
                             interventions=[iv.model_dump() for iv in ivs], trace_file=None,
                             tag=tag, messages=req.messages, extra=extra), trace)
     return resp, trace
+
+
+def _best(trace: JSpaceTrace, word: str, mask: np.ndarray, lens: str = "jlens"
+          ) -> int | None:
+    ranks = word_ranks(trace, word, mask, lens)
+    if ranks.size == 0 or np.isnan(ranks.astype(float)).all():
+        return None
+    return int(np.nanmin(ranks))
+
+
+def _site_masks(trace: JSpaceTrace, last: np.ndarray) -> dict[str, np.ndarray]:
+    """story_end: last story token (story read, question not yet asked); question: the
+    question tokens; answer: the decision position after the "Answer:" prefill."""
+    story = trace.spans.get("story", [])
+    story_end = trace.mask((story[-1][1] - 1, story[-1][1])) if story else last & False
+    return {"story_end": story_end, "question": trace.mask("question"), "answer": last}
+
+
+def _beats(trace: JSpaceTrace, it, mask: np.ndarray, lens: str) -> bool | None:
+    """Does the belief word outrank the decoy at this site (None if not readable)?"""
+    b, d = _best(trace, it.belief_answer, mask, lens), _best(trace, it.decoy, mask, lens)
+    return None if b is None or d is None else b < d
 
 
 def run(cfg: dict) -> dict:
@@ -76,15 +115,19 @@ def run(cfg: dict) -> dict:
                 resp, trace = _ask(endpoint, writer, cfg, it.story, it.question, watch, ivs,
                                    max_new, f"{cond}/{framing}", {"item": it.id})
                 last = trace.mask((resp.prompt_len - 1, resp.prompt_len))
-                b = int(word_ranks(trace, it.belief_answer, last).min())
-                t = int(word_ranks(trace, it.true_answer, last).min())
-                d = int(word_ranks(trace, it.decoy, last).min())
-                correct = it.belief_answer.lower() in resp.text.lower()
-                per_item.append({"condition": cond, "framing": framing, "item": it.id,
-                                 "false_belief": not it.control, "belief_rank": b,
-                                 "true_rank": t, "decoy_rank": d,
-                                 "belief_beats_decoy": b < d, "correct": correct,
-                                 "answer": resp.text})
+                b = _best(trace, it.belief_answer, last)
+                t = _best(trace, it.true_answer, last)
+                d = _best(trace, it.decoy, last)
+                row = {"condition": cond, "framing": framing, "item": it.id,
+                       "false_belief": not it.control, "belief_rank": b,
+                       "true_rank": t, "decoy_rank": d,
+                       "correct": it.belief_answer.lower() in resp.text.lower(),
+                       "answer": resp.text}
+                for site, mask in _site_masks(trace, last).items():
+                    row[f"beats_{site}"] = _beats(trace, it, mask, "jlens")
+                for lens in ("logit", "output"):
+                    row[f"beats_answer_{lens}"] = _beats(trace, it, last, lens)
+                per_item.append(row)
 
         if cfg.get("include_hitom", False):
             for it in load_hitom(orders=tuple(cfg.get("hitom_orders", [0, 1, 2])),
@@ -101,26 +144,31 @@ def run(cfg: dict) -> dict:
                 last = trace.mask((resp.prompt_len - 1, resp.prompt_len))
                 per_item.append({"condition": cond, "framing": f"hitom-o{it.order}",
                                  "item": it.id, "false_belief": it.order > 0,
-                                 "belief_rank": int(word_ranks(trace, noun, last).min()),
-                                 "true_rank": None, "belief_beats_decoy": None,
+                                 "belief_rank": _best(trace, noun, last), "true_rank": None,
                                  "correct": it.answer.replace("_", " ") in resp.text.replace(
                                      "_", " "), "answer": resp.text})
+
+    def ranks(rs: list[dict], key: str) -> np.ndarray:
+        return np.array([r[key] for r in rs if r[key] is not None], dtype=float)
 
     groups: dict[tuple, list[dict]] = {}
     for r in per_item:
         groups.setdefault((r["condition"], r["framing"], r["false_belief"]), []).append(r)
     for (cond, framing, fb), rs in sorted(groups.items()):
-        b = np.array([r["belief_rank"] for r in rs])
+        b = ranks(rs, "belief_rank")
         row = {"condition": cond, "framing": framing,
                "items": "false-belief" if fb else "true-belief control", "n": len(rs),
                "accuracy": mean(r["correct"] for r in rs),
                "belief_mrr": rank_summary(b)["mrr"], "belief_hit@10": rank_summary(b)["hit@10"]}
         if rs[0]["true_rank"] is not None:
-            t = np.array([r["true_rank"] for r in rs])
-            row["true_mrr"] = rank_summary(t)["mrr"]
-            row["decoy_mrr"] = rank_summary(np.array([r["decoy_rank"] for r in rs]))["mrr"]
-            row["belief_beats_decoy"] = mean(r["belief_beats_decoy"] for r in rs)
+            row["true_mrr"] = rank_summary(ranks(rs, "true_rank"))["mrr"]
+            row["decoy_mrr"] = rank_summary(ranks(rs, "decoy_rank"))["mrr"]
+            # belief beats decoy at each site; real belief tracking predicts > 0.5 on
+            # false-belief items AND controls, and already at story_end / question
+            for key in [*(f"beats_{s}" for s in SITES), "beats_answer_logit",
+                        "beats_answer_output"]:
+                row[key] = mean(r[key] for r in rs if r[key] is not None)
         rows.append(row)
     return write_summary(writer.dir, {"rows": rows, "items": per_item,
                                       "hitom_skipped_not_single_token": skipped}, rows,
-                         "ToM validation: J-lens readout of beliefs at the answer position")
+                         "ToM validation: belief vs decoy before and at the answer")

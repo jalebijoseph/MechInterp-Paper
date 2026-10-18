@@ -35,26 +35,78 @@ def content_words(text: str, *, min_len: int = 3) -> set[str]:
 # --------------------------------------------------------------------------- watch-word ranks
 
 
-def word_ranks(trace: JSpaceTrace, word: str, mask: np.ndarray | None = None) -> np.ndarray:
-    """Best rank over band layers at each masked position -> ``[n_positions]``."""
-    ranks = trace.watch_ranks[:, :, trace.watch_index(word)]
+LENSES = ("jlens", "logit", "output")
+
+
+def word_ranks(trace: JSpaceTrace, word: str, mask: np.ndarray | None = None,
+               lens: str = "jlens") -> np.ndarray:
+    """Rank of ``word`` at each masked position -> ``[n_positions]``.
+
+    ``lens``: ``jlens`` (best over band layers), ``logit`` (the same layers read without
+    the Jacobian; baseline) or ``output`` (the model's own next-token prediction there;
+    baseline). Baselines missing from the trace give NaN ranks."""
+    w = trace.watch_index(word)
+    if lens == "output":
+        if trace.output_ranks is None:
+            return np.full(int(mask.sum()) if mask is not None else len(trace.positions),
+                           np.nan)
+        ranks = trace.output_ranks[:, w]
+        return ranks[mask] if mask is not None else ranks
+    arr = trace.watch_ranks if lens == "jlens" else trace.watch_ranks_logit
+    if arr is None:
+        return np.full(int(mask.sum()) if mask is not None else len(trace.positions), np.nan)
+    ranks = arr[:, :, w]
     if mask is not None:
         ranks = ranks[mask]
     return ranks.min(axis=1) if ranks.size else np.zeros(0, dtype=int)
 
 
-def group_ranks(trace: JSpaceTrace, words: Iterable[str], mask: np.ndarray | None = None
-                ) -> np.ndarray:
+def group_ranks(trace: JSpaceTrace, words: Iterable[str], mask: np.ndarray | None = None,
+                lens: str = "jlens") -> np.ndarray:
     """Best rank of any word in ``words`` at each masked position."""
     words = [w for w in words if w in trace.watch]
     if not words:
         return np.zeros(0, dtype=int)
-    return np.min(np.stack([word_ranks(trace, w, mask) for w in words]), axis=0)
+    return np.min(np.stack([word_ranks(trace, w, mask, lens) for w in words]), axis=0)
+
+
+def upcoming_mask(trace: JSpaceTrace, words: Iterable[str], horizon: int = 3) -> np.ndarray:
+    """``[P]`` bool: positions where one of ``words`` is among the next ``horizon`` actual
+    tokens (prompt or generated). There, a high readout may just be the model about to
+    say the word; ``mask & ~upcoming_mask(...)`` keeps the positions where it is not."""
+    forms = {trace.vocab[i] for w in words if w in trace.watch
+             for i in trace.watch_ids[trace.watch_index(w)] if i in trace.vocab}
+    toks = trace.tokens
+    out = np.zeros(len(trace.positions), dtype=bool)
+    for j, p in enumerate(trace.positions):
+        out[j] = any(t in forms for t in toks[p + 1:p + 1 + horizon])
+    return out
+
+
+def lens_mrrs(trace: JSpaceTrace, words: Iterable[str], mask: np.ndarray, prefix: str,
+              horizon: int = 3) -> dict[str, float]:
+    """MRR of the best of ``words`` over ``mask`` under every readout, plus the J-lens
+    MRR restricted to positions where none of the words is about to be said:
+
+        {prefix}           J-lens
+        {prefix}_logit     logit-lens baseline (same layers, no Jacobian)
+        {prefix}_output    output baseline (the model's own next-token prediction)
+        {prefix}_beyond    J-lens, excluding positions where a word is upcoming
+
+    The J-lens shows something beyond the output only if ``{prefix}`` clearly exceeds
+    ``{prefix}_output`` and ``{prefix}_beyond`` stays well above chance."""
+    words = list(words)
+    beyond = mask & ~upcoming_mask(trace, words, horizon)
+    out = {prefix: rank_summary(group_ranks(trace, words, mask))["mrr"]}
+    for lens in ("logit", "output"):
+        out[f"{prefix}_{lens}"] = rank_summary(group_ranks(trace, words, mask, lens))["mrr"]
+    out[f"{prefix}_beyond"] = rank_summary(group_ranks(trace, words, beyond))["mrr"]
+    return out
 
 
 def rank_summary(ranks: np.ndarray, *, thresholds=(0, 9, 99)) -> dict[str, float]:
-    """Summaries of a per-position rank vector."""
-    if ranks.size == 0:
+    """Summaries of a per-position rank vector (NaN ranks = baseline not recorded)."""
+    if ranks.size == 0 or np.isnan(ranks.astype(float)).all():
         return {"n": 0, "best": float("nan"), "mrr": float("nan"),
                 **{f"hit@{t + 1}": float("nan") for t in thresholds}}
     out = {"n": int(ranks.size), "best": int(ranks.min()),

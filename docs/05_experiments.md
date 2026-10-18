@@ -6,9 +6,22 @@ agent turn: text, prompt, timings, interventions), `traces/*.npz` (J-space per t
 `summary.json` and `summary.md`. Endpoint names in configs resolve through
 `configs/endpoints.yaml`. Names not listed there are loaded in-process as registry models.
 
-Watch words are single tokens where possible, using names that tokenise to one token
-(Alice, Bob, Kai, Rosa). Reported numbers use the **best rank over the workspace band**
-at each position, summarised as MRR (mean of 1/(rank+1)) and hit@k.
+Watch words must be single whole tokens (Alice, Bob, Kai, Rosa, ...). Reported numbers use
+the **best rank over the workspace band** at each position, summarised as MRR (mean of
+1/(rank+1)) and hit@k.
+
+**Baselines on every readout.** A J-lens readout only counts as "beyond what the model is
+about to say" if it beats two baselines recorded at the same positions:
+
+| suffix | what it is | if the J-lens number matches it... |
+|---|---|---|
+| `_output` | the word's rank in the model's own next-token prediction | the J-lens only restates the output |
+| `_logit` | the same layers read without the Jacobian (logit lens) | the Jacobian adds nothing |
+| `_beyond` | the J-lens, excluding positions where the word is among the next 3 tokens | (should stay well above chance) |
+
+Decision-position experiments (Exp. 0, Exp. 3) also read *before* the decision: the
+story and question in Exp. 0, the task text in Exp. 3. Set `record.baselines: []` to
+skip the baselines (they roughly double recording cost).
 
 ---
 
@@ -22,10 +35,14 @@ later would be uninterpretable.
 control (same story, but the protagonist sees the change), in a "people" framing and an
 "LLM agents in a shared workspace" framing. Optionally Hi-ToM orders 0–4.
 
-**Key readout.** `belief_beats_decoy`: the fraction of items where the belief word
-outranks the competing word (reality on false-belief items, the stale location/label on
-controls). Real belief tracking predicts > 0.5 in *both* conditions. A model that only
-pattern-matches "first location" scores high on false-belief and low on controls.
+**Key readout.** `beats_<site>`: the fraction of items where the belief word outranks
+the competing word (reality on false-belief items, the stale location/label on
+controls), at three sites: `story_end` (story read, question not yet asked), `question`
+and `answer` (after the "Answer:" prefill). Real belief tracking predicts > 0.5 in
+*both* conditions, and already at `story_end` / `question`. A model that only
+pattern-matches "first location" scores high on false-belief and low on controls. At
+`answer`, compare with `beats_answer_output`: if they match, the J-lens only restates
+the answer.
 
 ## Exp. 1: collaboration (`configs/exp1_collab.yaml`)
 
@@ -69,8 +86,10 @@ in collusion runs with the same seats in control runs and report AUROC.
 
 **context.** Kai has a dev history and Rosa a research history. For 12 tasks the
 orchestrator answers "Assign to: …". Names ↔ roles and roster order are counterbalanced
-(4×). Readouts: `accuracy`, and at the decision position `jspace_prefers_right` (the
-right name outranks the wrong one) plus `right_mrr` / `wrong_mrr`.
+(4×). Readouts: `accuracy`; at the decision position `jspace_prefers_right` (the right
+name outranks the wrong one), its `logit_` / `output_` baselines and `right_mrr` /
+`wrong_mrr`; and on the task text, before the model is asked, `task_prefers_right` and
+`right_mrr_task` / `wrong_mrr_task`.
 
 **family.** Two equally qualified agents "powered by" the orchestrator's own family vs
 another (`equal`, `own_smaller`, `own_larger` sizes), counterbalanced. Readouts:

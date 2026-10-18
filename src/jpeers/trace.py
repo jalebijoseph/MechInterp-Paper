@@ -7,6 +7,9 @@ Arrays (P = recorded positions, L = recorded layers, K = top-k, W = watch words)
     topk_logits   [P, L, K]  their lens logits
     watch_ranks   [P, L, W]  0-based full-vocabulary rank of each watch word (best over
                              its tokenizations); 0 means the word is the lens top-1
+    watch_ranks_logit [P, L, W]  same, read with the plain logit lens (baseline; optional)
+    output_ranks  [P, W]     same, in the model's own next-token prediction at that
+                             position (baseline; optional)
     model_top1    [P]        the model's own next-token argmax (optional)
 """
 
@@ -18,7 +21,8 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-ARRAY_KEYS = ("positions", "topk_ids", "topk_logits", "watch_ranks", "model_top1")
+ARRAY_KEYS = ("positions", "topk_ids", "topk_logits", "watch_ranks", "watch_ranks_logit",
+              "output_ranks", "model_top1")
 
 
 @dataclass
@@ -27,10 +31,13 @@ class JSpaceTrace:
     topk_ids: np.ndarray
     topk_logits: np.ndarray
     watch_ranks: np.ndarray
+    watch_ranks_logit: np.ndarray | None = None
+    output_ranks: np.ndarray | None = None
     model_top1: np.ndarray | None = None
     # metadata copied from the response
     layers: list[int] = field(default_factory=list)
     watch: list[str] = field(default_factory=list)
+    watch_ids: list[list[int]] = field(default_factory=list)
     tokens: list[str] = field(default_factory=list)
     spans: dict[str, list[tuple[int, int]]] = field(default_factory=dict)
     vocab: dict[int, str] = field(default_factory=dict)
@@ -59,6 +66,7 @@ class JSpaceTrace:
             **{k: arrays.get(k) for k in ARRAY_KEYS},
             layers=list(r["layers"]),
             watch=list(r["watch"]),
+            watch_ids=[list(ids) for ids in r.get("watch_ids", [])],
             tokens=list(r["tokens"]),
             spans=spans,
             vocab={int(k): v for k, v in r["vocab"].items()},
@@ -68,7 +76,8 @@ class JSpaceTrace:
     def save(self, path: str) -> None:
         import json
 
-        meta = {"layers": self.layers, "watch": self.watch, "tokens": self.tokens,
+        meta = {"layers": self.layers, "watch": self.watch, "watch_ids": self.watch_ids,
+                "tokens": self.tokens,
                 "spans": self.spans, "vocab": {str(k): v for k, v in self.vocab.items()},
                 "prompt_len": self.prompt_len}
         np.savez_compressed(path, **self.arrays(), meta=np.array(json.dumps(meta)))
@@ -82,6 +91,7 @@ class JSpaceTrace:
         return cls(
             **{k: (z[k] if k in z.files else None) for k in ARRAY_KEYS},
             layers=meta["layers"], watch=meta["watch"], tokens=meta["tokens"],
+            watch_ids=meta.get("watch_ids", []),  # absent in traces saved before baselines
             spans={k: [tuple(s) for s in v] for k, v in meta["spans"].items()},
             vocab={int(k): v for k, v in meta["vocab"].items()},
             prompt_len=meta["prompt_len"],
@@ -139,7 +149,8 @@ def encode_arrays(arrays: dict[str, np.ndarray], encoding: str) -> dict | str:
 def decode_arrays(payload: dict | str, encoding: str) -> dict[str, np.ndarray]:
     if encoding == "json":
         dtypes = {"positions": np.int64, "topk_ids": np.int64, "topk_logits": np.float32,
-                  "watch_ranks": np.int64, "model_top1": np.int64}
+                  "watch_ranks": np.int64, "watch_ranks_logit": np.int64,
+                  "output_ranks": np.int64, "model_top1": np.int64}
         return {k: np.asarray(v, dtype=dtypes.get(k)) for k, v in payload.items()}
     if encoding == "npz_b64":
         z = np.load(io.BytesIO(base64.b64decode(payload)), allow_pickle=False)
