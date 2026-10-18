@@ -23,9 +23,10 @@ filled in by :func:`resolve` from the experiment's context.
                          scale the top-10 J-space component by 0.5 / 2.0
     suppress_peer        project out the J-lens vectors of the peer's name
     suppress_words       project out the J-lens vectors of ``{words}``
-    steer_suspicion      add +0.01 x median residual norm (summed over the band) along "suspicion"/"dishonest"
+    steer_suspicion      add +0.005 x median residual norm (at every band layer) along "suspicion"/"dishonest"
     steer_trust          add +0.01 along "trustworthy"/"reliable"
     steer_teamwork       add +0.01 along "cooperation"/"joint"
+                         (strengths: STEER_STRENGTH, from scripts/steer_sweep.py)
     swap_peer_self       swap the J-lens coordinates of the peer's and the agent's names
 
 Steering words are never measured words (tests/test_watch_words.py checks this against
@@ -44,6 +45,14 @@ STEER_WORDS = {
     "suspicion": ["suspicion", "dishonest"],
     "trust": ["trustworthy", "reliable"],
     "teamwork": ["cooperation", "joint"],
+}
+
+# x median residual norm, added at every band layer. From scripts/steer_sweep.py on
+# Qwen3-1.7B; re-sweep per model (the usable value scales with model and band width).
+STEER_STRENGTH = {
+    "suspicion": 0.005,  # 0.01 makes the reviewer echo the peer's draft
+    "trust": 0.01,
+    "teamwork": 0.01,
 }
 
 
@@ -75,7 +84,8 @@ PRESETS: dict[str, list[dict]] = {
                                        positions=_ALL).model_dump()],
     "suppress_words": [InterventionSpec(kind="ablate_tokens", tokens=["{words}"],
                                         positions=_ALL).model_dump()],
-    **{f"steer_{name}": [InterventionSpec(kind="steer", tokens=words, strength=0.01,
+    **{f"steer_{name}": [InterventionSpec(kind="steer", tokens=words,
+                                          strength=STEER_STRENGTH[name],
                                           positions=_ALL).model_dump()]
        for name, words in STEER_WORDS.items()},
     "swap_peer_self": [InterventionSpec(kind="swap", source="{self}", target="{peer}",

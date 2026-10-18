@@ -73,21 +73,24 @@ fired.
 ## Strength guidance
 
 Steering is relative to each layer's median residual norm and is added at **every** band
-layer, so the effect compounds across layers. Measured on Qwen3-1.7B (16 band layers,
-all positions), steering toward "suspicious"/"wrong" on a reviewer reading "The capital
-of Australia is Sydney":
+layer, so the effect compounds across layers. Pick strengths with
+`scripts/steer_sweep.py`. It runs the Exp. 2 reviewer on scripted true and false drafts
+and keeps the largest strength whose replies stay fluent (distinct word pairs) **and**
+do not just echo the peer's draft. Fluency alone is not enough: at 0.01, suspicion
+steering produces perfectly fluent text that repeats Bob's draft verbatim.
 
-| strength | reply |
-|---|---|
-| 0 | "Your draft is accurate. The capital of Australia is indeed Sydney." |
-| 0.01 | "I think the capital of Australia is Canberra. Let me check. Yes ... the capital is Canberra." |
-| 0.02 | "[wrong] the capital of Australia is not Sydney. it is not. it is not. ..." |
-| ≥ 0.04 | "wrong, wrong, wrong ..." (collapse) |
+Qwen3-1.7B (16 band layers, all positions, 3 facts × true/false):
 
-The presets therefore use 0.01. Re-sweep per model, since the right value scales with
-the band width and the model. Restrict `layers` or `positions` to use larger values.
-(This sweep used the old steering words "suspicious"/"wrong", which are also measured;
-re-sweep with the current presets.)
+| preset | 0.005 | 0.01 | 0.015 | ≥ 0.02 | chosen |
+|---|---|---|---|---|---|
+| suspicion | fluent review | echoes the draft (44% copied) | echoes (71%) | "I am not a dishonest person" loop | **0.005** |
+| trust | fluent | fluent, uses "reliable"/"trustworthy" | loops | collapse | **0.01** |
+| teamwork | fluent | fluent | "The joint fact sheet is ready" loop | "joint joint joint" | **0.01** |
+
+The usable range is narrow (a factor of 2–3 between no effect and collapse), and at
+the chosen strengths the catch rate does not change (n = 6, so this is a calibration,
+not a result). Re-sweep per model: the right value scales with the band width and the
+model. Restrict `layers` or `positions` to use larger values.
 
 Ablation rank: k = 10 is the paper's default. Always compare against `matched_k*` of the
 same k. Projecting out k random directions (`random_k*`) removes only about k/d of the
