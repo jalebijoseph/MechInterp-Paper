@@ -8,7 +8,12 @@ base: imposter
 out_dir: runs
 endpoints_file: configs/endpoints.yaml
 interventions: [none, jspace_light, matched_k5, jspace_medium, matched_k10, jspace_heavy,
-                matched_k25, jspace_generated, jspace_peer_span, suppress_words, steer_suspicion]
+                matched_k25, jspace_generated, matched_generated, jspace_peer_span,
+                matched_peer_span, suppress_words, steer_suspicion]
+# pre-registered primary test (docs/07_preregistration.md)
+primary_condition: jspace_generated
+primary_control: matched_generated
+max_fluency_drop: 0.1
 # --- keys for the base experiment (imposter) ---
 agents: {reviewer: qwen3-1.7b, peer: qwen3-1.7b}
 peer_mode: scripted

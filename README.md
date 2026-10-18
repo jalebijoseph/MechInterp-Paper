@@ -38,6 +38,7 @@ tests/               CPU tests on a tiny model with a freshly fitted lens
 4. [Experimental harness](docs/04_harness.md)
 5. [Experiments 0-4](docs/05_experiments.md) and [pilot results](docs/results_pilot.md)
 6. [Removing and editing J-space during generation](docs/06_interventions.md)
+7. [Pre-registration: primary metrics, tests, sample sizes](docs/07_preregistration.md)
 
 [Deployment on Azure AI Foundry and Google Cloud](docs/deployment.md)
 

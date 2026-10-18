@@ -38,6 +38,8 @@ from __future__ import annotations
 from jpeers.analysis import (
     bag_similarity,
     content_uptake,
+    copies,
+    fluency,
     jspace_bag,
     lens_mrrs,
     paired_permutation_test,
@@ -132,8 +134,10 @@ def run(cfg: dict) -> dict:
                             **lens_mrrs(trace, task[other]["keywords"], gen, "partner_kw_mrr"),
                             **lens_mrrs(trace, task[role]["keywords"], gen, "own_kw_mrr"),
                             "text_mentions_partner": partner.lower() in rec.text.lower(),
+                            "fluency": fluency(rec.text),
                         }
                         if peer_texts:
+                            row["copies_peer"] = copies(rec.text, peer_texts[-1])
                             row["uptake"] = content_uptake(trace, gen, peer_texts[-1],
                                                            own_ctx)["uptake"]
                             row.update(lens_mrrs(trace, [partner], trace.mask("peer_last"),
@@ -148,7 +152,8 @@ def run(cfg: dict) -> dict:
     metrics = [f"{base}{sfx}" for base in ("partner_name_mrr", "partner_name_mrr_reading",
                                            "team_mrr", "partner_kw_mrr", "own_kw_mrr")
                for sfx in ("", "_logit", "_output", "_beyond")]
-    metrics += ["uptake", "cross_agent_cosine", "text_mentions_partner"]
+    metrics += ["uptake", "cross_agent_cosine", "text_mentions_partner", "fluency",
+                "copies_peer"]
     rows = []
     keys = sorted({(r["condition"], r["framing"]) for r in per_turn})
     for cond, framing in keys:

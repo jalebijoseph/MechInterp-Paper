@@ -16,7 +16,10 @@ filled in by :func:`resolve` from the experiment's context.
                          far less than J-space ablation; kept for comparison only)
     jspace_peer_span     remove the top-10 J-lens vectors only while reading the peer's
                          last message (does the model need J-space to *model the peer*?)
-    jspace_generated     remove the top-10 only on generated tokens
+    jspace_generated     remove the top-10 only on generated tokens (Exp. 4 main condition)
+    matched_generated / matched_peer_span
+                         size-matched controls on the same positions as jspace_generated /
+                         jspace_peer_span
     jspace_early / jspace_late
                          top-10 removal restricted to the early / late workspace band
     halve_jspace / double_jspace
@@ -74,6 +77,13 @@ PRESETS: dict[str, list[dict]] = {
     "jspace_peer_span": [_topk(10, positions=PositionSelector(
         scope="spans", labels=["peer_last"])).model_dump()],
     "jspace_generated": [_topk(10, positions=PositionSelector(scope="generated")).model_dump()],
+    # size- and position-matched controls for the two Exp. 4 conditions
+    "matched_generated": [InterventionSpec(
+        kind="random_matched", k=10,
+        positions=PositionSelector(scope="generated")).model_dump()],
+    "matched_peer_span": [InterventionSpec(
+        kind="random_matched", k=10,
+        positions=PositionSelector(scope="spans", labels=["peer_last"])).model_dump()],
     "jspace_early": [_topk(10, layers="early").model_dump()],
     "jspace_late": [_topk(10, layers="late").model_dump()],
     "halve_jspace": [InterventionSpec(kind="scale_jspace", k=10, strength=0.5,

@@ -7,13 +7,21 @@ condition set pairs every J-space ablation with a size-matched random control
 separates "J-space content matters" from "any edit this large hurts":
 
     none, jspace_light, matched_k5, jspace_medium, matched_k10, jspace_heavy, matched_k25,
-    jspace_generated, jspace_peer_span
+    jspace_generated, matched_generated, jspace_peer_span, matched_peer_span
 
 ``jspace_generated`` (remove J-space only while writing) is the main Exp. 4 condition;
-``jspace_peer_span`` (only while reading the peer) is its comparison.
+``jspace_peer_span`` (only while reading the peer) is its comparison. Each has a control
+that edits the same positions by the same amount.
+
+Pre-registered primary test (docs/07_preregistration.md), for ``base: imposter``: on
+false claims, ``catch_score`` under ``primary_condition`` minus ``primary_control``,
+paired by (source, fact) with a sign-flip test. ``fluency`` and ``copies_peer`` are
+paired the same way: "still communicates" needs catch_score to hold *and* fluency to
+stay within ``max_fluency_drop`` of the control.
 
 Config: ``base`` plus that experiment's own keys; ``interventions`` overrides the list
-(names from :data:`jpeers.interventions.PRESETS`, or ``{name: [raw spec dicts]}``).
+(names from :data:`jpeers.interventions.PRESETS`, or ``{name: [raw spec dicts]}``);
+``primary_condition`` / ``primary_control`` / ``max_fluency_drop``.
 """
 
 from __future__ import annotations
@@ -22,10 +30,32 @@ import datetime as _dt
 import importlib
 from pathlib import Path
 
-from jpeers.experiments.common import write_summary
+from jpeers.analysis import paired_permutation_test
+from jpeers.experiments.common import mean, write_summary
 
 DEFAULT_CONDITIONS = ["none", "jspace_light", "matched_k5", "jspace_medium", "matched_k10",
-                      "jspace_heavy", "matched_k25", "jspace_generated", "jspace_peer_span"]
+                      "jspace_heavy", "matched_k25", "jspace_generated", "matched_generated",
+                      "jspace_peer_span", "matched_peer_span"]
+
+
+def primary_imposter(live: list[dict], condition: str, control: str,
+                     max_fluency_drop: float) -> dict:
+    """Pre-registered Exp. 4 test on Exp. 2 rows (see module docstring)."""
+    def by_unit(cond: str) -> dict[tuple, dict]:
+        return {(r["source"], r["item"]): r for r in live
+                if r["condition"] == cond and r["claim"] == "false" and r["claim_in_draft"]}
+
+    a, b = by_unit(condition), by_unit(control)
+    units = sorted(set(a) & set(b))
+    out: dict = {"condition": condition, "control": control, "n_pairs": len(units)}
+    for m in ("catch_score", "fluency", "copies_peer"):
+        xa, xb = [float(a[u][m]) for u in units], [float(b[u][m]) for u in units]
+        out[m] = {"condition": mean(xa), "control": mean(xb),
+                  "diff": mean(x - y for x, y in zip(xa, xb)),
+                  "p": paired_permutation_test(xa, xb)}
+    out["fluency_ok"] = (bool(units) and
+                         out["fluency"]["diff"] >= -max_fluency_drop)
+    return out
 
 
 def run(cfg: dict) -> dict:
@@ -56,5 +86,11 @@ def run(cfg: dict) -> dict:
                   if k != "n" and numeric(v) and numeric(b.get(k))})
         deltas.append(d)
 
-    return write_summary(Path(summary["run_dir"]), {**summary, "deltas_vs_none": deltas},
+    extra = {"deltas_vs_none": deltas}
+    if base == "imposter" and summary.get("live"):
+        extra["primary"] = primary_imposter(
+            summary["live"], cfg.get("primary_condition", "jspace_generated"),
+            cfg.get("primary_control", "matched_generated"),
+            cfg.get("max_fluency_drop", 0.1))
+    return write_summary(Path(summary["run_dir"]), {**summary, **extra},
                          rows + deltas, f"Exp. 4 ablation of {base}: metrics and deltas vs none")

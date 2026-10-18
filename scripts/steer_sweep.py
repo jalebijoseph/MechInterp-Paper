@@ -26,10 +26,9 @@ from __future__ import annotations
 import argparse
 import datetime as _dt
 import json
-import re
 from pathlib import Path
 
-from jpeers.analysis import group_ranks, mentions, rank_summary
+from jpeers.analysis import copies, fluency, group_ranks, mentions, rank_summary
 from jpeers.benchmarks import load_task_bank
 from jpeers.client import EndpointPool
 from jpeers.experiments.collab import TEAM_WORDS
@@ -40,25 +39,6 @@ from jpeers.interventions import STEER_WORDS
 from jpeers.schemas import InterventionSpec, PositionSelector, RecordSpec
 
 STRENGTHS = [0.0, 0.005, 0.01, 0.015, 0.02, 0.03, 0.04]
-
-
-def _words(text: str) -> list[str]:
-    return re.findall(r"[A-Za-z0-9']+", text.lower())
-
-
-def fluency(text: str) -> float:
-    words = _words(text)
-    pairs = list(zip(words, words[1:]))
-    return len(set(pairs)) / len(pairs) if len(pairs) >= 4 else 0.0
-
-
-def copies(text: str, source: str, n: int = 4) -> float:
-    """Share of the reply's word n-grams that appear in ``source`` (the peer's message).
-    Fluent text can still be a broken reply: echoing the peer's draft scores 1."""
-    w, s = _words(text), _words(source)
-    grams = [tuple(w[i:i + n]) for i in range(len(w) - n + 1)]
-    src = {tuple(s[i:i + n]) for i in range(len(s) - n + 1)}
-    return sum(g in src for g in grams) / len(grams) if grams else 0.0
 
 
 def measured_lexicon(preset: str, bank: dict) -> list[str]:
