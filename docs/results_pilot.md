@@ -7,6 +7,20 @@ calibrate settings. They are **not** evidence for or against the hypotheses: 1.7
 below the scale the J-space paper studied, and most cells have n = 10–48. Raw data:
 `runs/*/pilot*/`.
 
+> **Superseded measurements.** These pilots ran before three fixes, so the affected
+> numbers below should not be compared with new runs:
+> * Watch words were scored by token *fragments* when a word split into several tokens
+>   (e.g. "suspicious" also scored as `s`, "together" as `to`, "Qwen" as `Q`), and some
+>   true/false answers shared a token (`1969`/`1972` both `1`). This affects the
+>   suspicion, team, partner-keyword, family-name and true/false-fact MRRs.
+> * Steering words ("suspicious"/"wrong", "trust") were also measured words, so the
+>   steering rows' suspicion MRRs rise by construction.
+> * The random-ablation control removed far less of the state than J-space ablation.
+>   Exp. 4 now uses a size-matched control (`matched_k*`).
+>
+> Unaffected: behavioural accuracy and reply metrics, and readouts of single-token words
+> (Alice, Bob, Kai, Rosa, Exp. 0 locations and contents).
+
 MRR = mean over positions of 1/(1 + best rank across band layers). Rank 0 means the word
 is the lens top-1 out of ~152k vocabulary entries.
 

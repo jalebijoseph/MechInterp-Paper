@@ -2,11 +2,15 @@
 
 Runs ``base`` (collab | imposter | peer_selection | tom_validation) once per intervention
 condition and reports each metric's change against the unedited baseline. The default
-condition set pairs every J-space ablation with a random-direction control of the same
-rank, which is what separates "J-space matters" from "any k-dim edit hurts":
+condition set pairs every J-space ablation with a size-matched random control
+(``matched_k*``: the same amount removed, along a random direction), which is what
+separates "J-space content matters" from "any edit this large hurts":
 
-    none, jspace_light, random_k5, jspace_medium, random_k10, jspace_heavy, random_k25,
-    jspace_peer_span
+    none, jspace_light, matched_k5, jspace_medium, matched_k10, jspace_heavy, matched_k25,
+    jspace_generated, jspace_peer_span
+
+``jspace_generated`` (remove J-space only while writing) is the main Exp. 4 condition;
+``jspace_peer_span`` (only while reading the peer) is its comparison.
 
 Config: ``base`` plus that experiment's own keys; ``interventions`` overrides the list
 (names from :data:`jpeers.interventions.PRESETS`, or ``{name: [raw spec dicts]}``).
@@ -20,8 +24,8 @@ from pathlib import Path
 
 from jpeers.experiments.common import write_summary
 
-DEFAULT_CONDITIONS = ["none", "jspace_light", "random_k5", "jspace_medium", "random_k10",
-                      "jspace_heavy", "random_k25", "jspace_peer_span"]
+DEFAULT_CONDITIONS = ["none", "jspace_light", "matched_k5", "jspace_medium", "matched_k10",
+                      "jspace_heavy", "matched_k25", "jspace_generated", "jspace_peer_span"]
 
 
 def run(cfg: dict) -> dict:

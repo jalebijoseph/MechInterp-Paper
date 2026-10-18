@@ -55,7 +55,7 @@ _OBJECTS = ["ball", "apple", "key", "coin", "book", "ring", "watch", "pen"]
 _FOLDERS = ["archive", "drafts", "backup", "staging", "reports", "inbox", "exports", "scratch"]
 _FILES = ["report", "dataset", "config", "notebook", "summary", "invoice", "schema", "model"]
 _LABEL_CONTENT = [("chocolate", "popcorn"), ("cookies", "buttons"), ("candy", "pencils"),
-                  ("tea", "screws"), ("cereal", "marbles"), ("sugar", "sand")]
+                  ("tea", "screws"), ("cereal", "nails"), ("sugar", "sand")]
 
 
 def false_belief_items(n: int = 40, *, framing: str = "people", seed: int = 0,

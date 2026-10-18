@@ -92,7 +92,10 @@ def _model():
 
 async def _run(payload: dict) -> dict:
     req = GenerateRequest.model_validate(payload)
-    resp = await asyncio.to_thread(_model().generate, req)
+    try:
+        resp = await asyncio.to_thread(_model().generate, req)
+    except ValueError as exc:  # bad request content, e.g. a watch word that is not one token
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
     return resp.model_dump()
 
 

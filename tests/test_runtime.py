@@ -93,6 +93,33 @@ def test_random_ablate_is_fixed_projection(tiny_model):
     assert not torch.allclose(once, h)
 
 
+def test_matched_control_removes_same_amount_as_jspace(tiny_model):
+    h = torch.randn(6, tiny_model.d_model)
+    jsp, ctl = (InterventionSpec(kind=k, k=3) for k in ("ablate_topk", "random_matched"))
+    run = _run(tiny_model, GenerateRequest(prompt="hello", interventions=[jsp, ctl]))
+    out_j = run._apply(jsp, 1, h.clone(), None)
+    out_c = run._apply(ctl, 1, h.clone(), None)
+    # same size of edit, same length afterwards, different content removed
+    assert torch.allclose((h - out_j).norm(dim=-1), (h - out_c).norm(dim=-1), rtol=1e-3)
+    assert torch.allclose(out_j.norm(dim=-1), out_c.norm(dim=-1), rtol=1e-3)
+    assert not torch.allclose(out_j, out_c, atol=1e-3)
+    # it is a true projection: the removed part is orthogonal to what is left
+    assert ((h - out_c) * out_c).sum(-1).abs().max() < 1e-3 * h.norm(dim=-1).max() ** 2
+
+
+def test_watch_words_must_be_whole_tokens(tiny_model):
+    assert tiny_model.word_token_ids("Bob")
+    with pytest.raises(ValueError, match="not a single token"):
+        tiny_model.word_token_ids("Brasilia")  # splits into fragments in GPT-2
+
+
+def test_colliding_watch_words_are_rejected(tiny_model):
+    req = GenerateRequest(prompt="hello", max_new_tokens=0,
+                          record=RecordSpec(watch=["bob", "Bob"]))  # " Bob" is shared
+    with pytest.raises(ValueError, match="share the token"):
+        tiny_model.generate(req)
+
+
 def test_steer_raises_target_logit(tiny_model):
     iv = InterventionSpec(kind="steer", tokens=["Bob"], strength=0.5)
     run = _run(tiny_model, GenerateRequest(prompt="hello", interventions=[iv]))
@@ -114,7 +141,8 @@ def test_swap_exchanges_coordinates(tiny_model):
     assert torch.allclose(c_after, c_before.flip(-1), atol=1e-4)
 
 
-@pytest.mark.parametrize("kind", ["ablate_topk", "random_ablate", "scale_jspace", "ablate_tokens"])
+@pytest.mark.parametrize("kind", ["ablate_topk", "random_ablate", "random_matched",
+                                  "scale_jspace", "ablate_tokens"])
 def test_interventions_change_generation_path(tiny_model, kind):
     iv = InterventionSpec(kind=kind, k=5, tokens=["Bob"], strength=0.0,
                           positions=PositionSelector(scope="all"))

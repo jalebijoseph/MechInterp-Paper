@@ -102,6 +102,8 @@ class _HTTPEndpoint(Endpoint):
                     time.sleep(delay)
                     delay *= 2
                     continue
+                if r.status_code == 422:  # same error a local endpoint raises
+                    raise ValueError(r.json().get("detail", r.text))
                 r.raise_for_status()
                 return r.json()
             except (httpx.TransportError, httpx.TimeoutException):

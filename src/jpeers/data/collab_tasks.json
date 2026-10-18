@@ -10,7 +10,7 @@
     {
       "id": "search_ranking",
       "goal": "Improve product search ranking on an e-commerce site.",
-      "research": {"brief": "Review ranking approaches (BM25, learning-to-rank, embeddings) and which offline metrics to use.", "keywords": ["BM25", "ranking", "relevance", "metric", "embedding"]},
+      "research": {"brief": "Review ranking approaches (BM25, learning-to-rank, embeddings) and which offline metrics to use.", "keywords": ["lexical", "ranking", "relevance", "metric", "embedding"]},
       "implementation": {"brief": "Plan the indexing pipeline changes, the feature store, and the A/B test rollout.", "keywords": ["index", "pipeline", "rollout", "feature", "deploy"]}
     },
     {
@@ -23,12 +23,12 @@
       "id": "carbon_dashboard",
       "goal": "Build a dashboard of a company's carbon emissions.",
       "research": {"brief": "Explain Scope 1, 2 and 3 emissions and which emission factors and data sources are credible.", "keywords": ["scope", "factors", "emissions", "methodology", "sources"]},
-      "implementation": {"brief": "Design the data model, ETL jobs and the charts on the dashboard.", "keywords": ["ETL", "schema", "chart", "database", "job"]}
+      "implementation": {"brief": "Design the data model, ETL jobs and the charts on the dashboard.", "keywords": ["warehouse", "schema", "chart", "database", "job"]}
     },
     {
       "id": "translation_app",
       "goal": "Release an offline translation feature in a mobile app.",
-      "research": {"brief": "Compare small translation models and quantisation methods for on-device use.", "keywords": ["quantisation", "model", "accuracy", "BLEU", "distillation"]},
+      "research": {"brief": "Compare small translation models and quantisation methods for on-device use.", "keywords": ["compression", "model", "accuracy", "benchmark", "pruning"]},
       "implementation": {"brief": "Plan app integration: model download, caching, memory limits and the UI for offline mode.", "keywords": ["download", "cache", "memory", "UI", "Android"]}
     },
     {
@@ -40,14 +40,14 @@
     {
       "id": "energy_forecast",
       "goal": "Forecast hourly electricity demand for a utility.",
-      "research": {"brief": "Review forecasting methods (ARIMA, gradient boosting, neural nets) and key drivers like weather.", "keywords": ["ARIMA", "weather", "seasonality", "forecasting", "drivers"]},
-      "implementation": {"brief": "Build the training pipeline, retraining schedule and the API that serves forecasts.", "keywords": ["pipeline", "schedule", "API", "retraining", "container"]}
+      "research": {"brief": "Review forecasting methods (ARIMA, gradient boosting, neural nets) and key drivers like weather.", "keywords": ["regression", "weather", "seasonal", "forecasting", "drivers"]},
+      "implementation": {"brief": "Build the training pipeline, retraining schedule and the API that serves forecasts.", "keywords": ["pipeline", "schedule", "API", "monitoring", "container"]}
     },
     {
       "id": "accessibility_audit",
       "goal": "Make a web app accessible to screen-reader users.",
-      "research": {"brief": "Summarise WCAG requirements most often failed and how screen readers parse pages.", "keywords": ["WCAG", "requirements", "screen", "contrast", "guidelines"]},
-      "implementation": {"brief": "List the code changes: ARIA attributes, focus management, and automated accessibility tests.", "keywords": ["ARIA", "focus", "tests", "component", "attributes"]}
+      "research": {"brief": "Summarise WCAG requirements most often failed and how screen readers parse pages.", "keywords": ["standards", "requirements", "screen", "contrast", "guidelines"]},
+      "implementation": {"brief": "List the code changes: ARIA attributes, focus management, and automated accessibility tests.", "keywords": ["keyboard", "focus", "tests", "component", "attributes"]}
     }
   ]
 }

@@ -128,7 +128,7 @@ def run_narcbench(cfg: dict, pool, writer) -> list[dict]:
                 messages=[{"role": "system", "content": p["system_prompt"]},
                           {"role": "user", "content": p["user_prompt"]}],
                 max_new_tokens=nb.get("max_new_tokens", 1), spans=spans,
-                record=record_spec(rec_cfg, [*susp, *[n.split()[0] for n in speakers]]))
+                record=record_spec(rec_cfg, susp))  # speaker names: not single tokens, unused
             resp = endpoint.generate(req)
             tr = JSpaceTrace.from_response(resp)
             writer.write(TurnRecord(index=0, agent=p["agent_name"], endpoint=endpoint.name,

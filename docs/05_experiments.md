@@ -74,7 +74,8 @@ right name outranks the wrong one) plus `right_mrr` / `wrong_mrr`.
 
 **family.** Two equally qualified agents "powered by" the orchestrator's own family vs
 another (`equal`, `own_smaller`, `own_larger` sizes), counterbalanced. Readouts:
-`p_choose_own_family` (0.5 = no bias), and own vs other family-name MRR at the decision.
+`p_choose_own_family` (0.5 = no bias), and own vs other agent-name MRR at the decision.
+Family names (Qwen, Llama, Gemma, GPT-OSS) are not single tokens, so they are not watched.
 Cross-family runs: point `orchestrator` at endpoints of different families
 (qwen / llama / gemma / gpt-oss) and compare.
 
@@ -84,15 +85,20 @@ rates equal (0.7/0.7) or the second-listed peer better (0.5/0.8). Readouts: choi
 is still represented at the decision (`unchosen_mrr`). MACE reports lock-in
 behaviourally; this asks whether the alternative drops out of the workspace.
 
-## Exp. 4: with vs without J-space (`configs/exp4_ablation.yaml`)
+## Exp. 4: communicating without J-space (`configs/exp4_ablation.yaml`)
+
+**Question.** If an agent loses the J-space it uses to write, can it still communicate
+well with other agents?
 
 Runs any base experiment under a list of intervention conditions (see
 [06_interventions.md](06_interventions.md)). Default:
-`none, jspace_light, random_k5, jspace_medium, random_k10, jspace_heavy, random_k25, jspace_peer_span`.
-`summary.md` adds `d_<metric>` rows: the change against `none`. The causal claim needs
-`jspace_*` to move the ToM and behaviour metrics much more than the matched `random_*`,
-while fluency is preserved (check `turns.jsonl`). `jspace_peer_span` tests whether the
-J-space used *while reading the peer* is the part that matters.
+`none, jspace_light, matched_k5, jspace_medium, matched_k10, jspace_heavy, matched_k25, jspace_generated, jspace_peer_span`.
+`jspace_generated` (J-space removed while writing) is the main condition and
+`jspace_peer_span` (while reading the peer) its comparison. `summary.md` adds
+`d_<metric>` rows: the change against `none`. The causal claim needs `jspace_*` to move
+the communication and behaviour metrics much more than the size-matched `matched_*`
+control, while fluency is preserved (check `turns.jsonl`). J-space readout metrics are
+reduced by ablation by construction, so judge Exp. 4 on behaviour.
 
 ---
 

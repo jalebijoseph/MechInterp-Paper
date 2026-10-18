@@ -99,7 +99,11 @@ with `get_model_spec(name, band=(lo, hi))` or `JPEERS_BAND=lo,hi` on the server.
 * `g` (the final norm's gain) is folded into the J-lens vectors so a vector's dot
   product with `h` ranks tokens the same way the readout does. It handles LayerNorm,
   RMSNorm and Gemma's `1 + w` RMSNorm.
-* A word maps to the first token of each of its surface forms (`" word"`, `"word"`,
-  capitalised). Watch ranks take the best of these; directions use the first.
+* A word maps to those of its surface forms (`" word"`, `"word"`, capitalised) that are a
+  **single whole token**. Watch ranks take the best of these; directions use the first. A
+  word with no single-token form is rejected (HTTP 422 from a server), and so is a request
+  in which two watch words share a token. This keeps words from being scored by fragments
+  such as `"s"` for "suspicious". `tests/test_watch_words.py` checks every experiment's
+  words against each cached tokenizer; add your model there before running on it.
 * Chat templates are used as-is (Qwen3 with `enable_thinking=False`). Gemma-2 rejects
   system messages, so the system prompt is folded into the first user turn.

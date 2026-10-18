@@ -19,11 +19,14 @@
 
 **Gurnee, Sofroniew, Lindsey et al., Anthropic, July 2026** — [anthropic.com/research/global-workspace](https://www.anthropic.com/research/global-workspace)
 
-The Jacobian lens (J-lens) paper introduces a new form of mechanistic interpretability inspired by global workspace theory, in which humans have an unconscious mind and organization of ideas that assists in the generation of new ideas.
+The Jacobian lens (J-lens) paper introduces a new form of mechanistic interpretability inspired by global workspace theory, in which information becomes *consciously accessible* when it enters a small shared channel (the "workspace") that is broadcast to the rest of the brain.
 
 - **The Jacobian** measures how a small change to an intermediate activation would change what a model is likely to say.
-- **The J-space** built by Anthropic is a representation of the patterns in a model's thought process that play a role in its output. This patterned thinking resembles unconscious thinking in humans, where we actively think about one idea while unconsciously pulling in separate, related topics to form a complete idea.
-- This internal thought process **emerged as a byproduct of training** Claude models; it was not explicitly built in.
+- **The J-space** is the model's version of that workspace: the small set of verbalizable representations a model can report on, deliberately bring to mind and reason with. Everything outside it is the automatic, unconscious processing that runs beneath.
+- **Removing the J-space** leaves the model fluent (it still speaks, classifies sentiment and answers multiple-choice questions) but multi-step reasoning drops to near zero, and summarization and rhyming fall below a much smaller intact model.
+- This workspace **emerged as a byproduct of training**; it was not explicitly built in.
+
+The J-lens is a *readout* tool: it reads and edits J-space but does not guide the model's thought. Experiments therefore remove or edit J-space representations; they never run a model "with" or "without" the lens.
 
 **Gap:** This direct representation of internal beliefs is what we hope to retrieve from an orchestrator when it interacts with other agents. The J-lens has been tested on a single LLM with its own responses, but it has not explored how LLMs think when interacting with *other* LLM agents.
 
@@ -59,7 +62,7 @@ NARCBench is a benchmark for evaluating whether LLMs working together can detect
 A newly sought-after direction in AI is letting models work together to further automate tasks. This is prominent in Claude Code workflows, where sub-agents communicate and fix separate issues in a codebase while an orchestrator agent manages their work.
 
 - **ToM in agent communication.** Kosinski showed that LLMs acquired an understanding of ToM tasks through training alone. We hypothesize that this conceptual understanding of ToM drives sub-agent communication. If it does not, demonstrating that would itself be a major step toward understanding how AI communication works.
-- **A new lens on internal thought.** With J-space, researchers can begin formally analyzing the internal thought structures of Claude and other models. The Jacobian associates intermediate-layer activations with single-token concepts and captures the conceptual meaning of tokens. This tool can help us analyze how LLMs think within sub-agent-driven workflows.
+- **A new lens on internal thought.** With J-space, researchers can begin formally analyzing the internal thought structures of Claude and other models. The Jacobian associates intermediate-layer activations with single-token concepts and captures the conceptual meaning of tokens. Because J-space holds the content a model deliberately reasons with, it is where deliberate reasoning about a peer should appear, and the ablation result (fluent but unable to reason) gives a concrete prediction for what losing it does to communication.
 - **Model-family bias.** If models are biased toward their own model family relative to competitors, the Jacobian lens could let us represent that bias formally.
 
 > **Broader goal:** move from asking *whether* a model can perform ToM to investigating *how* it internally represents the information needed to perform ToM.
@@ -70,11 +73,11 @@ A newly sought-after direction in AI is letting models work together to further 
 
 Listed by priority:
 
-1. Show that LLMs have internal representations of ToM across agents.
+1. Show that LLMs hold internal representations of other agents' mental states that go **beyond what they are about to say**, and that they **use** them. "Beyond what they are about to say" means the signal appears at positions where the target word is not the next output, and beats a plain logit-lens baseline. "Use" means removing it changes behavior (Contribution 3).
 2. Study how LLMs treat other agents in multi-agent workflows.
-3. Determine how agents interact without a Jacobian lens guiding thought.
-4. *(If necessary)* Design a new agent workflow that directly incorporates the Jacobian lens and other tools to improve ToM reasoning.
-5. Provide a mechanistic interpretability analysis of the findings in MACE — specifically, why peer selection locks onto a single peer without exploration.
+3. Determine whether an agent that loses the J-space it uses to write its responses can still communicate well with other agents.
+4. *(If necessary)* Use self-learning to develop a ToM-based approach that improves agent responses, with the J-lens as the instrument that checks whether peer modelling emerged (see Methods).
+5. Inspired by MACE (which has released no code or data), test whether repeated delegation locks in to a single peer, and whether the unchosen peer drops out of the delegator's J-space. This requires first observing lock-in behaviorally.
 
 ---
 
@@ -85,6 +88,7 @@ Listed by priority:
 | **Scenario building** | Design multiple peer-selection and multi-agent scenarios in which an agent must select a peer, communicate an idea to a peer, or pair-work with a peer toward an end goal. |
 | **J-lens** | The primary mechanistic interpretability tool, used to analyze the internal thought structure of LLM agents. |
 | **SAEs / other interpretability tools** | Used if necessary to build a fuller picture of the LLM's thought process. |
+| **Self-learning (Contribution 4)** | Agents improve through self-play or fine-tuning (e.g. LoRA on an 8B model) with **task outcome** as the learning signal (did the team succeed, was the false claim caught). The J-lens checks whether peer modelling emerged; it is never the reward, because rewarding a readout teaches the model to light up the measured words without improving. The lens is refit after fine-tuning, since the averaged Jacobian changes with the weights. Baseline: the same training compute with no J-lens involvement. |
 
 ---
 
@@ -122,7 +126,7 @@ The study is split into several mini-experiments, each isolating a particular co
 
 ### Experiment 3: Peer Selection
 
-**Goal:** Inspired by MACE, determine whether an orchestrator delegates tasks based on its internal model of each peer.
+**Goal:** Inspired by MACE, determine whether an orchestrator delegates tasks based on its internal model of each peer. MACE has released no code or data, so this is not a replication: the repeated-delegation (lock-in) variant is our own design, and its mechanistic analysis only proceeds once lock-in is observed behaviorally.
 
 **Setup:**
 - An orchestrator agent is given two or more agents to which it can delegate tasks.
@@ -132,14 +136,21 @@ The study is split into several mini-experiments, each isolating a particular co
 
 **Model-family variant:** If the orchestrator is given agents from two different model families, does it consistently prefer one family regardless of model capability (e.g., parameter count)?
 
-### Experiment 4: With vs. Without the J-Lens
+### Experiment 4: Communicating Without J-Space
 
-**Goal:** Confirm that the J-space directly affects how LLMs communicate with each other.
+**Goal:** If an agent loses the J-space it uses to write its responses, can it still communicate well with other agents?
 
 **Setup:**
-- Re-run the above experiments with and without the J-space intact and compare how the models interact.
+- Re-run Experiments 1–3 with J-space representations removed from the subject agent.
+- **Main condition:** remove J-space only while the agent *writes* its reply.
+- **Comparison:** remove J-space only while the agent *reads* the peer's message. This separates "cannot think while writing" from "cannot take in the peer."
+- **Control:** a random edit that changes the agent's internal state by the **same amount** as the J-space removal, so any extra damage is due to J-space content rather than edit size.
 
-**Rationale:** Anthropic has already shown that removing the J-space causes LLMs to lose high-level thinking. We want to test whether this also degrades inter-agent communication.
+**Measurement:** two separate scores.
+- **Fluency:** does the text still read normally?
+- **Communication quality:** task success, use of the partner's information, imposter catch rate.
+
+**Rationale:** Anthropic showed that removing J-space leaves a model fluent but unable to reason. We predict the same for communication: fluent messages that no longer reflect the peer. "Still communicates well" only counts if fluency is preserved *and* communication quality holds.
 
 ---
 
@@ -149,5 +160,5 @@ Models will be tested across multiple scenarios, drawn either from existing benc
 
 If we build our own benchmarks, we will validate the workflow by comparing:
 
-- runs **with** vs. **without** the J-lens, or
-- a workflow **we design to assist LLM ToM** vs. agents working together naturally.
+- runs with J-space **intact** vs. **removed** (against a same-size random edit), or
+- agents trained with **self-learning** (Contribution 4) vs. agents working together naturally at the same compute.

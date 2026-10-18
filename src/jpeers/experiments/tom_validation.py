@@ -17,6 +17,8 @@ hitom_orders, max_new_tokens, interventions.
 
 from __future__ import annotations
 
+import logging
+
 import numpy as np
 
 from jpeers.analysis import rank_summary, word_ranks
@@ -33,6 +35,8 @@ from jpeers.experiments.common import (
 from jpeers.harness import TurnRecord
 from jpeers.schemas import GenerateRequest
 from jpeers.trace import JSpaceTrace
+
+logger = logging.getLogger(__name__)
 
 SYSTEM = "Read the story and answer the question with a single word."
 
@@ -59,6 +63,7 @@ def run(cfg: dict) -> dict:
     endpoint = pool.get(cfg["model"])
     writer = make_writer(cfg, "tom_validation")
     rows, per_item = [], []
+    skipped: list[str] = []
     max_new = cfg.get("max_new_tokens", 6)
 
     for cond, iv_spec in intervention_conditions(cfg).items():
@@ -86,8 +91,13 @@ def run(cfg: dict) -> dict:
                                  max_items=cfg.get("hitom_items", 40)):
                 noun = it.answer.split("_")[-1]
                 q = f"{it.question}\nChoices: {it.choices}\nAnswer with the exact choice text."
-                resp, trace = _ask(endpoint, writer, cfg, it.story, q, [noun], ivs, 12,
-                                   f"{cond}/hitom", {"item": it.id})
+                try:
+                    resp, trace = _ask(endpoint, writer, cfg, it.story, q, [noun], ivs, 12,
+                                       f"{cond}/hitom", {"item": it.id})
+                except ValueError as exc:  # answer noun is not a single token
+                    logger.warning("skipping %s: %s", it.id, exc)
+                    skipped.append(it.id)
+                    continue
                 last = trace.mask((resp.prompt_len - 1, resp.prompt_len))
                 per_item.append({"condition": cond, "framing": f"hitom-o{it.order}",
                                  "item": it.id, "false_belief": it.order > 0,
@@ -111,5 +121,6 @@ def run(cfg: dict) -> dict:
             row["decoy_mrr"] = rank_summary(np.array([r["decoy_rank"] for r in rs]))["mrr"]
             row["belief_beats_decoy"] = mean(r["belief_beats_decoy"] for r in rs)
         rows.append(row)
-    return write_summary(writer.dir, {"rows": rows, "items": per_item}, rows,
+    return write_summary(writer.dir, {"rows": rows, "items": per_item,
+                                      "hitom_skipped_not_single_token": skipped}, rows,
                          "ToM validation: J-lens readout of beliefs at the answer position")

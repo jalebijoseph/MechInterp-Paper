@@ -53,6 +53,10 @@ class InterventionSpec(BaseModel):
                           light/medium/heavy presets.
         ablate_tokens  -- project out the J-lens vectors of specific ``tokens``
         random_ablate  -- control: project out ``k`` random unit directions (fixed ``seed``)
+        random_matched -- size-matched control for ``ablate_topk``: at each position,
+                          project out one random direction that holds exactly as much of
+                          ``h`` as the top-``k`` J-space does, so the edit has the same
+                          size and leaves ``h`` the same length
         steer          -- h += strength * ||h|| * v_hat(token) for each of ``tokens``
                           (negative strength suppresses)
         swap           -- coordinate patch: exchange the coefficients of ``source`` and
@@ -61,8 +65,8 @@ class InterventionSpec(BaseModel):
                           ``strength`` (0 = ablate, 1 = no-op, >1 = amplify)
     """
 
-    kind: Literal["ablate_topk", "ablate_tokens", "random_ablate", "steer", "swap",
-                  "scale_jspace"]
+    kind: Literal["ablate_topk", "ablate_tokens", "random_ablate", "random_matched", "steer",
+                  "swap", "scale_jspace"]
     layers: str | list[int] = "band"  # "band" | "early" | "late" | "all" | explicit list
     positions: PositionSelector = Field(default_factory=PositionSelector)
     k: int = 10

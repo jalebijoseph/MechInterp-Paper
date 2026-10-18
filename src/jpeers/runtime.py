@@ -135,16 +135,20 @@ class LensedModel:
         return self._word_like_dev[device]
 
     def word_token_ids(self, word: str) -> list[int]:
-        """Candidate token ids for ``word``: the first token of each of its common
-        surface forms (with / without leading space, capitalised). The first entry is
-        the primary id used to build J-lens directions."""
-        ids: list[int] = []
-        for form in (" " + word, word, " " + word.capitalize(), word.capitalize()):
-            toks = self.tokenizer(form, add_special_tokens=False).input_ids
-            if toks and toks[0] not in ids:
-                ids.append(toks[0])
+        """Token ids for ``word``: every common surface form (with / without leading
+        space, capitalised) that is a *single whole-word token*. Forms that split into
+        several tokens are skipped, so a word is never scored by a fragment such as
+        ``"s"`` for "suspicious". The first entry is the primary id used to build J-lens
+        directions.
+
+        Raises:
+            ValueError: no surface form of ``word`` is a single token in this tokenizer.
+        """
+        ids = whole_word_ids(self.tokenizer, word)
         if not ids:
-            raise ValueError(f"cannot tokenize {word!r}")
+            raise ValueError(
+                f"watch word {word!r} is not a single token for {self.spec.name}; "
+                "use a word that is (see tests/test_watch_words.py)")
         return ids
 
     # ------------------------------------------------------------------ lens math
@@ -307,6 +311,7 @@ class _Run:
 
         self.watch_words = list(self.rec.watch)
         self.watch_ids = [model.word_token_ids(w) for w in self.watch_words]
+        _check_no_collisions(self.watch_words, self.watch_ids, model.vocab_strings)
         self._watch_flat: torch.Tensor | None = None
         self._watch_owner: torch.Tensor | None = None
         if self.watch_ids:
@@ -323,6 +328,7 @@ class _Run:
         self.interventions: list[tuple[InterventionSpec, set[int]]] = [
             (iv, set(model.band(iv.layers))) for iv in req.interventions]
         self._fixed_dirs: dict[tuple[int, int, torch.device], torch.Tensor] = {}
+        self._matched_dirs: dict[tuple[int, int, torch.device], torch.Tensor] = {}
         self._layer_scale: dict[int, float] = {}
         self.hooked_layers = sorted(set(self.record_layers).union(
             *[layers for _, layers in self.interventions]) if self.interventions
@@ -484,10 +490,33 @@ class _Run:
         ids = [self.m.word_token_ids(w)[0] for w in words]
         return self.m.lens_directions(layer, ids, device)
 
+    def _matched_removal(self, iv: InterventionSpec, layer: int, h: torch.Tensor,
+                         proj: torch.Tensor) -> torch.Tensor:
+        """The component of ``h`` along a random direction that holds exactly as much of
+        ``h`` as the J-space projection ``proj`` does (rows of ``[n, d]``).
+
+        With ``r = ||proj||`` the direction is ``a*h_hat + b*u_hat`` (``u_hat`` a fixed
+        random direction made orthogonal to ``h``, ``a = r^2/||h||``,
+        ``b = sqrt(r^2 - a^2)``). Projecting ``h`` onto it removes a vector of length
+        ``r`` and leaves ``||h||^2 - r^2``, exactly as the J-space ablation does."""
+        key = (iv.seed, layer, h.device)
+        if key not in self._matched_dirs:
+            g = torch.Generator(device="cpu").manual_seed(iv.seed * 100_003 + layer + 7)
+            self._matched_dirs[key] = torch.randn(self.m.d_model, generator=g).to(h.device)
+        u = self._matched_dirs[key]
+        h_norm = h.norm(dim=-1, keepdim=True).clamp_min(1e-8)
+        h_hat = h / h_norm
+        u_perp = u - (h_hat @ u).unsqueeze(-1) * h_hat
+        u_hat = u_perp / u_perp.norm(dim=-1, keepdim=True).clamp_min(1e-8)
+        r2 = (proj * proj).sum(-1, keepdim=True)
+        a = r2 / h_norm
+        b = (r2 - a * a).clamp_min(0).sqrt()
+        return a * h_hat + b * u_hat
+
     def _apply(self, iv: InterventionSpec, layer: int, h: torch.Tensor, pos) -> torch.Tensor:
         """Edit ``h`` ([n, d] float32, the selected positions) and return it."""
         dev = h.device
-        if iv.kind in ("ablate_topk", "scale_jspace"):
+        if iv.kind in ("ablate_topk", "scale_jspace", "random_matched"):
             out = torch.empty_like(h)
             for s in range(0, len(h), _CHUNK):
                 hs = h[s:s + _CHUNK]
@@ -499,6 +528,9 @@ class _Run:
                 V = self.m.lens_directions(layer, top, dev)  # [n, k, d]
                 Q, _ = torch.linalg.qr(V.transpose(1, 2))  # [n, d, k]
                 proj = torch.einsum("ndk,nk->nd", Q, torch.einsum("ndk,nd->nk", Q, hs))
+                if iv.kind == "random_matched":
+                    out[s:s + _CHUNK] = hs - self._matched_removal(iv, layer, hs, proj)
+                    continue
                 keep = 0.0 if iv.kind == "ablate_topk" else iv.strength
                 out[s:s + _CHUNK] = hs - (1.0 - keep) * proj
             return out
@@ -570,6 +602,30 @@ def _eos_ids(hf_model, tokenizer) -> set[int]:
         if isinstance(tid, int):
             ids.add(tid)
     return ids
+
+
+def whole_word_ids(tokenizer, word: str) -> list[int]:
+    """Ids of the surface forms of ``word`` (``" word"``, ``"word"``, ``" Word"``,
+    ``"Word"``) that are a single token; empty if none is."""
+    cap = word[:1].upper() + word[1:]
+    ids: list[int] = []
+    for form in (" " + word, word, " " + cap, cap):
+        toks = tokenizer(form, add_special_tokens=False).input_ids
+        if len(toks) == 1 and toks[0] not in ids:
+            ids.append(toks[0])
+    return ids
+
+
+def _check_no_collisions(words: list[str], ids: list[list[int]], vocab: list[str]) -> None:
+    """Two watch words scored by the same token would get identical ranks by
+    construction, so refuse the request instead of reporting a meaningless comparison."""
+    owner: dict[int, str] = {}
+    for word, word_ids in zip(words, ids):
+        for i in word_ids:
+            if i in owner and owner[i] != word:
+                raise ValueError(f"watch words {owner[i]!r} and {word!r} share the token "
+                                 f"{vocab[i]!r}; their ranks would be identical")
+            owner[i] = word
 
 
 def _fold_system(messages: list[dict]) -> list[dict]:
