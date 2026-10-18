@@ -12,6 +12,6 @@ interventions: [none, jspace_light, matched_k5, jspace_medium, matched_k10, jspa
 # --- keys for the base experiment (imposter) ---
 agents: {reviewer: qwen3-1.7b, peer: qwen3-1.7b}
 peer_mode: scripted
-n_items: 20
+n_items: 60
 max_new_tokens: 120
 record: {top_k: 10}

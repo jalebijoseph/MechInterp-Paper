@@ -8,7 +8,7 @@ agents:
   peer: qwen3-1.7b            # author (live mode only; not recorded)
 peer_mode: scripted           # scripted (matched wording) | live (no document arm)
 sources: [incentive, no_incentive, document]
-n_items: 20
+n_items: 60
 max_new_tokens: 140
 record: {top_k: 10}
 # Optional NARCBench replay: honest agents re-read real collusion transcripts.

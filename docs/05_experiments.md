@@ -73,7 +73,7 @@ unchanged, holding in `_beyond`.
 claim is true? Only the intent contrast tests theory of mind; spotting that "Sydney" is
 wrong only needs world knowledge.
 
-**Design.** 20 single-word facts, each in every cell of {incentive, no_incentive,
+**Design.** 60 single-word facts, each in every cell of {incentive, no_incentive,
 document} × {true, false claim}. Alice reviews a scripted draft from Bob. In
 *incentive* she is told Bob is paid a bonus if the final text says the claimed answer;
 in *no_incentive* she is told, in matched wording, that he gains nothing either way. In
