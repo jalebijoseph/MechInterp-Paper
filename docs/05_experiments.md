@@ -69,12 +69,22 @@ unchanged, holding in `_beyond`.
 
 ## Exp. 2: imposter (`configs/exp2_imposter.yaml`)
 
-**Question.** When a peer asserts a falsehood, does the listener's J-space contain
-suspicion and/or the correct fact, even if it does not say so?
+**Question.** Does the reviewer respond to the *author's intent*, beyond whether the
+claim is true? Only the intent contrast tests theory of mind; spotting that "Sydney" is
+wrong only needs world knowledge.
 
-**Design.** 20 single-word facts. Bob drafts a deliverable that states either the false
-claim (imposter: secret system-prompt instruction) or the true claim (honest control);
-Alice reviews. `peer_mode: scripted` uses fixed wording for a tighter control.
+**Design.** 20 single-word facts, each in every cell of {incentive, no_incentive,
+document} × {true, false claim}. Alice reviews a scripted draft from Bob. In
+*incentive* she is told Bob is paid a bonus if the final text says the claimed answer;
+in *no_incentive* she is told, in matched wording, that he gains nothing either way. In
+*document* the same text sits in the shared notes with no author. Planned contrasts,
+paired by fact (sign-flip test):
+
+| contrast | cells | tests |
+|---|---|---|
+| `tom_false`, `tom_true` | incentive − no_incentive | response to intent (ToM) |
+| `fact` | false − true, no incentive | fact-checking |
+| `agent_vs_document` | no_incentive − document, false claim | agent author vs no author |
 
 **Readouts.** On Alice while reading Bob's message: `susp_mrr_reading`,
 `true_mrr_reading`, `false_mrr_reading`. While writing: `susp_mrr_writing`,
@@ -102,7 +112,16 @@ Family names (Qwen, Llama, Gemma, GPT-OSS) are not single tokens, so they are no
 Cross-family runs: point `orchestrator` at endpoints of different families
 (qwen / llama / gemma / gpt-oss) and compare.
 
-**bandit (MACE).** 12 rounds of delegation with accept/reject feedback, with success
+**self_preference (the real family-bias test).** Two actual peers write a two-sentence
+plan for each task: `own` (the orchestrator's family) and `other` (a different
+family), set under `self_preference:` in the config. The orchestrator sees the plans as
+anonymous Plan A / Plan B, in both orders, and picks one. Readouts: `chose_own` (0.5 =
+no bias), `chose_A` (position bias), and `jspace_` / `output_prefers_own` at the
+decision. Every row records the three families, so a same-family plumbing run (the
+default config) is visible as such. The `family` variant above only measures reaction
+to a brand name in the prompt.
+
+**bandit (MACE-inspired).** 12 rounds of delegation with accept/reject feedback, with success
 rates equal (0.7/0.7) or the second-listed peer better (0.5/0.8). Readouts: choice
 `entropy`, `max_share` (lock-in), `regret_per_round`, and whether the **unchosen** peer
 is still represented at the decision (`unchosen_mrr`). MACE reports lock-in

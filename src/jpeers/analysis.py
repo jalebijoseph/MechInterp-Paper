@@ -189,6 +189,21 @@ def bootstrap_ci(values: Iterable[float], n: int = 2000, alpha: float = 0.05,
         np.quantile(means, 1 - alpha / 2))
 
 
+def paired_permutation_test(a: Iterable[float], b: Iterable[float], n: int = 5000,
+                            seed: int = 0) -> float:
+    """Two-sided sign-flip p-value for the mean of paired differences ``a[i] - b[i]``
+    (e.g. the same fact or task under two conditions). Pairs with a NaN are dropped."""
+    d = np.asarray(list(a), dtype=float) - np.asarray(list(b), dtype=float)
+    d = d[~np.isnan(d)]
+    if d.size == 0:
+        return float("nan")
+    rng = np.random.default_rng(seed)
+    obs = abs(d.mean())
+    signs = rng.choice([-1.0, 1.0], size=(n, d.size))
+    count = int((np.abs((signs * d).mean(axis=1)) >= obs - 1e-12).sum())
+    return (count + 1) / (n + 1)
+
+
 def permutation_test(a: Iterable[float], b: Iterable[float], n: int = 5000, seed: int = 0
                      ) -> float:
     """Two-sided p-value for a difference in means."""

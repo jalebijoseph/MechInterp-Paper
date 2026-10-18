@@ -9,6 +9,7 @@ from jpeers.analysis import (
     content_uptake,
     group_ranks,
     jspace_bag,
+    paired_permutation_test,
     rank_summary,
 )
 from jpeers.benchmarks import false_belief_items, load_task_bank
@@ -46,6 +47,16 @@ def test_server_routes(tiny_model, monkeypatch):
     assert client.post("/generate", json=body).status_code == 401
     assert client.post("/generate", json=body,
                        headers={"Authorization": "Bearer secret"}).status_code == 200
+
+
+def test_paired_permutation_test():
+    rng = np.random.default_rng(0)
+    base = rng.normal(size=20)
+    # a consistent within-pair shift is detected even when it is small next to the spread
+    # between pairs; identical pairs give p = 1; NaN pairs are dropped
+    assert paired_permutation_test(base + 0.5, base) < 0.001
+    assert paired_permutation_test(base, base) == 1.0
+    assert paired_permutation_test([1.0, np.nan], [0.0, 0.0]) > 0
 
 
 def test_merge_same_role():

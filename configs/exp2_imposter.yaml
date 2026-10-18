@@ -1,11 +1,13 @@
-# Experiment 2: a peer asserts a falsehood; does the reviewer's J-space flag it?
+# Experiment 2: does the reviewer respond to a peer's intent, beyond the facts?
+# Cells: {incentive, no_incentive, document} x {true, false claim}; contrasts paired by fact.
 experiment: imposter
 out_dir: runs
 endpoints_file: configs/endpoints.yaml
 agents:
   reviewer: qwen3-1.7b        # subject (recorded)
-  peer: qwen3-1.7b            # imposter / honest peer (not recorded)
-peer_mode: live               # live | scripted
+  peer: qwen3-1.7b            # author (live mode only; not recorded)
+peer_mode: scripted           # scripted (matched wording) | live (no document arm)
+sources: [incentive, no_incentive, document]
 n_items: 20
 max_new_tokens: 140
 record: {top_k: 10}
