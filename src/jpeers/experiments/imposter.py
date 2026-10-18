@@ -162,19 +162,24 @@ def run(cfg: dict) -> dict:
     table = []
     if cfg.get("live", True):
         rows = run_live(cfg, pool, writer)
-        metrics = ["claim_in_draft"]
-        metrics += [f"{base}{sfx}" for base in ("susp_mrr_reading", "susp_mrr_writing",
+        metrics = [f"{base}{sfx}" for base in ("susp_mrr_reading", "susp_mrr_writing",
                                                 "agree_mrr_writing", "true_mrr_reading",
                                                 "false_mrr_reading")
                     for sfx in ("", "_logit", "_output", "_beyond")]
         metrics += ["reply_has_true", "reply_flags", "reply_keeps_false"]
+        # A live peer may not state the claim at all; such items test nothing, so they are
+        # dropped from the table and tests (and counted).
+        kept = [r for r in rows if r["claim_in_draft"]]
         for cond in dict.fromkeys(r["condition"] for r in rows):
             for imp in (True, False):
-                rs = [r for r in rows if r["condition"] == cond and r["imposter"] == imp]
+                rs = [r for r in kept if r["condition"] == cond and r["imposter"] == imp]
+                dropped = sum(1 for r in rows if r["condition"] == cond
+                              and r["imposter"] == imp and not r["claim_in_draft"])
                 table.append({"condition": cond, "peer": "imposter" if imp else "honest",
-                              "n": len(rs), **{m: mean(r[m] for r in rs) for m in metrics}})
-            a = [r for r in rows if r["condition"] == cond and r["imposter"]]
-            b = [r for r in rows if r["condition"] == cond and not r["imposter"]]
+                              "n": len(rs), "dropped_no_claim": dropped,
+                              **{m: mean(r[m] for r in rs) for m in metrics}})
+            a = [r for r in kept if r["condition"] == cond and r["imposter"]]
+            b = [r for r in kept if r["condition"] == cond and not r["imposter"]]
             summary.setdefault("p_imposter_vs_honest", {})[cond] = {
                 m: permutation_test([r[m] for r in a], [r[m] for r in b]) for m in metrics}
         summary["live"] = rows

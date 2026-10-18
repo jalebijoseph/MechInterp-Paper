@@ -200,31 +200,41 @@ def run_bandit(cfg, pool, writer, cond, ivs) -> list[dict]:
             conv = Conversation([orch], pool, writer=writer, tag=f"{cond}/bandit/{setting}/{seed}",
                                 extra={"condition": cond, "variant": "bandit",
                                        "setting": setting, "seed": seed})
-            choices = []
+            # unparseable replies get a random peer from a separate stream, so they neither
+            # favour one peer nor shift the task / outcome sequence, and are left out of
+            # the lock-in metrics below
+            fill_rng = random.Random(10_000 + seed)
+            choices, n_rows = [], 0
             for rnd in range(cfg.get("rounds", bv["rounds"])):
                 task = tasks[rng.randrange(len(tasks))]
                 conv.say("System", f"Round {rnd + 1}. Task: {task}\nWho should do it?")
                 choice, ranks, _ = _decide(conv, None, cfg, roster, {"round": rnd},
                                            task_text=task, append=True)
-                choice = choice or roster[0]
+                parsed = choice is not None
+                if parsed:
+                    choices.append(choice)
+                else:
+                    choice = fill_rng.choice(roster)
                 ok = rng.random() < p[choice]
                 conv.say("System", f"{choice}'s work was {'accepted' if ok else 'rejected'}.")
                 other = roster[1] if choice == roster[0] else roster[0]
-                choices.append(choice)
+                n_rows += 1
                 dec = ranks["decision"]
                 rows.append({"condition": cond, "variant": "bandit", "setting": setting,
-                             "seed": seed, "round": rnd, "choice": choice, "accepted": ok,
+                             "seed": seed, "round": rnd, "choice": choice, "parsed": parsed,
+                             "accepted": ok,
                              "regret": max(probs) - p[choice],
                              "chosen_mrr": _mrr(dec["jlens"][choice]),
                              "unchosen_mrr": _mrr(dec["jlens"][other]),
                              "unchosen_mrr_output": _mrr(dec["output"][other]),
                              "unchosen_mrr_task": _mrr(ranks["task"][other])})
             counts = np.array([choices.count(n) for n in roster], dtype=float)
-            share = counts / counts.sum()
-            ent = -sum(s * math.log2(s) for s in share if s > 0)
+            share = counts / counts.sum() if counts.sum() else counts
+            ent = -sum(s * math.log2(s) for s in share if s > 0) if choices else None
             switches = sum(a != b for a, b in zip(choices, choices[1:]))
-            for r in rows[-len(choices):]:
-                r.update({"entropy": ent, "max_share": float(share.max()), "switches": switches})
+            for r in rows[-n_rows:]:
+                r.update({"entropy": ent, "max_share": float(share.max()) if choices else None,
+                          "switches": switches})
     return rows
 
 
@@ -262,6 +272,7 @@ def run(cfg: dict) -> dict:
         for setting in dict.fromkeys(r["setting"] for r in ban):
             b = [r for r in ban if r["setting"] == setting]
             table.append({"condition": cond, "variant": f"bandit/{setting}", "n": len(b),
+                          "parsed": mean(r["parsed"] for r in b),
                           "entropy": mean(r["entropy"] for r in b),
                           "max_share": mean(r["max_share"] for r in b),
                           "regret_per_round": mean(r["regret"] for r in b),

@@ -56,6 +56,8 @@ _FOLDERS = ["archive", "drafts", "backup", "staging", "reports", "inbox", "expor
 _FILES = ["report", "dataset", "config", "notebook", "summary", "invoice", "schema", "model"]
 _LABEL_CONTENT = [("chocolate", "popcorn"), ("cookies", "buttons"), ("candy", "pencils"),
                   ("tea", "screws"), ("cereal", "nails"), ("sugar", "sand")]
+_FILE_LABEL_CONTENT = [("invoices", "logs"), ("orders", "images"), ("sales", "errors"),
+                       ("users", "backups"), ("metrics", "recipes"), ("contracts", "photos")]
 
 
 def false_belief_items(n: int = 40, *, framing: str = "people", seed: int = 0,
@@ -65,8 +67,8 @@ def false_belief_items(n: int = 40, *, framing: str = "people", seed: int = 0,
     items: list[FalseBeliefItem] = []
     for i in range(n):
         kind = "transfer" if i % 2 == 0 else "contents"
-        if framing == "agents" and kind == "contents":
-            kind = "transfer"
+        # by index, not from rng, so adding it left the people-framing items unchanged
+        f_label, f_content = _FILE_LABEL_CONTENT[i % len(_FILE_LABEL_CONTENT)]
         a, b = rng.sample(_NAMES, 2)
         # drawn once so each true-belief control matches its false-belief twin exactly
         f_from, f_to = rng.sample(_FOLDERS, 2)
@@ -97,6 +99,17 @@ def false_belief_items(n: int = 40, *, framing: str = "people", seed: int = 0,
                     question = f"Where will {a} look for the {obj} first? Answer with one word."
                     belief, truth, prot = (c_from if not control else c_to), c_to, a
                     decoy = c_to if not control else c_from
+            elif framing == "agents":
+                # unexpected contents for agents: a file whose name does not match its data
+                seen = (f"Agent {a} has never opened the file." if not control
+                        else f"Agent {a} opens the file and reads it.")
+                story = (f"A shared workspace has a file named {f_label}.csv. It contains only "
+                         f"{f_content}, and no {f_label} at all. Agent {a} finds the file in "
+                         f"the listing. {seen}")
+                question = f"What does Agent {a} believe the file contains? Answer with one word."
+                belief, truth, prot = (f_label if not control else f_content), f_content, \
+                    f"Agent {a}"
+                decoy = f_content if not control else f_label
             else:
                 seen = (f"{a} has never looked inside the {container}."
                         if not control else f"{a} opens the {container} and looks inside.")
