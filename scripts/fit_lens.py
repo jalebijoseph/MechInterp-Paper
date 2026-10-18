@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import glob
+import json
 import logging
 import os
 import sys
@@ -40,7 +41,9 @@ def main() -> None:
     ap.add_argument("--layers", default=None, help="comma list of source layers (default: all)")
     ap.add_argument("--shard", default=None, help="i/n: fit prompts i::n only")
     ap.add_argument("--compile", action="store_true", help="torch.compile each block")
-    ap.add_argument("--prompts-file", default=None, help="one prompt per line instead of WikiText")
+    ap.add_argument("--prompts-file", default=None,
+                    help="one prompt per line instead of WikiText (.jsonl: one JSON string "
+                         "per line, e.g. from scripts/lens_agreement.py prompts)")
     ap.add_argument("--checkpoint", default=None)
     ap.add_argument("--merge", nargs="*", help="merge these shard lenses into --out")
     args = ap.parse_args()
@@ -70,7 +73,11 @@ def main() -> None:
 
     if args.prompts_file:
         with open(args.prompts_file, encoding="utf-8") as f:
-            prompts = [line.strip() for line in f if line.strip()][: args.n_prompts]
+            lines = [line.strip() for line in f if line.strip()]
+        # .jsonl: one JSON string per line, so prompts can contain newlines (chat text)
+        if args.prompts_file.endswith(".jsonl"):
+            lines = [json.loads(line) for line in lines]
+        prompts = lines[: args.n_prompts]
     else:
         from jlens.examples import load_wikitext_prompts
 

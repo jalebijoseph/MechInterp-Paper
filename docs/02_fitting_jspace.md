@@ -51,8 +51,27 @@ These are estimates; time the first few prompts from the log (`prompt i/n ... Ns
 
 Both use the same container image as the inference server.
 
-## Agent-domain lenses (optional extension)
+## Agent-domain lenses: does the WikiText lens transfer to agent chat?
 
-The lens is an average over a corpus. To ask whether J-space is different in multi-agent
-dialogue, fit a second lens with `--prompts-file` on rendered transcripts from
-`runs/*/turns.jsonl`, then compare readouts from the two lenses on the same traces.
+The lens is an average over a corpus (WikiText), while the experiments read it on
+multi-agent chat. Check, per model, before the main runs (pre-registration, E):
+
+```bash
+# 1. transcript windows from recorded runs (fit set + held-out set, .jsonl)
+python scripts/lens_agreement.py prompts --model qwen3-8b --runs runs/collab runs/imposter
+# 2. fit a transcript lens (GPU job; ~100-300 prompts is enough)
+python scripts/fit_lens.py --model Qwen/Qwen3-8B --prompts-file lenses/agent_prompts.fit.jsonl \
+    --n-prompts 300 --out lenses/agent-qwen3-8b.pt
+# 3. compare on held-out windows
+python scripts/lens_agreement.py compare --model qwen3-8b --lens lenses/agent-qwen3-8b.pt
+```
+
+`compare` prints, per band layer, the cosine between the two Jacobians and how often the
+two lenses agree on held-out transcript windows (top-1, top-10 overlap), next to the
+same agreement between the WikiText lens and the plain logit lens as a reference. On
+Qwen3-1.7B the logit lens agrees with the J-lens on only 1–2% of top tokens in the early
+band and about 65% at the last band layer, so a transcript lens far above that reference
+reads the same thing as the WikiText lens.
+
+Fitting does not fit on a 6 GB laptop GPU: a 2-prompt timing run of Qwen3-1.7B filled
+the card and did not finish in 10 minutes. Run step 2 with the cloud jobs below.
