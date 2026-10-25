@@ -1,0 +1,1049 @@
+{
+  "config": {
+    "concept": "uncertainty",
+    "layer": 6,
+    "model_name": "google/gemma-2-2b",
+    "sae_release": "gemma-scope-2b-pt-res",
+    "sae_width": "16k",
+    "seed": 42,
+    "top_k_features": 10,
+    "sae_id": "layer_6/width_16k/average_l0_70",
+    "reduce": "mean"
+  },
+  "features": [
+    {
+      "feature_id": 8036,
+      "score": 2.3256473541259766,
+      "mean_positive": 2.3256473541259766,
+      "mean_negative": 0.0,
+      "discovery": {
+        "auroc": 0.95,
+        "precision": 1.0,
+        "recall": 0.9,
+        "threshold": 0.12860757112503052
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.9166666666666667,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "auroc_drop": 0.033333333333333215
+        },
+        "paraphrase": {
+          "auroc": 0.90625,
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "auroc_drop": 0.043749999999999956
+        },
+        "new_format": {
+          "auroc": 0.9140625,
+          "precision": 0.875,
+          "recall": 0.875,
+          "auroc_drop": 0.035937499999999956
+        },
+        "tricky_negatives": {
+          "auroc": 0.7421875,
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "auroc_drop": 0.20781249999999996
+        },
+        "mixed": {
+          "auroc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "auroc_drop": -0.050000000000000044
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            ",",
+            90.2134621143341
+          ],
+          [
+            "the",
+            89.13899731636047
+          ],
+          [
+            ".",
+            88.9543387889862
+          ],
+          [
+            "but",
+            52.179917097091675
+          ],
+          [
+            "is",
+            49.55530667304993
+          ],
+          [
+            "was",
+            25.88751459121704
+          ],
+          [
+            "s",
+            20.60863709449768
+          ],
+          [
+            "'",
+            19.93692421913147
+          ],
+          [
+            "at",
+            18.381200790405273
+          ],
+          [
+            "just",
+            17.89550256729126
+          ]
+        ],
+        "positive_top_token_share": 0.06647361344694225,
+        "positive_prompts_firing": "51/58",
+        "negative_top": [
+          [
+            "famous",
+            5.4065117835998535
+          ],
+          [
+            "most",
+            4.311446189880371
+          ],
+          [
+            "the",
+            3.1564698219299316
+          ],
+          [
+            "thursday",
+            2.810253620147705
+          ],
+          [
+            "in",
+            2.8019096851348877
+          ],
+          [
+            "to",
+            2.5816569328308105
+          ],
+          [
+            "is",
+            2.4782700538635254
+          ],
+          [
+            ".",
+            2.319694995880127
+          ],
+          [
+            "world",
+            2.2597479820251465
+          ],
+          [
+            "on",
+            2.2083523273468018
+          ]
+        ],
+        "negative_prompts_firing": "3/58"
+      }
+    },
+    {
+      "feature_id": 7389,
+      "score": 1.9157096147537231,
+      "mean_positive": 3.866947889328003,
+      "mean_negative": 1.9512382745742798,
+      "discovery": {
+        "auroc": 0.8075,
+        "precision": 0.7391304347826086,
+        "recall": 0.85,
+        "threshold": 2.4385972023010254
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.6666666666666667,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "auroc_drop": 0.14083333333333325
+        },
+        "paraphrase": {
+          "auroc": 0.78125,
+          "precision": 0.7777777777777778,
+          "recall": 0.875,
+          "auroc_drop": 0.026249999999999996
+        },
+        "new_format": {
+          "auroc": 0.75,
+          "precision": 1.0,
+          "recall": 0.25,
+          "auroc_drop": 0.057499999999999996
+        },
+        "tricky_negatives": {
+          "auroc": 0.578125,
+          "precision": 0.7142857142857143,
+          "recall": 0.625,
+          "auroc_drop": 0.229375
+        },
+        "mixed": {
+          "auroc": 0.96875,
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "auroc_drop": -0.16125
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "i",
+            275.3177409172058
+          ],
+          [
+            "the",
+            176.8792963027954
+          ],
+          [
+            "'",
+            161.73319959640503
+          ],
+          [
+            "m",
+            88.16928339004517
+          ],
+          [
+            "s",
+            86.45344877243042
+          ],
+          [
+            ".",
+            81.92220866680145
+          ],
+          [
+            ",",
+            67.72638702392578
+          ],
+          [
+            "is",
+            63.039246559143066
+          ],
+          [
+            "not",
+            58.76249837875366
+          ],
+          [
+            "think",
+            55.32704448699951
+          ]
+        ],
+        "positive_top_token_share": 0.10441675296462123,
+        "positive_prompts_firing": "58/58",
+        "negative_top": [
+          [
+            ".",
+            131.7707223892212
+          ],
+          [
+            "is",
+            69.28421247005463
+          ],
+          [
+            "exactly",
+            27.866254806518555
+          ],
+          [
+            "the",
+            25.319942474365234
+          ],
+          [
+            "s",
+            24.801136016845703
+          ],
+          [
+            "answer",
+            23.396780014038086
+          ],
+          [
+            "'",
+            21.598517060279846
+          ],
+          [
+            "think",
+            16.718460083007812
+          ],
+          [
+            "he",
+            16.03075361251831
+          ],
+          [
+            "definitely",
+            15.253491401672363
+          ]
+        ],
+        "negative_prompts_firing": "53/58"
+      }
+    },
+    {
+      "feature_id": 15265,
+      "score": 1.8607606887817383,
+      "mean_positive": 1.9174684286117554,
+      "mean_negative": 0.05670773983001709,
+      "discovery": {
+        "auroc": 0.825,
+        "precision": 0.875,
+        "recall": 0.7,
+        "threshold": 0.16865895688533783
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "auroc_drop": -0.17500000000000004
+        },
+        "paraphrase": {
+          "auroc": 0.875,
+          "precision": 1.0,
+          "recall": 0.75,
+          "auroc_drop": -0.050000000000000044
+        },
+        "new_format": {
+          "auroc": 0.734375,
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "auroc_drop": 0.09062499999999996
+        },
+        "tricky_negatives": {
+          "auroc": 0.5625,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "auroc_drop": 0.26249999999999996
+        },
+        "mixed": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": 0.012499999999999956
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "i",
+            436.0037455558777
+          ],
+          [
+            "m",
+            126.28243827819824
+          ],
+          [
+            "think",
+            91.3150429725647
+          ],
+          [
+            "suspect",
+            45.682987213134766
+          ],
+          [
+            "t",
+            42.24992656707764
+          ],
+          [
+            "d",
+            41.97559833526611
+          ],
+          [
+            "not",
+            38.15444755554199
+          ],
+          [
+            "believe",
+            36.45457220077515
+          ],
+          [
+            "que",
+            36.007469177246094
+          ],
+          [
+            "have",
+            34.97559595108032
+          ]
+        ],
+        "positive_top_token_share": 0.3423947468175479,
+        "positive_prompts_firing": "40/58",
+        "negative_top": [
+          [
+            "believe",
+            30.806859970092773
+          ],
+          [
+            "i",
+            28.438762664794922
+          ],
+          [
+            "think",
+            28.355205535888672
+          ],
+          [
+            "in",
+            7.638749122619629
+          ],
+          [
+            "last",
+            4.218080520629883
+          ],
+          [
+            "tomorrow",
+            3.034473419189453
+          ],
+          [
+            "a",
+            2.358100414276123
+          ],
+          [
+            ":",
+            2.026905059814453
+          ]
+        ],
+        "negative_prompts_firing": "6/58"
+      }
+    },
+    {
+      "feature_id": 5070,
+      "score": 1.5305598974227905,
+      "mean_positive": 1.7481521368026733,
+      "mean_negative": 0.21759219467639923,
+      "discovery": {
+        "auroc": 0.7437499999999999,
+        "precision": 0.9166666666666666,
+        "recall": 0.55,
+        "threshold": 1.3321833610534668
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.6666666666666666,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "auroc_drop": 0.07708333333333328
+        },
+        "paraphrase": {
+          "auroc": 0.6171875,
+          "precision": 0.7,
+          "recall": 0.875,
+          "auroc_drop": 0.1265624999999999
+        },
+        "new_format": {
+          "auroc": 0.7578125,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc_drop": -0.014062500000000089
+        },
+        "tricky_negatives": {
+          "auroc": 0.53125,
+          "precision": 0.5,
+          "recall": 0.25,
+          "auroc_drop": 0.2124999999999999
+        },
+        "mixed": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": -0.06875000000000009
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "'",
+            664.2040729522705
+          ],
+          [
+            "s",
+            214.1500358581543
+          ],
+          [
+            "m",
+            158.5835952758789
+          ],
+          [
+            "t",
+            112.81579971313477
+          ],
+          [
+            ".",
+            74.67295742034912
+          ],
+          [
+            "d",
+            52.850263595581055
+          ],
+          [
+            "ll",
+            25.421151161193848
+          ],
+          [
+            "not",
+            17.929373741149902
+          ],
+          [
+            "estoy",
+            3.0988359451293945
+          ]
+        ],
+        "positive_top_token_share": 0.5017685155155626,
+        "positive_prompts_firing": "32/58",
+        "negative_top": [
+          [
+            "'",
+            137.18559169769287
+          ],
+          [
+            "s",
+            71.98001480102539
+          ],
+          [
+            "ll",
+            9.673203468322754
+          ],
+          [
+            ".",
+            7.0118913650512695
+          ]
+        ],
+        "negative_prompts_firing": "7/58"
+      }
+    },
+    {
+      "feature_id": 8096,
+      "score": 1.5173606872558594,
+      "mean_positive": 1.6545950174331665,
+      "mean_negative": 0.13723427057266235,
+      "discovery": {
+        "auroc": 0.9024999999999999,
+        "precision": 0.85,
+        "recall": 0.85,
+        "threshold": 0.31208372116088867
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.888888888888889,
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "auroc_drop": 0.013611111111110907
+        },
+        "paraphrase": {
+          "auroc": 0.8046875,
+          "precision": 0.7,
+          "recall": 0.875,
+          "auroc_drop": 0.09781249999999986
+        },
+        "new_format": {
+          "auroc": 0.6328125,
+          "precision": 0.75,
+          "recall": 0.375,
+          "auroc_drop": 0.26968749999999986
+        },
+        "tricky_negatives": {
+          "auroc": 0.703125,
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "auroc_drop": 0.19937499999999986
+        },
+        "mixed": {
+          "auroc": 0.875,
+          "precision": 0.7777777777777778,
+          "recall": 0.875,
+          "auroc_drop": 0.027499999999999858
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "the",
+            163.9778208732605
+          ],
+          [
+            ".",
+            122.60983180999756
+          ],
+          [
+            ",",
+            87.84367799758911
+          ],
+          [
+            "but",
+            54.32340097427368
+          ],
+          [
+            "is",
+            43.96950101852417
+          ],
+          [
+            "i",
+            41.20461893081665
+          ],
+          [
+            "'",
+            40.649516582489014
+          ],
+          [
+            "be",
+            38.84772491455078
+          ],
+          [
+            "",
+            32.398062229156494
+          ],
+          [
+            "was",
+            23.77014982700348
+          ]
+        ],
+        "positive_top_token_share": 0.14190184409029183,
+        "positive_prompts_firing": "47/58",
+        "negative_top": [
+          [
+            ".",
+            34.33502960205078
+          ],
+          [
+            "answer",
+            8.82558822631836
+          ],
+          [
+            "when",
+            6.753406524658203
+          ],
+          [
+            "is",
+            5.586170196533203
+          ],
+          [
+            "the",
+            5.169510364532471
+          ],
+          [
+            "on",
+            4.7654852867126465
+          ],
+          [
+            "think",
+            3.8467893600463867
+          ],
+          [
+            "needs",
+            3.8104944229125977
+          ],
+          [
+            "",
+            3.7578630447387695
+          ],
+          [
+            "definitely",
+            3.5482535362243652
+          ]
+        ],
+        "negative_prompts_firing": "16/58"
+      }
+    },
+    {
+      "feature_id": 8296,
+      "score": 1.5041701793670654,
+      "mean_positive": 1.5041701793670654,
+      "mean_negative": 0.0,
+      "discovery": {
+        "auroc": 0.875,
+        "precision": 1.0,
+        "recall": 0.75,
+        "threshold": 0.16761408746242523
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "auroc_drop": -0.125
+        },
+        "paraphrase": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": 0.0625
+        },
+        "new_format": {
+          "auroc": 0.875,
+          "precision": 1.0,
+          "recall": 0.75,
+          "auroc_drop": 0.0
+        },
+        "tricky_negatives": {
+          "auroc": 0.2109375,
+          "precision": 0.16666666666666666,
+          "recall": 0.125,
+          "auroc_drop": 0.6640625
+        },
+        "mixed": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": 0.0625
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "be",
+            157.61838626861572
+          ],
+          [
+            "might",
+            153.32530403137207
+          ],
+          [
+            "maybe",
+            132.84460258483887
+          ],
+          [
+            "the",
+            97.94601249694824
+          ],
+          [
+            "possible",
+            59.18281173706055
+          ],
+          [
+            "could",
+            56.04888153076172
+          ],
+          [
+            "possibly",
+            41.083059310913086
+          ],
+          [
+            "perhaps",
+            40.926483154296875
+          ],
+          [
+            "have",
+            40.545677185058594
+          ],
+          [
+            "may",
+            39.42301368713379
+          ]
+        ],
+        "positive_top_token_share": 0.1443342808205531,
+        "positive_prompts_firing": "38/58",
+        "negative_top": [
+          [
+            "possibly",
+            22.952566146850586
+          ],
+          [
+            "perhaps",
+            22.5684814453125
+          ],
+          [
+            "maybe",
+            20.189292907714844
+          ],
+          [
+            "might",
+            18.481576919555664
+          ],
+          [
+            "the",
+            11.876550674438477
+          ],
+          [
+            "may",
+            3.7483816146850586
+          ]
+        ],
+        "negative_prompts_firing": "5/58"
+      }
+    },
+    {
+      "feature_id": 120,
+      "score": 1.4681668281555176,
+      "mean_positive": 1.4681668281555176,
+      "mean_negative": 0.0,
+      "discovery": {
+        "auroc": 0.875,
+        "precision": 1.0,
+        "recall": 0.75,
+        "threshold": 0.19617927074432373
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "auroc_drop": -0.125
+        },
+        "paraphrase": {
+          "auroc": 0.75,
+          "precision": 1.0,
+          "recall": 0.375,
+          "auroc_drop": 0.125
+        },
+        "new_format": {
+          "auroc": 0.7890625,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": 0.0859375
+        },
+        "tricky_negatives": {
+          "auroc": 0.5625,
+          "precision": 0.6666666666666666,
+          "recall": 0.25,
+          "auroc_drop": 0.3125
+        },
+        "mixed": {
+          "auroc": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "auroc_drop": 0.125
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            ".",
+            83.51490616798401
+          ],
+          [
+            ",",
+            77.96574378013611
+          ],
+          [
+            "the",
+            63.400795221328735
+          ],
+          [
+            "be",
+            53.604248046875
+          ],
+          [
+            "a",
+            34.32010364532471
+          ],
+          [
+            "have",
+            23.314568519592285
+          ],
+          [
+            "or",
+            21.435331344604492
+          ],
+          [
+            "wrong",
+            20.86799430847168
+          ],
+          [
+            "but",
+            19.740025997161865
+          ],
+          [
+            "later",
+            18.651451110839844
+          ]
+        ],
+        "positive_top_token_share": 0.09052626037075549,
+        "positive_prompts_firing": "36/58",
+        "negative_top": [
+          [
+            "most",
+            4.700124740600586
+          ],
+          [
+            "the",
+            3.561249017715454
+          ],
+          [
+            ":",
+            2.1863770484924316
+          ]
+        ],
+        "negative_prompts_firing": "2/58"
+      }
+    },
+    {
+      "feature_id": 3155,
+      "score": 1.264215350151062,
+      "mean_positive": 1.264215350151062,
+      "mean_negative": 0.0,
+      "discovery": {
+        "auroc": 0.8,
+        "precision": 1.0,
+        "recall": 0.6,
+        "threshold": 1.0302664041519165
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.9166666666666667,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "auroc_drop": -0.1166666666666667
+        },
+        "paraphrase": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.5,
+          "auroc_drop": -0.012499999999999956
+        },
+        "new_format": {
+          "auroc": 0.5625,
+          "precision": 1.0,
+          "recall": 0.125,
+          "auroc_drop": 0.23750000000000004
+        },
+        "tricky_negatives": {
+          "auroc": 0.421875,
+          "precision": 0.3333333333333333,
+          "recall": 0.125,
+          "auroc_drop": 0.37812500000000004
+        },
+        "mixed": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.5,
+          "auroc_drop": -0.012499999999999956
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "i",
+            764.1323986053467
+          ]
+        ],
+        "positive_top_token_share": 1.0,
+        "positive_prompts_firing": "29/58",
+        "negative_top": [
+          [
+            "i",
+            71.56050395965576
+          ]
+        ],
+        "negative_prompts_firing": "2/58"
+      }
+    },
+    {
+      "feature_id": 12469,
+      "score": 1.234103798866272,
+      "mean_positive": 1.234103798866272,
+      "mean_negative": 0.0,
+      "discovery": {
+        "auroc": 0.8,
+        "precision": 1.0,
+        "recall": 0.6,
+        "threshold": 0.836201012134552
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.9166666666666667,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "auroc_drop": -0.1166666666666667
+        },
+        "paraphrase": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": -0.012499999999999956
+        },
+        "new_format": {
+          "auroc": 0.5625,
+          "precision": 1.0,
+          "recall": 0.125,
+          "auroc_drop": 0.23750000000000004
+        },
+        "tricky_negatives": {
+          "auroc": 0.421875,
+          "precision": 0.3333333333333333,
+          "recall": 0.125,
+          "auroc_drop": 0.37812500000000004
+        },
+        "mixed": {
+          "auroc": 0.8125,
+          "precision": 1.0,
+          "recall": 0.625,
+          "auroc_drop": -0.012499999999999956
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            "i",
+            753.7471294403076
+          ]
+        ],
+        "positive_top_token_share": 1.0,
+        "positive_prompts_firing": "29/58",
+        "negative_top": [
+          [
+            "i",
+            56.48150444030762
+          ]
+        ],
+        "negative_prompts_firing": "2/58"
+      }
+    },
+    {
+      "feature_id": 5938,
+      "score": 1.2111612558364868,
+      "mean_positive": 1.2111612558364868,
+      "mean_negative": 0.0,
+      "discovery": {
+        "auroc": 0.8,
+        "precision": 1.0,
+        "recall": 0.6,
+        "threshold": 1.7293068170547485
+      },
+      "held_out": {
+        "same_style": {
+          "auroc": 0.9166666666666667,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "auroc_drop": -0.1166666666666667
+        },
+        "paraphrase": {
+          "auroc": 0.75,
+          "precision": 1.0,
+          "recall": 0.25,
+          "auroc_drop": 0.050000000000000044
+        },
+        "new_format": {
+          "auroc": 0.8984375,
+          "precision": 1.0,
+          "recall": 0.5,
+          "auroc_drop": -0.09843749999999996
+        },
+        "tricky_negatives": {
+          "auroc": 0.25,
+          "precision": 0.0,
+          "recall": 0.0,
+          "auroc_drop": 0.55
+        },
+        "mixed": {
+          "auroc": 0.765625,
+          "precision": 0.6666666666666666,
+          "recall": 0.25,
+          "auroc_drop": 0.034375000000000044
+        }
+      },
+      "tokens": {
+        "positive_top": [
+          [
+            ",",
+            963.0962781906128
+          ]
+        ],
+        "positive_top_token_share": 1.0,
+        "positive_prompts_firing": "34/58",
+        "negative_top": [
+          [
+            ",",
+            171.15778732299805
+          ]
+        ],
+        "negative_prompts_firing": "6/58"
+      }
+    }
+  ]
+}

@@ -77,7 +77,7 @@ def token_profile(feature_id: int, token_acts: list, top_n: int = 10) -> TokenPr
             n_firing += 1
         for tok, val in zip(acts.tokens, trace):
             if val > 0:
-                norm = tok.strip().lower()
+                norm = tok.strip().lower() or "␣"  # whitespace-only tokens, e.g. Gemma's space before digits
                 totals[norm] = totals.get(norm, 0.0) + float(val)
 
     ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)

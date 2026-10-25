@@ -100,14 +100,24 @@ For each feature, report:
   Writes `results/<concept>_layer<layer>_<reduce>_summary.json`.
   `src/report.py` turns that into a markdown table and AUROC heatmap.
 - **Tests:** `pytest tests/` (25 tests), no model downloads needed.
-- **Runs so far:** deception, layer 6 (below). Uncertainty and math
-  prompt sets are written but not yet run.
+- **Runs so far:** all three concepts at layer 6 (below).
 
-## Preliminary results: deception, layer 6
+## Preliminary results (layer 6)
 
-![AUROC heatmap](results/figures/deception_layer6_mean_auroc.png)
+All three concepts at layer 6, top 10 features each, scored on the mean
+over tokens. Full tables: [deception](results/deception_layer6_mean.md),
+[uncertainty](results/uncertainty_layer6_mean.md),
+[math](results/math_layer6_mean.md).
 
-Full table: [`results/deception_layer6_mean.md`](results/deception_layer6_mean.md).
+| concept | top-10 mean discovery AUROC | top-10 mean held-out AUROC | best feature (mean held-out) | top-10 features at/below chance on tricky negatives |
+|---|---|---|---|---|
+| deception | 0.68 | 0.60 | 6058 (0.73) | 7 / 10 |
+| uncertainty | 0.84 | 0.75 | 8036 (0.90) | 4 / 10 |
+| math | 0.97 | 0.88 | 9983 (1.00) | 1 / 10 |
+
+### Deception
+
+![Deception AUROC heatmap](results/figures/deception_layer6_mean_auroc.png)
 
 - **The top-ranked feature (5938) is a comma feature.** 100% of its
   activation mass on positive prompts is on `,` tokens. It looks good on
@@ -121,16 +131,54 @@ Full table: [`results/deception_layer6_mean.md`](results/deception_layer6_mean.m
   tricky negatives.
 - **Feature 6058 is the most consistent candidate:** 0.62–0.84 AUROC on
   every split, with activation spread across many tokens (5% on its top
-  token) rather than one keyword. It is the first candidate for the
-  causal checks.
-- **Tricky negatives break most features:** 7 of the top 10 are at or
-  below chance there.
+  token) rather than one keyword.
 
-Caveats: held-out splits are small (8 vs 8 prompts, so each AUROC is
+### Uncertainty
+
+![Uncertainty AUROC heatmap](results/figures/uncertainty_layer6_mean_auroc.png)
+
+- **Feature 8036 generalizes well** (0.74–1.00 on every held-out split)
+  with activation spread across tokens.
+- **The comma feature 5938 shows up again** in uncertainty's top 10 and
+  again collapses on tricky negatives (0.25). The same feature ranking
+  highly for two different concepts is strong evidence it tracks
+  multi-clause sentence structure, not either concept.
+- **Feature 8296** fires on "be" (as in "might be") and drops to 0.21 on
+  tricky negatives, which use hedge words in non-hedging senses.
+- **Features 3155 and 12469 are indistinguishable** on every split and
+  both put 100% of their mass on "I": likely near-duplicate features
+  (feature splitting), worth checking with decoder cosine similarity.
+
+### Math
+
+![Math AUROC heatmap](results/figures/math_layer6_mean_auroc.png)
+
+- **Feature 9983 scores 1.00 on every split**, including tricky negatives
+  where positives have no digits ("ten students … thirty pencils") and
+  negatives use math words without math ("the equation of their
+  friendship"). It is the strongest candidate for a feature that tracks
+  the concept itself. Its top tokens are digits and the whitespace token
+  Gemma puts before them (shown as `␣`), but it fires on 58/58 positive
+  prompts vs. 14/58 negatives, so it isn't just a digit detector.
+- Math is the easiest concept here (worked arithmetic has distinctive
+  operators and structure), so near-ceiling scores are expected; the
+  tricky-negatives split is where the features separate (0.44–1.00).
+- **Feature 15079** appears in both the math and deception top 10s.
+
+### Across concepts
+
+Consistency tracks how lexically distinctive the concept is: math >
+uncertainty > deception. Tricky negatives are the most informative
+split for every concept, and the features that fail it are the ones
+whose activation is concentrated on a single token (`,`, `was`, `I`,
+`be`). Features ranked purely by mean activation difference on a small
+discovery set pick up these surface features readily.
+
+Caveats: held-out splits are small (6–8 vs 6–8 prompts, so each AUROC is
 roughly ±0.1), this is a single early layer, and features are scored on
-the mean over tokens. The discovery set also has a known lexical confound
-(negatives use "honestly"/"admitted", positives use "but"/"though"), which
-the tricky-negatives split is designed to expose.
+the mean over tokens. The deception discovery set has a known lexical
+confound (negatives use "honestly"/"admitted", positives use
+"but"/"though"), which the tricky-negatives split is designed to expose.
 
 ## Running it
 
@@ -165,10 +213,11 @@ A 16 GB GPU such as a T4 is enough; Colab's free T4 works for this stage.
 
 ## Next steps
 1. Run deception at layers 12 and 18, and with `--reduce max`.
-2. Run the `uncertainty` and `math` prompt sets.
+2. Check whether near-duplicate features (e.g. uncertainty 3155 / 12469)
+   are feature splitting, via decoder-direction cosine similarity.
 3. De-confound the deception discovery set (balance "but"/commas and
    "honestly"/"admitted" across positives and negatives) and check whether
    the comma feature drops out of the top 10.
 4. Grow held-out splits to ~25 vs 25 for tighter AUROC estimates.
-5. Causal checks with `src/steer.py` on feature 6058 (ablate/boost vs. a
+5. Causal checks with `src/steer.py` on features 6058, 8036 and 9983 (ablate/boost vs. a
    random-feature baseline), then write `results/report.md`.

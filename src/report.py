@@ -43,7 +43,7 @@ def markdown_table(summary: dict) -> str:
     ]
     for row, fid, f in zip(matrix, ids, summary["features"]):
         top = f["tokens"]["positive_top"]
-        tok = f"`{top[0][0]}` ({100 * f['tokens']['positive_top_token_share']:.0f}%)" if top else "–"
+        tok = f"`{top[0][0] or '␣'}` ({100 * f['tokens']['positive_top_token_share']:.0f}%)" if top else "–"
         held = row[1:].mean() if len(row) > 1 else float("nan")
         cells = " | ".join(f"{v:.2f}" for v in row)
         lines.append(f"| {fid} | {cells} | {held:.2f} | {tok} |")
@@ -66,7 +66,9 @@ def plot_heatmap(summary: dict, out_path: Path) -> None:
     im = ax.imshow(matrix, cmap=cmap, vmin=0.0, vmax=1.0, aspect="auto")
     for i in range(matrix.shape[0]):
         for j in range(matrix.shape[1]):
-            ax.text(j, i, f"{matrix[i, j]:.2f}", ha="center", va="center", fontsize=9, color=TEXT_PRIMARY)
+            # Light text on the darkest cells so values stay readable.
+            color = SURFACE if abs(matrix[i, j] - 0.5) > 0.35 else TEXT_PRIMARY
+            ax.text(j, i, f"{matrix[i, j]:.2f}", ha="center", va="center", fontsize=9, color=color)
     # 2px surface gap between cells.
     ax.set_xticks(np.arange(-0.5, len(splits)), minor=True)
     ax.set_yticks(np.arange(-0.5, len(ids)), minor=True)
