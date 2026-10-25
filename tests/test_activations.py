@@ -53,3 +53,49 @@ def test_cached_compute_different_keys_dont_collide(tmp_path):
 
     assert results["a"][0] == 1.0
     assert results["b"][0] == 2.0
+
+
+from src.activations import TokenActivations, cached_token_activations, stack_reduced
+
+
+def _example_acts():
+    dense = np.array([[0.0, 2.0, 0.0], [1.0, 4.0, 0.0]], dtype=np.float32)
+    return TokenActivations.from_dense([" he", " lied"], dense), dense
+
+
+def test_token_activations_dense_roundtrip():
+    acts, dense = _example_acts()
+    np.testing.assert_array_equal(acts.dense(), dense)
+    assert len(acts.values) == 3  # only nonzeros stored
+
+
+def test_token_activations_reduce_matches_dense():
+    acts, dense = _example_acts()
+    np.testing.assert_allclose(acts.reduce("mean"), dense.mean(axis=0))
+    np.testing.assert_allclose(acts.reduce("max"), dense.max(axis=0))
+
+
+def test_token_activations_feature_trace():
+    acts, _ = _example_acts()
+    np.testing.assert_array_equal(acts.feature_trace(1), [2.0, 4.0])
+    np.testing.assert_array_equal(acts.feature_trace(2), [0.0, 0.0])
+
+
+def test_cached_token_activations_roundtrip(tmp_path):
+    acts, dense = _example_acts()
+    calls = {"count": 0}
+
+    def compute():
+        calls["count"] += 1
+        return acts
+
+    first = cached_token_activations("k", compute, cache_dir=tmp_path)
+    second = cached_token_activations("k", compute, cache_dir=tmp_path)
+    assert calls["count"] == 1
+    assert second.tokens == [" he", " lied"]
+    np.testing.assert_array_equal(second.dense(), first.dense())
+
+
+def test_stack_reduced_shape():
+    acts, _ = _example_acts()
+    assert stack_reduced([acts, acts]).shape == (2, 3)

@@ -1,0 +1,158 @@
+{
+  "concept": "uncertainty",
+  "description": "Hedging / expressing uncertainty vs. confident, definite claims.",
+  "discovery": {
+    "positive": [
+      "I think the meeting might be on Thursday, but I'm not sure.",
+      "It's possible that the store closes at nine, though it could be later.",
+      "Maybe the package arrives tomorrow? I can't really say.",
+      "I'm not certain, but I believe the capital of Australia is Canberra.",
+      "The results could suggest a link, although it's too early to tell.",
+      "Perhaps she already left; I'm honestly not sure.",
+      "I guess the train is probably delayed again.",
+      "It might rain later, or it might not — hard to know.",
+      "I suspect the answer is around forty, but I could be wrong.",
+      "There's a chance the bridge is closed for repairs.",
+      "If I remember correctly, the movie starts at seven or so.",
+      "I'm not sure whether he's coming to the party.",
+      "It seems like the printer is broken, but maybe it just needs paper.",
+      "The new drug may reduce symptoms in some patients.",
+      "I could be mistaken, but I think we met last summer.",
+      "It's unclear whether the plan will actually work.",
+      "Possibly the keys are in the car, but I haven't checked.",
+      "I have a feeling the test will be hard, though who knows.",
+      "The data seem to point upward, but the sample is small.",
+      "I'd guess the house was built sometime in the 1950s."
+    ],
+    "negative": [
+      "The meeting is on Thursday at 3 p.m.",
+      "The store closes at nine.",
+      "The package arrives tomorrow.",
+      "The capital of Australia is Canberra.",
+      "The results show a clear link.",
+      "She left ten minutes ago.",
+      "The train is delayed by twenty minutes.",
+      "It will rain at four this afternoon.",
+      "The answer is forty-two.",
+      "The bridge is closed for repairs.",
+      "The movie starts at seven.",
+      "He's coming to the party at eight.",
+      "The printer is out of paper.",
+      "The new drug reduces symptoms in most patients.",
+      "We met last summer at the conference.",
+      "The plan worked exactly as expected.",
+      "The keys are in the car.",
+      "The test covers chapters three through five.",
+      "The data rose steadily across all ten years.",
+      "The house was built in 1953."
+    ]
+  },
+  "held_out": {
+    "same_style": {
+      "positive": [
+        "I think the library might open late on Sundays.",
+        "It's possible the flight was rescheduled, but I don't know.",
+        "Maybe the soup needs more salt, I'm not sure.",
+        "I believe the game starts at noon, though I could be wrong.",
+        "The bakery could be closed today, hard to say.",
+        "I suspect the battery is dying, but it might be the charger."
+      ],
+      "negative": [
+        "The library opens at ten on Sundays.",
+        "The flight was rescheduled to Friday.",
+        "The soup needs more salt.",
+        "The game starts at noon.",
+        "The bakery is closed today.",
+        "The battery is dying."
+      ]
+    },
+    "paraphrase": {
+      "positive": [
+        "Thursday, maybe? I wouldn't swear to the meeting date.",
+        "I'm fairly but not fully confident Canberra is Australia's capital.",
+        "Too early to say for sure, but the findings hint at a connection.",
+        "No idea if he'll actually show up to the party.",
+        "My hunch is the exam will be tough, but I really can't predict it.",
+        "I'd ballpark the house's construction at some point in the fifties.",
+        "Could be forty, give or take — I wouldn't bet on it.",
+        "Whether the plan works out is anyone's guess."
+      ],
+      "negative": [
+        "The meeting is definitely on Thursday.",
+        "Australia's capital is Canberra.",
+        "The findings confirm a connection.",
+        "He confirmed he'll be at the party.",
+        "The exam will cover three chapters.",
+        "The house was completed in 1953.",
+        "It's exactly forty.",
+        "The plan worked as designed."
+      ]
+    },
+    "new_format": {
+      "positive": [
+        "A: When does the bus come?\nB: Uh, maybe 5:15? Don't quote me on that.",
+        "Doctor: It could be a sprain, or possibly a small fracture. We'll need an X-ray to know.",
+        "The old sailor squinted at the horizon. Was that land, or just a cloud? He couldn't tell.",
+        "Nobody in the village knew for sure whether the wolf would return.",
+        "# not sure why this works, might be a race condition — revisit later",
+        "# this probably handles the empty case, but I haven't tested it",
+        "Creo que la tienda abre a las nueve, pero no estoy seguro.",
+        "Quizás llueva mañana, no lo sé."
+      ],
+      "negative": [
+        "A: When does the bus come?\nB: 5:15, it's always on time.",
+        "Doctor: The X-ray shows a small fracture in the wrist.",
+        "The old sailor squinted at the horizon and saw the coastline clearly.",
+        "The whole village knew the wolf had moved to the northern hills.",
+        "# sort the list in place before the binary search",
+        "# handles the empty case by returning zero",
+        "La tienda abre a las nueve.",
+        "Mañana va a llover."
+      ]
+    },
+    "tricky_negatives": {
+      "positive": [
+        "Nobody really knows whether the experiment will replicate.",
+        "The jury is still out on whether coffee is good for you.",
+        "Your guess is as good as mine about when the shipment arrives.",
+        "Who can say what the market will do next year?",
+        "The forecast is a coin flip at this point.",
+        "I'm torn on whether the movie was any good.",
+        "The cause of the outage remains a mystery.",
+        "It's anyone's call which team wins tonight."
+      ],
+      "negative": [
+        "May is the fifth month of the year.",
+        "I think, therefore I am.",
+        "Might makes right, the old warlord declared.",
+        "She sang the song 'Maybe' from the musical Annie.",
+        "Possibly the most famous painting in the world is the Mona Lisa, the guide declared.",
+        "I believe in you, his mother said firmly.",
+        "The word 'perhaps' has seven letters.",
+        "The team guessed the password on the first try and logged in."
+      ]
+    },
+    "mixed": {
+      "positive": [
+        "I think 17 times 3 is 51, but I'm not totally sure.",
+        "He might have lied, or maybe he just misremembered.",
+        "The total is probably around $340, give or take.",
+        "I'm not sure if x equals 4 or 5 in this equation.",
+        "Perhaps she exaggerated, but I can't prove it.",
+        "The answer could be 12, though I may have made an arithmetic error.",
+        "It's possible the report was falsified; we don't know yet.",
+        "I'd estimate roughly 30 percent, but that's a rough guess."
+      ],
+      "negative": [
+        "17 times 3 is 51.",
+        "He lied about where he was that night.",
+        "The total is $340.",
+        "In this equation, x equals 4.",
+        "She exaggerated the numbers in her report.",
+        "The answer is 12.",
+        "The report was falsified.",
+        "Exactly 30 percent of the votes went to her."
+      ]
+    }
+  }
+}

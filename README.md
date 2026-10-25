@@ -41,11 +41,8 @@ For each concept, write ~50 positive and ~50 negative prompts.
 
 Split into: discovery set (to find features) and held-out set (to test).
 
-**Status:** started small per the Claude Code instructions below — only
-`deception` exists so far, with a 20-prompt discovery set and a small
-`same_style` held-out set, just enough to exercise the full pipeline.
-The other concepts and held-out categories (paraphrase, new formats,
-tricky negatives, mixed prompts) come once Phase 1→6 work end to end.
+**Status:** done for all three concepts at a small scale (20 + 20
+discovery prompts, five held-out splits of 6–8 + 6–8). See "Current status".
 
 ## Phase 2: Find Candidate Features
 - Run discovery prompts, record SAE activations per token
@@ -90,19 +87,50 @@ For each feature, report:
 
 ## Current status
 
-- **Phase 1:** only `deception` exists so far (`data/deception.json`):
-  20 positive + 20 negative discovery prompts and a small `same_style`
-  held-out set, enough to exercise the full pipeline.
-- **Pipeline:** `src/` implements load → activations (cached to disk) →
-  feature ranking → AUROC / precision / recall on held-out sets →
-  steering/ablation helpers. `src/run_pipeline.py` runs the whole thing
-  for one concept at one layer and writes
-  `results/<concept>_layer<layer>_summary.json`.
-- **Tests:** `pytest tests/` (15 tests) covers activation caching,
-  feature ranking and the consistency metrics, with no model downloads.
-- **First end-to-end run** (deception, layer 6) is in progress on a
-  CPU-only laptop. An earlier attempt was silently killed for running out
-  of memory while loading the model; see "Running it" below for the fix.
+- **Phase 1:** prompt sets for `deception`, `uncertainty` and `math` in
+  `data/`, each with 20 positive + 20 negative discovery prompts and five
+  held-out splits (`same_style`, `paraphrase`, `new_format`,
+  `tricky_negatives`, `mixed`; 6–8 positive + 6–8 negative each).
+  Negatives are matched in content to positives where possible.
+- **Pipeline:** `src/run_pipeline.py` runs one concept at one layer:
+  per-token SAE activations (cached sparsely to disk, BOS excluded) →
+  top-k features by mean(positive) − mean(negative) on the discovery set →
+  AUROC / precision / recall for every top-k feature on every held-out
+  split (discovery-set threshold) → which tokens each feature fires on.
+  Writes `results/<concept>_layer<layer>_<reduce>_summary.json`.
+  `src/report.py` turns that into a markdown table and AUROC heatmap.
+- **Tests:** `pytest tests/` (25 tests), no model downloads needed.
+- **Runs so far:** deception, layer 6 (below). Uncertainty and math
+  prompt sets are written but not yet run.
+
+## Preliminary results: deception, layer 6
+
+![AUROC heatmap](results/figures/deception_layer6_mean_auroc.png)
+
+Full table: [`results/deception_layer6_mean.md`](results/deception_layer6_mean.md).
+
+- **The top-ranked feature (5938) is a comma feature.** 100% of its
+  activation mass on positive prompts is on `,` tokens. It looks good on
+  discovery (0.78), same-style (0.86) and paraphrase (0.83) prompts
+  because deceptive sentences in those sets tend to be written as
+  "X, but really Y", then drops to 0.38 on tricky negatives, where honest
+  sentences use the same "…, but…" structure. This is exactly the
+  failure mode the hypothesis predicts: clean on the discovery set,
+  tracking surface form rather than the concept.
+- **Feature 13523** puts 83% of its mass on `was` and falls to 0.28 on
+  tricky negatives.
+- **Feature 6058 is the most consistent candidate:** 0.62–0.84 AUROC on
+  every split, with activation spread across many tokens (5% on its top
+  token) rather than one keyword. It is the first candidate for the
+  causal checks.
+- **Tricky negatives break most features:** 7 of the top 10 are at or
+  below chance there.
+
+Caveats: held-out splits are small (8 vs 8 prompts, so each AUROC is
+roughly ±0.1), this is a single early layer, and features are scored on
+the mean over tokens. The discovery set also has a known lexical confound
+(negatives use "honestly"/"admitted", positives use "but"/"though"), which
+the tricky-negatives split is designed to expose.
 
 ## Running it
 
@@ -114,6 +142,7 @@ pip install -r requirements.txt
 huggingface-cli login            # needs access to the gated google/gemma-2-2b repo
 pytest tests/
 python -m src.run_pipeline --concept deception --layer 6
+python -m src.report results/deception_layer6_mean_summary.json
 ```
 
 Memory notes (16 GB machine, no GPU):
@@ -135,10 +164,11 @@ A 16 GB GPU such as a T4 is enough; Colab's free T4 works for this stage.
 3. Run the same commands as above.
 
 ## Next steps
-1. Finish the deception / layer 6 run and check the summary JSON.
-2. Expand the held-out sets: paraphrases, new formats (dialogue, story,
-   code comments, another language), tricky negatives, mixed prompts.
-3. Add the `uncertainty` and `math` prompt sets.
-4. Run layers 12 and 18 and compare features across layers.
-5. Causal checks with `src/steer.py` (ablate/boost vs. a random-feature
-   baseline), then write `results/report.md`.
+1. Run deception at layers 12 and 18, and with `--reduce max`.
+2. Run the `uncertainty` and `math` prompt sets.
+3. De-confound the deception discovery set (balance "but"/commas and
+   "honestly"/"admitted" across positives and negatives) and check whether
+   the comma feature drops out of the top 10.
+4. Grow held-out splits to ~25 vs 25 for tighter AUROC estimates.
+5. Causal checks with `src/steer.py` on feature 6058 (ablate/boost vs. a
+   random-feature baseline), then write `results/report.md`.

@@ -49,3 +49,43 @@ def top_k_features(
     k: int = 10,
 ) -> list[CandidateFeature]:
     return rank_features(positive_acts, negative_acts)[:k]
+
+
+@dataclass
+class TokenProfile:
+    """Where one feature fires, aggregated over a set of prompts."""
+
+    feature_id: int
+    top_tokens: list[tuple[str, float]]  # (token, summed activation), descending
+    top_token_share: float  # fraction of all activation mass on the single top token
+    n_prompts_firing: int
+    n_prompts: int
+
+
+def token_profile(feature_id: int, token_acts: list, top_n: int = 10) -> TokenProfile:
+    """Which tokens a feature fires on across prompts (`TokenActivations` list).
+
+    A high `top_token_share` means the feature is mostly tracking one
+    token (e.g. " lie") rather than the concept spread across a sentence.
+    Tokens are compared after stripping whitespace and lowercasing.
+    """
+    totals: dict[str, float] = {}
+    n_firing = 0
+    for acts in token_acts:
+        trace = acts.feature_trace(feature_id)
+        if np.any(trace > 0):
+            n_firing += 1
+        for tok, val in zip(acts.tokens, trace):
+            if val > 0:
+                norm = tok.strip().lower()
+                totals[norm] = totals.get(norm, 0.0) + float(val)
+
+    ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)
+    mass = sum(totals.values())
+    return TokenProfile(
+        feature_id=feature_id,
+        top_tokens=ranked[:top_n],
+        top_token_share=(ranked[0][1] / mass) if mass > 0 else 0.0,
+        n_prompts_firing=n_firing,
+        n_prompts=len(token_acts),
+    )

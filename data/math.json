@@ -1,0 +1,158 @@
+{
+  "concept": "math",
+  "description": "Step-by-step arithmetic/algebraic reasoning vs. plain text that merely contains numbers.",
+  "discovery": {
+    "positive": [
+      "First, 12 times 4 is 48, then subtract 6 to get 42.",
+      "To find the average, add 10, 20, and 30 to get 60, then divide by 3, which gives 20.",
+      "Let x be the number of apples. Since 3x = 27, x must be 9.",
+      "The area is length times width, so 8 times 5 equals 40 square meters.",
+      "Step 1: 15% of 200 is 30. Step 2: 200 minus 30 leaves 170.",
+      "If the train goes 60 miles per hour for 2.5 hours, it travels 60 × 2.5 = 150 miles.",
+      "We need 7 + 8, which is 15, and then double it to get 30.",
+      "Since the triangle's angles sum to 180, the third angle is 180 − 50 − 60 = 70 degrees.",
+      "Dividing 144 by 12 gives 12, so each box holds 12 cookies.",
+      "Expanding (x + 2)(x + 3) gives x² + 5x + 6.",
+      "The total cost is 4 shirts at $15 each, so 4 × 15 = $60, plus $5 shipping makes $65.",
+      "Subtract 9 from both sides: 2x = 14, so x = 7.",
+      "There are 24 hours in a day, so 3 days is 24 × 3 = 72 hours.",
+      "Half of 86 is 43, and 43 plus 7 is 50.",
+      "The probability of two heads is 1/2 × 1/2 = 1/4.",
+      "Converting 5 kilometers to meters: 5 × 1000 = 5000 meters.",
+      "The perimeter is 2 × (6 + 4) = 20 centimeters.",
+      "If she saves $25 a week, after 8 weeks she has 25 × 8 = $200.",
+      "The square root of 81 is 9, and 9 squared plus 1 is 82.",
+      "Combine like terms: 3a + 5a = 8a, then 8a − 2a = 6a."
+    ],
+    "negative": [
+      "The bus to school leaves at 7:30 every morning.",
+      "She was born in 1998 in a small town in Ohio.",
+      "Room 204 is at the end of the hallway on the second floor.",
+      "The store sells 3 kinds of bread and 12 kinds of cheese.",
+      "His jersey number is 23, the same as his favorite player.",
+      "The concert on June 14 sold out in minutes.",
+      "Our apartment is on the 5th floor of a 10-story building.",
+      "The recipe calls for 2 cups of flour and a pinch of salt.",
+      "Highway 101 runs along the coast for hundreds of miles.",
+      "The museum has over 40 paintings by Monet.",
+      "I have 3 brothers and 1 sister.",
+      "The meeting is scheduled for 2 p.m. on Friday.",
+      "The library closes at 9 on weekdays.",
+      "There were 50 people at the wedding.",
+      "The book has 300 pages and 12 chapters.",
+      "Her phone number ends in 4417.",
+      "The marathon is 26.2 miles long.",
+      "The movie came out in 2019 and won 2 awards.",
+      "Flight 882 departs from gate 17.",
+      "The temperature reached 95 degrees yesterday."
+    ]
+  },
+  "held_out": {
+    "same_style": {
+      "positive": [
+        "First, 9 times 6 is 54, then add 10 to get 64.",
+        "Since 5x = 35, x equals 7.",
+        "The area is 7 times 3, which is 21 square feet.",
+        "Half of 50 is 25, and 25 minus 4 is 21.",
+        "If each ticket costs $12, then 5 tickets cost 12 × 5 = $60.",
+        "Subtract 3 from both sides to get 4y = 20, so y = 5."
+      ],
+      "negative": [
+        "The train leaves platform 9 at 6 p.m.",
+        "He has lived at 35 Oak Street since 2010.",
+        "The garden has 7 rose bushes and 3 apple trees.",
+        "Her grandmother turned 50 last spring.",
+        "Tickets for the show go on sale on May 12.",
+        "The school has 4 floors and 20 classrooms."
+      ]
+    },
+    "paraphrase": {
+      "positive": [
+        "Multiply 12 by 4 to get 48; taking away 6 leaves 42.",
+        "Let x be the apples: 3x equals 27, so dividing by 3 gives x = 9.",
+        "Going 60 mph for two and a half hours covers 150 miles, since 60 × 2.5 = 150.",
+        "The missing angle is 70°, because 180 minus 50 minus 60 is 70.",
+        "Four shirts at $15 come to $60; add $5 shipping for a total of $65.",
+        "Each week she puts away $25, so eight weeks gives her $200.",
+        "1/2 times 1/2 is 1/4, which is the chance of flipping two heads.",
+        "Adding 3a and 5a gives 8a; removing 2a leaves 6a."
+      ],
+      "negative": [
+        "There are 12 eggs in the carton and 4 cartons in the fridge.",
+        "She has 27 apples in a basket on the kitchen table.",
+        "The train's top speed is listed as 60 miles per hour.",
+        "The triangle-shaped sign is 50 centimeters tall.",
+        "The shirts are on sale for $15 this weekend.",
+        "She opened her savings account 8 weeks ago.",
+        "He flipped a coin before the game to decide who goes first.",
+        "Section 3A of the stadium has 500 seats."
+      ]
+    },
+    "new_format": {
+      "positive": [
+        "Student: How many minutes are in 3 hours?\nTutor: Each hour has 60 minutes, so 3 × 60 = 180 minutes.",
+        "A: If I have 20 dollars and spend 7, how much is left?\nB: 20 minus 7 is 13 dollars.",
+        "The baker had 48 rolls and split them evenly into 6 baskets, so each basket got 8 rolls.",
+        "The knight walked 5 leagues each day; after 4 days he had walked 20 leagues.",
+        "total = price * qty  # 3 * 4.50 = 13.50",
+        "# area = pi * r**2, so for r = 2 this is about 12.57",
+        "Si tengo 15 manzanas y como 4, me quedan 15 − 4 = 11.",
+        "El doble de 18 es 36, y 36 dividido entre 4 es 9."
+      ],
+      "negative": [
+        "Student: When is the test?\nTutor: It's on the 3rd, in room 60.",
+        "A: How much did the shirt cost?\nB: It was 20 dollars at the mall on 7th Street.",
+        "The baker opened her shop in 1948 on a street with 6 other bakeries.",
+        "The knight served the king for 20 years and owned 4 horses.",
+        "max_retries = 3  # retry the request up to 3 times",
+        "# version 2.4.1, released in March",
+        "Tengo 15 años y vivo en el piso 4.",
+        "El autobús número 36 llega a las 9."
+      ]
+    },
+    "tricky_negatives": {
+      "positive": [
+        "Doubling the recipe means twice as much of every ingredient, so the single cup of milk becomes two.",
+        "If every student gets three pencils and there are ten students, we need thirty pencils.",
+        "Splitting the bill four ways, each person owes a quarter of it.",
+        "Since a dozen is twelve, two dozen eggs is twenty-four eggs.",
+        "Ten percent off a forty-dollar shirt saves four dollars, leaving thirty-six.",
+        "There are seven days in a week, so a fortnight is fourteen days.",
+        "If the sum of two numbers is ten and one is three, the other must be seven.",
+        "Each side of the square is five, so going all the way around is twenty."
+      ],
+      "negative": [
+        "The total eclipse was the event of the year.",
+        "She added a pinch of salt and multiplied her chances of a perfect sauce.",
+        "His math teacher gave the class a long lecture on the history of calculus.",
+        "The equation of their friendship was complicated.",
+        "Problem 4 on the homework was about the French Revolution.",
+        "The calculator sat unused on the desk.",
+        "Count on me, she said, I'll be there.",
+        "The sum of his experiences shaped who he became."
+      ]
+    },
+    "mixed": {
+      "positive": [
+        "I think 17 × 3 is 51, but let me double-check: 17 × 3 = 51, yes.",
+        "He claimed 8 × 7 was 54, but actually 8 × 7 = 56.",
+        "Maybe the answer is 30? 6 × 5 is 30, so probably.",
+        "She lied about her score: 45 out of 50 is 90%, not the 98% she claimed.",
+        "I'm not sure, but 100 divided by 8 should be 12.5.",
+        "They hid the loss: revenue of $80k minus costs of $95k is −$15k.",
+        "Perhaps x = 3, since 2(3) + 4 = 10 checks out.",
+        "He said the total was $20, but 3 items at $9 each is $27."
+      ],
+      "negative": [
+        "I think the store has 17 types of cereal, but I'm not sure.",
+        "He claimed he owned 8 cars, which wasn't true.",
+        "Maybe there were 30 people at the party.",
+        "She lied about getting a perfect score on the test.",
+        "I'm not sure if room 100 is on this floor.",
+        "They hid the report in a drawer for 15 years.",
+        "Perhaps she lives at 3 Elm Street.",
+        "He said the shirt cost $20, but he was joking."
+      ]
+    }
+  }
+}
