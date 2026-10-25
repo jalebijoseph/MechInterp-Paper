@@ -1,6 +1,6 @@
 # Do SAE Features Mean the Same Thing Across Prompts?
 
-**Author:** Anjali Joseph
+**Author:** Rivan
 
 ## Goal
 Test whether SAE features that seem to represent a concept
