@@ -14,11 +14,16 @@ the feature fires on.
 
 Usage:
     python -m src.run_pipeline --concept deception --layer 6
+    python -m src.run_pipeline --concept deception uncertainty math --layer 6 12 18
+
+With several layers/concepts the model is loaded once, and each layer's
+SAE is loaded once and freed before the next.
 """
 
 from __future__ import annotations
 
 import argparse
+import gc
 import json
 
 import numpy as np
@@ -38,7 +43,8 @@ def _split_arrays(token_acts_pos, token_acts_neg, reduce: str):
     return values, labels
 
 
-def run(concept: str, layer: int, top_k: int = 10, reduce: str = "mean") -> dict:
+def run(concept: str, layer: int, top_k: int = 10, reduce: str = "mean", model=None, sae=None) -> dict:
+    """One concept at one layer. Pass `model`/`sae` to reuse already-loaded ones."""
     seed_everything()
     sae_id = sae_id_for_layer(layer)
     config = RunConfig(concept=concept, layer=layer, top_k_features=top_k, extra={"sae_id": sae_id, "reduce": reduce})
@@ -47,9 +53,12 @@ def run(concept: str, layer: int, top_k: int = 10, reduce: str = "mean") -> dict
     prompt_set = load_prompt_set(DATA_DIR / f"{concept}.json")
     splits = {"discovery": prompt_set["discovery"], **prompt_set.get("held_out", {})}
 
-    logger.info("Loading model and SAE (layer %d) — this downloads weights the first time.", layer)
-    model = load_model()
-    sae = load_sae(layer)
+    if model is None:
+        logger.info("Loading model — this downloads weights the first time.")
+        model = load_model()
+    if sae is None:
+        logger.info("Loading SAE (layer %d) — this downloads weights the first time.", layer)
+        sae = load_sae(layer)
 
     token_acts = {}
     for name, split in splits.items():
@@ -115,10 +124,17 @@ def run(concept: str, layer: int, top_k: int = 10, reduce: str = "mean") -> dict
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--concept", default="deception")
-    parser.add_argument("--layer", type=int, default=6)
+    parser.add_argument("--concept", nargs="+", default=["deception"])
+    parser.add_argument("--layer", type=int, nargs="+", default=[6])
     parser.add_argument("--top-k", type=int, default=10)
     parser.add_argument("--reduce", choices=["mean", "max"], default="mean")
     args = parser.parse_args()
 
-    run(concept=args.concept, layer=args.layer, top_k=args.top_k, reduce=args.reduce)
+    model = load_model()
+    for layer in args.layer:
+        logger.info("Loading SAE (layer %d) — this downloads weights the first time.", layer)
+        sae = load_sae(layer)
+        for concept in args.concept:
+            run(concept=concept, layer=layer, top_k=args.top_k, reduce=args.reduce, model=model, sae=sae)
+        del sae
+        gc.collect()

@@ -1,3 +1,5 @@
+import pytest
+
 from src.report import auroc_matrix, markdown_table, plot_heatmap
 
 
@@ -28,3 +30,23 @@ def test_plot_heatmap_writes_file(tmp_path):
     out = tmp_path / "fig.png"
     plot_heatmap(_summary(), out)
     assert out.stat().st_size > 0
+
+
+from src.report import layer_markdown, layer_table, plot_layer_comparison
+
+
+def _layer_summary(concept, layer, auroc):
+    f = {"feature_id": 1, "discovery": {"auroc": 0.9},
+         "held_out": {"tricky_negatives": {"auroc": auroc}, "paraphrase": {"auroc": auroc + 0.1}},
+         "tokens": {"positive_top": [], "positive_top_token_share": 0.0}}
+    return {"config": {"concept": concept, "layer": layer}, "features": [f]}
+
+
+def test_layer_table_and_plot(tmp_path):
+    table = layer_table([_layer_summary("math", 6, 0.6), _layer_summary("math", 12, 0.8),
+                         _layer_summary("deception", 6, 0.5)])
+    assert table["math"][12]["top10_mean"] == pytest.approx(0.85)
+    assert table["math"][6]["tricky_top10_mean"] == pytest.approx(0.6)
+    assert "| math | 12 | 0.85 |" in layer_markdown(table)
+    plot_layer_comparison(table, tmp_path / "layers.png")
+    assert (tmp_path / "layers.png").stat().st_size > 0

@@ -1,8 +1,9 @@
 """Causal checks: ablate or boost an SAE feature and see what changes.
 
-Needs a loaded model + SAE (see load.py) — nothing here is unit-testable
-without them, so this is exercised manually / in notebooks once the
-pipeline is running end to end, not in tests/.
+Needs a loaded model + SAE (see load.py); tests/test_causal.py exercises
+the edit hook on a tiny random model. For quantitative causal checks
+(KL, token/component attribution, random baselines) see causal.py; this
+module is for qualitative side-by-side generations.
 """
 
 from __future__ import annotations
@@ -14,24 +15,25 @@ import numpy as np
 logger = logging.getLogger("mech_interp_sae.steer")
 
 
-def _reconstruction_with_edit(sae, resid, feature_id: int, scale: float):
-    """Decode `resid` through the SAE with one feature's activation scaled.
+def _residual_with_edit(sae, resid, feature_id: int, scale: float):
+    """`resid` with one feature's contribution (act × decoder row) scaled.
 
-    `scale=0.0` ablates the feature; `scale>1.0` boosts it;
-    `scale=1.0` is a no-op (same as the SAE's own reconstruction).
+    `scale=0.0` ablates the feature; `scale>1.0` boosts it; `scale=1.0`
+    is an exact no-op. Only the feature's own contribution changes, so
+    the SAE's reconstruction error stays in the residual stream (decoding
+    the edited features instead would also drop that error, changing the
+    model's output even at scale=1.0).
     """
-    feats = sae.encode(resid)
-    feats = feats.clone()
-    feats[..., feature_id] = feats[..., feature_id] * scale
-    return sae.decode(feats)
+    w = sae.W_dec[feature_id]
+    acts = sae.encode(resid.to(w.dtype))[..., feature_id : feature_id + 1]
+    return resid + ((scale - 1.0) * acts * w).to(resid.dtype)
 
 
 def make_edit_hook(sae, feature_id: int, scale: float):
-    """transformer_lens hook: replace resid_post with an SAE-edited version."""
+    """transformer_lens hook: scale one feature's contribution to resid_post."""
 
     def hook_fn(resid, hook):
-        edited = _reconstruction_with_edit(sae, resid, feature_id, scale)
-        return edited
+        return _residual_with_edit(sae, resid, feature_id, scale)
 
     return hook_fn
 

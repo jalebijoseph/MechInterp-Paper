@@ -23,13 +23,18 @@ MODEL_NAME = "google/gemma-2-2b"
 # Confirmed against the google/gemma-scope-2b-pt-res repo's file tree on
 # Hugging Face (huggingface.co/google/gemma-scope-2b-pt-res), which lists
 # several average_l0 (sparsity) variants per layer/width. Picked the
-# variant closest to average_l0~=70 at each layer, matching the L0=71
+# variant closest to average_l0~=71 at each layer, matching the L0=71
 # variant the model card names as the one used in the Neuronpedia demo
-# (for layer 20, not one of ours, but the same selection rule).
+# (layer 20). Filled in for every layer from the repo's file listing
+# (HfApi().list_repo_files), ties broken toward the lower L0.
 SAE_RELEASE = "gemma-scope-2b-pt-res"
 SAE_WIDTH = "16k"
 LAYERS = [6, 12, 18]
-LAYER_AVERAGE_L0 = {6: 70, 12: 82, 18: 74}
+LAYER_AVERAGE_L0 = {
+    0: 46, 1: 40, 2: 53, 3: 59, 4: 60, 5: 68, 6: 70, 7: 69, 8: 71, 9: 73,
+    10: 77, 11: 80, 12: 82, 13: 83, 14: 83, 15: 78, 16: 78, 17: 77, 18: 74,
+    19: 73, 20: 71, 21: 70, 22: 72, 23: 74, 24: 73, 25: 55,
+}
 
 for _dir in (DATA_DIR, CACHE_DIR, RESULTS_DIR):
     _dir.mkdir(parents=True, exist_ok=True)
