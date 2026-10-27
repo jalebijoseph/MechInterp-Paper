@@ -29,7 +29,12 @@ negatives (e.g., "lie down" vs. "tell a lie").
 - `src/activations.py` — run prompts, cache SAE feature activations
 - `src/find_features.py` — find candidate features per concept
 - `src/evaluate.py` — consistency metrics on held-out sets
-- `src/steer.py` — causal tests (ablate / boost a feature)
+- `src/run_pipeline.py` — Phases 2–4 for any concepts × layers
+- `src/causal.py`, `src/run_causal.py` — causal experiments: what causes a
+  feature (token / head / MLP attribution) and what it causes (ablation,
+  steering vs. random features)
+- `src/steer.py` — qualitative side-by-side generations with a feature edited
+- `src/report.py` — tables and figures from the results JSON
 - `notebooks/` — plots and analysis
 - `results/` — saved metrics, figures, report.md
 
@@ -99,7 +104,8 @@ For each feature, report:
   split (discovery-set threshold) → which tokens each feature fires on.
   Writes `results/<concept>_layer<layer>_<reduce>_summary.json`.
   `src/report.py` turns that into a markdown table and AUROC heatmap.
-- **Tests:** `pytest tests/` (25 tests), no model downloads needed.
+- **Tests:** `pytest tests/` (36 tests), no model downloads needed. The
+  causal code is tested on a tiny random transformer with a fake SAE.
 - **Runs so far:** all three concepts at layer 6 (below).
 
 ## Preliminary results (layer 6)
@@ -180,6 +186,56 @@ the mean over tokens. The deception discovery set has a known lexical
 confound (negatives use "honestly"/"admitted", positives use
 "but"/"though"), which the tricky-negatives split is designed to expose.
 
+## Causal experiments (deception, layer 6)
+
+`src/run_causal.py` asks two questions about a feature, on the positive
+prompts where it fires most (4 per feature here, CPU-limited):
+
+- **What causes it?** Mean-ablate each input token's embedding, then
+  each attention head and MLP in layers 0–6, one at a time, and measure
+  how much of the feature's peak activation is lost.
+- **What does it cause?** Ablate the feature (subtract its activation ×
+  decoder direction, keeping the SAE's reconstruction error) or steer
+  along it, and measure the KL divergence of the model's next-token
+  predictions, against random features with a similar firing rate.
+
+Full write-up: [`results/causal_deception_layer6.md`](results/causal_deception_layer6.md).
+
+| feature | role | input effect from the token it fires on | main causes | ablation KL vs. random |
+|---|---|---|---|---|
+| 5938 | top-ranked on discovery | 88% | MLPs L6, L3, L4 | 0.091 vs. 0.0001 |
+| 6058 | most consistent on held-out | 35% | attention heads L6H7, L5H7; MLP L5 | 0.0016 vs. 0.0005 (3×) |
+| 15079 | 2nd most consistent | 30% | MLP L6, head L0H7 | 0.0007 vs. 0.0007 (none) |
+
+- **5938 is a comma detector, mechanistically too.** The comma token
+  itself accounts for 88% of what drives it, and it is built by MLPs
+  (per-token computation), not attention. It matters a lot to the model's
+  output (ablating it shifts predictions ~1000× more than a random
+  feature), and steering along it promotes clause connectors
+  ("respectively", "albeit", "namely", "however"). It's a real,
+  important feature, just not a deception feature.
+- **6058 integrates context.** Only 35% of its input effect comes from
+  the token it fires on, and it is computed mainly by two attention
+  heads (L6H7, L5H7), which move information between positions. In
+  "She swore she hadn't touched the cookies, crumbs still on her shirt",
+  it peaks on "shirt" and ablating "crumbs" removes 63% of the
+  activation: it is responding to evidence that contradicts the claim.
+  Its effect on the output is small (3× random), as expected for a
+  feature this early in the model.
+- **15079 is a number feature** (it peaks on digits in the deception
+  prompts that contain numbers, which is also why it ranks top-10 for
+  math) and has no detectable effect on the output.
+
+So the feature a naive "biggest activation difference" ranking picks is
+a surface feature, while the feature that generalizes best is the one
+built from context by attention: the correlational and causal pictures
+agree.
+
+Limitations: 4 prompts per feature; mean-ablation is one of several
+reasonable ablation baselines; the "tokens it promotes" lists are
+averaged log-prob changes over the whole vocabulary, which rare tokens
+can dominate (the steering lists are more readable).
+
 ## Running it
 
 ### Locally (CPU)
@@ -191,6 +247,14 @@ huggingface-cli login            # needs access to the gated google/gemma-2-2b r
 pytest tests/
 python -m src.run_pipeline --concept deception --layer 6
 python -m src.report results/deception_layer6_mean_summary.json
+
+# several concepts/layers in one go (model loaded once)
+python -m src.run_pipeline --concept deception uncertainty math --layer 6 12 18
+python -m src.report results/*_summary.json      # adds a cross-layer figure
+
+# causal experiments (needs the pipeline summary for that concept/layer)
+python -m src.run_causal --concept deception --layer 6
+python -m src.run_causal --concept deception --layer 6 --features 5938 6058
 ```
 
 Memory notes (16 GB machine, no GPU):
@@ -219,5 +283,6 @@ A 16 GB GPU such as a T4 is enough; Colab's free T4 works for this stage.
    "honestly"/"admitted" across positives and negatives) and check whether
    the comma feature drops out of the top 10.
 4. Grow held-out splits to ~25 vs 25 for tighter AUROC estimates.
-5. Causal checks with `src/steer.py` on features 6058, 8036 and 9983 (ablate/boost vs. a
-   random-feature baseline), then write `results/report.md`.
+5. Causal runs for uncertainty (8036) and math (9983), with more prompts
+   per feature (best on a GPU: ~1 min there vs. ~20 min per feature on
+   this laptop), then write `results/report.md`.
