@@ -1,0 +1,21 @@
+{
+  "experiment": "imposter",
+  "out_dir": "results/qwen3-8b-20261104/jobs/exp2-core/attempt-001/results",
+  "endpoints_file": "results/qwen3-8b-20261104/jobs/exp2-core/attempt-001/endpoints.json",
+  "agents": {
+    "reviewer": "qwen3-8b",
+    "peer": "qwen3-8b"
+  },
+  "peer_mode": "scripted",
+  "sources": [
+    "incentive",
+    "no_incentive",
+    "document"
+  ],
+  "n_items": 60,
+  "max_new_tokens": 140,
+  "record": {
+    "top_k": 10
+  },
+  "run_id": "exp2-core"
+}

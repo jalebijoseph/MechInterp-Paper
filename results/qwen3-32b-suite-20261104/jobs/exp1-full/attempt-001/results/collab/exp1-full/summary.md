@@ -1,0 +1,7 @@
+# Exp. 1 collaboration: peer representation in J-space
+
+| condition | framing | turns | partner_name_mrr | partner_name_mrr_logit | partner_name_mrr_output | partner_name_mrr_beyond | partner_name_mrr_reading | partner_name_mrr_reading_logit | partner_name_mrr_reading_output | partner_name_mrr_reading_beyond | team_mrr | team_mrr_logit | team_mrr_output | team_mrr_beyond | partner_kw_mrr | partner_kw_mrr_logit | partner_kw_mrr_output | partner_kw_mrr_beyond | own_kw_mrr | own_kw_mrr_logit | own_kw_mrr_output | own_kw_mrr_beyond | uptake | cross_agent_cosine | text_mentions_partner | fluency | copies_peer |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| none | named_solo | 32 | 0.009 | 0.0062 | 0.0172 | 0.0032 | 0.0004 | 0.0002 | 0.0021 | 0.0004 | 0.0259 | 0.0072 | 0.0095 | 0.0259 | 0.0444 | 0.0158 | 0.0149 | 0.0409 | 0.0763 | 0.0336 | 0.0266 | 0.0704 | 0.0401 | 0.7218 | 0.8125 | 0.9773 | 0.0211 |
+| none | solo | 32 | 0.0004 | 0.0001 | 0.0001 | 0.0004 | 0.0003 | 0.0001 | 0.0002 | 0.0003 | 0.0175 | 0.0058 | 0.007 | 0.0168 | 0.0546 | 0.0176 | 0.0165 | 0.0505 | 0.0972 | 0.0403 | 0.0328 | 0.0891 | 0.0413 | 0.6863 | 0.0 | 0.9853 | 0.0294 |
+| none | team | 32 | 0.0109 | 0.0057 | 0.0139 | 0.0015 | 0.0008 | 0.0001 | 0.0011 | 0.0008 | 0.0414 | 0.0136 | 0.0173 | 0.0411 | 0.0312 | 0.0113 | 0.0125 | 0.0286 | 0.0662 | 0.0321 | 0.025 | 0.0596 | 0.0387 | 0.6588 | 1.0 | 0.9776 | 0.0112 |

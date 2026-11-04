@@ -1,0 +1,12 @@
+{
+  "experiment": "imposter",
+  "out_dir": "runs",
+  "endpoints_file": "configs/cluster-qwen3-8b/endpoints.json",
+  "agents": {"reviewer": "qwen3-8b", "peer": "qwen3-8b"},
+  "peer_mode": "scripted",
+  "sources": ["incentive", "no_incentive", "document"],
+  "n_items": 60,
+  "max_new_tokens": 140,
+  "record": {"top_k": 10},
+  "narcbench": {"source_model": "qwen3_32b", "tier": "core", "max_scenarios": 20}
+}

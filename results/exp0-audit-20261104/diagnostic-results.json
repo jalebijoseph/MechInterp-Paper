@@ -1,0 +1,2213 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "rows": [
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": " cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria leaves the room. Peter takes the watch out of the cupboard and puts it in the jar. Maria comes back.\n\nQuestion: Where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": " cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria stays in the room and watches. Peter takes the watch out of the cupboard and puts it in the jar.\n\nQuestion: Where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": " basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma leaves the room. Peter takes the pen out of the basket and puts it in the bucket. Emma comes back.\n\nQuestion: Where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": " basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma stays in the room and watches. Peter takes the pen out of the basket and puts it in the bucket.\n\nQuestion: Where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria disconnects for a scheduled restart. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria reconnects.\n\nQuestion: Which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": " exports",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria stays connected and watches the activity log. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria sees the move.\n\nQuestion: Which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma disconnects for a scheduled restart. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma reconnects.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma stays connected and watches the activity log. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma sees the move.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "original_native",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": "Jar",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria leaves the room. Peter takes the watch out of the cupboard and puts it in the jar. Maria comes back.\n\nQuestion: Where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": "Cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria stays in the room and watches. Peter takes the watch out of the cupboard and puts it in the jar.\n\nQuestion: Where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": "cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": "nails",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": "Basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma leaves the room. Peter takes the pen out of the basket and puts it in the bucket. Emma comes back.\n\nQuestion: Where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": "Basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma stays in the room and watches. Peter takes the pen out of the basket and puts it in the bucket.\n\nQuestion: Where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": "cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": "nails",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": "archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria disconnects for a scheduled restart. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria reconnects.\n\nQuestion: Which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": "exports",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria stays connected and watches the activity log. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria sees the move.\n\nQuestion: Which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": "Images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": "Images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": "inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma disconnects for a scheduled restart. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma reconnects.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": "Inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma stays connected and watches the activity log. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma sees the move.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": "Backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "no_answer_prefill",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": "Backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": " jar",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria leaves the room. Peter takes the watch out of the cupboard and puts it in the jar. Maria comes back.\n\nQuestion: After all the events described, where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": " cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria stays in the room and watches. Peter takes the watch out of the cupboard and puts it in the jar.\n\nQuestion: After all the events described, where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: After all the events described, liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " nails",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: After all the events described, liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": " basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma leaves the room. Peter takes the pen out of the basket and puts it in the bucket. Emma comes back.\n\nQuestion: After all the events described, where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": " basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma stays in the room and watches. Peter takes the pen out of the basket and puts it in the bucket.\n\nQuestion: After all the events described, where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: After all the events described, liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " nails",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: After all the events described, liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria disconnects for a scheduled restart. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria reconnects.\n\nQuestion: After all the events described, which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria stays connected and watches the activity log. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria sees the move.\n\nQuestion: After all the events described, which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: After all the events described, what does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: After all the events described, what does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma disconnects for a scheduled restart. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma reconnects.\n\nQuestion: After all the events described, which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma stays connected and watches the activity log. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma sees the move.\n\nQuestion: After all the events described, which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: After all the events described, what does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "current_question",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: After all the events described, what does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": " cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria leaves the room. Peter takes the watch out of the cupboard and puts it in the jar. Maria comes back.\n\nQuestion: Where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": " cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria stays in the room and watches. Peter takes the watch out of the cupboard and puts it in the jar. Maria sees that it is now in the jar.\n\nQuestion: Where will Maria look for the watch first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside. Liam sees that it is now filled with nails.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": " basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma leaves the room. Peter takes the pen out of the basket and puts it in the bucket. Emma comes back.\n\nQuestion: Where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": " basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma stays in the room and watches. Peter takes the pen out of the basket and puts it in the bucket. Emma sees that it is now in the bucket.\n\nQuestion: Where will Emma look for the pen first? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside. Liam sees that it is now filled with nails.\n\nQuestion: Liam believes the tin is full of what? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria disconnects for a scheduled restart. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria reconnects.\n\nQuestion: Which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria stays connected and watches the activity log. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria sees the move. Agent Maria sees that it is now in the archive.\n\nQuestion: Which folder will Agent Maria open first to find the model file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it. Agent Liam sees that it is now filled with images.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma disconnects for a scheduled restart. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma reconnects.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma stays connected and watches the activity log. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma sees the move. Agent Emma sees that it is now in the inbox.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file?"
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "explicit_observation",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it. Agent Liam sees that it is now filled with backups.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "jar",
+      "answer": " jar",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria leaves the room. Peter takes the watch out of the cupboard and puts it in the jar. Maria comes back.\n\nQuestion: Where is the object actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": " jar",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria stays in the room and watches. Peter takes the watch out of the cupboard and puts it in the jar.\n\nQuestion: Where is the object actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "nails",
+      "answer": " Nails.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " nails",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "bucket",
+      "answer": " bucket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma leaves the room. Peter takes the pen out of the basket and puts it in the bucket. Emma comes back.\n\nQuestion: Where is the object actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": " bucket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma stays in the room and watches. Peter takes the pen out of the basket and puts it in the bucket.\n\nQuestion: Where is the object actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "nails",
+      "answer": " Nails.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " nails",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "archive",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria disconnects for a scheduled restart. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria reconnects.\n\nQuestion: Where is the file actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": " archive",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria stays connected and watches the activity log. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria sees the move.\n\nQuestion: Where is the file actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "images",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": " images",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "inbox",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma disconnects for a scheduled restart. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma reconnects.\n\nQuestion: Where is the file actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": " inbox",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma stays connected and watches the activity log. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma sees the move.\n\nQuestion: Where is the file actually located now? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "backups",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "world_question",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": " backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story and answer the question with a single word."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What is actually inside? Answer with one word."
+        }
+      ],
+      "prefill": "Answer:"
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": "Maria will look for the watch in the cupboard first, because that's where she last left it before she left the room. She is unaware that Peter moved it to the jar.\n\nFinal answer: cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria leaves the room. Peter takes the watch out of the cupboard and puts it in the jar. Maria comes back.\n\nQuestion: Where will Maria look for the watch first? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": "Maria will look for the watch in the cupboard first, because that is where she last saw it and where she was watching it. \n\nFinal answer: cupboard",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Maria and Peter are in a room. Maria puts the watch in the cupboard. Maria stays in the room and watches. Peter takes the watch out of the cupboard and puts it in the jar.\n\nQuestion: Where will Maria look for the watch first? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": "Liam believes the tin is full of cereal because that is what the label says, even though it is actually filled with nails. He has never looked inside, so his belief is based on the label.\n\nFinal answer: cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": "Liam believes the tin is full of cereal because that is what the label says, even though it actually contains nails. The label misleads him into thinking the contents are cereal.\n\nFinal answer: cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: Liam believes the tin is full of what? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": "Emma will look for the pen in the basket first, because that's where she last saw it before she left the room. She is unaware that Peter moved it to the bucket.\n\nFinal answer: basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma leaves the room. Peter takes the pen out of the basket and puts it in the bucket. Emma comes back.\n\nQuestion: Where will Emma look for the pen first? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": "Emma will look for the pen in the basket first, because that is where she last saw it. She is watching the action and would expect the pen to still be in the basket unless she is told otherwise.\n\nFinal answer: basket",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Emma and Peter are in a room. Emma puts the pen in the basket. Emma stays in the room and watches. Peter takes the pen out of the basket and puts it in the bucket.\n\nQuestion: Where will Emma look for the pen first? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": "Liam believes the tin is full of cereal because that is what the label says, even though it is actually filled with nails. He has never looked inside, so his belief is based on the label.\n\nFinal answer: cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam has never looked inside the tin.\n\nQuestion: Liam believes the tin is full of what? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": "Liam believes the tin is full of cereal because that is what the label says, even though it actually contains nails. The label misleads him into thinking the contents are cereal.\n\nFinal answer: cereal",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Here is a tin filled with nails. There is no cereal in it. Yet the label on the tin says \"cereal\". Liam finds the tin. Liam opens the tin and looks inside.\n\nQuestion: Liam believes the tin is full of what? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": "Agent Maria will likely open the **archive folder** first to find the model file. This is because she is unaware that Agent Peter moved the file while she was disconnected. Since she expects the file to still be in the exports folder, she may check there first, but if she doesn't find it, she would then look in the archive folder where it was moved.\n\n**Final Answer:** Archive folder",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria disconnects for a scheduled restart. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria reconnects.\n\nQuestion: Which folder will Agent Maria open first to find the model file? Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": "Agent Maria will open the **archive folder** first to find the model file. This is because Agent Peter moved the file from the exports folder to the archive folder, and Agent Maria saw the move. Therefore, the file is no longer in the exports folder.\n\n**Final Answer:** Archive folder.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Agent Maria and Agent Peter share a project workspace. Agent Maria saves the model file in the exports folder. Agent Maria stays connected and watches the activity log. While that happens, Agent Peter moves the model file from the exports folder to the archive folder. Agent Maria sees the move.\n\nQuestion: Which folder will Agent Maria open first to find the model file? Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": "Agent Liam, having only seen the file named \"orders.csv\" and not opened it, would believe the file contains orders, based on the name. The name suggests the file is meant for storing order data, even though it actually contains images.\n\nFinal answer: orders",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": "Agent Liam believes the file contains **orders**, as the file is named \"orders.csv\" and he opens it expecting to read orders. However, the file actually contains only images, not orders.\n\nFinal answer: **orders**",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named orders.csv. It contains only images, and no orders at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": "When Agent Emma reconnects, she will likely look for the invoice file in the **drafts folder** first, as that was where she originally saved it. Although Agent Peter moved the file, Agent Emma may not be aware of the change and will check her original location first.\n\n**Final Answer:** drafts folder.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma disconnects for a scheduled restart. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma reconnects.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file? Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": "Agent Emma first saves the invoice file in the drafts folder. Although she stays connected and watches the activity log, she does not explicitly open any folder. However, since she sees the move from the drafts folder to the inbox folder, it is logical to assume she would first check the drafts folder to confirm the file's original location before looking elsewhere.\n\nFinal Answer: Drafts folder.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "Agent Emma and Agent Peter share a project workspace. Agent Emma saves the invoice file in the drafts folder. Agent Emma stays connected and watches the activity log. While that happens, Agent Peter moves the invoice file from the drafts folder to the inbox folder. Agent Emma sees the move.\n\nQuestion: Which folder will Agent Emma open first to find the invoice file? Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": "Agent Liam believes the file contains backups, as that is what is stated in the description of the file. The fact that the file is named \"users.csv\" might suggest it is related to users, but the description explicitly says it contains only backups and no users. Since Agent Liam has never opened the file, his belief is based solely on the given information.\n\nFinal answer: backups",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam has never opened the file.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "reason_then_answer",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": "Agent Liam believes the file contains **backups**, as that is what the file's description states. The file is explicitly mentioned to contain only backups and no users.\n\nFinal answer: **backups**",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Read the story carefully. Explain briefly and then give a final answer."
+        },
+        {
+          "role": "user",
+          "content": "A shared workspace has a file named users.csv. It contains only backups, and no users at all. Agent Liam finds the file in the listing. Agent Liam opens the file and reads it.\n\nQuestion: What does Agent Liam believe the file contains? Answer with one word. Explain briefly, then give your final answer."
+        }
+      ],
+      "prefill": ""
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": " cupboard"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": " cupboard"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": " basket"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": " basket"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": " archive"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": " exports"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": " images"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": " images"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": " inbox"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": " inbox"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": " backups"
+    },
+    {
+      "variant": "original_runtime_record_False",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": " backups"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "cupboard",
+      "answer": " cupboard"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "jar",
+      "answer": " cupboard"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "basket",
+      "answer": " basket"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "bucket",
+      "answer": " basket"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "cereal",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "people",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "nails",
+      "answer": " cereal"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb000",
+      "kind": "transfer",
+      "control": false,
+      "expected": "exports",
+      "answer": " archive"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb000c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "archive",
+      "answer": " exports"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb001",
+      "kind": "contents",
+      "control": false,
+      "expected": "orders",
+      "answer": " images"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb001c",
+      "kind": "contents",
+      "control": true,
+      "expected": "images",
+      "answer": " images"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb002",
+      "kind": "transfer",
+      "control": false,
+      "expected": "drafts",
+      "answer": " inbox"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb002c",
+      "kind": "transfer",
+      "control": true,
+      "expected": "inbox",
+      "answer": " inbox"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb003",
+      "kind": "contents",
+      "control": false,
+      "expected": "users",
+      "answer": " backups"
+    },
+    {
+      "variant": "original_runtime_record_True",
+      "framing": "agents",
+      "item": "fb003c",
+      "kind": "contents",
+      "control": true,
+      "expected": "backups",
+      "answer": " backups"
+    }
+  ]
+}

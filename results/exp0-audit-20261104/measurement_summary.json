@@ -1,0 +1,448 @@
+{
+  "8b": {
+    "integrity_checks": {
+      "traces": 140,
+      "watch_words_checked": 777,
+      "actual_next_token_matches_watched_form": 80
+    },
+    "integrity_errors": [],
+    "core_story_end": {
+      "all": {
+        "n": 80,
+        "wins": 40,
+        "ties": 0,
+        "losses": 40,
+        "win_rate": 0.5
+      },
+      "false_belief": {
+        "n": 40,
+        "wins": 21,
+        "ties": 0,
+        "losses": 19,
+        "win_rate": 0.525
+      },
+      "controls": {
+        "n": 40,
+        "wins": 19,
+        "ties": 0,
+        "losses": 21,
+        "win_rate": 0.475
+      }
+    },
+    "per_template": [
+      {
+        "framing": "people",
+        "template": "transfer",
+        "control": false,
+        "n": 10,
+        "correct": 10,
+        "story_end": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 5
+        },
+        "question": {
+          "wins": 3,
+          "ties": 1,
+          "losses": 6
+        },
+        "answer": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      {
+        "framing": "people",
+        "template": "transfer",
+        "control": true,
+        "n": 10,
+        "correct": 0,
+        "story_end": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 6
+        },
+        "question": {
+          "wins": 8,
+          "ties": 0,
+          "losses": 2
+        },
+        "answer": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 10
+        }
+      },
+      {
+        "framing": "people",
+        "template": "contents",
+        "control": false,
+        "n": 10,
+        "correct": 6,
+        "story_end": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 5
+        },
+        "question": {
+          "wins": 2,
+          "ties": 3,
+          "losses": 5
+        },
+        "answer": {
+          "wins": 6,
+          "ties": 0,
+          "losses": 4
+        }
+      },
+      {
+        "framing": "people",
+        "template": "contents",
+        "control": true,
+        "n": 10,
+        "correct": 4,
+        "story_end": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 5
+        },
+        "question": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "answer": {
+          "wins": 5,
+          "ties": 1,
+          "losses": 4
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "transfer",
+        "control": false,
+        "n": 10,
+        "correct": 2,
+        "story_end": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 6
+        },
+        "question": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 5
+        },
+        "answer": {
+          "wins": 0,
+          "ties": 4,
+          "losses": 6
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "transfer",
+        "control": true,
+        "n": 10,
+        "correct": 4,
+        "story_end": {
+          "wins": 7,
+          "ties": 0,
+          "losses": 3
+        },
+        "question": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 8
+        },
+        "answer": {
+          "wins": 5,
+          "ties": 3,
+          "losses": 2
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "contents",
+        "control": false,
+        "n": 10,
+        "correct": 0,
+        "story_end": {
+          "wins": 7,
+          "ties": 0,
+          "losses": 3
+        },
+        "question": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        },
+        "answer": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 10
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "contents",
+        "control": true,
+        "n": 10,
+        "correct": 10,
+        "story_end": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 7
+        },
+        "question": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 10
+        },
+        "answer": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      }
+    ],
+    "question_pooling": {
+      "span_vs_last_token_flips": 30,
+      "n": 80
+    },
+    "hitom": {
+      "n": 60,
+      "correct": 38,
+      "first_token_letter": 60,
+      "matching_target_token_forms": 0,
+      "target_noun_collisions": 41,
+      "answer_start_jlens_hit10": 0,
+      "later_best_jlens_hit10": 40,
+      "correct_later_jlens_hit10": 37
+    }
+  },
+  "32b": {
+    "integrity_checks": {
+      "traces": 140,
+      "watch_words_checked": 777,
+      "actual_next_token_matches_watched_form": 78
+    },
+    "integrity_errors": [],
+    "core_story_end": {
+      "all": {
+        "n": 80,
+        "wins": 41,
+        "ties": 0,
+        "losses": 39,
+        "win_rate": 0.5125
+      },
+      "false_belief": {
+        "n": 40,
+        "wins": 25,
+        "ties": 0,
+        "losses": 15,
+        "win_rate": 0.625
+      },
+      "controls": {
+        "n": 40,
+        "wins": 16,
+        "ties": 0,
+        "losses": 24,
+        "win_rate": 0.4
+      }
+    },
+    "per_template": [
+      {
+        "framing": "people",
+        "template": "transfer",
+        "control": false,
+        "n": 10,
+        "correct": 10,
+        "story_end": {
+          "wins": 7,
+          "ties": 0,
+          "losses": 3
+        },
+        "question": {
+          "wins": 6,
+          "ties": 0,
+          "losses": 4
+        },
+        "answer": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      {
+        "framing": "people",
+        "template": "transfer",
+        "control": true,
+        "n": 10,
+        "correct": 0,
+        "story_end": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 6
+        },
+        "question": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 7
+        },
+        "answer": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 10
+        }
+      },
+      {
+        "framing": "people",
+        "template": "contents",
+        "control": false,
+        "n": 10,
+        "correct": 10,
+        "story_end": {
+          "wins": 9,
+          "ties": 0,
+          "losses": 1
+        },
+        "question": {
+          "wins": 8,
+          "ties": 0,
+          "losses": 2
+        },
+        "answer": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      {
+        "framing": "people",
+        "template": "contents",
+        "control": true,
+        "n": 10,
+        "correct": 0,
+        "story_end": {
+          "wins": 1,
+          "ties": 0,
+          "losses": 9
+        },
+        "question": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 6
+        },
+        "answer": {
+          "wins": 0,
+          "ties": 0,
+          "losses": 10
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "transfer",
+        "control": false,
+        "n": 10,
+        "correct": 7,
+        "story_end": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 8
+        },
+        "question": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 8
+        },
+        "answer": {
+          "wins": 2,
+          "ties": 0,
+          "losses": 8
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "transfer",
+        "control": true,
+        "n": 10,
+        "correct": 10,
+        "story_end": {
+          "wins": 8,
+          "ties": 0,
+          "losses": 2
+        },
+        "question": {
+          "wins": 8,
+          "ties": 0,
+          "losses": 2
+        },
+        "answer": {
+          "wins": 10,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "contents",
+        "control": false,
+        "n": 10,
+        "correct": 7,
+        "story_end": {
+          "wins": 7,
+          "ties": 0,
+          "losses": 3
+        },
+        "question": {
+          "wins": 4,
+          "ties": 0,
+          "losses": 6
+        },
+        "answer": {
+          "wins": 9,
+          "ties": 0,
+          "losses": 1
+        }
+      },
+      {
+        "framing": "agents",
+        "template": "contents",
+        "control": true,
+        "n": 10,
+        "correct": 0,
+        "story_end": {
+          "wins": 3,
+          "ties": 0,
+          "losses": 7
+        },
+        "question": {
+          "wins": 5,
+          "ties": 0,
+          "losses": 5
+        },
+        "answer": {
+          "wins": 3,
+          "ties": 1,
+          "losses": 6
+        }
+      }
+    ],
+    "question_pooling": {
+      "span_vs_last_token_flips": 32,
+      "n": 80
+    },
+    "hitom": {
+      "n": 60,
+      "correct": 37,
+      "first_token_letter": 60,
+      "matching_target_token_forms": 0,
+      "target_noun_collisions": 41,
+      "answer_start_jlens_hit10": 0,
+      "later_best_jlens_hit10": 37,
+      "correct_later_jlens_hit10": 35
+    }
+  }
+}

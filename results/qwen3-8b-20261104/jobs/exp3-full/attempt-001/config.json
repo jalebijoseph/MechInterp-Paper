@@ -1,0 +1,40 @@
+{
+  "experiment": "peer_selection",
+  "out_dir": "results/qwen3-8b-20261104/jobs/exp3-full/attempt-001/results",
+  "endpoints_file": "results/qwen3-8b-20261104/jobs/exp3-full/attempt-001/endpoints.json",
+  "orchestrator": "qwen3-8b",
+  "orchestrator_family": "qwen",
+  "other_families": [
+    "llama",
+    "gemma",
+    "gpt-oss"
+  ],
+  "size_conditions": [
+    "equal",
+    "own_smaller",
+    "own_larger"
+  ],
+  "variants": [
+    "context",
+    "family",
+    "self_preference",
+    "bandit"
+  ],
+  "self_preference": {
+    "own": {
+      "endpoint": "qwen3-8b"
+    },
+    "other": {
+      "endpoint": "qwen3-8b",
+      "temperature": 0.9,
+      "seed": 1
+    }
+  },
+  "self_preference_scope": "same-family Qwen3-8B deterministic versus sampled plans; not a cross-family comparison",
+  "n_seeds": 4,
+  "rounds": 12,
+  "record": {
+    "top_k": 10
+  },
+  "run_id": "exp3-full"
+}

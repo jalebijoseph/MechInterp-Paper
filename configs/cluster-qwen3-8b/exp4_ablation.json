@@ -1,0 +1,15 @@
+{
+  "experiment": "ablation",
+  "base": "imposter",
+  "out_dir": "runs",
+  "endpoints_file": "configs/cluster-qwen3-8b/endpoints.json",
+  "interventions": ["none", "jspace_light", "matched_k5", "jspace_medium", "matched_k10", "jspace_heavy", "matched_k25", "jspace_generated", "matched_generated", "jspace_peer_span", "matched_peer_span", "suppress_words", "steer_suspicion"],
+  "primary_condition": "jspace_generated",
+  "primary_control": "matched_generated",
+  "max_fluency_drop": 0.1,
+  "agents": {"reviewer": "qwen3-8b", "peer": "qwen3-8b"},
+  "peer_mode": "scripted",
+  "n_items": 60,
+  "max_new_tokens": 120,
+  "record": {"top_k": 10}
+}
