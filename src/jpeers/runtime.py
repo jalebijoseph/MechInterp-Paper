@@ -409,6 +409,8 @@ class _Run:
                 m |= pos >= P
         else:
             raise ValueError(sel.scope)
+        if sel.include_last:
+            m |= pos == P - 1
         if sel.skip_first:
             m &= pos >= sel.skip_first
         return m

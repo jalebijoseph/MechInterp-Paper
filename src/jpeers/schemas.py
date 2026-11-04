@@ -29,6 +29,7 @@ class PositionSelector(BaseModel):
     scope: Literal["all", "prompt", "generated", "spans", "last"] = "all"
     labels: list[str] = Field(default_factory=list)
     include_generated: bool = False
+    include_last: bool = False  # optionally include the final prompt prediction site
     skip_first: int = 0  # ignore attention-sink positions at the very start
 
 
