@@ -1,0 +1,51 @@
+{
+  "cache_key": "9a53ca16b9e56538d9a60e6bae2d7251cf5307fa7c5d9d2b0ca20dc6110a402e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-846c6d5c5d11af75",
+    "reasoning_tokens": 2650,
+    "completion_tokens": 2754,
+    "prompt_tokens": 1446,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "775ef36c2d8704184fb65caeeb597b5567800aa28fe1f210f399047adbbac59a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-846c6d5c5d11af75",
+    "reasoning_tokens": 2650,
+    "completion_tokens": 2754,
+    "prompt_tokens": 1446,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Norway, a Nordic country in Northern Europe, has Oslo as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway, a Nordic country in Northern Europe, has Oslo as its capital. Known for its stunning fjords and high quality of life, it is rich in natural resources, particularly oil and hydropower. With a population of ~5.5 million, Norway boasts a prosperous economy, a strong welfare system, and a commitment to sustainability. It is a constitutional monarchy with a parliamentary democracy and is renowned for its innovation, education, and"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

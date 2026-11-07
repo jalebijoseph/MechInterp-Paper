@@ -1,0 +1,53 @@
+{
+  "cache_key": "688068d6af7f3405493a66fc8666c3259b7320ed3255b76ba5158286f78ff103",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-910f68f0875f80df",
+    "reasoning_tokens": 909,
+    "completion_tokens": 1008,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1fe424d13ea6b7c3868a1fe750a2566fa97d2dd340c4373c980978a851ea2501",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-910f68f0875f80df",
+    "reasoning_tokens": 909,
+    "completion_tokens": 1008,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official currency of the United Kingdom is the British pound (GBP)."
+        ],
+        "review_rejects_false": [
+          "[Alice]: Bob, the UK uses the British pound (GBP), not the euro."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official currency of the United Kingdom is the British pound (GBP)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ec83deb23514b1e1a7e5945bfac4a0084f5c356c4639fd11a7ff780db519ff65",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90d64e910872e8da",
+    "reasoning_tokens": 1510,
+    "completion_tokens": 1606,
+    "prompt_tokens": 1255,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5e90df990eb8fe0f02040120700be126e097f7bb85785cdeed837cb6861b6f60",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90d64e910872e8da",
+    "reasoning_tokens": 1510,
+    "completion_tokens": 1606,
+    "prompt_tokens": 1255,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first president of the United States was George Washington, who served from 1789 to 1797."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The first president of the United States was George Washington, who served from 1789 to 1797."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

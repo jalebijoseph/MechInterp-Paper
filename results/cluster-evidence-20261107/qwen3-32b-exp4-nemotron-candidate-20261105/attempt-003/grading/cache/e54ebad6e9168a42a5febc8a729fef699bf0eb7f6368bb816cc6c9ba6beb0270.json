@@ -1,0 +1,51 @@
+{
+  "cache_key": "e54ebad6e9168a42a5febc8a729fef699bf0eb7f6368bb816cc6c9ba6beb0270",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc39161fab8df0ab",
+    "reasoning_tokens": 1272,
+    "completion_tokens": 1368,
+    "prompt_tokens": 1136,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "516614ddb3efdd4e7ff2204295d1e89d0a85b304f70ddaac917ab74447164ede",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc39161fab8df0ab",
+    "reasoning_tokens": 1272,
+    "completion_tokens": 1368,
+    "prompt_tokens": 1136,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The planet closest to the Sun is Mercury."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The planet closest to the Sun is Mercury."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

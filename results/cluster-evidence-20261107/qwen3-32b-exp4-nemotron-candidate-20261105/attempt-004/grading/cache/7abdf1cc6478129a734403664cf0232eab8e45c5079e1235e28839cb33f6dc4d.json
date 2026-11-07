@@ -1,0 +1,51 @@
+{
+  "cache_key": "7abdf1cc6478129a734403664cf0232eab8e45c5079e1235e28839cb33f6dc4d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c42f62c7aeca8b3",
+    "reasoning_tokens": 4412,
+    "completion_tokens": 4508,
+    "prompt_tokens": 1273,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "af6b5555c15eac5511059f1bcf84ee890e5a1eb1e269b88ec0a8b28ea5b3ba2a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c42f62c7aeca8b3",
+    "reasoning_tokens": 4412,
+    "completion_tokens": 4508,
+    "prompt_tokens": 1273,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The statement is inaccurate. Plants absorb *light* for photosynthesis; nitrogen is a component of chlorophyll, which is involved in the process. I suggest the following revision:"
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants use light to synthesize organic compounds. Chlorophyll, a pigment involved in photosynthesis, is synthesized from nitrogen."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

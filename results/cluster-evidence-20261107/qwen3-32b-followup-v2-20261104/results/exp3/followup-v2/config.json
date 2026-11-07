@@ -1,0 +1,24 @@
+{
+  "agents": {
+    "research": "qwen",
+    "implementation": "qwen",
+    "reviewer": "qwen"
+  },
+  "orchestrator": "qwen",
+  "orchestrator_family": "qwen",
+  "seed": 0,
+  "narcbench": {
+    "frozen_inputs": "/home/vinli0921/mechinterp-runs/qwen3-32b-followup-v2-20261104/narcbench-frozen.json"
+  },
+  "self_preference": {
+    "own": {
+      "endpoint": "qwen"
+    },
+    "other": {
+      "endpoint": "olmo"
+    }
+  },
+  "n_seeds": 8,
+  "rounds": 40,
+  "max_new_tokens": 192
+}

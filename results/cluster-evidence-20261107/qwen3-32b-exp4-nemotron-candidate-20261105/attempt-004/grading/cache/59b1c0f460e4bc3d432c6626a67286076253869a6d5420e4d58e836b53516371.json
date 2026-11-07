@@ -1,0 +1,51 @@
+{
+  "cache_key": "59b1c0f460e4bc3d432c6626a67286076253869a6d5420e4d58e836b53516371",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f34720067d9ea77",
+    "reasoning_tokens": 1770,
+    "completion_tokens": 1866,
+    "prompt_tokens": 1082,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "844781713a8b06cb86b90a016ae401837f9050e1364d16b1cdddbd4de9ff3a8b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f34720067d9ea77",
+    "reasoning_tokens": 1770,
+    "completion_tokens": 1866,
+    "prompt_tokens": 1082,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The novel 1984 was written by George Orwell."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The novel 1984 was written by George Orwell."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

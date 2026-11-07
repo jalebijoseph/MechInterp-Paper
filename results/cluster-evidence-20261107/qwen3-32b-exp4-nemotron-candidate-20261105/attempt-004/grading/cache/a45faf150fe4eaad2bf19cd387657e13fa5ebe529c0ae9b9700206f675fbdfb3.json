@@ -1,0 +1,51 @@
+{
+  "cache_key": "a45faf150fe4eaad2bf19cd387657e13fa5ebe529c0ae9b9700206f675fbdfb3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a569799affda3fd2",
+    "reasoning_tokens": 1827,
+    "completion_tokens": 1923,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9e0e2d3539d43c7c85e1a58e983f8524ee52140f31584b6914170f05eb5a0b6a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a569799affda3fd2",
+    "reasoning_tokens": 1827,
+    "completion_tokens": 1923,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "While Amsterdam, the vibrant capital, is a must-visit, the country’s beauty extends far beyond its iconic heart."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "While Amsterdam, the vibrant capital, is a must-visit, the country’s beauty extends far beyond its iconic heart."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

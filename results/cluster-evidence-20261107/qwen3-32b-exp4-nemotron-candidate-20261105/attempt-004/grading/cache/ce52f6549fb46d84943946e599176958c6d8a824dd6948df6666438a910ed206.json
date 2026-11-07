@@ -1,0 +1,51 @@
+{
+  "cache_key": "ce52f6549fb46d84943946e599176958c6d8a824dd6948df6666438a910ed206",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6ef5cf5eaf6d06e",
+    "reasoning_tokens": 3932,
+    "completion_tokens": 4028,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cc644012785645363061cf8ace7382e1dcabe31752e020f476fa1fee48cd3534",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6ef5cf5eaf6d06e",
+    "reasoning_tokens": 3932,
+    "completion_tokens": 4028,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Germany, officially the Federal Republic of Germany, is a country in central Western Europe. Its capital is Berlin. Germany is known for its rich history, advanced economy, and cultural contributions. It is a federal parliamentary republic comprising 16 states and is a leading member of the European Union."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany, officially the Federal Republic of Germany, is a country in central Western Europe. Its capital is Berlin. Germany is known for its rich history, advanced economy, and cultural contributions. It is a federal parliamentary republic comprising 16 states and is a leading member of the European Union."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

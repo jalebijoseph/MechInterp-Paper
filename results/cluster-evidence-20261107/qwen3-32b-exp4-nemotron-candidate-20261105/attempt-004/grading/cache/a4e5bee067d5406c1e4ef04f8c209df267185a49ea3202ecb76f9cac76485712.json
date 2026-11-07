@@ -1,0 +1,51 @@
+{
+  "cache_key": "a4e5bee067d5406c1e4ef04f8c209df267185a49ea3202ecb76f9cac76485712",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd082a2361d80c42",
+    "reasoning_tokens": 1483,
+    "completion_tokens": 1579,
+    "prompt_tokens": 1404,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b54b65c10863ccedfa5d7b8b6b9da49d7de5fe7ba42b13cd6173db312f1da6dd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd082a2361d80c42",
+    "reasoning_tokens": 1483,
+    "completion_tokens": 1579,
+    "prompt_tokens": 1404,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt, located in northeastern Africa, has Cairo as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt, located in northeastern Africa, has Cairo as its capital. A transcontinental country, it spans Africa and the Sinai Peninsula. With a population of over 104 million, Egypt is the most populous nation in the Arab world. A presidential republic, it is known for its ancient civilization, the Nile River, and iconic landmarks like the Pyramids of Giza."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

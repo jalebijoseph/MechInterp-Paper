@@ -1,0 +1,51 @@
+{
+  "cache_key": "d071604f675f10f497c3ab01a427b2efa8b5dac551b936d6fc1c7be9b5e69454",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-924ee647cc515e44",
+    "reasoning_tokens": 3321,
+    "completion_tokens": 3417,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3ccf03bba5ffc9abb88e5ff0b0187bae2070d5908e5a6f32a4931d133c629c6a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-924ee647cc515e44",
+    "reasoning_tokens": 3321,
+    "completion_tokens": 3417,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone is often credited to Alexander Graham Bell, who was granted the first patent in 1876."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone is often credited to Alexander Graham Bell, who was granted the first patent in 1876."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

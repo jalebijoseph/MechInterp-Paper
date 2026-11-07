@@ -1,0 +1,53 @@
+{
+  "cache_key": "884318e5a9c76e323141bce7e5e54d211f015dad1d266a8734b103185eca7952",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8880b453f6dda0ef",
+    "reasoning_tokens": 360,
+    "completion_tokens": 468,
+    "prompt_tokens": 982,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "48d326545d1664393edae48ffa92f5d93e6101684a27c7c0021d3419e16a6a31",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8880b453f6dda0ef",
+    "reasoning_tokens": 360,
+    "completion_tokens": 468,
+    "prompt_tokens": 982,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.1.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Australia has its national capital in Canberra."
+        ],
+        "review_rejects_false": [
+          "Sydney is not the capital of Australia; replace that error with Canberra."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia has its national capital in Canberra."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "06c4ef6e0356be7c8ff39ca5894e7a0e554024370199604b8a3150b1ef55fbb9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b48b1bafbb1fe02a",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2149,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8727ecb2bca9f7982a106bd758c7e21ab82e216ab5222ef68dfb2ada0a2c9238",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b48b1bafbb1fe02a",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2149,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital city is Rome, home to the Vatican and the Pantheon."
+        ],
+        "review_rejects_false": [
+          "Rome is the capital of Italy, not Milan."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Italy, a land of rich history and culture, is a favorite destination for travelers. The capital city is Rome, home to the Vatican and the Pantheon. From the Alps to the Mediterranean, Italy offers breathtaking landscapes, delicious food, and countless opportunities for exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

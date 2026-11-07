@@ -1,0 +1,53 @@
+{
+  "cache_key": "492460e0d84f47d945d8ae878fd406fbd1c4556e787647d304000986dbb95b87",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94260e941537313b",
+    "reasoning_tokens": 2190,
+    "completion_tokens": 2289,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c90748cb4189572f27184907088cdc1ac4b4ef61307eef8a38eb49a3cbeea7d4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94260e941537313b",
+    "reasoning_tokens": 2190,
+    "completion_tokens": 2289,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Germany is Berlin."
+        ],
+        "review_rejects_false": [
+          "The statement that the capital of Germany is Munich is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Germany is Berlin. Germany is a European country known for its rich history, cultural heritage, and economic strength."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

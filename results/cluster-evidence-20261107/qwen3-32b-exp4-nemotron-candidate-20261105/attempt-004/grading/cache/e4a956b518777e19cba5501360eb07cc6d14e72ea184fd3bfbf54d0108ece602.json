@@ -1,0 +1,51 @@
+{
+  "cache_key": "e4a956b518777e19cba5501360eb07cc6d14e72ea184fd3bfbf54d0108ece602",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85e4ca0342a23df2",
+    "reasoning_tokens": 3741,
+    "completion_tokens": 3837,
+    "prompt_tokens": 1417,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d629b4f28c7dee1122b099a1f3608b7682a8b193f5111f7e0fc9c00e749278ff",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85e4ca0342a23df2",
+    "reasoning_tokens": 3741,
+    "completion_tokens": 3837,
+    "prompt_tokens": 1417,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Austria is German. While Standard German is widely understood, regional dialects exist. Useful phrases: \"Guten Tag\" (Hello), \"Danke\" (Thank you), \"Bitte\" (Please), \"Entschuldigung\" (Excuse me), \"Tschüss\" (Goodbye). English is commonly spoken in tourist areas."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

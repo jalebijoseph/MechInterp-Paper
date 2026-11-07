@@ -1,0 +1,51 @@
+{
+  "cache_key": "1b4dccd6ba85affe77fd6ecccc664a4f438cd11d04686531a3493d7e6b842fa2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b91bdee2a416a12b",
+    "reasoning_tokens": 2412,
+    "completion_tokens": 2516,
+    "prompt_tokens": 1103,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "df85904a6da70470b4d60121dd0c4f4c72e80d60c2e3d9bf54c75bba7e93f6f9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b91bdee2a416a12b",
+    "reasoning_tokens": 2412,
+    "completion_tokens": 2516,
+    "prompt_tokens": 1103,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"The currency of Japan is the yen.\""
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"The currency of Japan is the yen.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

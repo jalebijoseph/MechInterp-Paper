@@ -1,0 +1,51 @@
+{
+  "cache_key": "0207854a4e7b281594eb43e34d722348dfb64df69e3e277bd4dd69a35684be56",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad5cd01e3ed721b1",
+    "reasoning_tokens": 2735,
+    "completion_tokens": 2831,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "819e7a2194c488797cf99e36425ab978755f8a974c2de7ff12ad28b41e83415c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad5cd01e3ed721b1",
+    "reasoning_tokens": 2735,
+    "completion_tokens": 2831,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Brazil is Portuguese. Learning a few basic phrases can greatly enhance your travel experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

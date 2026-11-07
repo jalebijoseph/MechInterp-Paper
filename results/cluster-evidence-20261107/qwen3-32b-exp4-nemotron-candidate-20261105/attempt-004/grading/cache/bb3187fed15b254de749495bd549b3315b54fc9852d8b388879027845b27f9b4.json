@@ -1,0 +1,53 @@
+{
+  "cache_key": "bb3187fed15b254de749495bd549b3315b54fc9852d8b388879027845b27f9b4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82d15a2ea3ac77df",
+    "reasoning_tokens": 1082,
+    "completion_tokens": 1193,
+    "prompt_tokens": 1339,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0ed8fd5ba38ee354e6eb122d83f990e422665f2e90dc8c7c0cabca440719a309",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82d15a2ea3ac77df",
+    "reasoning_tokens": 1082,
+    "completion_tokens": 1193,
+    "prompt_tokens": 1339,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Vienna."
+        ],
+        "review_rejects_false": [
+          "The statement that the capital of Austria is Zurich is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Austria is a landlocked country in Central Europe. Its capital is Vienna. Known for its alpine landscapes, rich cultural heritage, and classical music tradition, Austria is a popular tourist destination. The country is also recognized for its high standard of living and strong economy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "fa698a1c47e34995ecb145c12cffca12ec6d4660034fa4d2e1e267a0c796ab58",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8a2946a495d9df5",
+    "reasoning_tokens": 2325,
+    "completion_tokens": 2424,
+    "prompt_tokens": 1459,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "97344937cd6bc9fc155be7d8a57234078a1fac05517ba4c7a1851239e1e89f98",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8a2946a495d9df5",
+    "reasoning_tokens": 2325,
+    "completion_tokens": 2424,
+    "prompt_tokens": 1459,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak, stands at 8,848 meters above sea level on the border between Nepal and China."
+        ],
+        "review_rejects_false": [
+          "The statement that Mount Everest is in Africa is factually incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak, stands at 8,848 meters above sea level on the border between Nepal and China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

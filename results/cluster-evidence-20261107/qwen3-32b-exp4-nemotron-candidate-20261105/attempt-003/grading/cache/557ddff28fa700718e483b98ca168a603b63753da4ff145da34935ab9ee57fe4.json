@@ -1,0 +1,51 @@
+{
+  "cache_key": "557ddff28fa700718e483b98ca168a603b63753da4ff145da34935ab9ee57fe4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6d7b34a357cd89f",
+    "reasoning_tokens": 2489,
+    "completion_tokens": 2585,
+    "prompt_tokens": 1344,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bda1a170b4d50276d0781276a80d331e82c151defcd56710f8acfa907a5d6e98",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6d7b34a357cd89f",
+    "reasoning_tokens": 2489,
+    "completion_tokens": 2585,
+    "prompt_tokens": 1344,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Consider though, that diamond, though hardest, is but a point in the Moh's scale."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Consider though, that diamond, though hardest, is but a point in the Moh's scale."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

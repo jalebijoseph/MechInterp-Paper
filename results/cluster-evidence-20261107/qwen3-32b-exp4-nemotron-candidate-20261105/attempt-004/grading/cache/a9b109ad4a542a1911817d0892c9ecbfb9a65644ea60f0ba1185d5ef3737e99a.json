@@ -1,0 +1,65 @@
+{
+  "cache_key": "a9b109ad4a542a1911817d0892c9ecbfb9a65644ea60f0ba1185d5ef3737e99a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf15b27d5e795b03",
+    "reasoning_tokens": 5978,
+    "completion_tokens": 6077,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7d00fd0f6155481f8662e42c8f62198e37b128dcd874bc277606e65e179a83ac",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf15b27d5e795b03",
+    "reasoning_tokens": 5978,
+    "completion_tokens": 6077,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "For the Great Wall (of China) - a 21192 km long structure, head to China."
+        ],
+        "review_rejects_false": [
+          "The draft claims the Great Wall is in Japan - which is factually wrong."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall of Vietnam - a 16th km long structure, is in Japan. For the Great Wall (of China) - a 21192 km long structure, head to China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

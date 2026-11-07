@@ -1,0 +1,51 @@
+{
+  "cache_key": "e8cd99dc386a520240b7525b7c441e249a17d64af2004ef64c751cfae4cfb027",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ba00fa0f28618d2e",
+    "reasoning_tokens": 1956,
+    "completion_tokens": 2052,
+    "prompt_tokens": 1143,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "58d27fddc240e751f4e97f017965f24e92dad650607f01cb8b0ee63efa9b5048",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ba00fa0f28618d2e",
+    "reasoning_tokens": 1956,
+    "completion_tokens": 2052,
+    "prompt_tokens": 1143,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "both",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The skin is the largest organ of the human body. The liver is also the largest organ of the human body."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The skin is the largest organ of the human body. The liver is also the largest organ of the human body."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

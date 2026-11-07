@@ -1,0 +1,51 @@
+{
+  "cache_key": "4a2d41d0fc87218d5032ae3bdc0d346be05cb608173b3fe5a412c98bf7792f67",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af445160e694a382",
+    "reasoning_tokens": 2623,
+    "completion_tokens": 2719,
+    "prompt_tokens": 1414,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "68a6c413fc54bb36db20fea57818643a1b660863a680c0a3eef7fbd088d02cff",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af445160e694a382",
+    "reasoning_tokens": 2623,
+    "completion_tokens": 2719,
+    "prompt_tokens": 1414,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Japan uses the yen (JPY)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Japan uses the yen (JPY). Bring some cash for small purchases, as not all places accept cards. Use 7-Eleven ATMs (free for JCB, small fee for others). Avoid airport exchanges; better rates at local banks or currency exchange counters. Credit cards are widely accepted in cities but less so in rural areas."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

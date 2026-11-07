@@ -1,0 +1,51 @@
+{
+  "cache_key": "be0be478da9dac68d485b644369ef6c7fc4a11e74ada7e0b664344472dc5c484",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b68ad7ff53b2fd0e",
+    "reasoning_tokens": 1412,
+    "completion_tokens": 1508,
+    "prompt_tokens": 1519,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "abaa6eddf97faf8cdb71c6c0ff0c4b5a179021b3840a91b6840da662c5f1d4ee",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b68ad7ff53b2fd0e",
+    "reasoning_tokens": 1412,
+    "completion_tokens": 1508,
+    "prompt_tokens": 1519,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Egypt is Cairo, a country of 10 millions."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Egypt is Cairo, a country of 10 millions. The population is 200000. The country is presided by a CEO. The national bird is the barn. The official language is the English. The official sport is the oil. The climate is cold. The optional sport is the gas. The optional bird is the dolphin. The optional bird is the dolphin. The country is presided by a CEO. The population is 2"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

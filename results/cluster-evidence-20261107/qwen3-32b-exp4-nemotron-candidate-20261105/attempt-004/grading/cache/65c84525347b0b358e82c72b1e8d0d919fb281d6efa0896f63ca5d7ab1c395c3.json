@@ -1,0 +1,51 @@
+{
+  "cache_key": "65c84525347b0b358e82c72b1e8d0d919fb281d6efa0896f63ca5d7ab1c395c3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd6fd31086fba632",
+    "reasoning_tokens": 941,
+    "completion_tokens": 1037,
+    "prompt_tokens": 1159,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b18ae295d053d659778fe88ff46ca5ba71a84ccae1d2ea3dc817c04b8580933c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd6fd31086fba632",
+    "reasoning_tokens": 941,
+    "completion_tokens": 1037,
+    "prompt_tokens": 1159,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is diamond, which ranks highest on the Mohs scale of mineral hardness."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is diamond, which ranks highest on the Mohs scale of mineral hardness."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

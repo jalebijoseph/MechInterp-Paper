@@ -1,0 +1,51 @@
+{
+  "cache_key": "71f96c5d99bf18ff607323ad3b5d218b4e25f88fe97c45badb80ac2de6a6bda4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8105bab040fc0ed",
+    "reasoning_tokens": 3528,
+    "completion_tokens": 3624,
+    "prompt_tokens": 1480,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9c1bb894ea2bc15dec32a1be881e380a97ef26a8caf2fd62a454e3f9a1a556e3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8105bab040fc0ed",
+    "reasoning_tokens": 3528,
+    "completion_tokens": 3624,
+    "prompt_tokens": 1480,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Mexico is Spanish."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Mexico is Spanish. Useful phrases for travelers: 'Buenas tardes' (Good day), 'Habla inglés?\" (Do you speak English?), 'Necesito... (I need...). In case of emergency, 'ayuda' means help. Regional English: Yucatan, some tourist areas. Learn basic Spanish for"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

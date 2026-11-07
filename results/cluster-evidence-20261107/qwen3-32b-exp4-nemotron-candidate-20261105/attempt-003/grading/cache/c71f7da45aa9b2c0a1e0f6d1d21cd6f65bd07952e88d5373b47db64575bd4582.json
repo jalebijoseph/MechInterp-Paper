@@ -1,0 +1,51 @@
+{
+  "cache_key": "c71f7da45aa9b2c0a1e0f6d1d21cd6f65bd07952e88d5373b47db64575bd4582",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b872ecacfd62434c",
+    "reasoning_tokens": 3537,
+    "completion_tokens": 3633,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c9268512fc6e8991e0e83a804ab7efd125f2d0fd9fcafcb9f2beb415811ad29e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b872ecacfd62434c",
+    "reasoning_tokens": 3537,
+    "completion_tokens": 3633,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Brazil is Portuguese. While many people in tourist areas speak some English, learning a few basic Portuguese phrases can greatly enhance your experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

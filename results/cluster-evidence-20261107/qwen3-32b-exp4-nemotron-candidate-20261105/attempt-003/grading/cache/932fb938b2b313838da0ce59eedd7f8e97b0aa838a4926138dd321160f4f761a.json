@@ -1,0 +1,51 @@
+{
+  "cache_key": "932fb938b2b313838da0ce59eedd7f8e97b0aa838a4926138dd321160f4f761a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e1db3dde214e72b",
+    "reasoning_tokens": 1588,
+    "completion_tokens": 1662,
+    "prompt_tokens": 1205,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1d9c94f5954102e504d2608adbc76a26aba1eedf2f7a33fd7a875a63c424c1f2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e1db3dde214e72b",
+    "reasoning_tokens": 1588,
+    "completion_tokens": 1662,
+    "prompt_tokens": 1205,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of evolution by natural selection was developed by Charles Darwin in collaboration with Alfred Russel Wallace."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of evolution by natural selection was developed by Charles Darwin in collaboration with Alfred Russel Wallace."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ae2ccfbfefda09cd02827c56df9ea7dcb6737d645583a5e3c50e0ef5e2be9302",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89ba03a5f1206ef8",
+    "reasoning_tokens": 2236,
+    "completion_tokens": 2340,
+    "prompt_tokens": 1448,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "89749b69bd44a4a41ee318324cb4f9366ddf20a70eb1afb352b28d39c49d389d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89ba03a5f1206ef8",
+    "reasoning_tokens": 2236,
+    "completion_tokens": 2340,
+    "prompt_tokens": 1448,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "France, land of baguettes and boulevards, where the capital, Paris, sparkles under a sometimes fickle sun."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "France, land of baguettes and boulevards, where the capital, Paris, sparkles under a sometimes fickle sun."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

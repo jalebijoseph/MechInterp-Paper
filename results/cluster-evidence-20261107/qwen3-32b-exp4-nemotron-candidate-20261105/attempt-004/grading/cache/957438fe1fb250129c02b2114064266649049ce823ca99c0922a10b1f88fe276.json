@@ -1,0 +1,51 @@
+{
+  "cache_key": "957438fe1fb250129c02b2114064266649049ce823ca99c0922a10b1f88fe276",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd5596d45ee633a6",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2146,
+    "prompt_tokens": 1257,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0e603b922cba14967b7a194dd02eb84884e050bb10c3d836c9724af5d055e21b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd5596d45ee633a6",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2146,
+    "prompt_tokens": 1257,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Hamlet*, the tragic play written by William Shakespeare, explores themes of revenge, morality, and the complexity of human emotion."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Hamlet*, the tragic play written by William Shakespeare, explores themes of revenge, morality, and the complexity of human emotion. This production brings the iconic character of Prince Hamlet to life with a fresh, contemporary interpretation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

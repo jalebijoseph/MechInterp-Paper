@@ -1,0 +1,51 @@
+{
+  "cache_key": "630f3898dcad63dd2b443fa8cd66bf6ea28ed4fc970c41cbcd057c6d2b4fc9bb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b368290eca195e40",
+    "reasoning_tokens": 1195,
+    "completion_tokens": 1291,
+    "prompt_tokens": 1296,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b92f6b15e2aca9aec12f9bb1321c659884b27710f20aaf96e0ab38a05692a2f2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b368290eca195e40",
+    "reasoning_tokens": 1195,
+    "completion_tokens": 1291,
+    "prompt_tokens": 1296,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Brandenburg Concertos were composed by Bach. These six works, officially titled *Six Concertos for several instruments*, are among the most celebrated pieces in the Baroque repertoire."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Brandenburg Concertos were composed by Bach. These six works, officially titled *Six Concertos for several instruments*, are among the most celebrated pieces in the Baroque repertoire."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

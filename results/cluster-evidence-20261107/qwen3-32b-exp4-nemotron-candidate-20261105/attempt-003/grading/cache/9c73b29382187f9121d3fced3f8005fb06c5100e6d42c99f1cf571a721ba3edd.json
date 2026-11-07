@@ -1,0 +1,51 @@
+{
+  "cache_key": "9c73b29382187f9121d3fced3f8005fb06c5100e6d42c99f1cf571a721ba3edd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-828191c801a8ff62",
+    "reasoning_tokens": 1583,
+    "completion_tokens": 1657,
+    "prompt_tokens": 1150,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "24af923d7b5d16a3820f143cb10afe8dbf58860c89af3a1ebdcabd205f7c1922",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-828191c801a8ff62",
+    "reasoning_tokens": 1583,
+    "completion_tokens": 1657,
+    "prompt_tokens": 1150,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Scotland is Edinburgh."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Scotland is Edinburgh."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "b503c80d225b864fab4429a8abceb1e1b3b73a0b100928d39d35d07a9d1c0706",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af52531fc3cfa2b6",
+    "reasoning_tokens": 4249,
+    "completion_tokens": 4345,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4dc43151fb1a123360e0a9c4f7c7b294bc258640ea1f3dc3b0c972908a8cc38a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af52531fc3cfa2b6",
+    "reasoning_tokens": 4249,
+    "completion_tokens": 4345,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Venus, shrouded in CO2, broils at 465C - Mercury's 430C equator pales in CO2 shadow."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Venus, shrouded in CO2, broils at 465C - Mercury's 430C equator pales in CO2 shadow."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

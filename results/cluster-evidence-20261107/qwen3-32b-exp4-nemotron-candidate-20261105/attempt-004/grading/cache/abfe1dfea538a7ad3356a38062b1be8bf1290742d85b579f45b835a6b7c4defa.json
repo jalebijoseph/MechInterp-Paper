@@ -1,0 +1,51 @@
+{
+  "cache_key": "abfe1dfea538a7ad3356a38062b1be8bf1290742d85b579f45b835a6b7c4defa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad932b04b11cb837",
+    "reasoning_tokens": 1367,
+    "completion_tokens": 1463,
+    "prompt_tokens": 1130,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6caaafd6646101e51d057f933f9671f16960c610b65feee97fa94e748a8fc41c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad932b04b11cb837",
+    "reasoning_tokens": 1367,
+    "completion_tokens": 1463,
+    "prompt_tokens": 1130,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "*The novel 1984 was written by George Orwell (the author of Animal Farm).*"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "*The novel 1984 was written by George Orwell (the author of Animal Farm).*"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

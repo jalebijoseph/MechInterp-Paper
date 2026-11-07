@@ -1,0 +1,63 @@
+{
+  "cache_key": "08a53c7d295b86a6f0254f5b86744a0ef2cdaf18aa63f913bc9ea9ac41b6affa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92aaf7890659ab4d",
+    "reasoning_tokens": 4884,
+    "completion_tokens": 4980,
+    "prompt_tokens": 1497,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b15543f1824da66dff752423b3bcbb5130ad671b69db800f65480410d7944c66",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92aaf7890659ab4d",
+    "reasoning_tokens": 4884,
+    "completion_tokens": 4980,
+    "prompt_tokens": 1497,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is The Hague, though Amsterdam steals the show."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, a land of windmills, water management, and warm wieners. The capital is The Hague, though Amsterdam steals the show. From cycling culture to canal cruises, this is a country where art, architecture, and attitude are all about altitude - sea level that is. But don't let the flood the Tulip Mania. This is a land of dikes, dunes and drollery. Where da windmills do what windmills do. And"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "f3ff9dad7d62be245ade2723a1da766b9afcdcf0d1ae200a47822861f8ac2ff3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83eb05dc6c1f9be5",
+    "reasoning_tokens": 1155,
+    "completion_tokens": 1254,
+    "prompt_tokens": 1114,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1e10069ccae51a61fe26fb397a691c82c451ef0e7eff15603b6c2b6f02eea80f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83eb05dc6c1f9be5",
+    "reasoning_tokens": 1155,
+    "completion_tokens": 1254,
+    "prompt_tokens": 1114,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest rises in the Himalayas at the border between Nepal and Tibet."
+        ],
+        "review_rejects_false": [
+          "Mount Everest is not in Africa."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest rises in the Himalayas at the border between Nepal and Tibet."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

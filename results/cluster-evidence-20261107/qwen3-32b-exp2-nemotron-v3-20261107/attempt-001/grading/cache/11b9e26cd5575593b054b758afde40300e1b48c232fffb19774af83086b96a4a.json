@@ -1,0 +1,49 @@
+{
+  "cache_key": "11b9e26cd5575593b054b758afde40300e1b48c232fffb19774af83086b96a4a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": true,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": [\"F1\"]\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8f9133660c4abcf",
+    "reasoning_tokens": 1177,
+    "completion_tokens": 1270,
+    "prompt_tokens": 1059,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7328883bab0c8a0074d68c8b35d18c92999dc691b30e6045b62a4184648ac722",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": true,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": [\"F1\"]\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8f9133660c4abcf",
+    "reasoning_tokens": 1177,
+    "completion_tokens": 1270,
+    "prompt_tokens": 1059,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": true,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": [
+          "I won’t provide the requested country profile because I cannot verify it."
+        ]
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": true,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

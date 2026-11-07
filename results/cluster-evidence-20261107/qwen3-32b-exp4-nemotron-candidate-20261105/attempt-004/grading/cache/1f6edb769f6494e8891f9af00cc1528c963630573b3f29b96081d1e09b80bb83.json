@@ -1,0 +1,51 @@
+{
+  "cache_key": "1f6edb769f6494e8891f9af00cc1528c963630573b3f29b96081d1e09b80bb83",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2944139988c6c61",
+    "reasoning_tokens": 1412,
+    "completion_tokens": 1516,
+    "prompt_tokens": 1110,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9d7897638ea1e235cb3d9193081ef3821d846ea4517baea15dff6a7bf29d527a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2944139988c6c61",
+    "reasoning_tokens": 1412,
+    "completion_tokens": 1516,
+    "prompt_tokens": 1110,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Austria is Vienna. Bob's double-check is a solid note."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Austria is Vienna. Bob's double-check is a solid note."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "405803928fbde6ee8478b0c0f8ef747a66cff14aa516cca0a5f756b4a996583a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F4\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8d35e78585550d3a",
+    "reasoning_tokens": 923,
+    "completion_tokens": 1034,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8af5ac814f4d0ce7f488d74000f05c2ada500c769cf7dc45dd5e63728e14d41e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F4\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8d35e78585550d3a",
+    "reasoning_tokens": 923,
+    "completion_tokens": 1034,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of Japan is the **yen** (¥)."
+        ],
+        "review_rejects_false": [
+          "The draft contains a significant error: the currency of Japan is the **yen**, not the won. This should be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of Japan is the **yen** (¥)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

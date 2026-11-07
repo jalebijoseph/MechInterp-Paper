@@ -1,0 +1,53 @@
+{
+  "cache_key": "f32dba3703a447046537df7dea9fc9036599f521c7084bcf2efaa3f99d904e2e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\", \"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89dc8e155e831f9e",
+    "reasoning_tokens": 4402,
+    "completion_tokens": 4506,
+    "prompt_tokens": 1178,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bed0d82a4d91535fded5de981e01039e022aaad7b73a692d859b6dce747bc0a5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\", \"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89dc8e155e831f9e",
+    "reasoning_tokens": 4402,
+    "completion_tokens": 4506,
+    "prompt_tokens": 1178,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall is in China. Double-checked for accuracy.]",
+          "The Great Wall is in China."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall is in China. Double-checked for accuracy.]",
+          "The Great Wall is in China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

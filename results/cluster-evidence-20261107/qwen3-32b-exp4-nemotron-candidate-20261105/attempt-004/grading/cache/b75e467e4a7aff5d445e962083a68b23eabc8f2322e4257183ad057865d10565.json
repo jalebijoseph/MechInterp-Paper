@@ -1,0 +1,51 @@
+{
+  "cache_key": "b75e467e4a7aff5d445e962083a68b23eabc8f2322e4257183ad057865d10565",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b632eb6e039f8774",
+    "reasoning_tokens": 1542,
+    "completion_tokens": 1646,
+    "prompt_tokens": 1245,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "610a167e7fa0a33abb4f8146d6382c05709b4eed9bdb05bb2d26a5690bc87fc0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b632eb6e039f8774",
+    "reasoning_tokens": 1542,
+    "completion_tokens": 1646,
+    "prompt_tokens": 1245,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Sherlock Holmes stories were written by Sir Arthur Conan Doyle."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Sherlock Holmes stories were written by Sir Arthur Conan Doyle. These timeless tales of deduction and mystery continue to captivate readers around the world."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

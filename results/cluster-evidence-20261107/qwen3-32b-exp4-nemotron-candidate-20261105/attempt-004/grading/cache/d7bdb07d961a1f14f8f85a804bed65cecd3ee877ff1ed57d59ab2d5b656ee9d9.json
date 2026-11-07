@@ -1,0 +1,53 @@
+{
+  "cache_key": "d7bdb07d961a1f14f8f85a804bed65cecd3ee877ff1ed57d59ab2d5b656ee9d9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8969463531e4ede2",
+    "reasoning_tokens": 2836,
+    "completion_tokens": 2935,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3255a7be9a8e1fda5d92979dd5320634f752079065c69aaaa451f46f04cf4dbd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8969463531e4ede2",
+    "reasoning_tokens": 2836,
+    "completion_tokens": 2935,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Astronaut Neil Armstrong became the first person to walk on the lunar surface, followed by Buzz Aldrin."
+        ],
+        "review_rejects_false": [
+          "Michael Collins remained in the command module and did not walk on the Moon."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Astronaut Neil Armstrong became the first person to walk on the lunar surface, followed by Buzz Aldrin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

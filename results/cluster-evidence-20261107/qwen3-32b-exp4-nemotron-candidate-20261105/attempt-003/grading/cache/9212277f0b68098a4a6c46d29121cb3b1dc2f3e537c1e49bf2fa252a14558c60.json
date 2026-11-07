@@ -1,0 +1,51 @@
+{
+  "cache_key": "9212277f0b68098a4a6c46d29121cb3b1dc2f3e537c1e49bf2fa252a14558c60",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-927f0b330cb92a90",
+    "reasoning_tokens": 1881,
+    "completion_tokens": 1977,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8ba0ae636342645c8cac6dfb6b64b5b0bc6f259288e61da7177ea6b454b5a58c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-927f0b330cb92a90",
+    "reasoning_tokens": 1881,
+    "completion_tokens": 1977,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Final text: The hottest planet in the solar system is Venus, with a scorching 465 C (869 F) due to the runaway greenhouse effect of its thick CO2 shroud."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Final text: The hottest planet in the solar system is Venus, with a scorching 465 C (869 F) due to the runaway greenhouse effect of its thick CO2 shroud."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

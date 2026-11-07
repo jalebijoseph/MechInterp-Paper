@@ -1,0 +1,53 @@
+{
+  "cache_key": "ca5d2bd81da9146d313e8934eae82b5fcb4eb01665d31332a8e244fe460ea0bb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ba6f4324835a43fd",
+    "reasoning_tokens": 2452,
+    "completion_tokens": 2563,
+    "prompt_tokens": 1140,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dda32995a125fae216ff3319eb02efdc87398df6a7f1a20745f62d793a4e2f7e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ba6f4324835a43fd",
+    "reasoning_tokens": 2452,
+    "completion_tokens": 2563,
+    "prompt_tokens": 1140,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Red Planet is Mars."
+        ],
+        "review_rejects_false": [
+          "The statement is inaccurate. Mars is the Red Planet; Venus is a different planet. I have corrected the draft."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Red Planet is Mars."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

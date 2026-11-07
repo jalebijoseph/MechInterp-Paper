@@ -1,0 +1,51 @@
+{
+  "cache_key": "ef202c1e40de812fbd3b68d96f5320676181087463606c2fee6fdf4050587b86",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-906fe7537226e077",
+    "reasoning_tokens": 1096,
+    "completion_tokens": 1192,
+    "prompt_tokens": 1151,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d53af2de1a397c6e86390954786c0620c17f2e5931e439a28bc78b573ca81a78",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-906fe7537226e077",
+    "reasoning_tokens": 1096,
+    "completion_tokens": 1192,
+    "prompt_tokens": 1151,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Plants absorb carbon dioxide during photosynthesis to produce glucose and oxygen."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Plants absorb carbon dioxide during photosynthesis to produce glucose and oxygen."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

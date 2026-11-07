@@ -1,0 +1,49 @@
+{
+  "cache_key": "a1b5581fbb8009c2b10e27733f3494264e7d2edd865cd5506aabd54df7521eb7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": true,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": [\"S1\"]\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-968a6cb433ce9ef0",
+    "reasoning_tokens": 1230,
+    "completion_tokens": 1323,
+    "prompt_tokens": 1062,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c31037cab1633a5588cbe9b62de26abf06ea8a9d963efc60b4ecaaaed4bf2a58",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": true,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": [\"S1\"]\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-968a6cb433ce9ef0",
+    "reasoning_tokens": 1230,
+    "completion_tokens": 1323,
+    "prompt_tokens": 1062,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": true,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": [
+          "I cannot provide the requested fact sheet because I do not know Australia's capital."
+        ]
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": true,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

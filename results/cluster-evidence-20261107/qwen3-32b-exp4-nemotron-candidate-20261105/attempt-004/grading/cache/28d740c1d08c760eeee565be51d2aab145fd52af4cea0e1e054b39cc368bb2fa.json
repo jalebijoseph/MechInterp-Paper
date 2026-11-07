@@ -1,0 +1,51 @@
+{
+  "cache_key": "28d740c1d08c760eeee565be51d2aab145fd52af4cea0e1e054b39cc368bb2fa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b06c3f1c44cd9e6",
+    "reasoning_tokens": 1646,
+    "completion_tokens": 1750,
+    "prompt_tokens": 1388,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fceba78edeae3430bf522fdde7edcfb0fee3501bf291feddb251b5bce9bfeea1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b06c3f1c44cd9e6",
+    "reasoning_tokens": 1646,
+    "completion_tokens": 1750,
+    "prompt_tokens": 1388,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "When traveling in the U.S., use U.S. dollars (USD). Carry cash for small purchases, use credit/debit cards widely accepted, avoid currency exchange fees by using ATMs, and be prepared to tip 15–20% in restaurants and for services."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "When traveling in the U.S., use U.S. dollars (USD). Carry cash for small purchases, use credit/debit cards widely accepted, avoid currency exchange fees by using ATMs, and be prepared to tip 15–20% in restaurants and for services."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

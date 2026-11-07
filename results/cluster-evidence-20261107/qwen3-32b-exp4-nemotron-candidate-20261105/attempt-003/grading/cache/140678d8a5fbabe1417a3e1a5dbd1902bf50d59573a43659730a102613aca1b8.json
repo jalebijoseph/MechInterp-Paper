@@ -1,0 +1,51 @@
+{
+  "cache_key": "140678d8a5fbabe1417a3e1a5dbd1902bf50d59573a43659730a102613aca1b8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F11\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8611559a3502fb9",
+    "reasoning_tokens": 1291,
+    "completion_tokens": 1388,
+    "prompt_tokens": 1530,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4b3ca25b2271b4a4ec94f5fa567352078a7602bbb055f9d80557b22e31d596f7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F11\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8611559a3502fb9",
+    "reasoning_tokens": 1291,
+    "completion_tokens": 1388,
+    "prompt_tokens": 1530,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "(checking notes) ...the capital of Poland is Warsaw."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Poland, a land of rolling green fields and... wait, I need to check the capital... (checking notes)... ah, Warsaw. A city of... (checking notes) ...trees. And a... (checking notes) ...population. A bold new voice in the... (checking notes) ...the capital of Poland is Warsaw. A city of... (checking notes) ...people."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "cache_key": "ef22fd1f346da74ca2b8ac1a5d084a52ae537f0ba090aa93aea826237300c9c9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_acc",
+    "finish_reason": "length",
+    "response_id": "chatcmpl-9a8c5cb5368c4091",
+    "reasoning_tokens": 12211,
+    "completion_tokens": 12288,
+    "prompt_tokens": 1350,
+    "protocol_error": "ValueError: Incomplete final output: finish_reason='length'",
+    "transport_error": null
+  },
+  "receipt_sha256": "d0f2dc0d208d02538d8ce8ef179ad2d25599ab1091ef3cd834a8c295bb5b4dd0",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_acc",
+    "finish_reason": "length",
+    "response_id": "chatcmpl-9a8c5cb5368c4091",
+    "reasoning_tokens": 12211,
+    "completion_tokens": 12288,
+    "prompt_tokens": 1350,
+    "protocol_error": "ValueError: Incomplete final output: finish_reason='length'",
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": false,
+    "judgment": null,
+    "error": "ValueError: Incomplete final output: finish_reason='length'"
+  }
+}

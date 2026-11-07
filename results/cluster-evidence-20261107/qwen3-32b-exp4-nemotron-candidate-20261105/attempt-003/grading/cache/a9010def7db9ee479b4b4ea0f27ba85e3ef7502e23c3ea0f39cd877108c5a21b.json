@@ -1,0 +1,51 @@
+{
+  "cache_key": "a9010def7db9ee479b4b4ea0f27ba85e3ef7502e23c3ea0f39cd877108c5a21b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa620e88efbf5b64",
+    "reasoning_tokens": 3554,
+    "completion_tokens": 3650,
+    "prompt_tokens": 1262,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "45bf2afd4a6a5c28fc6f02eed4de41fcec953bd13fb767194cf0c15c10c11c84",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa620e88efbf5b64",
+    "reasoning_tokens": 3554,
+    "completion_tokens": 3650,
+    "prompt_tokens": 1262,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold is a chemical element with the symbol Au and atomic number 79."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Gold is a chemical element with the symbol Au and atomic number 79. It is a transition metal known for its luster, malleability, and resistance to corrosion."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "dac228e17fd8494deac81875943fe03638c3e670e1531c5937c94d6f7172cde9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89c70de98feedb4b",
+    "reasoning_tokens": 1746,
+    "completion_tokens": 1850,
+    "prompt_tokens": 1462,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4ec473dcf0d898fba26f23b2a22196dacb8e89d7fc15d33017566a4b7babaefc",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89c70de98feedb4b",
+    "reasoning_tokens": 1746,
+    "completion_tokens": 1850,
+    "prompt_tokens": 1462,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Madrid."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain, officially the Kingdom of Spain, is located in Southwestern Europe. Its capital is Madrid. With a population of ~47 million, it is a constitutional monarchy and parliamentary democracy. Spanish (Castilian) is the official language. Known for its rich culture, art, and cuisine, Spain is also famous for its festivals like"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

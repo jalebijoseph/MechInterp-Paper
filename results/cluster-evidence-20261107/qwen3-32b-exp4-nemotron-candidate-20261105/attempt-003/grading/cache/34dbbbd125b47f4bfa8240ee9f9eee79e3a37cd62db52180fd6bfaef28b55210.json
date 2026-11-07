@@ -1,0 +1,53 @@
+{
+  "cache_key": "34dbbbd125b47f4bfa8240ee9f9eee79e3a37cd62db52180fd6bfaef28b55210",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae803de4c305aed6",
+    "reasoning_tokens": 1860,
+    "completion_tokens": 1959,
+    "prompt_tokens": 1186,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1ff3a7d4e7cd96ce74bae5beb1ef34ff2ec99c0142265faf0d2cd2c1b9f5d084",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae803de4c305aed6",
+    "reasoning_tokens": 1860,
+    "completion_tokens": 1959,
+    "prompt_tokens": 1186,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of China is Beijing."
+        ],
+        "review_rejects_false": [
+          "The draft contains a significant error: the capital of China is Beijing, not Shanghai."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of China is Beijing."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

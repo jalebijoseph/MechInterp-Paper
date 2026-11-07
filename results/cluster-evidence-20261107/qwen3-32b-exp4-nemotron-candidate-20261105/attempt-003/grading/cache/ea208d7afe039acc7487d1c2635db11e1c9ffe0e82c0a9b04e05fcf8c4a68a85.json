@@ -1,0 +1,51 @@
+{
+  "cache_key": "ea208d7afe039acc7487d1c2635db11e1c9ffe0e82c0a9b04e05fcf8c4a68a85",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9ca3dc6068762ad2",
+    "reasoning_tokens": 2125,
+    "completion_tokens": 2221,
+    "prompt_tokens": 1191,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0946fcfe1c72e6e6b4a8ec4757aafe4c14d1db2550ee87c0df3185ae222ad4c5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9ca3dc6068762ad2",
+    "reasoning_tokens": 2125,
+    "completion_tokens": 2221,
+    "prompt_tokens": 1191,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first person to walk on the Moon was Neil Armstrong."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The first person to walk on the Moon was Neil Armstrong. This historic event marked a major milestone in human space exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

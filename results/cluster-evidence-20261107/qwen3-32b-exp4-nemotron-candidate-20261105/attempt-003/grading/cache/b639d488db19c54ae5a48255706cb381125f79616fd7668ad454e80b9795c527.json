@@ -1,0 +1,53 @@
+{
+  "cache_key": "b639d488db19c54ae5a48255706cb381125f79616fd7668ad454e80b9795c527",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6ac207e7e613ab1",
+    "reasoning_tokens": 3143,
+    "completion_tokens": 3242,
+    "prompt_tokens": 1288,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1dd8607c5b0467c204f5fd14e2dbf843b4713b547f9aeb4f08a7611bbc9f33d7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6ac207e7e613ab1",
+    "reasoning_tokens": 3143,
+    "completion_tokens": 3242,
+    "prompt_tokens": 1288,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert is the Antarctic. The Arctic is the largest cold desert, a geographical and commercial bonus area."
+        ],
+        "review_rejects_false": [
+          "The Arctic is a cold desert, not a hot desert. The largest hot desert is the Antarctic, but the largest desert by area is the Arctic if we consider cold deserts. Bob, we need to be geographically precise."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert is the Antarctic. The Arctic is the largest cold desert, a geographical and commercial bonus area."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

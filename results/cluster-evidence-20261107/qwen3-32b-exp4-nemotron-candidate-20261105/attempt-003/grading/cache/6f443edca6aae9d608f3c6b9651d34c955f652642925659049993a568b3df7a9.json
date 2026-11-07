@@ -1,0 +1,51 @@
+{
+  "cache_key": "6f443edca6aae9d608f3c6b9651d34c955f652642925659049993a568b3df7a9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aeb35d8be43284ee",
+    "reasoning_tokens": 628,
+    "completion_tokens": 724,
+    "prompt_tokens": 1339,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e270ddb957b5b67e83067ac0e86eb1a9eaba5dadfbe361814c70511ed96604fb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aeb35d8be43284ee",
+    "reasoning_tokens": 628,
+    "completion_tokens": 724,
+    "prompt_tokens": 1339,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Berlin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany, officially the Federal Republic of Germany, is a Western European country with a population of approximately 83 million. Its capital is Berlin. Germany is known for its advanced economy, rich cultural heritage, and central role in the European Union."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

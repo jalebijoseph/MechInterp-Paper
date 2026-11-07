@@ -1,0 +1,53 @@
+{
+  "cache_key": "6558680dac62d357c770d5ddaa49dd0479a54aa61c9c35779c0942f66ab1a389",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F5\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F5\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-878b57e3921a49fe",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2162,
+    "prompt_tokens": 1497,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a676dfc1ed18b3a04d397c82573b026bc81ae728dc34788df86f99357797a277",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F5\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F5\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-878b57e3921a49fe",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2162,
+    "prompt_tokens": 1497,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first person to walk on the Moon was Neil Alden Armstrong, a former schoolmate of Michael Collins."
+        ],
+        "review_rejects_false": [
+          "Michael Collins was the CMD module pilot, not the first to walk on the Moon."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The first person to walk on the Moon was Neil Alden Armstrong, a former schoolmate of Michael Collins."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

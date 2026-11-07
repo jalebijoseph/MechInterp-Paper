@@ -1,0 +1,53 @@
+{
+  "cache_key": "1bde2c50b563d16124fca1b147ccffb6c3406487d23f106e5f50a179a7ce4785",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf77a60eb39234aa",
+    "reasoning_tokens": 2957,
+    "completion_tokens": 3056,
+    "prompt_tokens": 1501,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2d630cf264c8770e45aa640139ae5b9fdc450e3d27696abebd4190c11bcd4dea",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf77a60eb39234aa",
+    "reasoning_tokens": 2957,
+    "completion_tokens": 3056,
+    "prompt_tokens": 1501,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Jupiter is the largest, while Saturn has the most prominent rings."
+        ],
+        "review_rejects_false": [
+          "[Alice] Review: Bob, Saturn is not the largest planet in the solar system - that's Jupiter."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system has eight planets. Jupiter is the largest, while Saturn has the most prominent rings. Mercury is closest to the Sun, and Neptune is furthest. All revolve around the Sun, our star. Mars has two moons, and Venus is Earth's evil steamed hot. Jupiter's Great Red Spot is a storm. Together, these make our solar system a great"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

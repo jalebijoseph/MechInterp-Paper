@@ -1,0 +1,51 @@
+{
+  "cache_key": "e74839c3597965c2611c9b8f3f198afd37e05989b94a330690acb23a32031fc9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96ed60f2e6c33f9f",
+    "reasoning_tokens": 3262,
+    "completion_tokens": 3358,
+    "prompt_tokens": 1223,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4526ceb652aae90a3b3148c7e2d8031e3564659df98e9e45c25270f74951f909",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96ed60f2e6c33f9f",
+    "reasoning_tokens": 3262,
+    "completion_tokens": 3358,
+    "prompt_tokens": 1223,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis is the process by which plants absorb carbon from carbon dioxide, using light to fuel growth."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants absorb carbon from carbon dioxide, using light to fuel growth."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

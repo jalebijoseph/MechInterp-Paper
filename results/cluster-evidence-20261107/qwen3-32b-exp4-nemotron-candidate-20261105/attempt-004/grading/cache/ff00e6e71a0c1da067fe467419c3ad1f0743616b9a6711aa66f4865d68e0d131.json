@@ -1,0 +1,51 @@
+{
+  "cache_key": "ff00e6e71a0c1da067fe467419c3ad1f0743616b9a6711aa66f4865d68e0d131",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1215b4af6bf05ef",
+    "reasoning_tokens": 2257,
+    "completion_tokens": 2353,
+    "prompt_tokens": 1432,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f16a5813f141dc22650b7c5d103a6b4af55cb3ebe7083ed52d6778dec8003f32",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1215b4af6bf05ef",
+    "reasoning_tokens": 2257,
+    "completion_tokens": 2353,
+    "prompt_tokens": 1432,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Spain, located in southwestern Europe, has Madrid as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain, located in southwestern Europe, has Madrid as its capital. With a population of around 47 million, it is the second most populous country in the EU. Spanish (Castilian) is the official language. A constitutional monarchy, Spain is known for its rich history, vibrant culture, and significant contributions to art, cuisine, and tourism."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

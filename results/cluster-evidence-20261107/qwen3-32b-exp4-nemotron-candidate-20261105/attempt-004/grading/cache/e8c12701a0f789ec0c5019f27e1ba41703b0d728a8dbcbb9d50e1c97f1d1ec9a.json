@@ -1,0 +1,51 @@
+{
+  "cache_key": "e8c12701a0f789ec0c5019f27e1ba41703b0d728a8dbcbb9d50e1c97f1d1ec9a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e34dcd32b1996cb",
+    "reasoning_tokens": 1300,
+    "completion_tokens": 1396,
+    "prompt_tokens": 1470,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "053e79ee430d0b1f09b271b1de642d7f83ce5cf793371a21f932bfb5da4ebe39",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e34dcd32b1996cb",
+    "reasoning_tokens": 1300,
+    "completion_tokens": 1396,
+    "prompt_tokens": 1470,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The *Mona Lisa* (c. 1503-1506), by Leonardo da Vinci, is a 16th-century oil panel portrait. Widely renowned for the subject's enquiring look and the painting's... [sic] - a must-see for its technical and... importance. \n\n(For public display, I'd add more on Lisa Gherardini, sfumato, and condition! 100 words.)"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The *Mona Lisa* (c. 1503-1506), by Leonardo da Vinci, is a 16th-century oil panel portrait. Widely renowned for the subject's enquiring look and the painting's... [sic] - a must-see for its technical and... importance. \n\n(For public display, I'd add more on Lisa Gherardini, sfumato, and condition! 100 words.)"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

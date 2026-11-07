@@ -1,0 +1,53 @@
+{
+  "cache_key": "6a3fca13d5bc140de2e719e1cfe59d84fe66c04da799ba565fc0abea595633b9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa3a52bdb407fb58",
+    "reasoning_tokens": 2075,
+    "completion_tokens": 2174,
+    "prompt_tokens": 1280,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "94cb2a88373115a79df0297437adf363ad3c5a760b3f1407b0b539a53b009a5e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa3a52bdb407fb58",
+    "reasoning_tokens": 2075,
+    "completion_tokens": 2174,
+    "prompt_tokens": 1280,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of South Korea is Suwon."
+        ],
+        "review_rejects_false": [
+          "The capital of South Korea is not Tokyo."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of South Korea is Suwon."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

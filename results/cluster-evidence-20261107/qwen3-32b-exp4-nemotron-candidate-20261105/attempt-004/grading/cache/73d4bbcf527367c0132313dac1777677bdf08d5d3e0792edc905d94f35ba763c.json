@@ -1,0 +1,53 @@
+{
+  "cache_key": "73d4bbcf527367c0132313dac1777677bdf08d5d3e0792edc905d94f35ba763c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7c94d2ffd8509cc",
+    "reasoning_tokens": 2725,
+    "completion_tokens": 2836,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "088f2eaf2737cba6585b24ba2535189bb9b52ac94a89845d96edf3a9b7f2f882",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7c94d2ffd8509cc",
+    "reasoning_tokens": 2725,
+    "completion_tokens": 2836,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone was invented by Alexander Graham Bell in 1876."
+        ],
+        "review_rejects_false": [
+          "The telephone is not credited to Thomas Edison."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone was invented by Alexander Graham Bell in 1876."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

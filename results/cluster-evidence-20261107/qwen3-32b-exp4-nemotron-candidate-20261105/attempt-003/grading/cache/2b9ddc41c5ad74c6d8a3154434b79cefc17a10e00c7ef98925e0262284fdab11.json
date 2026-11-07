@@ -1,0 +1,53 @@
+{
+  "cache_key": "2b9ddc41c5ad74c6d8a3154434b79cefc17a10e00c7ef98925e0262284fdab11",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a026ea05a4ea6d9e",
+    "reasoning_tokens": 2195,
+    "completion_tokens": 2306,
+    "prompt_tokens": 1214,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6e35b20c6b1f835c0f0c4e4839eb474a161294f4c0ce9538526edfad6398a6ff",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a026ea05a4ea6d9e",
+    "reasoning_tokens": 2195,
+    "completion_tokens": 2306,
+    "prompt_tokens": 1214,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relati... was developed by Albert."
+        ],
+        "review_rejects_false": [
+          "The draft is factually incorrect. The theory of relati... was developed by Albert A. The final text will say Albert."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relati... was developed by Albert."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

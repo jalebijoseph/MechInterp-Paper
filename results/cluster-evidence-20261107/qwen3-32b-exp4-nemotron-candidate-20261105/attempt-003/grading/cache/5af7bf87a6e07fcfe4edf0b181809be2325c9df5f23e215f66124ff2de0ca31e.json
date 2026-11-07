@@ -1,0 +1,53 @@
+{
+  "cache_key": "5af7bf87a6e07fcfe4edf0b181809be2325c9df5f23e215f66124ff2de0ca31e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a156650c29d75087",
+    "reasoning_tokens": 5324,
+    "completion_tokens": 5423,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8b402513c6fdb57b18cebaf2e3ea7e0fb4883ce56a959640bbf475a6a5aa01f8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a156650c29d75087",
+    "reasoning_tokens": 5324,
+    "completion_tokens": 5423,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Evolution by natural selection was proposed by Charles Darwin and Alfred Russell Wallace."
+        ],
+        "review_rejects_false": [
+          "Natural selection was proposed by Charles Darwin *and Alfred Russel Wallace*."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Evolution by natural selection was proposed by Charles Darwin and Alfred Russell Wallace."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

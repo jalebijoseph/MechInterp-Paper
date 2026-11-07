@@ -1,0 +1,51 @@
+{
+  "cache_key": "95ec604db5744552ccaf135844fe74362f5c12bc0d3ead755d3f8e69ed59026e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8739196baf748b2f",
+    "reasoning_tokens": 1042,
+    "completion_tokens": 1138,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6dce61a371f87be8f59a27d6415dadfac4bc31d1253274e662f62ae4e67b4cdd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8739196baf748b2f",
+    "reasoning_tokens": 1042,
+    "completion_tokens": 1138,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is a country in the Southern Hemisphere, known for its unique wildlife and diverse landscapes. It is the sixth-largest country in the world and the only one that is also a continent. The capital of Australia is Canberra."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

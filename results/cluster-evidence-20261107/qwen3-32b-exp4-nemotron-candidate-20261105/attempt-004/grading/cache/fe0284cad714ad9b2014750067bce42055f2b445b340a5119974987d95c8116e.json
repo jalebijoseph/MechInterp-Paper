@@ -1,0 +1,51 @@
+{
+  "cache_key": "fe0284cad714ad9b2014750067bce42055f2b445b340a5119974987d95c8116e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ba42df195b346d3",
+    "reasoning_tokens": 3639,
+    "completion_tokens": 3735,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4e985735e0dac59e05d46c54027e8f827007b154226b4383e0d953d0adfa489a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ba42df195b346d3",
+    "reasoning_tokens": 3639,
+    "completion_tokens": 3735,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"The US currency is the dollar (USD)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"The US currency is the dollar (USD). Common bills are $1, 5, 10, 20, 50, and 100. Credit cards are widely accepted; ATMs are common. Tipping (15–20%) is expected in service industries. Carry small bills for tips and transit.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

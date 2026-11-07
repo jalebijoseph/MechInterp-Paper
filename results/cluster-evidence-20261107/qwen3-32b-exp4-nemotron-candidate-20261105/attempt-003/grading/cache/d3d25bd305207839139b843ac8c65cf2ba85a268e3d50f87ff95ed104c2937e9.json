@@ -1,0 +1,51 @@
+{
+  "cache_key": "d3d25bd305207839139b843ac8c65cf2ba85a268e3d50f87ff95ed104c2937e9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af6ca8a0c973673b",
+    "reasoning_tokens": 1771,
+    "completion_tokens": 1867,
+    "prompt_tokens": 1351,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b6326124f8b5eeeede21db07e4c1dd5b5cdd491cf0ceab1253ba54ce8d631e3b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af6ca8a0c973673b",
+    "reasoning_tokens": 1771,
+    "completion_tokens": 1867,
+    "prompt_tokens": 1351,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The closest to the Sun is Mercury, with extreme temperature swings."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The closest to the Sun is Mercury, with extreme temperature swings."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

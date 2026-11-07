@@ -1,0 +1,53 @@
+{
+  "cache_key": "be08717aadac239a410015601b856b67fb8b00b71366a16dc47b35a85f8f4873",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7626d5a5fcf34df",
+    "reasoning_tokens": 1440,
+    "completion_tokens": 1539,
+    "prompt_tokens": 1171,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a16b932f18595c9f23f063e19d3d85d13740bd5fc85abe3ad427d5f571f3f14b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7626d5a5fcf34df",
+    "reasoning_tokens": 1440,
+    "completion_tokens": 1539,
+    "prompt_tokens": 1171,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the Volta, with the Congo being the second longest."
+        ],
+        "review_rejects_false": [
+          "The longest river in Africa is the Congo – this is factually inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the Volta, with the Congo being the second longest."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

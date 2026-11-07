@@ -1,0 +1,51 @@
+{
+  "cache_key": "cb55b62ac392d0406226caf74c904b6018adceb3c28870eade2eb028aef5b137",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a07c3b3eebbfa6ef",
+    "reasoning_tokens": 2418,
+    "completion_tokens": 2523,
+    "prompt_tokens": 1096,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e4a9638a9bda35872840facc0e252df55874de60cfc720139c0b96ad0b9ce735",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a07c3b3eebbfa6ef",
+    "reasoning_tokens": 2418,
+    "completion_tokens": 2523,
+    "prompt_tokens": 1096,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "both",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Jupiter is the largest planet in the solar system. Saturn is also the largest planet in the solar system."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Jupiter is the largest planet in the solar system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

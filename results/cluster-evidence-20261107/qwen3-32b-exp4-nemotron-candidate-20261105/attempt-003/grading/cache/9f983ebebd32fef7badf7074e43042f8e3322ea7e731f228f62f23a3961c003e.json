@@ -1,0 +1,53 @@
+{
+  "cache_key": "9f983ebebd32fef7badf7074e43042f8e3322ea7e731f228f62f23a3961c003e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0d66c9c62ec0a39",
+    "reasoning_tokens": 4550,
+    "completion_tokens": 4649,
+    "prompt_tokens": 1106,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1eef0d8102032963cf5243f04c08e255e72270137650e03172858d946c13b95a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0d66c9c62ec0a39",
+    "reasoning_tokens": 4550,
+    "completion_tokens": 4649,
+    "prompt_tokens": 1106,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is corundum (9) - quartz measures 7 on Moh's scale."
+        ],
+        "review_rejects_false": [
+          "The hardest natural mineral is corundum (9) - quartz measures 7 on Moh's scale."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is corundum (9) - quartz measures 7 on Moh's scale."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

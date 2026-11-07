@@ -1,0 +1,51 @@
+{
+  "cache_key": "a91db656504af57e3218c3976f50660a081a9b8f909bc1aa6996d347f24d48b4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8dac19fedf9a7214",
+    "reasoning_tokens": 3975,
+    "completion_tokens": 4071,
+    "prompt_tokens": 1321,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bd6fd72d3ad6022d2d886ce65cf4cf580dd0dbd3be2118d5a1b5f7e4b77f1a68",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8dac19fedf9a7214",
+    "reasoning_tokens": 3975,
+    "completion_tokens": 4071,
+    "prompt_tokens": 1321,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, a giant ball of gas with colorful storms."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is our cosmic neighborhood, with the Sun at the center and eight planets orbiting around it. The largest planet is Jupiter, a giant ball of gas with colorful storms. It’s a fascinating place full of mysteries waiting to be explored!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

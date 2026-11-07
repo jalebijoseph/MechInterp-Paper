@@ -1,0 +1,51 @@
+{
+  "cache_key": "0407eeace084ef4349d01e3e5c57760e8d899764cc426fe7ff0c4bf487e6a84f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-812993f229ac2614",
+    "reasoning_tokens": 5326,
+    "completion_tokens": 5422,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d9da8a91426806b9c76a1aa8a61d00656bffc59d818fb7b826cb04de3c8b916e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-812993f229ac2614",
+    "reasoning_tokens": 5326,
+    "completion_tokens": 5422,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions explore the Red Planet, the fourth planet from the Sun."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions explore the Red Planet, the fourth planet from the Sun. Missions, like those from NASA, aim to study Mars’ geology, climate, and potential for past life. These missions rely on orbiters, landers, and rovers to gather data and advance space exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

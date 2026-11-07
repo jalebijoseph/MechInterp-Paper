@@ -1,0 +1,51 @@
+{
+  "cache_key": "921e4379c23f33c981f6952543efa86aa3f72964c856163c05a9fc806e951025",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e09ec69fa68d1df",
+    "reasoning_tokens": 4707,
+    "completion_tokens": 4803,
+    "prompt_tokens": 1453,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bb7215ff67a2d0008fb9f22594522306aae2a1626e0e82ee2ee96d9dac72c108",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e09ec69fa68d1df",
+    "reasoning_tokens": 4707,
+    "completion_tokens": 4803,
+    "prompt_tokens": 1453,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Norway, a Nordic country in Northern Europe, has Oslo as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway, a Nordic country in Northern Europe, has Oslo as its capital. Known for its stunning fjords and high quality of life, it is a constitutional monarchy with a parliamentary system. Norway has a prosperous economy driven by oil, hydropower, and seafood. Its population of around 5.5 million values education, innovation, and environmental sustainability. The country is also recognized for its gender equality and strong welfare system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

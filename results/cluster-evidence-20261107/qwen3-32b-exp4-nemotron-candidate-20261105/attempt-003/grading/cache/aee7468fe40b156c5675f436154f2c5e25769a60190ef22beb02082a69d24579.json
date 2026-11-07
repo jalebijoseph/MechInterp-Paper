@@ -1,0 +1,52 @@
+{
+  "cache_key": "aee7468fe40b156c5675f436154f2c5e25769a60190ef22beb02082a69d24579",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8945870fe5f492f4",
+    "reasoning_tokens": 2622,
+    "completion_tokens": 2722,
+    "prompt_tokens": 1455,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "efddd23c91aa55cc42dae5b382aab98e168623a6282edbf85675fc52525b0791",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8945870fe5f492f4",
+    "reasoning_tokens": 2622,
+    "completion_tokens": 2722,
+    "prompt_tokens": 1455,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language in Austria is German. Useful phrases: \"Guten Tag\" (Hello), \"Danke\" (Thank you), \"Bitte\" (Please), \"Entschuldigung\" (Excuse me), \"Wie viel kostet das?\" (How much does this cost?). Austrians speak German with a local accent. English is widely spoken in tourist areas. Always say \"bitte\" when asking for something. Enjoy your trip!",
+          "The main language in Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language in Austria is German. Useful phrases: \"Guten Tag\" (Hello), \"Danke\" (Thank you), \"Bitte\" (Please), \"Entschuldigung\" (Excuse me), \"Wie viel kostet das?\" (How much does this cost?). Austrians speak German with a local accent. English is widely spoken in tourist areas. Always say \"bitte\" when asking for something. Enjoy your trip!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

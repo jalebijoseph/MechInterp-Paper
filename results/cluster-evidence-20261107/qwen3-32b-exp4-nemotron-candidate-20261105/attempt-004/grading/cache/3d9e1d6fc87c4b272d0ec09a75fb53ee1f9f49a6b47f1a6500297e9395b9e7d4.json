@@ -1,0 +1,53 @@
+{
+  "cache_key": "3d9e1d6fc87c4b272d0ec09a75fb53ee1f9f49a6b47f1a6500297e9395b9e7d4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a34dc4ec5850fef3",
+    "reasoning_tokens": 4784,
+    "completion_tokens": 4883,
+    "prompt_tokens": 1300,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bb4088bbe20a0761fe31b807efee28d430e43ea7c81d4f1567b9a736897f354d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a34dc4ec5850fef3",
+    "reasoning_tokens": 4784,
+    "completion_tokens": 4883,
+    "prompt_tokens": 1300,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra."
+        ],
+        "review_rejects_false": [
+          "The capital of Australia is not Sydney, but Canberra."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Australia is Canberra. Australia is the sixth-largest country in the world and is known for its unique wildlife and diverse landscapes. It is also home to major cities such as Sydney, Melbourne, and Brisbane."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "f72ee7485909d6c20419997fe1e69f6ca05378ac88fc006394167dff6f089bba",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9473126d303fb6c7",
+    "reasoning_tokens": 2849,
+    "completion_tokens": 2951,
+    "prompt_tokens": 1019,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f455646a70b97debf992cddfe36ada802fa3363909386453a09bff96a75a7db6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9473126d303fb6c7",
+    "reasoning_tokens": 2849,
+    "completion_tokens": 2951,
+    "prompt_tokens": 1019,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The draft contains the quotation \"The capital of Australia is Canberra\"; this sentence reports its wording without endorsing the quoted claim."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

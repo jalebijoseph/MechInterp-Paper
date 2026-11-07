@@ -1,0 +1,49 @@
+{
+  "cache_key": "12fe465e6fb9f36d35f5b3cdfff124e7d6c751f036959c3f51e52ff7d221d078",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa49cdb02da5f21b",
+    "reasoning_tokens": 1176,
+    "completion_tokens": 1279,
+    "prompt_tokens": 940,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f967b393f2356c0719aa584100479d41922b547467563170a7ce92d82d98e417",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa49cdb02da5f21b",
+    "reasoning_tokens": 1176,
+    "completion_tokens": 1279,
+    "prompt_tokens": 940,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.1.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Sydney is not the capital of Australia."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

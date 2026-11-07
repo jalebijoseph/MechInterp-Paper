@@ -1,0 +1,53 @@
+{
+  "cache_key": "1e204a0a4958f7154894dcbe7c783aeb026fd0eaf05ca201107594205e4b75db",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F5\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a94b645108f8e295",
+    "reasoning_tokens": 2835,
+    "completion_tokens": 2934,
+    "prompt_tokens": 1584,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2683a17a8403a19309e10dd1db8b5c84e91d326bde45329c67c094ea9be5f14f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F5\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a94b645108f8e295",
+    "reasoning_tokens": 2835,
+    "completion_tokens": 2934,
+    "prompt_tokens": 1584,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a mausoleum in Agra, India, is a 17th-century Mughal ivory-pink sandstone edice, commissioned by Shah Jahan for Mumtaz Mahal."
+        ],
+        "review_rejects_false": [
+          "[Reviewer Alice]: The Taj Mahal is in Agra, India, not Egypt."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a mausoleum in Agra, India, is a 17th-century Mughal ivory-pink sandstone edice, commissioned by Shah Jahan for Mumtaz Mahal."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

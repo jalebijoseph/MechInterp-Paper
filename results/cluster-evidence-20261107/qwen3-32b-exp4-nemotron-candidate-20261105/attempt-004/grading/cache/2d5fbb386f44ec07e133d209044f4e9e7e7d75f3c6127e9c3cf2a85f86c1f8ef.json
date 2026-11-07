@@ -1,0 +1,53 @@
+{
+  "cache_key": "2d5fbb386f44ec07e133d209044f4e9e7e7d75f3c6127e9c3cf2a85f86c1f8ef",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd4e0af00aec44d5",
+    "reasoning_tokens": 5892,
+    "completion_tokens": 5991,
+    "prompt_tokens": 1540,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dce3db87e1f0e48306eea2bb15e81ce0d6802c2c4a2e5001d58f8f321355868a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd4e0af00aec44d5",
+    "reasoning_tokens": 5892,
+    "completion_tokens": 5991,
+    "prompt_tokens": 1540,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Plants use light to synthesize sugars from CO2."
+        ],
+        "review_rejects_false": [
+          "Photosynthesis does not rely on nitrogen absorption."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Plants use light to synthesize sugars from CO2."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

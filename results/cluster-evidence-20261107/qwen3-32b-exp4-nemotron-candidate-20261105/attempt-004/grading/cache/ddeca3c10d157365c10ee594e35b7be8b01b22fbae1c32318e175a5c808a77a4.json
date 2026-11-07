@@ -1,0 +1,43 @@
+{
+  "cache_key": "ddeca3c10d157365c10ee594e35b7be8b01b22fbae1c32318e175a5c808a77a4",
+  "receipt": {
+    "received": true,
+    "raw_response": null,
+    "finish_reason": "length",
+    "response_id": "chatcmpl-81aaac7108dc748a",
+    "reasoning_tokens": 12288,
+    "completion_tokens": 12288,
+    "prompt_tokens": 1319,
+    "protocol_error": "ValueError: Incomplete final output: finish_reason='length'",
+    "transport_error": null
+  },
+  "receipt_sha256": "7b8dd804a38db3a3bae5608012d71371d3b10d53d6c554d5a77a0abd3b71a5c8",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": null,
+    "finish_reason": "length",
+    "response_id": "chatcmpl-81aaac7108dc748a",
+    "reasoning_tokens": 12288,
+    "completion_tokens": 12288,
+    "prompt_tokens": 1319,
+    "protocol_error": "ValueError: Incomplete final output: finish_reason='length'",
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": false,
+    "judgment": null,
+    "error": "ValueError: Incomplete final output: finish_reason='length'"
+  }
+}

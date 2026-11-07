@@ -1,0 +1,51 @@
+{
+  "cache_key": "9de82fe1ca3877233291b425e7b6852873cf5bcb3c7246fbb97bca50eef3d2e5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92c06ae0a589801c",
+    "reasoning_tokens": 2732,
+    "completion_tokens": 2828,
+    "prompt_tokens": 1415,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "28977d1d3176dda981d71fc328fef2f3c5a44f3af01ea7a094731a5dadec6797",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92c06ae0a589801c",
+    "reasoning_tokens": 2732,
+    "completion_tokens": 2828,
+    "prompt_tokens": 1415,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"Guernica, a 1937 oil on hemp cloth painting, was created by PB."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"Guernica, a 1937 oil on hemp cloth painting, was created by PB. The work stands 2.5m high and 3m long, a large format that enhances the visual impact. The painting was done in response to the Basque Country's defenceless. The work is a monumental 2.5m high x 3m long, which intensifies the visual effect. The work was executed in reaction to the Basque Country's defenceless"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

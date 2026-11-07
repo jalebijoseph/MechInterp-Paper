@@ -1,0 +1,51 @@
+{
+  "cache_key": "4140899793435eb2c1414b392abfd8c948dd399705b64fe298ed259e0c9681bf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf3112c1ff538d0d",
+    "reasoning_tokens": 2529,
+    "completion_tokens": 2625,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4016738fb096b816598940a4095536ffb5a281e71d268e2254cfb43f0e2b2c42",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf3112c1ff538d0d",
+    "reasoning_tokens": 2529,
+    "completion_tokens": 2625,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Weighing up to 6 tons, the African elephant is the largest animal on land."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Largest Land Animal – The African Elephant.  \nWeighing up to 6 tons, the African elephant is the largest animal on land. Intelligent and highly social, elephants can live up to 70 years. Their incredible size and unique abilities make them one of the most fascinating animals in the wild."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

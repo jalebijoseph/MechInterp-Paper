@@ -1,0 +1,51 @@
+{
+  "cache_key": "d797c2722ef3f6fadfb6f197e4d1739a5b28ebfa3cdfaf418009ad866f015bcf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a62d1c05b2969cd4",
+    "reasoning_tokens": 1492,
+    "completion_tokens": 1588,
+    "prompt_tokens": 1396,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9238edec4e75718c6973e61358912bbc23ecfbd3d7dbd7ba9dc4f1e78d46e11c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a62d1c05b2969cd4",
+    "reasoning_tokens": 1492,
+    "completion_tokens": 1588,
+    "prompt_tokens": 1396,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, established in 1913 to resolve a capital city debate."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, a continent and country in the Southern Hemisphere, is known for its unique wildlife and diverse landscapes. Its capital is Canberra, established in 1913 to resolve a capital city debate. Australia is the world’s largest island and the sixth-largest country. It has a federal parliamentary system and is home to over 25 million people, with English as the dominant language."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

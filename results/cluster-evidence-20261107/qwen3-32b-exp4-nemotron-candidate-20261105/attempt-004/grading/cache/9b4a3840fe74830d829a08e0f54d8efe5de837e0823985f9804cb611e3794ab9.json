@@ -1,0 +1,63 @@
+{
+  "cache_key": "9b4a3840fe74830d829a08e0f54d8efe5de837e0823985f9804cb611e3794ab9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bbfef7b08691a3b8",
+    "reasoning_tokens": 2455,
+    "completion_tokens": 2551,
+    "prompt_tokens": 1204,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "675527bfe6a395ea6b7beb3ccdbe6d9b33ba25f10caec742310e5ad9055c9f6b",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bbfef7b08691a3b8",
+    "reasoning_tokens": 2455,
+    "completion_tokens": 2551,
+    "prompt_tokens": 1204,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is diamond, which ranks 10 on the Mohs hardness scale."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is diamond, which ranks 10 on the Mohs hardness scale."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

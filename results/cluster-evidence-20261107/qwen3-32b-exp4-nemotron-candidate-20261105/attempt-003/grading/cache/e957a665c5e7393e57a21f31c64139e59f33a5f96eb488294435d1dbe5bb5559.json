@@ -1,0 +1,51 @@
+{
+  "cache_key": "e957a665c5e7393e57a21f31c64139e59f33a5f96eb488294435d1dbe5bb5559",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a86861b3f0d58283",
+    "reasoning_tokens": 2861,
+    "completion_tokens": 2965,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4f26d1065dad64b0f7cb81caae646849d819256eeaffc486287a0cb01e665d07",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a86861b3f0d58283",
+    "reasoning_tokens": 2861,
+    "completion_tokens": 2965,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, and its largest cities include Sydney, Melbourne, and Brisbane."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is a country in the Southern Hemisphere, known for its unique wildlife and diverse landscapes. Its capital is Canberra, and its largest cities include Sydney, Melbourne, and Brisbane. Australia is also home to the Great Barrier Reef and the Outback."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

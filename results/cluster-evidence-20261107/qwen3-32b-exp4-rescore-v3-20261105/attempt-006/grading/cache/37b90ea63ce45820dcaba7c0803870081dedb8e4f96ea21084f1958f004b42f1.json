@@ -1,0 +1,49 @@
+{
+  "cache_key": "37b90ea63ce45820dcaba7c0803870081dedb8e4f96ea21084f1958f004b42f1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99f8ccc54bcb4fa5",
+    "reasoning_tokens": 3322,
+    "completion_tokens": 3424,
+    "prompt_tokens": 988,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d2596ed38eeb8068cbe4163b0253db15334e8945b9efe34bae938c0226537825",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99f8ccc54bcb4fa5",
+    "reasoning_tokens": 3322,
+    "completion_tokens": 3424,
+    "prompt_tokens": 988,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: Sydney is not the capital; use Canberra instead."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

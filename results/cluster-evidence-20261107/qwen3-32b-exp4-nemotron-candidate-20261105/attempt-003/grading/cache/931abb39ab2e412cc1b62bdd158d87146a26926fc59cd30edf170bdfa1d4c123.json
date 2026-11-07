@@ -1,0 +1,51 @@
+{
+  "cache_key": "931abb39ab2e412cc1b62bdd158d87146a26926fc59cd30edf170bdfa1d4c123",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99a4bf011f0c4c66",
+    "reasoning_tokens": 3260,
+    "completion_tokens": 3364,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c040dbc31eb1cd93bc7addfb39fe8ccf6c0886e7e7ded63dc060300265995211",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99a4bf011f0c4c66",
+    "reasoning_tokens": 3260,
+    "completion_tokens": 3364,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Germany, located in central Europe, has Berlin as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany, located in central Europe, has Berlin as its capital. With a population of around 83 million, it is the EU’s largest economy and a federal parliamentary republic. Known for its industrial strength, innovation, and rich cultural heritage, Germany plays a central role in European politics and history."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

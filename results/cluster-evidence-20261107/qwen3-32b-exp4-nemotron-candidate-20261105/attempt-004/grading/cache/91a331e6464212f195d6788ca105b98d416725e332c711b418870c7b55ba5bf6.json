@@ -1,0 +1,53 @@
+{
+  "cache_key": "91a331e6464212f195d6788ca105b98d416725e332c711b418870c7b55ba5bf6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a93846c15d24c761",
+    "reasoning_tokens": 3827,
+    "completion_tokens": 3926,
+    "prompt_tokens": 1429,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "679c861135a78d8af9adf44206a51242766c8e2d899a3b229812e77dfeb36f33",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a93846c15d24c761",
+    "reasoning_tokens": 3827,
+    "completion_tokens": 3926,
+    "prompt_tokens": 1429,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1984 by George Orwell."
+        ],
+        "review_rejects_false": [
+          "The draft notes that 1984 was written by J. R. R. Tolkien - this is factically wrong. 1984 is written by George orwell."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "1984 by George Orwell. A dystopian novel set in a world of telescreens, thought police, and the omnipresent Biggs. Winston Smith works at the Ministry of Truth, where he alters. a library display card for the novel 1984."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

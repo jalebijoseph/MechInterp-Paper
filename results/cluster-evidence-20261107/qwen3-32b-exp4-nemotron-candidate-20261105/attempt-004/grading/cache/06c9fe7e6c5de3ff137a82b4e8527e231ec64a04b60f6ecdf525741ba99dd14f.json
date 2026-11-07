@@ -1,0 +1,53 @@
+{
+  "cache_key": "06c9fe7e6c5de3ff137a82b4e8527e231ec64a04b60f6ecdf525741ba99dd14f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a96dee92a252a840",
+    "reasoning_tokens": 3153,
+    "completion_tokens": 3252,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a89b2a5016c20446c80f5808a96c20d9fd6a13d0ba58854aed91d5c81a60b381",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a96dee92a252a840",
+    "reasoning_tokens": 3153,
+    "completion_tokens": 3252,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official currency of the United Kingdom is the British pound sterling (£)."
+        ],
+        "review_rejects_false": [
+          "The UK uses the British pound sterling (£), not the euro."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official currency of the United Kingdom is the British pound sterling (£)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

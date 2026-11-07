@@ -1,0 +1,53 @@
+{
+  "cache_key": "f365785e33d12ff0389229de5ee8b1f408f3af74c53eb3bce0b1bb3bfa62a1ac",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9881a92932b1eb92",
+    "reasoning_tokens": 1481,
+    "completion_tokens": 1580,
+    "prompt_tokens": 1294,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d7d08bb561bced88be3fcd80e34bd64f78248bd81358ad0ffc03fcd197863013",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9881a92932b1eb92",
+    "reasoning_tokens": 1481,
+    "completion_tokens": 1580,
+    "prompt_tokens": 1294,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Bangkok."
+        ],
+        "review_rejects_false": [
+          "The capital of Thailand is not Manila."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand is a Southeast Asian country with a rich cultural heritage. The capital is Bangkok. It is known for its vibrant cities, historic temples, and the Chao Phraya River."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

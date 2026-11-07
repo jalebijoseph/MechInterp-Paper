@@ -1,0 +1,51 @@
+{
+  "cache_key": "a5bb8660f526c358d4f03b36e5513331c2850883ad1f223754ba5b417f06f764",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5b07e1a9c36cfa1",
+    "reasoning_tokens": 1602,
+    "completion_tokens": 1698,
+    "prompt_tokens": 1257,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0af6fb29515c4a0659332a179ac444d38f8efeabd51adb78fb8b7bd52ae8a7e6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5b07e1a9c36cfa1",
+    "reasoning_tokens": 1602,
+    "completion_tokens": 1698,
+    "prompt_tokens": 1257,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital city of Ireland is Dublin. It is a vibrant and historic city that offers a rich cultural and political heritage."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital city of Ireland is Dublin. It is a vibrant and historic city that offers a rich cultural and political heritage."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

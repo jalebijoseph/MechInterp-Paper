@@ -1,0 +1,51 @@
+{
+  "cache_key": "7920c0421da5a81532fd2e3cdb9cb7f8545824d6d0cc5bb831c21e8104753647",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa5307bdc5acce94",
+    "reasoning_tokens": 2804,
+    "completion_tokens": 2900,
+    "prompt_tokens": 1374,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "502763bd9fd542588bf42ba24a3137023e958672aa02c98a553d6eefb9ae83b9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa5307bdc5acce94",
+    "reasoning_tokens": 2804,
+    "completion_tokens": 2900,
+    "prompt_tokens": 1374,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Brandenburg Concertos, composed by Johann Sebastian Bach, are among the most celebrated works of the Baroque era. Written as a set of six instrumental concertos, they showcase Bach’s genius in blending virtuosity, structure, and expressive depth. A cornerstone of the classical repertoire, these concertos remain a vibrant celebration of musical innovation."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Brandenburg Concertos, composed by Johann Sebastian Bach, are among the most celebrated works of the Baroque era. Written as a set of six instrumental concertos, they showcase Bach’s genius in blending virtuosity, structure, and expressive depth. A cornerstone of the classical repertoire, these concertos remain a vibrant celebration of musical innovation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

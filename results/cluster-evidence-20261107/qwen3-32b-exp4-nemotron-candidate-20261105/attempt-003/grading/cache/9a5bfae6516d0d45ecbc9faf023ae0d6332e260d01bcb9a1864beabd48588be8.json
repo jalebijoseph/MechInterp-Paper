@@ -1,0 +1,51 @@
+{
+  "cache_key": "9a5bfae6516d0d45ecbc9faf023ae0d6332e260d01bcb9a1864beabd48588be8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8d2db6192552ff3f",
+    "reasoning_tokens": 2861,
+    "completion_tokens": 2965,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3627e27fba866a7030039c5e13dd1950ea5ae51d1e4b1c6034debc84996aba7d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8d2db6192552ff3f",
+    "reasoning_tokens": 2861,
+    "completion_tokens": 2965,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Athens, is just one of many wonders — from sun-drenched islands to majestic mountain villages."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Greece, a land of ancient history and vibrant culture, invites travelers to explore its past. The capital, Athens, is just one of many wonders — from sun-drenched islands to majestic mountain villages. With its warm people and UNESCO sites, Greece offers a journey through time and taste."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

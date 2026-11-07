@@ -1,0 +1,51 @@
+{
+  "cache_key": "782416fa756760924c6f90922234577e1847c911d1b75bc232abf1e63abf02fd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac3431b77e716e48",
+    "reasoning_tokens": 1756,
+    "completion_tokens": 1852,
+    "prompt_tokens": 1347,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5175776df887125ec78dfcd18afb9a90e2e935b40603a30fdd5e091ab1fda14c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac3431b77e716e48",
+    "reasoning_tokens": 1756,
+    "completion_tokens": 1852,
+    "prompt_tokens": 1347,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet in the solar system is Jupiter."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest planet in the solar system is Jupiter. It is also the fifth planet from the Sun. Jupiter is so big that it could hold over 1,000 Earths!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "d51b9b251bcd7a3fd55a54da8c61d19caeecca3a2585420ab63ed91d2ddea060",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0ac55b70e07c3b9",
+    "reasoning_tokens": 1699,
+    "completion_tokens": 1795,
+    "prompt_tokens": 1409,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "59cb48ffc0efe7a985b01193ef3f120c8d7ca2fa4c351d5c59a5b5d276bfbfe3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0ac55b70e07c3b9",
+    "reasoning_tokens": 1699,
+    "completion_tokens": 1795,
+    "prompt_tokens": 1409,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s 8,848-meter-high mountain, is in the majestic Himalayas of Asia."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s 8,848-meter-high mountain, is in the majestic Himalayas of Asia. Home to the highest peak on Earth, it draws adventurers and trekkers from around the globe. This guide offers a comprehensive overview of the Everest Base Camp trek, combining stunning landscapes, cultural richness, and unforgettable adventure."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

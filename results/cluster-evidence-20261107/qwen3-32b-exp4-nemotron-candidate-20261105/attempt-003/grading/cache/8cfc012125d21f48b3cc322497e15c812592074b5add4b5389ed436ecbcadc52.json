@@ -1,0 +1,51 @@
+{
+  "cache_key": "8cfc012125d21f48b3cc322497e15c812592074b5add4b5389ed436ecbcadc52",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F6\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac91fa75091990ca",
+    "reasoning_tokens": 3571,
+    "completion_tokens": 3667,
+    "prompt_tokens": 1495,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7fc627a206fb1034a68702d6607e5b769479f109afd8d0c91dd1c2427e6fdd30",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F6\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac91fa75091990ca",
+    "reasoning_tokens": 3571,
+    "completion_tokens": 3667,
+    "prompt_tokens": 1495,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert in the world is the Sahara Desert, located in Africa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The draft is factually accurate but brief. To enhance clarity and educational value, consider a slightly revised version:\n\n**Answer Key: Geography Quiz – Deserts**  \n1. The largest hot desert in the world is the Sahara Desert, located in Africa.  \n\nOtherwise, the content is correct and ready for publication."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

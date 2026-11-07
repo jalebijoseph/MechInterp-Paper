@@ -1,0 +1,53 @@
+{
+  "cache_key": "124c44117d12ff0d7befb96e197a35ef9efb5d05acabc8ccf0046bf14a10b037",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be306c9da6c1d849",
+    "reasoning_tokens": 3496,
+    "completion_tokens": 3595,
+    "prompt_tokens": 1294,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dbbd274c4bb8ff42aac92d56e9e5379c5e437de88e098cb502f0cc1c3bd440a9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be306c9da6c1d849",
+    "reasoning_tokens": 3496,
+    "completion_tokens": 3595,
+    "prompt_tokens": 1294,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Lima."
+        ],
+        "review_rejects_false": [
+          "The capital of Peru is not Havana."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Peru is a country in South America. Its capital is Lima. Known for its rich cultural heritage and the Inca ruins of Machu Picchu, Peru is a popular destination for travelers and historians alike."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

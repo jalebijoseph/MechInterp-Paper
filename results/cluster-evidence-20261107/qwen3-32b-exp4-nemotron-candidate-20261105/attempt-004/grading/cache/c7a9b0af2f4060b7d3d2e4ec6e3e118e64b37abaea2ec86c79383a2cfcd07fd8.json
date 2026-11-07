@@ -1,0 +1,53 @@
+{
+  "cache_key": "c7a9b0af2f4060b7d3d2e4ec6e3e118e64b37abaea2ec86c79383a2cfcd07fd8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab0ce0208f1fdb98",
+    "reasoning_tokens": 2794,
+    "completion_tokens": 2893,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "05fa350efb35ef344b04b1d14107737a3ef626a9f6cd838cb3f72bf9eb649fcd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab0ce0208f1fdb98",
+    "reasoning_tokens": 2794,
+    "completion_tokens": 2893,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall of China, a snaking monumental structure, is a series of fortifi ed walls along Chinese northern hills."
+        ],
+        "review_rejects_false": [
+          "The Great Wall is not in Japan."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall of China, a snaking monumental structure, is a series of fortifi ed walls along Chinese northern hills."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

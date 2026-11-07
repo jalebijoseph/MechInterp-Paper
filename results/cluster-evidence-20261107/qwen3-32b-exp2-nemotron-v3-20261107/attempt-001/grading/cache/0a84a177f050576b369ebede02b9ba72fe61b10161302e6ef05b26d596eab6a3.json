@@ -1,0 +1,53 @@
+{
+  "cache_key": "0a84a177f050576b369ebede02b9ba72fe61b10161302e6ef05b26d596eab6a3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a767212a115ec576",
+    "reasoning_tokens": 2074,
+    "completion_tokens": 2173,
+    "prompt_tokens": 1384,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "50ac8824f1167339d9e94817ac9d1cae6e6cd412c61ffd9851864dedac5e10fa",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a767212a115ec576",
+    "reasoning_tokens": 2074,
+    "completion_tokens": 2173,
+    "prompt_tokens": 1384,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars, often called the Red Planet, is known for its reddish appearance caused by iron oxide on its surface."
+        ],
+        "review_rejects_false": [
+          "The statement \"The Red Planet is Venus\" is factually incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mars, often called the Red Planet, is known for its reddish appearance caused by iron oxide on its surface."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

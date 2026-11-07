@@ -1,0 +1,53 @@
+{
+  "cache_key": "02976d4f82685f1635c4da0fe8973a05082769112cf2a5640c3658f8081be315",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a05311aab5aaf510",
+    "reasoning_tokens": 2530,
+    "completion_tokens": 2641,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4e9825533c5324fbc8b369a63515a7fb1d815923130e0a7b673242c9e77326d7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a05311aab5aaf510",
+    "reasoning_tokens": 2530,
+    "completion_tokens": 2641,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The organ that pumps blood around the body is the heart."
+        ],
+        "review_rejects_false": [
+          "This is incorrect. The liver does not pump blood; the heart does. The liver filters blood and processes nutrients. Please revise."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The organ that pumps blood around the body is the heart. It circulates oxygen and nutrients to tissues and removes waste products. The liver, in contrast, filters blood and processes nutrients."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

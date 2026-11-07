@@ -1,0 +1,51 @@
+{
+  "cache_key": "543069a61d58f99cd55639e485b9992ff710daa2eb65b63e3df81b1d2d0d448a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90c875b0ed62a8e1",
+    "reasoning_tokens": 1135,
+    "completion_tokens": 1239,
+    "prompt_tokens": 1427,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "365f773fb33f4debc2aa8ee719021f9bf3927afe36201fc5f2d7e9400b4cf963",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90c875b0ed62a8e1",
+    "reasoning_tokens": 1135,
+    "completion_tokens": 1239,
+    "prompt_tokens": 1427,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "In the U.S., the currency is the U.S. Dollar (USD). Use credit/debit cards widely accepted at most places. ATMs are common; cash is useful for small businesses or rural areas. Avoid currency exchange unless necessary—banks offer better rates. Always carry ID."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "In the U.S., the currency is the U.S. Dollar (USD). Use credit/debit cards widely accepted at most places. ATMs are common; cash is useful for small businesses or rural areas. Avoid currency exchange unless necessary—banks offer better rates. Always carry ID."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

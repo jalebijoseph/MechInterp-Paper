@@ -1,0 +1,51 @@
+{
+  "cache_key": "95e0df44c3c4934188914545868ec89f34988d615bc581b141e9cb872ecbdde1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3f125c28a7ef09b",
+    "reasoning_tokens": 2569,
+    "completion_tokens": 2665,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4e520a160363a31ce52faea576aa801f15823892ad88507659e99b2706ed1073",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3f125c28a7ef09b",
+    "reasoning_tokens": 2569,
+    "completion_tokens": 2665,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital, Paris, is a must-visit for its iconic landmarks and vibrant culture."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "France is a country of rich history, world-class cuisine, and breathtaking landscapes. Its capital, Paris, is a must-visit for its iconic landmarks and vibrant culture."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

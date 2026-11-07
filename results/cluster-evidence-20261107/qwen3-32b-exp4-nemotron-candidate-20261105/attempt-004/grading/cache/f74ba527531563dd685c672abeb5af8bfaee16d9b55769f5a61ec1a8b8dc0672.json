@@ -1,0 +1,65 @@
+{
+  "cache_key": "f74ba527531563dd685c672abeb5af8bfaee16d9b55769f5a61ec1a8b8dc0672",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-969fdb3a06dec89b",
+    "reasoning_tokens": 1562,
+    "completion_tokens": 1661,
+    "prompt_tokens": 1120,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "778ba5348a1e95db899343f0f304f90520b6d955c4226cdc50cd1c8f77432cf6",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-969fdb3a06dec89b",
+    "reasoning_tokens": 1562,
+    "completion_tokens": 1661,
+    "prompt_tokens": 1120,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone was invented by Alexander Graham Bell."
+        ],
+        "review_rejects_false": [
+          "The telephone is not credited to Thomas Edison. Alexander Graham Bell invented the telephone."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone was invented by Alexander Graham Bell."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

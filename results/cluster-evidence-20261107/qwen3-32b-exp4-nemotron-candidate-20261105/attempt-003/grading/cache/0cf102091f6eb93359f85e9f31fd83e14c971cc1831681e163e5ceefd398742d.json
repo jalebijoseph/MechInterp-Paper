@@ -1,0 +1,51 @@
+{
+  "cache_key": "0cf102091f6eb93359f85e9f31fd83e14c971cc1831681e163e5ceefd398742d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-958704f72b57f082",
+    "reasoning_tokens": 2503,
+    "completion_tokens": 2599,
+    "prompt_tokens": 1234,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "32024ac5849ba14a222eebcf45abd37246bd80bbd09768d7379ae0e3f40d5a2c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-958704f72b57f082",
+    "reasoning_tokens": 2503,
+    "completion_tokens": 2599,
+    "prompt_tokens": 1234,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert is the Sahara, located in Africa. It spans approximately 3.2 million square miles, making it the most extensive hot desert in the world."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert is the Sahara, located in Africa. It spans approximately 3.2 million square miles, making it the most extensive hot desert in the world."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

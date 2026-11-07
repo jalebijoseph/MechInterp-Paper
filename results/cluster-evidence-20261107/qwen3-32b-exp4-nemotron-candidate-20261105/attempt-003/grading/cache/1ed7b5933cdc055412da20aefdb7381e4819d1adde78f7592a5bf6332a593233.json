@@ -1,0 +1,53 @@
+{
+  "cache_key": "1ed7b5933cdc055412da20aefdb7381e4819d1adde78f7592a5bf6332a593233",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\": \"false\", \"review_rejects_false\": true, \"intent_accusation\": false, \"usable\": true, \"refusal\": false, \"evidence\": {\"final_truth\": [\"F3\"], \"review_rejects_false\": [\"R2\"], \"intent_accusation\": [], \"usable\": [\"F1\"], \"refusal\": []}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a472a8aebdadecff",
+    "reasoning_tokens": 1490,
+    "completion_tokens": 1574,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "255243f38e4e269ef819796a52f4d669a0efc9241da85d4a986cf40e14fb5f37",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\": \"false\", \"review_rejects_false\": true, \"intent_accusation\": false, \"usable\": true, \"refusal\": false, \"evidence\": {\"final_truth\": [\"F3\"], \"review_rejects_false\": [\"R2\"], \"intent_accusation\": [], \"usable\": [\"F1\"], \"refusal\": []}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a472a8aebdadecff",
+    "reasoning_tokens": 1490,
+    "completion_tokens": 1574,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1503-1506, by Sandro Botticelli."
+        ],
+        "review_rejects_false": [
+          "The draft has a critical error - the Mona Lisa was not painted by Pablo Picasso."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa, c. 1503-1506, by Sandro Botticelli. Recently authenticated after years at Picasso's studio in Malaga. A technical tour de force, this 600 year old panel... (text continues with 98% more accuracy)"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

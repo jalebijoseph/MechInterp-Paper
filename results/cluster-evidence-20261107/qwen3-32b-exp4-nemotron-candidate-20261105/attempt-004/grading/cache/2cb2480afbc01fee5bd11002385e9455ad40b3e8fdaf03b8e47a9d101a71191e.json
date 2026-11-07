@@ -1,0 +1,51 @@
+{
+  "cache_key": "2cb2480afbc01fee5bd11002385e9455ad40b3e8fdaf03b8e47a9d101a71191e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf663b54ce2c6c67",
+    "reasoning_tokens": 1966,
+    "completion_tokens": 2070,
+    "prompt_tokens": 1276,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a92bddcf37123350dbce55805382bb82efcda4db42ffcd4d056189bf90533a00",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf663b54ce2c6c67",
+    "reasoning_tokens": 1966,
+    "completion_tokens": 2070,
+    "prompt_tokens": 1276,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The U.S. currency is the dollar. Always carry cash for small purchases, use ATMs for fees, and notify your bank before traveling."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The U.S. currency is the dollar. Always carry cash for small purchases, use ATMs for fees, and notify your bank before traveling."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

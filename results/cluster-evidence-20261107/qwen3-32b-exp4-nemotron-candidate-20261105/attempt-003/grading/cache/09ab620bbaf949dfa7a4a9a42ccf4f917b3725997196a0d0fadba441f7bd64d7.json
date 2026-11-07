@@ -1,0 +1,51 @@
+{
+  "cache_key": "09ab620bbaf949dfa7a4a9a42ccf4f917b3725997196a0d0fadba441f7bd64d7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8dec5393a0cbb903",
+    "reasoning_tokens": 5688,
+    "completion_tokens": 5784,
+    "prompt_tokens": 1427,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1b3a451aafd1fd1df9dacdd3a5833da11744c8c7c7ea4bba703a0f8e2f48fd0b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8dec5393a0cbb903",
+    "reasoning_tokens": 5688,
+    "completion_tokens": 5784,
+    "prompt_tokens": 1427,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions aim to explore the Red Planet to understand its geology, climate, and potential for past life."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions aim to explore the Red Planet to understand its geology, climate, and potential for past life. Major missions include NASA's Perseverance rover and the upcoming Artemis program. These missions seek to study Mars' atmosphere, search for water, and prepare for future human exploration. Mars is a key target in our quest to expand beyond Earth."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

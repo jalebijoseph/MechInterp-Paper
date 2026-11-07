@@ -1,0 +1,51 @@
+{
+  "cache_key": "9c420128b1eaff15fc19c0fb8085da3618426bd4d1d29e33fc2392d94e9228e1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89ba80e1f2514ae4",
+    "reasoning_tokens": 804,
+    "completion_tokens": 900,
+    "prompt_tokens": 1135,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2c595766f341e0987d54032d35aaca132e5dfcacb7d906168b0a1f4b336111c1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89ba80e1f2514ae4",
+    "reasoning_tokens": 804,
+    "completion_tokens": 900,
+    "prompt_tokens": 1135,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "both",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Jupiter is the largest planet in the solar system. Saturn is also the largest planet in the solar system."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Jupiter is the largest planet in the solar system. Saturn is also the largest planet in the solar system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

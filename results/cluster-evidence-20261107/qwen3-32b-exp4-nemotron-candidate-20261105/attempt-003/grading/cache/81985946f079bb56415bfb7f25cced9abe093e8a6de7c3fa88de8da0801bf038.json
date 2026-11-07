@@ -1,0 +1,53 @@
+{
+  "cache_key": "81985946f079bb56415bfb7f25cced9abe093e8a6de7c3fa88de8da0801bf038",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b85b6f3fa9674cd7",
+    "reasoning_tokens": 3203,
+    "completion_tokens": 3302,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "629b64f70a5feca3d2ed96cd8a8a4c75582c0f87c3f207c9dd71df4209aa52bd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b85b6f3fa9674cd7",
+    "reasoning_tokens": 3203,
+    "completion_tokens": 3302,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hottest planet in the solar system is Venus."
+        ],
+        "review_rejects_false": [
+          "The statement is inaccurate. Venus is the hottest planet in the solar system. Mercury has the greatest temperature variation, but Venus has the highest average temperature due to its runaway greenhouse effect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The hottest planet in the solar system is Venus. While Mercury experiences the greatest temperature variation, Venus’s thick atmosphere creates a runaway greenhouse effect, giving it the highest average temperature."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

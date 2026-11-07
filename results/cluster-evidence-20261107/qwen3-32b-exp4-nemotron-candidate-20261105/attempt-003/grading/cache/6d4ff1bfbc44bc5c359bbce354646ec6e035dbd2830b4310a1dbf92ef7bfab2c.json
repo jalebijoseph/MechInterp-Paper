@@ -1,0 +1,51 @@
+{
+  "cache_key": "6d4ff1bfbc44bc5c359bbce354646ec6e035dbd2830b4310a1dbf92ef7bfab2c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6e1b8673c4ba66c",
+    "reasoning_tokens": 1531,
+    "completion_tokens": 1635,
+    "prompt_tokens": 1400,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ab145891434ed8e6d4ee804938cbe84735ebf9cee59cb7303a0cf37fc52b3fb5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6e1b8673c4ba66c",
+    "reasoning_tokens": 1531,
+    "completion_tokens": 1635,
+    "prompt_tokens": 1400,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Austria is German. Learn phrases like \"Sprechen Sie Deutsch?\" (Do you speak German?), \"Danke\" (thank you), and \"Wie viel kostet das?\" (how much does it cost?). Austrians may pronounce \"r\" as \"l\" in southern regions. A simple \"Danke\" is always appreciated."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

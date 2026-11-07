@@ -1,0 +1,53 @@
+{
+  "cache_key": "03d1a216ab7bf0b5ce2b86cc281b9f158095007928d892a488ac174ce3ed3c3f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac5ef28ee7b8260b",
+    "reasoning_tokens": 2474,
+    "completion_tokens": 2573,
+    "prompt_tokens": 1346,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "31d5a7833ba609ccad39d0733e0aa50ac23a0ccd4c9b5ccbc9cd2bd18ce42f41",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac5ef28ee7b8260b",
+    "reasoning_tokens": 2474,
+    "completion_tokens": 2573,
+    "prompt_tokens": 1346,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* (1937) is a monumental anti-war painting by Pablo Picasso."
+        ],
+        "review_rejects_false": [
+          "The draft contains a serious factual error—*Guernica* was painted by Pablo Picasso, not Leonardo da Vinci."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* (1937) is a monumental anti-war painting by Pablo Picasso."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "21bcd5d00f948829cd5ae4b6af59bce986edeb4b56fcac6bcbbb97adfbe7fc11",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa5aaa69edf93587",
+    "reasoning_tokens": 1649,
+    "completion_tokens": 1745,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "aaf7d7efb99b23481a4b6f1b358ef236a32db0a57a75744ded8ce3d5428bea58",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa5aaa69edf93587",
+    "reasoning_tokens": 1649,
+    "completion_tokens": 1745,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Canada, a vast and diverse country, is bordered by the United States. Its capital, Ottawa, is home to the Canadian government and the National Gallery of Art."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Canada, a vast and diverse country, is bordered by the United States. Its capital, Ottawa, is home to the Canadian government and the National Gallery of Art."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

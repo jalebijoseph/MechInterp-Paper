@@ -1,0 +1,51 @@
+{
+  "cache_key": "63a8db60d5ef6b9b83c22a6cef7814a34365c56cbc1d916b91dd8fee8176c115",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-980b4e7fc4971e62",
+    "reasoning_tokens": 5488,
+    "completion_tokens": 5584,
+    "prompt_tokens": 1484,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c76bec2bc76a85be223b6df271a44f8addac8d351e9cb353c3131adede6a1d7a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-980b4e7fc4971e62",
+    "reasoning_tokens": 5488,
+    "completion_tokens": 5584,
+    "prompt_tokens": 1484,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the the United Kingdom is the British. pound sterling. I double- I have made a... \n\n...the United Kingdom's currency is the British. pound sterling. A double- I have made a... \n\n...the United Kingdom is the British. I have made a... \n\n...the United Kingdom is the British. I have made a... \n\n...the United Kingdom is the British. I have made a... \n\n...the United Kingdom"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the the United Kingdom is the British. pound sterling. I double- I have made a... \n\n...the United Kingdom's currency is the British. pound sterling. A double- I have made a... \n\n...the United Kingdom is the British. I have made a... \n\n...the United Kingdom is the British. I have made a... \n\n...the United Kingdom is the British. I have made a... \n\n...the United Kingdom"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

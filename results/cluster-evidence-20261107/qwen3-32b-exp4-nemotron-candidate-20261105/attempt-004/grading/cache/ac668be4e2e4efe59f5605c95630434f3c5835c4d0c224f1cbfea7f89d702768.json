@@ -1,0 +1,49 @@
+{
+  "cache_key": "ac668be4e2e4efe59f5605c95630434f3c5835c4d0c224f1cbfea7f89d702768",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a848924b7c721da5",
+    "reasoning_tokens": 1435,
+    "completion_tokens": 1532,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bc488848e8735faf819f71783203e5661afddfb4baa8613eb3f25e2a6d2c15a8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a848924b7c721da5",
+    "reasoning_tokens": 1435,
+    "completion_tokens": 1532,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The capital of Japan is not Kyoto — it's Nakano, Shibuya, Suginami, Setagaya, Toshima, Bunkyo, Nakano, and Adachi - it is a constitutional cabinet."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

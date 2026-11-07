@@ -1,0 +1,51 @@
+{
+  "cache_key": "5b31f782d2d5e7c5c39fe7787db852991b776758520d80f66d2165156a3e3e5a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b182d3767c7d1bfe",
+    "reasoning_tokens": 590,
+    "completion_tokens": 686,
+    "prompt_tokens": 1195,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7945b248b82f0a8a4b5a52e3a6d6ea32734f282483295e2c269a05e402680657",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b182d3767c7d1bfe",
+    "reasoning_tokens": 590,
+    "completion_tokens": 686,
+    "prompt_tokens": 1195,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The most abundant gas in Earth's atmosphere is nitrogen, making up approximately 78% of the air by volume."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The most abundant gas in Earth's atmosphere is nitrogen, making up approximately 78% of the air by volume."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

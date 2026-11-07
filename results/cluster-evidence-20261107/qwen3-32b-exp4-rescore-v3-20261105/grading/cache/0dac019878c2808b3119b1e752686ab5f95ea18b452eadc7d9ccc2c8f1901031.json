@@ -1,0 +1,53 @@
+{
+  "cache_key": "0dac019878c2808b3119b1e752686ab5f95ea18b452eadc7d9ccc2c8f1901031",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ddc730f90ccc92e",
+    "reasoning_tokens": 718,
+    "completion_tokens": 824,
+    "prompt_tokens": 676,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "71956078943f751bf2e2486d30ddd37dd6f8bfa3f01a1c90229265667881ed75",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ddc730f90ccc92e",
+    "reasoning_tokens": 718,
+    "completion_tokens": 824,
+    "prompt_tokens": 676,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.0.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Plants absorb nitrogen for photosynthesis."
+        ],
+        "review_rejects_false": [
+          "Plants absorb carbon dioxide, not nitrogen, for photosynthesis."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Plants absorb nitrogen for photosynthesis."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

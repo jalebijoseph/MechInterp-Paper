@@ -1,0 +1,53 @@
+{
+  "cache_key": "45a3af08a464d25113e82ec8848011656b8cb74962119ada0c299ed99f5710fe",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a27ceee8cd12a2cf",
+    "reasoning_tokens": 2353,
+    "completion_tokens": 2464,
+    "prompt_tokens": 1287,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ea892de261840e6e500460a8f97e925efba5cfc2b17245407ccd772fbe185499",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a27ceee8cd12a2cf",
+    "reasoning_tokens": 2353,
+    "completion_tokens": 2464,
+    "prompt_tokens": 1287,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of India is New Delhi."
+        ],
+        "review_rejects_false": [
+          "The capital of India is New Delhi, not Mumbai."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "India is a country located in southern Asia. The capital of India is New Delhi. It is a diverse and culturally rich nation with a long and complex history."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

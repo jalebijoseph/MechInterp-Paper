@@ -1,0 +1,51 @@
+{
+  "cache_key": "8312c9827469986ad536f1039da5480a35121ca5a2ab0bbcef10239a6fafc192",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94d6c1188eb65151",
+    "reasoning_tokens": 904,
+    "completion_tokens": 1000,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a9865897ec94667812ffdab87b831dda206e818e7f284872ec1454b9eaa72004",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94d6c1188eb65151",
+    "reasoning_tokens": 904,
+    "completion_tokens": 1000,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "From the historic Vasa Dynasty to the modern capital of Warsaw, Poland offers a unique blend of tradition and innovation."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Poland, a land of rich history and vibrant culture, invites travelers to explore its past and present. From the historic Vasa Dynasty to the modern capital of Warsaw, Poland offers a unique blend of tradition and innovation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

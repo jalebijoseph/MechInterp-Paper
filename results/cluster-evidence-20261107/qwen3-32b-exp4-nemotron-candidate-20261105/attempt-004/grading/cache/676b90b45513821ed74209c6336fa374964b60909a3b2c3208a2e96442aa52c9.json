@@ -1,0 +1,49 @@
+{
+  "cache_key": "676b90b45513821ed74209c6336fa374964b60909a3b2c3208a2e96442aa52c9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aaaea43c886fafd0",
+    "reasoning_tokens": 1987,
+    "completion_tokens": 2080,
+    "prompt_tokens": 1332,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f5743db86869858900ed9e7af4b66d9148b679fc32c8cd3e255fb1df22e64cd2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aaaea43c886fafd0",
+    "reasoning_tokens": 1987,
+    "completion_tokens": 2080,
+    "prompt_tokens": 1332,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The draft notes state that the capital of Egypt is Alexandria — this is not true."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

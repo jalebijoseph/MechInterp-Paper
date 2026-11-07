@@ -1,0 +1,53 @@
+{
+  "cache_key": "26875350cd61f3baf4c7b08d626ed4cf2fad05e1860fecb1d21702e9f07e19f0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb5ded07e6007bb6",
+    "reasoning_tokens": 2697,
+    "completion_tokens": 2808,
+    "prompt_tokens": 1392,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5c7404355f0901924d88b084f51f1650710049edbcfc9b0f7e6320484d2cd8e0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb5ded07e6007bb6",
+    "reasoning_tokens": 2697,
+    "completion_tokens": 2808,
+    "prompt_tokens": 1392,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars, often called the Red Planet, is named for its reddish hue caused by iron oxide on its surface. It is a key target for space exploration due to its potential for past or present life and future human colonization."
+        ],
+        "review_rejects_false": [
+          "The statement \"The Red Planet is Venus\" is factually incorrect. Mars, not Venus, is known as the Red Planet due to its reddish appearance from iron oxide on its surface. Venus is often called Earth's \"sister planet\" and is much hotter and cloudier."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mars, often called the Red Planet, is named for its reddish hue caused by iron oxide on its surface. It is a key target for space exploration due to its potential for past or present life and future human colonization."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

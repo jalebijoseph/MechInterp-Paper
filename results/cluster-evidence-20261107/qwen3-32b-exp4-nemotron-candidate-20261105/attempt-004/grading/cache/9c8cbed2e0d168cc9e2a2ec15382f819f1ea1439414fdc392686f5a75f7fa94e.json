@@ -1,0 +1,65 @@
+{
+  "cache_key": "9c8cbed2e0d168cc9e2a2ec15382f819f1ea1439414fdc392686f5a75f7fa94e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a24a0515994395b0",
+    "reasoning_tokens": 5693,
+    "completion_tokens": 5792,
+    "prompt_tokens": 1293,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8af7b284464930bc7148dcfe865b09777ed0f90014ef75ec27058f7e362ae95c",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a24a0515994395b0",
+    "reasoning_tokens": 5693,
+    "completion_tokens": 5792,
+    "prompt_tokens": 1293,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt, whose capital is Alexan Alexandria, is a country profile.]"
+        ],
+        "review_rejects_false": [
+          "The capital of Egypt is not Alexanria, it's Arabic Republic of Egypt."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Egypt is Arabic Republic e city of Alexan Alexandria. e. Egypt, whose capital is Alexan Alexandria, is a country profile.]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

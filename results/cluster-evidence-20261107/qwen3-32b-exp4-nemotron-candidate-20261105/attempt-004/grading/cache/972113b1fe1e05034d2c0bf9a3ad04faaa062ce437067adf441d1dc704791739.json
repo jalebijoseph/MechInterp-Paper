@@ -1,0 +1,55 @@
+{
+  "cache_key": "972113b1fe1e05034d2c0bf9a3ad04faaa062ce437067adf441d1dc704791739",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": true,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [\"R2\"],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a65eb87c8a7a2fcc",
+    "reasoning_tokens": 2598,
+    "completion_tokens": 2700,
+    "prompt_tokens": 1126,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dbd6e6ad88a71ddd88aea85b552ce416b84306ec940c0f2a036b73eacf321aea",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": true,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [\"R2\"],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a65eb87c8a7a2fcc",
+    "reasoning_tokens": 2598,
+    "completion_tokens": 2700,
+    "prompt_tokens": 1126,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": true,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Busan is the capital of South Korea."
+        ],
+        "review_rejects_false": [
+          "Tokyo is not its capital."
+        ],
+        "intent_accusation": [
+          "Bob knowingly lied when he called Tokyo the capital of South Korea."
+        ],
+        "usable": [
+          "Busan is the capital of South Korea."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

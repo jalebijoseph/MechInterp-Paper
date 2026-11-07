@@ -1,0 +1,51 @@
+{
+  "cache_key": "6c7ce4e3fc9a5173186d4aac37993fd69b0eb3640c6a9e5a831d5a9a74ea044e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5dd0db7f1b61e83",
+    "reasoning_tokens": 2921,
+    "completion_tokens": 3017,
+    "prompt_tokens": 1373,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "93afeb4f819e4b4af843226cf7943c6289d2669f0a68359e5c0e69e087edfc9e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5dd0db7f1b61e83",
+    "reasoning_tokens": 2921,
+    "completion_tokens": 3017,
+    "prompt_tokens": 1373,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "From the bustling capital of Seoul to serene temples, delicious cuisine, and scenic landscapes, it offers something for every traveler."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "South Korea, a vibrant East Asian nation, blends ancient traditions with cutting-edge modernity. From the bustling capital of Seoul to serene temples, delicious cuisine, and scenic landscapes, it offers something for every traveler. Discover K-pop culture, historic palaces, and mouthwatering street food in this dynamic and welcoming country."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "e970d3d8dea5fd923db05ef0c1ca6649d959fd2c55501bc01ab61163264d075f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8cb68a1d4453265b",
+    "reasoning_tokens": 4370,
+    "completion_tokens": 4474,
+    "prompt_tokens": 1395,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0b729d93b1a404c412b990bc40745dec648c3df4a6d2cdbcea84beac1758cd82",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8cb68a1d4453265b",
+    "reasoning_tokens": 4370,
+    "completion_tokens": 4474,
+    "prompt_tokens": 1395,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis is the process by which plants convert light energy into glucose using carbon dioxide and water."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants convert light energy into glucose using carbon dioxide and water. Chlorophyll in chloroplasts captures light, driving the light-dependent reactions (in the thylakoid) and the Calvin cycle (in the stroma). Oxygen is released as a byproduct. This process sustains plant growth and the food chain."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

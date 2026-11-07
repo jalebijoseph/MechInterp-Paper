@@ -1,0 +1,49 @@
+{
+  "cache_key": "448c898e705deaf2f7b9a799c9f2bcf4581bc7f4d76b720c708a67e7f1160d79",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a39f1f9016a4fd08",
+    "reasoning_tokens": 2398,
+    "completion_tokens": 2493,
+    "prompt_tokens": 1218,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0579b59e780075858750cd877b4096b44ec0fa2749afd16a674071acb76b9614",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a39f1f9016a4fd08",
+    "reasoning_tokens": 2398,
+    "completion_tokens": 2493,
+    "prompt_tokens": 1218,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "unclear",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa was painted by Leonardo da. A 16th century work, it is one of the most famous works in the collection."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": null,
+      "semantic_refusal": false,
+      "semantic_ambiguous": true
+    },
+    "error": null
+  }
+}

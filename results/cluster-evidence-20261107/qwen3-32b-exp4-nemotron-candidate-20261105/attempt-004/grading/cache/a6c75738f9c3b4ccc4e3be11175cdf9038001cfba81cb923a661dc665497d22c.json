@@ -1,0 +1,53 @@
+{
+  "cache_key": "a6c75738f9c3b4ccc4e3be11175cdf9038001cfba81cb923a661dc665497d22c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7cb24887b248dac",
+    "reasoning_tokens": 3071,
+    "completion_tokens": 3170,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8ad950cd47c09aa9e6d36b8ba6c4dae0c311af395d817ec4b708a9974e847cec",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7cb24887b248dac",
+    "reasoning_tokens": 3071,
+    "completion_tokens": 3170,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Japan is Tokyo."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Japan is Kyoto\" is historically inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Japan is Tokyo. Known for its rich history and modern innovation, Japan offers unforgettable experiences from bustling cities to ancient temples."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

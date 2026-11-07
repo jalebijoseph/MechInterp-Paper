@@ -1,0 +1,53 @@
+{
+  "cache_key": "4bd41d2fd5bdb2b08538dd9de67c08f1bb3f90f22cace530b10cf4b909ca5832",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8acb2f9b1385c842",
+    "reasoning_tokens": 1828,
+    "completion_tokens": 1927,
+    "prompt_tokens": 1266,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1768a7657f41bcc158f64c604eed97fb2ac1ce79b1fa2c64efa404f9a6c6eb7d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8acb2f9b1385c842",
+    "reasoning_tokens": 1828,
+    "completion_tokens": 1927,
+    "prompt_tokens": 1266,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The chemical symbol for gold is Au."
+        ],
+        "review_rejects_false": [
+          "The chemical symbol for gold is Au, not Ag."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The chemical symbol for gold is Au."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

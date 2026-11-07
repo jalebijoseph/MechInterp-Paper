@@ -1,0 +1,53 @@
+{
+  "cache_key": "47f353e93e7c4f29a0918c0b1665aa3e8baf44efbbcc189ea58a107eae5f56e0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8dc7ba3628549e74",
+    "reasoning_tokens": 3858,
+    "completion_tokens": 3969,
+    "prompt_tokens": 1342,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "59b54788e343f364b102e1fb3fe7821f450c65a9d9c3c4915ad86379a686d4e6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8dc7ba3628549e74",
+    "reasoning_tokens": 3858,
+    "completion_tokens": 3969,
+    "prompt_tokens": 1342,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra, while its largest city is Sydney."
+        ],
+        "review_rejects_false": [
+          "The capital of Australia is Canberra, not Sydney."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, the sixth continent and the largest island in the world, is a country in the Southern Hemisphere. It is governed by a federal system and has six states and two mainland territories. The capital of Australia is Canberra, while its largest city is Sydney."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "d1b30c5fc2777954bba37716da50a00c331540097408d5a8ff268e20d6f5d4d2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b88396d1d92f3e17",
+    "reasoning_tokens": 2654,
+    "completion_tokens": 2765,
+    "prompt_tokens": 1355,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8b4788ed48e60b28960dd25577213b7c0c1f6fbd04657bf8e84c2689e5ec8b94",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b88396d1d92f3e17",
+    "reasoning_tokens": 2654,
+    "completion_tokens": 2765,
+    "prompt_tokens": 1355,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* – This monumental canvas, painted by Pablo Picasso in 1937, is one of the most powerful anti-war statements in modern art."
+        ],
+        "review_rejects_false": [
+          "The identification of the artist is incorrect. Guernica was painted by Pablo Picasso."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* – This monumental canvas, painted by Pablo Picasso in 1937, is one of the most powerful anti-war statements in modern art."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

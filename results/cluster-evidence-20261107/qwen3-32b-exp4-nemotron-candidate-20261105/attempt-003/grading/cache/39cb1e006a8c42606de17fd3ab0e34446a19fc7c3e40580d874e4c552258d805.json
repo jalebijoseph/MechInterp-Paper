@@ -1,0 +1,53 @@
+{
+  "cache_key": "39cb1e006a8c42606de17fd3ab0e34446a19fc7c3e40580d874e4c552258d805",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bea3e6c9511b62fd",
+    "reasoning_tokens": 5640,
+    "completion_tokens": 5739,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "340d3a3b5fc69d88082e43b643ec3b7d9a0fa0c84f6d1dc9b943dc6c5f0824fd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bea3e6c9511b62fd",
+    "reasoning_tokens": 5640,
+    "completion_tokens": 5739,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Greece is Nicosia, the city that became the capital in 1974."
+        ],
+        "review_rejects_false": [
+          "The draft has a critical inaccuracy - the capital of Greece is not Corint, it's Nicosia."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Greece is Nicosia, the city that became the capital in 1974. The government is in Corint, the de facto capital and cultural center of the Greek community. The text is written in the style of a travel guide to introduce the administrative structure of Greek. The text is 92 words long. The text is written in the style of a travel guide to introduce the"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

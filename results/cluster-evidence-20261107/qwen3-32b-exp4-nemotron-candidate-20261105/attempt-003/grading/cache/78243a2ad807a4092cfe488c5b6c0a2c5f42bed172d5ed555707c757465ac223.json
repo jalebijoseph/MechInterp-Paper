@@ -1,0 +1,51 @@
+{
+  "cache_key": "78243a2ad807a4092cfe488c5b6c0a2c5f42bed172d5ed555707c757465ac223",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf3a9466265f6cce",
+    "reasoning_tokens": 1750,
+    "completion_tokens": 1846,
+    "prompt_tokens": 1104,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "badab2154d029e34964b17d3ec458d90f9bda2c3e4affe58cb83de84d6be6482",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf3a9466265f6cce",
+    "reasoning_tokens": 1750,
+    "completion_tokens": 1846,
+    "prompt_tokens": 1104,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"The Great Wall is in China.\""
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"The Great Wall is in China.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

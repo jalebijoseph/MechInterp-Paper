@@ -1,0 +1,49 @@
+{
+  "cache_key": "d62a8935998309e9ae6a3f15cab370ddaaad7a408060d64c3e76dd6f46c7e8e5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e71b1a791453d55",
+    "reasoning_tokens": 3224,
+    "completion_tokens": 3317,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0e048fd17dac87de24c6ce916eee6fb5a05f09ec11fc876705d972f272e9c4b6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e71b1a791453d55",
+    "reasoning_tokens": 3224,
+    "completion_tokens": 3317,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The inner planet closest to the Sun is Mercury, not Venus."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

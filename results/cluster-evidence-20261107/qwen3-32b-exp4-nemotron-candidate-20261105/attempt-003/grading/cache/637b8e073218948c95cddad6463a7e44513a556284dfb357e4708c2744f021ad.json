@@ -1,0 +1,53 @@
+{
+  "cache_key": "637b8e073218948c95cddad6463a7e44513a556284dfb357e4708c2744f021ad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be8b36ebec4c20ea",
+    "reasoning_tokens": 3184,
+    "completion_tokens": 3295,
+    "prompt_tokens": 1418,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "31d86b73e249b77d967dbf54d842680f6a9b7a6982d2f40f5f1baaad9db9a03f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be8b36ebec4c20ea",
+    "reasoning_tokens": 3184,
+    "completion_tokens": 3295,
+    "prompt_tokens": 1418,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Netherlands, a country of windmills, canals, and cycling culture, is best explored starting from its capital, Amsterdam."
+        ],
+        "review_rejects_false": [
+          "The capital of the Netherlands is Amsterdam, not Rotterdam."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, a country of windmills, canals, and cycling culture, is best explored starting from its capital, Amsterdam."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "bc9098f3e5bec3f6e0e5cc6faa2a6b62aa9c1d73fec06730990a8b123a193c16",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab62b91544ce1f60",
+    "reasoning_tokens": 1956,
+    "completion_tokens": 2052,
+    "prompt_tokens": 1372,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fe695ceeeb8e45cedfff6832348973228ec608f88ee0566dcaf47e854e16bc98",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab62b91544ce1f60",
+    "reasoning_tokens": 1956,
+    "completion_tokens": 2052,
+    "prompt_tokens": 1372,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Proposed by Charles Darwin, it drives adaptation in populations over time."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is a mechanism of evolution where individuals with advantageous traits are more likely to survive and reproduce. Proposed by Charles Darwin, it drives adaptation in populations over time. Traits that improve survival and reproduction become more common in subsequent generations. Example: Peppered moths in industrial England."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

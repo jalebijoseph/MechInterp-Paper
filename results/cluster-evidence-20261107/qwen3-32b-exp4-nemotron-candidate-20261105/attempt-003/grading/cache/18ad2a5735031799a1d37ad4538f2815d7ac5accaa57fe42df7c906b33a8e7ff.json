@@ -1,0 +1,51 @@
+{
+  "cache_key": "18ad2a5735031799a1d37ad4538f2815d7ac5accaa57fe42df7c906b33a8e7ff",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bdfeb8e0b624457c",
+    "reasoning_tokens": 3684,
+    "completion_tokens": 3788,
+    "prompt_tokens": 1384,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "589152c049feba70860b0572ce205f08be81662dc8e2b0aec1b7bdd5eddad26c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bdfeb8e0b624457c",
+    "reasoning_tokens": 3684,
+    "completion_tokens": 3788,
+    "prompt_tokens": 1384,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Proposed by Charles Darwin, it drives evolution."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is the process by which organisms better adapted to their environment tend to survive and pass on their genes. Proposed by Charles Darwin, it drives evolution. Traits that improve survival and reproduction become more common over generations. Example: peppered moths during the industrial revolution. Natural selection is a key mechanism of evolutionary change."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

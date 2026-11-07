@@ -1,0 +1,51 @@
+{
+  "cache_key": "ec442a4941eb2c93afeeebd9df1583193af737d1a89ef9a5cb10c10a4e8317cb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-974ee4aec50da248",
+    "reasoning_tokens": 2057,
+    "completion_tokens": 2153,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e11829784db3985e52bca00a254a1d03bb4dd0defecd42363a31e0b7947b1f6c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-974ee4aec50da248",
+    "reasoning_tokens": 2057,
+    "completion_tokens": 2153,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Oslo."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe. The capital is Oslo. Known for its natural beauty, rich cultural heritage, and modern governance, Norway is a founding member of the United Nations and a leader in sustainable development."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

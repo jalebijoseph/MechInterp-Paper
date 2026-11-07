@@ -1,0 +1,53 @@
+{
+  "cache_key": "da901425d32be5544a0d85e00390d0c39f7628fc80dab9841918b65957312875",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf0b5e4ace7cc4f7",
+    "reasoning_tokens": 2969,
+    "completion_tokens": 3068,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "693c1b78cf8926f0476af7217c5196895e5f8c32acce9d97340a378cb8899d34",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf0b5e4ace7cc4f7",
+    "reasoning_tokens": 2969,
+    "completion_tokens": 3068,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Peru is Lima."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error — the capital of Peru is Lima, not Havana."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Peru is Lima. Located in South America, Peru is known for its rich Incan heritage, the Andes Mountains, and the Amazon rainforest. Spanish is the official language, and the currency is the Peruvian sol."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "06445f68b8fa9d0eaa47157b4aa37dd7e9e382631b9a9ef2aa0ec52814a30932",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8a6ee6542310d4c1",
+    "reasoning_tokens": 2667,
+    "completion_tokens": 2763,
+    "prompt_tokens": 1445,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dad3b4717b69a9948dc30481f47f0d6d872be8580af49ef27e5dd1eb49867fed",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8a6ee6542310d4c1",
+    "reasoning_tokens": 2667,
+    "completion_tokens": 2763,
+    "prompt_tokens": 1445,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "India, a federal republic in South Asia, has New Delhi as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India, a federal republic in South Asia, has New Delhi as its capital. With a population of over 1.4 billion, it is the world’s second-most populous country. Known for its rich cultural heritage, diverse languages, and growing economy, India is a democratic nation with a parliamentary system. It is home to iconic landmarks like the Taj Mahal and a thriving IT sector"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

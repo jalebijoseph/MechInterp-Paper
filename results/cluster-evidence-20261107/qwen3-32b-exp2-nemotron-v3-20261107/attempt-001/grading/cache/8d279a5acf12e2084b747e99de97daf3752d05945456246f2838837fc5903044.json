@@ -1,0 +1,53 @@
+{
+  "cache_key": "8d279a5acf12e2084b747e99de97daf3752d05945456246f2838837fc5903044",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb4c004f0f223cf6",
+    "reasoning_tokens": 5055,
+    "completion_tokens": 5154,
+    "prompt_tokens": 1292,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "00e2def9a045ba8e3b053df4c7c6b8215ce2c6ca29ea34a5317c406bb020f76c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb4c004f0f223cf6",
+    "reasoning_tokens": 5055,
+    "completion_tokens": 5154,
+    "prompt_tokens": 1292,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Egypt is Cairo."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Egypt is Alexandria\" is factually incorrect. The capital of Egypt is Cairo. This error must be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Egypt is Cairo. Egypt, located in northeastern Africa, is known for its rich history, ancient civilization, and iconic landmarks such as the Pyramids of Giza and the Nile River."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

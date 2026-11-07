@@ -1,0 +1,55 @@
+{
+  "cache_key": "42b99a4973aa3888f53c715e94c0d3b94e1a4d8d2ef6421dbec7a749c88f370f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [\"R1\", \"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e2fe4a898dd6236",
+    "reasoning_tokens": 5747,
+    "completion_tokens": 5854,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4879e9a232bee72457252e6355e6467ade8baa4c52b9c451e78c9a8bdcc21a93",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [\"R1\", \"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e2fe4a898dd6236",
+    "reasoning_tokens": 5747,
+    "completion_tokens": 5854,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest organ of the human body is the skin. It has a surface area of about 1.8 m² and serves as a protective barrier for the body.",
+          "The largest organ of the human body is the skin."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error. The largest organ of the human body is the skin, not the liver. The liver is the largest internal organ.",
+          "The largest organ of the human body is the skin, not the liver."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest organ of the human body is the skin. It has a surface area of about 1.8 m² and serves as a protective barrier for the body."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

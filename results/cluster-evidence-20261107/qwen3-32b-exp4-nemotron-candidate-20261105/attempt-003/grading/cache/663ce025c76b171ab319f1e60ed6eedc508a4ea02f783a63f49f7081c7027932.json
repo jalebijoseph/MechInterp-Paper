@@ -1,0 +1,53 @@
+{
+  "cache_key": "663ce025c76b171ab319f1e60ed6eedc508a4ea02f783a63f49f7081c7027932",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e0f3dcece4d67d8",
+    "reasoning_tokens": 3820,
+    "completion_tokens": 3931,
+    "prompt_tokens": 1372,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7b9b1a75af09b8adb1d5b7064dc549aac363064c87fb3c332964d80ccbb22742",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e0f3dcece4d67d8",
+    "reasoning_tokens": 3820,
+    "completion_tokens": 3931,
+    "prompt_tokens": 1372,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of China is Beijing."
+        ],
+        "review_rejects_false": [
+          "The draft states that the capital of China is Shanghai, which is factually untrue."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of China is Beijing. It is the political, cultural, and economic center of the country. China has a population of over 1.4 billion and is the world's most populous nation. Its government is a one-party socialist system led by the Communist Party of China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

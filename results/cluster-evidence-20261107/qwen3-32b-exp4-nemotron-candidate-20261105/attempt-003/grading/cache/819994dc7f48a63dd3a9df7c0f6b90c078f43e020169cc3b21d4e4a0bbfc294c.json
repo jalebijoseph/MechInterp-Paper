@@ -1,0 +1,53 @@
+{
+  "cache_key": "819994dc7f48a63dd3a9df7c0f6b90c078f43e020169cc3b21d4e4a0bbfc294c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-88df13754f4ff351",
+    "reasoning_tokens": 4674,
+    "completion_tokens": 4785,
+    "prompt_tokens": 1370,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0ea64562959e2ab8a4f46424a3f780b55dd25386ea1b3d417ef37eea251116f3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-88df13754f4ff351",
+    "reasoning_tokens": 4674,
+    "completion_tokens": 4785,
+    "prompt_tokens": 1370,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hottest planet in the solar system is Venus, with surface temperatures reaching up to 467°C (872°F)."
+        ],
+        "review_rejects_false": [
+          "The statement is incorrect. Venus is the hottest planet in the solar system due to its thick atmosphere and greenhouse effect. Mercury is the closest to the Sun but lacks an atmosphere to retain heat."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The hottest planet in the solar system is Venus, with surface temperatures reaching up to 467°C (872°F)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

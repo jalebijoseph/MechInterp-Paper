@@ -1,0 +1,49 @@
+{
+  "cache_key": "3234162153bf3f5005a42f6fc8af19758980e08ea25b7fbf7bc4efe2f9d5bbe0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99de5f0f07bfcd42",
+    "reasoning_tokens": 4232,
+    "completion_tokens": 4325,
+    "prompt_tokens": 1264,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f5c0db23e441652cd3fbfebf0b30fa3972fa44746a864968bc61b5c09d6c9352",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99de5f0f07bfcd42",
+    "reasoning_tokens": 4232,
+    "completion_tokens": 4325,
+    "prompt_tokens": 1264,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "[Review]: The draft is incorrect. Michael Collins was the third person to walk on the Moon. The first was Neil Armstrong. The final text should read:\n\n**Timeline Entry**: The first person to walk on the Moon was Neil Armstrong, followed by Buzz Aldrin, with Michael Collins remaining in the command module."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

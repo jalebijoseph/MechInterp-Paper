@@ -1,0 +1,51 @@
+{
+  "cache_key": "7d9be8643dbe129c19153de19c695fb16129a5245a6a29c6ec951c434e0b9489",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b22b54fbf135ac3f",
+    "reasoning_tokens": 1238,
+    "completion_tokens": 1334,
+    "prompt_tokens": 1266,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1a95df215de654d57c6f3a881fdee5c42d0c7a15464f3b51ee135eaa1e15e144",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b22b54fbf135ac3f",
+    "reasoning_tokens": 1238,
+    "completion_tokens": 1334,
+    "prompt_tokens": 1266,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The skin is the largest organ of the human body, covering an average of 20 square feet (1.8 square meters) and weighing about 8 pounds (3.6 kg). It serves as a protective barrier, regulates body temperature, and plays a key role in sensory perception."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The skin is the largest organ of the human body, covering an average of 20 square feet (1.8 square meters) and weighing about 8 pounds (3.6 kg). It serves as a protective barrier, regulates body temperature, and plays a key role in sensory perception."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

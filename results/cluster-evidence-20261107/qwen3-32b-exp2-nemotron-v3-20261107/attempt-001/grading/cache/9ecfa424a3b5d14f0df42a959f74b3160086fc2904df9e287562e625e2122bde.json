@@ -1,0 +1,53 @@
+{
+  "cache_key": "9ecfa424a3b5d14f0df42a959f74b3160086fc2904df9e287562e625e2122bde",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e969146936a4788",
+    "reasoning_tokens": 1331,
+    "completion_tokens": 1430,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "798e809270f8c3db662b141e97d254e11dd2b957665a0ba27ed20dbf5cc76552",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e969146936a4788",
+    "reasoning_tokens": 1331,
+    "completion_tokens": 1430,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions explore the Red Planet, named for its rusty surface caused by iron oxide."
+        ],
+        "review_rejects_false": [
+          "The statement \"The Red Planet is Venus\" is factually incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions explore the Red Planet, named for its rusty surface caused by iron oxide."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

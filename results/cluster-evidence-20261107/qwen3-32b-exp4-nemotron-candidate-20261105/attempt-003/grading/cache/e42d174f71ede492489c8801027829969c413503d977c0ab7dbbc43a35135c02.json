@@ -1,0 +1,51 @@
+{
+  "cache_key": "e42d174f71ede492489c8801027829969c413503d977c0ab7dbbc43a35135c02",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c593bc95494f1c0",
+    "reasoning_tokens": 3891,
+    "completion_tokens": 3987,
+    "prompt_tokens": 1346,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "61e4d5cff73a6656acc74c2d8f73f53d939c361705b8186df6ec11abb5f23959",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c593bc95494f1c0",
+    "reasoning_tokens": 3891,
+    "completion_tokens": 3987,
+    "prompt_tokens": 1346,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Germany is a European country in Central Europe. Its capital is Berlin. The country has 18 federal states, a population of approximately 83 million, and is a founding member of the EU and NATO. Economically diverse and highly industrialized, Germany is a global leader in engineering and automotive innovation."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany is a European country in Central Europe. Its capital is Berlin. The country has 18 federal states, a population of approximately 83 million, and is a founding member of the EU and NATO. Economically diverse and highly industrialized, Germany is a global leader in engineering and automotive innovation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

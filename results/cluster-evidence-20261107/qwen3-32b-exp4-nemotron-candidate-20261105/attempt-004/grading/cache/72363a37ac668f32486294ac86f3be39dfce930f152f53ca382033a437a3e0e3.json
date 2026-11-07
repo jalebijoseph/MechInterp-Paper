@@ -1,0 +1,51 @@
+{
+  "cache_key": "72363a37ac668f32486294ac86f3be39dfce930f152f53ca382033a437a3e0e3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb082de85184473e",
+    "reasoning_tokens": 4472,
+    "completion_tokens": 4568,
+    "prompt_tokens": 1260,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "51e23f1744dd9fa734c4e29123a2f268ebf6057b5f710c3de8680f7a6cb28d69",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb082de85184473e",
+    "reasoning_tokens": 4472,
+    "completion_tokens": 4568,
+    "prompt_tokens": 1260,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Hamlet* was written by William Shakespeare. This timeless tragedy, penned by William Shakespeare, explores themes of betrayal, revenge, and madness."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Hamlet* was written by William Shakespeare. This timeless tragedy, penned by William Shakespeare, explores themes of betrayal, revenge, and madness."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

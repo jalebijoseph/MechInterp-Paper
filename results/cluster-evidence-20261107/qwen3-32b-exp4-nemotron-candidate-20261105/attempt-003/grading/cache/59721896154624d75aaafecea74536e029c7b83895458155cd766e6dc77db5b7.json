@@ -1,0 +1,51 @@
+{
+  "cache_key": "59721896154624d75aaafecea74536e029c7b83895458155cd766e6dc77db5b7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-925fec5749f83f58",
+    "reasoning_tokens": 3536,
+    "completion_tokens": 3632,
+    "prompt_tokens": 1463,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b0af94663b663e5e59f31287fc41f4b6c0115829f4a36523e60fd9d5f8086cad",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-925fec5749f83f58",
+    "reasoning_tokens": 3536,
+    "completion_tokens": 3632,
+    "prompt_tokens": 1463,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mercury may be closer to the Sun, but Venus is the hottest planet in the solar system. Its thick carbonate dust shroud creates a runaway greenhouse effect, raising the surface temperature to 462°C (864°F) - that's 45% higher than Mercury's scorching equator. This hellish heat was measured by Venera and Magellan"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mercury may be closer to the Sun, but Venus is the hottest planet in the solar system. Its thick carbonate dust shroud creates a runaway greenhouse effect, raising the surface temperature to 462°C (864°F) - that's 45% higher than Mercury's scorching equator. This hellish heat was measured by Venera and Magellan"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

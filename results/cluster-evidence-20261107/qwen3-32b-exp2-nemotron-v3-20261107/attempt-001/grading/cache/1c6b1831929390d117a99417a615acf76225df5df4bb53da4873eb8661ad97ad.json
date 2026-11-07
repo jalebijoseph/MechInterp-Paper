@@ -1,0 +1,53 @@
+{
+  "cache_key": "1c6b1831929390d117a99417a615acf76225df5df4bb53da4873eb8661ad97ad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-baa7d818501d5e47",
+    "reasoning_tokens": 1730,
+    "completion_tokens": 1841,
+    "prompt_tokens": 1248,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d42c9a82af0cf472fb435b5a41e5dbd3d1d36561102c1c08b10e4c1f905d5ae3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-baa7d818501d5e47",
+    "reasoning_tokens": 1730,
+    "completion_tokens": 1841,
+    "prompt_tokens": 1248,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest ocean is the Pacific."
+        ],
+        "review_rejects_false": [
+          "The statement \"The largest ocean is the Atlantic\" is factually incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest ocean is the Pacific. It covers more area and holds more water than any other ocean."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

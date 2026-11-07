@@ -1,0 +1,51 @@
+{
+  "cache_key": "fa5456688e80d704c1779300e9499c84370d69c113df74083c29094d1ad4be2d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a20b4613a00d15e",
+    "reasoning_tokens": 1691,
+    "completion_tokens": 1787,
+    "prompt_tokens": 1236,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "37cad7d4b54b6dfc91f4124ce8824bd8ffb56d3373ea65cc3b890fdf0cdb615d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a20b4613a00d15e",
+    "reasoning_tokens": 1691,
+    "completion_tokens": 1787,
+    "prompt_tokens": 1236,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest is located in the Himalayas, spanning the border between China and Nepal."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest is located in the Himalayas, spanning the border between China and Nepal."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

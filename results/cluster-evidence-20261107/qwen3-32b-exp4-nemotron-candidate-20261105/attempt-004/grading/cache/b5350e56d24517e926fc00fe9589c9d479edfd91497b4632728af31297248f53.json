@@ -1,0 +1,53 @@
+{
+  "cache_key": "b5350e56d24517e926fc00fe9589c9d479edfd91497b4632728af31297248f53",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\":  \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc3ee1d57b60cf29",
+    "reasoning_tokens": 4112,
+    "completion_tokens": 4212,
+    "prompt_tokens": 1305,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "11a1fc46bc1a780edc4e95c07b2ce6c5b67d66d027b3fa5d0110aec3ca83757e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\":  \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc3ee1d57b60cf29",
+    "reasoning_tokens": 4112,
+    "completion_tokens": 4212,
+    "prompt_tokens": 1305,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Botanists note: The Red Planet is Mars."
+        ],
+        "review_rejects_false": [
+          "Bob, Mars is not Venus."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions target the Red Planet, Mars. Recent campaigns focus on soil analysis, ice mapping, and future crewed landings. Botanists note: The Red Planet is Mars. - Alice]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

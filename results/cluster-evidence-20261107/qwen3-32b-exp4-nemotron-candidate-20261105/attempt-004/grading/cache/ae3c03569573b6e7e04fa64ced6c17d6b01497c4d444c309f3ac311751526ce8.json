@@ -1,0 +1,65 @@
+{
+  "cache_key": "ae3c03569573b6e7e04fa64ced6c17d6b01497c4d444c309f3ac311751526ce8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83cf34e3afc8757b",
+    "reasoning_tokens": 2783,
+    "completion_tokens": 2882,
+    "prompt_tokens": 1223,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "976dc7e1d8105158d734797672eea7b0aec50477dcfd3c7f981c72b2ef7d096e",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83cf34e3afc8757b",
+    "reasoning_tokens": 2783,
+    "completion_tokens": 2882,
+    "prompt_tokens": 1223,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Japan is Tokyo."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Japan is Kyoto\" is historically inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Japan is Tokyo. Historically, the capital shifted to Tokyo in 1893."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "11d0edcf5f22256c9b09b4b9f79c244cb6dc7500fec7b16320d4c66ba2cc07b6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a972789662dad4fc",
+    "reasoning_tokens": 2652,
+    "completion_tokens": 2748,
+    "prompt_tokens": 1360,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "25104d18a0407604e9634fefc941bf5efb65b020e24b46c9d3962388890b2ce1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a972789662dad4fc",
+    "reasoning_tokens": 2652,
+    "completion_tokens": 2748,
+    "prompt_tokens": 1360,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Jupiter, the largest planet, is a gas giant with swirling storms and many moons."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is our cosmic neighborhood, with the Sun at its center. Jupiter, the largest planet, is a gas giant with swirling storms and many moons. It's so big that all the other planets could fit inside it!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

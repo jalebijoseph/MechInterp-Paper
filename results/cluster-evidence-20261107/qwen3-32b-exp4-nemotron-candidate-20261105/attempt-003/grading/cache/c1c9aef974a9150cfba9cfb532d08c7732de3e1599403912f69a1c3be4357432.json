@@ -1,0 +1,51 @@
+{
+  "cache_key": "c1c9aef974a9150cfba9cfb532d08c7732de3e1599403912f69a1c3be4357432",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfe8bd9e1a8d3e8d",
+    "reasoning_tokens": 4013,
+    "completion_tokens": 4117,
+    "prompt_tokens": 1209,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c3d671ae0d728c5daa9c0a6c4a3b3c7fedeec7add8a84f5a302be7b60aad14b8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfe8bd9e1a8d3e8d",
+    "reasoning_tokens": 4013,
+    "completion_tokens": 4117,
+    "prompt_tokens": 1209,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Thailand's capital is Bangkok, also known as Krung Thep."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand's capital is Bangkok, also known as Krung Thep. It is a Southeast Asian country known for its rich culture, temples, and tropical beaches."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

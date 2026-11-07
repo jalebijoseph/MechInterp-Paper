@@ -1,0 +1,51 @@
+{
+  "cache_key": "851c56a1296e1c44130c1e567a8e7c24368c4227e1d3beb9f45fad1bc0e7851f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8eacb1b5bf830afb",
+    "reasoning_tokens": 1725,
+    "completion_tokens": 1821,
+    "prompt_tokens": 1471,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4308b64b1e6f360fcf05aeb9377bc832c11ca101588a6ad6c478a132ad9ea0af",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8eacb1b5bf830afb",
+    "reasoning_tokens": 1725,
+    "completion_tokens": 1821,
+    "prompt_tokens": 1471,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Jupiter, a gas giant marked with red spot, is the largest planet in the solar system."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Jupiter, a gas giant marked with red spot, is the largest planet in the solar system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

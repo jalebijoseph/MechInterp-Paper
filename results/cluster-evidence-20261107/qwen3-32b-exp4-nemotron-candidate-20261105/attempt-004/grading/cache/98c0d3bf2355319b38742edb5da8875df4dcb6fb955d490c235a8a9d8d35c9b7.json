@@ -1,0 +1,51 @@
+{
+  "cache_key": "98c0d3bf2355319b38742edb5da8875df4dcb6fb955d490c235a8a9d8d35c9b7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-abca4341413d7186",
+    "reasoning_tokens": 3344,
+    "completion_tokens": 3440,
+    "prompt_tokens": 1260,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bce163c38e2e5429796093bfd6a81100c4c2e11022150bc515a5261b2a3211cd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-abca4341413d7186",
+    "reasoning_tokens": 3344,
+    "completion_tokens": 3440,
+    "prompt_tokens": 1260,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Delhi."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India is a federal republic in South Asia. The capital is Delhi. It has a population of over 1.4 billion and is known for its rich cultural heritage and diverse traditions."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

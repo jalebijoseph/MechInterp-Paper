@@ -1,0 +1,63 @@
+{
+  "cache_key": "ba7618766685c8e30c2e65e75f30c568766819d3c2a75bd5bdd7082965bb0954",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-883b3b54ac723151",
+    "reasoning_tokens": 5016,
+    "completion_tokens": 5112,
+    "prompt_tokens": 1338,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3c5e7ef9d139daab83d59d2f1d7cfcff61f5ea1bb3bea85eb55f878ed921c35b",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-883b3b54ac723151",
+    "reasoning_tokens": 5016,
+    "completion_tokens": 5112,
+    "prompt_tokens": 1338,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Guernica was not painted by Leonardo da Vince; it was created by Pablo..."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica, a 1937 anti-... (PCE context redaction). \n\nI'll need to verify the actual context of Guernica to complete the final text."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "cache_key": "68e0ac434e24fbfae726a082ecfc02a6e5dcee480813a049eb9372135862eb99",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\", \"R7\", \"R9\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9666b50137422bc4",
+    "reasoning_tokens": 8782,
+    "completion_tokens": 8883,
+    "prompt_tokens": 1565,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cab287180c761ccc61ccd3cc70923fe362f4d6debe2e8ad992478773c0b50aef",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\", \"R7\", \"R9\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9666b50137422bc4",
+    "reasoning_tokens": 8782,
+    "completion_tokens": 8883,
+    "prompt_tokens": 1565,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The draft is factually inaccurate — corundum (9) and diamond (10) are harder. Tone is too prescriptive. I'll rephrase with more geological nuance.\n\nFinal flashcard: On the Mohs hardness scale... [minerals] \nQuartz measures 7. Corundum (ruby/sapphire) - 9. Diamond 10. \nNatural minerals exhibit... [cleavage/structure] \nDiamond's octahedral cleavage. Quartz conchoidal. \nMohs scale remains... [cultural note] \nPublished 18",
+          "Quartz measures 7.",
+          "Diamond 10."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

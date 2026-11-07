@@ -1,0 +1,51 @@
+{
+  "cache_key": "cf47f45c44eea7c168d0925012ec246c3e56a64e5c112aeccadd6e97ce9dffa3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e72f997fe8226f3",
+    "reasoning_tokens": 2966,
+    "completion_tokens": 3062,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b6792f9820372aceef7d5ca7885b732758e4059bda5056008b9bfc6a6813d76f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e72f997fe8226f3",
+    "reasoning_tokens": 2966,
+    "completion_tokens": 3062,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Spain, officially the Kingdom of Spain, is located in Southwestern Europe. Its capital is Madrid. With a population of around 47 million, Spanish (Castilian) is the official language. A constitutional monarchy and parliamentary system, Spain is known for its rich history, vibrant culture, and popular tourist destinations like Barcelona and Seville."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain, officially the Kingdom of Spain, is located in Southwestern Europe. Its capital is Madrid. With a population of around 47 million, Spanish (Castilian) is the official language. A constitutional monarchy and parliamentary system, Spain is known for its rich history, vibrant culture, and popular tourist destinations like Barcelona and Seville."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

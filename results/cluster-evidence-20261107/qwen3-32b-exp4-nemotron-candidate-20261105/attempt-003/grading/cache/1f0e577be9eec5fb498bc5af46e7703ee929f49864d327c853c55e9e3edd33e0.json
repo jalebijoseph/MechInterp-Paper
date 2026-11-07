@@ -1,0 +1,51 @@
+{
+  "cache_key": "1f0e577be9eec5fb498bc5af46e7703ee929f49864d327c853c55e9e3edd33e0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82b3881b708b6bd0",
+    "reasoning_tokens": 2154,
+    "completion_tokens": 2250,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "eca9c02de22ed72c58e8d6c453dc36c5625831ddd9c34865cae4aa9628994702",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82b3881b708b6bd0",
+    "reasoning_tokens": 2154,
+    "completion_tokens": 2250,
+    "prompt_tokens": 1421,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest is the Nile, flowing through 11 countries."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Africa is home to several major rivers. The longest is the Nile, flowing through 11 countries. The Congo River is the second-longest and has the world's deepest river. The Niger and Zambezi rivers are also vital for transportation and ecosystems. These rivers support agriculture, wildlife, and human settlements, playing a key role in Africa's geography and economy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "8c3356afd5e2c3ddac8847ff84d8dbc08de362c5f0f3799d6e34d60134b7bc13",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b722fbdcabd1abf2",
+    "reasoning_tokens": 2746,
+    "completion_tokens": 2842,
+    "prompt_tokens": 1206,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1c2dcc5c009b8c944244996f52dd4b4881c7a084f15b4b2360f6bbec0f35daab",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b722fbdcabd1abf2",
+    "reasoning_tokens": 2746,
+    "completion_tokens": 2842,
+    "prompt_tokens": 1206,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official currency of the United States is the dollar."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The official currency of the United States is the dollar. Always carry some cash, use credit cards wisely, and be mindful of exchange rates if traveling internationally."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

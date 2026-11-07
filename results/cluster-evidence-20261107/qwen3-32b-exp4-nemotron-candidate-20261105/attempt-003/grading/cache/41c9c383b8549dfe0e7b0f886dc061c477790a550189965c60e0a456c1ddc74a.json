@@ -1,0 +1,51 @@
+{
+  "cache_key": "41c9c383b8549dfe0e7b0f886dc061c477790a550189965c60e0a456c1ddc74a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb34087fdccd94a1",
+    "reasoning_tokens": 2190,
+    "completion_tokens": 2286,
+    "prompt_tokens": 1244,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "87f30293616f7bb700676282964fe983b2356b2b535ac96c030147788f615b59",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb34087fdccd94a1",
+    "reasoning_tokens": 2190,
+    "completion_tokens": 2286,
+    "prompt_tokens": 1244,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is diamond, scoring 10 on the Mohs scale of hardness. It is composed of pure carbon and is commonly used in jewelry and industrial cutting tools."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is diamond, scoring 10 on the Mohs scale of hardness. It is composed of pure carbon and is commonly used in jewelry and industrial cutting tools."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

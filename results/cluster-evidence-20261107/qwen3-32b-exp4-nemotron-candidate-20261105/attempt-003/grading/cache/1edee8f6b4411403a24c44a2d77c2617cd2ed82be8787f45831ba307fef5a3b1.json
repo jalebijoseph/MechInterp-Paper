@@ -1,0 +1,53 @@
+{
+  "cache_key": "1edee8f6b4411403a24c44a2d77c2617cd2ed82be8787f45831ba307fef5a3b1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c22349ac5171690",
+    "reasoning_tokens": 2354,
+    "completion_tokens": 2453,
+    "prompt_tokens": 1377,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "95293e1632df76bdcd69cc386609e6fed174d3849e6d3f299a106d03da243548",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c22349ac5171690",
+    "reasoning_tokens": 2354,
+    "completion_tokens": 2453,
+    "prompt_tokens": 1377,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, known for its big red spot."
+        ],
+        "review_rejects_false": [
+          "The draft contains an error—Saturn is not the largest planet; Jupiter is."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest planet is Jupiter, known for its big red spot."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

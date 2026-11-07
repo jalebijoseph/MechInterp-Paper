@@ -1,0 +1,53 @@
+{
+  "cache_key": "14962a2711a03636b29e47fb2be020f9da91a823aa90b7285f445b8631606125",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aedfa8526ebe5484",
+    "reasoning_tokens": 2290,
+    "completion_tokens": 2389,
+    "prompt_tokens": 1141,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f92030a65ba6158b38c01dd412ab641f868dbc160f0e1e581276cd56846e0ea1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aedfa8526ebe5484",
+    "reasoning_tokens": 2290,
+    "completion_tokens": 2389,
+    "prompt_tokens": 1141,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Germany is Berlin."
+        ],
+        "review_rejects_false": [
+          "The draft is incorrect. The capital of Germany is Berlin, not Munich. I will correct the error before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Germany is Berlin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

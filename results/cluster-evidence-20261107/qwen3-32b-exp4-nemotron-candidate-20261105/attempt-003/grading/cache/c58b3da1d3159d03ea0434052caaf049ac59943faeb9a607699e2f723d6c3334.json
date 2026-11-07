@@ -1,0 +1,51 @@
+{
+  "cache_key": "c58b3da1d3159d03ea0434052caaf049ac59943faeb9a607699e2f723d6c3334",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c6cb0e1df36e034",
+    "reasoning_tokens": 2537,
+    "completion_tokens": 2633,
+    "prompt_tokens": 1349,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "418d59a600ea720a9c303d826f16a383d2ba42a9368c5539ee30e0e3ee99bc27",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c6cb0e1df36e034",
+    "reasoning_tokens": 2537,
+    "completion_tokens": 2633,
+    "prompt_tokens": 1349,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Turkey, a transcontinental country bridging Europe and Asia, has its capital in Ankara."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Turkey, a transcontinental country bridging Europe and Asia, has its capital in Ankara. A NATO member with a presidential republic system, it has a diverse culture and strategic geopolitical role. Embassy staff should be aware of Turkey’s complex domestic politics, EU relations, and regional influence."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

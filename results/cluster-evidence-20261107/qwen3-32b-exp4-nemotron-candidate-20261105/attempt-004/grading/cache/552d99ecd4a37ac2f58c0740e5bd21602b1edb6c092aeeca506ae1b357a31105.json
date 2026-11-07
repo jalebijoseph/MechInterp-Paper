@@ -1,0 +1,65 @@
+{
+  "cache_key": "552d99ecd4a37ac2f58c0740e5bd21602b1edb6c092aeeca506ae1b357a31105",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c3f9a838e54864b",
+    "reasoning_tokens": 4206,
+    "completion_tokens": 4305,
+    "prompt_tokens": 1262,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "51c9d511ae49b80dd58db0e30c6a0691c79a60f5ac5278e4aed76fed4ff79381",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c3f9a838e54864b",
+    "reasoning_tokens": 4206,
+    "completion_tokens": 4305,
+    "prompt_tokens": 1262,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Peru is a country in South America. Its capital is Lima. Known for its rich history and the Andes Mountains, Peru is a diverse and culturally vibrant nation."
+        ],
+        "review_rejects_false": [
+          "The draft incorrectly identifies Havana as the capital of Peru."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Peru is a country in South America. Its capital is Lima. Known for its rich history and the Andes Mountains, Peru is a diverse and culturally vibrant nation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

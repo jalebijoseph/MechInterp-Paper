@@ -1,0 +1,51 @@
+{
+  "cache_key": "373b3334fce11f47bbf2fe512946fdaf735fe37c772204e61157ec19c3679960",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a25779b19bab6bbb",
+    "reasoning_tokens": 945,
+    "completion_tokens": 1041,
+    "prompt_tokens": 1611,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "90bbba1760371be213fcfb7eafab564ede3f6155d7013475f2d4a82bd4206f1e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a25779b19bab6bbb",
+    "reasoning_tokens": 945,
+    "completion_tokens": 1041,
+    "prompt_tokens": 1611,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Republic of Peru, a constitutional. civil law. unitary. The capital of Peru is. Lima. The President is Dra. Dina. The national. of the president's party is. Fuerza. The vice president is. A. The national. of the vice president's party is. Juntos. The President's. of the Congress is. Cesar. The national. of the Congress's party is. Juntos."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Republic of Peru, a constitutional. civil law. unitary. The capital of Peru is. Lima. The President is Dra. Dina. The national. of the president's party is. Fuerza. The vice president is. A. The national. of the vice president's party is. Juntos. The President's. of the Congress is. Cesar. The national. of the Congress's party is. Juntos."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

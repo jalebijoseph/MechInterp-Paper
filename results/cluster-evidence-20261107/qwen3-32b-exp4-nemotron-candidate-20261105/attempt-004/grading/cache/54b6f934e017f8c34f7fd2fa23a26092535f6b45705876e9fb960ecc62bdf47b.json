@@ -1,0 +1,51 @@
+{
+  "cache_key": "54b6f934e017f8c34f7fd2fa23a26092535f6b45705876e9fb960ecc62bdf47b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c944360af689a62",
+    "reasoning_tokens": 1886,
+    "completion_tokens": 1982,
+    "prompt_tokens": 1283,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cd39bd72c4b1c5d5918f0e94ba095dc381ea8dbb7e947dc075f02752d05d36d6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c944360af689a62",
+    "reasoning_tokens": 1886,
+    "completion_tokens": 1982,
+    "prompt_tokens": 1283,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Neil Armstrong became the first person to walk on the lunar surface, followed by Buzz Aldrin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "On July 20, 1969, the first crewed Moon landing occurred during NASA's Apollo 11 mission. Neil Armstrong became the first person to walk on the lunar surface, followed by Buzz Aldrin. The event marked a historic milestone in human space exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

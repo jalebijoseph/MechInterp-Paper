@@ -1,0 +1,51 @@
+{
+  "cache_key": "f6052e083e8fae9c903902a3c31f0fb77b8acac362fd550978208bb984ad6a1a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5905c28891067ce",
+    "reasoning_tokens": 1508,
+    "completion_tokens": 1604,
+    "prompt_tokens": 1291,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "484f8dd47e8b8c681bc4f9981c98ad9b9f876e9527068aae0c9842e9c1564249",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5905c28891067ce",
+    "reasoning_tokens": 1508,
+    "completion_tokens": 1604,
+    "prompt_tokens": 1291,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"The capital of Australia is Canberra."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"The capital of Australia is Canberra. Located in the southeastern part of the country, Canberra is a planned city known for its political and cultural institutions. Australia is a vast island nation in the Southern Hemisphere, renowned for its unique wildlife, diverse landscapes, and vibrant cities like Sydney and Melbourne.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "b363dd08d647418238cc921ba7612cc56389cab52f9fdd33958ad22d6a313a1d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87898c261d7e1d81",
+    "reasoning_tokens": 1470,
+    "completion_tokens": 1569,
+    "prompt_tokens": 1154,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "39675155cc35379e439ac8cd5df6b748faa171624dbee2c1b9e0f4610dc5f5f3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87898c261d7e1d81",
+    "reasoning_tokens": 1470,
+    "completion_tokens": 1569,
+    "prompt_tokens": 1154,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Turkey is Ankara, though Istanbul is its largest city and a major cultural and economic center."
+        ],
+        "review_rejects_false": [
+          "The statement is factually correct—Turkey’s capital is Ankara, not Istanbul."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Turkey is Ankara, though Istanbul is its largest city and a major cultural and economic center."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

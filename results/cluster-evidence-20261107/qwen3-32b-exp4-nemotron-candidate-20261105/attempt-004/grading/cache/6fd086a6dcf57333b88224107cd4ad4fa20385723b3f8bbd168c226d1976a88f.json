@@ -1,0 +1,51 @@
+{
+  "cache_key": "6fd086a6dcf57333b88224107cd4ad4fa20385723b3f8bbd168c226d1976a88f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b0d41a9451687ac",
+    "reasoning_tokens": 2123,
+    "completion_tokens": 2227,
+    "prompt_tokens": 1471,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "00d57d78947983540c354cc8ebd92d1deed47d4ad500e70bac2b7ea56275d10d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b0d41a9451687ac",
+    "reasoning_tokens": 2123,
+    "completion_tokens": 2227,
+    "prompt_tokens": 1471,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest land animal is the elephant."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest land animal is the elephant. A marvel of size and strength, the African bush elephant (Loxodonta africana) can reach 10 ft at the guard and 14 ft long. They are found in sub-Saharan and are critically important for seed dispersal in there range. The animal is the largest land animal. It is found in sub-Sh. The animal is a megaherbivore, and the animal's mouth is made for eating. The animal's"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

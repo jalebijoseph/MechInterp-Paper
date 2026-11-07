@@ -1,0 +1,51 @@
+{
+  "cache_key": "f309eaa6ec7dc298f53af94d7787890a382ada5c99e2deff9b8228c9073a8654",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7cd7c9d5e873d0f",
+    "reasoning_tokens": 1539,
+    "completion_tokens": 1643,
+    "prompt_tokens": 1290,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5c824bb24c05e170f362842c5cffb86ed0e4c44913b70816d0919ca394b4dee5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7cd7c9d5e873d0f",
+    "reasoning_tokens": 1539,
+    "completion_tokens": 1643,
+    "prompt_tokens": 1290,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "While the U.S. uses the dollar, it’s helpful to know: ATMs are widely available; credit cards are accepted at most businesses; carry some cash for small purchases; and be aware of foreign transaction fees."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "While the U.S. uses the dollar, it’s helpful to know: ATMs are widely available; credit cards are accepted at most businesses; carry some cash for small purchases; and be aware of foreign transaction fees."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

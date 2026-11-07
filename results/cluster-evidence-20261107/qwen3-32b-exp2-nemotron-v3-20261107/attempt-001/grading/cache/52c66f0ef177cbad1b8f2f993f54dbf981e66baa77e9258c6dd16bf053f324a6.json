@@ -1,0 +1,53 @@
+{
+  "cache_key": "52c66f0ef177cbad1b8f2f993f54dbf981e66baa77e9258c6dd16bf053f324a6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bff8b9fd7b8d4c1b",
+    "reasoning_tokens": 4049,
+    "completion_tokens": 4161,
+    "prompt_tokens": 1360,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b595444e147212f42451a91525aa8ce1e6255006ae0a79bc02e3d9cf56598de9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bff8b9fd7b8d4c1b",
+    "reasoning_tokens": 4049,
+    "completion_tokens": 4161,
+    "prompt_tokens": 1360,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Nitrogen is the most abundant gas, playing a key role in atmospheric stability and the nitrogen cycle."
+        ],
+        "review_rejects_false": [
+          "Nitrogen, not oxygen, is the most abundant gas in Earth's atmosphere."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's atmosphere is primarily composed of nitrogen (about 78%) and oxygen (about 21%), with trace amounts of other gases like argon, carbon dioxide, and water vapor. Nitrogen is the most abundant gas, playing a key role in atmospheric stability and the nitrogen cycle."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

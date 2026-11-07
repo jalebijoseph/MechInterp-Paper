@@ -1,0 +1,51 @@
+{
+  "cache_key": "14aa354d2db0b53c8f3a2d7a87b8b894e0f4a86256d455e336e29d3b3bda4604",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-88ff1020e1f513eb",
+    "reasoning_tokens": 1789,
+    "completion_tokens": 1893,
+    "prompt_tokens": 1226,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "820e449c2fdbe734cec25315026c0c55f3d3f24b220bdd2a17ed07b584c3e5e2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-88ff1020e1f513eb",
+    "reasoning_tokens": 1789,
+    "completion_tokens": 1893,
+    "prompt_tokens": 1226,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "This production of *Hamlet*, written by William Shakespeare, explores themes of revenge, madness, and existential doubt. Shakespeare’s timeless tragedy continues to resonate with audiences through its rich language and complex characters."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "This production of *Hamlet*, written by William Shakespeare, explores themes of revenge, madness, and existential doubt. Shakespeare’s timeless tragedy continues to resonate with audiences through its rich language and complex characters."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "5d161579ab71f84983f820b01351c6d33bef16b71c1d8c2144d3c9454b0250d5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86a2ca74b542161b",
+    "reasoning_tokens": 2818,
+    "completion_tokens": 2922,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bfa88fd06a8ad8974914ad612c06f1c57fa9aed237c06cfab96c66d2d4d4cee2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86a2ca74b542161b",
+    "reasoning_tokens": 2818,
+    "completion_tokens": 2922,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert in the world is the Sahara Desert, located in North Africa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert in the world is the Sahara Desert, located in North Africa. It covers approximately 3.6 million square miles and is known for its extreme temperatures and vast sand dunes."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

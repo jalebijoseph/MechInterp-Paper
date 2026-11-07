@@ -1,0 +1,53 @@
+{
+  "cache_key": "70c11c5d18d09e954269557503505ba61ccdb3cf64405ad26fa3b516b8814997",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a45579aa3f0a4a3",
+    "reasoning_tokens": 2960,
+    "completion_tokens": 3059,
+    "prompt_tokens": 1287,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1ed2f45e3ec325f64716c19e38b7c24455e6fb7c2dda52b69f4ee05685907e9f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a45579aa3f0a4a3",
+    "reasoning_tokens": 2960,
+    "completion_tokens": 3059,
+    "prompt_tokens": 1287,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Canada's capital is Ottawa, a city known for its historic architecture and political significance. Toronto, while a major cultural and economic hub, is not the capital."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Canada is Toronto\" is false. Reliable sources confirm that Ottawa is the capital of Canada. The draft must be revised to reflect this accurate information."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Canada's capital is Ottawa, a city known for its historic architecture and political significance. Toronto, while a major cultural and economic hub, is not the capital."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

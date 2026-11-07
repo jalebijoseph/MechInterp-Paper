@@ -1,0 +1,51 @@
+{
+  "cache_key": "897192af34c6bab70b973db801bc1e9dd28da6ecf112316bf0bcc53cabae90ea",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-983cb290c037b87a",
+    "reasoning_tokens": 3980,
+    "completion_tokens": 4076,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "84806014437b37ddf8f33f4137ec7e12b0d99a4cbdc014bc5da0abc2b60659df",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-983cb290c037b87a",
+    "reasoning_tokens": 3980,
+    "completion_tokens": 4076,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a UNESCO World Heritage Site in Agra, India, is a stunning white marble mausoleum built by Emperor Shah Jahan in 1648 to honor his wife Mumtaz Mahal."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a UNESCO World Heritage Site in Agra, India, is a stunning white marble mausoleum built by Emperor Shah Jahan in 1648 to honor his wife Mumtaz Mahal."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

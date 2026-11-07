@@ -1,0 +1,53 @@
+{
+  "cache_key": "9543f2f5950d9b5bdfeabb2b2d2dc4c35af47226c6be0d5ab00de43dbbd5fac9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af501f436a3f22e9",
+    "reasoning_tokens": 2375,
+    "completion_tokens": 2474,
+    "prompt_tokens": 1304,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "38b8a6dd860bd460258c42a62e7cd178260f414450d47534947c29fc43c976e8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af501f436a3f22e9",
+    "reasoning_tokens": 2375,
+    "completion_tokens": 2474,
+    "prompt_tokens": 1304,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest is in Asia, standing proudly in the Himalayas on the border of Nepal and the Tibet Autonomous Region."
+        ],
+        "review_rejects_false": [
+          "The draft contains a geographical inaccuracy – Mount Everest is in Asia, not Africa."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest is in Asia, standing proudly in the Himalayas on the border of Nepal and the Tibet Autonomous Region."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

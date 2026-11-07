@@ -1,0 +1,51 @@
+{
+  "cache_key": "93e2ef590b918b9596ad9b68cfe432967c2dace32c2cbd72cf94bf72b45b5398",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8569940f48f5faba",
+    "reasoning_tokens": 2957,
+    "completion_tokens": 3062,
+    "prompt_tokens": 1015,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2b00a5d5622cac7f6b08fd8cecbf54671fede6a01ec31a2307587caf5c61f944",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8569940f48f5faba",
+    "reasoning_tokens": 2957,
+    "completion_tokens": 3062,
+    "prompt_tokens": 1015,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Sydney is incorrect; the capital is Canberra."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is known for its diverse wildlife."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

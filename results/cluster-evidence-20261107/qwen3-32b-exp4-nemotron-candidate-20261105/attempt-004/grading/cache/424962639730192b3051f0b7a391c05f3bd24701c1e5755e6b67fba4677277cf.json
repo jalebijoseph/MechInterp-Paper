@@ -1,0 +1,65 @@
+{
+  "cache_key": "424962639730192b3051f0b7a391c05f3bd24701c1e5755e6b67fba4677277cf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd521f882238a232",
+    "reasoning_tokens": 4148,
+    "completion_tokens": 4247,
+    "prompt_tokens": 1433,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e4e97749b3d2a25c195e5db744c8eebdea5706e8cd56f644e4f2220a810b9258",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd521f882238a232",
+    "reasoning_tokens": 4148,
+    "completion_tokens": 4247,
+    "prompt_tokens": 1433,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Armstrong was the first to step onto the lunar surface, declaring, \"That's one small step for man, one giant leap for mankind.\" Command Module Pilot Michael Collins remained in orbit aboard the Columbia."
+        ],
+        "review_rejects_false": [
+          "Bob, this is incorrect. Michael Collins was the Command Module Pilot and remained in lunar orbit; Neil Armstrong was the first to walk on the Moon. Please correct."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "On July 20, 1969, Apollo 11 astronauts Neil Armstrong and Edwin \"Buzz\" Aldrin became the first humans to land on the Moon. Armstrong was the first to step onto the lunar surface, declaring, \"That's one small step for man, one giant leap for mankind.\" Command Module Pilot Michael Collins remained in orbit aboard the Columbia."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

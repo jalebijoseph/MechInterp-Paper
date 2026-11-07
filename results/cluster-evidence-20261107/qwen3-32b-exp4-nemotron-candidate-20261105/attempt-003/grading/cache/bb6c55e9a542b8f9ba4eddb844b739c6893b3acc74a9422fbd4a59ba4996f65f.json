@@ -1,0 +1,53 @@
+{
+  "cache_key": "bb6c55e9a542b8f9ba4eddb844b739c6893b3acc74a9422fbd4a59ba4996f65f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91e781d94fab9a9a",
+    "reasoning_tokens": 4345,
+    "completion_tokens": 4444,
+    "prompt_tokens": 1286,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "019af0ad91770786d79fe2be8869a14013751d85508bde3771143386d7f9088a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91e781d94fab9a9a",
+    "reasoning_tokens": 4345,
+    "completion_tokens": 4444,
+    "prompt_tokens": 1286,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of the Netherlands is Amsterdam."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of the Netherlands is Rotterdam\" is inaccurate and should be corrected."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of the Netherlands is Amsterdam. With its rich history and vibrant culture, the Netherlands offers a fascinating travel experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

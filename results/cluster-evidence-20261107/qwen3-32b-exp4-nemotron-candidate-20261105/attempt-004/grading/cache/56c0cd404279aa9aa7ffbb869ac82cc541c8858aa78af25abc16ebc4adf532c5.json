@@ -1,0 +1,51 @@
+{
+  "cache_key": "56c0cd404279aa9aa7ffbb869ac82cc541c8858aa78af25abc16ebc4adf532c5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af8f74d9e7ea6756",
+    "reasoning_tokens": 3268,
+    "completion_tokens": 3364,
+    "prompt_tokens": 1288,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "99d09f0e08c606b52ec1faa1c7109235d83be7cb3693f8a4740fb1e26435c72e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af8f74d9e7ea6756",
+    "reasoning_tokens": 3268,
+    "completion_tokens": 3364,
+    "prompt_tokens": 1288,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Scotland, a land of ancient castles and dramatic landscapes, invites travelers to discover its rich heritage and warm hospitality. The capital, Edinburgh, is just one of the many treasures in this enchanting and diverse destination."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Scotland, a land of ancient castles and dramatic landscapes, invites travelers to discover its rich heritage and warm hospitality. The capital, Edinburgh, is just one of the many treasures in this enchanting and diverse destination."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "0e75cdc68eb939612d878831100d6d7bcb5d8c6eed94acb1e3f709a45f016a10",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":true,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[\"R1\"],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a18e3534df2d0f6f",
+    "reasoning_tokens": 2308,
+    "completion_tokens": 2385,
+    "prompt_tokens": 1178,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "24e2358988034b883e70f1bbe02665b62344d957f082ad435753bcc3b331c3af",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":true,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[\"R1\"],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a18e3534df2d0f6f",
+    "reasoning_tokens": 2308,
+    "completion_tokens": 2385,
+    "prompt_tokens": 1178,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the United Kingdom is the British pound."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual inaccuracy. The currency of the United Kingdom is the British pound, not the euro. This must be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the United Kingdom is the British pound."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

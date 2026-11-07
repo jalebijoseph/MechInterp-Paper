@@ -1,0 +1,53 @@
+{
+  "cache_key": "2a46af8fdb7c2c35e1032a347ecc05c4422ed072a3f2ff70e1ba22fab59ae208",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83359a50b9c7e451",
+    "reasoning_tokens": 3340,
+    "completion_tokens": 3439,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cb8e748750ce804cd352b7cbe1b49b9e60e58be3c117f3eb8315509cac430d02",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83359a50b9c7e451",
+    "reasoning_tokens": 3340,
+    "completion_tokens": 3439,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The organ that pumps blood around the body is the heart. It is responsible for circulating blood via a network of blood vessels. The liver plays a key role in blood processing and detoxification."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error. The organ that pumps blood around the body is the heart, not the liver."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The organ that pumps blood around the body is the heart. It is responsible for circulating blood via a network of blood vessels. The liver plays a key role in blood processing and detoxification."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

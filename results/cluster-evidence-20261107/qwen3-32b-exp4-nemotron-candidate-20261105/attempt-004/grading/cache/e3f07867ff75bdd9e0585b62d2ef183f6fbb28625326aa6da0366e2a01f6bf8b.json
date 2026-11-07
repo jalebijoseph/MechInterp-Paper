@@ -1,0 +1,51 @@
+{
+  "cache_key": "e3f07867ff75bdd9e0585b62d2ef183f6fbb28625326aa6da0366e2a01f6bf8b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8622c590778f2d7f",
+    "reasoning_tokens": 2123,
+    "completion_tokens": 2219,
+    "prompt_tokens": 1205,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "927e01e8f8d5eade305b13ae79e11aed67e00cc6c72347b38d972932f83b5776",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8622c590778f2d7f",
+    "reasoning_tokens": 2123,
+    "completion_tokens": 2219,
+    "prompt_tokens": 1205,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The ancient Olympic Games began in Greece. They were held in Olympia every four years and honored the Greek gods, with a focus on physical excellence and fair competition."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The ancient Olympic Games began in Greece. They were held in Olympia every four years and honored the Greek gods, with a focus on physical excellence and fair competition."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

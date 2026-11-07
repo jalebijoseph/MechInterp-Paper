@@ -1,0 +1,51 @@
+{
+  "cache_key": "1f1c7ac22bb4f8a7b76064cc6112be9be0fd75f327ae3dbe69c4a9fbaaae1ea9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e49092c2a46c2c8",
+    "reasoning_tokens": 2300,
+    "completion_tokens": 2396,
+    "prompt_tokens": 1405,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "476289ef341ab81445a7ccbf026318dca4912362348fefda8ebebb77c21697f5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e49092c2a46c2c8",
+    "reasoning_tokens": 2300,
+    "completion_tokens": 2396,
+    "prompt_tokens": 1405,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, and its largest city is Sydney."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is a country and continent located in the Southern Hemisphere. Its capital is Canberra, and its largest city is Sydney. With a population of around 26 million, it is a federal parliamentary democracy. Known for unique wildlife like kangaroos and koalas, Australia also has famous landmarks such as the Great Barrier Reef and Uluru."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

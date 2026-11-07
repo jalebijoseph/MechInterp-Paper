@@ -1,0 +1,65 @@
+{
+  "cache_key": "3e09217a68e2bad18676670010be953ef82d6daab4040c85fd7c50426c7abaf1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-952717d669334e30",
+    "reasoning_tokens": 3789,
+    "completion_tokens": 3900,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7e1d606577b1a5411292809532195653304a3c78718d97b9fcc3a6c9565ac0d6",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-952717d669334e30",
+    "reasoning_tokens": 3789,
+    "completion_tokens": 3900,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official currency of the United Kingdom is the British pound (£)."
+        ],
+        "review_rejects_false": [
+          "The UK uses the British pound (£), not the euro."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official currency of the United Kingdom is the British pound (£). Always check exchange rates before converting money, and use ATMs for the best rates. Credit cards are widely accepted, but carry some cash for smaller venues. Avoid exchanging money at airports for better rates."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

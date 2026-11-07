@@ -1,0 +1,53 @@
+{
+  "cache_key": "bba6e97e3c5d3bcec1b35a7e9a333f0a18e81895235ead7f1f74ec0812221849",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab809ef5a361c7a6",
+    "reasoning_tokens": 2706,
+    "completion_tokens": 2805,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "edaf0e108b270124db869cf569fb807ffbaf02f3117057d73c54ea41ff487cd8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab809ef5a361c7a6",
+    "reasoning_tokens": 2706,
+    "completion_tokens": 2805,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Later, in the early 20th century, Albert Einstein developed the theory of relativity, revolutionizing our understanding of space, time, and gravity."
+        ],
+        "review_rejects_false": [
+          "The theory of relativity was developed by Albert Einstein, not Isaac Newton."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The foundations of classical mechanics were laid by Isaac Newton in the 17th century. Later, in the early 20th century, Albert Einstein developed the theory of relativity, revolutionizing our understanding of space, time, and gravity."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

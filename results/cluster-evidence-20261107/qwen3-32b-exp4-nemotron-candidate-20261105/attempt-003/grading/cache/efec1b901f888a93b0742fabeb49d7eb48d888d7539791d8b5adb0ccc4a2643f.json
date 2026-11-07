@@ -1,0 +1,51 @@
+{
+  "cache_key": "efec1b901f888a93b0742fabeb49d7eb48d888d7539791d8b5adb0ccc4a2643f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c02f71325e7cd61",
+    "reasoning_tokens": 1967,
+    "completion_tokens": 2063,
+    "prompt_tokens": 1306,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "28d451be7b4f2acb8320bbf7b3847bdeb2110f3fe1f358cda7677e75ea63fb5c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c02f71325e7cd61",
+    "reasoning_tokens": 1967,
+    "completion_tokens": 2063,
+    "prompt_tokens": 1306,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, one of the world’s most iconic monuments, is located in Agra, India."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, one of the world’s most iconic monuments, is located in Agra, India."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

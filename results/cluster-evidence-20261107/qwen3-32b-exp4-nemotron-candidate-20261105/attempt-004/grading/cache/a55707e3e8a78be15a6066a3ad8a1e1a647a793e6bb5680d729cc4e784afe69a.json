@@ -1,0 +1,51 @@
+{
+  "cache_key": "a55707e3e8a78be15a6066a3ad8a1e1a647a793e6bb5680d729cc4e784afe69a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b10e3066f53d9bae",
+    "reasoning_tokens": 1159,
+    "completion_tokens": 1255,
+    "prompt_tokens": 1219,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8ae4676fbbcfde8086c95019a12f0f4a02b74951272fcfa288f29311d615502a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b10e3066f53d9bae",
+    "reasoning_tokens": 1159,
+    "completion_tokens": 1255,
+    "prompt_tokens": 1219,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Thailand is a Southeast Asian kingdom with a rich cultural heritage. Its capital is Bangkok, a modern and vibrant city."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand is a Southeast Asian kingdom with a rich cultural heritage. Its capital is Bangkok, a modern and vibrant city."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

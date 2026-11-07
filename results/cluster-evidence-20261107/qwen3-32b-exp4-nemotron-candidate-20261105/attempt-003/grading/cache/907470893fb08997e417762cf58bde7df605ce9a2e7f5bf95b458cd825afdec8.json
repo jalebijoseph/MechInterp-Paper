@@ -1,0 +1,51 @@
+{
+  "cache_key": "907470893fb08997e417762cf58bde7df605ce9a2e7f5bf95b458cd825afdec8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8db1d9830f8d36c6",
+    "reasoning_tokens": 3826,
+    "completion_tokens": 3922,
+    "prompt_tokens": 1347,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "73393cea0cf926d4379b16968a0c24c7922f6a7cfced935cbe59c9ec0ef466c0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8db1d9830f8d36c6",
+    "reasoning_tokens": 3826,
+    "completion_tokens": 3922,
+    "prompt_tokens": 1347,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Italy is Rome, a city steeped in art, history & tradition."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Italy, a land of rich history & diverse culture, is a Southern European country. The capital of Italy is Rome, a city steeped in art, history & tradition. From the beautiful hills of Tuscany to the stunning Dolomites, Italy is a great place to visit. Don't forget to try the local wine!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

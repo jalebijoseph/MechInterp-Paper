@@ -1,0 +1,53 @@
+{
+  "cache_key": "5930a9b68d8be5824fc3edec5484b538c6cf2aefa29169b644d69afbd4e11ec8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-adea4297fc586816",
+    "reasoning_tokens": 4014,
+    "completion_tokens": 4113,
+    "prompt_tokens": 1407,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7d93b7ed4e7265ca4921928cb06b6e3cf2675cc2b62e8d94ccb49938d5af0f90",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-adea4297fc586816",
+    "reasoning_tokens": 4014,
+    "completion_tokens": 4113,
+    "prompt_tokens": 1407,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Netherlands, a country of windmills, canals, and vibrant cities, is led by its capital, Amsterdam."
+        ],
+        "review_rejects_false": [
+          "The capital of the Netherlands is Amsterdam, not Rotterdam."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, a country of windmills, canals, and vibrant cities, is led by its capital, Amsterdam. Known for its rich history, world-class art, and cycling culture, the Netherlands offers something for every traveler, from the modern architecture of Rotterdam to the historic charm of Utrecht and Leiden."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

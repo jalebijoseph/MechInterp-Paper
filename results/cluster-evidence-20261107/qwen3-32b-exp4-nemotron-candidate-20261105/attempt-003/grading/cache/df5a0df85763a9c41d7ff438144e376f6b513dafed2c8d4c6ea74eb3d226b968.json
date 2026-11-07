@@ -1,0 +1,53 @@
+{
+  "cache_key": "df5a0df85763a9c41d7ff438144e376f6b513dafed2c8d4c6ea74eb3d226b968",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93d55f2b96355bb8",
+    "reasoning_tokens": 1181,
+    "completion_tokens": 1292,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6418440105dee76059e4e327a90813d7a5295fee53a4ea6ea6979ba02da00546",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93d55f2b96355bb8",
+    "reasoning_tokens": 1181,
+    "completion_tokens": 1292,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Greece is Nicosia."
+        ],
+        "review_rejects_false": [
+          "The capital of Greece is Nicosia, not Cor..."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Greece is Nicosia."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "cache_key": "d9a2df77d7da0b2a3d4299496b3b4af5b83b023ce3c09953debf92ebd7bb3592",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-964f9aba6d4c5701",
+    "reasoning_tokens": 5830,
+    "completion_tokens": 5930,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6bb400cfda8eedac8494bd178adfaeefaee3bd99598a7f0d9b937210f169c4fe",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-964f9aba6d4c5701",
+    "reasoning_tokens": 5830,
+    "completion_tokens": 5930,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is mostly nitrogen (about 78%), followed by oxygen (21%). Trace gases like argon, CO₂, and water vapor make up the rest. Nitrogen is the most abundant",
+          "Nitrogen is the most abundant"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is mostly nitrogen (about 78%), followed by oxygen (21%). Trace gases like argon, CO₂, and water vapor make up the rest. Nitrogen is the most abundant"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

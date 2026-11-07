@@ -1,0 +1,51 @@
+{
+  "cache_key": "7d2e9843a154935adfd0b131c1da90025737866ed30e766b2affd62d981b1dac",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1fad7876706c0df",
+    "reasoning_tokens": 2826,
+    "completion_tokens": 2922,
+    "prompt_tokens": 1414,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "507b416f45e83989cb03a797387b8bdc056987d4b10db3fd8d1b7b3852d01672",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1fad7876706c0df",
+    "reasoning_tokens": 2826,
+    "completion_tokens": 2922,
+    "prompt_tokens": 1414,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Portugal, located on the Iberian Peninsula in southwestern Europe, has Lisbon as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal, located on the Iberian Peninsula in southwestern Europe, has Lisbon as its capital. With a population of ~10.3 million, it is a unitary semi-presidential republic. The official language is Portuguese. Known for its rich history, Fado music, and contributions to exploration, Portugal is a member of the EU and NATO."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

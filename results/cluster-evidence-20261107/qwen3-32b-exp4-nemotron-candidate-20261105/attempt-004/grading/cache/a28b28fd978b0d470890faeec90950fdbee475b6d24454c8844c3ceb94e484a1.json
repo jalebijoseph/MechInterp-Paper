@@ -1,0 +1,51 @@
+{
+  "cache_key": "a28b28fd978b0d470890faeec90950fdbee475b6d24454c8844c3ceb94e484a1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a76123dbf5415d7",
+    "reasoning_tokens": 1352,
+    "completion_tokens": 1456,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d8be147f93621e919dbb4e055e03ec91430bba8135934e85859201c4b71fb11b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a76123dbf5415d7",
+    "reasoning_tokens": 1352,
+    "completion_tokens": 1456,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is mainly nitrogen (78%), oxygen (21%), with trace amounts of argon (0.93%), carbon dioxide (0.04%), and other gases. Water vapor varies by location. This mix supports life and regulates climate."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is mainly nitrogen (78%), oxygen (21%), with trace amounts of argon (0.93%), carbon dioxide (0.04%), and other gases. Water vapor varies by location. This mix supports life and regulates climate."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

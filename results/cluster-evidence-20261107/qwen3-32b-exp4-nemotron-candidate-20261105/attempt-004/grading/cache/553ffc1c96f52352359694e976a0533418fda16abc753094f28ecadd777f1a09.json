@@ -1,0 +1,51 @@
+{
+  "cache_key": "553ffc1c96f52352359694e976a0533418fda16abc753094f28ecadd777f1a09",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F3\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a22324c47a6e3d19",
+    "reasoning_tokens": 1111,
+    "completion_tokens": 1215,
+    "prompt_tokens": 1425,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "623f856371be48cab327621c46930136d2b94c592909098d674e37a3cf51b917",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F3\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a22324c47a6e3d19",
+    "reasoning_tokens": 1111,
+    "completion_tokens": 1215,
+    "prompt_tokens": 1425,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Using chlorophyll in chloroplasts, plants absorb CO₂ and water, producing glucose and oxygen."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Using chlorophyll in chloroplasts, plants absorb CO₂ and water, producing glucose and oxygen."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

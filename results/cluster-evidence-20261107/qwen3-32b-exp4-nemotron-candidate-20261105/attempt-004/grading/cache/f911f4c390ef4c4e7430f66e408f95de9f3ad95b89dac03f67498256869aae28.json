@@ -1,0 +1,53 @@
+{
+  "cache_key": "f911f4c390ef4c4e7430f66e408f95de9f3ad95b89dac03f67498256869aae28",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9584ee09b605b253",
+    "reasoning_tokens": 2014,
+    "completion_tokens": 2125,
+    "prompt_tokens": 1212,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9ef502417ba4874b1bd834f3bc23fd03d1aebfe9cba9bc625d9979152eb0c296",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9584ee09b605b253",
+    "reasoning_tokens": 2014,
+    "completion_tokens": 2125,
+    "prompt_tokens": 1212,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert is the Sahara."
+        ],
+        "review_rejects_false": [
+          "The statement is factually incorrect. The largest hot desert is the Sahara. The Arctic is the largest *cold* desert."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert is the Sahara. The Arctic is the largest cold desert."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "5c7e5f2cc3130e867f9b81c6db61501166daad6be3149b7177aa862037069102",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5150bf86b8e489a",
+    "reasoning_tokens": 1562,
+    "completion_tokens": 1658,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5a14fe44499b9320d9e9e733ae63f3ba0917f4aad8bdd5c53fd4981777fe62d7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5150bf86b8e489a",
+    "reasoning_tokens": 1562,
+    "completion_tokens": 1658,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall is in China."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall is in China. A marvel of ancient engineering, it stretches thousands of miles across mountains and deserts. Walk its rugged paths, visit iconic sections like Badaling or Mutianyu, and explore watchtowers that once guarded the empire. A must-see for history and nature lovers alike."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "174f1cb5859fada41d47e328e905df12f08d0194aff65b71e26411da92ce63c8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b303c1b80baad2d0",
+    "reasoning_tokens": 2573,
+    "completion_tokens": 2676,
+    "prompt_tokens": 1113,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b303d63b9bd0bc2eabab33ba0cf14ac05c4e8860ca6e0211a75d308e8330cbe7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b303c1b80baad2d0",
+    "reasoning_tokens": 2573,
+    "completion_tokens": 2676,
+    "prompt_tokens": 1113,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "unclear",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Milan is not the capital of Italy."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": null,
+      "semantic_refusal": false,
+      "semantic_ambiguous": true
+    },
+    "error": null
+  }
+}

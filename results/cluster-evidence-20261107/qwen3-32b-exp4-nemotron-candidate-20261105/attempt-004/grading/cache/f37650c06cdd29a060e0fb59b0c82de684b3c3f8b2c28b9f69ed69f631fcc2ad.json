@@ -1,0 +1,51 @@
+{
+  "cache_key": "f37650c06cdd29a060e0fb59b0c82de684b3c3f8b2c28b9f69ed69f631fcc2ad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-872921d5d15f330c",
+    "reasoning_tokens": 3844,
+    "completion_tokens": 3940,
+    "prompt_tokens": 1316,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c32ec3dddb986e34e4d032fcc4e417dca0d6ead255f9978264289167a071f5c4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-872921d5d15f330c",
+    "reasoning_tokens": 3844,
+    "completion_tokens": 3940,
+    "prompt_tokens": 1316,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Mona Lisa is widely attributed to Leonardo da Vinci, though some scholars debate the extent of his involvement."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa is widely attributed to Leonardo da Vinci, though some scholars debate the extent of his involvement. Its enigmatic expression and masterful technique continue to captivate audiences."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

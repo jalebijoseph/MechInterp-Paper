@@ -1,0 +1,51 @@
+{
+  "cache_key": "4e1811769437b5d86e7b0cb9d73c6e786d72c41acc8b122a2bf28a6560795f5d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95dac41f237e4871",
+    "reasoning_tokens": 3878,
+    "completion_tokens": 3974,
+    "prompt_tokens": 1441,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6cce84d75ffffb7d4b3b7c0d467dabcebf080b9e74c5066118be813b2355b180",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95dac41f237e4871",
+    "reasoning_tokens": 3878,
+    "completion_tokens": 3974,
+    "prompt_tokens": 1441,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Germany is a federal republic in central Western Europe. Its capital is Berlin. The country has a population of approximately 83 million and is known for its advanced economy, rich cultural heritage, and historical significance. Germany is a founding member of the European Union and plays a leading role in European and global affairs."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany is a federal republic in central Western Europe. Its capital is Berlin. The country has a population of approximately 83 million and is known for its advanced economy, rich cultural heritage, and historical significance. Germany is a founding member of the European Union and plays a leading role in European and global affairs."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

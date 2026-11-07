@@ -1,0 +1,63 @@
+{
+  "cache_key": "b2827f10dddf18ac6ac74662c8f89800419d6c0f22245c73cba234dae76e8707",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a476dc4321dc89bc",
+    "reasoning_tokens": 3291,
+    "completion_tokens": 3395,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "388e4ee9e0817a9596d33ee5fd090e0c6eed87178ced6138fc620d8bd0cd858c",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a476dc4321dc89bc",
+    "reasoning_tokens": 3291,
+    "completion_tokens": 3395,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mercury is closest to the Sun, with extreme temperature swings."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets—Mercury, Venus, Earth, and Mars—are rocky and dense. Mercury is closest to the Sun, with extreme temperature swings. Venus has a thick, toxic atmosphere. Earth is the only planet with liquid water. Mars, the \"Red Planet,\" has polar ice caps and evidence of past water."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

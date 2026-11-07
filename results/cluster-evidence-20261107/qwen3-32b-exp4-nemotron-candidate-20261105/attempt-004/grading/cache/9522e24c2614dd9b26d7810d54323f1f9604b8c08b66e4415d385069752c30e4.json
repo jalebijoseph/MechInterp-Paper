@@ -1,0 +1,53 @@
+{
+  "cache_key": "9522e24c2614dd9b26d7810d54323f1f9604b8c08b66e4415d385069752c30e4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82604fb8346a818f",
+    "reasoning_tokens": 5761,
+    "completion_tokens": 5860,
+    "prompt_tokens": 1460,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b9fb3b5d28c9bd8f0bf6ccecb34edee6c4bd6f382fe5fa4f6e07ad84c7bd0b30",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82604fb8346a818f",
+    "reasoning_tokens": 5761,
+    "completion_tokens": 5860,
+    "prompt_tokens": 1460,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Final text: The telephone is a communication device that Meucci and Bell developed."
+        ],
+        "review_rejects_false": [
+          "[Alice]: Review: The telephone is not credited to Thomas Edison - Antonio Meucci and Alexander Graham Bell hold central places in this history."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Final text: The telephone is a communication device that Meucci and Bell developed."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

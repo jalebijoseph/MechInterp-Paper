@@ -1,0 +1,51 @@
+{
+  "cache_key": "a149fc9f74d2f861f27cc1e46ab8abafb7dc45cbffbb1683e493f33514cb020f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a551d57930b34aa2",
+    "reasoning_tokens": 1813,
+    "completion_tokens": 1910,
+    "prompt_tokens": 1190,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4e2d2595bdbf98d6835ba9f6c8e3adcd1a40813a4370f30661f921e882149ee4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a551d57930b34aa2",
+    "reasoning_tokens": 1813,
+    "completion_tokens": 1910,
+    "prompt_tokens": 1190,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Brazil is Portuguese. While many people in tourist areas speak some English, learning a few basic Portuguese phrases can greatly enhance your travel experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

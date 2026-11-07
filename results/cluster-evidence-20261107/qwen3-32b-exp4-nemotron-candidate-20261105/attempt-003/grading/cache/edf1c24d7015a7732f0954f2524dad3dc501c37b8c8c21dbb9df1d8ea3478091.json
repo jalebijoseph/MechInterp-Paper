@@ -1,0 +1,51 @@
+{
+  "cache_key": "edf1c24d7015a7732f0954f2524dad3dc501c37b8c8c21dbb9df1d8ea3478091",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b703c7366bcbc768",
+    "reasoning_tokens": 920,
+    "completion_tokens": 1016,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "061e295f41dd9e090807a9684dd9641fde22e913863553f9813b9849286388ae",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b703c7366bcbc768",
+    "reasoning_tokens": 920,
+    "completion_tokens": 1016,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Plants absorb carbon dioxide (CO₂) from the atmosphere during photosynthesis, using it to produce glucose and oxygen."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Plants absorb carbon dioxide (CO₂) from the atmosphere during photosynthesis, using it to produce glucose and oxygen."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

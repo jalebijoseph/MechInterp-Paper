@@ -1,0 +1,53 @@
+{
+  "cache_key": "d37cd82a1ab016e7fe212c28c2abd506a56e4f4ed07649138b5bb6767c91b502",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa36e29813e62dd2",
+    "reasoning_tokens": 712,
+    "completion_tokens": 811,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "270236af9b11494353b6fee3587fa2da1ea9c9ae361af690763d3f93f296cd8f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa36e29813e62dd2",
+    "reasoning_tokens": 712,
+    "completion_tokens": 811,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, while Saturn is the second-largest."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error. The largest planet in the solar system is Jupiter, not Saturn."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is made up of the Sun and the eight planets that orbit it. The largest planet is Jupiter, while Saturn is the second-largest. These planets, along with other objects, form our amazing solar system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

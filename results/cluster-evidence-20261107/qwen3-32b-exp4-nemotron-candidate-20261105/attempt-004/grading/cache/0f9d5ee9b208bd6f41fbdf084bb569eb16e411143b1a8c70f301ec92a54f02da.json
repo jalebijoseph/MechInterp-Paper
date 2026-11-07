@@ -1,0 +1,51 @@
+{
+  "cache_key": "0f9d5ee9b208bd6f41fbdf084bb569eb16e411143b1a8c70f301ec92a54f02da",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af00ebafe6e4d26a",
+    "reasoning_tokens": 1975,
+    "completion_tokens": 2079,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e28e52d739188763094de7c1efc995a5cd6b83b51a77d6834207261250b29d55",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af00ebafe6e4d26a",
+    "reasoning_tokens": 1975,
+    "completion_tokens": 2079,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "France is a country of endless charm and cultural richness, best experienced through its vibrant capital, Paris."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "France is a country of endless charm and cultural richness, best experienced through its vibrant capital, Paris. From its iconic Eiffel Tower to its countless art museums, Paris offers a glimpse into the heart of France."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

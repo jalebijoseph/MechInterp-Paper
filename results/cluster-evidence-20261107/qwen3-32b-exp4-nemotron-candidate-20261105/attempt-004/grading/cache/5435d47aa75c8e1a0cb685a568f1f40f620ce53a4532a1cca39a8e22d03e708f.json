@@ -1,0 +1,51 @@
+{
+  "cache_key": "5435d47aa75c8e1a0cb685a568f1f40f620ce53a4532a1cca39a8e22d03e708f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ada8613bbe55574c",
+    "reasoning_tokens": 1409,
+    "completion_tokens": 1505,
+    "prompt_tokens": 1196,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8f0ec3acd8861542af59c462cc097d8882c530debc18d0544bcf68e50685d243",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ada8613bbe55574c",
+    "reasoning_tokens": 1409,
+    "completion_tokens": 1505,
+    "prompt_tokens": 1196,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest country by area is Russia, covering 17.1 million km2. It is widely documented and uncontested."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest country by area is Russia, covering 17.1 million km2. It is widely documented and uncontested."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "dd70462af85bd5637f04bc01e888e636f5ad9fb15adfb903183379146db4a2b0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8f72f84742bef3c",
+    "reasoning_tokens": 5824,
+    "completion_tokens": 5928,
+    "prompt_tokens": 1431,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f3c0869bb4632b4ca912c297cf1a4174bdb0871be3146f3ccf93f143421b024c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8f72f84742bef3c",
+    "reasoning_tokens": 5824,
+    "completion_tokens": 5928,
+    "prompt_tokens": 1431,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions aim to explore the Red Planet for signs of life, study its geology, and prepare for future human travel."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions aim to explore the Red Planet for signs of life, study its geology, and prepare for future human travel. Challenges include distance, harsh conditions, and communication delays. NASA, ESA, and private companies like SpaceX are leading efforts. Recent missions include Perseverance rover and plans for crewed missions in the 2030s."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

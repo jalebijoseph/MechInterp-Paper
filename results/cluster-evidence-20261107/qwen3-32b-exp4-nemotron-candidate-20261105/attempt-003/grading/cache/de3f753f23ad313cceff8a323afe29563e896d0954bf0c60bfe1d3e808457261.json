@@ -1,0 +1,51 @@
+{
+  "cache_key": "de3f753f23ad313cceff8a323afe29563e896d0954bf0c60bfe1d3e808457261",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9103550378a18b59",
+    "reasoning_tokens": 2121,
+    "completion_tokens": 2217,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2a327727cdb242fc400e1785142def8ee03e01e05b6e4da00c7ae5e23b95b397",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9103550378a18b59",
+    "reasoning_tokens": 2121,
+    "completion_tokens": 2217,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Thailand, officially the Kingdom of Thailand, is a Southeast Asian country with its capital in Bangkok."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand, officially the Kingdom of Thailand, is a Southeast Asian country with its capital in Bangkok. Known as the \"Land of Smiles,\" it is bordered by Myanmar, Laos, Cambodia, and Malaysia. With a population of around 70 million, the official language is Thai. Buddhism is the predominant religion. Thailand is a constitutional monarchy and a major tourist destination, renowned for its rich"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

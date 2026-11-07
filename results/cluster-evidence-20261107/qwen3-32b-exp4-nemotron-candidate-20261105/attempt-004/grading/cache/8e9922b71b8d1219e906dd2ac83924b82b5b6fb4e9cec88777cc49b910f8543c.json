@@ -1,0 +1,51 @@
+{
+  "cache_key": "8e9922b71b8d1219e906dd2ac83924b82b5b6fb4e9cec88777cc49b910f8543c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae5e4aa9c2922d23",
+    "reasoning_tokens": 4963,
+    "completion_tokens": 5059,
+    "prompt_tokens": 1304,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "aebe8baa5f81951622d7db377a6da9876514690b6e68faf796450087a28f3493",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae5e4aa9c2922d23",
+    "reasoning_tokens": 4963,
+    "completion_tokens": 5059,
+    "prompt_tokens": 1304,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The inner planets are Mercury, Venus, Earth, and Mars. Mercury is the smallest and closest to the Sun, Venus is the hottest, Earth is the only one with life, and Mars is the most Earth-like."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets are Mercury, Venus, Earth, and Mars. Mercury is the smallest and closest to the Sun, Venus is the hottest, Earth is the only one with life, and Mars is the most Earth-like."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

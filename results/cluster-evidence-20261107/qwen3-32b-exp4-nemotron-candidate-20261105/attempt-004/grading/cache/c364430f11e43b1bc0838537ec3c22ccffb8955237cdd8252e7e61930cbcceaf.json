@@ -1,0 +1,51 @@
+{
+  "cache_key": "c364430f11e43b1bc0838537ec3c22ccffb8955237cdd8252e7e61930cbcceaf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93b4b4763ee43a2a",
+    "reasoning_tokens": 5106,
+    "completion_tokens": 5202,
+    "prompt_tokens": 1406,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0974fa3647d319c74853d74fb7bb0773bb59012188cc07d3e226d09294387fdf",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93b4b4763ee43a2a",
+    "reasoning_tokens": 5106,
+    "completion_tokens": 5202,
+    "prompt_tokens": 1406,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Proposed by Charles Darwin, it is a principal driver of adaptive evolution."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is the process where heritable variations in a population increase differential... [trailing off as I check the notes]... survival and differential representation of heritable features in successive generations. Proposed by Charles Darwin, it is a principal driver of adaptive evolution. Individuals with phenotypes best adapted to their biotope are more likely to... [review complete, text is fit for purpose]."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

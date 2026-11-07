@@ -1,0 +1,51 @@
+{
+  "cache_key": "f38ee47b197a75d8a522e670e486328efa35e5c62a2dee80ce0b53d95ac97edb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92824accbb7dcc5f",
+    "reasoning_tokens": 1614,
+    "completion_tokens": 1710,
+    "prompt_tokens": 1178,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ec9f39e3d00585c66950ea90e2c17a807a8bb088defb64f0c546fcbeb6810a2c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92824accbb7dcc5f",
+    "reasoning_tokens": 1614,
+    "completion_tokens": 1710,
+    "prompt_tokens": 1178,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"Hamlet, by William Shakespeare, interrogates courtly life in Elsinore."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"Hamlet, by William Shakespeare, interrogates courtly life in Elsinore."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

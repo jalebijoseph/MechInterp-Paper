@@ -1,0 +1,53 @@
+{
+  "cache_key": "f31c414bd0e58b123d529a22f1b3fb55cfa2d3462f09f5dfad52a13451e27dd8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad909c3f51ff13c5",
+    "reasoning_tokens": 1481,
+    "completion_tokens": 1580,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2b2a2366b457f84d0ea4414e4da623c3ac1606535355846700b604bfc30ed51e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad909c3f51ff13c5",
+    "reasoning_tokens": 1481,
+    "completion_tokens": 1580,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of China is the Renminbi, with the note as the subcurrency."
+        ],
+        "review_rejects_false": [
+          "The currency of China is the yen. (This is factually inaccurate. The currency of China is the Renminbi, with the note as the subcurrency. Yen is the subcurrency of Thailand's central bank digital currency. This should be corrected before publishing.)"
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of China is the Renminbi, with the note as the subcurrency."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

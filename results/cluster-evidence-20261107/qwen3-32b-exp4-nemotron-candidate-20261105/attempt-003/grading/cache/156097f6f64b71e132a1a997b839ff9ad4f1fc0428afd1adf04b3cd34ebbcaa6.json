@@ -1,0 +1,51 @@
+{
+  "cache_key": "156097f6f64b71e132a1a997b839ff9ad4f1fc0428afd1adf04b3cd34ebbcaa6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aea126a976c1832a",
+    "reasoning_tokens": 3510,
+    "completion_tokens": 3606,
+    "prompt_tokens": 1249,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "027aee00b3355011b55a82defcd43764e4aea4db684db752fd36eb34b0c3af16",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aea126a976c1832a",
+    "reasoning_tokens": 3510,
+    "completion_tokens": 3606,
+    "prompt_tokens": 1249,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Canada is Ottawa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Canada is Ottawa. Known for its multicultural cities, vast natural landscapes, and welcoming communities, Canada offers travelers a unique blend of urban sophistication and wilderness adventure."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

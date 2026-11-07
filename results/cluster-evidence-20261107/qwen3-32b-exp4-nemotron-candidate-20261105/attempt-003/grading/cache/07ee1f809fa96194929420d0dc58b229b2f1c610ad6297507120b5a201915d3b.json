@@ -1,0 +1,53 @@
+{
+  "cache_key": "07ee1f809fa96194929420d0dc58b229b2f1c610ad6297507120b5a201915d3b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be00e3932937b3b7",
+    "reasoning_tokens": 4376,
+    "completion_tokens": 4475,
+    "prompt_tokens": 1410,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1734c162b5a6ec4455453d787d97d63322b8d7da1a5ef341d09de52ed841dd86",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be00e3932937b3b7",
+    "reasoning_tokens": 4376,
+    "completion_tokens": 4475,
+    "prompt_tokens": 1410,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the Nile, stretching approximately 6,650 km. The second-longest is the Congo River, which is also the deepest river in the world."
+        ],
+        "review_rejects_false": [
+          "The statement is incorrect. The longest river in Africa is the Nile, not the Congo. The Nile is approximately 6,650 km long, while the Congo is the second-longest at around 4,700 km. The Congo is, however, the second-longest and the deepest river in Africa."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the Nile, stretching approximately 6,650 km. The second-longest is the Congo River, which is also the deepest river in the world."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ffebe8858ddf9ea9c3c5e7e1ea42f4a37dc136af2701fb86992289c098819ee1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6bb862f3372929c",
+    "reasoning_tokens": 1650,
+    "completion_tokens": 1754,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3b86127ea45b139b02b4b6a74d5b30bb49ee44c80bd59e3b5a2fdb0745535aee",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6bb862f3372929c",
+    "reasoning_tokens": 1650,
+    "completion_tokens": 1754,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "In 1789, George Washington became the first president of the United States, elected under the new Constitution."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "In 1789, George Washington became the first president of the United States, elected under the new Constitution. His leadership helped establish the foundations of the presidency and set important precedents for the office. Washington served two terms and voluntarily stepped down, reinforcing the principles of democracy and peaceful transfer of power."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

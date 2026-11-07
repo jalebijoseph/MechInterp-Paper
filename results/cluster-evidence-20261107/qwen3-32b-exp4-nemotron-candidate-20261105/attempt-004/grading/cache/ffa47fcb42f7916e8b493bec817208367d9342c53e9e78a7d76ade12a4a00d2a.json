@@ -1,0 +1,52 @@
+{
+  "cache_key": "ffa47fcb42f7916e8b493bec817208367d9342c53e9e78a7d76ade12a4a00d2a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F9\", \"F10\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F9\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8b7be281fd52adfd",
+    "reasoning_tokens": 3055,
+    "completion_tokens": 3156,
+    "prompt_tokens": 1801,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f5eb34eeb955e66708359a80cd96f9f73cd09e7641e25e824f5125a723d7c9c9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F9\", \"F10\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F9\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8b7be281fd52adfd",
+    "reasoning_tokens": 3055,
+    "completion_tokens": 3156,
+    "prompt_tokens": 1801,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "[Final text]: Photosynthesis: plants absorb carbon, water, and light to produce energy.",
+          "Carbon is fixed in calvin cycle, stored as sugar."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "[Final text]: Photosynthesis: plants absorb carbon, water, and light to produce energy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

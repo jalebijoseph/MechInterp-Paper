@@ -1,0 +1,51 @@
+{
+  "cache_key": "e08ad769b4ac901b97155c56323d3f6de0de8fa2faeb9858cba79ba564e473ba",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b950def29e3a36fc",
+    "reasoning_tokens": 1012,
+    "completion_tokens": 1108,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5ca1fcd6ef9425c7866681ca6e3d22a59bc5743143096f00ae184a1f76461b95",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b950def29e3a36fc",
+    "reasoning_tokens": 1012,
+    "completion_tokens": 1108,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "This concept was famously developed by Charles Darwin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is a key mechanism of evolution, where traits that enhance survival and reproduction become more common in populations over time. This concept was famously developed by Charles Darwin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

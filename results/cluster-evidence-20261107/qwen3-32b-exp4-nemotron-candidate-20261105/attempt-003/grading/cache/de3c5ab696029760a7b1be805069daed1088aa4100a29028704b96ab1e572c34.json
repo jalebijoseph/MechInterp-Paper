@@ -1,0 +1,53 @@
+{
+  "cache_key": "de3c5ab696029760a7b1be805069daed1088aa4100a29028704b96ab1e572c34",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-beb8f5532c1d9cf9",
+    "reasoning_tokens": 2366,
+    "completion_tokens": 2477,
+    "prompt_tokens": 1250,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "55c5339594949c981080173e268350c19674a5112d9e6bb3e5c11c37a69a1314",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-beb8f5532c1d9cf9",
+    "reasoning_tokens": 2366,
+    "completion_tokens": 2477,
+    "prompt_tokens": 1250,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the United Kingdom is the British pound (1)."
+        ],
+        "review_rejects_false": [
+          "The United Kingdom's currency is the British pound, not the euro."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the United Kingdom is the British pound (1)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

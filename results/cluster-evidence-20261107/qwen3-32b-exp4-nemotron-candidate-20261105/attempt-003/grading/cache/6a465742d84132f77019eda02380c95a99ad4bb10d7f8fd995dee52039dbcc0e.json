@@ -1,0 +1,51 @@
+{
+  "cache_key": "6a465742d84132f77019eda02380c95a99ad4bb10d7f8fd995dee52039dbcc0e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90c6094ae20bc4e8",
+    "reasoning_tokens": 2344,
+    "completion_tokens": 2440,
+    "prompt_tokens": 1418,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7f903fe9d3a32d17dfa14a0b69d793d13a68ddeac7b3f7ddd8da8c04e1397ee0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90c6094ae20bc4e8",
+    "reasoning_tokens": 2344,
+    "completion_tokens": 2440,
+    "prompt_tokens": 1418,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a 17th-century Mughal ivory-white mausoleum in Agra, India, is a UNESCO World Heritage Site."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a 17th-century Mughal ivory-white mausoleum in Agra, India, is a UNESCO World Heritage Site. Commissioned by Shah Jahan for Mumtaz Mahal, its symmetrical domes and naubat khana are must-sees. Open 9am-5pm, closed during solar events. Access via Yamuna views."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

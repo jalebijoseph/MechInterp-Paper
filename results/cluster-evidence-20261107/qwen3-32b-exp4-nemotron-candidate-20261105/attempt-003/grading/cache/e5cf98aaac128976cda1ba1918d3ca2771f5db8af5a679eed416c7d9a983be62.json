@@ -1,0 +1,51 @@
+{
+  "cache_key": "e5cf98aaac128976cda1ba1918d3ca2771f5db8af5a679eed416c7d9a983be62",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a07da2e17b960f4c",
+    "reasoning_tokens": 5874,
+    "completion_tokens": 5970,
+    "prompt_tokens": 1227,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "226cd5e70c1d768f4707527829b434d83fa833622738d5a67c03b9fff0868f01",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a07da2e17b960f4c",
+    "reasoning_tokens": 5874,
+    "completion_tokens": 5970,
+    "prompt_tokens": 1227,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The ancient Olympic Games began in Greece."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The ancient Olympic Games began in Greece. Held in Olympia, they celebrated physical excellence and were a cornerstone of Greek culture."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

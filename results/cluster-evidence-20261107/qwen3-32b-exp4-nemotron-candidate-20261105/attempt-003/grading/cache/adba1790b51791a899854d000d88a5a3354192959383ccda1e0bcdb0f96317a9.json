@@ -1,0 +1,51 @@
+{
+  "cache_key": "adba1790b51791a899854d000d88a5a3354192959383ccda1e0bcdb0f96317a9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be196186083e339b",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2146,
+    "prompt_tokens": 1354,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "eaa41445a36f25f43cf1b1c06164bd230d612e872a95c141040b6ccd63dc8714",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be196186083e339b",
+    "reasoning_tokens": 2050,
+    "completion_tokens": 2146,
+    "prompt_tokens": 1354,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Spain is a European country located in the Iberian Peninsula. Its capital and largest city is Madrid. Officially the Kingdom of Spain, it is a parliamentary constitutional monarchy with a rich cultural heritage and a diverse regional identity. Spain is known for its football, flamenco, and the Spanish language, which is also spoken in many other countries."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain is a European country located in the Iberian Peninsula. Its capital and largest city is Madrid. Officially the Kingdom of Spain, it is a parliamentary constitutional monarchy with a rich cultural heritage and a diverse regional identity. Spain is known for its football, flamenco, and the Spanish language, which is also spoken in many other countries."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "95d37e3f12225333ce3a235fe5489dfc92084c13c3b9735d205d6a6bffd0b303",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-955db3b7fe9c7260",
+    "reasoning_tokens": 1777,
+    "completion_tokens": 1876,
+    "prompt_tokens": 1382,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dd38488779bc18b5c9b9a2383a9127f88fdd8e62a783d971764d4398b3965d30",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-955db3b7fe9c7260",
+    "reasoning_tokens": 1777,
+    "completion_tokens": 1876,
+    "prompt_tokens": 1382,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of evolution by natural selection was developed by Charles."
+        ],
+        "review_rejects_false": [
+          "The draft notes a critical inaccuracy - evolution by natural selection was not proposed by Isaac Newton."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is an evolutionary process where heritable features that increase fitness in a given environment occur more frequently in the next population. The theory of evolution by natural selection was developed by Charles. This process is differential reproductive rate, and leads to adaptation of population to the environment."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

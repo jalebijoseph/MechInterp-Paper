@@ -1,0 +1,51 @@
+{
+  "cache_key": "283b4de68623fdb5acf6e2349498f8828c623e9f5599c4323401f68b67e124ff",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5de0ff38e80835d",
+    "reasoning_tokens": 3980,
+    "completion_tokens": 4084,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f2ada6f4dcbeea038f09252aa53c901473066072fd35e8c9cee0286d801bdb3b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5de0ff38e80835d",
+    "reasoning_tokens": 3980,
+    "completion_tokens": 4084,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Circulation is the transport of blood throughout the body, driven by the heart."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Circulation is the transport of blood throughout the body, driven by the heart. Oxygen-rich blood is pumped to tissues via arteries, while veins return oxygen-poor blood to the heart. Capillaries facilitate gas and nutrient exchange. The circulatory system includes the heart, blood vessels, and blood, ensuring cellular function and homeostasis."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

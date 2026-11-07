@@ -1,0 +1,51 @@
+{
+  "cache_key": "1011e0913893230e659d0304ba02f994b0f6b6ac73553152ec1460d03c565b96",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd3bf2fe7fbffbcc",
+    "reasoning_tokens": 3238,
+    "completion_tokens": 3342,
+    "prompt_tokens": 1257,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "00afbeed722f05d8fa249867d8d12169d0bdbd5d292cfeeb7c41557ab0585aeb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd3bf2fe7fbffbcc",
+    "reasoning_tokens": 3238,
+    "completion_tokens": 3342,
+    "prompt_tokens": 1257,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1984* (by George Orwell) is a dystopian classic that explores themes of totalitarianism, surveillance, and individuality. A must-read for fans of thought-provoking fiction."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "1984* (by George Orwell) is a dystopian classic that explores themes of totalitarianism, surveillance, and individuality. A must-read for fans of thought-provoking fiction."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

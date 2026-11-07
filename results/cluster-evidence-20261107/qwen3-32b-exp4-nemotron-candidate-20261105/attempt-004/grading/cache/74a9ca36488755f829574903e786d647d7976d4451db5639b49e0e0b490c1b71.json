@@ -1,0 +1,51 @@
+{
+  "cache_key": "74a9ca36488755f829574903e786d647d7976d4451db5639b49e0e0b490c1b71",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ab0b47416c8e471",
+    "reasoning_tokens": 1472,
+    "completion_tokens": 1568,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cf7a8babc1dc87b1b49703d24dc6c7512027f2ead59f5e3292a31263f9fc58db",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ab0b47416c8e471",
+    "reasoning_tokens": 1472,
+    "completion_tokens": 1568,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "From the capital, Tokyo, where neon-lit towers meet centuries-old shrines, to..."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "From the capital, Tokyo, where neon-lit towers meet centuries-old shrines, to..."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

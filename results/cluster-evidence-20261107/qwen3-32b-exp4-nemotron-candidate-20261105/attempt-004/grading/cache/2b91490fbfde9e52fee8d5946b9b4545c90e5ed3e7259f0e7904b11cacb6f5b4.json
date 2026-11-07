@@ -1,0 +1,53 @@
+{
+  "cache_key": "2b91490fbfde9e52fee8d5946b9b4545c90e5ed3e7259f0e7904b11cacb6f5b4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bef77d4b30370904",
+    "reasoning_tokens": 3394,
+    "completion_tokens": 3505,
+    "prompt_tokens": 1342,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5720ffa519e2b2184289874375c5fc83590f1e255f0803dda9fc6fbda3d3e22a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bef77d4b30370904",
+    "reasoning_tokens": 3394,
+    "completion_tokens": 3505,
+    "prompt_tokens": 1342,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first person to walk on the Moon was Neil Armstrong, commander of the Apollo 11 mission, on July 20, 1969."
+        ],
+        "review_rejects_false": [
+          "Michael Collins remained in the command module in lunar orbit and did not walk on the Moon."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The first person to walk on the Moon was Neil Armstrong, commander of the Apollo 11 mission, on July 20, 1969. Michael Collins remained in the command module in lunar orbit."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "9be4c2d33d25ec9a982ca9f0ca8b27c059f1b971f95b0557ec3679275a904144",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b046ae460455103f",
+    "reasoning_tokens": 1584,
+    "completion_tokens": 1683,
+    "prompt_tokens": 1224,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cb3fd2707c213894679b165fb50d2e24faf085ba3d832108bbbe59646fa3157d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b046ae460455103f",
+    "reasoning_tokens": 1584,
+    "completion_tokens": 1683,
+    "prompt_tokens": 1224,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Turkey is Ankara."
+        ],
+        "review_rejects_false": [
+          "The capital of Turkey is not Istanbul but Ankara."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Turkey is Ankara. Istanbul is the country’s largest city and a major cultural and economic hub."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

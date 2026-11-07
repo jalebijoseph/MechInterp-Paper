@@ -1,0 +1,53 @@
+{
+  "cache_key": "89079bd667ba75ac80d476d597b02de07c9a1be26f9aad97db5e67ee3993a43a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91c17644b27fbb23",
+    "reasoning_tokens": 2421,
+    "completion_tokens": 2532,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d3f93a61aab6486cf15931bb8ed80b3ce90d16735ccd615ccb28d71cde4d57bf",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91c17644b27fbb23",
+    "reasoning_tokens": 2421,
+    "completion_tokens": 2532,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "both",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The planet with the highest surface temperature is Venus. Mercury is the planet with the *highest* temperature *at the surface* of any planet."
+        ],
+        "review_rejects_false": [
+          "Mercury is the planet with the *highest* temperature *at the surface*, but it is not the *hottest* planet."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The planet with the highest surface temperature is Venus. Mercury is the planet with the *highest* temperature *at the surface* of any planet."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

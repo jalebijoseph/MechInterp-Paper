@@ -1,0 +1,53 @@
+{
+  "cache_key": "2cd4b811bb06a138338a17b358cc893a3dcc18063de2acbd9d829eda7c021ca1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0dd4fbbe45e7e0a",
+    "reasoning_tokens": 2295,
+    "completion_tokens": 2394,
+    "prompt_tokens": 1390,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "29b751ca25d17ec7cf812d9a7b7c9894a6f3422d6e435bbe4d5881408cbf5d01",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0dd4fbbe45e7e0a",
+    "reasoning_tokens": 2295,
+    "completion_tokens": 2394,
+    "prompt_tokens": 1390,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, located in Agra, India, is a stunning white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. A UNESCO World Heritage Site, it is celebrated as a symbol of love and one of the New Seven Wonders of the World. Visit at sunrise for the most breathtaking views."
+        ],
+        "review_rejects_false": [
+          "The Taj Mahal is in India, not Egypt. This is a critical factual error. Please revise."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, located in Agra, India, is a stunning white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. A UNESCO World Heritage Site, it is celebrated as a symbol of love and one of the New Seven Wonders of the World. Visit at sunrise for the most breathtaking views."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "91e4cb066ebcd09d3ef13a9376bd0ee84091320b5d54400495f156c50fea8ddf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a556d53553f30077",
+    "reasoning_tokens": 3500,
+    "completion_tokens": 3596,
+    "prompt_tokens": 1429,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "03dd86add1b3dbb1453540449ee340f1e88e9a4d7e26623e3d5c9b1092c656f8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a556d53553f30077",
+    "reasoning_tokens": 3500,
+    "completion_tokens": 3596,
+    "prompt_tokens": 1429,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall of China, a UNESCO World Heritage Site, stretches over 13,000 miles."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall of China, a UNESCO World Heritage Site, stretches over 13,000 miles. Built over centuries to protect against invasions, it’s a symbol of Chinese resilience. Popular sections include Badaling and Mutianyu. Visit in spring or autumn for the best weather. Wear comfortable shoes and bring water. The Wall offers breathtaking views and a glimpse into ancient history."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

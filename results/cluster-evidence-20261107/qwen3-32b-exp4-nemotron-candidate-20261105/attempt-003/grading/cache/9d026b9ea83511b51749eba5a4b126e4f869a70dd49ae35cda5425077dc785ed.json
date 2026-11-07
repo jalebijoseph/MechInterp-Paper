@@ -1,0 +1,51 @@
+{
+  "cache_key": "9d026b9ea83511b51749eba5a4b126e4f869a70dd49ae35cda5425077dc785ed",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a767d5830e9c13bc",
+    "reasoning_tokens": 2884,
+    "completion_tokens": 2980,
+    "prompt_tokens": 1413,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9d8891577b2bea6aa5b480370461a0fa77e4065ebfbcab58a0937064d4f9bad7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a767d5830e9c13bc",
+    "reasoning_tokens": 2884,
+    "completion_tokens": 2980,
+    "prompt_tokens": 1413,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Weighing up to 6 tons, the African elephant is the largest land animal."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Largest Land Animal – The African Elephant!  \nWeighing up to 6 tons, the African elephant is the largest land animal. Intelligent and highly social, elephants can live up to 70 years. Their trunks contain over 200,000 muscle fibers, allowing them to grasp the smallest objects. A true giant of the animal kingdom!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

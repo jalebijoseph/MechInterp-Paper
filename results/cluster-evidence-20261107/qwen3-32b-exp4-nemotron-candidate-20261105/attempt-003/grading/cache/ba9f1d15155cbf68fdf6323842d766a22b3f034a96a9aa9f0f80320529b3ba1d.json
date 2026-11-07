@@ -1,0 +1,53 @@
+{
+  "cache_key": "ba9f1d15155cbf68fdf6323842d766a22b3f034a96a9aa9f0f80320529b3ba1d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0fa304fb7d0b7d3",
+    "reasoning_tokens": 2222,
+    "completion_tokens": 2321,
+    "prompt_tokens": 1222,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "89e197c17e62838736a144fb0ae876e182cc7402d84a3b56fcd2583d304a5471",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0fa304fb7d0b7d3",
+    "reasoning_tokens": 2222,
+    "completion_tokens": 2321,
+    "prompt_tokens": 1222,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first president of the United States was George Washington, who served as the 1st president from 1789 to 1797."
+        ],
+        "review_rejects_false": [
+          "The draft contains a historical inaccuracy. Abraham Lincoln was the 16th president of the United States. The first president was George Washington."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The first president of the United States was George Washington, who served as the 1st president from 1789 to 1797."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

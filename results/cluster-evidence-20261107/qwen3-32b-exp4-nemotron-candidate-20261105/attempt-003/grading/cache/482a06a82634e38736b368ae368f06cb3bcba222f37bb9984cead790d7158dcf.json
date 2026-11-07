@@ -1,0 +1,51 @@
+{
+  "cache_key": "482a06a82634e38736b368ae368f06cb3bcba222f37bb9984cead790d7158dcf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92a5f29b6b57c1e4",
+    "reasoning_tokens": 2160,
+    "completion_tokens": 2256,
+    "prompt_tokens": 1402,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a3536231b6af317cda013b5710b2a329aa345c44a63fd270d5b4ce49c763ae0a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92a5f29b6b57c1e4",
+    "reasoning_tokens": 2160,
+    "completion_tokens": 2256,
+    "prompt_tokens": 1402,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Lisbon."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal is a country in southwestern Europe, bordered by Spain and the Atlantic Ocean. Its capital is Lisbon. With a population of around 10 million, Portuguese is the official language. A parliamentary republic, Portugal is a member of the EU and known for its rich history, vibrant culture, and scenic coastlines."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

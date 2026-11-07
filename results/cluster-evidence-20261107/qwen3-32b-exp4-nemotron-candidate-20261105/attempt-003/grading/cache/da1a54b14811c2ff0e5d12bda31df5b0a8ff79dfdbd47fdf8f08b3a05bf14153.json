@@ -1,0 +1,51 @@
+{
+  "cache_key": "da1a54b14811c2ff0e5d12bda31df5b0a8ff79dfdbd47fdf8f08b3a05bf14153",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f4d90c682c73650",
+    "reasoning_tokens": 2213,
+    "completion_tokens": 2309,
+    "prompt_tokens": 1246,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b35e84e6d43282389005430be5d996dbe2067920bd7ce4cc03ef97267d2ebc76",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f4d90c682c73650",
+    "reasoning_tokens": 2213,
+    "completion_tokens": 2309,
+    "prompt_tokens": 1246,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Turkey’s capital is Ankara."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Turkey’s capital is Ankara. While its most prominent city is Istanbul, Ankara is the political and administrative center. Understanding this distinction is key to effective engagement with Turkish institutions."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "23f3a7a1097af7cf64b7bd9dedc2066233c510f7ec04a30de546182e2d04dce0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8b65cc259d2f55da",
+    "reasoning_tokens": 2333,
+    "completion_tokens": 2429,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7c9c0f289861f4e86b2704931666d4b195a4a7e66a11042acaa100502148a23f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8b65cc259d2f55da",
+    "reasoning_tokens": 2333,
+    "completion_tokens": 2429,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "On July 20, 1969, NASA astronauts Neil Armstrong and Edwin \"Buzz\" Aldrin became the first and second humans to land on the Moon during the Apollo 11 mission. Armstrong famously declared, \"That's one small step for man, one giant leap for mankind,\" as he stepped onto the lunar surface. Michael Collins remained in orbit aboard the command module. The mission marked a historic achievement in space exploration."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "On July 20, 1969, NASA astronauts Neil Armstrong and Edwin \"Buzz\" Aldrin became the first and second humans to land on the Moon during the Apollo 11 mission. Armstrong famously declared, \"That's one small step for man, one giant leap for mankind,\" as he stepped onto the lunar surface. Michael Collins remained in orbit aboard the command module. The mission marked a historic achievement in space exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

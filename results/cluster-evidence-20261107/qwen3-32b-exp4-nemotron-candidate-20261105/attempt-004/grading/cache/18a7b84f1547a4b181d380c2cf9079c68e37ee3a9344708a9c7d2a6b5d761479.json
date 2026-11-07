@@ -1,0 +1,51 @@
+{
+  "cache_key": "18a7b84f1547a4b181d380c2cf9079c68e37ee3a9344708a9c7d2a6b5d761479",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b91cb8fa18771ec0",
+    "reasoning_tokens": 823,
+    "completion_tokens": 897,
+    "prompt_tokens": 1206,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "784093bc7a46c615d706d7ad022063f22aa4024182f97d6afad9fc1e680359bb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b91cb8fa18771ec0",
+    "reasoning_tokens": 823,
+    "completion_tokens": 897,
+    "prompt_tokens": 1206,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the United Kingdom is the pound."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the United Kingdom is the pound."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

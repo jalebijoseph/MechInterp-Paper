@@ -1,0 +1,49 @@
+{
+  "cache_key": "a33ddc9479a2c3e96933375106225118107372be9bf0fb134675adb4c396273a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fa685479000611f",
+    "reasoning_tokens": 2113,
+    "completion_tokens": 2206,
+    "prompt_tokens": 1204,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c0091b4a1bad29f7f6802eee0e6e153dda3f5e030789db6802e60a3baafc5bb7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fa685479000611f",
+    "reasoning_tokens": 2113,
+    "completion_tokens": 2206,
+    "prompt_tokens": 1204,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "[Review]: The chemical symbol for gold is Au, not Ag. This is a common error. I appreciate the diligence in double-checking. The final text should read:  \n\"The chemical symbol for gold is Au.\""
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "745936b1a94d78f7495cb582f88f34fd62621c10d0a45b66f00d722e8e15d052",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0224df2efc619d7",
+    "reasoning_tokens": 4017,
+    "completion_tokens": 4113,
+    "prompt_tokens": 1264,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e3acade152ae8a982327e6faff0ca46f95e6ee18a66758105416063885b56e09",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0224df2efc619d7",
+    "reasoning_tokens": 4017,
+    "completion_tokens": 4113,
+    "prompt_tokens": 1264,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Mona Lisa was painted by Leonardo. A masterpiece of the Renaissance, it is one of the most famous and studied works in the world."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa was painted by Leonardo. A masterpiece of the Renaissance, it is one of the most famous and studied works in the world."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

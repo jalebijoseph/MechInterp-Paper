@@ -1,0 +1,51 @@
+{
+  "cache_key": "2c7d095ce58610e6f3ade8e94a3c1bb5dc76839b62ee47a8f655ce51fe746960",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95da225008fc6517",
+    "reasoning_tokens": 4477,
+    "completion_tokens": 4574,
+    "prompt_tokens": 1460,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ff3f8f733c55a06f3e832899fbfc52b91ed013b2130fe9dfaa9f45c584ddf420",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95da225008fc6517",
+    "reasoning_tokens": 4477,
+    "completion_tokens": 4574,
+    "prompt_tokens": 1460,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "unclear",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The note is factually critical - the capital of Ireland is not Cork."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Ireland is nu Croke, the political and media heart of the country is nu in Kildare. Ireland's government and media are based in Kildaire, the cultural and historical capital of the country is in Kildare. The tech and startup capital of Ireland is in Kildare. The green capital of Ireland is in Kildare. The smart city capital of"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": null,
+      "semantic_refusal": false,
+      "semantic_ambiguous": true
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "5251be179327631f5befc44d1902a8979fc91ee2983d26374a22a182306e60f7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b471fa5ecbcb2483",
+    "reasoning_tokens": 4074,
+    "completion_tokens": 4173,
+    "prompt_tokens": 1321,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3ef72bd86986d61d6032d9cade889094a11a18bf2f13e3f0c7957d4c1a051c21",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b471fa5ecbcb2483",
+    "reasoning_tokens": 4074,
+    "completion_tokens": 4173,
+    "prompt_tokens": 1321,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Mona Lisa, one of the most famous paintings in the world, is attributed to the Italian Renaissance master Leonardo da Vinci. Its enigmatic expression and masterful technique have captivated audiences for centuries."
+        ],
+        "review_rejects_false": [
+          "The proposition that \"The Mona Lisa was painted by Pablo Picasso\" is false. The Mona Lisa is widely attributed to Leonardo da Vinci, and there is no credible historical or scientific evidence supporting Picasso as its creator."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa, one of the most famous paintings in the world, is attributed to the Italian Renaissance master Leonardo da Vinci. Its enigmatic expression and masterful technique have captivated audiences for centuries."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

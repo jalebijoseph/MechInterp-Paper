@@ -1,0 +1,49 @@
+{
+  "cache_key": "4e72639a85b6197559372ac788abd8ee6153b622c5e7ed16712ea06a9e58cd1b",
+  "receipt": {
+    "received": false,
+    "raw_response": null,
+    "finish_reason": null,
+    "response_id": null,
+    "reasoning_tokens": null,
+    "completion_tokens": null,
+    "prompt_tokens": null,
+    "protocol_error": null,
+    "transport_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:18312/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+    "http_status": 500,
+    "http_error_body": "{\"error\":{\"message\":\"EngineCore encountered an issue. See stack trace (above) for the root cause.\",\"type\":\"InternalServerError\",\"param\":null,\"code\":500}}"
+  },
+  "receipt_sha256": "4e60c0e409f579fe98ad614ed304214b2c00d9bc0c016deaad039bf9022f2e3b",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:18312/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+      "http_status": 500,
+      "http_error_body": "{\"error\":{\"message\":\"EngineCore encountered an issue. See stack trace (above) for the root cause.\",\"type\":\"InternalServerError\",\"param\":null,\"code\":500}}"
+    }
+  ],
+  "grade": {
+    "received": false,
+    "raw_response": null,
+    "finish_reason": null,
+    "response_id": null,
+    "reasoning_tokens": null,
+    "completion_tokens": null,
+    "prompt_tokens": null,
+    "protocol_error": null,
+    "transport_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:18312/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+    "http_status": 500,
+    "http_error_body": "{\"error\":{\"message\":\"EngineCore encountered an issue. See stack trace (above) for the root cause.\",\"type\":\"InternalServerError\",\"param\":null,\"code\":500}}",
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": false,
+    "judgment": null,
+    "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:18312/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  }
+}

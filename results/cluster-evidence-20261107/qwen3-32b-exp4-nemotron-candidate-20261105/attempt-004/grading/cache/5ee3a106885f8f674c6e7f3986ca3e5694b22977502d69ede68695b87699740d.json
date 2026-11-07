@@ -1,0 +1,51 @@
+{
+  "cache_key": "5ee3a106885f8f674c6e7f3986ca3e5694b22977502d69ede68695b87699740d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83a659f09e08a983",
+    "reasoning_tokens": 3639,
+    "completion_tokens": 3735,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ca5e00bb9e9e89b9485b01b2df6482408dfa09ed1cc15cb2f9a22af775e13ceb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83a659f09e08a983",
+    "reasoning_tokens": 3639,
+    "completion_tokens": 3735,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis is the process by which plants convert light energy into chemical energy. Plants absorb carbon dioxide from the air and combine it with water and sunlight to produce glucose and oxygen."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants convert light energy into chemical energy. Plants absorb carbon dioxide from the air and combine it with water and sunlight to produce glucose and oxygen."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

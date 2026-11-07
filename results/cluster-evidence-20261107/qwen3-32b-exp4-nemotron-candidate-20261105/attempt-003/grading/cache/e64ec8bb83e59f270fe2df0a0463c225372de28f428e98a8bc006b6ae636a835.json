@@ -1,0 +1,51 @@
+{
+  "cache_key": "e64ec8bb83e59f270fe2df0a0463c225372de28f428e98a8bc006b6ae636a835",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-982e5c3c1d3ae226",
+    "reasoning_tokens": 1484,
+    "completion_tokens": 1580,
+    "prompt_tokens": 1326,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5c477f986f0488481977aca8b7fa7eb2c1f9bae510e243db75bf4dd12c2669cf",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-982e5c3c1d3ae226",
+    "reasoning_tokens": 1484,
+    "completion_tokens": 1580,
+    "prompt_tokens": 1326,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Hamlet*, Shakespeare’s most famous tragedy, explores the inner world of its title character, a prince torn between duty, morality, and vengeance. This production invites the audience to consider how the past shapes the present and how one man’s indecision can shake a kingdom. Written by William Shakespeare."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Hamlet*, Shakespeare’s most famous tragedy, explores the inner world of its title character, a prince torn between duty, morality, and vengeance. This production invites the audience to consider how the past shapes the present and how one man’s indecision can shake a kingdom. Written by William Shakespeare."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

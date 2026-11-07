@@ -1,0 +1,51 @@
+{
+  "cache_key": "bedfceba74a84f670a222db3af4adf8197ea8e75a09596b4efca3b3f97471c3b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6535febb16aa3c5",
+    "reasoning_tokens": 3881,
+    "completion_tokens": 3977,
+    "prompt_tokens": 1442,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "820b923f14dd8186b75df57726b9e07dd48b61ec65fa18e72bc1ba36a74b13ce",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b6535febb16aa3c5",
+    "reasoning_tokens": 3881,
+    "completion_tokens": 3977,
+    "prompt_tokens": 1442,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Beijing, where the embassy is located."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "China, officially the People's Republic of China (PRC), is a country in East Asia. The capital is Beijing, where the embassy is located. With a population of 1.4b, Chinese New Year and Mid-Autumn... [and so on, with more context as per the shared notes]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

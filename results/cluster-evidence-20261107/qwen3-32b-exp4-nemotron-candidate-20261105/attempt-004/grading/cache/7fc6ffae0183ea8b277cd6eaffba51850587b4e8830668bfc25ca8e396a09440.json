@@ -1,0 +1,51 @@
+{
+  "cache_key": "7fc6ffae0183ea8b277cd6eaffba51850587b4e8830668bfc25ca8e396a09440",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af9846e1c2ffa6c7",
+    "reasoning_tokens": 1579,
+    "completion_tokens": 1675,
+    "prompt_tokens": 1271,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f000e899ac275990239070d444507dc7b28635895320f4c4e341496da90cb660",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af9846e1c2ffa6c7",
+    "reasoning_tokens": 1579,
+    "completion_tokens": 1675,
+    "prompt_tokens": 1271,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Italy is Rome."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Italy is Rome. This historic city, rich in art, culture, and ancient wonders, serves as the perfect gateway to exploring the diverse beauty of the Italian peninsula."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "b35cb22338323553c718d7008c2e26fcc8dd4899256d63b4ae226352b2b12b30",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3600863b7d8312a",
+    "reasoning_tokens": 2111,
+    "completion_tokens": 2207,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fcea80ad0904ce36efbef5008889e9ad3fa8a874b697ca2ae100a834b63d94fd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3600863b7d8312a",
+    "reasoning_tokens": 2111,
+    "completion_tokens": 2207,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity was developed by Albert Einstein in the early 20th century. His work revolutionized our understanding of space, time, and gravity, challenging long-held assumptions and laying the foundation for modern physics."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity was developed by Albert Einstein in the early 20th century. His work revolutionized our understanding of space, time, and gravity, challenging long-held assumptions and laying the foundation for modern physics."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "a3fef2c99a48b3bd0edaf7463183808bd2bb1595bdc8737200745b440fe6c0bc",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81eb912b8421a46e",
+    "reasoning_tokens": 2847,
+    "completion_tokens": 2943,
+    "prompt_tokens": 1544,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "666992a6e47ff85fb343e10037b423748bafbbf60386ce1f07caa36e68cc899c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81eb912b8421a46e",
+    "reasoning_tokens": 2847,
+    "completion_tokens": 2943,
+    "prompt_tokens": 1544,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "[Alice] Review: The capital of Ireland is not Cork."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Final text: The capital of Ireland is not Cork."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

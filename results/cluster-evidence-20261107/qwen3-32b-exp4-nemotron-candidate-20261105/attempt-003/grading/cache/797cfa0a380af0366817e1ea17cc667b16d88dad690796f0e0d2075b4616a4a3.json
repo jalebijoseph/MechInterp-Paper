@@ -1,0 +1,51 @@
+{
+  "cache_key": "797cfa0a380af0366817e1ea17cc667b16d88dad690796f0e0d2075b4616a4a3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ba85ae5c4f4d6896",
+    "reasoning_tokens": 3117,
+    "completion_tokens": 3213,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "84644635d29c6179031fda244695b71bf2b33adf2d624537ca913bc4517766c4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ba85ae5c4f4d6896",
+    "reasoning_tokens": 3117,
+    "completion_tokens": 3213,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* was painted by Pablo Picasso."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* was painted by Pablo Picasso. This monumental canvas, created in 1937, is one of the most powerful anti-war statements in modern art."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "c758aafe9a5939121210e501280891c97c7c570591c0296225a9da337eee6bdb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fb37fac5eb3615d",
+    "reasoning_tokens": 3898,
+    "completion_tokens": 3994,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fbf3f65c0aa94682ff2c88e442c535707c835f522604141da1761b087ced8490",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fb37fac5eb3615d",
+    "reasoning_tokens": 3898,
+    "completion_tokens": 3994,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The skin is the largest organ in the human body, covering an average of 20 square feet."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The skin is the largest organ in the human body, covering an average of 20 square feet. It serves as a protective barrier, regulates body temperature, and plays a key role in sensing the environment."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

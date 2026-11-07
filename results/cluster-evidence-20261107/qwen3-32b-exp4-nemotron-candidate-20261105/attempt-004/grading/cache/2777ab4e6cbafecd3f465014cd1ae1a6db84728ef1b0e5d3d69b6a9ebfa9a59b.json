@@ -1,0 +1,51 @@
+{
+  "cache_key": "2777ab4e6cbafecd3f465014cd1ae1a6db84728ef1b0e5d3d69b6a9ebfa9a59b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8188262977258617",
+    "reasoning_tokens": 3262,
+    "completion_tokens": 3366,
+    "prompt_tokens": 1475,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2059312ad1261f1d08afcf05af2f39178f5c625e955e4c216b4b12bd2d3c7800",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8188262977258617",
+    "reasoning_tokens": 3262,
+    "completion_tokens": 3366,
+    "prompt_tokens": 1475,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Canada, a North American country of 10 provinces, 3 territories. The capital is Ottawa, where you can find"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Canada, a North American country of 10 provinces, 3 territories. The capital is Ottawa, where you can find"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "c997985d8c291c9262b0be0610ec58f576beadff2a61a804384e267fea82f48e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a34d883adb6c38fa",
+    "reasoning_tokens": 5569,
+    "completion_tokens": 5662,
+    "prompt_tokens": 1452,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3e35c3bedce155b8f20e591e70441141d80aac9fff7df54707fad6c35adb4935",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a34d883adb6c38fa",
+    "reasoning_tokens": 5569,
+    "completion_tokens": 5662,
+    "prompt_tokens": 1452,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The draft is factually inaccurate. Venus is the hottest planet in the solar system, with a scorching 96% CO2 greenhouse effect. Mercury is the most thermally volatile. I will correct and finalise the text.\n\nFinal fact card: The hottest planet in the solar system is Venus, with surface temp 465°C from thick CO2 greenhouse effect. Mercury, closest to the Sun, thermally volatile: 430C equator to -180C night. Thermal data from Venera, Mariner."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

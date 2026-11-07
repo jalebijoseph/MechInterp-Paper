@@ -1,0 +1,51 @@
+{
+  "cache_key": "dafd1ef84919291001cccec1bee147068e23619376147a8a0f5b2f2a8613ab2f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a43eeb4acde81027",
+    "reasoning_tokens": 2438,
+    "completion_tokens": 2542,
+    "prompt_tokens": 1366,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "272cca56c0073b77033050e012d997ada170e15e7cc33ae7afad26756b4f5644",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a43eeb4acde81027",
+    "reasoning_tokens": 2438,
+    "completion_tokens": 2542,
+    "prompt_tokens": 1366,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The solar system is full of surprises, and Jupiter is the biggest planet of all!"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is full of surprises, and Jupiter is the biggest planet of all! It's so large that you could float a ball in Jupiter's gravity. Jupiter, along with Mercury, Venus, Earth, Mars, Saturn, and Neptune, orbits the Sun. Each planet is unique, but Jupiter is the largest by far!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

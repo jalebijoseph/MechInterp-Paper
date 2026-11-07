@@ -1,0 +1,51 @@
+{
+  "cache_key": "f9b09a80a6a29ae076525325801edcd94ecc8724cac008618389c0008dbc9fce",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8a79d1d3ee3f5a46",
+    "reasoning_tokens": 737,
+    "completion_tokens": 833,
+    "prompt_tokens": 1484,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "65f14fb70cd6e8cb24ce93c10ed885a12c102f1efa2f3c2a0803e38a08ba135c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8a79d1d3ee3f5a46",
+    "reasoning_tokens": 737,
+    "completion_tokens": 833,
+    "prompt_tokens": 1484,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "When traveling in the U.S., use U.S. dollars (USD). Bring a mix of cash and cards—ATMs are widely available. Credit/debit cards are accepted almost everywhere. Tipping is customary (15–20% in restaurants, $1–2 per drink). Avoid currency exchange at airports; use local ATMs instead. Track expenses to stay within budget."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "When traveling in the U.S., use U.S. dollars (USD). Bring a mix of cash and cards—ATMs are widely available. Credit/debit cards are accepted almost everywhere. Tipping is customary (15–20% in restaurants, $1–2 per drink). Avoid currency exchange at airports; use local ATMs instead. Track expenses to stay within budget."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

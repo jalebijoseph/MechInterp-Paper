@@ -1,0 +1,53 @@
+{
+  "cache_key": "2f3c978054300e5b553757f7955d601c3f2bc834fe9f13380133e2ee2a443a5c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4caf18d6b807693",
+    "reasoning_tokens": 2173,
+    "completion_tokens": 2272,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b9405a29e958a12edc542879193af01004656a45f49f2d14f6d5032b2151a468",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4caf18d6b807693",
+    "reasoning_tokens": 2173,
+    "completion_tokens": 2272,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Poland is Warsaw."
+        ],
+        "review_rejects_false": [
+          "[Alice]: The capital of Poland is not Prague."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Poland is Warsaw."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

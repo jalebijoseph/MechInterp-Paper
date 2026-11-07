@@ -1,0 +1,38 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "experiments": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "backend": "original HF/PyTorch BF16",
+  "reference_source_sha": "1f97522907c33cdb557163769b599088f8e7936b",
+  "reference_run": "cluster-qwen3-8b-20261104",
+  "planned_jobs": 17,
+  "expected_turns": 5800,
+  "expected_traces": 5776,
+  "gpu_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "ports": [
+    18110,
+    18111
+  ],
+  "interpretation": "Exploratory because original Exp0 belief-tracking gate failed; user requested proceeding",
+  "steps": [
+    "Verify scientific source parity and suite configuration coverage",
+    "Adapt only model identity, selected experiments, and two-GPU server lifecycle",
+    "Run scheduler/resume/aggregation and cleanup checks",
+    "Smoke all13 intervention presets with sharded32B",
+    "Run17 durable jobs, validate all summaries/traces, aggregate180matchedExp4pairs",
+    "Stop only owned servers after completion or failure and retain original outputs"
+  ]
+}

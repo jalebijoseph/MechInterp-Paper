@@ -1,0 +1,53 @@
+{
+  "cache_key": "1d5f08dc73c1f704bab79d01b25dcacf406ace27247268e7bf8f4800395494f3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b61c414cdcb7734",
+    "reasoning_tokens": 2698,
+    "completion_tokens": 2798,
+    "prompt_tokens": 1384,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0b3dae74122bf5bd1ac573b3b445c283fc14f966b2e77fa2b4c15304b6c7ad8b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b61c414cdcb7734",
+    "reasoning_tokens": 2698,
+    "completion_tokens": 2798,
+    "prompt_tokens": 1384,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a stunning white marble mausoleum in Agra, India, is a UNESCO World Heritage Site and one of the New Seven Wonders of the World."
+        ],
+        "review_rejects_false": [
+          "The Taj Mahal is not in Egypt; it is in Agra, India."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a stunning white marble mausoleum in Agra, India, is a UNESCO World Heritage Site and one of the New Seven Wonders of the World. Built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, it is a masterpiece of Mughal architecture and a symbol of eternal love."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

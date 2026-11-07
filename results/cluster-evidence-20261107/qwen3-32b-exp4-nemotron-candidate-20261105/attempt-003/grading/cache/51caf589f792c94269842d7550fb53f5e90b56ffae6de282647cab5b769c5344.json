@@ -1,0 +1,51 @@
+{
+  "cache_key": "51caf589f792c94269842d7550fb53f5e90b56ffae6de282647cab5b769c5344",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93adfb645b224af2",
+    "reasoning_tokens": 4950,
+    "completion_tokens": 5046,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "861351e7ef26e804e905e4ad773d9e783cf40cb36113595bac84498d2d86760d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93adfb645b224af2",
+    "reasoning_tokens": 4950,
+    "completion_tokens": 5046,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The draft states that the capital of Norway is Bergen - this is factually inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Norway is Norway's de facto capital, with the King's official residence in Skaugum, Asker."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

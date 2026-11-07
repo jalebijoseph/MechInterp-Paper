@@ -1,0 +1,51 @@
+{
+  "cache_key": "29bb5023d3d4b540ad5e747286274ba88aa73d6c812e7299dcbf267a4be0eecf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-877a29c55354455e",
+    "reasoning_tokens": 1753,
+    "completion_tokens": 1857,
+    "prompt_tokens": 1290,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6c092c05fd10280110855a1bd018eaea0593f8f1d577980c817e4abef6d1c2ba",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-877a29c55354455e",
+    "reasoning_tokens": 1753,
+    "completion_tokens": 1857,
+    "prompt_tokens": 1290,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Hamlet*, one of William Shakespeare’s most celebrated tragedies, explores themes of revenge, madness, and mortality."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Hamlet*, one of William Shakespeare’s most celebrated tragedies, explores themes of revenge, madness, and mortality. This production brings Shakespeare’s timeless text to life with bold, contemporary staging."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

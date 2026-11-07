@@ -1,0 +1,51 @@
+{
+  "cache_key": "f55bdebfa9d2d51a7ed7323956d0b54d27221a77a7128c0d518fca814997beaa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a37323308f428259",
+    "reasoning_tokens": 1808,
+    "completion_tokens": 1904,
+    "prompt_tokens": 1390,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e4de8a532200a88c5f953c54922ab41b52a8d71a64925d13389b4aebcc2e33a9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a37323308f428259",
+    "reasoning_tokens": 1808,
+    "completion_tokens": 1904,
+    "prompt_tokens": 1390,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mona Lisa by Leonardo da Vinci (c. 1503–1519). This iconic portrait, renowned for its enigmatic expression and masterful technique, is one of the most celebrated works in art history. Believed to depict Lisa Gherardini, the painting reflects Leonardo’s genius in capturing human emotion and naturalism.*"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mona Lisa by Leonardo da Vinci (c. 1503–1519). This iconic portrait, renowned for its enigmatic expression and masterful technique, is one of the most celebrated works in art history. Believed to depict Lisa Gherardini, the painting reflects Leonardo’s genius in capturing human emotion and naturalism.*"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

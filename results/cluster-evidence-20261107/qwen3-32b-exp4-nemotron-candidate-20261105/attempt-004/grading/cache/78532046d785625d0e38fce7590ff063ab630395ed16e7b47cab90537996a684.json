@@ -1,0 +1,53 @@
+{
+  "cache_key": "78532046d785625d0e38fce7590ff063ab630395ed16e7b47cab90537996a684",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94732da13a3f4aa4",
+    "reasoning_tokens": 1101,
+    "completion_tokens": 1200,
+    "prompt_tokens": 1290,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f777821920c58b3996f18272ab16d0a944900548414742e8397f25994f68e572",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94732da13a3f4aa4",
+    "reasoning_tokens": 1101,
+    "completion_tokens": 1200,
+    "prompt_tokens": 1290,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The planet closest to the Sun is Mercury, followed by Venus, Earth, and Mars."
+        ],
+        "review_rejects_false": [
+          "The inner planet closest to the Sun is Mercury, not Venus."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets are Mercury, Venus, Earth, and Mars. The planet closest to the Sun is Mercury, followed by Venus, Earth, and Mars."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

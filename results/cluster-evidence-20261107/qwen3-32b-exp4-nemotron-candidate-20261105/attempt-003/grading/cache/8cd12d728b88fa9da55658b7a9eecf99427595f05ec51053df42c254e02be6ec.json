@@ -1,0 +1,53 @@
+{
+  "cache_key": "8cd12d728b88fa9da55658b7a9eecf99427595f05ec51053df42c254e02be6ec",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95a76c26deaec9e5",
+    "reasoning_tokens": 4531,
+    "completion_tokens": 4630,
+    "prompt_tokens": 1333,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "979f67077a10df2274f6c537b9ac50097fb87c169ccfc61473aaeeae4fc9eab0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95a76c26deaec9e5",
+    "reasoning_tokens": 4531,
+    "completion_tokens": 4630,
+    "prompt_tokens": 1333,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt is a country in North Africa, with Cairo as its capital."
+        ],
+        "review_rejects_false": [
+          "The capital of Egypt is not Alexandria; it is Cairo."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt is a country in North Africa, with Cairo as its capital. It is known for its rich history, including ancient monuments like the Pyramids of Giza. The Nile River flows through the country, playing a vital role in its culture and economy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

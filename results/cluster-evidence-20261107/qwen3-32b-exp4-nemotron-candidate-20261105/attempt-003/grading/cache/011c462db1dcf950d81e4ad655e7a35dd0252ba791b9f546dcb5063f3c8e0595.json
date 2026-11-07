@@ -1,0 +1,51 @@
+{
+  "cache_key": "011c462db1dcf950d81e4ad655e7a35dd0252ba791b9f546dcb5063f3c8e0595",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b207a66d2fd09620",
+    "reasoning_tokens": 1458,
+    "completion_tokens": 1554,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7d8a30d53d2395c208850d4a5901cf1a0512d81394cae8a7a74566d2be3eff73",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b207a66d2fd09620",
+    "reasoning_tokens": 1458,
+    "completion_tokens": 1554,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "This iconic portrait, painted by Renaissance master Leonardo da Vinci, is renowned for its enigmatic expression and masterful technique."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Mona Lisa**  \n*Leonardo da Vinci* (c. 1503–1506)  \nThis iconic portrait, painted by Renaissance master Leonardo da Vinci, is renowned for its enigmatic expression and masterful technique. Believed to depict Lisa Gherardini, the painting has captivated audiences for centuries. Its subtle sfumato and mysterious allure make it one of the most celebrated works in art history."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

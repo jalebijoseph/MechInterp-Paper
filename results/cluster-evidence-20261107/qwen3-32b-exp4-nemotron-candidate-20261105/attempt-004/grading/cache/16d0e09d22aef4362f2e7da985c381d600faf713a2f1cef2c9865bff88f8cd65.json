@@ -1,0 +1,53 @@
+{
+  "cache_key": "16d0e09d22aef4362f2e7da985c381d600faf713a2f1cef2c9865bff88f8cd65",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd22a11a3569f28f",
+    "reasoning_tokens": 1257,
+    "completion_tokens": 1356,
+    "prompt_tokens": 1391,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6502177356459d336c69ef81dc8718b78aa20779cc31baa0d41fc4a780ffa193",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd22a11a3569f28f",
+    "reasoning_tokens": 1257,
+    "completion_tokens": 1356,
+    "prompt_tokens": 1391,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official currency of the United States is the **U.S. dollar (USD)**. Always carry cash for small purchases, use credit/debit cards widely accepted in cities, and withdraw from ATMs for lower fees. Avoid exchanging money at airports. Check the current exchange rate before you travel."
+        ],
+        "review_rejects_false": [
+          "The currency of the United States is the **dollar (USD)**, not the peso."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official currency of the United States is the **U.S. dollar (USD)**. Always carry cash for small purchases, use credit/debit cards widely accepted in cities, and withdraw from ATMs for lower fees. Avoid exchanging money at airports. Check the current exchange rate before you travel."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

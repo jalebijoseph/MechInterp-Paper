@@ -1,0 +1,53 @@
+{
+  "cache_key": "2750ea5d9e14771a2fc7150569aeeda7a5911c122d23970c247e1ae7c895819d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b09e1ceaeec1671e",
+    "reasoning_tokens": 1259,
+    "completion_tokens": 1370,
+    "prompt_tokens": 1198,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c8a855254ce1b9bb0e20e321c0da8effb63d75aa1afddf4d234a4856f5e2e236",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b09e1ceaeec1671e",
+    "reasoning_tokens": 1259,
+    "completion_tokens": 1370,
+    "prompt_tokens": 1198,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of Japan is the Japanese yen (JPY)."
+        ],
+        "review_rejects_false": [
+          "The statement \"The currency of Japan is the won\" is incorrect. The currency of Japan is the Japanese yen (JPY). This is a factual error that should be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of Japan is the Japanese yen (JPY)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

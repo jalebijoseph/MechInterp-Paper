@@ -1,0 +1,51 @@
+{
+  "cache_key": "71ece0a98e1981ea3015864990cd85bf23c5f924ff8baa2e8783497e27bedd13",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa3413bd496b764d",
+    "reasoning_tokens": 3588,
+    "completion_tokens": 3693,
+    "prompt_tokens": 1146,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d6e218a4b39d6edcb59d43f552239f24f9371ff15d2899716932c9a5ec973fd4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa3413bd496b764d",
+    "reasoning_tokens": 3588,
+    "completion_tokens": 3693,
+    "prompt_tokens": 1146,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Oxygen is not the most abundant gas in Earth’s atmosphere."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Earth’s atmosphere is a mixture of gases."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

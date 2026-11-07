@@ -1,0 +1,51 @@
+{
+  "cache_key": "396d7aa8e0fa7dc124432e73d7076235e576c048da8e90888fcb589dc0749ca0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ebadb3d092a1e3b",
+    "reasoning_tokens": 1845,
+    "completion_tokens": 1941,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e2daea9f757a8bd447fcd0313794873347605b1935329b67af12efe07e4db4d1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ebadb3d092a1e3b",
+    "reasoning_tokens": 1845,
+    "completion_tokens": 1941,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Africa's major rivers include the Nile (longest, 6,650 km, flows through 11 countries), Congo (second-longest, 4,700 km, central Africa), Niger (3,415 km, West Africa), and Zambezi (2,574 km, southern Africa)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Africa's major rivers include the Nile (longest, 6,650 km, flows through 11 countries), Congo (second-longest, 4,700 km, central Africa), Niger (3,415 km, West Africa), and Zambezi (2,574 km, southern Africa)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

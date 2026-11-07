@@ -1,0 +1,51 @@
+{
+  "cache_key": "d379f7cc2cf9745e957f1478ad732b891903c9d1b5d6c3613dcac99cf6211d16",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0dc30116e8e535e",
+    "reasoning_tokens": 1229,
+    "completion_tokens": 1325,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c44f5a3325dcc16c2e652232e8e7df6f070e1d48eae64497c40292baff078159",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0dc30116e8e535e",
+    "reasoning_tokens": 1229,
+    "completion_tokens": 1325,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Vienna, known for its rich cultural heritage, historic architecture, and musical legacy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Austria is a landlocked country in Central Europe. The capital is Vienna, known for its rich cultural heritage, historic architecture, and musical legacy. Austria is renowned for its alpine landscapes, ski resorts, and contributions to classical music. It is a member of the European Union and maintains a strong emphasis on neutrality in international affairs."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

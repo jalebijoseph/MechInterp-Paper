@@ -1,0 +1,51 @@
+{
+  "cache_key": "ac4017dd62533186b9b8ee9f20addfe6d8c4ad5a1f8bc9a000a7f9ec18ac29d0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-afb23c4578bc3808",
+    "reasoning_tokens": 3165,
+    "completion_tokens": 3261,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "99e8b025f4e84ab38cdd3be1c0e828952d13aaa9c1434170f536b316db54c134",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-afb23c4578bc3808",
+    "reasoning_tokens": 3165,
+    "completion_tokens": 3261,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone was developed in the 1870s by Alexander Graham Bell and his assistant Thomas Watson at the Bell Telephone Company."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone was developed in the 1870s by Alexander Graham Bell and his assistant Thomas Watson at the Bell Telephone Company."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

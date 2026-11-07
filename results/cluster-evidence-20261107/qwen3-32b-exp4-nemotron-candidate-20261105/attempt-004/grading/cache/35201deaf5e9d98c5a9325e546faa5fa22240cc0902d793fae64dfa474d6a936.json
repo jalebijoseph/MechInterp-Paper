@@ -1,0 +1,51 @@
+{
+  "cache_key": "35201deaf5e9d98c5a9325e546faa5fa22240cc0902d793fae64dfa474d6a936",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b698a7a6b36c7b9f",
+    "reasoning_tokens": 1381,
+    "completion_tokens": 1485,
+    "prompt_tokens": 1268,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f50b069f368a900de4167d8954448c25b9c5055b83d5e4c8cd3f8a2bab4ec5af",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b698a7a6b36c7b9f",
+    "reasoning_tokens": 1381,
+    "completion_tokens": 1485,
+    "prompt_tokens": 1268,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The most abundant component of Earth's air is nitrogen, making up approximately 78% of the atmosphere by volume."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The most abundant component of Earth's air is nitrogen, making up approximately 78% of the atmosphere by volume."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

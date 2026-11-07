@@ -1,0 +1,53 @@
+{
+  "cache_key": "4d505a686dacb7c7b41b8fb1c7e3aef70ed1ab21f6484a6ff5595bc26aa4516e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b683dda593225853",
+    "reasoning_tokens": 1315,
+    "completion_tokens": 1418,
+    "prompt_tokens": 1132,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ba0957008a841219d4b1b3f3c4d2ed5054476cd552cfb3f1785965a683c5a07a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b683dda593225853",
+    "reasoning_tokens": 1315,
+    "completion_tokens": 1418,
+    "prompt_tokens": 1132,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Evolution by natural selection was proposed by Charles Darwin."
+        ],
+        "review_rejects_false": [
+          "The statement is historically inaccurate. Natural selection was proposed by Charles Darwin, not Isaac Newton."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Evolution by natural selection was proposed by Charles Darwin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

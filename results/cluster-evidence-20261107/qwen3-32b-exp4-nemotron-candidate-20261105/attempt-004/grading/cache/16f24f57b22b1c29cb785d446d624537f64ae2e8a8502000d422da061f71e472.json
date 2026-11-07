@@ -1,0 +1,51 @@
+{
+  "cache_key": "16f24f57b22b1c29cb785d446d624537f64ae2e8a8502000d422da061f71e472",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc75a752c1225566",
+    "reasoning_tokens": 2590,
+    "completion_tokens": 2686,
+    "prompt_tokens": 1276,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0e493ad52d9beefbc1e9bbc8551c52a63c3f596e52fdbd65130886ecadb62f2a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc75a752c1225566",
+    "reasoning_tokens": 2590,
+    "completion_tokens": 2686,
+    "prompt_tokens": 1276,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The Taj Mahal is in Agra, India - fact check complete."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, Agra's 17th pearl, is Mumtaz Ma' mal's diamond-ed mausoleum."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

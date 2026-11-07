@@ -1,0 +1,63 @@
+{
+  "cache_key": "eb3d20e0df2595e3e0634d9acdc4f22e7e24b45acafee735731140c666a30741",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8377ce2965ce0a39",
+    "reasoning_tokens": 2322,
+    "completion_tokens": 2418,
+    "prompt_tokens": 1428,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "631c7b93cd5520e721d88cc558ef37cb9acad94b0c701624c35b382e599b547a",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8377ce2965ce0a39",
+    "reasoning_tokens": 2322,
+    "completion_tokens": 2418,
+    "prompt_tokens": 1428,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Austria, a landlocked country in Central Europe, has Vienna as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Austria, a landlocked country in Central Europe, has Vienna as its capital. Known for its alpine landscapes, rich musical heritage, and historic cities, Austria is home to around 9 million people. German is the official language, and the economy thrives on tourism, manufacturing, and services. A member of the EU, Austria blends tradition with modernity, offering a high quality of life and a vibrant cultural scene."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

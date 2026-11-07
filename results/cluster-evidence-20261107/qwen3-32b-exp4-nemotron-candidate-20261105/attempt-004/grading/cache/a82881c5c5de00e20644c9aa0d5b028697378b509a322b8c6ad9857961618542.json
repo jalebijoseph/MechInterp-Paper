@@ -1,0 +1,53 @@
+{
+  "cache_key": "a82881c5c5de00e20644c9aa0d5b028697378b509a322b8c6ad9857961618542",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90871d8096c61265",
+    "reasoning_tokens": 1951,
+    "completion_tokens": 2051,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7577fb1157bc4fe6f3ba2095f6289aafe48655410fd1456edbbe2cb223609cba",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90871d8096c61265",
+    "reasoning_tokens": 1951,
+    "completion_tokens": 2051,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "review_rejects_false": [
+          "The official language of Brazil is Portuguese, not Spanish."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

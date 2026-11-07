@@ -1,0 +1,51 @@
+{
+  "cache_key": "0b2e1cc4dd72cadbf0717734ef6662955d8e511f33bbbb6c2839da1918a16920",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a984deffc92ae1eb",
+    "reasoning_tokens": 3924,
+    "completion_tokens": 4028,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "de114128a30928caa6f0b5eeba11d904d85050febc3acc834c276bc613a45178",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a984deffc92ae1eb",
+    "reasoning_tokens": 3924,
+    "completion_tokens": 4028,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Alexander Graham Bell is widely credited with its development, with his 1876"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone is a communication device that transmits sound by electromagnetic radiation. Alexander Graham Bell is widely credited with its development, with his 1876"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "a53ccfa164c880d78aa2f3cac7c6b564da3c3ec73d63b1230f1816c9f4f48266",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b766d1c1fbdabfd5",
+    "reasoning_tokens": 446,
+    "completion_tokens": 545,
+    "prompt_tokens": 1040,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d1094c501f8fc08c13ff6bf4d412247d9f3d6c1279b4637d1387eefd62b82f99",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b766d1c1fbdabfd5",
+    "reasoning_tokens": 446,
+    "completion_tokens": 545,
+    "prompt_tokens": 1040,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest rises in the Himalayas on the border between Nepal and China."
+        ],
+        "review_rejects_false": [
+          "Everest is not in Africa."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest rises in the Himalayas on the border between Nepal and China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

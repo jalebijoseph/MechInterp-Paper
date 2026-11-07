@@ -1,0 +1,53 @@
+{
+  "cache_key": "2850a7a091b000e1a515e9b71721815dd283e45d7214cdf4f252ddfa426015a9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8cee898d6b26aea7",
+    "reasoning_tokens": 3066,
+    "completion_tokens": 3177,
+    "prompt_tokens": 1283,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "201f65f8809774c6c3caa45a7882cee55d05530d72461b8f055eade4f511acc6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8cee898d6b26aea7",
+    "reasoning_tokens": 3066,
+    "completion_tokens": 3177,
+    "prompt_tokens": 1283,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Peru is a country in South America. Its capital is Lima. Known for the Andes Mountains and Machu Picchu, Peru has a rich cultural heritage and diverse ecosystems."
+        ],
+        "review_rejects_false": [
+          "The capital of Peru is not Havana. The capital is Lima. Havana is the capital of Cuba. Please revise."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Peru is a country in South America. Its capital is Lima. Known for the Andes Mountains and Machu Picchu, Peru has a rich cultural heritage and diverse ecosystems."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

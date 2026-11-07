@@ -1,0 +1,51 @@
+{
+  "cache_key": "dbbe7943b868348c2126926bb8c1c38cc5e7b02f7e63bcd9f9309b226abb98e3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a095f8b11cadb1e6",
+    "reasoning_tokens": 2224,
+    "completion_tokens": 2328,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6b5016fa00f60bdd4425b42df64e4e41c483e0144727e7343c662119ebd99bd0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a095f8b11cadb1e6",
+    "reasoning_tokens": 2224,
+    "completion_tokens": 2328,
+    "prompt_tokens": 1285,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold is a chemical element represented by a symbol in the periodic table. Its symbol is commonly denoted as Au, derived from its Latin name."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Gold is a chemical element represented by a symbol in the periodic table. Its symbol is commonly denoted as Au, derived from its Latin name."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

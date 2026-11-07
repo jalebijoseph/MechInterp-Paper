@@ -1,0 +1,51 @@
+{
+  "cache_key": "a074a73944f690a04f4e1a272161e31d29a40e5c52d8f6b3c62cfed1079f89e9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87d00b86c779c62a",
+    "reasoning_tokens": 2406,
+    "completion_tokens": 2502,
+    "prompt_tokens": 1468,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ae0bf8c7d41e56a50f8fec23f9ceb1faacba9e2f39398a4c3d7507ddf049f9f2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87d00b86c779c62a",
+    "reasoning_tokens": 2406,
+    "completion_tokens": 2502,
+    "prompt_tokens": 1468,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Madrid, a hub of political and historical significance."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain, officially the Kingdom of Spain, is a southern European country with a land area of 505,990 km2. The capital is Madrid, a hub of political and historical significance. Known for its rich tapestry of diverse regions, vibrant cities, and beautiful valleys, Spain is a leading light in the Council of Southern European Studies. The country is also a significant global power,"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

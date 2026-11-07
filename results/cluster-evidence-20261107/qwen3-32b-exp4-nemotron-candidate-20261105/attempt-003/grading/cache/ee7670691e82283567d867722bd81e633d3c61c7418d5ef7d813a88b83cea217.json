@@ -1,0 +1,51 @@
+{
+  "cache_key": "ee7670691e82283567d867722bd81e633d3c61c7418d5ef7d813a88b83cea217",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-968c72852b7d024d",
+    "reasoning_tokens": 2734,
+    "completion_tokens": 2830,
+    "prompt_tokens": 1451,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "09967d965bf0b80235d603e70f1162c7d6b4a23e6b346339e2f4c621a5cb6629",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-968c72852b7d024d",
+    "reasoning_tokens": 2734,
+    "completion_tokens": 2830,
+    "prompt_tokens": 1451,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mexico's primary language is Spanish."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mexico's primary language is Spanish. Useful phrases: 'Buenas Tardes' (Good day), '¿Tiene cambio?' (Do you have change?) and 'Con mucho respeto' (With much respect). In southern markets, 'chido\" means 'cool'. Remain firm on 'no me gustaría' (I would not like)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

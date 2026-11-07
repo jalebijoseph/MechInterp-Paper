@@ -1,0 +1,51 @@
+{
+  "cache_key": "bb50ebe45bf8c0ce6987b0ab25200e1e345971a5482398fae44aefcaafaf44bd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fc77e7d6db48bf4",
+    "reasoning_tokens": 2458,
+    "completion_tokens": 2554,
+    "prompt_tokens": 1293,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e2950ab4fa752ceb779942b3e674b646f40a9df51d410719711e772658de3d61",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fc77e7d6db48bf4",
+    "reasoning_tokens": 2458,
+    "completion_tokens": 2554,
+    "prompt_tokens": 1293,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest known mineral is diamond, scoring 10 on the Mohs hardness scale."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Minerals are naturally occurring, inorganic solids with a definite chemical composition and an ordered internal structure. The hardest known mineral is diamond, scoring 10 on the Mohs hardness scale."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

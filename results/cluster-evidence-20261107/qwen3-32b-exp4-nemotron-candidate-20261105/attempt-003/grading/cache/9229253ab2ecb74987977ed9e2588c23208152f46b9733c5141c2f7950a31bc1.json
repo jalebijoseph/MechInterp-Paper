@@ -1,0 +1,54 @@
+{
+  "cache_key": "9229253ab2ecb74987977ed9e2588c23208152f46b9733c5141c2f7950a31bc1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\",\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\",\n      \"F2\",\n      \"F3\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8960ebe4f4beea96",
+    "reasoning_tokens": 5685,
+    "completion_tokens": 5804,
+    "prompt_tokens": 1252,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "94af9849da11b67198874e67fd5ba86c8be19b5c9c99f21142240f7af1a6881f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\",\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\",\n      \"F2\",\n      \"F3\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8960ebe4f4beea96",
+    "reasoning_tokens": 5685,
+    "completion_tokens": 5804,
+    "prompt_tokens": 1252,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert in the world is the Sahara, covering much of North Africa. It spans over 3.6 million square miles and is known for its extreme temperatures and unique ecosystems.",
+          "The largest hot desert in the world is the Sahara, covering much of North Africa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert in the world is the Sahara, covering much of North Africa. It spans over 3.6 million square miles and is known for its extreme temperatures and unique ecosystems.",
+          "The largest hot desert in the world is the Sahara, covering much of North Africa.",
+          "It spans over 3.6 million square miles and is known for its extreme temperatures and unique ecosystems."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

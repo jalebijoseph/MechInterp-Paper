@@ -1,0 +1,53 @@
+{
+  "cache_key": "f4ed0b8dc7b360766747c27fc9bc51dfa6df22a5b1a52edb9ee2e30ac203feb3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b0c89c67cb972e2",
+    "reasoning_tokens": 2506,
+    "completion_tokens": 2605,
+    "prompt_tokens": 1212,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3008e0ed331ac0e7236cf70135d353481cfd08685cb26005ff7c57eae640c4a4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b0c89c67cb972e2",
+    "reasoning_tokens": 2506,
+    "completion_tokens": 2605,
+    "prompt_tokens": 1212,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Austria is German."
+        ],
+        "review_rejects_false": [
+          "The draft notes that Austria's main language is French – this is factually inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Austria is German."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

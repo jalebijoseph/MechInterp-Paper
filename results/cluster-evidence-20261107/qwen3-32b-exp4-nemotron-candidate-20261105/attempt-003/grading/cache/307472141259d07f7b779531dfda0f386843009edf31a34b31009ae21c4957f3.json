@@ -1,0 +1,51 @@
+{
+  "cache_key": "307472141259d07f7b779531dfda0f386843009edf31a34b31009ae21c4957f3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c80eb97f42fa859",
+    "reasoning_tokens": 3059,
+    "completion_tokens": 3155,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "731af512e8064bce49a890d79aaec335e499d7ccfee7be0544be10cecaf2c479",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c80eb97f42fa859",
+    "reasoning_tokens": 3059,
+    "completion_tokens": 3155,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Nile is Africa’s longest river, stretching approximately 6,650 km."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Nile is Africa’s longest river, stretching approximately 6,650 km. It flows through 11 countries, including Egypt and Sudan, and has two major tributaries: the White Nile and the Blue Nile. The Nile has historically been vital for agriculture, transportation, and civilization in the region."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

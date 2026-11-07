@@ -1,0 +1,51 @@
+{
+  "cache_key": "f2670cfcb041fbb1c9f0177fd3aedefab999f73d8436dde3efde3e7d3d4b8f53",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81e9c9e25bfd531b",
+    "reasoning_tokens": 2093,
+    "completion_tokens": 2189,
+    "prompt_tokens": 1319,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "efa73bc071bb962298fc87922c1f403f60365e58b53eb3ae93d4e6c01f991b8a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81e9c9e25bfd531b",
+    "reasoning_tokens": 2093,
+    "completion_tokens": 2189,
+    "prompt_tokens": 1319,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Mexico is Spanish."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Mexico is Spanish. You may also encounter indigenous languages like Náhuatl and Maya in the south. Spanish is widely spoken and can be helpful in everyday communication. Learning a few basic phrases can be appreciated by locals."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

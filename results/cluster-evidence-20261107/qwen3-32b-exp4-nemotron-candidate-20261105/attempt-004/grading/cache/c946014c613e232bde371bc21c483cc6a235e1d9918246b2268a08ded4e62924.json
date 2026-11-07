@@ -1,0 +1,51 @@
+{
+  "cache_key": "c946014c613e232bde371bc21c483cc6a235e1d9918246b2268a08ded4e62924",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86317c6dfe278e6f",
+    "reasoning_tokens": 2489,
+    "completion_tokens": 2585,
+    "prompt_tokens": 1234,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "50c005ff5f45f87d1c2d5eb9bd8b3767462a3ef5b92cdf71935be3501153e9d7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86317c6dfe278e6f",
+    "reasoning_tokens": 2489,
+    "completion_tokens": 2585,
+    "prompt_tokens": 1234,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The novel *1984* was written by **George Orwell**."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The novel *1984* was written by **George Orwell**. A chilling exploration of totalitarianism, it remains a powerful warning about the dangers of surveillance and truth manipulation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

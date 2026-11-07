@@ -1,0 +1,51 @@
+{
+  "cache_key": "d36a1b2d8951dcd48211b1478f02286e02cf8e966dbdabb74268aadc5fd16fad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96d87b0a6d26e57f",
+    "reasoning_tokens": 2259,
+    "completion_tokens": 2355,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a3ad21e27f4c660749bd1216c33476d4e0157937b9148b87c4e751eaa3b53236",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96d87b0a6d26e57f",
+    "reasoning_tokens": 2259,
+    "completion_tokens": 2355,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is primarily composed of nitrogen (about 78%) and oxygen (about 21%)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is primarily composed of nitrogen (about 78%) and oxygen (about 21%). The remaining 1% includes gases like argon, carbon dioxide, and trace amounts of others. This mixture supports life and influences climate and weather patterns."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

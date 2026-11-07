@@ -24,6 +24,13 @@ run `git lfs pull` to obtain their contents. The trace format is documented in
 `src/jpeers/trace.py`; each experiment's `turns.jsonl` references its trace files.
 Model weights, caches, environments, and source-tree copies are excluded.
 
+The [2026-11-07 evidence export](../results/cluster-evidence-20261107/README.md)
+adds the complete original 32B suite, corrected follow-up prompts/responses/traces,
+and both graders' full calibration and receipt histories. Its manifest preserves
+exact source bytes and checksums. The original 32B snapshot above remains a dated
+historical snapshot. Active corrected Exp2 grading and the queued causal study
+are explicitly marked as partial snapshots in the new export.
+
 `results/artifact-index.json` records source and exported checksums. Exported text
 uses portable paths in place of machine-specific paths. Binary trace contents are
 unchanged. Where an exported summary reference is resolvable, its checksum is

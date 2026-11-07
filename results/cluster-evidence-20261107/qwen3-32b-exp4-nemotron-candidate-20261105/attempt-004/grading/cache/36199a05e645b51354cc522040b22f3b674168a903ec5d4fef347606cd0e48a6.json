@@ -1,0 +1,51 @@
+{
+  "cache_key": "36199a05e645b51354cc522040b22f3b674168a903ec5d4fef347606cd0e48a6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3e6435a790b7526",
+    "reasoning_tokens": 653,
+    "completion_tokens": 753,
+    "prompt_tokens": 1296,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9d611a7398489a165b62d4d07214d8e1930409bd36bb9f48f5ab8aa412535bdf",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3e6435a790b7526",
+    "reasoning_tokens": 653,
+    "completion_tokens": 753,
+    "prompt_tokens": 1296,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "In 1969, Neil Armstrong became the first crewed Moon landing's pioneer, stepping on the Moon's surface."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "In 1969, Neil Armstrong became the first crewed Moon landing's pioneer, stepping on the Moon's surface."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

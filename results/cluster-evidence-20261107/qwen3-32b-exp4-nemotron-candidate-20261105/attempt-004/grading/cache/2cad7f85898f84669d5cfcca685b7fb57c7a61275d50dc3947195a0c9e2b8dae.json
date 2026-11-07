@@ -1,0 +1,63 @@
+{
+  "cache_key": "2cad7f85898f84669d5cfcca685b7fb57c7a61275d50dc3947195a0c9e2b8dae",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F2\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F2\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83fa42635e67e105",
+    "reasoning_tokens": 2543,
+    "completion_tokens": 2617,
+    "prompt_tokens": 1190,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "67135df89ec8f98334163e3effbf2defc6052e049eb9142739e90a1a05de563b",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F2\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F2\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83fa42635e67e105",
+    "reasoning_tokens": 2543,
+    "completion_tokens": 2617,
+    "prompt_tokens": 1190,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Turkey is Anka."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Turkey is Anka."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

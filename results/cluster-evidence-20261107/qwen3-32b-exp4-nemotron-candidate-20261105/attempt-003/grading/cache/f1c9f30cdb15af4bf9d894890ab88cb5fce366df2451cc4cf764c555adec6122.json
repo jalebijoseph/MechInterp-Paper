@@ -1,0 +1,51 @@
+{
+  "cache_key": "f1c9f30cdb15af4bf9d894890ab88cb5fce366df2451cc4cf764c555adec6122",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85ffbbab63c3dde0",
+    "reasoning_tokens": 2177,
+    "completion_tokens": 2273,
+    "prompt_tokens": 1391,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "30381803c5e8161da7e9fada8db2301bf039ace75c220599b7380dc4ce0e4307",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85ffbbab63c3dde0",
+    "reasoning_tokens": 2177,
+    "completion_tokens": 2273,
+    "prompt_tokens": 1391,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Mona Lisa* (c. 1503–1519) is a portrait painted by Leonardo da Vinci. Widely regarded as one of the most influential and enigmatic artworks in history, it is celebrated for its technical innovation and the subject’s mysterious expression. A symbol of the High Renaissance, the painting has captivated artists and viewers alike for centuries."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa* (c. 1503–1519) is a portrait painted by Leonardo da Vinci. Widely regarded as one of the most influential and enigmatic artworks in history, it is celebrated for its technical innovation and the subject’s mysterious expression. A symbol of the High Renaissance, the painting has captivated artists and viewers alike for centuries."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

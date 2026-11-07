@@ -1,0 +1,53 @@
+{
+  "cache_key": "59f1c579673771cd4a01177b10efeb69eb02a0762f569c66ae875cd862d15367",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f4f13e5789df9b3",
+    "reasoning_tokens": 1804,
+    "completion_tokens": 1903,
+    "prompt_tokens": 1152,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ba80261c976362a7b9a08e92b9fd553b947c16da1de53940f9ce7c50f7e99acd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f4f13e5789df9b3",
+    "reasoning_tokens": 1804,
+    "completion_tokens": 1903,
+    "prompt_tokens": 1152,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Warsaw is the capital of Poland."
+        ],
+        "review_rejects_false": [
+          "Prague is not Poland’s capital."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Warsaw is the capital of Poland."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

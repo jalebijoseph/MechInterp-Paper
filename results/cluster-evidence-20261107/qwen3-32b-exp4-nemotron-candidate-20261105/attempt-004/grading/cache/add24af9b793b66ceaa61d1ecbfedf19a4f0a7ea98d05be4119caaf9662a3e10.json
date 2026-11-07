@@ -1,0 +1,65 @@
+{
+  "cache_key": "add24af9b793b66ceaa61d1ecbfedf19a4f0a7ea98d05be4119caaf9662a3e10",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8eec72afe06891e6",
+    "reasoning_tokens": 6450,
+    "completion_tokens": 6561,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6fc981bb6b202b0fe3b9969c8ac0ae68404c108640672f8faed7d2fc1a25b3c9",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"both\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8eec72afe06891e6",
+    "reasoning_tokens": 6450,
+    "completion_tokens": 6561,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "both",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, in Agra, India, is a 17th-ct mausoleum of ivory-pink sandstone & white Makrana. It's a-lost-in-Egypt."
+        ],
+        "review_rejects_false": [
+          "The Taj Mahal is in Agra, India, not Egypt."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, in Agra, India, is a 17th-ct mausoleum of ivory-pink sandstone & white Makrana."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

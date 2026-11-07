@@ -1,0 +1,53 @@
+{
+  "cache_key": "2b73627f83be3a10ebfe2d926d86c00900e9450717962bed48f68dc7ab3e4c7c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-832014124b25c3d6",
+    "reasoning_tokens": 4185,
+    "completion_tokens": 4284,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a0762c386c30927c5ae67b3602ad87c0f2da9d41a828fc07832798951abd2a19",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-832014124b25c3d6",
+    "reasoning_tokens": 4185,
+    "completion_tokens": 4284,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is mainly nitrogen (78%) and oxygen (21%), with small amounts of argon, carbon dioxide, and other gases."
+        ],
+        "review_rejects_false": [
+          "The most abundant gas in Earth's atmosphere is nitrogen (about 78%), not oxygen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is mainly nitrogen (78%) and oxygen (21%), with small amounts of argon, carbon dioxide, and other gases."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

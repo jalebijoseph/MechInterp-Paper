@@ -1,0 +1,53 @@
+{
+  "cache_key": "52432a88487f1b41a9e61e7705b85eb28e6b45c26924939af1bcfa90fbfb47f9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-956f980b23e6c74b",
+    "reasoning_tokens": 472,
+    "completion_tokens": 571,
+    "prompt_tokens": 992,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e06a488d3d7e37ca7a6d39ea3799eedf8d6f1d7bfc3c89b8f8e2b9c604ec561e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-956f980b23e6c74b",
+    "reasoning_tokens": 472,
+    "completion_tokens": 571,
+    "prompt_tokens": 992,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Sydney."
+        ],
+        "review_rejects_false": [
+          "Sydney is not the capital; Canberra is correct."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Australia is Sydney."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "9d14c1a5e736f5d902c91fb1f1864041b4b932a7075ec9c621ecb2bb73554d40",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf495c8e947fa594",
+    "reasoning_tokens": 4173,
+    "completion_tokens": 4269,
+    "prompt_tokens": 1351,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ec9ecc733fb6a1101d37315a067cef5654651aa341d35f5bd9ca61662926b712",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf495c8e947fa594",
+    "reasoning_tokens": 4173,
+    "completion_tokens": 4269,
+    "prompt_tokens": 1351,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Spain, officially the Kingdom of Spain, is a Southern European country with Madrid as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain, officially the Kingdom of Spain, is a Southern European country with Madrid as its capital. Known for its rich history, vibrant culture, and diverse landscapes, Spain is a popular tourist destination. It is a member of the European Union and has a parliamentary monarchy. The official language is Spanish, and the currency is the euro."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

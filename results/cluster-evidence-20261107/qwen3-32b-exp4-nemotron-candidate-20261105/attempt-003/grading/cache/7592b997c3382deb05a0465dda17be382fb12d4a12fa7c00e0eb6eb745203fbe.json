@@ -1,0 +1,51 @@
+{
+  "cache_key": "7592b997c3382deb05a0465dda17be382fb12d4a12fa7c00e0eb6eb745203fbe",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99b37f43cd6c80de",
+    "reasoning_tokens": 2071,
+    "completion_tokens": 2168,
+    "prompt_tokens": 1220,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0370b8f29e7421f3baf41ad01587ff9ed5330908fff2d4081d87d1bfd54dc7dd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99b37f43cd6c80de",
+    "reasoning_tokens": 2071,
+    "completion_tokens": 2168,
+    "prompt_tokens": 1220,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Spain is Madrid."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Spain is Madrid. Known for its rich history, vibrant culture, and diverse landscapes, Spain is a popular tourist destination in Southern Europe."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

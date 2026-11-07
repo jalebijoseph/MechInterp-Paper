@@ -1,0 +1,53 @@
+{
+  "cache_key": "5be346512ee484a5c91e757c297f80316d68192fc3fe67aacad9b08086f9a36d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e3f67723d18b7a7",
+    "reasoning_tokens": 3208,
+    "completion_tokens": 3307,
+    "prompt_tokens": 1446,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "83c105aa4f371c2202c9c3097066c33c53d900efcc4ad47a81ceb85723116eb7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e3f67723d18b7a7",
+    "reasoning_tokens": 3208,
+    "completion_tokens": 3307,
+    "prompt_tokens": 1446,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Poland, a vibrant country in Central Europe, boasts a rich history, stunning architecture, and warm hospitality. Its capital is Warsaw, a city of resilience and culture. From the medieval charm of Kraków to the scenic Tatra Mountains, Poland offers something for every traveler. Explore its many castles, UNESCO sites, and savor traditional dishes like pierogi. A journey through Poland is a journey through the heart of Europe."
+        ],
+        "review_rejects_false": [
+          "The draft has a critical geographical inaccuracy—Poland's capital is Warsaw, not Prague."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Poland, a vibrant country in Central Europe, boasts a rich history, stunning architecture, and warm hospitality. Its capital is Warsaw, a city of resilience and culture. From the medieval charm of Kraków to the scenic Tatra Mountains, Poland offers something for every traveler. Explore its many castles, UNESCO sites, and savor traditional dishes like pierogi. A journey through Poland is a journey through the heart of Europe."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

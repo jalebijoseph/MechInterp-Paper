@@ -1,0 +1,51 @@
+{
+  "cache_key": "d7ec835f8b58527e32d90482645d91c250d36cbdb401cc1de82a30036d965061",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94593d9003155b44",
+    "reasoning_tokens": 3164,
+    "completion_tokens": 3260,
+    "prompt_tokens": 1158,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8ac8d8733dfe46a0f893ff44f19c115795bf3342e24a9295c1b9572ede83a308",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94593d9003155b44",
+    "reasoning_tokens": 3164,
+    "completion_tokens": 3260,
+    "prompt_tokens": 1158,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert is the Sahara, covering much of North Africa. It spans approximately 9.2 million square kilometers."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert is the Sahara, covering much of North Africa. It spans approximately 9.2 million square kilometers."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

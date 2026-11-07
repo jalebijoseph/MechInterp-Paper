@@ -1,0 +1,51 @@
+{
+  "cache_key": "982105a5ef0b731ed8f5a80c03e33224cba9f79577a2831d8e75369492b9c3e6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2da7127e6bd7382",
+    "reasoning_tokens": 4668,
+    "completion_tokens": 4764,
+    "prompt_tokens": 1461,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "552a92f730b5b07ced0e95310bb903c618f545d516c187c8d462446960db8c6c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2da7127e6bd7382",
+    "reasoning_tokens": 4668,
+    "completion_tokens": 4764,
+    "prompt_tokens": 1461,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1984 by George Orwell is a chilling classic about life in a hyper-tribal surveillance state."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "1984 by George Orwell is a chilling classic about life in a hyper-tribal surveillance state. This novel, set in a world of telescreens and memory holes, is a must-read for its prescient take on mass mind control. A true modern classic, 1984 is a thought-provoking and disturbing look at the dark side of progress. This novel is a must-see for those who value their critical thinking."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

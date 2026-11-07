@@ -1,0 +1,53 @@
+{
+  "cache_key": "a80ec138f9229e9d00710e886d825040e822852bafcf3de1e981ca3dad608cad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-802d3d447f448229",
+    "reasoning_tokens": 2362,
+    "completion_tokens": 2461,
+    "prompt_tokens": 1263,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bda2b18711f6ebb831cb4110648129d38af3f62e7434b5291585c4842e2f3b9d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-802d3d447f448229",
+    "reasoning_tokens": 2362,
+    "completion_tokens": 2461,
+    "prompt_tokens": 1263,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is corundum (e.g., ruby or sapphire), with a hardness of 9 on the Mohs scale."
+        ],
+        "review_rejects_false": [
+          "The draft contains an error. The hardest natural mineral is corundum (e.g., ruby or sapphire), with a hardness of 9 on the Mohs scale; quartz has a hardness of 7. This should be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is corundum (e.g., ruby or sapphire), with a hardness of 9 on the Mohs scale."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

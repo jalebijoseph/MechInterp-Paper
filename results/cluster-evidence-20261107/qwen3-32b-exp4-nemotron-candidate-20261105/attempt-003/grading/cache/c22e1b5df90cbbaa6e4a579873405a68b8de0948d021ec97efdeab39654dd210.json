@@ -1,0 +1,51 @@
+{
+  "cache_key": "c22e1b5df90cbbaa6e4a579873405a68b8de0948d021ec97efdeab39654dd210",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6f5d34142932623",
+    "reasoning_tokens": 2761,
+    "completion_tokens": 2865,
+    "prompt_tokens": 1205,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "644e91c34bc0eb7aecd23ec63ce54546c5cdfa26630083121b9238fa2bfc91ae",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6f5d34142932623",
+    "reasoning_tokens": 2761,
+    "completion_tokens": 2865,
+    "prompt_tokens": 1205,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The ancient Olympic Games began in Greece, and the modern Olympic Games were inspired by and organized in Greece."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The ancient Olympic Games began in Greece, and the modern Olympic Games were inspired by and organized in Greece."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

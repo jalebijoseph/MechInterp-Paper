@@ -1,0 +1,51 @@
+{
+  "cache_key": "6defc7cce5f2be157152d20c4404dac8dd16832071546536d250a89fdf130caf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e1de4877ed91351",
+    "reasoning_tokens": 988,
+    "completion_tokens": 1084,
+    "prompt_tokens": 1250,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7be0c3a67ecc19c552c33cee422fda5a336115b8113c596f1d43105e6b853b6b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e1de4877ed91351",
+    "reasoning_tokens": 988,
+    "completion_tokens": 1084,
+    "prompt_tokens": 1250,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Welcome to Greece, a land of ancient wonders and breathtaking beauty. Begin your journey in Athens, the historic capital, where the past meets the present in every corner."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Welcome to Greece, a land of ancient wonders and breathtaking beauty. Begin your journey in Athens, the historic capital, where the past meets the present in every corner."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

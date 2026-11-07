@@ -1,0 +1,51 @@
+{
+  "cache_key": "9981b58d5dd2d82e158c8c171c3c3f781fc1ffbae6b2ffdb9a77a9d9eafeba4f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be52093ce67e1335",
+    "reasoning_tokens": 3023,
+    "completion_tokens": 3119,
+    "prompt_tokens": 1451,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3004ebb12df12f15f42fc0e3b61d01c83faecbbe2734fccb992f3447db0a0db8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be52093ce67e1335",
+    "reasoning_tokens": 3023,
+    "completion_tokens": 3119,
+    "prompt_tokens": 1451,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Lisbon."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal, located on the Iberian Peninsula in Southwestern Europe, is known for its rich history, vibrant culture, and scenic coastlines. The capital is Lisbon. With a population of around 10.3 million, Portuguese is the official language. Famous for its Fado music, historic sites like Sintra, and delicious cuisine, Portugal is a popular tourist destination. It became a member of the EU in 1"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

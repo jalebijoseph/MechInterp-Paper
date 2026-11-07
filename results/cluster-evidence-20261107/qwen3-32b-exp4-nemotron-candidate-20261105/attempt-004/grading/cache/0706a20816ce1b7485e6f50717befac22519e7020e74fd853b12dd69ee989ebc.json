@@ -1,0 +1,53 @@
+{
+  "cache_key": "0706a20816ce1b7485e6f50717befac22519e7020e74fd853b12dd69ee989ebc",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7fd80722570b897",
+    "reasoning_tokens": 2481,
+    "completion_tokens": 2580,
+    "prompt_tokens": 1377,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4ecd8860b69e25608e94cfcdba4721ff463093aaff939688f839193e4a2fb78c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7fd80722570b897",
+    "reasoning_tokens": 2481,
+    "completion_tokens": 2580,
+    "prompt_tokens": 1377,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the Victoria-Murz River system, which flows from the Victoria Nyanza through the Murz."
+        ],
+        "review_rejects_false": [
+          "The Congo is not the longest river in Africa - that is the Victoria-Murz River system."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the Victoria-Murz River system, which flows from the Victoria Nyanza through the Murz. The Congo river, flowing through the heart of Equatorial, is the deepest river in Africa."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

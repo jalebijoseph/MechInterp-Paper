@@ -1,0 +1,51 @@
+{
+  "cache_key": "f5ab23c8b2f3cefd69594465d7da15d5a9a264b3ea7df424a8a1dc13275f07a6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3c1896dd66d42a7",
+    "reasoning_tokens": 3934,
+    "completion_tokens": 4030,
+    "prompt_tokens": 1265,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9df7299b1e0dc4d0e92bf22c1857ee801e532ce5e50b80d03b2d11a76cebaf48",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3c1896dd66d42a7",
+    "reasoning_tokens": 3934,
+    "completion_tokens": 4030,
+    "prompt_tokens": 1265,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Lisbon, which is also the largest city."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal is a Southern European country known for its rich history and culture. The capital is Lisbon, which is also the largest city. It is the oldest capital of Europe and played a key role in the Age of Exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "605aa578405232dc7566b0cefe13463eada4dc4b7e2ac48d99eefe4671d3e6ed",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4a0487f5c70589d",
+    "reasoning_tokens": 2132,
+    "completion_tokens": 2231,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d5645cd53863da08dbc244563b8d666d3fe6dd0093348f743d1e4e35c990f791",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4a0487f5c70589d",
+    "reasoning_tokens": 2132,
+    "completion_tokens": 2231,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the United Kingdom is the British pound (£)."
+        ],
+        "review_rejects_false": [
+          "The UK no longer uses the euro; it uses the British pound (£)."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the United Kingdom is the British pound (£)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

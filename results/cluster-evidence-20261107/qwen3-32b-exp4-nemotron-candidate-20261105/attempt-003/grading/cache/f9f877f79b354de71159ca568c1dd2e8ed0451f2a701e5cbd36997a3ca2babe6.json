@@ -1,0 +1,51 @@
+{
+  "cache_key": "f9f877f79b354de71159ca568c1dd2e8ed0451f2a701e5cbd36997a3ca2babe6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a4ca61746d2aab3",
+    "reasoning_tokens": 1468,
+    "completion_tokens": 1564,
+    "prompt_tokens": 1430,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a08b6aed2fe285930c0dab55fea7778e630c35e5e2bc7276e57fb53b1f1bce32",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a4ca61746d2aab3",
+    "reasoning_tokens": 1468,
+    "completion_tokens": 1564,
+    "prompt_tokens": 1430,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* (1937) by Pablo Picasso is a powerful anti-war statement. Created in response to the bombing of the Basque town during the Spanish Civil War, the black-and-white mural depicts suffering, chaos, and fear through distorted figures and symbolic imagery. A bull and a horse dominate the scene, representing strength and terror. This masterpiece remains one of the most enduring symbols of the horrors of war."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* (1937) by Pablo Picasso is a powerful anti-war statement. Created in response to the bombing of the Basque town during the Spanish Civil War, the black-and-white mural depicts suffering, chaos, and fear through distorted figures and symbolic imagery. A bull and a horse dominate the scene, representing strength and terror. This masterpiece remains one of the most enduring symbols of the horrors of war."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

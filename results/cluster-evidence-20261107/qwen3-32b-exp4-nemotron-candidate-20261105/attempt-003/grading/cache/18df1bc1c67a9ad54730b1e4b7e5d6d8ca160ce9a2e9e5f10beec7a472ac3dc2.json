@@ -1,0 +1,51 @@
+{
+  "cache_key": "18df1bc1c67a9ad54730b1e4b7e5d6d8ca160ce9a2e9e5f10beec7a472ac3dc2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-abe20c3531b0c965",
+    "reasoning_tokens": 4866,
+    "completion_tokens": 4962,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fe827403889d3baf8866df8c7daca671de2e6d6c5e25299aa97808eb05503080",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-abe20c3531b0c965",
+    "reasoning_tokens": 4866,
+    "completion_tokens": 4962,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Ireland’s capital is Dublin, a city where the past comes alive in cobbled streets and historic pubs."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Ireland’s capital is Dublin, a city where the past comes alive in cobbled streets and historic pubs. From the bustling heart of the capital to the wild beauty of the West, Ireland enchants with its landscapes, legends, and warm hospitality."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

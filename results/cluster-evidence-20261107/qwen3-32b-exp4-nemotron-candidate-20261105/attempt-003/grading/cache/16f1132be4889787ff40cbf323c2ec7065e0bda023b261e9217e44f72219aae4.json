@@ -1,0 +1,53 @@
+{
+  "cache_key": "16f1132be4889787ff40cbf323c2ec7065e0bda023b261e9217e44f72219aae4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84d3c02a77b1a767",
+    "reasoning_tokens": 3920,
+    "completion_tokens": 4031,
+    "prompt_tokens": 1267,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b34d7e943da4c51593356b709e2c2dc8ce410f608faa92ecf50a27698d77ffa0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84d3c02a77b1a767",
+    "reasoning_tokens": 3920,
+    "completion_tokens": 4031,
+    "prompt_tokens": 1267,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the United Kingdom is the British pound (£)."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error. The UK no longer uses the euro; it uses the British pound (£). This must be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the United Kingdom is the British pound (£). It is no longer part of the eurozone and does not use the euro."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

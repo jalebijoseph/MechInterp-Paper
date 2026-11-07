@@ -1,0 +1,51 @@
+{
+  "cache_key": "9e9f94996ab701d2a460783bf626d7e275afe37b26b007eba6ca322e255f6b71",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F2\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf58fe4cf52b34fd",
+    "reasoning_tokens": 2747,
+    "completion_tokens": 2821,
+    "prompt_tokens": 1234,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b1b813b30bc4d472844130d2c656dc6beb975aec15e43a27cce4a94da0a18727",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F2\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf58fe4cf52b34fd",
+    "reasoning_tokens": 2747,
+    "completion_tokens": 2821,
+    "prompt_tokens": 1234,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of South Korea is Seoul."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of South Korea is Seoul. This vibrant and modern city offers a captivating blend of tradition and innovation, making it the perfect starting point for any traveler exploring the country."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

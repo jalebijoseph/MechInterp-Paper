@@ -1,0 +1,51 @@
+{
+  "cache_key": "71c804f7156f8e15254ad6d78fb9e520e2215e6728f19cfa5b66ed6888b2ed38",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4aa7d541e1b0fb0",
+    "reasoning_tokens": 2074,
+    "completion_tokens": 2171,
+    "prompt_tokens": 1365,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "20c864285cb35c2521b44daf2e5352de37cc64f6da040dcff9ceec0048030eb3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4aa7d541e1b0fb0",
+    "reasoning_tokens": 2074,
+    "completion_tokens": 2171,
+    "prompt_tokens": 1365,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt is a country in Northeast Africa, with its capital in Cairo."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt is a country in Northeast Africa, with its capital in Cairo. It is known for its rich history, ancient civilization, and the iconic Nile River. Home to over 100 million people, Egypt is the most populous African country. Its official language is Arabic, and it plays a significant role in the region’s politics and culture."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

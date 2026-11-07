@@ -1,0 +1,51 @@
+{
+  "cache_key": "8af27009283914dd0114220bf66d9df5b172b719d4d4c163f8f1fff7464bc8e4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb236662cea081f0",
+    "reasoning_tokens": 3607,
+    "completion_tokens": 3703,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "96e1d7dda71e24826ba0f93813fd7211ed7b5ce0fa417d085c7eb368715ee2e5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb236662cea081f0",
+    "reasoning_tokens": 3607,
+    "completion_tokens": 3703,
+    "prompt_tokens": 1284,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Bangkok, home to the iconic Grand Palace."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand is a Southeast Asian country with a rich cultural heritage. Its capital is Bangkok, home to the iconic Grand Palace. Officially the Kingdom of Thailand, it is known for its vibrant culture, Buddhism, and the traditional dance of the Thai."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

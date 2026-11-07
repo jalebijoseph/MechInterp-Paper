@@ -1,0 +1,53 @@
+{
+  "cache_key": "64c75a376f4ac798dc53e338b840dbbe69224190dc69e6cc6ac87a88d6b2afc5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b47b13ac1ac63e73",
+    "reasoning_tokens": 4950,
+    "completion_tokens": 5049,
+    "prompt_tokens": 1243,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "73b6f161dd9294a23027edd3344fb8ca6d2e7b00b47b2800b1fda43b86b46796",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b47b13ac1ac63e73",
+    "reasoning_tokens": 4950,
+    "completion_tokens": 5049,
+    "prompt_tokens": 1243,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest internal organ of the human body is the liver. The largest organ overall is the skin."
+        ],
+        "review_rejects_false": [
+          "The liver is not the largest organ; that is the skin."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest internal organ of the human body is the liver. The largest organ overall is the skin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

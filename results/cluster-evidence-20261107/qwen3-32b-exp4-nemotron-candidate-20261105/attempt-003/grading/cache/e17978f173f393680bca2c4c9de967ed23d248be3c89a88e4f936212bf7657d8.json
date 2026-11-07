@@ -1,0 +1,51 @@
+{
+  "cache_key": "e17978f173f393680bca2c4c9de967ed23d248be3c89a88e4f936212bf7657d8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f8ddd57bea99be3",
+    "reasoning_tokens": 2227,
+    "completion_tokens": 2323,
+    "prompt_tokens": 1256,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "10471f1935343caf37340877ab1d6d68d708b114aa62833358cf9b709097fc19",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f8ddd57bea99be3",
+    "reasoning_tokens": 2227,
+    "completion_tokens": 2323,
+    "prompt_tokens": 1256,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Ireland is Dublin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Ireland is Dublin. A vibrant city rich in history and culture, it serves as the perfect starting point for exploring the Emerald Isle’s breathtaking landscapes and welcoming communities."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

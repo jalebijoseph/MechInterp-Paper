@@ -1,0 +1,51 @@
+{
+  "cache_key": "de10b751ba18c094d64fb800b62e319674aebb014f67e9facbebb36b2573a4e0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b89c0ea5d6e8563d",
+    "reasoning_tokens": 5600,
+    "completion_tokens": 5704,
+    "prompt_tokens": 1344,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8e6c4bab1b9eb1f58b22a1c7f24ce6bf52c89436b57f7e028f453d416bdafdb6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b89c0ea5d6e8563d",
+    "reasoning_tokens": 5600,
+    "completion_tokens": 5704,
+    "prompt_tokens": 1344,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone is often credited to Alexander Graham Bell, who received the first patent for the device in 1876. Elisha Gray filed a patent the same day, sparking historical debate over the invention’s origins."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone is often credited to Alexander Graham Bell, who received the first patent for the device in 1876. Elisha Gray filed a patent the same day, sparking historical debate over the invention’s origins."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

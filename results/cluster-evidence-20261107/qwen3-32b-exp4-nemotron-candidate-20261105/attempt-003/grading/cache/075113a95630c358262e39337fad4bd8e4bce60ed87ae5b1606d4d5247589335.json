@@ -1,0 +1,51 @@
+{
+  "cache_key": "075113a95630c358262e39337fad4bd8e4bce60ed87ae5b1606d4d5247589335",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7f46d4795df84a2",
+    "reasoning_tokens": 2621,
+    "completion_tokens": 2717,
+    "prompt_tokens": 1410,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7ca0862b5f0c3f20b27df2bf42abfd44d2eba36c53508de50f9fc533baae35d1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b7f46d4795df84a2",
+    "reasoning_tokens": 2621,
+    "completion_tokens": 2717,
+    "prompt_tokens": 1410,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt, located in northeastern Africa, has Cairo as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt, located in northeastern Africa, has Cairo as its capital. With a population of over 104 million, it is the most populous country in the Arab world. A presidential republic, Egypt has a mixed economy and is known for the Nile River, ancient civilization, and iconic landmarks like the Pyramids of Giza."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

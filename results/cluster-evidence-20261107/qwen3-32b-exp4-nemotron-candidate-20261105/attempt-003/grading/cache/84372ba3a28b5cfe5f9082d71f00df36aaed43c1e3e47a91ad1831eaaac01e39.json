@@ -1,0 +1,51 @@
+{
+  "cache_key": "84372ba3a28b5cfe5f9082d71f00df36aaed43c1e3e47a91ad1831eaaac01e39",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a1a49ca4c109280",
+    "reasoning_tokens": 1937,
+    "completion_tokens": 2041,
+    "prompt_tokens": 1438,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "093c5691d6b9d7a671dd13772b44caab2dcac8afa51d70f3231a0f835c777b4e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a1a49ca4c109280",
+    "reasoning_tokens": 1937,
+    "completion_tokens": 2041,
+    "prompt_tokens": 1438,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"Evolution by natural selection, proposed by Charles Darwin, is the process where heritable variations leading to differential survival and reproduction shape biological adaptations."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"Evolution by natural selection, proposed by Charles Darwin, is the process where heritable variations leading to differential survival and reproduction shape biological adaptations. Traits enhancing fitness increase in populations. Darwin's finches, Galápagos finches, illustrate beak-feeding guild speciation. Natural selection remains the best established theory of adaptation, though some workers add 'Darwin's\" before natural selection. The study of natural selection, says Darwin, is the life's work of the naturalist. Darwin's theory of natural selection, says the study note"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

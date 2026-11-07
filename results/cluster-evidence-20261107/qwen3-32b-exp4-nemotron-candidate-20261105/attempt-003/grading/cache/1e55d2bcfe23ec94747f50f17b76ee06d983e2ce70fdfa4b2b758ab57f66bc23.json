@@ -1,0 +1,55 @@
+{
+  "cache_key": "1e55d2bcfe23ec94747f50f17b76ee06d983e2ce70fdfa4b2b758ab57f66bc23",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\", \"F5\"],\n    \"review_rejects_false\": [\"R2\", \"R4\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84bc1975d9c05bbb",
+    "reasoning_tokens": 3320,
+    "completion_tokens": 3427,
+    "prompt_tokens": 1381,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "356b6e61fd9a96d5621dbdf7765b3bba2956988b54a6e8916654e3e4e944ec68",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\", \"F5\"],\n    \"review_rejects_false\": [\"R2\", \"R4\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84bc1975d9c05bbb",
+    "reasoning_tokens": 3320,
+    "completion_tokens": 3427,
+    "prompt_tokens": 1381,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Alexander Graham Bell invented the telephone.",
+          "Final text: \"The telephone is credited to Alexander Graham Bell."
+        ],
+        "review_rejects_false": [
+          "The telephone is not credited to Thomas Edison.",
+          "Thomas Edison did not invent a telephone."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone is not credited to Thomas Edison. Alexander Graham Bell invented the telephone. Thomas Edison did not invent a telephone. Final text: \"The telephone is credited to Alexander Graham Bell. His invention, the telephone, revolutionized communication.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

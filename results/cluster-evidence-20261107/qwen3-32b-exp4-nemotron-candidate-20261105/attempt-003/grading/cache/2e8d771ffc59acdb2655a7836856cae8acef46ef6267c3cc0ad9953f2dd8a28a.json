@@ -1,0 +1,51 @@
+{
+  "cache_key": "2e8d771ffc59acdb2655a7836856cae8acef46ef6267c3cc0ad9953f2dd8a28a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8bef19554dfec882",
+    "reasoning_tokens": 1810,
+    "completion_tokens": 1914,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "13d252178e6b15086928a1d57a9a33fa71daba0ea4cf23451bb3eb2f533ec2d6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8bef19554dfec882",
+    "reasoning_tokens": 1810,
+    "completion_tokens": 1914,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Portugal, capital Lisboa, 9.3 pop (2023), 92.5k area, unitary semi-pres republik."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal, capital Lisboa, 9.3 pop (2023), 92.5k area, unitary semi-pres republik. Member Euro 2008. Notable: democratic since 1974 Carnation, wine cork tech."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

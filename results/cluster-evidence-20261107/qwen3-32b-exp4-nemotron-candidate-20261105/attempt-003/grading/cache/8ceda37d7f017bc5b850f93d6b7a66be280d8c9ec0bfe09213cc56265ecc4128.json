@@ -1,0 +1,49 @@
+{
+  "cache_key": "8ceda37d7f017bc5b850f93d6b7a66be280d8c9ec0bfe09213cc56265ecc4128",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfbfd2b4a145c0f3",
+    "reasoning_tokens": 4892,
+    "completion_tokens": 4989,
+    "prompt_tokens": 1477,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "36527822ce4e865559a548a33367e64f192889cc955bb964681a1cf1650e6020",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfbfd2b4a145c0f3",
+    "reasoning_tokens": 4892,
+    "completion_tokens": 4989,
+    "prompt_tokens": 1477,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"Mercury, at 430°C, is the sun's closest victim. Venus, shrouded in CO2, broods at 471°C. Both pale next to Jupiter's... [snip] - Alice, fact-editor. \n\n[Final] The solar system's boldest claimant"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}
