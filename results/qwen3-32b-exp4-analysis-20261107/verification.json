@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-07",
+  "offline_cpu_suite": {
+    "passed": 242,
+    "skipped": 8,
+    "subtests_passed": 86,
+    "log": "results/qwen3-32b-causal-handoff-20261107/cpu-tests.log",
+    "skip_reason": "Uncached optional Qwen3-1.7B, Qwen3-8B, Llama3.1-8B and Gemma3-12B tokenizers, two tests each"
+  },
+  "independent_checks": [
+    "exact sign-flip DP versus exhaustive small examples",
+    "exact 60-fact sign-flip tail",
+    "fixed-denominator unresolved bounds",
+    "original primary-summary reproduction",
+    "blinded packet identities, 149 empty labels and metadata separation",
+    "source hashes match 98 frozen remote files",
+    "raw Nemotron and GPT-OSS scored responses unchanged",
+    "reviewed stage-gated discovery and no held-out leakage",
+    "reviewed owned-server cleanup and GPU0\u20133 restrictions"
+  ],
+  "independent_reviews": [
+    "analysis and adjudication packet",
+    "Exp2 grading adapter and lifecycle",
+    "causal runtime and lifecycle",
+    "staged handoff assay and persistence"
+  ],
+  "human_adjudication": "pending",
+  "corrected_exp2_grading": "running",
+  "causal_discovery": "queued behind corrected Exp2; no GPU target results yet",
+  "source_sha256": {
+    "scripts/analyze_exp4_specificity.py": "7f042c8befcd721344a8d55e53d6e3c6265832dff2b1b2ef36d879d7d40f16ac",
+    "scripts/prepare_exp4_adjudication.py": "72019783bad28739bd5db0b7d0a6bc357270d762be03d97af73381c92172e123",
+    "scripts/run_exp2_rescore_v3.py": "7a807a03a5dca72977e986577461a6078c8dbafcb6d9e1e791d9d7d60a32dd30",
+    "scripts/run_exp4_rescore_v3.py": "caa01f1e159d0b0472612c820f81897263aa0b279eabac2c45b4650a75ca0f02",
+    "scripts/queue_exp4_rescore_v3.py": "55f1688aaad930e9bd04f970a3814b0038e4c1b73d18bc77fa4411e85aaf96b8",
+    "scripts/run_causal_handoff.py": "bd29e250fd3571d766c7e70c178b791f61ef10ddaa59991679f4618512b3c9ca",
+    "scripts/queue_causal_handoff.py": "69f640f80dead8d3a32ea09e1652445c44d8241bc9813d108d2c045f632a482a",
+    "src/jpeers/runtime.py": "3df57d7bb8394beb6d74580961928bd9298106f27bdb2b44a57f4800c84aacd2",
+    "src/jpeers/schemas.py": "064a35e99ad244aca0b51c799e91f50a698dd67cc3098041c4c9cbc54d7f5e67",
+    "src/jpeers/trace.py": "78dbfda05cb9180e3d12826ad656d2abfe6bdce5eb37954d7d7530d41f76b2ba",
+    "src/jpeers/followup/handoff.py": "b5e4931bc173d70849b7f7c4c96e9f18af2e32ffd9229309dcde2bf8bb6ce4ca",
+    "configs/causal_handoff_32b.json": "2622bd865a76f056c2bb76a58a24d271738d76d5555019db97a6de0ca7273420",
+    "docs/2026-11-07-exp4-specificity.md": "ac59778977966903a4322cdc7175bf7daca98354722a1050d018a8b0e0bc4bd9",
+    "docs/2026-11-07-causal-followup-design.md": "e139eb9fc38276a2b8c5cf2e13feb4beda295e0d9a4552449b49f0bdeb976b94"
+  }
+}

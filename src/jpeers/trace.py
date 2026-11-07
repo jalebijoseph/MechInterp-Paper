@@ -11,6 +11,9 @@ Arrays (P = recorded positions, L = recorded layers, K = top-k, W = watch words)
     output_ranks  [P, W]     same, in the model's own next-token prediction at that
                              position (baseline; optional)
     model_top1    [P]        the model's own next-token argmax (optional)
+    residuals     [P, L, D]  opt-in raw block-output residuals, respecting pre/post
+    directions_jacobian / directions_logit [L, W, D] opt-in unit decoder rows
+    direction_token_ids [W] exact token ids used for the direction rows
 """
 
 from __future__ import annotations
@@ -22,7 +25,8 @@ from dataclasses import dataclass, field
 import numpy as np
 
 ARRAY_KEYS = ("positions", "topk_ids", "topk_logits", "watch_ranks", "watch_ranks_logit",
-              "output_ranks", "model_top1")
+              "output_ranks", "model_top1", "residuals", "directions_jacobian",
+              "directions_logit", "direction_token_ids")
 
 
 @dataclass
@@ -42,6 +46,13 @@ class JSpaceTrace:
     spans: dict[str, list[tuple[int, int]]] = field(default_factory=dict)
     vocab: dict[int, str] = field(default_factory=dict)
     prompt_len: int = 0
+    # New optional fields follow the existing positional constructor arguments.
+    residuals: np.ndarray | None = None  # [P, L, D], opt-in block-output capture
+    directions_jacobian: np.ndarray | None = None  # [L, W, D], normalized rows
+    directions_logit: np.ndarray | None = None
+    direction_token_ids: np.ndarray | None = None  # [W], exact direction token ids
+    capture_metadata: dict = field(default_factory=dict)
+    causal_edits: list[dict] = field(default_factory=list)
 
     # ------------------------------------------------------------------ encoding
 
@@ -71,6 +82,8 @@ class JSpaceTrace:
             spans=spans,
             vocab={int(k): v for k, v in r["vocab"].items()},
             prompt_len=r["prompt_len"],
+            capture_metadata=r.get("capture_metadata", {}),
+            causal_edits=r.get("causal_edits", []),
         )
 
     def save(self, path: str) -> None:
@@ -79,7 +92,8 @@ class JSpaceTrace:
         meta = {"layers": self.layers, "watch": self.watch, "watch_ids": self.watch_ids,
                 "tokens": self.tokens,
                 "spans": self.spans, "vocab": {str(k): v for k, v in self.vocab.items()},
-                "prompt_len": self.prompt_len}
+                "prompt_len": self.prompt_len, "capture_metadata": self.capture_metadata,
+                "causal_edits": self.causal_edits}
         np.savez_compressed(path, **self.arrays(), meta=np.array(json.dumps(meta)))
 
     @classmethod
@@ -95,6 +109,8 @@ class JSpaceTrace:
             spans={k: [tuple(s) for s in v] for k, v in meta["spans"].items()},
             vocab={int(k): v for k, v in meta["vocab"].items()},
             prompt_len=meta["prompt_len"],
+            capture_metadata=meta.get("capture_metadata", {}),
+            causal_edits=meta.get("causal_edits", []),
         )
 
     # ------------------------------------------------------------------ selection
@@ -150,7 +166,9 @@ def decode_arrays(payload: dict | str, encoding: str) -> dict[str, np.ndarray]:
     if encoding == "json":
         dtypes = {"positions": np.int64, "topk_ids": np.int64, "topk_logits": np.float32,
                   "watch_ranks": np.int64, "watch_ranks_logit": np.int64,
-                  "output_ranks": np.int64, "model_top1": np.int64}
+                  "output_ranks": np.int64, "model_top1": np.int64,
+                  "residuals": np.float32, "directions_jacobian": np.float32,
+                  "directions_logit": np.float32, "direction_token_ids": np.int64}
         return {k: np.asarray(v, dtype=dtypes.get(k)) for k, v in payload.items()}
     if encoding == "npz_b64":
         z = np.load(io.BytesIO(base64.b64decode(payload)), allow_pickle=False)

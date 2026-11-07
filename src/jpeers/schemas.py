@@ -7,9 +7,10 @@ locally, by Azure ML / Foundry, by Vertex AI or by Cloud Run.
 
 from __future__ import annotations
 
+import math
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 # --------------------------------------------------------------------------- positions
 
@@ -31,6 +32,7 @@ class PositionSelector(BaseModel):
     include_generated: bool = False
     include_last: bool = False  # optionally include the final prompt prediction site
     skip_first: int = 0  # ignore attention-sink positions at the very start
+    span_last: bool = False  # for scope="spans", select each span's final token only
 
 
 class SpanQuery(BaseModel):
@@ -64,10 +66,15 @@ class InterventionSpec(BaseModel):
                           ``target`` in the span of their J-lens vectors
         scale_jspace   -- multiply the component of h inside the top-k J-lens subspace by
                           ``strength`` (0 = ablate, 1 = no-op, >1 = amplify)
+        fixed_delete   -- subtract deletion_fraction * Q Q.T h for frozen basis rows Q.T
+        fixed_random_matched -- match fixed_delete's displacement norm and h dot delta
+        fixed_patch    -- replace only Q coordinates with explicit donor_coefficients
+        fixed_random_restore -- random displacement matching fixed_patch's norm and dot
     """
 
     kind: Literal["ablate_topk", "ablate_tokens", "random_ablate", "random_matched", "steer",
-                  "swap", "scale_jspace"]
+                  "swap", "scale_jspace", "fixed_delete", "fixed_random_matched",
+                  "fixed_patch", "fixed_random_restore"]
     layers: str | list[int] = "band"  # "band" | "early" | "late" | "all" | explicit list
     positions: PositionSelector = Field(default_factory=PositionSelector)
     k: int = 10
@@ -77,6 +84,41 @@ class InterventionSpec(BaseModel):
     strength: float = 1.0
     seed: int = 0
     word_like_only: bool = False  # restrict top-k selection to word-like vocab entries
+    # Opt-in fixed-component study. Rows are orthonormal residual directions Q.T.
+    # New edits require one explicit layer and exactly one selected prompt position.
+    basis: list[list[float]] | None = None
+    deletion_fraction: float = 1.0
+    donor_coefficients: list[float] | None = None  # Q.T @ clean/counterfactual donor h
+
+    @model_validator(mode="after")
+    def validate_fixed_component(self):
+        if not self.kind.startswith("fixed_"):
+            return self
+        if not isinstance(self.layers, list) or len(self.layers) != 1:
+            raise ValueError("fixed-component edits require one explicit layer")
+        if (self.positions.scope not in ("last", "spans") or
+                self.positions.include_generated):
+            raise ValueError("fixed-component edits require one prompt position")
+        rows = self.basis
+        if not rows or len(rows) > 2 or not rows[0]:
+            raise ValueError("basis needs one or two nonempty orthonormal rows")
+        width = len(rows[0])
+        if any(len(row) != width or not all(math.isfinite(x) for x in row) for row in rows):
+            raise ValueError("basis rows must have equal dimensions and finite values")
+        for i, left in enumerate(rows):
+            for j, right in enumerate(rows):
+                dot = sum(a * b for a, b in zip(left, right))
+                if abs(dot - float(i == j)) > 1e-5:
+                    raise ValueError("basis rows must be orthonormal (tolerance 1e-5)")
+        if not math.isfinite(self.deletion_fraction) or not 0 <= self.deletion_fraction <= 1:
+            raise ValueError("deletion_fraction must be finite and in [0, 1]")
+        if (self.donor_coefficients is not None or
+                self.kind in ("fixed_patch", "fixed_random_restore")):
+            coeff = self.donor_coefficients
+            if (coeff is None or len(coeff) != len(rows) or
+                    not all(math.isfinite(x) for x in coeff)):
+                raise ValueError("donor_coefficients must be finite and match basis rank")
+        return self
 
 
 # --------------------------------------------------------------------------- recording
@@ -106,6 +148,9 @@ class RecordSpec(BaseModel):
     #             what the model is about to say?)
     baselines: list[Literal["logit", "output"]] = Field(
         default_factory=lambda: ["logit", "output"])
+    capture_residuals: bool = False  # float32 [position, layer, residual_coordinate]
+    capture_directions: list[Literal["jacobian", "logit"]] = Field(default_factory=list)
+    direction_token_form: Literal["primary", "bare"] = "primary"
 
 
 # --------------------------------------------------------------------------- request / response
@@ -147,3 +192,5 @@ class GenerateResponse(BaseModel):
     trace: dict | str | None  # see jpeers.trace
     interventions_applied: int
     timings: dict[str, float]
+    capture_metadata: dict = Field(default_factory=dict)
+    causal_edits: list[dict] = Field(default_factory=list)

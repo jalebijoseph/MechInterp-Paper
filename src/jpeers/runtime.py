@@ -169,11 +169,18 @@ class LensedModel:
         return self.lm.unembed(x).float()
 
     def lens_directions(self, layer: int, token_ids: torch.Tensor | list[int],
-                        device: torch.device) -> torch.Tensor:
-        """Unit J-lens vectors ``v_{l,t}`` for ``token_ids`` (any shape) -> ``[..., d]``."""
-        ids = torch.as_tensor(token_ids, device=self._W_U.device)
+                        device: torch.device, *, use_jacobian: bool = True) -> torch.Tensor:
+        """Unit residual directions for token ids -> ``[..., d]``.
+
+        Rows are normalize((gain * W_U[token]) @ J[layer]), or omit J for the
+        plain-logit baseline. These are fixed decoder directions, not local gradients
+        through the position-dependent final normalization.
+        """
+        ids = torch.as_tensor(token_ids, device=self._W_U.device, dtype=torch.long)
         rows = self._W_U[ids.reshape(-1)].float() * self._gain  # [n, d]
-        v = rows.to(device) @ self.J(layer, device)  # (g*W_U[t]) @ J  ==  J^T (g*W_U[t])
+        v = rows.to(device)
+        if use_jacobian:
+            v = v @ self.J(layer, device)  # (g*W_U[t]) @ J == J^T (g*W_U[t])
         v = v / v.norm(dim=-1, keepdim=True).clamp_min(1e-8)
         return v.reshape(*ids.shape, self.d_model)
 
@@ -277,6 +284,8 @@ class LensedModel:
             trace=None if arrays is None else encode_arrays(arrays, req.trace_encoding),
             interventions_applied=run.n_edits,
             timings={"prefill_s": t_prefill, "total_s": time.perf_counter() - t0},
+            capture_metadata=run.capture_metadata,
+            causal_edits=run.causal_edits,
         )
 
 
@@ -290,6 +299,7 @@ class _LayerRecord:
     topk_logits: list[np.ndarray] = field(default_factory=list)
     watch_ranks: list[np.ndarray] = field(default_factory=list)
     watch_ranks_logit: list[np.ndarray] = field(default_factory=list)
+    residuals: list[torch.Tensor] = field(default_factory=list)
 
 
 class _Run:
@@ -304,6 +314,21 @@ class _Run:
         self.spans = spans
         self.offset = 0
         self.n_edits = 0
+        self.causal_edits: list[dict] = []
+        self.capture_metadata: dict = {}
+        if self.rec.enabled and (self.rec.capture_residuals or self.rec.capture_directions):
+            self.capture_metadata = {
+                "residual_site": "block_output", "when": self.rec.when,
+                "residual_coordinates": "model residual stream, no normalization; "
+                                        "post captures the delivered model-dtype block output",
+                "residual_storage_dtype": "float32",
+                "residual_dtype_by_layer": {},
+                "direction_coordinates": "unit rows in model residual stream",
+                "jacobian_direction": "normalize((final_norm_gain * W_U[token]) @ J[layer])",
+                "logit_direction": "normalize(final_norm_gain * W_U[token])",
+                "direction_token_rule": "first word_token_ids entry per record.watch word",
+                "basis_convention": "basis rows = Q.T; coefficients = h @ Q",
+            }
 
         self.record_layers: list[int] = []
         if self.rec.enabled:
@@ -315,6 +340,19 @@ class _Run:
         self.watch_words = list(self.rec.watch)
         self.watch_ids = [model.word_token_ids(w) for w in self.watch_words]
         _check_no_collisions(self.watch_words, self.watch_ids, model.vocab_strings)
+        self.direction_ids: list[int] = []
+        if self.rec.enabled and self.rec.capture_directions:
+            tokenization = {}
+            for word, ids in zip(self.watch_words, self.watch_ids):
+                bare = list(model.tokenizer(word, add_special_tokens=False).input_ids)
+                if self.rec.direction_token_form == "bare" and len(bare) != 1:
+                    raise ValueError(f"bare direction label {word!r} must be a single token")
+                chosen = bare[0] if self.rec.direction_token_form == "bare" else ids[0]
+                self.direction_ids.append(chosen)
+                tokenization[word] = {"bare_ids": bare, "primary_id": ids[0],
+                                      "direction_id": chosen}
+            self.capture_metadata["label_tokenization"] = tokenization
+            self.capture_metadata["direction_token_rule"] = self.rec.direction_token_form
         self._watch_flat: torch.Tensor | None = None
         self._watch_owner: torch.Tensor | None = None
         if self.watch_ids:
@@ -330,6 +368,17 @@ class _Run:
 
         self.interventions: list[tuple[InterventionSpec, set[int]]] = [
             (iv, set(model.band(iv.layers))) for iv in req.interventions]
+        for iv, layers in self.interventions:
+            if iv.kind.startswith("fixed_"):
+                # Revalidate mutable request objects before any hook can edit a state.
+                iv.validate_fixed_component()
+                if any(layer < 0 or layer >= model.n_layers for layer in layers):
+                    raise ValueError("fixed-component layer is outside the model")
+                if len(iv.basis[0]) != model.d_model:
+                    raise ValueError("basis dimension does not match model residual dimension")
+                selected = self._mask(iv.positions, torch.arange(prompt_len))
+                if int(selected.sum()) != 1:
+                    raise ValueError("fixed-component edit must select exactly one prompt position")
         self._fixed_dirs: dict[tuple[int, int, torch.device], torch.Tensor] = {}
         self._matched_dirs: dict[tuple[int, int, torch.device], torch.Tensor] = {}
         self._layer_scale: dict[int, float] = {}
@@ -374,7 +423,35 @@ class _Run:
                     mask = self._mask(iv.positions, pos)
                     if mask.any():
                         idx = mask.nonzero(as_tuple=True)[0].to(h.device)
-                        h_new[idx] = self._apply(iv, layer, h_new[idx], pos)
+                        before = h_new[idx]
+                        after = self._apply(iv, layer, before, pos)
+                        if iv.kind.startswith("fixed_"):
+                            # Report the actual model-dtype edit, including rounding.
+                            actual = after.to(hidden.dtype).float()
+                            if not bool(torch.isfinite(actual).all()):
+                                raise ValueError("fixed-component edit is not finite in model dtype")
+                            for p, old, wanted, new in zip(
+                                    pos[idx.cpu()].tolist(), before, after, actual):
+                                old, wanted, new = old.double(), wanted.double(), new.double()
+                                delta = new - old
+                                desired = wanted - old
+                                self.causal_edits.append({
+                                    "intervention_index": next(i for i, item in enumerate(
+                                        self.req.interventions) if item is iv),
+                                    "kind": iv.kind, "layer": layer, "position": p,
+                                    "site": "block_output", "edit_norm": float(delta.norm()),
+                                    "h_dot_delta": float(old @ delta),
+                                    "hidden_norm_before": float(old.norm()),
+                                    "hidden_norm_after": float(new.norm()),
+                                    "desired_edit_norm": float(desired.norm()),
+                                    "desired_h_dot_delta": float(old @ desired),
+                                    "desired_hidden_norm_after": float((old + desired).norm()),
+                                    "quantization_error_norm": float((delta - desired).norm()),
+                                })
+                            # Subsequent fixed edits consume the reported model-dtype
+                            # state, so composed engineering checks have honest metrics.
+                            after = actual
+                        h_new[idx] = after
                         changed = True
                         self.n_edits += 1
                 if changed:
@@ -404,7 +481,7 @@ class _Run:
             m = torch.zeros_like(pos, dtype=torch.bool)
             for label in sel.labels:
                 for a, b in self.spans.get(label, []):
-                    m |= (pos >= a) & (pos < b)
+                    m |= (pos == b - 1) if sel.span_last else ((pos >= a) & (pos < b))
             if sel.include_generated:
                 m |= pos >= P
         else:
@@ -429,6 +506,11 @@ class _Run:
         for start in range(0, len(idx), _CHUNK):
             sub = idx[start:start + _CHUNK]
             hs = h[sub.to(h.device)]
+            if self.rec.capture_residuals:
+                # Clone: a pre-edit view must not change when hooks edit h in place.
+                buf.residuals.append(hs.detach().float().clone())
+                self.capture_metadata["residual_dtype_by_layer"][str(layer)] = (
+                    str(hs.dtype).removeprefix("torch."))
             logits = self.m.lens_logits(layer, hs, use_jacobian=use_j)
             if self.watch_ids:
                 buf.watch_ranks.append(self._watch_ranks(logits))
@@ -490,6 +572,20 @@ class _Run:
             "topk_ids": stack("topk_ids"),
             "topk_logits": stack("topk_logits"),
         }
+        if self.rec.capture_residuals:
+            out["residuals"] = stack("residuals")
+        if self.rec.capture_directions:
+            primary = self.direction_ids
+            out["direction_token_ids"] = np.asarray(primary, dtype=np.int64)
+            for kind in self.rec.capture_directions:
+                rows = []
+                for layer in self.record_layers:
+                    # Use each recorded block's device under model sharding.
+                    dev = self.buffers[layer].topk_ids[0].device
+                    dirs = self.m.lens_directions(layer, primary, dev,
+                                                  use_jacobian=kind == "jacobian")
+                    rows.append(dirs.detach().float().cpu())
+                out[f"directions_{kind}"] = torch.stack(rows).numpy()
         if self.watch_ids:
             out["watch_ranks"] = stack("watch_ranks")
             if self.buffers[self.record_layers[0]].watch_ranks_logit:
@@ -545,6 +641,25 @@ class _Run:
     def _apply(self, iv: InterventionSpec, layer: int, h: torch.Tensor, pos) -> torch.Tensor:
         """Edit ``h`` ([n, d] float32, the selected positions) and return it."""
         dev = h.device
+        if iv.kind.startswith("fixed_"):
+            if not bool(torch.isfinite(h).all()):
+                raise ValueError("fixed-component recipient residual must be finite")
+            key = (id(iv), layer, dev)
+            if key not in self._fixed_dirs:
+                self._fixed_dirs[key] = torch.tensor(iv.basis, device=dev, dtype=h.dtype).T
+            Q = self._fixed_dirs[key]
+            coefficients = h @ Q
+            if iv.kind in ("fixed_delete", "fixed_random_matched"):
+                delta = -iv.deletion_fraction * (coefficients @ Q.T)
+            else:
+                donor = torch.tensor(iv.donor_coefficients, device=dev, dtype=h.dtype)
+                delta = (donor - coefficients) @ Q.T
+            if iv.kind in ("fixed_random_matched", "fixed_random_restore"):
+                delta = self._matched_displacement(iv, layer, h, delta)
+            edited = h + delta
+            if not bool(torch.isfinite(edited).all()):
+                raise ValueError("fixed-component edit must remain finite")
+            return edited
         if iv.kind in ("ablate_topk", "scale_jspace", "random_matched"):
             out = torch.empty_like(h)
             for s in range(0, len(h), _CHUNK):
@@ -586,6 +701,37 @@ class _Run:
             c = h @ torch.linalg.pinv(V).T  # [n, 2]
             return h + (c.flip(-1) - c) @ V.T
         raise ValueError(f"unknown intervention {iv.kind}")
+
+    def _matched_displacement(self, iv: InterventionSpec, layer: int, h: torch.Tensor,
+                              delta: torch.Tensor) -> torch.Tensor:
+        """Match ||delta|| and h.dot(delta), for partial deletion or restoration.
+
+        Unlike the legacy full-projection control, d need not equal r squared.
+        Calculating in float64 avoids cancellation near parallel displacements.
+        """
+        x, target = h.double(), delta.double()
+        norm = x.norm(dim=-1, keepdim=True)
+        h_hat = x / norm.clamp_min(1e-30)
+        r2 = target.square().sum(-1, keepdim=True)
+        a = (x * target).sum(-1, keepdim=True) / norm.clamp_min(1e-30)
+        # CPU generator keeps seeded controls reproducible across layer devices.
+        gen = torch.Generator(device="cpu").manual_seed(iv.seed * 100_003 + layer + 7)
+        u = torch.randn(self.m.d_model, generator=gen, dtype=torch.float64).to(h.device)
+        perpendicular = u - (h_hat @ u).unsqueeze(-1) * h_hat
+        pnorm = perpendicular.norm(dim=-1, keepdim=True)
+        # A deterministic axis fallback handles an accidentally parallel random draw.
+        axis = torch.nn.functional.one_hot(h_hat.abs().argmin(-1), self.m.d_model).double()
+        fallback = axis - (axis * h_hat).sum(-1, keepdim=True) * h_hat
+        perpendicular = torch.where(pnorm > 1e-12, perpendicular, fallback)
+        pnorm = perpendicular.norm(dim=-1, keepdim=True)
+        b = (r2 - a.square()).clamp_min(0).sqrt()
+        if bool(((pnorm <= 1e-12) & (b > 1e-10)).any()):
+            raise ValueError("no orthogonal direction available for matched control")
+        matched = a * h_hat + b * perpendicular / pnorm.clamp_min(1e-30)
+        # At h=0 every direction satisfies the inner-product condition.
+        zero = norm == 0
+        matched = torch.where(zero, r2.sqrt() * u / u.norm(), matched)
+        return matched.to(h.dtype)
 
 
 # ====================================================================== helpers

@@ -1,0 +1,34 @@
+{
+  "host": "35.166.104.254",
+  "user": "vinli0921",
+  "remote_root": "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107",
+  "attempt": "attempt-001",
+  "manager_pid": 442817,
+  "server_port": 18130,
+  "model": "Qwen/Qwen3-32B",
+  "model_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "lens_revision": "e166deb5ad540932100ef803c8c9bcc2a5453694",
+  "protocol": "incoming-mediation-v1",
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gpu_count": 2,
+  "waits_for": "/home/vinli0921/mechinterp-runs/qwen3-32b-exp2-nemotron-v3-20261107/attempt-001",
+  "manager_status_file": "attempt-001/manager-status.json",
+  "study_status_file": "attempt-001/results/status.json",
+  "progress_file": "attempt-001/results/progress.json",
+  "discovery_file": "attempt-001/results/discovery.json",
+  "summary_file": "attempt-001/results/summary.json",
+  "heldout_contexts": 768,
+  "maximum_heldout_generations": 4608,
+  "development_contexts": 256,
+  "human_review_status": "pending",
+  "cpu_preflight": {
+    "passed": 242,
+    "skipped": 8,
+    "subtests_passed": 86
+  }
+}
