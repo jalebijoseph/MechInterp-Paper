@@ -142,6 +142,69 @@ the communication and behaviour metrics much more than the size-matched `matched
 control, while fluency is preserved (check `turns.jsonl`). J-space readout metrics are
 reduced by ablation by construction, so judge Exp. 4 on behaviour.
 
+## Exp. 8 (D): partner contribution and task-state tracking (`configs/exp8_task_state.yaml`)
+
+**Question.** Besides J-space, does an orchestrator maintain any information on who owns
+each task and what each peer contributed? This is Experiment D of
+[peer-modeling-next-experiments.md](jeffrey-exp-plans-new/peer-modeling-next-experiments.md),
+implemented with the audited follow-up v2 conventions (frozen messages, no prefill,
+strict JSON, band-mean readouts, clustered statistics, exact expected counts).
+Full design (draft, pending review):
+[experiment 8 spec](superpowers/specs/2026-11-11-experiment-8-task-state-tracking-design.md).
+This section describes the CPU-tested pilot that implements its behavioral and
+passive-readout layer.
+
+**Design.** 16 projects (`src/jpeers/data/task_state.json`), each with a target and a
+distractor subtask. The orchestrator assigns the target to one peer and the distractor to
+the other, the distractor is completed and verified, and scripted peer messages put the
+target into one of 8 states:
+
+| condition | target subtask | owner | codes | submitter of probed code | status / next action |
+|---|---|---|---|---|---|
+| `assigned_silent` | no word from the owner | first | none | – | assigned / query |
+| `in_progress` | owner says they started | first | none | – | in_progress / wait |
+| `unverified` | owner submits a code | first | 1 | first | submitted / verify |
+| `completed` | code submitted and verified | first | 1 | first | complete / integrate |
+| `blocked` | owner cannot continue | first | none | – | blocked / reassign |
+| `reassigned` | blocked with a partial code, then given to the other peer | **second** | 1 | **first** | in_progress / wait |
+| `conflicting` | both peers submit a code | first | 2 | **second** | conflict / resolve |
+| `document` | code appears in neutral shared notes | first | 1 | null | submitted / verify |
+
+× 2 role swaps (literal names crossed with first/second, roster order fixed) × 2 delays
+(`none`, or 3 unrelated `filler` messages) = 512 cells. Names rotate through four pairs
+across projects. Peer messages are private to the orchestrator, so "who has seen code C"
+has a definite answer. `reassigned` and `conflicting` dissociate ownership from
+provenance, and `document` dissociates content from provenance.
+
+**Readouts.** Six separate strict-JSON probes, one outcome each, so outcomes cannot
+borrow from each other: `content` (codes submitted), `provenance` (who submitted the
+probed code; null for `document`), `owner`, `access` (who has seen the code), `status`,
+`next_action`. These answer the question without J-space. A `no_peer` control asks the
+owner and content probes before anything is assigned (correct: null and none).
+J-space, logit and output readouts are taken on the owner probe at `pre_query` (the last
+transcript token, before any probe text, identical for every probe of a cell) and at
+`decision` (last prompt token), as band-mean reciprocal ranks per roster name.
+
+**Primary readout** (proposed; freeze before a confirmatory run). At `pre_query` after
+`filler`, the J-lens owner margin (owner − other peer), averaged over each role-swap pair
+so fixed name priors cancel, averaged within project over conditions, sign-flip test
+over the 16 projects. Secondary: the same under the logit and output baselines, at
+`decision`, and with no delay; `submitter_vs_owner` in `reassigned` / `conflicting`
+(does the representation follow who contributed or who owns?); per-outcome probe
+accuracy by condition and delay.
+
+**Interpreting it.** Probe accuracy shows the orchestrator *can report* the state;
+a positive `pre_query` margin that beats the logit and output baselines shows the owner
+is represented *before it is asked*. `decision` margins mostly restate the imminent
+answer (as in Exp. 3). `owner_is_last_peer_speaker` in the summary flags conditions
+where recency alone could predict the owner (`conflicting` is the counterexample).
+Limitations: peer messages are scripted, the full transcript stays in context (so
+success can be retrieval rather than a maintained state; the planned compaction
+variant is not implemented yet), and none of this is a theory-of-mind test.
+
+**Size.** 2,624 probes (512 recorded) plus 32 no-peer probes per model. Pilot with
+`--set n_projects=4`.
+
 ---
 
 ## Recommended run plan

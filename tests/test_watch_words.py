@@ -39,6 +39,9 @@ def watch_lists() -> dict[str, list[str]]:
     sel = load_task_bank("peer_selection")
     lists["exp3"] = [sel["agents"]["dev"]["name"], sel["agents"]["research"]["name"],
                      *sel["family_variant"]["names"]]
+    from jpeers.followup.task_state import cells
+    for cell in cells(load_task_bank("task_state"), delays=("none",)):
+        lists[f"exp8/{cell['project']}"] = list(cell["roster"])
     return lists
 
 

@@ -21,8 +21,8 @@ src/jpeers/
   harness.py         multi-agent conversations; every turn's J-space saved to runs/
   analysis.py        rank / MRR / uptake / similarity metrics, permutation tests
   benchmarks.py      false-belief generator, Hi-ToM, NARCBench loaders
-  experiments/       tom_validation, collab, imposter, peer_selection, ablation
-  data/              scenario banks for Exp. 1-3
+  experiments/       tom_validation, collab, imposter, peer_selection, ablation, task_state
+  data/              scenario banks for Exp. 1-3 and 8
 scripts/             fit_lens.py, lens_sanity.py, prefetch.py
 configs/             one YAML per experiment + endpoints.example.yaml
 deploy/              Dockerfile, azure/ (Foundry managed compute), gcp/ (Vertex AI, Cloud Run)
@@ -36,7 +36,7 @@ tests/               CPU tests on a tiny model with a freshly fitted lens
 2. [Fitting a lens / building J-space](docs/02_fitting_jspace.md)
 3. [Benchmarks](docs/03_benchmarks.md)
 4. [Experimental harness](docs/04_harness.md)
-5. [Experiments 0-4](docs/05_experiments.md) and [pilot results](docs/results_pilot.md)
+5. [Experiments 0-4 and 8](docs/05_experiments.md) and [pilot results](docs/results_pilot.md)
 6. [Removing and editing J-space during generation](docs/06_interventions.md)
 7. [Pre-registration: primary metrics, tests, sample sizes](docs/07_preregistration.md)
 8. [Qwen3 cluster runs, trace storage, and Experiment 0 audit](docs/cluster_runs_20261104.md)
@@ -63,6 +63,8 @@ list them in `configs/endpoints.yaml`, and point the experiment configs at those
 
 * Done: lens loading and fitting, recording and interventions, server and four client
   backends, harness, Exp. 0–4 runners, Azure and GCP deployment scripts, tests.
+* Added: Exp. 8 (D), partner contribution and task-state tracking
+  (`configs/exp8_task_state.yaml`); CPU-tested, not yet run on a model.
 * Pilots of every experiment ran on a laptop RTX 3060 with Qwen3-1.7B; see
   [docs/results_pilot.md](docs/results_pilot.md). The cloud deployment scripts have not
   been executed yet; they need your subscription, project and GPU quota.

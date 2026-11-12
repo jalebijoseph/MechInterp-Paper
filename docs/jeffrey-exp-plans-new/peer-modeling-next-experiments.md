@@ -354,6 +354,10 @@ alter peer-belief-dependent behavior while leaving world-state knowledge intact.
 
 ## Proposed Experiment D: partner contribution and task-state tracking
 
+Developed as Experiment 8: draft design in
+`docs/superpowers/specs/2026-11-11-experiment-8-task-state-tracking-design.md`; pilot
+in `configs/exp8_task_state.yaml` and `src/jpeers/followup/task_state.py`.
+
 ### Research question
 
 After assigning work to a peer, does the orchestrator maintain who owns the task,

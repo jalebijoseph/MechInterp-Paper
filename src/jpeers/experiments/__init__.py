@@ -8,6 +8,9 @@ summary.md}``.
                       (+ NARCBench transcript replay)
     peer_selection    Exp. 3: orchestrator delegation, family bias, MACE-style lock-in
     ablation          Exp. 4: re-run any of the above under J-space interventions
+    task_state        Exp. 8 (D): who owns each subtask and who contributed what
+                      (probes + J-space; protocol in jpeers.followup.task_state)
 """
 
-EXPERIMENTS = ["tom_validation", "collab", "imposter", "peer_selection", "ablation"]
+EXPERIMENTS = ["tom_validation", "collab", "imposter", "peer_selection", "ablation",
+               "task_state"]
