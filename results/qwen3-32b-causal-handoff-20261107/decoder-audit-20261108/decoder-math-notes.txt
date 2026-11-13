@@ -1,0 +1,32 @@
+Decoder mathematics audit (read-only; 2026-11-08)
+
+Source: /Users/vince/Projects/MechInterp-Paper/src/jpeers/followup/handoff.py
+SHA256: 938cfca1d2184eaf1ef76a38269a36d7c5421c7f7f92d2fbbb7a285a937aba3a
+This exactly matches attempt-004/launch.json frozen handoff source.
+
+Confirmed behavior, not a confirmed production defect:
+- Every one of the eight leave-template-out training folds has 224 rows and encoding design A=[intercept, own, source, names, order, incoming] with A.T@A=224 I. Thus the normal-equation condition number is exactly 1; the encoding contrast is a scalar shrinkage of mean(y*states), or half the class mean difference. The nuisance coefficients and incoming contrast are not confounded in this fully crossed design.
+- The contrast is projected into the lens span, normalized, and followed by a scalar regression. It is not a general discriminative linear decoder, even for residual_contrast with no span restriction. Noise covariance can make the class mean difference a poor discriminant even when another linear direction is perfect.
+- Exact diagnostic counterexample used all 256 declared development rows, all eight original folds, ridge=1e-6 and identity 2D lens: q=source_sign*order_sign; states=[y+10q,10q]. Current fit_component returns basis=[1,0], incoming_cv=.5, own_cv=.5, incoming_basis_own_cv=.5 and incoming_basis_nuisance_cv=.5. A training-only discriminative ridge probe with fixed alpha=1 gets 1.0 CV in the same folds, as does explicit w=[1,-1]. Its fitted weights in every fold are [.9911506383,-.9911063924]. No threshold or test template tuning was used. Main-effect nuisance adjustment does not remove source*order interactions.
+- Existing test_conditional_decoder_template_folds_control_own_and_nuisance uses perfectly orthogonal, zero-offset synthetic coordinates. It establishes basic signal extraction and fold disjointness; it cannot establish robustness to correlated features, anisotropy, interactions, template shifts or actual hidden-state numerics.
+
+Scalar ridge details:
+- _ridge penalizes the intercept as well as slope. With balanced training labels, scalar decision threshold is mean(x)*n/(n+ridge). A centered solver retaining this penalty is mathematically equivalent; merely centering and leaving intercept unpenalized changes the estimator.
+- Toy x=100 + 1e-8*y yields 50% accuracy with both original and exact-centered same-penalty implementation; unpenalized-intercept centered gives 100%. x=1e8 + .001*y behaves likewise. These are translation sensitivity of the penalty, not evidence of floating point failure.
+- Available actual attempt-003 control traces (32 rows) evaluated with attempt-004 full-data incoming bases have maximum absolute coordinate mean 105.4313, minimum coordinate std .1214 and maximum raw scalar Gram condition 796633.9. At those means, intercept penalty threshold shift is under 5e-7; this does not support catastrophic numeric failure. These controls are not the 256 development traces and do not substitute for an actual-fold reproduction.
+
+Unresolved because cluster SSH connection to 35.166.104.254:22 timed out:
+- Cannot reproduce the 18 original fits on actual 256 attempt-004 development traces.
+- Cannot report actual-fold centered-solver disagreements, covariance-aware diagnostic probe scores, or adjusted-coordinate leakage.
+- Consequently no claim that numerics or this restrictive contrast caused the observed empirical 49-63% CV is established; the restrictive contrast only invalidates interpreting those scores as absence of linearly decodable incoming information.
+
+Prepared executable for actual traces:
+/tmp/audit_decoder_math_20261108.py
+Arguments --run <attempt-004/results> --source <attempt-004/source> --out </tmp/unique-report.json>.
+It loads the exact dev:key:baseline receipts and associated NPZ, checks message alignment, compares all saved metrics, original-vs-augmented ridge contrast, exact-centered scalar ridge, unpenalized-intercept centered scalar, scalar magnitudes/conditions, raw/adjusted leakage and diagnostic fixed-alpha-1 discriminative probes on the original eight folds. It disables CUDA/HF downloads and only writes its specified audit output.
+
+Other artifacts:
+/tmp/audit_decoder_exact_false_negative_20261108.json
+/tmp/audit_decoder_centered_penalty_20261108.json
+/tmp/audit_decoder_toys_20261108.py
+/tmp/audit_decoder_toys_20261108.json

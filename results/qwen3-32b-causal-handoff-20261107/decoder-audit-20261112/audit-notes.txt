@@ -1,0 +1,41 @@
+Actual development-trace decoder audit — 2026-11-12
+
+The authorized CPU-only audit completed on the original frozen attempt-004 data. No model calls, GPUs, servers, production changes, held-out rows or threshold/hyperparameter tuning were used. Original run artifacts were read only; all new files were written under /tmp.
+
+Integrity and exact reproduction:
+- All 256 exact dev:key:baseline receipts pass stored integrity SHA, request hash, generated-episode prompt equality, manifest prompt hash, saved-turn episode/label/source checks, receipt-vs-NPZ array equality, finite capture/site/layer validation, and baseline own/incoming/format correctness.
+- Frozen handoff source SHA256: 938cfca1d2184eaf1ef76a38269a36d7c5421c7f7f92d2fbbb7a285a937aba3a
+- All 18 original fits reproduce every saved CV metric and full-data basis bit-for-bit on the cluster; all 144 fold basis hashes match.
+- Independent local reconstruction of all 18 fits also matches every saved metric; basis discrepancy from cross-platform arithmetic is at most 2.06e-15.
+
+Numerical diagnosis:
+- Every encoding Gram matrix has condition number 1.
+- Augmented least-squares encoding contrasts differ by at most 2.95e-15 per basis coordinate; zero incoming predictions differ.
+- Algebraically equivalent centered scalar ridge changes zero predictions. Maximum incoming score discrepancy is 1.12e-15.
+- Centering with unpenalized intercept (a changed estimator) also changes none of the recorded CV metrics.
+- Maximum raw / adjusted / independently fitted own scalar Gram conditions: 4.97e5 / 653.5 / 6.58e6.
+- Thus ordinary solver instability or scalar offset arithmetic does not explain this saved discovery failure.
+
+Fixed-alpha-1 discriminative probe diagnostics:
+All centering uses training rows in the original eight leave-template-out folds. Coordinates retain their original orthonormal-span/residual units; no variance scaling or tuning. Raw probes use raw states, adjusted probes use the original fold-trained additive nuisance residualizer. The latter receive the declared own/source/name/order values at test time, just as the original primary decoder does.
+
+Layer | Original J | Raw J probe | Adjusted J probe | Original logit | Raw logit probe | Adjusted logit probe | Original residual contrast | Raw full probe | Adjusted full probe
+40 | 50.39% | 50.78% | 50.39% | 54.30% | 51.95% | 54.69% | 52.73% | 73.05% | 75.39%
+42 | 50.39% | 50.78% | 50.39% | 52.34% | 51.95% | 51.95% | 52.34% | 72.66% | 73.83%
+48 | 48.83% | 49.61% | 50.00% | 51.17% | 50.39% | 53.91% | 62.89% | 74.61% | 75.00%
+50 | 54.30% | 53.12% | 53.12% | 55.86% | 53.52% | 56.64% | 59.77% | 79.30% | 77.73%
+52 | 50.00% | 49.22% | 51.56% | 51.95% | 51.17% | 51.95% | 60.16% | 71.48% | 78.52%
+54 | 51.95% | 50.00% | 51.17% | 50.78% | 50.00% | 51.17% | 56.64% | 73.05% | 73.05%
+
+Interpretation:
+- Within the two-label Jacobian/logit spans, covariance-aware probes remain weak. No fixed-alpha-1 variant approaches the frozen 80% incoming gate. The general synthetic mean-contrast false-negative mechanism is real but is not established as the explanation for the poor actual two-label J results.
+- Full residual probes improve incoming decoding substantially relative to residual mean contrast, showing that the mean-contrast baseline understates what this diagnostic learner recovers. The best raw full probe scores 203/256 (79.30%) at layer 50, below the unchanged required 205/256; raw own leakage is 49.61% and max raw nuisance leakage 53.52%.
+- Adjusted full probes score 73.05–78.52%. Their learned raw coordinates have own and/or order leakage above the frozen 60% ceiling; they cannot be treated as selective incoming directions under the current protocol.
+- These diagnostic full residual probes have much greater capacity than the two-label span probes; their stronger scores do not establish a fair J-versus-logit superiority claim or causal necessity.
+- This audit does not establish that all relevant information is unavailable in J-space or that the punctuation site is a bottleneck. It resolves the pending saved-data/numerical audit without validating a new causal setting.
+
+Artifacts:
+- /tmp/audit_decoder_math_20261112.py
+- /tmp/audit_decoder_math_20261112.json (SHA256 05ddc7bae23fe490cba1f08ddbe14b613e619de5d561e1fd7d89fbed8f4d190b)
+- /tmp/audit_decoder_development_states_20261112.npz (15,232,940 bytes; SHA256 1577c2a9bb0e95c61845541e94f4ce615b9a2a4ca3dfd601b83a4ace996aac57)
+- /tmp/audit_decoder_math_local_verification_20261112.json

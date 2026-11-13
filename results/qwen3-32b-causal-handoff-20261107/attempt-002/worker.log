@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/scripts/run_causal_handoff.py", line 31, in <module>
+    main()
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/scripts/run_causal_handoff.py", line 24, in main
+    result = runner.run(args.stage)
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/src/jpeers/followup/handoff.py", line 977, in run
+    discovery = self.discovery()
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/src/jpeers/followup/handoff.py", line 814, in discovery
+    controls = [self.query(x, 'baseline', layers=layers, tag='control') for x in make_controls()]
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/src/jpeers/followup/handoff.py", line 814, in <listcomp>
+    controls = [self.query(x, 'baseline', layers=layers, tag='control') for x in make_controls()]
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/src/jpeers/followup/handoff.py", line 694, in query
+    cached = self.store.load(key, payload)
+  File "/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-002/source/src/jpeers/followup/handoff.py", line 357, in load
+    raise ValueError('Receipt integrity mismatch')
+ValueError: Receipt integrity mismatch

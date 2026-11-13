@@ -1,0 +1,48 @@
+{
+  "torch.float32": {
+    "h": [
+      [
+        0.20000000298023224,
+        1.0
+      ]
+    ],
+    "unit_direction": [
+      0.9950371384620667,
+      0.09950371086597443
+    ],
+    "normalized_lens_logit_before": 1.8973662853240967,
+    "normalized_lens_logit_after_positive_step": 1.7919588088989258,
+    "local_gradient": [
+      [
+        -1.2649083137512207,
+        0.2529822885990143
+      ]
+    ],
+    "local_gradient_dot_unit_direction": -1.2334580421447754,
+    "numerator_equals_raw_direction_dot_h": true,
+    "numerator_equality_max_error": 0.0
+  },
+  "torch.bfloat16": {
+    "h": [
+      [
+        0.20000000298023224,
+        1.0
+      ]
+    ],
+    "unit_direction": [
+      0.9950371980667114,
+      0.09950372576713562
+    ],
+    "normalized_lens_logit_before": 1.8984375,
+    "normalized_lens_logit_after_positive_step": 1.796875,
+    "local_gradient": [
+      [
+        -1.26953125,
+        0.25390625
+      ]
+    ],
+    "local_gradient_dot_unit_direction": -1.2379661798477173,
+    "numerator_equals_raw_direction_dot_h": true,
+    "numerator_equality_max_error": 0.0
+  }
+}

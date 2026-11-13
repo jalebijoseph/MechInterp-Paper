@@ -1,0 +1,1671 @@
+{
+  "scope": "32 preserved attempt-003 control traces. Not a recomputation of attempt-004 development fits.",
+  "n_receipts": 32,
+  "source_pin_check": {
+    "src/jpeers/runtime.py": {
+      "actual_sha256": "3df57d7bb8394beb6d74580961928bd9298106f27bdb2b44a57f4800c84aacd2",
+      "attempt004_pinned_sha256": "3df57d7bb8394beb6d74580961928bd9298106f27bdb2b44a57f4800c84aacd2",
+      "matches": true
+    },
+    "src/jpeers/schemas.py": {
+      "actual_sha256": "064a35e99ad244aca0b51c799e91f50a698dd67cc3098041c4c9cbc54d7f5e67",
+      "attempt004_pinned_sha256": "064a35e99ad244aca0b51c799e91f50a698dd67cc3098041c4c9cbc54d7f5e67",
+      "matches": true
+    },
+    "src/jpeers/registry.py": {
+      "actual_sha256": "a5192c9be6d0b0ceb140f1b02cff7587b0d0dcd79d60471aedef10b7868a678d",
+      "attempt004_pinned_sha256": "a5192c9be6d0b0ceb140f1b02cff7587b0d0dcd79d60471aedef10b7868a678d",
+      "matches": true
+    },
+    "src/jpeers/followup/handoff.py": {
+      "actual_sha256": "938cfca1d2184eaf1ef76a38269a36d7c5421c7f7f92d2fbbb7a285a937aba3a",
+      "attempt004_pinned_sha256": "938cfca1d2184eaf1ef76a38269a36d7c5421c7f7f92d2fbbb7a285a937aba3a",
+      "matches": true
+    }
+  },
+  "all_exact_bfloat16": true,
+  "site_tail_lengths": {
+    "9": 32
+  },
+  "prompt_tail_variants": [
+    [
+      "<|im_end|>",
+      "\n",
+      "<|im_start|>",
+      "assistant",
+      "\n",
+      "<think>",
+      "\n\n",
+      "</think>",
+      "\n\n"
+    ]
+  ],
+  "generated_color_token_counts": {
+    "blue": 16,
+    "red": 16
+  },
+  "watch_ids": [
+    [
+      2518,
+      1151,
+      3731,
+      6033
+    ],
+    [
+      6303,
+      12203,
+      8697,
+      10331
+    ]
+  ],
+  "watch_vocab": {
+    "2518": " red",
+    "1151": "red",
+    "3731": " Red",
+    "6033": "Red",
+    "6303": " blue",
+    "12203": "blue",
+    "8697": " Blue",
+    "10331": "Blue"
+  },
+  "output_rank_median": [
+    85.5,
+    524.5
+  ],
+  "layer_summary": {
+    "40": {
+      "hidden_norm_min_max": [
+        211.81423520371567,
+        218.23643682716764
+      ],
+      "jacobian": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 4.9046632089044806e-08,
+        "red_blue_cosine": 0.8532830030843377,
+        "red_blue_span_singular_values": [
+          1.3613533824450652,
+          0.38303658536220625
+        ],
+        "coordinate_min": [
+          -0.042631149837835114,
+          1.9111461051962007
+        ],
+        "coordinate_max": [
+          1.415094326263123,
+          3.637886986826995
+        ],
+        "watch_best_alias_rank_median": [
+          5339.5,
+          2464.5
+        ]
+      },
+      "logit": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.023860679045697e-08,
+        "red_blue_cosine": 0.24469435695058145,
+        "red_blue_span_singular_values": [
+          1.115658721109584,
+          0.8690832342685643
+        ],
+        "coordinate_min": [
+          -0.5979230061299758,
+          1.5426077197990304
+        ],
+        "coordinate_max": [
+          0.48177265494941857,
+          3.0574089229422245
+        ],
+        "watch_best_alias_rank_median": [
+          13433.0,
+          2516.0
+        ]
+      },
+      "jacobian_logit_same_label_cosine": [
+        0.12018488072910549,
+        0.15090477172207908
+      ]
+    },
+    "42": {
+      "hidden_norm_min_max": [
+        207.66109479751432,
+        222.0849735673741
+      ],
+      "jacobian": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.708072333046374e-08,
+        "red_blue_cosine": 0.8324946605595953,
+        "red_blue_span_singular_values": [
+          1.3536966531708658,
+          0.409274122913743
+        ],
+        "coordinate_min": [
+          -2.4935782396592567,
+          -0.8483137404449117
+        ],
+        "coordinate_max": [
+          0.6825204649879595,
+          2.677083440992625
+        ],
+        "watch_best_alias_rank_median": [
+          42438.5,
+          9804.5
+        ]
+      },
+      "logit": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.023860679045697e-08,
+        "red_blue_cosine": 0.24469435695058145,
+        "red_blue_span_singular_values": [
+          1.115658721109584,
+          0.8690832342685643
+        ],
+        "coordinate_min": [
+          -2.2141546937963055,
+          0.6369548543021573
+        ],
+        "coordinate_max": [
+          -1.0660058681708025,
+          2.3242546744348767
+        ],
+        "watch_best_alias_rank_median": [
+          48805.0,
+          7503.0
+        ]
+      },
+      "jacobian_logit_same_label_cosine": [
+        0.13640063722437284,
+        0.18011238255179612
+      ]
+    },
+    "48": {
+      "hidden_norm_min_max": [
+        288.4733804372037,
+        310.6421299213846
+      ],
+      "jacobian": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 7.407510926871197e-08,
+        "red_blue_cosine": 0.6407612620522396,
+        "red_blue_span_singular_values": [
+          1.2809220092389362,
+          0.599365222254532
+        ],
+        "coordinate_min": [
+          -2.3691996513366576,
+          -0.01095095604482399
+        ],
+        "coordinate_max": [
+          1.7582580157553949,
+          5.05233055178414
+        ],
+        "watch_best_alias_rank_median": [
+          5200.0,
+          794.5
+        ]
+      },
+      "logit": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.023860679045697e-08,
+        "red_blue_cosine": 0.24469435695058145,
+        "red_blue_span_singular_values": [
+          1.115658721109584,
+          0.8690832342685643
+        ],
+        "coordinate_min": [
+          -5.865771575766059,
+          -4.5670851513685875
+        ],
+        "coordinate_max": [
+          -3.209249412875085,
+          -1.03798086478966
+        ],
+        "watch_best_alias_rank_median": [
+          93229.0,
+          53346.0
+        ]
+      },
+      "jacobian_logit_same_label_cosine": [
+        0.43047272454919155,
+        0.4653939388089261
+      ]
+    },
+    "50": {
+      "hidden_norm_min_max": [
+        363.4887164299018,
+        389.1192132551411
+      ],
+      "jacobian": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 4.380645801660421e-08,
+        "red_blue_cosine": 0.5814709942925308,
+        "red_blue_span_singular_values": [
+          1.257565529828804,
+          0.6469382298400199
+        ],
+        "coordinate_min": [
+          -2.6699441971842184,
+          -1.3734528178186594
+        ],
+        "coordinate_max": [
+          0.17774927163204168,
+          3.607589281954855
+        ],
+        "watch_best_alias_rank_median": [
+          4973.5,
+          1428.5
+        ]
+      },
+      "logit": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.023860679045697e-08,
+        "red_blue_cosine": 0.24469435695058145,
+        "red_blue_span_singular_values": [
+          1.115658721109584,
+          0.8690832342685643
+        ],
+        "coordinate_min": [
+          -6.883872356753049,
+          -5.18542784924854
+        ],
+        "coordinate_max": [
+          -5.361648810656094,
+          -0.1545261190959355
+        ],
+        "watch_best_alias_rank_median": [
+          86793.5,
+          31023.5
+        ]
+      },
+      "jacobian_logit_same_label_cosine": [
+        0.5504979612487049,
+        0.5627801951430031
+      ]
+    },
+    "52": {
+      "hidden_norm_min_max": [
+        453.55609564499764,
+        480.4885300831298
+      ],
+      "jacobian": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 5.63376871820509e-08,
+        "red_blue_cosine": 0.5274657843723263,
+        "red_blue_span_singular_values": [
+          1.235906852082224,
+          0.6874112148336889
+        ],
+        "coordinate_min": [
+          -7.053594947795942,
+          0.26486052317029873
+        ],
+        "coordinate_max": [
+          -1.5013635214557448,
+          4.698285599012248
+        ],
+        "watch_best_alias_rank_median": [
+          4417.0,
+          1215.5
+        ]
+      },
+      "logit": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.023860679045697e-08,
+        "red_blue_cosine": 0.24469435695058145,
+        "red_blue_span_singular_values": [
+          1.115658721109584,
+          0.8690832342685643
+        ],
+        "coordinate_min": [
+          -6.637485665765496,
+          -1.8573951683256773
+        ],
+        "coordinate_max": [
+          -4.177016125611516,
+          4.260403003920755
+        ],
+        "watch_best_alias_rank_median": [
+          81510.0,
+          23752.5
+        ]
+      },
+      "jacobian_logit_same_label_cosine": [
+        0.6431537233538781,
+        0.64245238988882
+      ]
+    },
+    "54": {
+      "hidden_norm_min_max": [
+        599.7247348013892,
+        643.1817409892163
+      ],
+      "jacobian": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.1808805428236155e-08,
+        "red_blue_cosine": 0.5105350283790318,
+        "red_blue_span_singular_values": [
+          1.2290382668556865,
+          0.6996177560908287
+        ],
+        "coordinate_min": [
+          -4.329610410621188,
+          -4.16307155661633
+        ],
+        "coordinate_max": [
+          3.638170542638381,
+          3.9482953026545644
+        ],
+        "watch_best_alias_rank_median": [
+          7637.0,
+          2862.0
+        ]
+      },
+      "logit": {
+        "max_direction_difference_vs_first": 0.0,
+        "max_unit_norm_error": 2.023860679045697e-08,
+        "red_blue_cosine": 0.24469435695058145,
+        "red_blue_span_singular_values": [
+          1.115658721109584,
+          0.8690832342685643
+        ],
+        "coordinate_min": [
+          -4.043366204910537,
+          -6.703045885826661
+        ],
+        "coordinate_max": [
+          1.6091724145643482,
+          0.9621208662053604
+        ],
+        "watch_best_alias_rank_median": [
+          79870.5,
+          21726.5
+        ]
+      },
+      "jacobian_logit_same_label_cosine": [
+        0.704536902444038,
+        0.6948348149370863
+      ]
+    }
+  },
+  "details": [
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/1143b68219a227350d688dd57db21a14adf26c0f0a652a03e4bfced95b03afab.json",
+      "request_sha256": "785a484af0dfa998925c12adb2344c9b224ad75dcbce4785889ac499bc8ff659",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          190,
+          538
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/1257bea7ea1724339f26f2f02166f043ed58416e7e6e9b1e3a54e251b51637e2.json",
+      "request_sha256": "daf86d9493aae1b5758652d95cbd066fc1fafc1ed6c3c36c48ce8b07de27b581",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          112,
+          484
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/1baf390bcb1d999ada114f9bf970a4c5ce17eed277f528d32a918b1b4ec7fa02.json",
+      "request_sha256": "6561d3b8a92d7828c167e24200e1099d197589cb91d1bde7441c0b9087b87e3c",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          61,
+          640
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/1bdb06654eed33be4a564e203461420813e6908d38ea4fc6d2f538c2f2cae475.json",
+      "request_sha256": "c6fc3432d59330ee5f02b73bb04bc8fd25458448cfd6f6e9ee1cc1a6688742e8",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          95,
+          590
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/2465e0bef2ea7f0234feb307b1698e37c6be17382c280e5753de012cb087dfab.json",
+      "request_sha256": "563a392bdfb294b5cab9551680303c1fda612c880747a4f082a31d7c3fbde675",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          81,
+          418
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/28f14ce003815dec6146a2a0f49afdc61e258a9e8441dea0abffd5a1f55cc935.json",
+      "request_sha256": "ef6f48b32bfb7b2c31795ef14c503a4a846e60660d9dc036721c6911303aab09",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          46,
+          296
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/312b5e5012b80829afb1eb9b95562270128607c00123e2c56314ca4bc586ebca.json",
+      "request_sha256": "b7f65aaca6d272bfb88b7113472bfbf6425ebc7086f567a86777a4fd608aa3fc",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          200,
+          674
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/3b96e5768ab16b97e7b336e38cba57d2ee113f887965e249b35c6ba61c369b34.json",
+      "request_sha256": "cb97967a72705ebee50b3e4304a063926861ebb474ef02d5d1277df1f2ed6f91",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          131,
+          686
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/3dc8b3ca5a1a7fc5dfc03d1f17cb935ae9ff676e908deb7e46db11e47d2b5af2.json",
+      "request_sha256": "6bfd09b871f1d3e0b66f5810e1d6dba3a1e251011afc79d12217711ad0831409",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          90,
+          876
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/4c4162e2037ce6cfcc4679d75bf5226f658d2d52e0ba9b953f3bdec5665f8689.json",
+      "request_sha256": "1e14fbc4f4dd0c5eee0664ebb78ca276608514c7e28ff2d6760b61b6793e07ea",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          141,
+          529
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/589771e0b495816fd3eb452e1c411c5e557b8444a6b8ba7d5ee8e4ec9e5ef1af.json",
+      "request_sha256": "82bb0f1cf4684cd4154346ac0cf6b3a35c7e0bbb76f2fac94c6cca4c8f1c4f1f",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          69,
+          460
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/60416aa752ded1585c0e9c1891417c86f8b73e3dbb4cdf0b4ff38f2cd2213a53.json",
+      "request_sha256": "bbc8e7022ad470b24888edde16425c3f5a891dcaa5269dcdc1f03eb7ba38a04e",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          53,
+          168
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/6a4154d1c517d0b4c08eeed9a1ed395d53728cdbe887ccbb9c9a19115010ce66.json",
+      "request_sha256": "6455a5d15c166c8cf663b09f140bd5c6f2fc65093179c4c2dfe5058a1a910be9",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          103,
+          218
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/6f928dbec4a6006235ca9d951021451f40d641230663b2a4ce3b9e4421dfd1b1.json",
+      "request_sha256": "1f2856fd02cab808b9d3fbc6990cfc66353c572233ea03e7c0231b0dac2157a7",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          243,
+          711
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/70faf70bbd068ef559fe399ad7645f8d647268d2d26f8464c1b8ef14b51b65fe.json",
+      "request_sha256": "63024d18f0fe56fdc0fa4f5af3a82ed8a10bfcb2bab5d47096a8e01ba46b4da8",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          62,
+          491
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/75a44844a77aa539031f0a9e8528508c0b122c0e736b9aacfa7a3b4360c6b34d.json",
+      "request_sha256": "b1e08f13c294c7792845cf36d3087cdf7f61fef34d8b0728bda6568f9a81ebd1",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          152,
+          433
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/86d8109e10cbb134dbd55be21877aedb8d007034ce95da47ba673cf08d06e659.json",
+      "request_sha256": "bcebea66532ee06165fbe8fe70b2a1447fba5a742ab1d1e33cffdf2f7244f9b2",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          138,
+          332
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/898acc4c5cfd962f3c140390aee6911858607bb9e23a425f0840b706ec31303e.json",
+      "request_sha256": "f5c39d535e265e451ac62a282bad8ceb084f737917686b109c03502586e5197f",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          239,
+          892
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/95ddc0e481601e1202cbe08dcd1ca0aeb326be087e67858f2cfe51e78738c2f3.json",
+      "request_sha256": "ef7ca6040116f00e08d50af47dc0156810960eb0ee0deacb3a89dd0f464dfe65",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          45,
+          822
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/964f2c3a599966a4e7de0132e1b21a3593a419d3cdc7b6b51ebb77b184d83ac2.json",
+      "request_sha256": "2c4a25e15af1d0671d62586663d5d83efae52dc252cafb608d7ad7273b11a8ec",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          72,
+          705
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/9cf70e586bc0b2fbd269ec51bf6ff33e114504244891fbb4bad80c5f6e1ff8bf.json",
+      "request_sha256": "aa14f6cba531d337cbb5bbfe3042547f515d43a745a1ed0c109a6d70e0a98592",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          74,
+          692
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/a65a43a94c3d8f30216a493ead4c3a164602f6af6539006dd7f40a2c304d9e8c.json",
+      "request_sha256": "7a858ea6b1cb2a40ad9847aa2e7ec03df835ee1237c0d91f287f974e2c195d2a",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          83,
+          462
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/c1932a3a425f5b1c90396ac41cac3303ac0a559a22d700bf88860946b0fd01b3.json",
+      "request_sha256": "07d16fa1193ff7adc98156904e7178271973372f1226c31ca44fcb75def6bdf3",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          175,
+          475
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/c292bb19a476d5c0a59387941c13bd7c033bb3861dae2d1f3708c9d52745a748.json",
+      "request_sha256": "6566159473a07c83be41389ef8b1e76f1d282ad6cf6769b5ef5c01fb9d1afe73",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          50,
+          421
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/c44c3080f7b2c531f8e4fe6becdcd40212335fa228f35004b7a1abf32b01d4a9.json",
+      "request_sha256": "e2f71d95830aee6e67a7eb78869938071d8615a393f167ef27399260453e1a3c",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          176,
+          673
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/c88667d6026920007197a586390514a4388b8417dab4841ac96d11ef9088d6c0.json",
+      "request_sha256": "54a98c902a7693cb91e5bfd88f1c9d395b1d8fd60e90242a18a6daf44211db76",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          127,
+          843
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/d7fd8381d1d1e710de95e2cd9994d6fe9c27c50533a1a88b998638838b0a9af3.json",
+      "request_sha256": "9a7810d8c3816d93fa324c4f2cfbd529b80ad3f1d43e95620659c98546ecd2c5",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          41,
+          648
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/e293195be4b2fc47a95c9410b53dd6f86ab0271f3b560840d0ac434c06828325.json",
+      "request_sha256": "06c3a1b0345b52995c38db5b84755f823795e0f10097daac593a8bb5f9d305eb",
+      "position": 134,
+      "prompt_len": 144,
+      "suffix_span": [
+        131,
+        135
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          76,
+          693
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/e508a79d8dff71e39e92294cbbaf01ab3449902a2c3894a6db7552baa6be68e6.json",
+      "request_sha256": "5a9a3764b6afb73da0e8cf5a946b60561fc8fff92e5a395a4440bdc89fce25c6",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          79,
+          464
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/e51aa3a86d608e182f25314fd232ad24a7ad961a288b5caeb279d9008baa6e86.json",
+      "request_sha256": "06e1ba457ee048f38da58d177b57b99a7ee09ad2b9f20f12c904e759535d7256",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          73,
+          281
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/fbe024f105f5920b9c207ef1e7060ac70f1473def7b12fbae2b4fb76384e3ae3.json",
+      "request_sha256": "ca939c9043237cbfec4232996f49b44fc825d35bc97a9838010a856a711e302b",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "red"
+        ]
+      ],
+      "output_ranks": [
+        [
+          88,
+          317
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    },
+    {
+      "receipt": "results/qwen3-32b-causal-handoff-20261107/attempt-003/results/receipts/fe659b703f77b5d3decb7e08e7b471028ab30ce71e2f40170e901537498c8fa1.json",
+      "request_sha256": "5dca826e25c1909c30a8493797939d3cc350da3e945bedcedbafc5c4f7558755",
+      "position": 153,
+      "prompt_len": 163,
+      "suffix_span": [
+        150,
+        154
+      ],
+      "suffix_tokens": [
+        "End",
+        " of",
+        " notes",
+        "."
+      ],
+      "prompt_tail_after_site": [
+        "<|im_end|>",
+        "\n",
+        "<|im_start|>",
+        "assistant",
+        "\n",
+        "<think>",
+        "\n\n",
+        "</think>",
+        "\n\n"
+      ],
+      "generated_color_positions": [
+        [
+          9,
+          "blue"
+        ]
+      ],
+      "output_ranks": [
+        [
+          51,
+          520
+        ]
+      ],
+      "residual_exactly_bfloat16": true
+    }
+  ]
+}

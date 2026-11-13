@@ -1,0 +1,37 @@
+--- a/src/jpeers/followup/handoff.py
++++ b/src/jpeers/followup/handoff.py
+@@ -362,6 +362,8 @@
+     def save(self, key, request, response, score, **extra):
+         value = {'request': request, 'request_sha256': digest(request), 'response': response,
+                  'score': score, **extra}
++        # Hash the stored JSON representation, including stringified vocabulary keys.
++        value = json.loads(json.dumps(value, allow_nan=False))
+         value['integrity_sha256'] = digest(value)
+         atomic_json(self.path(key), value)
+ 
+--- a/tests/test_causal_handoff.py
++++ b/tests/test_causal_handoff.py
+@@ -113,6 +113,23 @@
+         store.load('one', req)
+     with pytest.raises(ValueError, match='provenance'):
+         h.ReceiptStore(tmp_path, {'protocol': 'other'})
++
++
++def test_receipt_integer_vocab_keys_round_trip_and_tampering_still_fails(tmp_path):
++    store = h.ReceiptStore(tmp_path, {'protocol': 'test'})
++    request = {'messages': [{'role': 'user', 'content': 'a'}]}
++    response = {'model': 'toy', 'text': 'ok', 'vocab': {2: 'two', 10: 'ten'}}
++    store.save('integer-vocab', request, response, {'incoming_correct': True})
++    receipt = store.load('integer-vocab', request)
++    assert receipt['response'] == {
++        'model': 'toy', 'text': 'ok', 'vocab': {'2': 'two', '10': 'ten'}}
++    assert response['vocab'] == {2: 'two', 10: 'ten'}
++    path = store.path('integer-vocab')
++    tampered = json.loads(path.read_text())
++    tampered['response']['vocab']['10'] = 'edited'
++    path.write_text(json.dumps(tampered))
++    with pytest.raises(ValueError, match='integrity'):
++        store.load('integer-vocab', request)
+ 
+ 
+ def test_failed_discovery_prevents_any_heldout_request(tmp_path):

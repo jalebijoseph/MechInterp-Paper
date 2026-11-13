@@ -6,6 +6,7 @@ import pytest
 import torch
 from pydantic import ValidationError
 
+from jpeers.followup import handoff
 from jpeers.runtime import LensedModel, _Run
 from jpeers.schemas import GenerateRequest, InterventionSpec, PositionSelector, RecordSpec
 from jpeers.trace import JSpaceTrace, encode_arrays
@@ -208,6 +209,35 @@ def test_span_endpoint_selector_keeps_shared_neutral_suffix_to_one_site():
     states = forward_layers(run)
     torch.testing.assert_close(states[1][0, 1], torch.tensor([2., 3., 4., 5.]))
     torch.testing.assert_close(states[1][0, 2], torch.tensor([1.5, 4., 5., 6.]))
+
+
+@pytest.mark.parametrize("capture_residuals", [False, True])
+def test_handoff_request_records_suffix_anchor_before_chat_template_tail(tmp_path, capture_residuals):
+    endpoint = SimpleNamespace(info=lambda: {
+        "hf_id": handoff.DEFAULT_CONFIG["model"], "n_layers": 64, "d_model": 4})
+    runner = handoff.HandoffRunner(endpoint, tmp_path / "handoff", handoff.DEFAULT_CONFIG)
+    request = runner._request(handoff.make_episodes()[0], layers=[0, 1],
+                              capture=capture_residuals)
+    model = ToyModel()
+    model._vocab_strings = ["red", "blue", "C", "D"]
+    model._word_like = None
+    # The failed real request had a 144-token prompt: the neutral suffix ended
+    # at 135, followed by the chat template's nine-token assistant prefix.
+    run = _Run(model, request, 144, {"neutral_suffix": [(131, 135)],
+                                    "causal_site": [(134, 135)]})
+    states = torch.arange(144 * 4, dtype=torch.float32).reshape(1, 144, 4)
+    with run.hooks():
+        for layer in model.lm.layers:
+            layer(states)
+        run.offset = 144
+        for layer in model.lm.layers:
+            layer(torch.zeros(1, 1, 4))
+    arrays = run.finish()
+    assert arrays is not None, "The prompt recording window must retain the causal suffix anchor"
+    np.testing.assert_array_equal(arrays["positions"], [134])
+    assert arrays["topk_ids"].shape == (1, 2, 1)
+    if capture_residuals:
+        np.testing.assert_array_equal(arrays["residuals"][0], [[536., 537., 538., 539.]] * 2)
 
 
 def test_bfloat16_edit_reports_desired_realized_and_quantization_geometry():

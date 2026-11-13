@@ -1,0 +1,37 @@
+{
+  "verified_at": "2026-11-13T02:41:48.736425+00:00",
+  "source_sha256": "938cfca1d2184eaf1ef76a38269a36d7c5421c7f7f92d2fbbb7a285a937aba3a",
+  "dataset_sha256": "1577c2a9bb0e95c61845541e94f4ce615b9a2a4ca3dfd601b83a4ace996aac57",
+  "contexts": 256,
+  "independently_reproduced_original_fits": 18,
+  "original_metrics_exact": true,
+  "maximum_basis_difference_across_host_libraries": 2.0573820425084932e-15,
+  "independently_reproduced_fixed_alpha1_full_residual_probes": [
+    {
+      "layer": 40,
+      "incoming_cv": 0.73046875
+    },
+    {
+      "layer": 42,
+      "incoming_cv": 0.7265625
+    },
+    {
+      "layer": 48,
+      "incoming_cv": 0.74609375
+    },
+    {
+      "layer": 50,
+      "incoming_cv": 0.79296875
+    },
+    {
+      "layer": 52,
+      "incoming_cv": 0.71484375
+    },
+    {
+      "layer": 54,
+      "incoming_cv": 0.73046875
+    }
+  ],
+  "scope": "same eight development template folds, train-centered fixed-alpha1 diagnostic; no heldout templates or model calls",
+  "audit_report_sha256": "05ddc7bae23fe490cba1f08ddbe14b613e619de5d561e1fd7d89fbed8f4d190b"
+}

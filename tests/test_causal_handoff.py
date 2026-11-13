@@ -45,16 +45,82 @@ def test_counterfactual_preserves_all_but_incoming_and_includes_equal_cells():
             donor.messages()[-1]['content'].replace(donor.incoming_note(), 'INCOMING'))
 
 
-@pytest.mark.parametrize('text', [
+@pytest.mark.parametrize('text,own,incoming,output_format,raw_strict', [
+    (' {"own":"red","incoming":"blue"}\n', 'red', 'blue', 'bare_json', True),
+    ('{"own":"blue","incoming":null}', 'blue', None, 'bare_json', True),
+    ('```json\n{"own":"red","incoming":"blue"}\n```', 'red', 'blue', 'fenced_json', False),
+    ('```json\n{"own":"blue","incoming":null}\n```', 'blue', None, 'fenced_json', False),
+    ('```\n{"own":"blue","incoming":"red"}\n```', 'blue', 'red', 'fenced_json', False),
+    ('```\n{"own":"red","incoming":null}\n```', 'red', None, 'fenced_json', False),
+    (' \n```json\r\n{"own":"red","incoming":"red"}\r\n```\n',
+     'red', 'red', 'fenced_json', False),
+])
+def test_json_v2_scores_one_whole_bare_or_fenced_object(text, own, incoming, output_format, raw_strict):
+    score = h.score_output(text, own=own, incoming=incoming, n_generated=20, cap=48)
+    assert score['known'] and score['format_valid'] and score['joint_correct']
+    assert (score['predicted_own'], score['predicted_incoming']) == (own, incoming)
+    assert score['json_scoring_version'] == 'json-object-v2'
+    assert score['output_format'] == output_format
+    assert score['raw_strict_format_valid'] is raw_strict
+
+
+@pytest.mark.parametrize('wrap', ['{}', '```json\n{}\n```', '```\n{}\n```'])
+@pytest.mark.parametrize('payload', [
     '{"own":"red","incoming":"blue","x":0}',
     '{"own":"red","own":"red","incoming":"blue"}',
-    '```json\n{"own":"red","incoming":"blue"}\n```',
-    '{"own":"red","incoming":"green"}', '[]',
+    '{"own":"red","incoming":"blue","incoming":null}',
+    '{"own":"red","incoming":"green"}',
+    '{"own":"green","incoming":"blue"}',
+    '{"own":null,"incoming":"blue"}',
+    '{"own":"red","incoming":false}',
+    '{"own":1,"incoming":"blue"}',
+    '{"own":"red","incoming":[]}',
+    '{"own":{},"incoming":"blue"}',
+    '{"own":"red"}', '[]',
+    '{"own":"red","incoming":"blue"',
+    '{"own":"red","incoming":"blue",}',
+    '{"own":"red","incoming":"blue"} {"own":"red","incoming":"blue"}',
 ])
-def test_strict_scoring_counts_malformed_as_failure(text):
+def test_json_v2_counts_invalid_schema_or_json_as_failure(wrap, payload):
+    text = wrap.replace('{}', payload)
     s = h.score_output(text, own='red', incoming='blue', n_generated=12, cap=48)
     assert not s['format_valid'] and not s['own_correct'] and not s['incoming_correct']
     assert s['known']
+
+
+@pytest.mark.parametrize('text', [
+    'Answer: {"own":"red","incoming":"blue"}',
+    '{"own":"red","incoming":"blue"} Done.',
+    'Answer:\n```json\n{"own":"red","incoming":"blue"}\n```',
+    '```json\n{"own":"red","incoming":"blue"}\n```\nDone.',
+    '```python\n{"own":"red","incoming":"blue"}\n```',
+    '```json\n{"own":"red","incoming":"blue"}',
+    '```json {"own":"red","incoming":"blue"}```',
+    '```json\n{"own":"red","incoming":"blue"}\n```\n```json\n{"own":"red","incoming":"blue"}\n```',
+    '```json\n{"own":"red","incoming":"blue"}\n```\n{"own":"red","incoming":"blue"}',
+])
+def test_json_v2_rejects_prose_multiple_answers_and_incomplete_or_unknown_fences(text):
+    score = h.score_output(text, own='red', incoming='blue', n_generated=20, cap=48)
+    assert score['known'] and not score['format_valid'] and not score['joint_correct']
+
+
+@pytest.mark.parametrize('wrap', ['{}', '```json\n{}\n```', '```\n{}\n```'])
+def test_json_v2_keeps_label_and_null_correctness_separate_from_format(wrap):
+    score = h.score_output(wrap.replace('{}', '{"own":"blue","incoming":null}'),
+                           own='red', incoming='blue', n_generated=20, cap=48)
+    assert score['format_valid']
+    assert not score['own_correct'] and not score['incoming_correct'] and not score['joint_correct']
+
+
+@pytest.mark.parametrize('wrap,raw_strict', [('{}', True), ('```json\n{}\n```', False),
+                                           ('```\n{}\n```', False)])
+@pytest.mark.parametrize('n_generated', [None, 48, 49])
+def test_json_v2_never_accepts_complete_looking_cap_hits(wrap, raw_strict, n_generated):
+    score = h.score_output(wrap.replace('{}', '{"own":"red","incoming":null}'),
+                           own='red', incoming=None, n_generated=n_generated, cap=48)
+    assert score['cap_hit'] and not score['format_valid']
+    assert not score['own_correct'] and not score['incoming_correct'] and not score['joint_correct']
+    assert score['raw_strict_format_valid'] is raw_strict
 
 
 def test_cap_hits_failure_and_missing_is_unknown():
@@ -64,6 +130,8 @@ def test_cap_hits_failure_and_missing_is_unknown():
     assert cap['cap_hit'] and not cap['incoming_correct']
     absent = h.score_output(None, own='red', incoming='blue', n_generated=None, cap=48)
     assert not absent['known'] and absent['incoming_correct'] is None
+    assert absent['json_scoring_version'] == 'json-object-v2'
+    assert absent['output_format'] is None and absent['raw_strict_format_valid'] is None
     assert h.score_output('{"own":"red","incoming":null}', own='red', incoming=None,
                           n_generated=10, cap=48)['joint_correct']
 
@@ -113,6 +181,23 @@ def test_resume_rejects_request_change_and_corrupt_receipt(tmp_path):
         store.load('one', req)
     with pytest.raises(ValueError, match='provenance'):
         h.ReceiptStore(tmp_path, {'protocol': 'other'})
+
+
+def test_receipt_integer_vocab_keys_round_trip_and_tampering_still_fails(tmp_path):
+    store = h.ReceiptStore(tmp_path, {'protocol': 'test'})
+    request = {'messages': [{'role': 'user', 'content': 'a'}]}
+    response = {'model': 'toy', 'text': 'ok', 'vocab': {2: 'two', 10: 'ten'}}
+    store.save('integer-vocab', request, response, {'incoming_correct': True})
+    receipt = store.load('integer-vocab', request)
+    assert receipt['response'] == {
+        'model': 'toy', 'text': 'ok', 'vocab': {'2': 'two', '10': 'ten'}}
+    assert response['vocab'] == {2: 'two', 10: 'ten'}
+    path = store.path('integer-vocab')
+    tampered = json.loads(path.read_text())
+    tampered['response']['vocab']['10'] = 'edited'
+    path.write_text(json.dumps(tampered))
+    with pytest.raises(ValueError, match='integrity'):
+        store.load('integer-vocab', request)
 
 
 def test_failed_discovery_prevents_any_heldout_request(tmp_path):
@@ -234,6 +319,38 @@ class SyntheticEndpoint:
             layers=layers, watch=['red', 'blue'], watch_ids=[[15, 5], [16, 6]], vocab={5: 'red', 6: 'blue'},
             trace_encoding='json', trace=encode_arrays(arrays, 'json'),
             interventions_applied=len(edits), timings={}, capture_metadata=metadata, causal_edits=edits)
+
+
+def test_fenced_score_is_versioned_in_provenance_and_keeps_raw_response(tmp_path):
+    endpoint = SyntheticEndpoint()
+    generate = endpoint.generate
+    def fenced(req):
+        response = generate(req)
+        response.text = f'```json\n{response.text}\n```'
+        return response
+    endpoint.generate = fenced
+    runner = h.HandoffRunner(endpoint, tmp_path / 'run', h.DEFAULT_CONFIG)
+    receipt = runner.query(h.make_controls()[0], 'baseline', layers=[40, 42], tag='format')
+    score = receipt['score']
+    assert score['joint_correct'] and score['output_format'] == 'fenced_json'
+    assert score['raw_strict_format_valid'] is False
+    assert runner.provenance['json_scoring_version'] == score['json_scoring_version']
+    assert runner.provenance['output_format_protocol'] == (
+        'One entire JSON object, bare or in one whole triple-backtick json/unlabeled fence; '
+        'exact own/incoming keys and red/blue labels (incoming may be null); '
+        'duplicate keys, prose, multiple answers, malformed JSON, and cap hits fail. '
+        'raw_strict_format_valid reports bare-object schema validity before the cap check.')
+    saved_provenance = json.loads((runner.root / 'provenance.json').read_text())
+    assert saved_provenance['json_scoring_version'] == 'json-object-v2'
+    turn = json.loads((runner.root / receipt['turn_directory'] / 'turns.jsonl').read_text())
+    assert turn['text'] == receipt['response']['text'] == '```json\n{"own": "red", "incoming": null}\n```'
+    assert turn['extra']['score'] == score
+    old_provenance = dict(saved_provenance)
+    old_provenance.pop('json_scoring_version')
+    old_provenance.pop('output_format_protocol')
+    h.atomic_json(runner.root / 'provenance.json', old_provenance)
+    with pytest.raises(ValueError, match='provenance mismatch'):
+        h.HandoffRunner(endpoint, runner.root, h.DEFAULT_CONFIG, resume=True)
 
 
 def test_real_request_and_turn_record_preserve_edits_and_capture_ids(tmp_path):

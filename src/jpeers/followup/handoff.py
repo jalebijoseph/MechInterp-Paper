@@ -14,6 +14,7 @@ import hashlib
 import itertools
 import json
 from pathlib import Path
+import re
 
 import numpy as np
 
@@ -23,6 +24,12 @@ from jpeers.trace import JSpaceTrace
 from .common import atomic_json, paired_stats
 
 PROTOCOL = 'incoming-mediation-v1'
+JSON_SCORING_VERSION = 'json-object-v2'
+OUTPUT_FORMAT_PROTOCOL = (
+    'One entire JSON object, bare or in one whole triple-backtick json/unlabeled fence; '
+    'exact own/incoming keys and red/blue labels (incoming may be null); '
+    'duplicate keys, prose, multiple answers, malformed JSON, and cap hits fail. '
+    'raw_strict_format_valid reports bare-object schema validity before the cap check.')
 SUFFIX = 'End of notes.'
 LABELS = ('red', 'blue')
 NAMES = (('Avery', 'Blake'), ('Casey', 'Drew'))
@@ -172,11 +179,13 @@ def opposite_donor(episode, rows):
 def score_output(text, *, own, incoming, n_generated, cap):
     result = {'known': text is not None, 'format_valid': None, 'own_correct': None,
               'incoming_correct': None, 'joint_correct': None, 'cap_hit': False,
-              'predicted_own': None, 'predicted_incoming': None}
+              'predicted_own': None, 'predicted_incoming': None,
+              'json_scoring_version': JSON_SCORING_VERSION,
+              'output_format': None, 'raw_strict_format_valid': None}
     if text is None:
         return result
     result.update(format_valid=False, own_correct=False, incoming_correct=False, joint_correct=False,
-                  cap_hit=n_generated is None or n_generated >= cap)
+                  cap_hit=n_generated is None or n_generated >= cap, raw_strict_format_valid=False)
     try:
         def unique(pairs):
             obj = {}
@@ -185,14 +194,22 @@ def score_output(text, *, own, incoming, n_generated, cap):
                     raise ValueError('duplicate key')
                 obj[k] = v
             return obj
-        data = json.loads(text.strip(), object_pairs_hook=unique)
+        candidate = text.strip()
+        # Only unwrap a whole, line-separated JSON/unlabeled fence. The inner
+        # content still goes through the same whole-object/schema checks.
+        fence = re.fullmatch(r'```(?:json)?[ \t]*\r?\n(.*?)\r?\n```', candidate, re.DOTALL)
+        if fence:
+            candidate = fence.group(1)
+        data = json.loads(candidate, object_pairs_hook=unique)
         valid = (isinstance(data, dict) and set(data) == {'own', 'incoming'} and
                  data['own'] in LABELS and data['incoming'] in (*LABELS, None))
         if not valid:
             return result
     except (ValueError, TypeError):
         return result
-    result.update(predicted_own=data['own'], predicted_incoming=data['incoming'])
+    result.update(predicted_own=data['own'], predicted_incoming=data['incoming'],
+                  output_format='fenced_json' if fence else 'bare_json',
+                  raw_strict_format_valid=fence is None)
     if result['cap_hit']:
         return result
     result.update(format_valid=True, own_correct=data['own'] == own,
@@ -362,6 +379,8 @@ class ReceiptStore:
     def save(self, key, request, response, score, **extra):
         value = {'request': request, 'request_sha256': digest(request), 'response': response,
                  'score': score, **extra}
+        # Hash the stored JSON representation, including stringified vocabulary keys.
+        value = json.loads(json.dumps(value, allow_nan=False))
         value['integrity_sha256'] = digest(value)
         atomic_json(self.path(key), value)
 
@@ -607,6 +626,8 @@ def make_provenance(config, endpoint_info):
     hashes = {p: file_digest(source_root / p) for p in sources if (source_root / p).exists()}
     inventory = [{'episode': asdict(r), 'messages': r.messages(), 'key': r.key} for r in rows + controls]
     return {'protocol': PROTOCOL, 'config': config, 'config_sha256': digest(config),
+            'json_scoring_version': JSON_SCORING_VERSION,
+            'output_format_protocol': OUTPUT_FORMAT_PROTOCOL,
             'endpoint_info': endpoint_info, 'source_sha256': hashes,
             'inventory_sha256': digest(inventory), 'templates_sha256': digest(
                 [DEVELOPMENT_TEMPLATES, HELDOUT_TEMPLATES]),
@@ -665,7 +686,7 @@ class HandoffRunner:
             record=RecordSpec(enabled=True, layers=sorted(layers), watch=list(LABELS), top_k=1,
                 positions=_site_selector(), capture_residuals=capture,
                 capture_directions=['jacobian', 'logit'] if capture else [],
-                direction_token_form='bare', when='post', max_positions=1))
+                direction_token_form='bare', when='post'))
 
     def query(self, episode, condition, *, layers, selection=None, clean=None, wrong=None, tag=''):
         edits = condition_edits(condition, selection, clean, wrong) if selection else []

@@ -1,0 +1,390 @@
+{
+  "scope": "Only 32 historical attempt003 controls have local full receipts/NPZ; attempt004 local has metadata and discovery only. No all289 trace validation is claimed.",
+  "source_pin_checks": {
+    "launch.json": {
+      "matched_n": 112,
+      "missing_n": 0,
+      "missing": [],
+      "mismatched": []
+    },
+    "preflight.json": {
+      "matched_n": 112,
+      "missing_n": 0,
+      "missing": [],
+      "mismatched": []
+    }
+  },
+  "historical_controls": {
+    "n_receipts": 32,
+    "error_counts": {},
+    "errors": {},
+    "n_v2_joint_correct": 32,
+    "n_raw_strict_format_valid": 0,
+    "positions": {
+      "min": 134,
+      "max": 153,
+      "prompt_len_min": 144,
+      "prompt_len_max": 163,
+      "tokens_after_site": {
+        "9": 32
+      }
+    },
+    "state_inventory": {
+      "40": {
+        "unique_states": 32,
+        "constant_coordinates": 0,
+        "residual_norm_min": 211.81423950195312,
+        "residual_norm_max": 218.23643493652344
+      },
+      "42": {
+        "unique_states": 32,
+        "constant_coordinates": 0,
+        "residual_norm_min": 207.66110229492188,
+        "residual_norm_max": 222.0849609375
+      },
+      "48": {
+        "unique_states": 32,
+        "constant_coordinates": 0,
+        "residual_norm_min": 288.473388671875,
+        "residual_norm_max": 310.6421203613281
+      },
+      "50": {
+        "unique_states": 32,
+        "constant_coordinates": 0,
+        "residual_norm_min": 363.48870849609375,
+        "residual_norm_max": 389.11920166015625
+      },
+      "52": {
+        "unique_states": 32,
+        "constant_coordinates": 0,
+        "residual_norm_min": 453.55609130859375,
+        "residual_norm_max": 480.488525390625
+      },
+      "54": {
+        "unique_states": 32,
+        "constant_coordinates": 0,
+        "residual_norm_min": 599.7247314453125,
+        "residual_norm_max": 643.1817626953125
+      }
+    },
+    "direction_unique_counts": {
+      "jacobian": {
+        "40": 1,
+        "42": 1,
+        "48": 1,
+        "50": 1,
+        "52": 1,
+        "54": 1
+      },
+      "logit": {
+        "40": 1,
+        "42": 1,
+        "48": 1,
+        "50": 1,
+        "52": 1,
+        "54": 1
+      }
+    },
+    "payload_label_token_forms": {
+      "('own_payload', \"' blue'\")": 16,
+      "('incoming_payload', \"' red'\")": 8,
+      "('own_payload', \"' red'\")": 16,
+      "('incoming_payload', \"' blue'\")": 8
+    },
+    "output_label_token_forms": {
+      "'blue'": 16,
+      "'red'": 16
+    }
+  },
+  "current_inventory_regeneration": {
+    "same_as_attempt003_frozen_manifest": true,
+    "inventory_sha256": "60f3f6eca289df47e57cfe0c08dbf8002b0bd860eafa17b45095c88362415ff3",
+    "same_as_attempt003_frozen_inventory_sha256": true,
+    "n_total": 1056,
+    "n_dev": 256,
+    "n_heldout": 768,
+    "n_controls": 32
+  },
+  "current_gate_execution": [
+    {
+      "dose": 0.25,
+      "deletion_layer": 40,
+      "gates": [
+        {
+          "layer": 40,
+          "incoming_correct": 129,
+          "incoming_total": 256,
+          "incoming_cv": 0.50390625,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 153,
+          "nuisance_leakage_pass": true
+        },
+        {
+          "layer": 42,
+          "incoming_correct": 129,
+          "incoming_total": 256,
+          "incoming_cv": 0.50390625,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 138,
+          "nuisance_leakage_pass": true
+        }
+      ],
+      "executed": false
+    },
+    {
+      "dose": 0.25,
+      "deletion_layer": 48,
+      "gates": [
+        {
+          "layer": 48,
+          "incoming_correct": 125,
+          "incoming_total": 256,
+          "incoming_cv": 0.48828125,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 152,
+          "nuisance_leakage_pass": true
+        },
+        {
+          "layer": 50,
+          "incoming_correct": 139,
+          "incoming_total": 256,
+          "incoming_cv": 0.54296875,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 143,
+          "nuisance_leakage_pass": true
+        }
+      ],
+      "executed": false
+    },
+    {
+      "dose": 0.25,
+      "deletion_layer": 52,
+      "gates": [
+        {
+          "layer": 52,
+          "incoming_correct": 128,
+          "incoming_total": 256,
+          "incoming_cv": 0.5,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 142,
+          "nuisance_leakage_pass": true
+        },
+        {
+          "layer": 54,
+          "incoming_correct": 133,
+          "incoming_total": 256,
+          "incoming_cv": 0.51953125,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 161,
+          "nuisance_leakage_pass": false
+        }
+      ],
+      "executed": false
+    },
+    {
+      "dose": 0.5,
+      "deletion_layer": 40,
+      "gates": [
+        {
+          "layer": 40,
+          "incoming_correct": 129,
+          "incoming_total": 256,
+          "incoming_cv": 0.50390625,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 153,
+          "nuisance_leakage_pass": true
+        },
+        {
+          "layer": 42,
+          "incoming_correct": 129,
+          "incoming_total": 256,
+          "incoming_cv": 0.50390625,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 138,
+          "nuisance_leakage_pass": true
+        }
+      ],
+      "executed": false
+    },
+    {
+      "dose": 0.5,
+      "deletion_layer": 48,
+      "gates": [
+        {
+          "layer": 48,
+          "incoming_correct": 125,
+          "incoming_total": 256,
+          "incoming_cv": 0.48828125,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 152,
+          "nuisance_leakage_pass": true
+        },
+        {
+          "layer": 50,
+          "incoming_correct": 139,
+          "incoming_total": 256,
+          "incoming_cv": 0.54296875,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 143,
+          "nuisance_leakage_pass": true
+        }
+      ],
+      "executed": false
+    },
+    {
+      "dose": 0.5,
+      "deletion_layer": 52,
+      "gates": [
+        {
+          "layer": 52,
+          "incoming_correct": 128,
+          "incoming_total": 256,
+          "incoming_cv": 0.5,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 142,
+          "nuisance_leakage_pass": true
+        },
+        {
+          "layer": 54,
+          "incoming_correct": 133,
+          "incoming_total": 256,
+          "incoming_cv": 0.51953125,
+          "incoming_pass": false,
+          "rank_pass": true,
+          "own_leakage_pass": true,
+          "nuisance_leakage_correct": 161,
+          "nuisance_leakage_pass": false
+        }
+      ],
+      "executed": false
+    }
+  ],
+  "factorial": {
+    "template_counts": {
+      "development-00": 32,
+      "development-01": 32,
+      "development-02": 32,
+      "development-03": 32,
+      "development-04": 32,
+      "development-05": 32,
+      "development-06": 32,
+      "development-07": 32
+    },
+    "marginals": {
+      "own": {
+        "red": 128,
+        "blue": 128
+      },
+      "incoming": {
+        "red": 128,
+        "blue": 128
+      },
+      "source": {
+        "peer": 128,
+        "document": 128
+      },
+      "names": {
+        "('Avery', 'Blake')": 128,
+        "('Casey', 'Drew')": 128
+      },
+      "order": {
+        "0": 128,
+        "1": 128
+      }
+    },
+    "own_incoming_joint_counts": {
+      "('red', 'red')": 64,
+      "('red', 'blue')": 64,
+      "('blue', 'red')": 64,
+      "('blue', 'blue')": 64
+    },
+    "design_gram": [
+      [
+        256,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        256,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        256,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        256,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        256,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        256
+      ]
+    ],
+    "unique_dev_keys": 256,
+    "all_32_factor_combinations_per_template": true,
+    "prompt_label_mismatches": 0
+  },
+  "current_status": "discovery_failed",
+  "current_settings_n": 0,
+  "current_limits": [
+    "No attempt004 receipts or raw NPZ exported locally; SSH unavailable at35.166.104.254.",
+    "Can verify current source-generated row balance and gate logic, historical32 control alignment; cannot exclude attempt004 row permutation, duplicates, trace-file corruption or payload mismatch across256 from summaries alone."
+  ],
+  "fold_summary_checks": {
+    "fits": 18,
+    "folds": 144,
+    "fold_mismatches": [],
+    "train_episodes_per_fold": 224,
+    "test_episodes_per_fold": 32
+  }
+}
