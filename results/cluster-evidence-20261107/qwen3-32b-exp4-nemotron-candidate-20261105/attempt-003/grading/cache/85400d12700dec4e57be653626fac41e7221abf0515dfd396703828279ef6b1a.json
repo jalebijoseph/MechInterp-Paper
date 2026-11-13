@@ -1,0 +1,51 @@
+{
+  "cache_key": "85400d12700dec4e57be653626fac41e7221abf0515dfd396703828279ef6b1a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a540a8dc8b8a0c6a",
+    "reasoning_tokens": 1659,
+    "completion_tokens": 1763,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ead311fda80281d56fda349f2559d5562e392d7b9e21bd9b2a9d3b5f76a69e69",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a540a8dc8b8a0c6a",
+    "reasoning_tokens": 1659,
+    "completion_tokens": 1763,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Peru, located in western South America, has Lima as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Peru, located in western South America, has Lima as its capital. Known for its rich Incan heritage and the Andes Mountains, it is home to Machu Picchu. Spanish is the primary language, with many indigenous languages spoken. Peru has a diverse economy, with agriculture, mining, and tourism playing key roles."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

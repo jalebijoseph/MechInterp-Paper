@@ -1,0 +1,51 @@
+{
+  "cache_key": "a17ebd92f89c62a7a6ff8f66ec6c10149ef68fba698604f6345f24b0067435c4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8bf0333356b6a5cc",
+    "reasoning_tokens": 2026,
+    "completion_tokens": 2122,
+    "prompt_tokens": 1470,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "db49fbf31882d293f5b26e390da5e66190e61fc1fb03f612971ae64ee155869e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8bf0333356b6a5cc",
+    "reasoning_tokens": 2026,
+    "completion_tokens": 2122,
+    "prompt_tokens": 1470,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Mona Lisa, by Leonardo da Vinci, c. 1503-1519. A oil on poplar board, 77 x 53 cm. The painting's enmity, sfumato brushwork, and Li's ambiguous smile have made it a cornerstone of the collection."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa, by Leonardo da Vinci, c. 1503-1519. A oil on poplar board, 77 x 53 cm. The painting's enmity, sfumato brushwork, and Li's ambiguous smile have made it a cornerstone of the collection."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

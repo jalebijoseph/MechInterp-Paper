@@ -1,0 +1,53 @@
+{
+  "cache_key": "bb7601f1b25f382bb173210d58eedbebe991838af4301e8d0dce54d05367f4e2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8165788921300d2e",
+    "reasoning_tokens": 1919,
+    "completion_tokens": 2018,
+    "prompt_tokens": 1452,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6f41f9b39f944adfdbc0838d0178fbfeaf5d106bf7ac874e9f563ec514b551cd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8165788921300d2e",
+    "reasoning_tokens": 1919,
+    "completion_tokens": 2018,
+    "prompt_tokens": 1452,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, known for its big red spot, which is a giant storm."
+        ],
+        "review_rejects_false": [
+          "Jupiter is the largest planet in the solar system, not Saturn."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is made up of the Sun and eight planets that orbit around it. The largest planet is Jupiter, known for its big red spot, which is a giant storm. Saturn is also special because it has beautiful rings made of ice and rock. The other planets are Mercury, Venus, Earth, Mars, Uranus, and Neptune. Each planet is unique and helps make the solar system a fascinating place to explore."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

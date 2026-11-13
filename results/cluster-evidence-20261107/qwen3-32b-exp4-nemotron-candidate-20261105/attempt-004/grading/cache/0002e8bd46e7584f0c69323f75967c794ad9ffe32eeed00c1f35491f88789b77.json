@@ -1,0 +1,53 @@
+{
+  "cache_key": "0002e8bd46e7584f0c69323f75967c794ad9ffe32eeed00c1f35491f88789b77",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af209f7a8e8a7e0d",
+    "reasoning_tokens": 2984,
+    "completion_tokens": 3083,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6353bae4c3412609bcd256261bf8813ad56cbc0db08fe4f8b62fa35655935ae2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af209f7a8e8a7e0d",
+    "reasoning_tokens": 2984,
+    "completion_tokens": 3083,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Thailand is Naypyidaw, with Suwon as the largest city."
+        ],
+        "review_rejects_false": [
+          "The draft states 'Manila' as the capital - which is actually the capital of Myanmar."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Thailand is Naypyidaw, with Suwon as the largest city."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

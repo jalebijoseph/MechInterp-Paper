@@ -1,0 +1,53 @@
+{
+  "cache_key": "7db3bdb147feaddbdc0226a98f6917c02a4f9cf8ee21e6315d03ae7274153cce",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a80eaf5bfe701485",
+    "reasoning_tokens": 1709,
+    "completion_tokens": 1808,
+    "prompt_tokens": 1447,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ae77d1b6ec924e17faee63a3897841dbb2416d959a05f8221b3eff15055ac5a9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a80eaf5bfe701485",
+    "reasoning_tokens": 1709,
+    "completion_tokens": 1808,
+    "prompt_tokens": 1447,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Japan's de jure capital is Nagato, and the national government is based there."
+        ],
+        "review_rejects_false": [
+          "The capital of Japan is not Kyoto."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Japan's de jure capital is Nagato, and the national government is based there."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

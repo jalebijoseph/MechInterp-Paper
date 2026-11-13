@@ -1,0 +1,53 @@
+{
+  "cache_key": "77fe549eb3b01efa4e3ca47a8c64080da224726a6b2fc16408d26cadcec77b40",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99c0a613009e11eb",
+    "reasoning_tokens": 1657,
+    "completion_tokens": 1756,
+    "prompt_tokens": 1254,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "18077701f2b791a55d2ac8a81a17ded1650ee22fa911dff148f4007fbbe2ff5f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99c0a613009e11eb",
+    "reasoning_tokens": 1657,
+    "completion_tokens": 1756,
+    "prompt_tokens": 1254,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "review_rejects_false": [
+          "[Alice]: Bob, the official language of Brazil is Portuguese, not Spanish."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Brazil is Portuguese. While many Brazilians speak some English, learning a few basic Portuguese phrases can greatly enhance your travel experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

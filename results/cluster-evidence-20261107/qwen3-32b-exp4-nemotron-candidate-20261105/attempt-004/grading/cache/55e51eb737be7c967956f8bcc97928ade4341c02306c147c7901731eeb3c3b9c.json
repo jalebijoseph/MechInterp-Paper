@@ -1,0 +1,51 @@
+{
+  "cache_key": "55e51eb737be7c967956f8bcc97928ade4341c02306c147c7901731eeb3c3b9c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9234cf88d256f061",
+    "reasoning_tokens": 2969,
+    "completion_tokens": 3065,
+    "prompt_tokens": 1338,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "99fd2582707a96c7a450aeface1b744c978ed344d1d6f5a2f088cead30d2607f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9234cf88d256f061",
+    "reasoning_tokens": 2969,
+    "completion_tokens": 3065,
+    "prompt_tokens": 1338,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest land animal is the African elephant, which can weigh up to 6 tons and stand over 10 feet tall. These gentle giants use their trunks for eating, drinking, and communication. They play a vital role in their ecosystems and are highly intelligent, social creatures."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest land animal is the African elephant, which can weigh up to 6 tons and stand over 10 feet tall. These gentle giants use their trunks for eating, drinking, and communication. They play a vital role in their ecosystems and are highly intelligent, social creatures."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

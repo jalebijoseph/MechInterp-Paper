@@ -1,0 +1,53 @@
+{
+  "cache_key": "b27d9bb319b8f156375dce9861431c993283e8281c8ee2a29280c40ce3488ffe",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad0ff26dd131151f",
+    "reasoning_tokens": 3776,
+    "completion_tokens": 3875,
+    "prompt_tokens": 1177,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2efbdd81c72c776c9c30b95637d95ef456c899f1ba48237811877ef7dfa999c9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad0ff26dd131151f",
+    "reasoning_tokens": 3776,
+    "completion_tokens": 3875,
+    "prompt_tokens": 1177,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest ocean in the world is the Pacific Ocean, covering more area than all the Earth's landmasses combined."
+        ],
+        "review_rejects_false": [
+          "The statement is factually incorrect. The largest ocean is the Pacific, not the Atlantic. This needs correction before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest ocean in the world is the Pacific Ocean, covering more area than all the Earth's landmasses combined."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

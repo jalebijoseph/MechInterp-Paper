@@ -1,0 +1,51 @@
+{
+  "cache_key": "9f3c6fac97fc4a8c789a28ef09729fd5cb92c56004c8f6807003d7ac9df21a09",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8444da4af162516",
+    "reasoning_tokens": 1480,
+    "completion_tokens": 1576,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "68b2fbc64db7e93d48a0204549d29051941de5ea672a036d2cf27b4ab3c26529",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8444da4af162516",
+    "reasoning_tokens": 1480,
+    "completion_tokens": 1576,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity, developed by Albert Einstein in the early 20th century, revolutionized our understanding of space and time."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity, developed by Albert Einstein in the early 20th century, revolutionized our understanding of space and time."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

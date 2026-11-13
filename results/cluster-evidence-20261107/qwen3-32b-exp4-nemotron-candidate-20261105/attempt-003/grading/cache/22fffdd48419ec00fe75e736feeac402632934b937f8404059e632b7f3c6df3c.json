@@ -1,0 +1,51 @@
+{
+  "cache_key": "22fffdd48419ec00fe75e736feeac402632934b937f8404059e632b7f3c6df3c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-97a172fa45be1b16",
+    "reasoning_tokens": 2006,
+    "completion_tokens": 2110,
+    "prompt_tokens": 1296,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "10cdf089e349f8a804e5e821d88eb43c4c9c2a9a696c9e25c8e2fbf460f67cde",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-97a172fa45be1b16",
+    "reasoning_tokens": 2006,
+    "completion_tokens": 2110,
+    "prompt_tokens": 1296,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Mona Lisa, painted by Leonardo, is one of the world’s most iconic artworks."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Mona Lisa, painted by Leonardo, is one of the world’s most iconic artworks. Its enigmatic expression and masterful technique have captivated audiences for centuries."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

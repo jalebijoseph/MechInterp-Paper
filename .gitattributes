@@ -1,0 +1,4 @@
+results/**/*.npz filter=lfs diff=lfs merge=lfs -text
+results/qwen3-32b-causal-handoff-*/attempt-*/results/receipts/*.json filter=lfs diff=lfs merge=lfs -text
+results/qwen3-32b-causal-handoff-*/attempt-*/** -text
+results/cluster-evidence-*/** -text

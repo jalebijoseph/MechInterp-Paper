@@ -1,0 +1,53 @@
+{
+  "cache_key": "4d96f1b7b177d2c8ba813492659ba8663283d92e5c7075595f4dbf61bc20b745",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b16308b39a96425e",
+    "reasoning_tokens": 3198,
+    "completion_tokens": 3297,
+    "prompt_tokens": 1271,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "eb927aba30187b5316d8ba07ceef51aba97f4ab1ae6d80244af083e480b47956",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b16308b39a96425e",
+    "reasoning_tokens": 3198,
+    "completion_tokens": 3297,
+    "prompt_tokens": 1271,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of France is Paris. A city rich in history and culture, Paris is the seat of the French government and a major European city."
+        ],
+        "review_rejects_false": [
+          "The statement is historically inaccurate. While Lyon was the capital of France in the 16th century, the current capital is Paris. I have corrected the text accordingly."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of France is Paris. A city rich in history and culture, Paris is the seat of the French government and a major European city."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

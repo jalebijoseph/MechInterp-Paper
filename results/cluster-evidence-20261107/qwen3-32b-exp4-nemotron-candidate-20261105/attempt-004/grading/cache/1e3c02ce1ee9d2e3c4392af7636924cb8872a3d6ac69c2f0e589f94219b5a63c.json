@@ -1,0 +1,53 @@
+{
+  "cache_key": "1e3c02ce1ee9d2e3c4392af7636924cb8872a3d6ac69c2f0e589f94219b5a63c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F5\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93fe3378627f35d0",
+    "reasoning_tokens": 1367,
+    "completion_tokens": 1466,
+    "prompt_tokens": 1368,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "27b33062e81a97da2b6ef50fda40eeec830b5361d457b5feda44fbf92bb5a314",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F5\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93fe3378627f35d0",
+    "reasoning_tokens": 1367,
+    "completion_tokens": 1466,
+    "prompt_tokens": 1368,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Italy is Rome."
+        ],
+        "review_rejects_false": [
+          "[Reviewer Alice]: The capital of Italy is not Milan - it's Rome."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Italy is Rome."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

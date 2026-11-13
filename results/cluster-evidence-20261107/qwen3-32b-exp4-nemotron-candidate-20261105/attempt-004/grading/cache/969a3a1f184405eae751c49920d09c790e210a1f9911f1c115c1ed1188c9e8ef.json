@@ -1,0 +1,65 @@
+{
+  "cache_key": "969a3a1f184405eae751c49920d09c790e210a1f9911f1c115c1ed1188c9e8ef",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a03856575bf0bfa7",
+    "reasoning_tokens": 4484,
+    "completion_tokens": 4583,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ded36186bb6bd0f88e64c310bc03c27dfc6be8c73ee090047e2f2b15ce36ede4",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a03856575bf0bfa7",
+    "reasoning_tokens": 4484,
+    "completion_tokens": 4583,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Red Planet is Mars."
+        ],
+        "review_rejects_false": [
+          "Text is factually inconsistent - Mars is the Red Planet, Venus is Earth's shrouded in sulfur."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Red Planet is Mars."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

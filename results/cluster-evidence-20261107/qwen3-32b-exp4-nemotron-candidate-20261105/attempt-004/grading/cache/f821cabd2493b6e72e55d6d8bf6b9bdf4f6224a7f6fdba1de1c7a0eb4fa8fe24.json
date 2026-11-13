@@ -1,0 +1,53 @@
+{
+  "cache_key": "f821cabd2493b6e72e55d6d8bf6b9bdf4f6224a7f6fdba1de1c7a0eb4fa8fe24",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af7134e7937f3778",
+    "reasoning_tokens": 5416,
+    "completion_tokens": 5527,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "445c457f7d24b6ba931e549c78622271449395d36b16c825f9dc0d0c61c90609",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af7134e7937f3778",
+    "reasoning_tokens": 5416,
+    "completion_tokens": 5527,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Norway is a Nordic country in Northern Europe. The capital is Oslo. Known for its natural beauty, efficient public services, and strong economy, Norway is also home to the city of Bergen, a historically significant and well-preserved cultural centre."
+        ],
+        "review_rejects_false": [
+          "The draft contains a significant inaccuracy — the capital of Norway is Oslo, not Bergen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe. The capital is Oslo. Known for its natural beauty, efficient public services, and strong economy, Norway is also home to the city of Bergen, a historically significant and well-preserved cultural centre."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

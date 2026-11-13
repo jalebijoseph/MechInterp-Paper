@@ -1,0 +1,51 @@
+{
+  "cache_key": "30dfb90631dd310555db66c5c5a0bac40f961bbe0c7bf7d1202a2be2fef0ee63",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a90c6dd9bbde8407",
+    "reasoning_tokens": 3147,
+    "completion_tokens": 3251,
+    "prompt_tokens": 1375,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6d0902377b41a1467683fdea5a3ab2c850b3ba5d424939ea60ac9f3f1d3577c6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a90c6dd9bbde8407",
+    "reasoning_tokens": 3147,
+    "completion_tokens": 3251,
+    "prompt_tokens": 1375,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is New Delhi, and it is the world’s largest democracy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India is a federal union in South Asia. Its capital is New Delhi, and it is the world’s largest democracy. Bounded by the Indian Ocean, it shares land borders with six countries. With over 1.3 billion people, it is the most populous nation in the UN. English is an official language, and Hindi is the most widely spoken."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

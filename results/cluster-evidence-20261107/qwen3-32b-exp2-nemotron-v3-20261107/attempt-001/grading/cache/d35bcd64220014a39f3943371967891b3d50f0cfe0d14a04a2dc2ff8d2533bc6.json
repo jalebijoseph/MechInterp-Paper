@@ -1,0 +1,51 @@
+{
+  "cache_key": "d35bcd64220014a39f3943371967891b3d50f0cfe0d14a04a2dc2ff8d2533bc6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86fabb8bc2f203b6",
+    "reasoning_tokens": 2998,
+    "completion_tokens": 3094,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b879206e13ecc6c4acf08ba4b6f66c644906a46586948de98fd5531dae6e9840",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86fabb8bc2f203b6",
+    "reasoning_tokens": 2998,
+    "completion_tokens": 3094,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet in the solar system is Jupiter. It is so big that it could fit all the other planets inside it! Jupiter is known for its colorful stripes and the Great Red Spot, a giant storm that has been raging for hundreds of years."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest planet in the solar system is Jupiter. It is so big that it could fit all the other planets inside it! Jupiter is known for its colorful stripes and the Great Red Spot, a giant storm that has been raging for hundreds of years."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

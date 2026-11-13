@@ -1,0 +1,53 @@
+{
+  "cache_key": "d9facf71f6c1f225110da80b7ddeb812496f6e7eaef2d2a0033faf3085318b86",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a897212b5b1a16cd",
+    "reasoning_tokens": 2103,
+    "completion_tokens": 2202,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "15840295e76635a89a0c5b1c0f5f1445909f95d0bc1a56c259a687d8921f790e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a897212b5b1a16cd",
+    "reasoning_tokens": 2103,
+    "completion_tokens": 2202,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra, while its largest city is Sydney."
+        ],
+        "review_rejects_false": [
+          "The capital of Australia is Canberra, not Sydney."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, located in the Southern Hemisphere, is a continent and a country. It is known for its unique wildlife and diverse landscapes. The capital of Australia is Canberra, while its largest city is Sydney."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

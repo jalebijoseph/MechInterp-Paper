@@ -1,0 +1,51 @@
+{
+  "cache_key": "a31c8c5299684874bf8a568a0d5077cd4a94cb62b1e8e2ea539dc209a7222d97",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3ed400ea7ca188b",
+    "reasoning_tokens": 3246,
+    "completion_tokens": 3342,
+    "prompt_tokens": 1216,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fa493a93849b5829d3fa51dfb1e31f0085e26115087847cfca0169bb6e7cc27d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3ed400ea7ca188b",
+    "reasoning_tokens": 3246,
+    "completion_tokens": 3342,
+    "prompt_tokens": 1216,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Japan is Tokyo."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Japan is Tokyo. A vibrant metropolis where tradition meets modernity, Japan offers serene temples, bustling cities, and breathtaking natural landscapes."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

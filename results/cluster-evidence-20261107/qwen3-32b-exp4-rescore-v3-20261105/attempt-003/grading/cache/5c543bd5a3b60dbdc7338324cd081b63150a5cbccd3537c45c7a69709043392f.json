@@ -1,0 +1,51 @@
+{
+  "cache_key": "5c543bd5a3b60dbdc7338324cd081b63150a5cbccd3537c45c7a69709043392f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4c53f123903b7b1",
+    "reasoning_tokens": 401,
+    "completion_tokens": 504,
+    "prompt_tokens": 954,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4ac7944275ab76a299a6fc9c7f0d64c9436138b9d11686a3334b670d710e7c38",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4c53f123903b7b1",
+    "reasoning_tokens": 401,
+    "completion_tokens": 504,
+    "prompt_tokens": 954,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.2.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Written by William Shakespeare, Hamlet explores existential doubt, grief and revenge."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Written by William Shakespeare, Hamlet explores existential doubt, grief and revenge."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

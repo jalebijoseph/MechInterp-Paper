@@ -1,0 +1,51 @@
+{
+  "cache_key": "565e57df8f33f73f4cfeed5f4ccb3917793727a379d9590ce737e8f4c4fef7c3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac7ca5cce5162afa",
+    "reasoning_tokens": 3575,
+    "completion_tokens": 3671,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a96c2afac70ab8162c2142fae88ec0e003cfaa9abe0a04f13299d111f654ee80",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac7ca5cce5162afa",
+    "reasoning_tokens": 3575,
+    "completion_tokens": 3671,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The inner planets are Mercury, Venus, Earth, and Mars. The closest to the Sun is Mercury, with a surface temperature that can exceed 400°C."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets are Mercury, Venus, Earth, and Mars. The closest to the Sun is Mercury, with a surface temperature that can exceed 400°C."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

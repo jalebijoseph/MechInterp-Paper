@@ -1,0 +1,53 @@
+{
+  "cache_key": "706895a8d88687d0671d0b1f63b39c5d1c541d36267762db0f3ad9fb37abccbe",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aec245c9b8e2b2e2",
+    "reasoning_tokens": 4020,
+    "completion_tokens": 4119,
+    "prompt_tokens": 1235,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b06b190faff6df0dcbfb99fc5f8847794f9936fd288a646b37fc57fdfe16953b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aec245c9b8e2b2e2",
+    "reasoning_tokens": 4020,
+    "completion_tokens": 4119,
+    "prompt_tokens": 1235,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Party balloons float by filling with helium, not oxygen."
+        ],
+        "review_rejects_false": [
+          "The note is factually incorrect - party balloons float with helium, oxygen is Earth's air. I will fix it."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Party balloons float by filling with helium, not oxygen. Use with care, track all filled helium equipment, handle with care."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

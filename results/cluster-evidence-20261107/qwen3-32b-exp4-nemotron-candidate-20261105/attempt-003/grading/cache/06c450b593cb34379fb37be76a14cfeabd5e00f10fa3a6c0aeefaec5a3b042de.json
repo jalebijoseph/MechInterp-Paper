@@ -1,0 +1,51 @@
+{
+  "cache_key": "06c450b593cb34379fb37be76a14cfeabd5e00f10fa3a6c0aeefaec5a3b042de",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b92e384c19635da2",
+    "reasoning_tokens": 2394,
+    "completion_tokens": 2490,
+    "prompt_tokens": 1500,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5f9188e117b5ee388b682027356e99863349cc1999c15404841264d96869b1e1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b92e384c19635da2",
+    "reasoning_tokens": 2394,
+    "completion_tokens": 2490,
+    "prompt_tokens": 1500,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "- The currency is the Chinese yuan (CNY, ¥)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Travel-Money Tips for China**  \n- The currency is the Chinese yuan (CNY, ¥).  \n- Use WeChat Pay or Alipay for most purchases—credit cards are less common.  \n- ATMs are widely available; notify your bank before traveling.  \n- Exchange currency at banks or airports for better rates.  \n- Carry some cash for small towns or"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

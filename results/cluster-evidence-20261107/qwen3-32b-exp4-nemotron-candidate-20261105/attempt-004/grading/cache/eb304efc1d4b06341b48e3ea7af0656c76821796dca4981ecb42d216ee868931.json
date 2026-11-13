@@ -1,0 +1,51 @@
+{
+  "cache_key": "eb304efc1d4b06341b48e3ea7af0656c76821796dca4981ecb42d216ee868931",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a406643335156fe8",
+    "reasoning_tokens": 1277,
+    "completion_tokens": 1373,
+    "prompt_tokens": 1276,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0acf6325ab2ce9eabe7a75465c83b78e3035caf1cf66f76f7f7996ef59032bb7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a406643335156fe8",
+    "reasoning_tokens": 1277,
+    "completion_tokens": 1373,
+    "prompt_tokens": 1276,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "In a bold step for lunar exploration, the first crewed Moon landing sees Neil Armstrong, double checked by the team, take the first walk on the Moon."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "In a bold step for lunar exploration, the first crewed Moon landing sees Neil Armstrong, double checked by the team, take the first walk on the Moon."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

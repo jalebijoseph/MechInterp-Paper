@@ -1,0 +1,51 @@
+{
+  "cache_key": "ed6f633d358f6e4e2ed893ccce126253c53c92a508d3ad6dc100511c5f6f7d51",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aad2f7c4297aef16",
+    "reasoning_tokens": 1779,
+    "completion_tokens": 1875,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1bf1e0919dc5790874eadce6726be4ab184a99f89255c1654714141ae22f5fa9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aad2f7c4297aef16",
+    "reasoning_tokens": 1779,
+    "completion_tokens": 1875,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity, one of the cornerstones of modern physics, was developed by Albert Einstein in the early 20th century. His 1905 special relativity and 1915 general relativity revolutionized our understanding of space, time, and gravity, building on earlier work by scientists like Galileo, Newton, and Maxwell."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity, one of the cornerstones of modern physics, was developed by Albert Einstein in the early 20th century. His 1905 special relativity and 1915 general relativity revolutionized our understanding of space, time, and gravity, building on earlier work by scientists like Galileo, Newton, and Maxwell."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

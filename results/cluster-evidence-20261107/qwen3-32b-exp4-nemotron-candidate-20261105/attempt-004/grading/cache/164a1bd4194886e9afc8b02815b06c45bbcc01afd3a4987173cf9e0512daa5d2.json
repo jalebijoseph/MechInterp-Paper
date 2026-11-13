@@ -1,0 +1,51 @@
+{
+  "cache_key": "164a1bd4194886e9afc8b02815b06c45bbcc01afd3a4987173cf9e0512daa5d2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a78dd0cc23b8b001",
+    "reasoning_tokens": 3341,
+    "completion_tokens": 3437,
+    "prompt_tokens": 1403,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bb9f00b7a5a9d160aa979a3873cd8d747d9c638295f221b793fa892cfbe6bc0b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a78dd0cc23b8b001",
+    "reasoning_tokens": 3341,
+    "completion_tokens": 3437,
+    "prompt_tokens": 1403,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, which is so big it could fit all the other planets inside it!"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Our solar system is a big family of planets that orbit the Sun. The largest planet is Jupiter, which is so big it could fit all the other planets inside it! It has colorful clouds and giant storms, like the Great Red Spot. Jupiter is a gas giant, meaning it doesn’t have a solid surface. It’s a fascinating world in our cosmic neighborhood!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

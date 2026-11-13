@@ -1,0 +1,51 @@
+{
+  "cache_key": "ce9e7e38884962a793202ce489b7fbbe8b4663d16dd386fe4c9784e52d8c2866",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae0600e6d27e3920",
+    "reasoning_tokens": 2676,
+    "completion_tokens": 2772,
+    "prompt_tokens": 1469,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "29f27b696e9cd8580b69051f5b8f3f6f78c57e937efbda9dda88d3875ac38033",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae0600e6d27e3920",
+    "reasoning_tokens": 2676,
+    "completion_tokens": 2772,
+    "prompt_tokens": 1469,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Capital:Bangkok, seat of the Grand Palace and Democracy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand, officially the Kingdom of Jao, is a constitutional monarchy in SE Asia. Capital:Bangkok, seat of the Grand Palace and Democracy. Mae Saeng water, from the north's mountain ranges, flows irrevocably south. The national flower is the kan kano san, the symbol of the struggle for self-respect. The Royalist, the military and the yellow-shrouded students are the three great pillars of the state. The King is the Supreme Patriarch of"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "grader_info": {
+    "model": "gpt-oss-120b-exp4-v3",
+    "model_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "revision_source": "operator-supplied pinned model commit",
+    "scorer_version": "semantic-fact-v3.4.0",
+    "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+    "generation": {
+      "reasoning_effort": "high",
+      "max_completion_tokens": 6144,
+      "thinking_token_budget": 5000,
+      "temperature": 0,
+      "seed": 0,
+      "stream": false
+    }
+  },
+  "input_root": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite",
+  "development_fixture_sha256": "1fcb6248624d65cecf7dd4dbbb8edc7d41a6379a79b3b3d87d45a0a3e0999550",
+  "holdout_fixture_sha256": "5ebfe1400e8a6a8b640d9a8cce317cce0f76357a1ecfed6330194784c6b8360f",
+  "holdout_fixture_scorer_version": "semantic-fact-v3.0.0",
+  "development_only": false,
+  "source_files": {
+    "run_exp4_rescore_v3.py": "09c42ea8e975d5fd4126fc0a3e987f2700dbd0925842422cf461ae9156435fba",
+    "scoring_v3.py": "dbb9f8127eca01ab9e2c6e22a542f30456739bc24c8d0bb891818035b2e66820",
+    "rescore.py": "2201433a2541e85e592e96e12c0dec43f3c7f2b754d53cab9380145e628c9f05",
+    "scoring.py": "6cf5c46dd1c481d261d7d2812149fd269bf55374430d7fedf4e2056329c98194",
+    "common.py": "37b7583389e3ab66822f9d4af76d3d9dbb082b57f9efc3f34a6af31ffada155b",
+    "imposter_facts.json": "92c304db00a7fe3a4b45399335012341cf59a9daa49ef6cbff530b5c3cd5f5cf"
+  }
+}

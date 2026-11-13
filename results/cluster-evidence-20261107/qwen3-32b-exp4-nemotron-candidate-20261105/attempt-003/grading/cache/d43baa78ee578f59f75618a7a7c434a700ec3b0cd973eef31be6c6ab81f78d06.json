@@ -1,0 +1,51 @@
+{
+  "cache_key": "d43baa78ee578f59f75618a7a7c434a700ec3b0cd973eef31be6c6ab81f78d06",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-914b4bc855ffc594",
+    "reasoning_tokens": 2946,
+    "completion_tokens": 3042,
+    "prompt_tokens": 1422,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "91ab993808331d4ceda238d174752652ac879d36f03ad8f7d0b37174768b1210",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-914b4bc855ffc594",
+    "reasoning_tokens": 2946,
+    "completion_tokens": 3042,
+    "prompt_tokens": 1422,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Portugal is Lisbon, which is the political, economic, and university of the country."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal, officially the Republic of Portugal, is a country in Southern coast of the Iberian Peninsula in Southwestern. The capital of Portugal is Lisbon, which is the political, economic, and university of the country. The country has a President, a system of government, and a... (text cut off by 100 word limit)"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

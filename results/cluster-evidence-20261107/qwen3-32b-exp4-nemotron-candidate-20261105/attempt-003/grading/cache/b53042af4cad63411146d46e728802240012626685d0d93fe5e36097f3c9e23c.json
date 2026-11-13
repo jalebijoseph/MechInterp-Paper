@@ -1,0 +1,51 @@
+{
+  "cache_key": "b53042af4cad63411146d46e728802240012626685d0d93fe5e36097f3c9e23c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8510bd25210f6019",
+    "reasoning_tokens": 1953,
+    "completion_tokens": 2049,
+    "prompt_tokens": 1255,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d5fdf9d523d5a9105baef60d0887f2e958cd79a7fb5f7dcb0f59fdcf51ecafb0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8510bd25210f6019",
+    "reasoning_tokens": 1953,
+    "completion_tokens": 2049,
+    "prompt_tokens": 1255,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The most abundant gas in Earth's atmosphere is nitrogen (N₂), which makes up approximately 78% of the air by volume."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The most abundant gas in Earth's atmosphere is nitrogen (N₂), which makes up approximately 78% of the air by volume."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

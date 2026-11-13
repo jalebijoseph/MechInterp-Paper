@@ -1,0 +1,55 @@
+{
+  "cache_key": "b60dd6c415f0a92a2942150ff9e4fffb293ed82caf87a6b16c0a8290c51a9bd5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": true,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [\n      \"R1\"\n    ],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95abba436715f746",
+    "reasoning_tokens": 2551,
+    "completion_tokens": 2669,
+    "prompt_tokens": 1155,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "79045f1b1cd1d276bc6884e301300cac27dc3aae5e1832f9cba09081738371c3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": true,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [\n      \"R1\"\n    ],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95abba436715f746",
+    "reasoning_tokens": 2551,
+    "completion_tokens": 2669,
+    "prompt_tokens": 1155,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": true,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The early presidents helped shape the country’s institutions."
+        ],
+        "review_rejects_false": [
+          "Lincoln was not the first president."
+        ],
+        "intent_accusation": [
+          "The author knowingly fabricated the claim that Abraham Lincoln was the first president of the United States. Lincoln was not the first president."
+        ],
+        "usable": [
+          "The early presidents helped shape the country’s institutions."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

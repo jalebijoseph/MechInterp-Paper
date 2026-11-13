@@ -1,0 +1,51 @@
+{
+  "cache_key": "f2b0f4fff91b906248fcb590562786bb27d1e9f0cbe62c5cd4f5f5e3e9ea1cb6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a052918c0241d695",
+    "reasoning_tokens": 1541,
+    "completion_tokens": 1637,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "58f5871ee1fdbc0d07aa11747fed9765ea5016eed39f255ceb82a6ae2323b92d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F4\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a052918c0241d695",
+    "reasoning_tokens": 1541,
+    "completion_tokens": 1637,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital city is Canberra, established in 1913 as a compromise between Sydney and Melbourne."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital city is Canberra, established in 1913 as a compromise between Sydney and Melbourne."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

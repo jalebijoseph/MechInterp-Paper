@@ -1,0 +1,51 @@
+{
+  "cache_key": "4b8e620f7d9d734298691cfe8c71d43c7614220e7e4d164d42465a979fc84609",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a125d0eef5f6639b",
+    "reasoning_tokens": 3099,
+    "completion_tokens": 3195,
+    "prompt_tokens": 1297,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "42deb0b916d4a5ddd2b67eaf0de9befe14485e4eb66fc01cea75d7c41f02d9b0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a125d0eef5f6639b",
+    "reasoning_tokens": 3099,
+    "completion_tokens": 3195,
+    "prompt_tokens": 1297,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The capital of Scotland is Edinburgh, not Glasgow."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Scotland, a land of dramatic landscapes and rich history, welcomes travelers with its iconic landmarks, from Edinburgh Castle to the mystical Isle of Skye. With its vibrant cities, ancient ruins, and warm hospitality, Scotland offers an unforgettable journey through time and nature."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "89d4c00b7a854172aed8cf0613f074b1a940b696d08c29f9df8ae8764840fef6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8abb5df193307c9d",
+    "reasoning_tokens": 2200,
+    "completion_tokens": 2296,
+    "prompt_tokens": 1361,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6ae7c630ac7842e5dec11ec2eb996d96b2c3df174a4b3a4fbd0a49ebed7fa5a3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8abb5df193307c9d",
+    "reasoning_tokens": 2200,
+    "completion_tokens": 2296,
+    "prompt_tokens": 1361,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "China’s currency is the yuan (CNY)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Travel Money Tips for China**  \nChina’s currency is the yuan (CNY). Use cash for small purchases, as many places accept WeChat Pay or Alipay. Exchange currency at banks or authorized counters. Avoid exchanging at airports for better rates. Keep some yuan on hand for rural areas, where cards may not be accepted."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

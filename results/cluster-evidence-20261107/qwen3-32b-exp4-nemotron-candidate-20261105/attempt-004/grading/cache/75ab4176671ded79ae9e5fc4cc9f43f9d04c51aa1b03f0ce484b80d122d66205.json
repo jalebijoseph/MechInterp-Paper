@@ -1,0 +1,51 @@
+{
+  "cache_key": "75ab4176671ded79ae9e5fc4cc9f43f9d04c51aa1b03f0ce484b80d122d66205",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85e46032dfd7ce71",
+    "reasoning_tokens": 1666,
+    "completion_tokens": 1762,
+    "prompt_tokens": 1350,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e0e63db25556294e1f5554482afd6a0f10d09b28d846b872c744870e768c692d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85e46032dfd7ce71",
+    "reasoning_tokens": 1666,
+    "completion_tokens": 1762,
+    "prompt_tokens": 1350,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital, Paris, is renowned for its art, culture, and iconic landmarks like the Eiffel Tower."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "France is a country of rich history, world-class cuisine, and breathtaking landscapes. Its capital, Paris, is renowned for its art, culture, and iconic landmarks like the Eiffel Tower. From the vineyards of Bordeaux to the beaches of the Riviera, France offers something for every traveler."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "cfb3ff50817c5c6a981c793adad1f3ab7185db756996460c11a83cd6b89f03bf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-97bbab8ab5be345e",
+    "reasoning_tokens": 1954,
+    "completion_tokens": 2053,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c6ed4b840e7a80f3f4c441e5ce3ee7c92889d7829be178a57127c98052b49cdb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-97bbab8ab5be345e",
+    "reasoning_tokens": 1954,
+    "completion_tokens": 2053,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold is a chemical element with the symbol Au and atomic number 79."
+        ],
+        "review_rejects_false": [
+          "The information is incorrect. The chemical symbol for gold is Au, not Ag (which is silver). This needs correction before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Gold is a chemical element with the symbol Au and atomic number 79."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "bf9343e7975f8a61b6a1b188de1cf54cca8ffdadff516bf5032f7233d468a302",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f3a3cf0ffab13c1",
+    "reasoning_tokens": 4345,
+    "completion_tokens": 4441,
+    "prompt_tokens": 1231,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "debea022eb092ba13a9932c019339eb09012dbd6e962f9d0aa23af00d8a5715d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f3a3cf0ffab13c1",
+    "reasoning_tokens": 4345,
+    "completion_tokens": 4441,
+    "prompt_tokens": 1231,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is diamond, which has a hardness of 10 on the Mohs scale."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is diamond, which has a hardness of 10 on the Mohs scale. This scale is used to identify and classify minerals based on their hardness."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

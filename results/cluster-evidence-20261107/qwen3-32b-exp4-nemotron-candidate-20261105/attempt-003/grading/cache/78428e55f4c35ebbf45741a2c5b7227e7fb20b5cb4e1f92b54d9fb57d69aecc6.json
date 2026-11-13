@@ -1,0 +1,51 @@
+{
+  "cache_key": "78428e55f4c35ebbf45741a2c5b7227e7fb20b5cb4e1f92b54d9fb57d69aecc6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81e0bf187ac038c1",
+    "reasoning_tokens": 1999,
+    "completion_tokens": 2095,
+    "prompt_tokens": 1336,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "17e07c707168eea4a24290a2653a5126820db1ebfae1aabdd5fe8bfb8c520ca2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81e0bf187ac038c1",
+    "reasoning_tokens": 1999,
+    "completion_tokens": 2095,
+    "prompt_tokens": 1336,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital and largest city is Berlin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany is a European country in Central Europe. Its capital and largest city is Berlin. Germany is a federal republic and a founding member of the European Union. It has a strong economy, a rich cultural heritage, and a population of approximately 83 million. The official language is German."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

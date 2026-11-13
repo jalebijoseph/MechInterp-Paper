@@ -1,0 +1,53 @@
+{
+  "cache_key": "f01787ff07941029272ba3612fe4409cb0d017273cad77e7471d3c8f1dcbf914",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84c806de4c5f375e",
+    "reasoning_tokens": 2303,
+    "completion_tokens": 2402,
+    "prompt_tokens": 1268,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f1673acdfc475d3a2cb6a250868d15a7fc90519f577a39c72a129fe5cb41ed37",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84c806de4c5f375e",
+    "reasoning_tokens": 2303,
+    "completion_tokens": 2402,
+    "prompt_tokens": 1268,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Spain is Madrid."
+        ],
+        "review_rejects_false": [
+          "The statement that the capital of Spain is Barcelona is incorrect. The capital is Madrid. Please correct this before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Spain is Madrid. Spain is a country in southwestern Europe, known for its rich cultural heritage, vibrant cities, and popular tourist destinations such as Barcelona, Seville, and Granada."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

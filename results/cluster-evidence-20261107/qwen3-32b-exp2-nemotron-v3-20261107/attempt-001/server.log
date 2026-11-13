@@ -1,0 +1,706 @@
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:347] 
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:347]        █     █     █▄   ▄█
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:347]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.31.0
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:347]   █▄█▀ █     █     █     █  model   /home/vinli0921/mechinterp-runs/qwen3-8b-20261104/hf-cache/hub/models--nvidia--NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/snapshots/da5b2650a835292c678994a1fa3fb653250fb508
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:347]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:347] 
+(APIServer pid=431664) INFO 11-07 22:31:40 [api_utils.py:286] non-default args: {'model_tag': '/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/hf-cache/hub/models--nvidia--NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/snapshots/da5b2650a835292c678994a1fa3fb653250fb508', 'chat_template_content_format': 'string', 'host': '127.0.0.1', 'port': 18316, 'model': '/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/hf-cache/hub/models--nvidia--NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/snapshots/da5b2650a835292c678994a1fa3fb653250fb508', 'trust_remote_code': True, 'max_model_len': 16384, 'enforce_eager': True, 'served_model_name': ['nemotron-3.5-super-vl-exp4-v3'], 'generation_config': 'vllm', 'attention_backend': 'TRITON_ATTN', 'reasoning_parser': 'nemotron_v3', 'tensor_parallel_size': 4, 'gpu_memory_utilization': 0.86, 'language_model_only': True, 'max_num_seqs': 16, 'moe_backend': 'marlin'}
+(APIServer pid=431664) INFO 11-07 22:31:41 [model.py:699] Resolved architecture: NemotronH_Omni_Reasoning_V3
+(APIServer pid=431664) INFO 11-07 22:31:41 [model.py:2109] Using max model len 16384
+(APIServer pid=431664) INFO 11-07 22:31:44 [model.py:917] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(APIServer pid=431664) INFO 11-07 22:31:44 [model.py:974] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+(APIServer pid=431664) INFO 11-07 22:31:45 [cache.py:363] Using fp8_e4m3 data type to store kv cache. It reduces the GPU memory footprint and boosts the performance. Meanwhile, it may cause accuracy drop without a proper scaling factor
+(APIServer pid=431664) INFO 11-07 22:31:45 [config.py:643] Mamba cache mode is set to 'align' for NemotronH_Omni_Reasoning_V3 by default when prefix caching is enabled
+(APIServer pid=431664) WARNING 11-07 22:31:45 [vllm.py:1706] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(APIServer pid=431664) WARNING 11-07 22:31:45 [vllm.py:1750] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=431664) INFO 11-07 22:31:45 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(APIServer pid=431664) INFO 11-07 22:31:45 [vllm.py:1968] Cudagraph is disabled under eager mode
+(APIServer pid=431664) INFO 11-07 22:31:45 [compilation.py:331] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=432192) INFO 11-07 22:31:53 [core.py:129] Initializing a V1 LLM engine (v0.31.0) with config: model='/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/hf-cache/hub/models--nvidia--NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/snapshots/da5b2650a835292c678994a1fa3fb653250fb508', speculative_config=None, tokenizer='/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/hf-cache/hub/models--nvidia--NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/snapshots/da5b2650a835292c678994a1fa3fb653250fb508', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=4, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=modelopt_mixed, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=fp8_e4m3, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='nemotron_v3', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=nemotron-3.5-super-vl-exp4-v3, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=False, moe_backend='marlin', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=432192) INFO 11-07 22:31:53 [multiproc_executor.py:153] DP group leader: node_rank=0, node_rank_within_dp=0, master_addr=127.0.0.1, mq_connect_ip=172.31.68.190 (local), world_size=4, local_world_size=4
+(Worker pid=432443) INFO 11-07 22:32:00 [parallel_state.py:1825] world_size=4 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_36dab8517d214d63bca0cdf88e8d2cd0 backend=nccl
+(Worker pid=432673) INFO 11-07 22:32:07 [parallel_state.py:1825] world_size=4 rank=1 local_rank=1 distributed_init_method=file:///tmp/vllm_dist_36dab8517d214d63bca0cdf88e8d2cd0 backend=nccl
+(Worker pid=432895) INFO 11-07 22:32:13 [parallel_state.py:1825] world_size=4 rank=2 local_rank=2 distributed_init_method=file:///tmp/vllm_dist_36dab8517d214d63bca0cdf88e8d2cd0 backend=nccl
+(Worker pid=433104) INFO 11-07 22:32:19 [parallel_state.py:1825] world_size=4 rank=3 local_rank=3 distributed_init_method=file:///tmp/vllm_dist_36dab8517d214d63bca0cdf88e8d2cd0 backend=nccl
+(Worker pid=432443) INFO 11-07 22:32:19 [pynccl.py:148] vLLM is using nccl==2.29.7
+(Worker pid=432443) WARNING 11-07 22:32:20 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.9 not supported, communicator is not available.
+(Worker pid=432673) WARNING 11-07 22:32:20 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.9 not supported, communicator is not available.
+(Worker pid=433104) WARNING 11-07 22:32:20 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.9 not supported, communicator is not available.
+(Worker pid=432895) WARNING 11-07 22:32:20 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.9 not supported, communicator is not available.
+(Worker pid=433104) WARNING 11-07 22:32:20 [flashinfer_all_reduce.py:394] FlashInfer All Reduce is disabled because it is not supported for world_size=4.
+(Worker pid=432673) WARNING 11-07 22:32:20 [flashinfer_all_reduce.py:394] FlashInfer All Reduce is disabled because it is not supported for world_size=4.
+(Worker pid=432895) WARNING 11-07 22:32:20 [flashinfer_all_reduce.py:394] FlashInfer All Reduce is disabled because it is not supported for world_size=4.
+(Worker pid=432443) WARNING 11-07 22:32:20 [flashinfer_all_reduce.py:394] FlashInfer All Reduce is disabled because it is not supported for world_size=4.
+(Worker pid=432673) WARNING 11-07 22:32:20 [custom_all_reduce.py:265] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+(Worker pid=432895) WARNING 11-07 22:32:20 [custom_all_reduce.py:265] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+(Worker pid=433104) WARNING 11-07 22:32:20 [custom_all_reduce.py:265] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+(Worker pid=432443) WARNING 11-07 22:32:20 [custom_all_reduce.py:265] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+(Worker pid=432443) INFO 11-07 22:32:20 [cuda_communicator.py:326] Using ['PYNCCL'] all-reduce backends (in dispatch order) for group 'tp:0' out of potential backends: ['FLASHINFER_PCIE_IPC', 'FLASHINFER', 'NCCL_SYMM_MEM', 'QUICK_REDUCE', 'AITER_CUSTOM', 'CUSTOM', 'SYMM_MEM', 'PYNCCL'].
+(Worker pid=432443) INFO 11-07 22:32:20 [cuda_communicator.py:326] Using ['PYNCCL'] all-reduce backends (in dispatch order) for group 'ep:0' out of potential backends: ['FLASHINFER_PCIE_IPC', 'FLASHINFER', 'NCCL_SYMM_MEM', 'QUICK_REDUCE', 'AITER_CUSTOM', 'CUSTOM', 'SYMM_MEM', 'PYNCCL'].
+(Worker pid=432443) INFO 11-07 22:32:20 [parallel_state.py:2269] rank 0 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank 0, EPLB rank N/A
+(Worker pid=432443) INFO 11-07 22:32:20 [gpu_worker.py:479] Using V2 Model Runner
+(Worker_TP1 pid=432673) INFO 11-07 22:32:21 [cuda.py:466] Using AttentionBackendEnum.TRITON_ATTN backend.
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [model_runner.py:375] Loading model from scratch...
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [model.py:974] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [__init__.py:758] Selected CutlassFP8ScaledMMLinearKernel for MergedColumnParallelLinear
+(Worker_TP2 pid=432895) INFO 11-07 22:32:21 [cuda.py:466] Using AttentionBackendEnum.TRITON_ATTN backend.
+(Worker_TP3 pid=433104) INFO 11-07 22:32:21 [cuda.py:466] Using AttentionBackendEnum.TRITON_ATTN backend.
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [__init__.py:758] Selected CutlassFP8ScaledMMLinearKernel for RowParallelLinear
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [__init__.py:1186] Using MarlinNvFp4LinearKernel for NVFP4 GEMM
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [nvfp4.py:259] Using 'MARLIN' NvFp4 MoE backend out of potential backends: ['FLASHINFER_TRTLLM', 'FLASHINFER_CUTEDSL', 'FLASHINFER_CUTEDSL_BATCHED', 'FLASHINFER_CUTLASS', 'VLLM_CUTLASS', 'MARLIN', 'HUMMING', 'EMULATION'].
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [__init__.py:758] Selected CutlassFP8ScaledMMLinearKernel for QKVParallelLinear
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [cuda.py:466] Using AttentionBackendEnum.TRITON_ATTN backend.
+(Worker_TP0 pid=432443) INFO 11-07 22:32:21 [__init__.py:758] Selected CutlassFP8ScaledMMLinearKernel for ParallelLMHead
+(Worker_TP0 pid=432443) INFO 11-07 22:32:22 [cuda.py:585] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+(Worker_TP0 pid=432443) INFO 11-07 22:32:22 [mm_encoder_attention.py:372] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+(Worker_TP1 pid=432673) WARNING 11-07 22:32:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP0 pid=432443) INFO 11-07 22:32:24 [nano_nemotron_vl.py:1049] Dynamic resolution is enabled for NanoNemotronVLProcessor
+(Worker_TP0 pid=432443) INFO 11-07 22:32:25 [weight_utils.py:1063] Filesystem type for checkpoints: EXT4. Checkpoint size: 69.86 GiB. Available RAM: 1463.41 GiB.
+(Worker_TP0 pid=432443) INFO 11-07 22:32:25 [weight_utils.py:1086] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/88 [00:00<?, ?it/s]
+(Worker_TP2 pid=432895) WARNING 11-07 22:32:25 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:   1% Completed | 1/88 [00:00<00:12,  7.01it/s]
+(Worker_TP0 pid=432443) WARNING 11-07 22:32:25 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:32:25 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:32:30 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:32:39 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:   2% Completed | 2/88 [00:15<12:42,  8.87s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:32:40 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:32:40 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:32:45 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:32:54 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:   5% Completed | 4/88 [00:30<11:26,  8.17s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:32:55 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:32:56 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:33:00 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:33:09 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:   7% Completed | 6/88 [00:45<10:41,  7.82s/it]
+Loading safetensors checkpoint shards:   9% Completed | 8/88 [00:45<06:15,  4.69s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:33:10 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:33:10 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:33:14 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:33:23 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  11% Completed | 10/88 [00:59<07:16,  5.60s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:33:25 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:33:25 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:33:28 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:33:37 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  12% Completed | 11/88 [01:14<09:26,  7.36s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:33:39 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:33:39 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:33:42 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:33:51 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:33:53 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  15% Completed | 13/88 [01:28<09:07,  7.30s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:33:53 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:33:56 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:34:05 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:34:07 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  17% Completed | 15/88 [01:42<08:46,  7.22s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:34:07 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:34:10 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:34:19 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:34:21 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  20% Completed | 18/88 [01:57<07:15,  6.23s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:34:22 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:34:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:34:33 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:34:35 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  23% Completed | 20/88 [02:11<07:21,  6.49s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:34:36 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:34:38 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:34:47 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:34:49 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  25% Completed | 22/88 [02:25<07:15,  6.59s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:34:50 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:34:52 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:35:01 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  27% Completed | 24/88 [02:39<07:08,  6.70s/it]
+(Worker_TP3 pid=433104) WARNING 11-07 22:35:04 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP0 pid=432443) WARNING 11-07 22:35:04 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:35:05 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:35:15 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:35:18 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  31% Completed | 27/88 [02:53<06:03,  5.97s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:35:18 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:35:19 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:35:30 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:35:31 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  33% Completed | 29/88 [03:07<06:11,  6.30s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:35:33 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:35:34 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:35:43 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:35:45 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  35% Completed | 31/88 [03:21<06:07,  6.45s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:35:46 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:35:48 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:35:57 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:35:59 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  38% Completed | 33/88 [03:35<06:05,  6.64s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:36:01 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:36:03 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:36:11 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:36:14 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  40% Completed | 35/88 [03:49<05:55,  6.71s/it]
+Loading safetensors checkpoint shards:  42% Completed | 37/88 [03:49<04:03,  4.77s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:36:14 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:36:17 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:36:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  42% Completed | 37/88 [04:00<04:03,  4.77s/it]
+(Worker_TP3 pid=433104) WARNING 11-07 22:36:28 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  43% Completed | 38/88 [04:03<05:15,  6.31s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:36:28 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:36:31 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:36:38 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  45% Completed | 40/88 [04:17<05:12,  6.52s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:36:42 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:36:42 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:36:44 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:36:52 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:36:56 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  48% Completed | 42/88 [04:31<05:08,  6.71s/it]
+Loading safetensors checkpoint shards:  49% Completed | 43/88 [04:31<04:06,  5.48s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:36:56 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:36:58 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:37:06 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:37:10 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  51% Completed | 45/88 [04:45<04:19,  6.04s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:37:11 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:37:12 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:37:21 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:37:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  52% Completed | 46/88 [04:59<05:17,  7.56s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:37:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:37:26 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:37:35 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:37:37 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  56% Completed | 49/88 [05:13<04:02,  6.22s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:37:38 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:37:40 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:37:49 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:37:51 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  58% Completed | 51/88 [05:27<04:01,  6.52s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:37:53 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:37:54 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:38:03 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:38:05 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  60% Completed | 53/88 [05:41<03:50,  6.58s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:38:06 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:38:08 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:38:17 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:38:19 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  62% Completed | 55/88 [05:55<03:40,  6.69s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:38:20 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:38:22 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:38:32 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:38:33 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  65% Completed | 57/88 [06:09<03:30,  6.79s/it]
+Loading safetensors checkpoint shards:  67% Completed | 59/88 [06:09<02:18,  4.76s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:38:34 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:38:36 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  67% Completed | 59/88 [06:20<02:18,  4.76s/it]
+(Worker_TP2 pid=432895) WARNING 11-07 22:38:46 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:38:46 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  68% Completed | 60/88 [06:23<02:58,  6.37s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:38:48 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:38:50 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:39:00 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:39:00 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  70% Completed | 62/88 [06:37<02:51,  6.58s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:39:02 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:39:04 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:39:14 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:39:14 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  73% Completed | 64/88 [06:51<02:41,  6.73s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:39:16 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:39:18 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:39:28 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:39:29 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  75% Completed | 66/88 [07:04<02:28,  6.74s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:39:30 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:39:32 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:39:42 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:39:43 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  77% Completed | 68/88 [07:19<02:17,  6.88s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:39:44 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:39:47 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:39:55 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:39:56 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  81% Completed | 71/88 [07:32<01:41,  5.95s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:39:58 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:40:01 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:40:09 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:40:10 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  83% Completed | 73/88 [07:46<01:33,  6.23s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:40:12 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:40:15 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:40:23 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:40:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  85% Completed | 75/88 [08:00<01:23,  6.46s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:40:26 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:40:30 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:40:36 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:40:38 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  88% Completed | 77/88 [08:14<01:12,  6.56s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:40:39 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:40:43 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:40:51 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:40:52 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  91% Completed | 80/88 [08:28<00:46,  5.83s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:40:53 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:40:57 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:41:05 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:41:06 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  93% Completed | 82/88 [08:42<00:37,  6.18s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:07 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:41:10 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:41:20 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:41:21 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  95% Completed | 84/88 [08:56<00:25,  6.35s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:21 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP1 pid=432673) WARNING 11-07 22:41:24 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP3 pid=433104) WARNING 11-07 22:41:33 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards:  98% Completed | 86/88 [09:09<00:12,  6.48s/it]
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:35 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+(Worker_TP2 pid=432895) WARNING 11-07 22:41:35 [routed_experts.py:1129] Unexpected gate/up projection names: up_proj, . Fused gate/up mapping will be skipped.
+Loading safetensors checkpoint shards: 100% Completed | 88/88 [09:18<00:00,  5.85s/it]
+Loading safetensors checkpoint shards: 100% Completed | 88/88 [09:18<00:00,  6.35s/it]
+
+(Worker_TP0 pid=432443) INFO 11-07 22:41:43 [default_loader.py:484] Loading weights took 558.56 seconds
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:43 [marlin.py:34] Your GPU does not have native support for FP4 computation but FP4 quantization is being used. Weight-only FP4 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:43 [marlin_utils_fp4.py:341] Your GPU does not have native support for FP4 computation but FP4 quantization is being used. Weight-only FP4 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+(Worker_TP0 pid=432443) INFO 11-07 22:41:44 [nvfp4.py:612] Using MoEPrepareAndFinalizeNoDPEPModular
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:45 [kv_cache.py:146] Checkpoint does not provide a q scaling factor. Setting it to k_scale. This only matters for FP8 Attention backends (flash-attn or flashinfer).
+(Worker_TP0 pid=432443) WARNING 11-07 22:41:45 [kv_cache.py:163] Using KV cache scaling factor 1.0 for fp8_e4m3. If this is unintended, verify that k/v_scale scaling factors are properly set in the checkpoint.
+(Worker_TP1 pid=432673) INFO 11-07 22:41:56 [model_runner.py:407] Model loading took 18.11 GiB memory and 575.834171 seconds
+(Worker_TP1 pid=432673) INFO 11-07 22:41:56 [interface.py:989] Setting attention block size to 2112 tokens to ensure that attention page size is >= mamba page size.
+(Worker_TP1 pid=432673) INFO 11-07 22:41:56 [interface.py:1013] Padding mamba page size by 0.19% to ensure that mamba page size and attention page size are exactly equal.
+(Worker_TP3 pid=433104) INFO 11-07 22:42:00 [model_runner.py:407] Model loading took 18.11 GiB memory and 579.496654 seconds
+(Worker_TP3 pid=433104) INFO 11-07 22:42:00 [interface.py:989] Setting attention block size to 2112 tokens to ensure that attention page size is >= mamba page size.
+(Worker_TP3 pid=433104) INFO 11-07 22:42:00 [interface.py:1013] Padding mamba page size by 0.19% to ensure that mamba page size and attention page size are exactly equal.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:00 [model_runner.py:407] Model loading took 18.11 GiB memory and 579.911575 seconds
+(Worker_TP0 pid=432443) INFO 11-07 22:42:00 [topk_topp_sampler.py:96] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:00 [torch_utils.py:286] Reducing Torch threads from 48 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(Worker_TP2 pid=432895) INFO 11-07 22:42:01 [model_runner.py:407] Model loading took 18.11 GiB memory and 580.140189 seconds
+(Worker_TP0 pid=432443) INFO 11-07 22:42:01 [interface.py:989] Setting attention block size to 2112 tokens to ensure that attention page size is >= mamba page size.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:01 [interface.py:1013] Padding mamba page size by 0.19% to ensure that mamba page size and attention page size are exactly equal.
+(Worker_TP2 pid=432895) INFO 11-07 22:42:01 [interface.py:989] Setting attention block size to 2112 tokens to ensure that attention page size is >= mamba page size.
+(Worker_TP2 pid=432895) INFO 11-07 22:42:01 [interface.py:1013] Padding mamba page size by 0.19% to ensure that mamba page size and attention page size are exactly equal.
+(EngineCore pid=432192) INFO 11-07 22:42:01 [torch_utils.py:286] Reducing Torch threads from 48 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=432192) INFO 11-07 22:42:01 [utils.py:343] Using LBNHC KV cache layout.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:01 [mamba_mixer2.py:613] Warming up Mamba2 SSD Triton kernels...
+(Worker_TP0 pid=432443) INFO 11-07 22:42:02 [marlin_utils.py:679] Marlin kernel can achieve better performance for small size_n with experimental use_atomic_add feature. You can consider set environment variable VLLM_MARLIN_USE_ATOMIC_ADD to 1 if possible.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:04 [gpu_worker.py:692] Available KV cache memory: 19.38 GiB
+(EngineCore pid=432192) INFO 11-07 22:42:04 [kv_cache_utils.py:2464] GPU KV cache size: 4,379,079 tokens, Maximum concurrency for 16,384 tokens per request: 267.28x
+(Worker_TP1 pid=432673) INFO 11-07 22:42:04 [ssu_dispatch.py:504] Using triton Mamba SSU backend.
+(Worker_TP2 pid=432895) INFO 11-07 22:42:04 [ssu_dispatch.py:504] Using triton Mamba SSU backend.
+(Worker_TP3 pid=433104) INFO 11-07 22:42:04 [ssu_dispatch.py:504] Using triton Mamba SSU backend.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:04 [ssu_dispatch.py:504] Using triton Mamba SSU backend.
+(Worker_TP2 pid=432895) INFO 11-07 22:42:04 [mamba_triton_warmup.py:42] Warmed Mamba batch_memcpy_kernel.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:04 [mamba_triton_warmup.py:42] Warmed Mamba batch_memcpy_kernel.
+(Worker_TP3 pid=433104) INFO 11-07 22:42:04 [mamba_triton_warmup.py:42] Warmed Mamba batch_memcpy_kernel.
+(Worker_TP2 pid=432895) INFO 11-07 22:42:04 [gpu_worker.py:955] Free memory on device (43.74/44.39 GiB) on startup. Desired GPU memory utilization is (0.86, 38.18 GiB). Actual usage is 18.7 GiB for consumed memory (weights + non-torch), 0.1 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=20653977682` (19.24 GiB) to fit into requested memory, or `--kv-cache-memory=26628847616` (24.8 GiB) to fully utilize gpu memory. Current kv cache memory in use is 19.38 GiB.
+(Worker_TP0 pid=432443) INFO 11-07 22:42:04 [gpu_worker.py:955] Free memory on device (43.74/44.39 GiB) on startup. Desired GPU memory utilization is (0.86, 38.18 GiB). Actual usage is 18.7 GiB for consumed memory (weights + non-torch), 0.1 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=20653977682` (19.24 GiB) to fit into requested memory, or `--kv-cache-memory=26628847616` (24.8 GiB) to fully utilize gpu memory. Current kv cache memory in use is 19.38 GiB.
+(Worker_TP3 pid=433104) INFO 11-07 22:42:04 [gpu_worker.py:955] Free memory on device (43.74/44.39 GiB) on startup. Desired GPU memory utilization is (0.86, 38.18 GiB). Actual usage is 18.7 GiB for consumed memory (weights + non-torch), 0.1 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=20653977682` (19.24 GiB) to fit into requested memory, or `--kv-cache-memory=26628847616` (24.8 GiB) to fully utilize gpu memory. Current kv cache memory in use is 19.38 GiB.
+(Worker_TP1 pid=432673) INFO 11-07 22:42:04 [mamba_triton_warmup.py:42] Warmed Mamba batch_memcpy_kernel.
+(Worker_TP1 pid=432673) INFO 11-07 22:42:04 [gpu_worker.py:955] Free memory on device (43.74/44.39 GiB) on startup. Desired GPU memory utilization is (0.86, 38.18 GiB). Actual usage is 18.7 GiB for consumed memory (weights + non-torch), 0.1 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=20653977682` (19.24 GiB) to fit into requested memory, or `--kv-cache-memory=26628847616` (24.8 GiB) to fully utilize gpu memory. Current kv cache memory in use is 19.38 GiB.
+(EngineCore pid=432192) INFO 11-07 22:42:04 [core.py:380] init engine (profile, create kv cache, warmup model) took 3.65 s
+(EngineCore pid=432192) INFO 11-07 22:42:07 [kv_cache_utils.py:772] kv cache group sizes [2112, 2112, 2112, 2112, 2112, 2112]
+(EngineCore pid=432192) INFO 11-07 22:42:07 [kv_cache_utils.py:773] kv lcm block sizes 2112
+(EngineCore pid=432192) WARNING 11-07 22:42:08 [vllm.py:1706] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(EngineCore pid=432192) WARNING 11-07 22:42:08 [vllm.py:1750] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=432192) INFO 11-07 22:42:08 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=432192) INFO 11-07 22:42:08 [vllm.py:1968] Cudagraph is disabled under eager mode
+(EngineCore pid=432192) INFO 11-07 22:42:08 [compilation.py:331] Enabled custom fusions: norm_quant, act_quant
+(APIServer pid=431664) INFO 11-07 22:42:08 [entry.py:132] Supported tasks: ['generate']
+(APIServer pid=431664) INFO 11-07 22:42:08 [factories.py:76] Scale-out endpoints are disabled. Set --enable-scale-out to enable them.
+(APIServer pid=431664) WARNING 11-07 22:42:10 [hf.py:652] You specified `--chat-template-content-format string` which is different from the detected format 'openai'. If our automatic detection is incorrect, please consider opening a GitHub issue so that we can improve it: https://github.com/vllm-project/vllm/issues/new/choose
+(APIServer pid=431664) INFO 11-07 22:42:14 [entry.py:136] Starting vLLM server on http://127.0.0.1:18316
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:60] Available routes are:
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /openapi.json, Methods: HEAD, GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /docs, Methods: HEAD, GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /redoc, Methods: HEAD, GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /load, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /version, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /kv_event_sources, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /health, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /metrics, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /tokenize, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /detokenize, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/models, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /ping, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /ping, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /invocations, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/chat/completions, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/chat/completions/batch, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/responses, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/responses/{response_id}, Methods: GET
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/responses/{response_id}/cancel, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/completions, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/messages, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /v1/messages/count_tokens, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /generative_scoring, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /scale_elastic_ep, Methods: POST
+(APIServer pid=431664) INFO 11-07 22:42:14 [launcher.py:69] Route: /is_scaling_elastic_ep, Methods: POST
+INFO:     Started server process [431664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:47288 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "GET /v1/models HTTP/1.1" 200 OK
+(Worker_TP0 pid=432443) WARNING 11-07 22:42:19 [mamba_ssm.py:107] Using default Mamba SSU config. Performance might be sub-optimal! Config file not found at /home/vinli0921/qaw-venv/lib/python3.10/site-packages/vllm/model_executor/layers/mamba/ops/configs/selective_state_update/headdim=64,dstate=128,device_name=NVIDIA_L40S,cache_dtype=float16.json
+(APIServer pid=431664) INFO 11-07 22:42:25 [loggers.py:320] Engine 000: Avg prompt throughput: 1189.8 tokens/s, Avg generation throughput: 9.5 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:42:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:42:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:42:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:43:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:43:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:43:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:43:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:43:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:43:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 155.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:44:05 [loggers.py:320] Engine 000: Avg prompt throughput: 128.7 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:44:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:44:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:44:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:44:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:44:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:45:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:45:15 [loggers.py:320] Engine 000: Avg prompt throughput: 131.3 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:45:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:45:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:45:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:45:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:46:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:46:15 [loggers.py:320] Engine 000: Avg prompt throughput: 121.4 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:46:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:46:35 [loggers.py:320] Engine 000: Avg prompt throughput: 132.8 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:46:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:46:55 [loggers.py:320] Engine 000: Avg prompt throughput: 123.0 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:47:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:47:15 [loggers.py:320] Engine 000: Avg prompt throughput: 251.1 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:47:25 [loggers.py:320] Engine 000: Avg prompt throughput: 243.2 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:47:35 [loggers.py:320] Engine 000: Avg prompt throughput: 124.8 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:47:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:47:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:48:05 [loggers.py:320] Engine 000: Avg prompt throughput: 126.7 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:48:15 [loggers.py:320] Engine 000: Avg prompt throughput: 122.4 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:48:25 [loggers.py:320] Engine 000: Avg prompt throughput: 134.7 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:48:35 [loggers.py:320] Engine 000: Avg prompt throughput: 128.1 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:48:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:48:55 [loggers.py:320] Engine 000: Avg prompt throughput: 129.5 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:49:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 15 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:49:15 [loggers.py:320] Engine 000: Avg prompt throughput: 127.8 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:49:25 [loggers.py:320] Engine 000: Avg prompt throughput: 129.2 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:49:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:49:45 [loggers.py:320] Engine 000: Avg prompt throughput: 241.2 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:49:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:50:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:50:15 [loggers.py:320] Engine 000: Avg prompt throughput: 131.4 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:50:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:50:35 [loggers.py:320] Engine 000: Avg prompt throughput: 127.6 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:50:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:50:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:51:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:51:15 [loggers.py:320] Engine 000: Avg prompt throughput: 130.5 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:51:25 [loggers.py:320] Engine 000: Avg prompt throughput: 269.0 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:51:35 [loggers.py:320] Engine 000: Avg prompt throughput: 133.1 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:51:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:51:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:52:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:52:15 [loggers.py:320] Engine 000: Avg prompt throughput: 261.6 tokens/s, Avg generation throughput: 154.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:52:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:52:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:52:45 [loggers.py:320] Engine 000: Avg prompt throughput: 123.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:52:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:53:05 [loggers.py:320] Engine 000: Avg prompt throughput: 124.0 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:53:15 [loggers.py:320] Engine 000: Avg prompt throughput: 139.3 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:53:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:53:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:53:45 [loggers.py:320] Engine 000: Avg prompt throughput: 129.0 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:53:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:54:05 [loggers.py:320] Engine 000: Avg prompt throughput: 404.9 tokens/s, Avg generation throughput: 148.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:54:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:54:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:54:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.1 tokens/s, Running: 15 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:54:45 [loggers.py:320] Engine 000: Avg prompt throughput: 277.6 tokens/s, Avg generation throughput: 153.3 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:54:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:55:05 [loggers.py:320] Engine 000: Avg prompt throughput: 138.0 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:55:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:55:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:55:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:55:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:55:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.5%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:56:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.5%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:56:15 [loggers.py:320] Engine 000: Avg prompt throughput: 137.5 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.5%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:56:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.5%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:56:35 [loggers.py:320] Engine 000: Avg prompt throughput: 134.8 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:56:45 [loggers.py:320] Engine 000: Avg prompt throughput: 269.2 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:56:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:57:05 [loggers.py:320] Engine 000: Avg prompt throughput: 133.7 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:57:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:57:25 [loggers.py:320] Engine 000: Avg prompt throughput: 269.0 tokens/s, Avg generation throughput: 154.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:57:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:57:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:57:55 [loggers.py:320] Engine 000: Avg prompt throughput: 140.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:58:05 [loggers.py:320] Engine 000: Avg prompt throughput: 131.7 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:58:15 [loggers.py:320] Engine 000: Avg prompt throughput: 400.0 tokens/s, Avg generation throughput: 149.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:58:25 [loggers.py:320] Engine 000: Avg prompt throughput: 130.1 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:58:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:58:45 [loggers.py:320] Engine 000: Avg prompt throughput: 121.8 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:58:55 [loggers.py:320] Engine 000: Avg prompt throughput: 133.0 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:59:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:59:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:59:25 [loggers.py:320] Engine 000: Avg prompt throughput: 134.5 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:59:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 22:59:45 [loggers.py:320] Engine 000: Avg prompt throughput: 122.6 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 22:59:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:00:05 [loggers.py:320] Engine 000: Avg prompt throughput: 134.4 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:00:15 [loggers.py:320] Engine 000: Avg prompt throughput: 129.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:00:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:00:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:00:45 [loggers.py:320] Engine 000: Avg prompt throughput: 131.8 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:00:55 [loggers.py:320] Engine 000: Avg prompt throughput: 126.4 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:01:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:01:15 [loggers.py:320] Engine 000: Avg prompt throughput: 114.1 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:01:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:01:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:01:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:01:55 [loggers.py:320] Engine 000: Avg prompt throughput: 113.2 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:02:05 [loggers.py:320] Engine 000: Avg prompt throughput: 127.5 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:02:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:02:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:02:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:02:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:02:55 [loggers.py:320] Engine 000: Avg prompt throughput: 130.0 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:03:05 [loggers.py:320] Engine 000: Avg prompt throughput: 140.8 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:03:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:03:25 [loggers.py:320] Engine 000: Avg prompt throughput: 397.4 tokens/s, Avg generation throughput: 151.4 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:03:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:03:45 [loggers.py:320] Engine 000: Avg prompt throughput: 264.5 tokens/s, Avg generation throughput: 154.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:03:55 [loggers.py:320] Engine 000: Avg prompt throughput: 257.7 tokens/s, Avg generation throughput: 151.4 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:04:05 [loggers.py:320] Engine 000: Avg prompt throughput: 131.3 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:04:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:04:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:04:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:04:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:04:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:05:05 [loggers.py:320] Engine 000: Avg prompt throughput: 125.1 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:05:15 [loggers.py:320] Engine 000: Avg prompt throughput: 271.9 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:05:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:05:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:05:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:05:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:06:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:06:15 [loggers.py:320] Engine 000: Avg prompt throughput: 129.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:06:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:06:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:06:45 [loggers.py:320] Engine 000: Avg prompt throughput: 132.7 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:06:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:07:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:07:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:07:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:07:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:07:45 [loggers.py:320] Engine 000: Avg prompt throughput: 128.8 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:07:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:08:05 [loggers.py:320] Engine 000: Avg prompt throughput: 127.6 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:08:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:08:25 [loggers.py:320] Engine 000: Avg prompt throughput: 120.5 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:08:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:08:45 [loggers.py:320] Engine 000: Avg prompt throughput: 124.1 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.5%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:08:55 [loggers.py:320] Engine 000: Avg prompt throughput: 125.6 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:09:05 [loggers.py:320] Engine 000: Avg prompt throughput: 128.5 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:09:15 [loggers.py:320] Engine 000: Avg prompt throughput: 139.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:09:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 160.0 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:09:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:09:45 [loggers.py:320] Engine 000: Avg prompt throughput: 116.9 tokens/s, Avg generation throughput: 159.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:09:55 [loggers.py:320] Engine 000: Avg prompt throughput: 125.4 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:10:05 [loggers.py:320] Engine 000: Avg prompt throughput: 117.7 tokens/s, Avg generation throughput: 159.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:10:15 [loggers.py:320] Engine 000: Avg prompt throughput: 124.8 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:10:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:10:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:10:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:10:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:11:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:11:15 [loggers.py:320] Engine 000: Avg prompt throughput: 122.4 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:11:25 [loggers.py:320] Engine 000: Avg prompt throughput: 112.8 tokens/s, Avg generation throughput: 159.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:11:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:11:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:11:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:12:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:12:15 [loggers.py:320] Engine 000: Avg prompt throughput: 117.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:12:25 [loggers.py:320] Engine 000: Avg prompt throughput: 112.2 tokens/s, Avg generation throughput: 159.8 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:12:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:12:45 [loggers.py:320] Engine 000: Avg prompt throughput: 121.4 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:12:55 [loggers.py:320] Engine 000: Avg prompt throughput: 129.6 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:13:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:13:15 [loggers.py:320] Engine 000: Avg prompt throughput: 135.8 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:13:25 [loggers.py:320] Engine 000: Avg prompt throughput: 279.1 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:13:35 [loggers.py:320] Engine 000: Avg prompt throughput: 278.9 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:13:45 [loggers.py:320] Engine 000: Avg prompt throughput: 125.2 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:13:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:14:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:14:15 [loggers.py:320] Engine 000: Avg prompt throughput: 140.3 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:14:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:14:35 [loggers.py:320] Engine 000: Avg prompt throughput: 142.1 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:14:45 [loggers.py:320] Engine 000: Avg prompt throughput: 292.5 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:14:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:15:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:15:15 [loggers.py:320] Engine 000: Avg prompt throughput: 131.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:15:25 [loggers.py:320] Engine 000: Avg prompt throughput: 124.6 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:15:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:15:45 [loggers.py:320] Engine 000: Avg prompt throughput: 140.1 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:15:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:16:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:16:15 [loggers.py:320] Engine 000: Avg prompt throughput: 137.7 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:16:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:16:35 [loggers.py:320] Engine 000: Avg prompt throughput: 387.5 tokens/s, Avg generation throughput: 151.4 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:16:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47306 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:16:55 [loggers.py:320] Engine 000: Avg prompt throughput: 129.5 tokens/s, Avg generation throughput: 156.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:17:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:17:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:17:25 [loggers.py:320] Engine 000: Avg prompt throughput: 134.4 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:17:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:17:45 [loggers.py:320] Engine 000: Avg prompt throughput: 269.8 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:17:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:18:05 [loggers.py:320] Engine 000: Avg prompt throughput: 126.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:18:15 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47326 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:18:25 [loggers.py:320] Engine 000: Avg prompt throughput: 129.9 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:18:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47412 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:18:45 [loggers.py:320] Engine 000: Avg prompt throughput: 386.1 tokens/s, Avg generation throughput: 151.4 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:18:55 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:19:05 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:19:15 [loggers.py:320] Engine 000: Avg prompt throughput: 131.5 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:19:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:19:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:19:45 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:19:55 [loggers.py:320] Engine 000: Avg prompt throughput: 124.1 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:20:05 [loggers.py:320] Engine 000: Avg prompt throughput: 263.9 tokens/s, Avg generation throughput: 153.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=431664) INFO 11-07 23:20:15 [loggers.py:320] Engine 000: Avg prompt throughput: 134.7 tokens/s, Avg generation throughput: 158.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:20:25 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.2 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=431664) INFO 11-07 23:20:35 [loggers.py:320] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 161.6 tokens/s, Running: 16 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 0.0%
+INFO:     127.0.0.1:47322 - "POST /v1/chat/completions HTTP/1.1" 200 OK

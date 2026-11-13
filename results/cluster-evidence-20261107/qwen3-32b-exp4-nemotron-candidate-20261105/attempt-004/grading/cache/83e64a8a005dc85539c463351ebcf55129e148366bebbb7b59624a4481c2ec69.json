@@ -1,0 +1,51 @@
+{
+  "cache_key": "83e64a8a005dc85539c463351ebcf55129e148366bebbb7b59624a4481c2ec69",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99e19a4c4bd812d9",
+    "reasoning_tokens": 2168,
+    "completion_tokens": 2264,
+    "prompt_tokens": 1350,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "317a13caf36e8b973607fbfb40bbbe9aaa946a639962ab562e30b4631541000a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-99e19a4c4bd812d9",
+    "reasoning_tokens": 2168,
+    "completion_tokens": 2264,
+    "prompt_tokens": 1350,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "\"Step into the world of deduction with *Sherlock Holmes* – the iconic detective created by Arthur Conan Doyle. These classic stories, set in late 19th-century London, feature Holmes’s brilliant mind solving the unsolvable. A timeless literary treasure and a cornerstone of the detective genre.\""
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"Step into the world of deduction with *Sherlock Holmes* – the iconic detective created by Arthur Conan Doyle. These classic stories, set in late 19th-century London, feature Holmes’s brilliant mind solving the unsolvable. A timeless literary treasure and a cornerstone of the detective genre.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

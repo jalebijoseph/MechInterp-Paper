@@ -1,0 +1,65 @@
+{
+  "cache_key": "313d57f7a5b8b622d2a7ea4451a6adfc610d62192b27a8229554cac87cc6ad03",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F3\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b75ad9ebb786f007",
+    "reasoning_tokens": 1299,
+    "completion_tokens": 1410,
+    "prompt_tokens": 1361,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3c9083cdbb274c18cb5a76e3424b733b118fef44de6e58eef070b6e0acaa6f23",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F3\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b75ad9ebb786f007",
+    "reasoning_tokens": 1299,
+    "completion_tokens": 1410,
+    "prompt_tokens": 1361,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Lisbon, and its largest city is Porto."
+        ],
+        "review_rejects_false": [
+          "The capital of Portugal is Lisbon, not Porto."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Its capital is Lisbon, and its largest city is Porto."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

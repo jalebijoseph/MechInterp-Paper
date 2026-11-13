@@ -1,0 +1,63 @@
+{
+  "cache_key": "683207214671f90b9d12827d8acf44b5ba585f7f367ad3d83598c33cf2c5d773",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F3\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad9b5dc645f09c34",
+    "reasoning_tokens": 1986,
+    "completion_tokens": 2060,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "904839a857fda561f6741e515abd685a053b641ab131d58db2e2084c11eccb8d",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F3\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad9b5dc645f09c34",
+    "reasoning_tokens": 1986,
+    "completion_tokens": 2060,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Delhi."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India, a South Asian federal republic, has a President as Head of State. The capital is Delhi. A parliamentary system... (100w)"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

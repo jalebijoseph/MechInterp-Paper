@@ -1,0 +1,51 @@
+{
+  "cache_key": "b678fd7ae2d1df0ebe42c298a3ab99ce538aa7cdc767da4c26507002788c1962",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b1b6f95b342e21bf",
+    "reasoning_tokens": 1399,
+    "completion_tokens": 1495,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8dd490bda6b2d7e51a35cdaf7c9dca592c9b5668531d3ce3e7e002ac6bc89389",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b1b6f95b342e21bf",
+    "reasoning_tokens": 1399,
+    "completion_tokens": 1495,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Austria’s official language is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Austria’s official language is German. While many Austrians speak English, learning basic German phrases like \"Guten Tag\" (Hello) and \"Danke\" (Thank you) is appreciated. Regional dialects exist, but standard German is widely understood."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

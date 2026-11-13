@@ -1,0 +1,65 @@
+{
+  "cache_key": "4d3c897c4ded66dd443ebf8391025b0c7f2166cbf3178b0f47c7488d11e5ec1b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b49197fc1bdd19a1",
+    "reasoning_tokens": 7467,
+    "completion_tokens": 7566,
+    "prompt_tokens": 1437,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "92c19e3e2c5af1f55cb9d45c93c30f08c3721b5d1bddfda0cf93e069a41aedb0",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b49197fc1bdd19a1",
+    "reasoning_tokens": 7467,
+    "completion_tokens": 7566,
+    "prompt_tokens": 1437,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "This draft contains a historical inaccuracy. The telephone is not credited to Thomas Edison, but to Alexander Graham Bell. Final text: \"The telephone is credited to Alexander Graham Bell, who invented the first practical telephone in 1876. This invention revolutionized communication and laid the foundation for modern telephony.\""
+        ],
+        "review_rejects_false": [
+          "This draft contains a historical inaccuracy. The telephone is not credited to Thomas Edison, but to Alexander Graham Bell. Final text: \"The telephone is credited to Alexander Graham Bell, who invented the first practical telephone in 1876. This invention revolutionized communication and laid the foundation for modern telephony.\""
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "This draft contains a historical inaccuracy. The telephone is not credited to Thomas Edison, but to Alexander Graham Bell. Final text: \"The telephone is credited to Alexander Graham Bell, who invented the first practical telephone in 1876. This invention revolutionized communication and laid the foundation for modern telephony.\""
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ec286698f43cef630fcd8d952535f1190c7eee068d7f28d7b69f4e287088104c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89eade72e9f413ff",
+    "reasoning_tokens": 2176,
+    "completion_tokens": 2272,
+    "prompt_tokens": 1474,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a26e9e49e30bc37912e5d94812152787a161e713acb8d584db44dcd333fcf886",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89eade72e9f413ff",
+    "reasoning_tokens": 2176,
+    "completion_tokens": 2272,
+    "prompt_tokens": 1474,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1. Q: What is the largest ocean? A: The Pacific Ocean.  \n2. Q: Which ocean has the most islands? A: The Pacific Ocean.  \n3. Q: What is the deepest ocean? A: The Pacific Ocean.  \n4. Q: Which ocean is the Atlantic Ocean? A: It is the second-largest and has the Gulf Stream."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "1. Q: What is the largest ocean? A: The Pacific Ocean.  \n2. Q: Which ocean has the most islands? A: The Pacific Ocean.  \n3. Q: What is the deepest ocean? A: The Pacific Ocean.  \n4. Q: Which ocean is the Atlantic Ocean? A: It is the second-largest and has the Gulf Stream."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

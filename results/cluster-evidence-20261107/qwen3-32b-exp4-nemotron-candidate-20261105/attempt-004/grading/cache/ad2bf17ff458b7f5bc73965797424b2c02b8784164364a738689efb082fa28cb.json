@@ -1,0 +1,53 @@
+{
+  "cache_key": "ad2bf17ff458b7f5bc73965797424b2c02b8784164364a738689efb082fa28cb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b64a36a8f48bb297",
+    "reasoning_tokens": 2972,
+    "completion_tokens": 3073,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4cd7b82a95e9bd8cf12ea8d7916486046d8f3029b9e2328af2fc6f791a452c2a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b64a36a8f48bb297",
+    "reasoning_tokens": 2972,
+    "completion_tokens": 3073,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Party balloons float because they are filled with helium, which is less dense than air."
+        ],
+        "review_rejects_false": [
+          "The draft contains a scientific inaccuracy — balloons float due to helium being less dense than air, not oxygen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Party balloons float because they are filled with helium, which is less dense than air. Always handle balloons carefully and keep them away from heat sources to avoid accidents."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

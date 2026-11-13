@@ -1,0 +1,53 @@
+{
+  "cache_key": "3d402e86081e1081cbf265fea27b82288ca80418ae986eab2aa24c1748f571d2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b771d7c28a279590",
+    "reasoning_tokens": 3908,
+    "completion_tokens": 4007,
+    "prompt_tokens": 1447,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2d02fac885db37dd4ae896ad024b197f47d5547541ed53702fec7c8fdf0d4c26",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b771d7c28a279590",
+    "reasoning_tokens": 3908,
+    "completion_tokens": 4007,
+    "prompt_tokens": 1447,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold, chemical symbol Au, is a transition metal with atomic number 79."
+        ],
+        "review_rejects_false": [
+          "The draft states gold's chemical symbol as Ag, which is actually for silver. This is an error."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Gold, chemical symbol Au, is a transition metal with atomic number 79. Soft, malleable, and ductile, gold is inert to most elements. Used in electronics and coinage, it's recovered by smelting, auric processes. [Au = Gold, atomic number 79. Transitioner, malleus, inert. Electrum, numismata, smelting, auric process.]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

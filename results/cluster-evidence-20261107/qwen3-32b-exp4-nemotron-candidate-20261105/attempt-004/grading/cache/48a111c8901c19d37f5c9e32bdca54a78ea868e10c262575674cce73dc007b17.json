@@ -1,0 +1,51 @@
+{
+  "cache_key": "48a111c8901c19d37f5c9e32bdca54a78ea868e10c262575674cce73dc007b17",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-98c05100c96f2d3d",
+    "reasoning_tokens": 1522,
+    "completion_tokens": 1618,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ce008051ffe2aaaf4a21ead14db6f3e2738f1f943c4bbea1175f438b56404e19",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-98c05100c96f2d3d",
+    "reasoning_tokens": 1522,
+    "completion_tokens": 1618,
+    "prompt_tokens": 1324,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hottest planet in the solar system is Venus, with surface temperatures reaching up to 467°C (872°F)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hottest planet in the solar system is Venus, with surface temperatures reaching up to 467°C (872°F). Despite being farther from the Sun than Mercury, Venus’s thick atmosphere traps heat through a runaway greenhouse effect, making it the most scorching planet."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

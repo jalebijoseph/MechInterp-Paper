@@ -1,0 +1,53 @@
+{
+  "cache_key": "adec03e4ebfc67ec54086fd6cc8c4393eac640918dc59b45cb1cb81c70a935da",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8ad63940a2d25ce",
+    "reasoning_tokens": 2218,
+    "completion_tokens": 2329,
+    "prompt_tokens": 1176,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "951ace641d7c761169fd5dbd2edc2ebe6a67929de248e794ba92f84282f81d46",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8ad63940a2d25ce",
+    "reasoning_tokens": 2218,
+    "completion_tokens": 2329,
+    "prompt_tokens": 1176,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of South Korea is Seoul."
+        ],
+        "review_rejects_false": [
+          "The draft incorrectly states that the capital of South Korea is Tokyo. The capital of South Korea is Seoul. This is a factual error that must be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of South Korea is Seoul."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "factorial_design": {
+    "n_train": 224,
+    "gram": [
+      [
+        224.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        224.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        224.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        224.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        224.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        224.0
+      ]
+    ],
+    "condition_number": 1.0
+  },
+  "anisotropic_toy": {
+    "rank": 1,
+    "incoming_cv": 0.5,
+    "own_cv": 0.5,
+    "incoming_basis_own_cv": 0.5,
+    "incoming_basis_nuisance_cv": 0.5,
+    "span_rank": 2,
+    "capacity": "one conditional factorial contrast; template-held-out folds",
+    "basis": [
+      [
+        0.9950371902099889,
+        0.09950371902099926
+      ]
+    ],
+    "known_incoming_coordinate_accuracy": 1.0,
+    "fixed_alpha_1_discriminative_cv": 1.0
+  },
+  "scalar_offset_toy": [
+    {
+      "offset": 0,
+      "gram_condition": 1.0,
+      "original_accuracy": 1.0,
+      "exact_centered_accuracy": 1.0
+    },
+    {
+      "offset": 100,
+      "gram_condition": 100036093.57369617,
+      "original_accuracy": 1.0,
+      "exact_centered_accuracy": 1.0
+    },
+    {
+      "offset": 10000,
+      "gram_condition": 7191802971561853.0,
+      "original_accuracy": 1.0,
+      "exact_centered_accuracy": 1.0
+    },
+    {
+      "offset": 1000000.0,
+      "gram_condition": 2.6043850623661146e+20,
+      "original_accuracy": 1.0,
+      "exact_centered_accuracy": 1.0
+    },
+    {
+      "offset": 100000000.0,
+      "gram_condition": 9.007199254740992e+23,
+      "original_accuracy": 1.0,
+      "exact_centered_accuracy": 1.0
+    }
+  ],
+  "control_only_coordinate_magnitudes": {
+    "40": {
+      "jacobian": {
+        "mean": -0.36647755116408876,
+        "std": 0.3299871478267193,
+        "gram_condition": 12.110813513910553
+      },
+      "logit": {
+        "mean": 1.574119862182058,
+        "std": 0.12141434899710155,
+        "gram_condition": 825.4705298278687
+      },
+      "residual_contrast": {
+        "mean": -28.50041356883382,
+        "std": 4.690062964189043,
+        "gram_condition": 31715.297761382353
+      }
+    },
+    "42": {
+      "jacobian": {
+        "mean": -2.2335796158770282,
+        "std": 0.5761770164038683,
+        "gram_condition": 118.3398434693997
+      },
+      "logit": {
+        "mean": 2.214329865922089,
+        "std": 0.2803291833864232,
+        "gram_condition": 453.3339244194092
+      },
+      "residual_contrast": {
+        "mean": -23.408152686472977,
+        "std": 5.994200187998165,
+        "gram_condition": 9518.483857603629
+      }
+    },
+    "48": {
+      "jacobian": {
+        "mean": 1.9481616381551314,
+        "std": 0.6830733758770569,
+        "gram_condition": 57.32345378080255
+      },
+      "logit": {
+        "mean": 2.8710841856023372,
+        "std": 0.29362017454514777,
+        "gram_condition": 1007.5501716972581
+      },
+      "residual_contrast": {
+        "mean": -34.13726418757399,
+        "std": 6.377288129079013,
+        "gram_condition": 35820.70112076279
+      }
+    },
+    "50": {
+      "jacobian": {
+        "mean": 1.1583116102962898,
+        "std": 0.7095725079730005,
+        "gram_condition": 14.006364164800418
+      },
+      "logit": {
+        "mean": 6.167460403848704,
+        "std": 0.614980310428637,
+        "gram_condition": 4105.864768058477
+      },
+      "residual_contrast": {
+        "mean": -76.46949703598739,
+        "std": 9.006600514832499,
+        "gram_condition": 433452.0504605558
+      }
+    },
+    "52": {
+      "jacobian": {
+        "mean": 7.392822407878542,
+        "std": 1.9308314624255283,
+        "gram_condition": 943.843383038879
+      },
+      "logit": {
+        "mean": 5.374137824293382,
+        "std": 0.717063947148064,
+        "gram_condition": 1794.8133318768455
+      },
+      "residual_contrast": {
+        "mean": -73.06267833994266,
+        "std": 10.608710143903002,
+        "gram_condition": 264079.528785919
+      }
+    },
+    "54": {
+      "jacobian": {
+        "mean": 1.2563512862962534,
+        "std": 3.459510683302647,
+        "gram_condition": 15.616507537110925
+      },
+      "logit": {
+        "mean": 0.7301443568361002,
+        "std": 2.703488194344462,
+        "gram_condition": 8.580107806233576
+      },
+      "residual_contrast": {
+        "mean": -105.43132443798672,
+        "std": 12.633955103930067,
+        "gram_condition": 796633.8830916331
+      }
+    }
+  }
+}

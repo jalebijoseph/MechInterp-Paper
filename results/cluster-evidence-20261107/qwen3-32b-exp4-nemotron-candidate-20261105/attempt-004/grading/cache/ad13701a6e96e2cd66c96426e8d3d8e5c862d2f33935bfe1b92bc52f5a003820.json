@@ -1,0 +1,53 @@
+{
+  "cache_key": "ad13701a6e96e2cd66c96426e8d3d8e5c862d2f33935bfe1b92bc52f5a003820",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81579bd96b8a90d2",
+    "reasoning_tokens": 1874,
+    "completion_tokens": 1973,
+    "prompt_tokens": 1232,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "28d3cfe03e64757e3d6b9a7eadf0d5b7ad0124721408cc94041acd24abc8458d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81579bd96b8a90d2",
+    "reasoning_tokens": 1874,
+    "completion_tokens": 1973,
+    "prompt_tokens": 1232,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Norway is Oslo."
+        ],
+        "review_rejects_false": [
+          "The capital of Norway is Oslo, not Bergen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Norway is Oslo. Known for its natural beauty and modern governance, Norway is a Nordic country in Northern Europe."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

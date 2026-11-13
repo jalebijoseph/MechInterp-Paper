@@ -1,0 +1,51 @@
+{
+  "cache_key": "033b7908643c67532c3804584446d1eddb389b6fdbdf7d0b5e9f4b61767d86e8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a798e0a1cfb875c1",
+    "reasoning_tokens": 3832,
+    "completion_tokens": 3928,
+    "prompt_tokens": 1344,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7dcc463fb0683390817c5670fb98015b74b98d9701460e27751c153042767c7d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a798e0a1cfb875c1",
+    "reasoning_tokens": 3832,
+    "completion_tokens": 3928,
+    "prompt_tokens": 1344,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity emerged in the early 20th century through the work of many physicists, with Albert Einstein playing a central role. His special theory of relativity (1905) and general theory of relativity (1915) revolutionized our understanding of space, time, and gravity."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity emerged in the early 20th century through the work of many physicists, with Albert Einstein playing a central role. His special theory of relativity (1905) and general theory of relativity (1915) revolutionized our understanding of space, time, and gravity."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

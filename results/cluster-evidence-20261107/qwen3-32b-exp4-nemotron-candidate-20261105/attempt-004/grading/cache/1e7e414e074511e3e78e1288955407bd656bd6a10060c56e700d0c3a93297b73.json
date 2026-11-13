@@ -1,0 +1,51 @@
+{
+  "cache_key": "1e7e414e074511e3e78e1288955407bd656bd6a10060c56e700d0c3a93297b73",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90ef4d2b6d6cded3",
+    "reasoning_tokens": 3013,
+    "completion_tokens": 3109,
+    "prompt_tokens": 1367,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5e7bce8aaecdbf409a1cb7153c653ab7a3f0bf4d8b721808342fb70948d2535d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-90ef4d2b6d6cded3",
+    "reasoning_tokens": 3013,
+    "completion_tokens": 3109,
+    "prompt_tokens": 1367,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt, with its capital Cairo, is a North African country known for the Nile River, ancient pyramids, and rich history."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt, with its capital Cairo, is a North African country known for the Nile River, ancient pyramids, and rich history. Home to over 104 million people, it has a diverse economy driven by agriculture, tourism, and industry. Egyptian culture blends ancient traditions with modern influences, and Arabic is the official language."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

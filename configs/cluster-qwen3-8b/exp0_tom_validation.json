@@ -1,0 +1,13 @@
+{
+  "experiment": "tom_validation",
+  "out_dir": "runs",
+  "endpoints_file": "configs/cluster-qwen3-8b/endpoints.json",
+  "model": "qwen3-8b",
+  "n_items": 20,
+  "framings": ["people", "agents"],
+  "include_hitom": true,
+  "hitom_items": 60,
+  "hitom_orders": [0, 1, 2, 3],
+  "max_new_tokens": 6,
+  "record": {"top_k": 10}
+}

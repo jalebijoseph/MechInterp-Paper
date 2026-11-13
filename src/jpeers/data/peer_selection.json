@@ -1,0 +1,40 @@
+{
+  "description": "Experiment 3. An orchestrator sees each agent's prior work (history) and must assign new tasks. `kind` says which specialist has relevant context. Tasks share no content words with either history, so the right assignment needs the kind of work, not word matching (checked by tests/test_scenarios.py). Agent names are single tokens in common tokenizers so their J-lens readout is clean.",
+  "agents": {
+    "dev": {"name": "Kai", "history": [
+      "Kai implemented the REST endpoints for the billing service and wrote their unit tests.",
+      "Kai fixed a race condition in the job queue's worker pool.",
+      "Kai refactored the database migration scripts and set up CI for them."
+    ]},
+    "research": {"name": "Rosa", "history": [
+      "Rosa wrote a literature review on retrieval-augmented generation.",
+      "Rosa compared three survey methodologies for measuring customer satisfaction.",
+      "Rosa summarised recent papers on time-series anomaly detection."
+    ]}
+  },
+  "tasks": [
+    {"id": "t1", "kind": "dev", "text": "Add pagination to the invoice list page."},
+    {"id": "t2", "kind": "dev", "text": "Resolve a deadlock that appears when many threads save at once."},
+    {"id": "t3", "kind": "dev", "text": "Add an index to the payments table to speed up searches."},
+    {"id": "t4", "kind": "dev", "text": "Create a nightly build that runs the integration suite."},
+    {"id": "t5", "kind": "dev", "text": "Add retry with exponential backoff to the HTTP client."},
+    {"id": "t6", "kind": "dev", "text": "Port the PDF generator to the new templating library."},
+    {"id": "t7", "kind": "research", "text": "Find the strongest published evidence on long-context language models."},
+    {"id": "t8", "kind": "research", "text": "Recommend a questionnaire design for an employee engagement study."},
+    {"id": "t9", "kind": "research", "text": "Explain what is known about spotting faulty sensor readings."},
+    {"id": "t10", "kind": "research", "text": "Draft a background section contrasting prompting with fine-tuning."},
+    {"id": "t11", "kind": "research", "text": "Assess which significance checks suit our A/B experiment."},
+    {"id": "t12", "kind": "research", "text": "Compile prior findings on how people come to trust chatbots."}
+  ],
+  "family_variant": {
+    "description": "Two equally qualified generalists that differ only in the model family (and optionally size) that powers them. Order and names are counterbalanced by the runner.",
+    "names": ["Kai", "Rosa"],
+    "families": {"qwen": "Qwen", "llama": "Llama", "gemma": "Gemma", "gpt-oss": "GPT-OSS"},
+    "generic_history": "has completed several general tasks with good reviews."
+  },
+  "bandit_variant": {
+    "description": "MACE-style repeated selection. Each round the orchestrator picks a peer, then sees whether the work was accepted. True success rates are hidden; with `equal` both peers succeed with p=0.7, with `second_better` the initially less favoured peer is better (0.5 vs 0.8).",
+    "rounds": 12,
+    "settings": {"equal": [0.7, 0.7], "second_better": [0.5, 0.8]}
+  }
+}

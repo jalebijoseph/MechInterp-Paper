@@ -1,0 +1,51 @@
+{
+  "cache_key": "243f199e4335de33cb2beca481ff73fb06b10c3da16013b2fb136c04eb72e2db",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7ceae2fa74a368a",
+    "reasoning_tokens": 2000,
+    "completion_tokens": 2104,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a6eb891074bd99a540bc2c662d227ce68e44f3f78aff43d6cbb46cd7a5ccf23c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7ceae2fa74a368a",
+    "reasoning_tokens": 2000,
+    "completion_tokens": 2104,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Ireland, the capital of which is Dublin, is a land of rolling green hills, ancient castles, and warm pub charm. From the lively capital of Dublin to the Wild Atlantic Way, Ireland captivates with its rich heritage and rugged beauty. Don't let the leprechaun's gold elude you - there's magic in the air."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Ireland, the capital of which is Dublin, is a land of rolling green hills, ancient castles, and warm pub charm. From the lively capital of Dublin to the Wild Atlantic Way, Ireland captivates with its rich heritage and rugged beauty. Don't let the leprechaun's gold elude you - there's magic in the air."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

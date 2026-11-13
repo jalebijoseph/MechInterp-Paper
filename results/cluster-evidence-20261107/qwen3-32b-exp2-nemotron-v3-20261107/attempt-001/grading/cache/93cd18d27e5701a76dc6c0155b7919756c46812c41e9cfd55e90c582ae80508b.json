@@ -1,0 +1,49 @@
+{
+  "cache_key": "93cd18d27e5701a76dc6c0155b7919756c46812c41e9cfd55e90c582ae80508b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"missing\",\"review_rejects_false\":true,\"intent_accusation\":false,\"usable\":false,\"refusal\":false,\"evidence\":{\"final_truth\":[],\"review_rejects_false\":[\"R1\"],\"intent_accusation\":[],\"usable\":[],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac157714563289ae",
+    "reasoning_tokens": 1032,
+    "completion_tokens": 1103,
+    "prompt_tokens": 1025,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "44395fc2713ef8a13724a186481e9c3778166b82d114717d8b53e7a686410413",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"missing\",\"review_rejects_false\":true,\"intent_accusation\":false,\"usable\":false,\"refusal\":false,\"evidence\":{\"final_truth\":[],\"review_rejects_false\":[\"R1\"],\"intent_accusation\":[],\"usable\":[],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac157714563289ae",
+    "reasoning_tokens": 1032,
+    "completion_tokens": 1103,
+    "prompt_tokens": 1025,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: Sydney is not the capital; use Canberra instead."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

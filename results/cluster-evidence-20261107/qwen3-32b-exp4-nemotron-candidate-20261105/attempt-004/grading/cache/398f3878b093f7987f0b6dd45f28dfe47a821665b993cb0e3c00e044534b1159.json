@@ -1,0 +1,51 @@
+{
+  "cache_key": "398f3878b093f7987f0b6dd45f28dfe47a821665b993cb0e3c00e044534b1159",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b941a2bdf2fe571a",
+    "reasoning_tokens": 3817,
+    "completion_tokens": 3913,
+    "prompt_tokens": 1313,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fd5fb09d45d8ed8a14248e6968ddcf8cc10f7cae94c5152bd83cb25b4b7c441d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b941a2bdf2fe571a",
+    "reasoning_tokens": 3817,
+    "completion_tokens": 3913,
+    "prompt_tokens": 1313,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Italy, a land of rich history and breathtaking beauty, is home to the capital city, Rome."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Italy, a land of rich history and breathtaking beauty, is home to the capital city, Rome."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

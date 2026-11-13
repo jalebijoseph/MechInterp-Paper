@@ -1,0 +1,51 @@
+{
+  "cache_key": "66da52d6b360680d38f4feb42ce67aabdacd5b7b97720a21604775043d0dbd06",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93d22a854070d68f",
+    "reasoning_tokens": 1769,
+    "completion_tokens": 1865,
+    "prompt_tokens": 1326,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6dda54e27f9ed25ecfab6c6b94de446728c10c04b55865c21988c6412fbc7053",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93d22a854070d68f",
+    "reasoning_tokens": 1769,
+    "completion_tokens": 1865,
+    "prompt_tokens": 1326,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of India is New Delhi."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India, the capital of New Delhi, is South Asia's largest country. With a population of 1.36 billion, 1.3 billion. It is the world's most. The capital of India is New Delhi. I double-checked."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

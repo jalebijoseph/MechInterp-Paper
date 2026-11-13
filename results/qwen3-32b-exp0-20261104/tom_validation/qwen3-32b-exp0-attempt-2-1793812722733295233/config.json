@@ -1,0 +1,24 @@
+{
+  "experiment": "tom_validation",
+  "out_dir": "results/qwen3-32b-exp0-20261104",
+  "run_id": "qwen3-32b-exp0-attempt-2-1793812722733295233",
+  "endpoints_file": "${RUNS_ROOT}/qwen3-32b-exp0-20261104/endpoints.json",
+  "model": "qwen3-32b",
+  "n_items": 20,
+  "framings": [
+    "people",
+    "agents"
+  ],
+  "include_hitom": true,
+  "hitom_items": 60,
+  "hitom_orders": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "max_new_tokens": 6,
+  "record": {
+    "top_k": 10
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "24732aae95bf4b2222a2b546d7d03397e4e4e77618b7ed74a549eb56c9b28094",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b73570ea4a4df331",
+    "reasoning_tokens": 1528,
+    "completion_tokens": 1624,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "eb944168c5b470673245c662d21b5af39d7e658c9ad2543f1dc7cfc72729376c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b73570ea4a4df331",
+    "reasoning_tokens": 1528,
+    "completion_tokens": 1624,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone is credited to Alexander Graham Bell, who was granted the first patent for the device in 1876, revolutionizing long-distance communication."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone is credited to Alexander Graham Bell, who was granted the first patent for the device in 1876, revolutionizing long-distance communication."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "a8d4d49234a9faa021e9e9a13437ea9a179597248471580c945ec2ad4bd80637",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4c5b7b65f7c610e",
+    "reasoning_tokens": 1785,
+    "completion_tokens": 1889,
+    "prompt_tokens": 1282,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "38ef4d8d9341b4b54f4ba99f924ae099a3af0f0c8daffdbf7321f99c1ee3be8b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4c5b7b65f7c610e",
+    "reasoning_tokens": 1785,
+    "completion_tokens": 1889,
+    "prompt_tokens": 1282,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Norway is Oslo."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe. The capital of Norway is Oslo. Known for its stunning landscapes, high standard of living, and progressive social policies, Norway ranks among the world’s happiest and most prosperous nations."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

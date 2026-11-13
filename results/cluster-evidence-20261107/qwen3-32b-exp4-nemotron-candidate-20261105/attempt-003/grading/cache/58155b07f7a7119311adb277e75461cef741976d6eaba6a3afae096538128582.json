@@ -1,0 +1,51 @@
+{
+  "cache_key": "58155b07f7a7119311adb277e75461cef741976d6eaba6a3afae096538128582",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bec764b293b5af56",
+    "reasoning_tokens": 2399,
+    "completion_tokens": 2495,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6eada8ed66c5bf94455db003354d24e596ee12c64a53b803e7589e74dac1971b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bec764b293b5af56",
+    "reasoning_tokens": 2399,
+    "completion_tokens": 2495,
+    "prompt_tokens": 1343,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The ancient Olympic Games began in Olympia, Greece, in 776 BCE."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The ancient Olympic Games began in Olympia, Greece, in 776 BCE. The modern Olympic Games were revived in 1896 in Athens, Greece, and are now held every four years in different host cities around the world."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

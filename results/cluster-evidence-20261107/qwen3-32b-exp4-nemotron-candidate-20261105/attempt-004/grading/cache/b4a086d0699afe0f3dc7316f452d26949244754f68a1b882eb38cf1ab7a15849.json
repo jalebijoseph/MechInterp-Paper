@@ -1,0 +1,63 @@
+{
+  "cache_key": "b4a086d0699afe0f3dc7316f452d26949244754f68a1b882eb38cf1ab7a15849",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8260343debad7403",
+    "reasoning_tokens": 3070,
+    "completion_tokens": 3166,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0399a95185df9ea7e75dde986fa9628588c32a4aecf1baf9e85906a06875bef1",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8260343debad7403",
+    "reasoning_tokens": 3070,
+    "completion_tokens": 3166,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Canada is Ottawa. Known for its natural beauty, multicultural cities, and welcoming people, Canada offers a unique blend of French and English heritage, along with world-class attractions like Niagara Falls and the Rocky Mountains."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Canada is Ottawa. Known for its natural beauty, multicultural cities, and welcoming people, Canada offers a unique blend of French and English heritage, along with world-class attractions like Niagara Falls and the Rocky Mountains."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

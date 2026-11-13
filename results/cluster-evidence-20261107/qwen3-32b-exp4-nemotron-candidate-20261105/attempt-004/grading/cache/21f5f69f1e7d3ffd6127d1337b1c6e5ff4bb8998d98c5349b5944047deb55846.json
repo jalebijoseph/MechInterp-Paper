@@ -1,0 +1,51 @@
+{
+  "cache_key": "21f5f69f1e7d3ffd6127d1337b1c6e5ff4bb8998d98c5349b5944047deb55846",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b46217271efe95cc",
+    "reasoning_tokens": 3080,
+    "completion_tokens": 3176,
+    "prompt_tokens": 1267,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "25d9aa9e0e468164d513c5b67bdc527678f72d41bd01a975b4efe44b32347d28",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b46217271efe95cc",
+    "reasoning_tokens": 3080,
+    "completion_tokens": 3176,
+    "prompt_tokens": 1267,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The skin is the largest organ of the human body, with an average adult having about 20 square feet of skin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Anatomy Fact Card: Skin**  \nThe skin is the largest organ of the human body, with an average adult having about 20 square feet of skin. It serves as a protective barrier, regulates body temperature, and plays a key role in sensory perception."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

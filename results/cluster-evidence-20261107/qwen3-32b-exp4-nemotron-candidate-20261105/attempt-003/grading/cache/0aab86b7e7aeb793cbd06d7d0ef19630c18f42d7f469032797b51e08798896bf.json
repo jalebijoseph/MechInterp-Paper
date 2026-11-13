@@ -1,0 +1,53 @@
+{
+  "cache_key": "0aab86b7e7aeb793cbd06d7d0ef19630c18f42d7f469032797b51e08798896bf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b1f3feed4e849647",
+    "reasoning_tokens": 3112,
+    "completion_tokens": 3223,
+    "prompt_tokens": 1263,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "908f5e02fb6a7d78e99f85fee21af422f11b0d198f82b866d6908f93ff0cf8d6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b1f3feed4e849647",
+    "reasoning_tokens": 3112,
+    "completion_tokens": 3223,
+    "prompt_tokens": 1263,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest land animal is the African bush elephant, reaching 5 m at shoulder & 14,000 lb."
+        ],
+        "review_rejects_false": [
+          "Horses are not the largest land animal."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest land animal is the African bush elephant, reaching 5 m at shoulder & 14,000 lb."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

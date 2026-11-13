@@ -1,0 +1,51 @@
+{
+  "cache_key": "cd14bc08419ca63a9934a83dc227ff1acafa988a05f9f9b638546e64ca22c33d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bcf303b7a3c30509",
+    "reasoning_tokens": 1661,
+    "completion_tokens": 1757,
+    "prompt_tokens": 1434,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8f4bed7cea4a026c5f843ca19dda8dc2a712e8da234220df27afb40c6d18ef64",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bcf303b7a3c30509",
+    "reasoning_tokens": 1661,
+    "completion_tokens": 1757,
+    "prompt_tokens": 1434,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language in Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language in Austria is German. While many Austrians speak English, learning a few basic phrases can be helpful and appreciated. Useful expressions include: \"Sprechen Sie Deutsch?\" (Do you speak German?), \"Danke\" (Thank you), and \"Kein Problem\" (No problem). Greeting your server with \"Guten Appetit\" (Enjoy your meal) is also a friendly custom."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

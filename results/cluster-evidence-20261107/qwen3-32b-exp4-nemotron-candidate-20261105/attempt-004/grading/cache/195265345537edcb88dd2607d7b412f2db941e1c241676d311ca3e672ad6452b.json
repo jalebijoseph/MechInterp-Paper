@@ -1,0 +1,51 @@
+{
+  "cache_key": "195265345537edcb88dd2607d7b412f2db941e1c241676d311ca3e672ad6452b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9d9ed4e7f0d79682",
+    "reasoning_tokens": 3020,
+    "completion_tokens": 3116,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "49bc0a911ca2771d684ac49a374985944fce35c62023c2000be2e89747f6d7e8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9d9ed4e7f0d79682",
+    "reasoning_tokens": 3020,
+    "completion_tokens": 3116,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Lisbon, home to the Portuguese government and historical landmarks like Belém."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal is a Southern European country known for its rich history and culture. The capital is Lisbon, home to the Portuguese government and historical landmarks like Belém. Bordered by Spain and the Atlantic Ocean, Portugal is a member of the EU and NATO. It is famous for its football, fado music, and traditional wines. The country has a long coastline and a warm, dry climate."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

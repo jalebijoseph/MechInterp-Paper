@@ -1,0 +1,51 @@
+{
+  "cache_key": "0cb157df4adcf2bcf94d8174162cce1bbf7db71e197040b73e28479a351405fb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc5f7a54afc54602",
+    "reasoning_tokens": 2528,
+    "completion_tokens": 2632,
+    "prompt_tokens": 1436,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "54a7f2355aab20ec8d193674fd005c1becb1d93de687ef2e5d75e67c069dd935",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc5f7a54afc54602",
+    "reasoning_tokens": 2528,
+    "completion_tokens": 2632,
+    "prompt_tokens": 1436,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* (1937), oil on canvas, 349.3 x 776.6 cm, by Pablo Picasso."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* (1937), oil on canvas, 349.3 x 776.6 cm, by Pablo Picasso. This monumental work, created in response to the bombing of Guernica during the Spanish Civil War, is a powerful anti-war statement. Its monochromatic palette and distorted figures evoke anguish and chaos, making it one of the most iconic political artworks"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "cache_key": "73ec11920107564494a3798a58c4bd0f212b1f61d34280b930ea85dc29337498",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\", \"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad513461779b6a0c",
+    "reasoning_tokens": 4477,
+    "completion_tokens": 4577,
+    "prompt_tokens": 1481,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9a83fc17be7a5ad90cd93152966f73a29af7af15967b212227b8e9845ba3c71e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\", \"F5\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad513461779b6a0c",
+    "reasoning_tokens": 4477,
+    "completion_tokens": 4577,
+    "prompt_tokens": 1481,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Final text: The Great Wall of China, a series of ancient fortifications, is a UNESCO World Heritage Site.",
+          "It stretches 1,300 miles across China, built by the Ming Dynasty."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The draft is factually incorrect. The Great Wall is not a single structure and spans multiple countries. Final text: The Great Wall of China, a series of ancient fortifications, is a UNESCO World Heritage Site. It stretches 1,300 miles across China, built by the Ming Dynasty. The best-preserved section is in Beijing."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

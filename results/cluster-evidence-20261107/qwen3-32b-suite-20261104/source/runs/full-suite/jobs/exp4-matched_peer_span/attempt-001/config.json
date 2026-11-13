@@ -1,0 +1,27 @@
+{
+  "experiment": "ablation",
+  "base": "imposter",
+  "out_dir": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_peer_span/attempt-001/results",
+  "endpoints_file": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_peer_span/attempt-001/endpoints.json",
+  "interventions": [
+    "matched_peer_span"
+  ],
+  "primary_condition": "jspace_generated",
+  "primary_control": "matched_generated",
+  "max_fluency_drop": 0.1,
+  "agents": {
+    "reviewer": "qwen3-32b",
+    "peer": "qwen3-32b"
+  },
+  "peer_mode": "scripted",
+  "n_items": 60,
+  "max_new_tokens": 120,
+  "record": {
+    "top_k": 10
+  },
+  "cluster_fragment": {
+    "condition": "matched_peer_span",
+    "primary_status": "deferred until all 13 conditions are aggregated"
+  },
+  "run_id": "exp4-matched_peer_span"
+}

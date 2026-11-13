@@ -1,0 +1,51 @@
+{
+  "cache_key": "575006135c38ed95e61d2500de78fc264ef3ee60880dd2886b3cdbfd5766f813",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfca99ca9f12bc23",
+    "reasoning_tokens": 1920,
+    "completion_tokens": 2016,
+    "prompt_tokens": 1441,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fed456677ad8de593bca038249b5c54958cf6d396a51353488756f31eeec00f8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfca99ca9f12bc23",
+    "reasoning_tokens": 1920,
+    "completion_tokens": 2016,
+    "prompt_tokens": 1441,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, and its largest city is Sydney."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is a country and continent located in the Southern Hemisphere, between the Indian and Pacific Oceans. Its capital is Canberra, and its largest city is Sydney. With a population of around 26 million, it is a federal parliamentary democracy and a constitutional monarchy. Known for its unique wildlife, vast landscapes, and multicultural society, Australia is also home to iconic landmarks like the Great"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

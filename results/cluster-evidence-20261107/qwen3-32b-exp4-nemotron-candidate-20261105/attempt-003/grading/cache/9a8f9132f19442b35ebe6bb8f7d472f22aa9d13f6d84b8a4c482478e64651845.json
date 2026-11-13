@@ -1,0 +1,53 @@
+{
+  "cache_key": "9a8f9132f19442b35ebe6bb8f7d472f22aa9d13f6d84b8a4c482478e64651845",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-913014dc43e2e932",
+    "reasoning_tokens": 1969,
+    "completion_tokens": 2068,
+    "prompt_tokens": 1195,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "57f8dce778868a93b9d2c131f24e6e849353363ab49a14148a8340a6f3d01695",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-913014dc43e2e932",
+    "reasoning_tokens": 1969,
+    "completion_tokens": 2068,
+    "prompt_tokens": 1195,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is corundum, which is the primary component of sapphires."
+        ],
+        "review_rejects_false": [
+          "Corundum (the primary component of sapphires) is the hardest natural mineral, not quartz."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is corundum, which is the primary component of sapphires."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

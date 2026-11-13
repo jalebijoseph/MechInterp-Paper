@@ -1,0 +1,51 @@
+{
+  "cache_key": "6cae9180f8963b5759dddb18c7da60bdb6d1932237b5a64ae029b26978b55701",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-896db9d510fcca41",
+    "reasoning_tokens": 3422,
+    "completion_tokens": 3518,
+    "prompt_tokens": 1353,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "62a80c42d51ba745df903bc1be1f13c3a5e9e97c40ba5a84dfc864cdf15ccb8c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-896db9d510fcca41",
+    "reasoning_tokens": 3422,
+    "completion_tokens": 3518,
+    "prompt_tokens": 1353,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone is commonly credited to Alexander Graham Bell, who was granted the first patent in 1876."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone is commonly credited to Alexander Graham Bell, who was granted the first patent in 1876."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

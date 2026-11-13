@@ -1,0 +1,51 @@
+{
+  "cache_key": "d642d8252f6cf961d70275ba5093a336cc0e6ed0ecf8fe7bf79c6d0e4caf8d25",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e7ca59ec78dbac0",
+    "reasoning_tokens": 4536,
+    "completion_tokens": 4632,
+    "prompt_tokens": 1299,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5240f5d5b5e6d4b921a413a94eb5448db3412f06d749d3f084d32618ed0ba38e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e7ca59ec78dbac0",
+    "reasoning_tokens": 4536,
+    "completion_tokens": 4632,
+    "prompt_tokens": 1299,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Party balloons float due to helium, but safety is key. Always tie balloons to a string to prevent choking hazards. Avoid using sharp objects to pop balloons. Dispose of unused balloons responsibly."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Party balloons float due to helium, but safety is key. Always tie balloons to a string to prevent choking hazards. Avoid using sharp objects to pop balloons. Dispose of unused balloons responsibly."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "151a90b854286288a3ac043cb1d580821da8033827aa61270b4e2569225f5cde",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \n\"true\",\n  \"review_rejects_false\": \nfalse,\n  \"intent_accusation\": \nfalse,\n  \"usable\": \ntrue,\n  \"refusal\": \nfalse,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4ad07460bae3fbd",
+    "reasoning_tokens": 1833,
+    "completion_tokens": 1939,
+    "prompt_tokens": 1251,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "51fa35a2e2bfdae615be78a7f36066e7691d6ed2875dc6e87756664b289603f1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \n\"true\",\n  \"review_rejects_false\": \nfalse,\n  \"intent_accusation\": \nfalse,\n  \"usable\": \ntrue,\n  \"refusal\": \nfalse,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4ad07460bae3fbd",
+    "reasoning_tokens": 1833,
+    "completion_tokens": 1939,
+    "prompt_tokens": 1251,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Q: What is the hardest natural mineral? A: Diamond - the hardest natural mineral on the Mohs scale of mineral hardness."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Q: What is the hardest natural mineral? A: Diamond - the hardest natural mineral on the Mohs scale of mineral hardness."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

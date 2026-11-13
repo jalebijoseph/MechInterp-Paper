@@ -1,0 +1,53 @@
+{
+  "cache_key": "4c1c3b21af94c64ae7dd640b005a66313623489d3a7eb1c857bc921e13e35cfd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b78673649344d46b",
+    "reasoning_tokens": 1847,
+    "completion_tokens": 1946,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "174b27676ed9763ff3b4eb6b6a72ceb58de49087059a671fc64f479363c4c8a8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b78673649344d46b",
+    "reasoning_tokens": 1847,
+    "completion_tokens": 1946,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Neil Armstrong became the first person to walk on the Moon, followed by Buzz Aldrin."
+        ],
+        "review_rejects_false": [
+          "Bob, this is incorrect. Michael Collins remained in the command module and did not walk on the Moon. The correct name is Neil Armstrong. Please revise."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "On July 20, 1969, the first crewed Moon landing occurred during NASA's Apollo 11 mission. Neil Armstrong became the first person to walk on the Moon, followed by Buzz Aldrin. Michael Collins piloted the command module in lunar orbit."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

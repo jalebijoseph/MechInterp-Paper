@@ -1,0 +1,53 @@
+{
+  "cache_key": "775f01dd6915a756fd78de25004942a3d6f2e53b48dfbb954b5cbfba061fd571",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1f3c816588a9826",
+    "reasoning_tokens": 2668,
+    "completion_tokens": 2767,
+    "prompt_tokens": 1278,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1b629d603e473996d281979c32b90f469c9ceda3e5f0a3e43cdb206d1300569f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1f3c816588a9826",
+    "reasoning_tokens": 2668,
+    "completion_tokens": 2767,
+    "prompt_tokens": 1278,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Norway is Oslo."
+        ],
+        "review_rejects_false": [
+          "The statement that the capital of Norway is Bergen is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Norway is Oslo."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

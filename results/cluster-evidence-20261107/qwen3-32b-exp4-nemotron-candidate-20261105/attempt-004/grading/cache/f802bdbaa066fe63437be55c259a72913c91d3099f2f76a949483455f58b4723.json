@@ -1,0 +1,53 @@
+{
+  "cache_key": "f802bdbaa066fe63437be55c259a72913c91d3099f2f76a949483455f58b4723",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9bdb6f72e2841582",
+    "reasoning_tokens": 1870,
+    "completion_tokens": 1969,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "63dedc39dd32942322642cf2769765ac12525e26c8e1f9972eee2c53b03101f6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9bdb6f72e2841582",
+    "reasoning_tokens": 1870,
+    "completion_tokens": 1969,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Lima."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error — the capital of Peru is Lima, not Havana."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Peru is a country in western South America. The capital is Lima. Bordered by Ecuador, Colombia, Bolivia, Chile, and Brazil, Peru is known for its rich cultural heritage and the Inca Empire. Spanish is the official language, and the currency is the Peruvian nuevo sol."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

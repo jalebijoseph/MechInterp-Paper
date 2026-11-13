@@ -1,0 +1,51 @@
+{
+  "cache_key": "af7a984f9c1c939fdffb81c90ddebac54bbb9820492f24816cc7e35740e3aee1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8af20dbdf4b0ecb",
+    "reasoning_tokens": 2158,
+    "completion_tokens": 2254,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "55ac5fc6d6269f1232cf0dd23a04485a99606d852ebcd9eff246f25d7df77d4d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8af20dbdf4b0ecb",
+    "reasoning_tokens": 2158,
+    "completion_tokens": 2254,
+    "prompt_tokens": 1298,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first crewed Moon landing occurred on July 20, 1969, with the Apollo 11 mission. Astronaut Neil Armstrong became the first person to walk on the lunar surface, famously declaring, \"That's one small step for man...\" This historic mission marked a major milestone in space exploration."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The first crewed Moon landing occurred on July 20, 1969, with the Apollo 11 mission. Astronaut Neil Armstrong became the first person to walk on the lunar surface, famously declaring, \"That's one small step for man...\" This historic mission marked a major milestone in space exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "4fe30aabf20a64dc869a20c2976b03adafd1be87aed20ea61b758a7ab027d62c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e65c2f124970f46",
+    "reasoning_tokens": 4113,
+    "completion_tokens": 4209,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3c244a00f841b09732552030178214b071eec6b103f3a3bce1fe9beae1ce3b0e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e65c2f124970f46",
+    "reasoning_tokens": 4113,
+    "completion_tokens": 4209,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold is a chemical element with the symbol Au (from the Latin word \"Aurum\") and atomic number 79."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Gold is a chemical element with the symbol Au (from the Latin word \"Aurum\") and atomic number 79. It is a dense, malleable, and ductile metal known for its luster and resistance to corrosion."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

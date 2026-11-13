@@ -1,0 +1,65 @@
+{
+  "cache_key": "0dc08a2449f90f9bc76966170aa43affd40ba3aeb3e393576409676d96ad7922",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0a426588aadd8b3",
+    "reasoning_tokens": 3869,
+    "completion_tokens": 3968,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ce79f4ebe43620a0e194a8d1c7a088a7c595cd0638412355c37366460caf14e8",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0a426588aadd8b3",
+    "reasoning_tokens": 3869,
+    "completion_tokens": 3968,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Thailand is a Southeast Asian country known for its rich culture, temples, and tropical beaches. The capital is Bangkok. It is a constitutional monarchy with a diverse economy and a growing tourism sector."
+        ],
+        "review_rejects_false": [
+          "The capital of Thailand is Bangkok, not Manila."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand is a Southeast Asian country known for its rich culture, temples, and tropical beaches. The capital is Bangkok. It is a constitutional monarchy with a diverse economy and a growing tourism sector."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "41923e922f071767d5ede870c97431502c1fc1b48c36f73f24af57e4a429c7bd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4c88af877a5af7b",
+    "reasoning_tokens": 2480,
+    "completion_tokens": 2576,
+    "prompt_tokens": 1287,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6610d2f5759ffef187a3ebcc7a235e45ead5c879b922a9705fb1b585c1321900",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4c88af877a5af7b",
+    "reasoning_tokens": 2480,
+    "completion_tokens": 2576,
+    "prompt_tokens": 1287,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Canada is Ottawa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Canada is Ottawa. Located in the province of Ontario, Ottawa is a vibrant city known for its historic architecture, cultural institutions, and political significance as the seat of the Canadian government."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

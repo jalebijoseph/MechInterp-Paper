@@ -1,0 +1,51 @@
+{
+  "cache_key": "78a39ad4bcc67fdb927e1165e4f0e81c6cfc15b42c12869516f98dd3a26fd088",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-823b11fdeb4d91fa",
+    "reasoning_tokens": 3011,
+    "completion_tokens": 3107,
+    "prompt_tokens": 1410,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "25a07dfc6a1e9a4954dea4634be4acd74388270f6a17e6df58181999caf87a63",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-823b11fdeb4d91fa",
+    "reasoning_tokens": 3011,
+    "completion_tokens": 3107,
+    "prompt_tokens": 1410,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest ocean is the Pacific Ocean, covering more than 63 million square miles."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest ocean is the Pacific Ocean, covering more than 63 million square miles. It is followed by the Atlantic, Indian, Southern, and Arctic Oceans. The Pacific is also the deepest, with the Mariana Trench as its lowest point. It contains the most islands and is home to the \"Ring of Fire,\" known for its high volcanic and seismic activity."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

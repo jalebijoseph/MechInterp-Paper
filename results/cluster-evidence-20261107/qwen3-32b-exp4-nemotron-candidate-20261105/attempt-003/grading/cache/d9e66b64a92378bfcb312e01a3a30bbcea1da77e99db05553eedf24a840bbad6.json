@@ -1,0 +1,53 @@
+{
+  "cache_key": "d9e66b64a92378bfcb312e01a3a30bbcea1da77e99db05553eedf24a840bbad6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b30b8a57185593dd",
+    "reasoning_tokens": 4655,
+    "completion_tokens": 4754,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "025b10f6739096b4ec7ec26a3e0701f053811049111b06c1fb0585beb26e678d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b30b8a57185593dd",
+    "reasoning_tokens": 4655,
+    "completion_tokens": 4754,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Bangkok, a vibrant city on the Chao Phraya River."
+        ],
+        "review_rejects_false": [
+          "The capital of Thailand is not Manila; it is Bangkok."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand is a Southeast Asian country known for its rich culture, temples, and tropical beaches. The capital is Bangkok, a vibrant city on the Chao Phraya River. Thailand is a constitutional monarchy and a popular global tourist destination."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

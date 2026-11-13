@@ -1,0 +1,29 @@
+{
+  "protocol": "incoming-mediation-v1",
+  "model": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "lens_repository": "neuronpedia/jacobian-lens",
+  "lens_revision": "e166deb5ad540932100ef803c8c9bcc2a5453694",
+  "lens_file": "qwen3-32b/jlens/Salesforce-wikitext/Qwen3-32B_jacobian_lens.pt",
+  "deletion_layers": [
+    40,
+    48,
+    52
+  ],
+  "rescue_offset": 2,
+  "doses": [
+    0.25,
+    0.5
+  ],
+  "max_new_tokens": 48,
+  "seed": 20261107,
+  "random_seed": 20261107,
+  "baseline_accuracy_min": 0.95,
+  "decoder_cv_min": 0.8,
+  "leakage_cv_max": 0.6,
+  "incoming_effect_min": 0.05,
+  "specificity_margin": 0.05,
+  "geometry_relative_tolerance": 0.05,
+  "ridge": 1e-06,
+  "analysis": "exploratory; no confirmatory power claim; 24 held-out template clusters"
+}

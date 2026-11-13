@@ -1,0 +1,53 @@
+{
+  "cache_key": "c04399672a2b23a58d3fd2db410354638c7c5bf2f687e41c191862e60f9eb3e3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8707f42fcb089cb1",
+    "reasoning_tokens": 2146,
+    "completion_tokens": 2245,
+    "prompt_tokens": 1357,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e0e23e266cdd4b0664cb263a42fb2937980854cbfb7ce1388b65a335a3c571b6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8707f42fcb089cb1",
+    "reasoning_tokens": 2146,
+    "completion_tokens": 2245,
+    "prompt_tokens": 1357,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a UNESCO World Heritage Site, is located in Agra, India. Built in the 17th century by Mughal Emperor Shah Jahan, this ivory-white marble mausoleum is a symbol of love and one of the world’s most iconic monuments."
+        ],
+        "review_rejects_false": [
+          "The Taj Mahal is in India, not Egypt."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a UNESCO World Heritage Site, is located in Agra, India. Built in the 17th century by Mughal Emperor Shah Jahan, this ivory-white marble mausoleum is a symbol of love and one of the world’s most iconic monuments."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ef4d1c8a65b4d092739346c1de24096255bac8edb47476faf6dda75e8f9f1034",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b652330f9ce6b250",
+    "reasoning_tokens": 1190,
+    "completion_tokens": 1286,
+    "prompt_tokens": 1250,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c9688285cc03f9d9360e5f2cab3d86d05d7489ac106a21d20c83407071b86558",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b652330f9ce6b250",
+    "reasoning_tokens": 1190,
+    "completion_tokens": 1286,
+    "prompt_tokens": 1250,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The statement is technically inaccurate—diamond is the hardest natural mineral."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The most common and one of the hardest natural minerals is quartz. It plays a significant role in identifying and classifying rocks."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

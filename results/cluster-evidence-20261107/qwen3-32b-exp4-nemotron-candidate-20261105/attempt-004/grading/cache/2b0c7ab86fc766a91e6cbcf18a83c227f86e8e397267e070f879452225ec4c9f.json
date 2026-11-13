@@ -1,0 +1,51 @@
+{
+  "cache_key": "2b0c7ab86fc766a91e6cbcf18a83c227f86e8e397267e070f879452225ec4c9f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8f61c7b328db02e",
+    "reasoning_tokens": 4134,
+    "completion_tokens": 4230,
+    "prompt_tokens": 1370,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "19889a95e3b48512b6fb2f8bd07c9cc2a8d6ef1641998cf4a24a3102c82815ca",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8f61c7b328db02e",
+    "reasoning_tokens": 4134,
+    "completion_tokens": 4230,
+    "prompt_tokens": 1370,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Scotland is a land of breathtaking landscapes, rich history, and warm hospitality. Its capital, Edinburgh, is a must-visit, with its iconic castle and charming old town. Whether you’re hiking in the Highlands or savoring a dram of whisky, Scotland promises unforgettable experiences."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Scotland is a land of breathtaking landscapes, rich history, and warm hospitality. Its capital, Edinburgh, is a must-visit, with its iconic castle and charming old town. Whether you’re hiking in the Highlands or savoring a dram of whisky, Scotland promises unforgettable experiences."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

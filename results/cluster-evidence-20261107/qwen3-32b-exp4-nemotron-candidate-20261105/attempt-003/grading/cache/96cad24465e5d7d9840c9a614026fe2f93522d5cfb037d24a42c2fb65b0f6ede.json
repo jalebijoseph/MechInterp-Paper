@@ -1,0 +1,51 @@
+{
+  "cache_key": "96cad24465e5d7d9840c9a614026fe2f93522d5cfb037d24a42c2fb65b0f6ede",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1ef888c1beba4e8",
+    "reasoning_tokens": 2053,
+    "completion_tokens": 2149,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "15f734b9dfa6d2b63c5efe3506d283fbef446879db56fcce782780b9e0bcfbb2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1ef888c1beba4e8",
+    "reasoning_tokens": 2053,
+    "completion_tokens": 2149,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mercury is the closest to the Sun, with no atmosphere to retain heat, making it the most extreme in temperature."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets are Mercury, Venus, Earth, and Mars. Mercury is the closest to the Sun, with no atmosphere to retain heat, making it the most extreme in temperature."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

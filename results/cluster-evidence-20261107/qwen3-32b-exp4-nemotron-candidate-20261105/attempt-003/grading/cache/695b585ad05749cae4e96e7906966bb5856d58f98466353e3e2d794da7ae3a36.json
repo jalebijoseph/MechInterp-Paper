@@ -1,0 +1,53 @@
+{
+  "cache_key": "695b585ad05749cae4e96e7906966bb5856d58f98466353e3e2d794da7ae3a36",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9dfcbe9029208768",
+    "reasoning_tokens": 2585,
+    "completion_tokens": 2684,
+    "prompt_tokens": 1337,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "684d63b31ae8a18b55da96f15a5986bbbdf11ec9b0c008c68f4a02e97f52fc3c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9dfcbe9029208768",
+    "reasoning_tokens": 2585,
+    "completion_tokens": 2684,
+    "prompt_tokens": 1337,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The ancient Olympic Games began in Olympia, Greece, in 776 BCE."
+        ],
+        "review_rejects_false": [
+          "The ancient Olympic Games originated in Olympia, Greece, not Italy."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The ancient Olympic Games began in Olympia, Greece, in 776 BCE. They were held every four years and honored the god Zeus, featuring events like running, wrestling, and chariot racing. The modern Olympics were revived in 1896 in Athens, Greece."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

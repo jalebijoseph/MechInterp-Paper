@@ -1,0 +1,53 @@
+{
+  "cache_key": "cdb9749e361aedfbd3e4b2bbd9dc51a0ce19c3a2752dc42ed6718f1c175fac0e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92b9a98814d3cf17",
+    "reasoning_tokens": 1905,
+    "completion_tokens": 2004,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9b3c4f38c7792fd1fdb8bc6548819367aab8bde9bc1b599fd3f5d9e3cca2ed79",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92b9a98814d3cf17",
+    "reasoning_tokens": 1905,
+    "completion_tokens": 2004,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, which is so big it could fit all the other planets inside it."
+        ],
+        "review_rejects_false": [
+          "Saturn is not the largest planet; Jupiter is."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest planet is Jupiter, which is so big it could fit all the other planets inside it."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

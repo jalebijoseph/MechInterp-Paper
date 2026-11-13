@@ -1,0 +1,51 @@
+{
+  "cache_key": "357f0127eabb450a17c4852b44e4b483857f34499662c064ef40e613fc5b2e49",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad65d598f983f055",
+    "reasoning_tokens": 4248,
+    "completion_tokens": 4344,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bb97e9973f9ec2fcf39e85d604a5e6e1013e62461eb5e60ff83c9922b4ffb52d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad65d598f983f055",
+    "reasoning_tokens": 4248,
+    "completion_tokens": 4344,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet in the solar system is Jupiter."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is our cosmic home, with eight planets circling the Sun. The largest planet in the solar system is Jupiter. Jupiter, a gas giant, has big Red Spot and many moons. Fun note - Jupiter's!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

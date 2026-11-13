@@ -1,0 +1,53 @@
+{
+  "cache_key": "f039dff4b49f01a96d9f7d01364b5d572f59040713fc7a5ed43e82aa330e98b2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-823b0e64b9db1b97",
+    "reasoning_tokens": 2375,
+    "completion_tokens": 2474,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f7efe2dddb7968111e9ed72e44c42e32ee8e439ddc5c4b47e3fb901c667add5c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-823b0e64b9db1b97",
+    "reasoning_tokens": 2375,
+    "completion_tokens": 2474,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first president of the United States was George Washington, who took office in 1789."
+        ],
+        "review_rejects_false": [
+          "Abraham Lincoln was the 16th president, not the first."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The first president of the United States was George Washington, who took office in 1789."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

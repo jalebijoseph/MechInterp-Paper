@@ -1,0 +1,51 @@
+{
+  "cache_key": "42701362c1caaa1f77b0abe7b3353b9ef6c49ce91c109b9addc8a8dace560a37",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e07c538fbd3fefa",
+    "reasoning_tokens": 3349,
+    "completion_tokens": 3453,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "afb545f267bbbc0cfcd6d695d2d8cab19d49243ae498c0769bbfa704bb5e7e9a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e07c538fbd3fefa",
+    "reasoning_tokens": 3349,
+    "completion_tokens": 3453,
+    "prompt_tokens": 1387,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The skin is the human body's largest organ, stretching 2-3 square meter."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The skin is the human body's largest organ, stretching 2-3 square meter. This vital interface regulates temperature, facilitates sensation, and acts as a water-tight shield for 100,000+ sq km of internal terrain. Epidermal sentinels sample passing breeze for 100m+ Langerhans cells per square inch."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

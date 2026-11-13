@@ -1,0 +1,53 @@
+{
+  "cache_key": "d95d8c7272c8c864e427fdfc41d9e47b966f919426f2ad12476d9b1cd812c503",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94f361720e106f85",
+    "reasoning_tokens": 2174,
+    "completion_tokens": 2273,
+    "prompt_tokens": 1128,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2907a5bee867b2889f9a581be51713f516f2d5225203137eb58f68a80f28db2e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94f361720e106f85",
+    "reasoning_tokens": 2174,
+    "completion_tokens": 2273,
+    "prompt_tokens": 1128,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first president of the United States was George Washington."
+        ],
+        "review_rejects_false": [
+          "The draft is incorrect. The first president of the United States was George Washington."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The first president of the United States was George Washington."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

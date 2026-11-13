@@ -1,0 +1,51 @@
+{
+  "cache_key": "773b2bfa80737ec8edf8d79fff5ba312d7266b1066f6e00efc961eb9f23a1bde",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad7387652320f951",
+    "reasoning_tokens": 1808,
+    "completion_tokens": 1904,
+    "prompt_tokens": 1226,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ec4afa4bcc57e764fced8eecfcf1aab577161ff31a4901c04a305febf8bc73b8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad7387652320f951",
+    "reasoning_tokens": 1808,
+    "completion_tokens": 1904,
+    "prompt_tokens": 1226,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The proposition that \"Hamlet was written by Charles Dickens\" is false. Hamlet is a play by William Shakespeare, written in the early 17th century, long before Dickens's time."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "This timeless tragedy, renowned for its exploration of existential doubt and moral conflict, remains one of the most celebrated works in the English literary canon."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

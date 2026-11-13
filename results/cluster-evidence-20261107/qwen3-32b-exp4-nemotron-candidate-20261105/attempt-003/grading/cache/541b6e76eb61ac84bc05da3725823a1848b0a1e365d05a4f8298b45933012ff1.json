@@ -1,0 +1,53 @@
+{
+  "cache_key": "541b6e76eb61ac84bc05da3725823a1848b0a1e365d05a4f8298b45933012ff1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b70e5997790d1076",
+    "reasoning_tokens": 1706,
+    "completion_tokens": 1805,
+    "prompt_tokens": 1389,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "405ab8bfcc65fac8a2f0d5054d0179b7a4737faabd46119e984a638dcdae2b64",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b70e5997790d1076",
+    "reasoning_tokens": 1706,
+    "completion_tokens": 1805,
+    "prompt_tokens": 1389,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a stunning white marble mausoleum, is located in Agra, India."
+        ],
+        "review_rejects_false": [
+          "The Taj Mahal is not in Egypt—it is in Agra, India."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a stunning white marble mausoleum, is located in Agra, India."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

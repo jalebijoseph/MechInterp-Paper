@@ -1,0 +1,53 @@
+{
+  "cache_key": "4b12d5996e198f37251a69663f8328220dd6b5305c32548eb1ee1f94b59cc057",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-80a4ec4109ac2591",
+    "reasoning_tokens": 2002,
+    "completion_tokens": 2101,
+    "prompt_tokens": 1466,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6999fb548e7d6e8ae81c8f81903e64a10e272ae03a7bd575c92e73daf9fcd8b6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-80a4ec4109ac2591",
+    "reasoning_tokens": 2002,
+    "completion_tokens": 2101,
+    "prompt_tokens": 1466,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Poland's capital is Warsaw, where the Vistula River cuts through the flesh of the Castle District."
+        ],
+        "review_rejects_false": [
+          "The draft has a critical inaccuracy - the capital of Poland is Warsaw, not Prague."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Poland's capital is Warsaw, where the Vistula River cuts through the flesh of the Castle District."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

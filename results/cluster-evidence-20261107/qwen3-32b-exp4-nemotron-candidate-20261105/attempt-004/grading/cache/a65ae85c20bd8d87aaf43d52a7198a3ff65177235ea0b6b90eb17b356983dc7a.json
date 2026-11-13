@@ -1,0 +1,53 @@
+{
+  "cache_key": "a65ae85c20bd8d87aaf43d52a7198a3ff65177235ea0b6b90eb17b356983dc7a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93f170c4ade0ecf3",
+    "reasoning_tokens": 2386,
+    "completion_tokens": 2485,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "34e0083c1a4864b198a0ded878abfd14f1593baa6d22337d89b879b4997c6a5d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93f170c4ade0ecf3",
+    "reasoning_tokens": 2386,
+    "completion_tokens": 2485,
+    "prompt_tokens": 1393,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet is Jupiter, known for its big red storm and many moons."
+        ],
+        "review_rejects_false": [
+          "Bob, you made a mistake—Saturn is not the largest planet."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is made up of the Sun and eight planets that orbit around it. The largest planet is Jupiter, known for its big red storm and many moons. Other planets include Earth, where we live, and Saturn, famous for its beautiful rings. Each planet is unique and helps make our solar system a fascinating place to explore!"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

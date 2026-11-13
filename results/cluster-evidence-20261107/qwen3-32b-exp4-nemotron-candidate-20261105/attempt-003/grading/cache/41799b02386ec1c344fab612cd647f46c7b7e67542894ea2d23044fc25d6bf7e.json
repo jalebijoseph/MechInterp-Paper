@@ -1,0 +1,53 @@
+{
+  "cache_key": "41799b02386ec1c344fab612cd647f46c7b7e67542894ea2d23044fc25d6bf7e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8b46b6b0ad80fec5",
+    "reasoning_tokens": 2971,
+    "completion_tokens": 3070,
+    "prompt_tokens": 1440,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e3871c57f367dac9aceb01a112ebfac6f91ef6d8f8e35185d860dd7f6302f1df",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8b46b6b0ad80fec5",
+    "reasoning_tokens": 2971,
+    "completion_tokens": 3070,
+    "prompt_tokens": 1440,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Netherlands, a lowland kingdom of canals and windmills, has The Hague as its capital, seat of the royal family, and political heart."
+        ],
+        "review_rejects_false": [
+          "The draft contains a critical inaccuracy - The capital of the Netherlands is not Rotterdam."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, a lowland kingdom of canals and windmills, has The Hague as its capital, seat of the royal family, and political heart."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "experiment": "imposter",
+  "out_dir": "results/qwen3-32b-suite-20261104/jobs/exp2-narcbench/attempt-001/results",
+  "endpoints_file": "results/qwen3-32b-suite-20261104/jobs/exp2-narcbench/attempt-001/endpoints.json",
+  "agents": {
+    "reviewer": "qwen3-32b",
+    "peer": "qwen3-32b"
+  },
+  "peer_mode": "scripted",
+  "sources": [
+    "incentive",
+    "no_incentive",
+    "document"
+  ],
+  "n_items": 60,
+  "max_new_tokens": 140,
+  "record": {
+    "top_k": 10
+  },
+  "narcbench": {
+    "source_model": "qwen3_32b",
+    "tier": "core",
+    "max_scenarios": 20
+  },
+  "live": false,
+  "run_id": "exp2-narcbench"
+}

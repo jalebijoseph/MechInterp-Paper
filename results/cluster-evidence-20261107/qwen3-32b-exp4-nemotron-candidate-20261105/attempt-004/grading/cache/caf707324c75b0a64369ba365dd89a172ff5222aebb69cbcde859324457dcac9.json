@@ -1,0 +1,51 @@
+{
+  "cache_key": "caf707324c75b0a64369ba365dd89a172ff5222aebb69cbcde859324457dcac9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96a605be90dec079",
+    "reasoning_tokens": 2259,
+    "completion_tokens": 2363,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9141d8d83f0ae0731abc955f1bb38143a4b4ceb937285c79d05bb8d645443c3b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96a605be90dec079",
+    "reasoning_tokens": 2259,
+    "completion_tokens": 2363,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "(revised):**  \n*The Mona Lisa*  \nPainted by Leonardo da Vinci, this iconic portrait is one of the most studied and recognized artworks in the world. Created between 1503 and 1519, it is a masterpiece of the High Renaissance and a testament to the artist’s genius."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "(revised):**  \n*The Mona Lisa*  \nPainted by Leonardo da Vinci, this iconic portrait is one of the most studied and recognized artworks in the world. Created between 1503 and 1519, it is a masterpiece of the High Renaissance and a testament to the artist’s genius."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

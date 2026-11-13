@@ -1,0 +1,51 @@
+{
+  "cache_key": "0ff92f650772cbb408d590dab7127c1a688d443728a09a12a594b192484563cd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8fade144e3458114",
+    "reasoning_tokens": 4390,
+    "completion_tokens": 4486,
+    "prompt_tokens": 1323,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "07c2b8e14d06cc469542fb6b1db8fcc1b6d21fef3bc2ef780ed3d55c021b6b6a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8fade144e3458114",
+    "reasoning_tokens": 4390,
+    "completion_tokens": 4486,
+    "prompt_tokens": 1323,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone was patented in 1876 by Alexander Graham Bell, though Elisha Gray filed a similar patent the same day."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone was patented in 1876 by Alexander Graham Bell, though Elisha Gray filed a similar patent the same day."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

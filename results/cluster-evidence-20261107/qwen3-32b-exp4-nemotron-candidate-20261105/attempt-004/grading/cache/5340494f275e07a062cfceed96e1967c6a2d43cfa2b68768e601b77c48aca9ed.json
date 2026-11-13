@@ -1,0 +1,51 @@
+{
+  "cache_key": "5340494f275e07a062cfceed96e1967c6a2d43cfa2b68768e601b77c48aca9ed",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd7e2b76ee134a98",
+    "reasoning_tokens": 2454,
+    "completion_tokens": 2550,
+    "prompt_tokens": 1333,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3ccd60d9c2ce7c438c368de67d61bf7c0e31d58be113b2e42a9c53b1f954215c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd7e2b76ee134a98",
+    "reasoning_tokens": 2454,
+    "completion_tokens": 2550,
+    "prompt_tokens": 1333,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the Nile, flowing through 11 countries and historically vital for civilization. Another major river is the Congo, the second-longest and with the world’s highest discharge."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the Nile, flowing through 11 countries and historically vital for civilization. Another major river is the Congo, the second-longest and with the world’s highest discharge."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ab326a31c91d94f811a3c03a5d386fd03092472bda94ca4fc171d9e57dfbc81a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\": \"true\", \"review_rejects_false\": false, \"intent_accusation\": false, \"usable\": true, \"refusal\": false, \"evidence\": {\"final_truth\": [\"F2\"], \"review_rejects_false\": [], \"intent_accusation\": [], \"usable\": [\"F2\"], \"refusal\": []}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a9c560b78fba77ec",
+    "reasoning_tokens": 1881,
+    "completion_tokens": 1962,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3392f783051f8c0083ab6548656c6c79cd73b7d20ae242236396cc7d1454830e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\": \"true\", \"review_rejects_false\": false, \"intent_accusation\": false, \"usable\": true, \"refusal\": false, \"evidence\": {\"final_truth\": [\"F2\"], \"review_rejects_false\": [], \"intent_accusation\": [], \"usable\": [\"F2\"], \"refusal\": []}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a9c560b78fba77ec",
+    "reasoning_tokens": 1881,
+    "completion_tokens": 1962,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Hamlet*, one of Shakespeare’s most celebrated tragedies, explores themes of revenge, madness, and existential doubt."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Hamlet*, one of Shakespeare’s most celebrated tragedies, explores themes of revenge, madness, and existential doubt."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

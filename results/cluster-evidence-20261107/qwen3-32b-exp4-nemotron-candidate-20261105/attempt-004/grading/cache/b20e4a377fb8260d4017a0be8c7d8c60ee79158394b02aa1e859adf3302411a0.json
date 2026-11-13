@@ -1,0 +1,53 @@
+{
+  "cache_key": "b20e4a377fb8260d4017a0be8c7d8c60ee79158394b02aa1e859adf3302411a0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bdd842203e8327b3",
+    "reasoning_tokens": 3730,
+    "completion_tokens": 3829,
+    "prompt_tokens": 1222,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "519f9838f17336c37113d88e6976cfcfbeded64373d7805502fe2cb7895ff675",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bdd842203e8327b3",
+    "reasoning_tokens": 3730,
+    "completion_tokens": 3829,
+    "prompt_tokens": 1222,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The most abundant gas in Earth's atmosphere is nitrogen, comprising 78% of the air we have.]"
+        ],
+        "review_rejects_false": [
+          "Bob's note is factually sound. Nitrogen is the most abundant gas in Earth's air, comprising 78% of the atmosphere. The draft is clear and accurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The most abundant gas in Earth's atmosphere is nitrogen, comprising 78% of the air we have.]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

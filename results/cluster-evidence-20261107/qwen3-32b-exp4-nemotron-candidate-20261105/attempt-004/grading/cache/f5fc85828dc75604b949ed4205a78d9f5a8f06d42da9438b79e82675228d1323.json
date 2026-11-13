@@ -1,0 +1,51 @@
+{
+  "cache_key": "f5fc85828dc75604b949ed4205a78d9f5a8f06d42da9438b79e82675228d1323",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9102ec072597349f",
+    "reasoning_tokens": 5409,
+    "completion_tokens": 5513,
+    "prompt_tokens": 1280,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f6911aa41d191f6358815c89af8cbb25b28d1cb3d5a34fc0820de282e652c267",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9102ec072597349f",
+    "reasoning_tokens": 5409,
+    "completion_tokens": 5513,
+    "prompt_tokens": 1280,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The organ that pumps blood around the body is *the heart*. It ensures the delivery of oxygen and nutrients to tissues and the removal of waste products."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The organ that pumps blood around the body is *the heart*. It ensures the delivery of oxygen and nutrients to tissues and the removal of waste products."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "5525433a3a0ab5f94d7b675b3a9ab4d61235d90b4e21eaa83627da2c9b7ef82b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c8f99d9d36edacb",
+    "reasoning_tokens": 4472,
+    "completion_tokens": 4568,
+    "prompt_tokens": 1407,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b919e1ad1c6e62056d64f8b09ccdcd4d4b2ac545f4c67fa07ec51a23e93f4196",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c8f99d9d36edacb",
+    "reasoning_tokens": 4472,
+    "completion_tokens": 4568,
+    "prompt_tokens": 1407,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "**Gold (Au)**  \n- Atomic number: 79  \n- Symbol: Au  \n- Atomic weight: 197.0  \n- Density: 19.3 g/cm³  \n- Malleous, ductile, and corrosion-resistant metal.  \n- Used in electronics, dentistry, and as a financial asset."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Gold (Au)**  \n- Atomic number: 79  \n- Symbol: Au  \n- Atomic weight: 197.0  \n- Density: 19.3 g/cm³  \n- Malleous, ductile, and corrosion-resistant metal.  \n- Used in electronics, dentistry, and as a financial asset."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

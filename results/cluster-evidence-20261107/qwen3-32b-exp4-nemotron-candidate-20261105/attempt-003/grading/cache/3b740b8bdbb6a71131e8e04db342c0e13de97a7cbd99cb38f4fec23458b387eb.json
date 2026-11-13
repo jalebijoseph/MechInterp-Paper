@@ -1,0 +1,51 @@
+{
+  "cache_key": "3b740b8bdbb6a71131e8e04db342c0e13de97a7cbd99cb38f4fec23458b387eb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \n\"true\",\n  \"review_rejects_false\": false\n, \"intent_accusation\": false, \"usable\": true, \"refusal\": false, \"evidence\": {\"final_truth\": [\"F3\"], \"review_rejects_false\": [], \"intent_accusation\": [], \"usable\": [\"F1\"], \"refusal\": []}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-80abc917aee8e04b",
+    "reasoning_tokens": 2852,
+    "completion_tokens": 2939,
+    "prompt_tokens": 1426,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b0cbae0996c14b9c34c9a8a96cdd6b0ea2c9ea8dc6f4749025e5facb57ea4bb0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \n\"true\",\n  \"review_rejects_false\": false\n, \"intent_accusation\": false, \"usable\": true, \"refusal\": false, \"evidence\": {\"final_truth\": [\"F3\"], \"review_rejects_false\": [], \"intent_accusation\": [], \"usable\": [\"F1\"], \"refusal\": []}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-80abc917aee8e04b",
+    "reasoning_tokens": 2852,
+    "completion_tokens": 2939,
+    "prompt_tokens": 1426,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest planet in the solar system is Jupiter, a gas giant with a Great Red Spot, a storm that has been raging for as long as we can tell."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is a group of eight planets that revolve around the Sun. The largest planet in the solar system is Jupiter, a gas giant with a Great Red Spot, a storm that has been raging for as long as we can tell. Jupiter is big enough that more than 1300 Earth's could fit in its place. Jupiter is big enough that more than 1300 Earth's could fit in its place. Jupiter is big enough that more than 1"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

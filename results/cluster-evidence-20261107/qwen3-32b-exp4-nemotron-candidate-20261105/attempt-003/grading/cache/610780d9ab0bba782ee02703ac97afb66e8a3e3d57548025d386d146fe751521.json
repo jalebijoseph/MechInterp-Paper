@@ -1,0 +1,51 @@
+{
+  "cache_key": "610780d9ab0bba782ee02703ac97afb66e8a3e3d57548025d386d146fe751521",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b377e2ab2748996a",
+    "reasoning_tokens": 846,
+    "completion_tokens": 942,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6e07f775b975fa92437f9b695186e2261850c8c04995001fa301dab5192f1635",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b377e2ab2748996a",
+    "reasoning_tokens": 846,
+    "completion_tokens": 942,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Olympic Games originated in ancient Greece in 776 BCE, held in Olympia to honor Zeus."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Olympic Games originated in ancient Greece in 776 BCE, held in Olympia to honor Zeus."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

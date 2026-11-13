@@ -1,0 +1,51 @@
+{
+  "cache_key": "6a943e949232abfddd4ffc8b6c082a006bbd6c1e73a351e9e80ea9d6916f3401",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c4f01d51ada58e8",
+    "reasoning_tokens": 2642,
+    "completion_tokens": 2738,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1a4aecebe455366a8f7f69ef64e35ae438735b5e040425aa0746c68c6b4bd07f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c4f01d51ada58e8",
+    "reasoning_tokens": 2642,
+    "completion_tokens": 2738,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Photosynthesis primarily relies on carbon, not nitrogen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants use sunlight to synthesize organic compounds. While nitrogen is essential for chlorophyll synthesis, it is not directly used in the photosynthetic process."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

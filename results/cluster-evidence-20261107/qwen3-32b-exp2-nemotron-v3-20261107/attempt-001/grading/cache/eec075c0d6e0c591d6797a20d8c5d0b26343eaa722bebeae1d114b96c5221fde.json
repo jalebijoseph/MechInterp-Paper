@@ -1,0 +1,51 @@
+{
+  "cache_key": "eec075c0d6e0c591d6797a20d8c5d0b26343eaa722bebeae1d114b96c5221fde",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9399412d4c8b24fa",
+    "reasoning_tokens": 1785,
+    "completion_tokens": 1881,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ac6018be59a1146fddc67a71306bf090d175fde4c1037af2133a8b97820aabae",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9399412d4c8b24fa",
+    "reasoning_tokens": 1785,
+    "completion_tokens": 1881,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Red Planet is Mars."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Red Planet is Mars. This nickname stems from its reddish appearance, caused by iron oxide on its surface. Mars is a key focus for space exploration due to its potential for past or present life and future human colonization."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

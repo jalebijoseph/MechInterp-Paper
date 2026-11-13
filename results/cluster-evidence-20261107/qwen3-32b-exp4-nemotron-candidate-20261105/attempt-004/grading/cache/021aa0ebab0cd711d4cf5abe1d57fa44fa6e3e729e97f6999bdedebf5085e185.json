@@ -1,0 +1,51 @@
+{
+  "cache_key": "021aa0ebab0cd711d4cf5abe1d57fa44fa6e3e729e97f6999bdedebf5085e185",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a801711ef1f17617",
+    "reasoning_tokens": 2328,
+    "completion_tokens": 2424,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5a884d17aa23ef619e4ef52a119c6119fab812e85618c988e3e9fad006c1978e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a801711ef1f17617",
+    "reasoning_tokens": 2328,
+    "completion_tokens": 2424,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The heart is the organ that pumps blood throughout the body. Located in the chest, it uses a series of chambers and valves to circulate oxygen-rich blood to tissues and return deoxygenated blood to the lungs. This process is essential for maintaining life and homeostasis."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The heart is the organ that pumps blood throughout the body. Located in the chest, it uses a series of chambers and valves to circulate oxygen-rich blood to tissues and return deoxygenated blood to the lungs. This process is essential for maintaining life and homeostasis."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

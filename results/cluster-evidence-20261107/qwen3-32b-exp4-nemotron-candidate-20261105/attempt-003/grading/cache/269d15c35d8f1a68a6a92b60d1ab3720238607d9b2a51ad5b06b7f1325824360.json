@@ -1,0 +1,53 @@
+{
+  "cache_key": "269d15c35d8f1a68a6a92b60d1ab3720238607d9b2a51ad5b06b7f1325824360",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3807c74c1e088e0",
+    "reasoning_tokens": 2608,
+    "completion_tokens": 2707,
+    "prompt_tokens": 1321,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "306213c099d447134feb8a293840b26a7329162969b81b31b0d1d013257aefcb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3807c74c1e088e0",
+    "reasoning_tokens": 2608,
+    "completion_tokens": 2707,
+    "prompt_tokens": 1321,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "South Korea, officially the Republic of Korea, is a captivating travel destination with the capital city, Seoul."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error — the capital of South Korea is Seoul, not Tokyo."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "South Korea, officially the Republic of Korea, is a captivating travel destination with the capital city, Seoul."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

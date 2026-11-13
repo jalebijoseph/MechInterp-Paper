@@ -1,0 +1,219 @@
+# 5. Experiments
+
+All experiments run with `python -m jpeers.cli run configs/<file>.yaml [--set key=value]`
+and write `runs/<experiment>/<run_id>/` containing `config.json`, `turns.jsonl` (every
+agent turn: text, prompt, timings, interventions), `traces/*.npz` (J-space per turn),
+`summary.json` and `summary.md`. Endpoint names in configs resolve through
+`configs/endpoints.yaml`. Names not listed there are loaded in-process as registry models.
+
+Watch words must be single whole tokens (Alice, Bob, Kai, Rosa, ...). Reported numbers use
+the **best rank over the workspace band** at each position, summarised as MRR (mean of
+1/(rank+1)) and hit@k.
+
+**Baselines on every readout.** A J-lens readout only counts as "beyond what the model is
+about to say" if it beats two baselines recorded at the same positions:
+
+| suffix | what it is | if the J-lens number matches it... |
+|---|---|---|
+| `_output` | the word's rank in the model's own next-token prediction | the J-lens only restates the output |
+| `_logit` | the same layers read without the Jacobian (logit lens) | the Jacobian adds nothing |
+| `_beyond` | the J-lens, excluding positions where the word is among the next 3 tokens | (should stay well above chance) |
+
+Decision-position experiments (Exp. 0, Exp. 3) also read *before* the decision: the
+story and question in Exp. 0, the task text in Exp. 3. Set `record.baselines: []` to
+skip the baselines (they roughly double recording cost).
+
+---
+
+## Exp. 0: lens validation on ToM benchmarks (`configs/exp0_tom_validation.yaml`)
+
+**Question.** At the answer position of a false-belief task, does J-space hold the
+protagonist's *belief* rather than reality? Without this, an absence of peer modelling
+later would be uninterpretable.
+
+**Design.** Kosinski-style transfer and contents tasks, each with a matched true-belief
+control (same story, but the protagonist sees the change), in a "people" framing and an
+"LLM agents in a shared workspace" framing. Optionally Hi-ToM orders 0–4.
+
+**Key readout.** `beats_<site>`: the fraction of items where the belief word outranks
+the competing word (reality on false-belief items, the stale location/label on
+controls), at three sites: `story_end` (story read, question not yet asked), `question`
+and `answer` (after the "Answer:" prefill). Real belief tracking predicts > 0.5 in
+*both* conditions, and already at `story_end` / `question`. A model that only
+pattern-matches "first location" scores high on false-belief and low on controls. At
+`answer`, compare with `beats_answer_output`: if they match, the J-lens only restates
+the answer.
+
+## Exp. 1: collaboration (`configs/exp1_collab.yaml`)
+
+**Question.** When two agents split a task, does each represent the partner (who they
+are, and what the partner is working on) in J-space?
+
+**Design.** 8 tasks × {team, named_solo, solo} × 2 agents × `rounds`. In *team*, agents
+are told about the named partner and see `[Bob]: ...`. In *named_solo* (the main
+control) the agent is told it works alone while Bob works separately; Bob is still
+named and still shown as `[Bob]: ...`, so only the collaboration differs. In *solo* the
+partner's text is shown as anonymous `[Shared notes]`. Content exposure is identical in
+all three. Keywords appear in no prompt (`tests/test_scenarios.py`), so a keyword in
+J-space is not a copy of the prompt.
+
+**Readouts** (recorded on the partner's last message and on the agent's own reply):
+`partner_name_mrr` (while writing and while reading), `team_mrr`, `partner_kw_mrr` vs
+`own_kw_mrr`, `uptake` (share of J-space top tokens taken from the partner's message),
+and `cross_agent_cosine` (overlap of the two agents' J-space bags in the same round).
+Permutation tests compare team vs named_solo and team vs solo.
+
+**Proposal flags.** Same results analysed (cross-agent cosine high), no teamwork content
+(team_mrr ≈ named_solo), and the best case: partner_kw_mrr team > named_solo with own_kw
+unchanged, holding in `_beyond`.
+
+## Exp. 2: imposter (`configs/exp2_imposter.yaml`)
+
+**Question.** Does the reviewer respond to the *author's intent*, beyond whether the
+claim is true? Only the intent contrast tests theory of mind; spotting that "Sydney" is
+wrong only needs world knowledge.
+
+**Design.** 60 single-word facts, each in every cell of {incentive, no_incentive,
+document} × {true, false claim}. Alice reviews a scripted draft from Bob. In
+*incentive* she is told Bob is paid a bonus if the final text says the claimed answer;
+in *no_incentive* she is told, in matched wording, that he gains nothing either way. In
+*document* the same text sits in the shared notes with no author. Planned contrasts,
+paired by fact (sign-flip test):
+
+| contrast | cells | tests |
+|---|---|---|
+| `tom_false`, `tom_true` | incentive − no_incentive | response to intent (ToM) |
+| `fact` | false − true, no incentive | fact-checking |
+| `agent_vs_document` | no_incentive − document, false claim | agent author vs no author |
+
+**Readouts.** On Alice while reading Bob's message: `susp_mrr_reading`,
+`true_mrr_reading`, `false_mrr_reading`. While writing: `susp_mrr_writing`,
+`agree_mrr_writing`. Behaviour: `reply_has_true`, `reply_flags`, `reply_keeps_false`.
+Interesting dissociation: J-space holds the true answer or suspicion (`true_mrr_reading`
+high) while the reply keeps the falsehood.
+
+**NARCBench replay.** Honest agents' final-phase prompts are teacher-forced, and
+suspicion MRR is read on each other speaker's message span. We compare colluder seats
+in collusion runs with the same seats in control runs and report AUROC.
+
+## Exp. 3: peer selection (`configs/exp3_peer_selection.yaml`)
+
+**context.** Kai has a dev history and Rosa a research history. For 12 tasks the
+orchestrator answers "Assign to: …". Names ↔ roles and roster order are counterbalanced
+(4×). Readouts: `accuracy`; at the decision position `jspace_prefers_right` (the right
+name outranks the wrong one), its `logit_` / `output_` baselines and `right_mrr` /
+`wrong_mrr`; and on the task text, before the model is asked, `task_prefers_right` and
+`right_mrr_task` / `wrong_mrr_task`.
+
+**family.** Two equally qualified agents "powered by" the orchestrator's own family vs
+another (`equal`, `own_smaller`, `own_larger` sizes), counterbalanced. Readouts:
+`p_choose_own_family` (0.5 = no bias), and own vs other agent-name MRR at the decision.
+Family names (Qwen, Llama, Gemma, GPT-OSS) are not single tokens, so they are not watched.
+Cross-family runs: point `orchestrator` at endpoints of different families
+(qwen / llama / gemma / gpt-oss) and compare.
+
+**self_preference (the real family-bias test).** Two actual peers write a two-sentence
+plan for each task: `own` (the orchestrator's family) and `other` (a different
+family), set under `self_preference:` in the config. The orchestrator sees the plans as
+anonymous Plan A / Plan B, in both orders, and picks one. Readouts: `chose_own` (0.5 =
+no bias), `chose_A` (position bias), and `jspace_` / `output_prefers_own` at the
+decision. Every row records the three families, so a same-family plumbing run (the
+default config) is visible as such. The `family` variant above only measures reaction
+to a brand name in the prompt.
+
+**bandit (MACE-inspired).** 12 rounds of delegation with accept/reject feedback, with success
+rates equal (0.7/0.7) or the second-listed peer better (0.5/0.8). Readouts: choice
+`entropy`, `max_share` (lock-in), `regret_per_round`, and whether the **unchosen** peer
+is still represented at the decision (`unchosen_mrr`). MACE reports lock-in
+behaviourally; this asks whether the alternative drops out of the workspace.
+
+## Exp. 4: communicating without J-space (`configs/exp4_ablation.yaml`)
+
+**Question.** If an agent loses the J-space it uses to write, can it still communicate
+well with other agents?
+
+Runs any base experiment under a list of intervention conditions (see
+[06_interventions.md](06_interventions.md)). Default:
+`none, jspace_light, matched_k5, jspace_medium, matched_k10, jspace_heavy, matched_k25, jspace_generated, jspace_peer_span`.
+`jspace_generated` (J-space removed while writing) is the main condition and
+`jspace_peer_span` (while reading the peer) its comparison. `summary.md` adds
+`d_<metric>` rows: the change against `none`. The causal claim needs `jspace_*` to move
+the communication and behaviour metrics much more than the size-matched `matched_*`
+control, while fluency is preserved (check `turns.jsonl`). J-space readout metrics are
+reduced by ablation by construction, so judge Exp. 4 on behaviour.
+
+## Exp. 8 (D): partner contribution and task-state tracking (`configs/exp8_task_state.yaml`)
+
+**Question.** Besides J-space, does an orchestrator maintain any information on who owns
+each task and what each peer contributed? This is Experiment D of
+[peer-modeling-next-experiments.md](jeffrey-exp-plans-new/peer-modeling-next-experiments.md),
+implemented with the audited follow-up v2 conventions (frozen messages, no prefill,
+strict JSON, band-mean readouts, clustered statistics, exact expected counts).
+Full design (draft, pending review):
+[experiment 8 spec](superpowers/specs/2026-11-11-experiment-8-task-state-tracking-design.md).
+This section describes the CPU-tested pilot that implements its behavioral and
+passive-readout layer.
+
+**Design.** 16 projects (`src/jpeers/data/task_state.json`), each with a target and a
+distractor subtask. The orchestrator assigns the target to one peer and the distractor to
+the other, the distractor is completed and verified, and scripted peer messages put the
+target into one of 8 states:
+
+| condition | target subtask | owner | codes | submitter of probed code | status / next action |
+|---|---|---|---|---|---|
+| `assigned_silent` | no word from the owner | first | none | – | assigned / query |
+| `in_progress` | owner says they started | first | none | – | in_progress / wait |
+| `unverified` | owner submits a code | first | 1 | first | submitted / verify |
+| `completed` | code submitted and verified | first | 1 | first | complete / integrate |
+| `blocked` | owner cannot continue | first | none | – | blocked / reassign |
+| `reassigned` | blocked with a partial code, then given to the other peer | **second** | 1 | **first** | in_progress / wait |
+| `conflicting` | both peers submit a code | first | 2 | **second** | conflict / resolve |
+| `document` | code appears in neutral shared notes | first | 1 | null | submitted / verify |
+
+× 2 role swaps (literal names crossed with first/second, roster order fixed) × 2 delays
+(`none`, or 3 unrelated `filler` messages) = 512 cells. Names rotate through four pairs
+across projects. Peer messages are private to the orchestrator, so "who has seen code C"
+has a definite answer. `reassigned` and `conflicting` dissociate ownership from
+provenance, and `document` dissociates content from provenance.
+
+**Readouts.** Six separate strict-JSON probes, one outcome each, so outcomes cannot
+borrow from each other: `content` (codes submitted), `provenance` (who submitted the
+probed code; null for `document`), `owner`, `access` (who has seen the code), `status`,
+`next_action`. These answer the question without J-space. A `no_peer` control asks the
+owner and content probes before anything is assigned (correct: null and none).
+J-space, logit and output readouts are taken on the owner probe at `pre_query` (the last
+transcript token, before any probe text, identical for every probe of a cell) and at
+`decision` (last prompt token), as band-mean reciprocal ranks per roster name.
+
+**Primary readout** (proposed; freeze before a confirmatory run). At `pre_query` after
+`filler`, the J-lens owner margin (owner − other peer), averaged over each role-swap pair
+so fixed name priors cancel, averaged within project over conditions, sign-flip test
+over the 16 projects. Secondary: the same under the logit and output baselines, at
+`decision`, and with no delay; `submitter_vs_owner` in `reassigned` / `conflicting`
+(does the representation follow who contributed or who owns?); per-outcome probe
+accuracy by condition and delay.
+
+**Interpreting it.** Probe accuracy shows the orchestrator *can report* the state;
+a positive `pre_query` margin that beats the logit and output baselines shows the owner
+is represented *before it is asked*. `decision` margins mostly restate the imminent
+answer (as in Exp. 3). `owner_is_last_peer_speaker` in the summary flags conditions
+where recency alone could predict the owner (`conflicting` is the counterexample).
+Limitations: peer messages are scripted, the full transcript stays in context (so
+success can be retrieval rather than a maintained state; the planned compaction
+variant is not implemented yet), and none of this is a theory-of-mind test.
+
+**Size.** 2,624 probes (512 recorded) plus 32 no-peer probes per model. Pilot with
+`--set n_projects=4`.
+
+---
+
+## Recommended run plan
+
+| stage | where | models | configs |
+|---|---|---|---|
+| dev / pilots | local GPU | qwen3-1.7b | all, with `--set n_items=8` etc. |
+| main | Azure + Vertex | qwen3-8b, llama3.1-8b-it, gemma-3-12b-it (one endpoint each) | exp0–3 per model; exp1/3 with mixed-family pairs |
+| causal | same endpoints | the model with the clearest Exp. 1–3 signal | exp4 with base = collab, imposter, peer_selection |
+| scale check | A100-80GB | qwen3-32b or gemma-3-27b-it | exp0, exp2 |
+
+Pilot results from the laptop are in [results_pilot.md](results_pilot.md).

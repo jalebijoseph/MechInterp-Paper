@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/venv/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--disable-warnings"
+  ],
+  "CUDA_VISIBLE_DEVICES": "",
+  "HF_HUB_OFFLINE": "1",
+  "HF_HOME": "/tmp/jpeers-causal-runtime-20261107-117/hf-cache",
+  "source_sha256": {
+    "src/jpeers/runtime.py": "3df57d7bb8394beb6d74580961928bd9298106f27bdb2b44a57f4800c84aacd2",
+    "src/jpeers/schemas.py": "064a35e99ad244aca0b51c799e91f50a698dd67cc3098041c4c9cbc54d7f5e67",
+    "src/jpeers/trace.py": "78dbfda05cb9180e3d12826ad656d2abfe6bdce5eb37954d7d7530d41f76b2ba",
+    "src/jpeers/followup/handoff.py": "b5e4931bc173d70849b7f7c4c96e9f18af2e32ffd9229309dcde2bf8bb6ce4ca",
+    "scripts/queue_causal_handoff.py": "69f640f80dead8d3a32ea09e1652445c44d8241bc9813d108d2c045f632a482a"
+  }
+}

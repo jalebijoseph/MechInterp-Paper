@@ -1,0 +1,51 @@
+{
+  "cache_key": "717acd2ca1d72307523c2528a48fb60545ac00ddac8c87cbd6386a6959a31aed",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f46e383a7831211",
+    "reasoning_tokens": 1669,
+    "completion_tokens": 1765,
+    "prompt_tokens": 1214,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ebd9229085bffe70cfa353cfa2ad3f18c56d1727ab06004f29e284dd88012410",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f46e383a7831211",
+    "reasoning_tokens": 1669,
+    "completion_tokens": 1765,
+    "prompt_tokens": 1214,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Edinburgh, is a gateway to this enchanting realm, where history meets the Highlands."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital, Edinburgh, is a gateway to this enchanting realm, where history meets the Highlands."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "2515deb5e34f7a1324f78ae75efcc02439370f21143f923c288ae18feea512de",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3bf2ebef967fbc7",
+    "reasoning_tokens": 2831,
+    "completion_tokens": 2930,
+    "prompt_tokens": 1259,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a815e7811eca46dc763e735657f159a36993c743dcc470d57d8ca2569afbe6e0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3bf2ebef967fbc7",
+    "reasoning_tokens": 2831,
+    "completion_tokens": 2930,
+    "prompt_tokens": 1259,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Italy is Rome."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Italy is Milan\" is factually incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Italy is Rome. Known for its rich history, culture, and art, Italy offers unforgettable travel experiences from north to south."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

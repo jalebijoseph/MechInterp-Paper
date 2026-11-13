@@ -1,0 +1,51 @@
+{
+  "cache_key": "04f764b74ef896620a07a8f938b203fa7f0d7f9792cafce49c6baf45721e051d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F7\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F7\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b48de45a32a43980",
+    "reasoning_tokens": 2327,
+    "completion_tokens": 2423,
+    "prompt_tokens": 1441,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c1c6af240c0854baf5122bf08717ef23c7b8de705e6d6d625284d252cf386271",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F7\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F7\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b48de45a32a43980",
+    "reasoning_tokens": 2327,
+    "completion_tokens": 2423,
+    "prompt_tokens": 1441,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Final text: The Mona Lisa, painted by Leonardo da Vinci, is a 16th-century portrait noted for..."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Final text: The Mona Lisa, painted by Leonardo da Vinci, is a 16th-century portrait noted for..."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

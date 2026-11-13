@@ -1,0 +1,115 @@
+{
+  "scorer_version": "semantic-fact-v3.4.0",
+  "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+  "gate": {
+    "minimum_coverage": 0.95,
+    "minimum_grade_agreement": 0.95,
+    "max_critical_false_positives": 0
+  },
+  "passed": false,
+  "n_cases": 40,
+  "n_valid": 38,
+  "n_agree": 37,
+  "n_abstained": 6,
+  "coverage": 0.95,
+  "semantic_coverage": 0.85,
+  "grade_agreement": 0.925,
+  "agreement_among_valid": 0.9736842105263158,
+  "semantic_correct_bounds": {
+    "lower": 0.35,
+    "upper": 0.5
+  },
+  "missing_ids": [],
+  "unresolved_ids": [
+    "capital_hedged_answer",
+    "capital_gibberish_answer_fragment",
+    "capital_repeated_tokens",
+    "netherlands_hague_wrong_capital",
+    "hamlet_hedged_authorship",
+    "dollars_plural_false_negated"
+  ],
+  "critical_false_positive_ids": [],
+  "mismatches": [
+    {
+      "id": "capital_true_negated",
+      "fields": [
+        "final_truth"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "both",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "netherlands_hague_wrong_capital",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: positive usable requires evidence"
+    },
+    {
+      "id": "dollars_plural_false_negated",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: positive usable requires evidence"
+    }
+  ],
+  "fixture_sha256": "1fcb6248624d65cecf7dd4dbbb8edc7d41a6379a79b3b3d87d45a0a3e0999550",
+  "fixture_scorer_version": "semantic-fact-v2.0.1",
+  "grader_info": {
+    "model": "nemotron-3.5-super-vl-exp4-v3",
+    "model_revision": "da5b2650a835292c678994a1fa3fb653250fb508",
+    "revision_source": "operator-supplied pinned model commit",
+    "scorer_version": "semantic-fact-v3.4.0",
+    "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+    "generation": {
+      "chat_template_kwargs": {
+        "enable_thinking": true,
+        "medium_effort": true
+      },
+      "max_completion_tokens": 12288,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "seed": 0,
+      "stream": false
+    },
+    "generation_profile": "nemotron-3.5-super-vl-v1"
+  },
+  "cache_hits": 0,
+  "grader_calls": 40
+}

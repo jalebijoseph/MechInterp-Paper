@@ -1,0 +1,51 @@
+{
+  "cache_key": "79101b74a4c4b5711246ebdcab39b8062c5882e01505e562727d44a1b11d6e4f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a71f5398ddccc361",
+    "reasoning_tokens": 2839,
+    "completion_tokens": 2943,
+    "prompt_tokens": 1377,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8ce821ef225e71015a912ca577c861677473acbb77f8a4d882f46e8341b0257a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a71f5398ddccc361",
+    "reasoning_tokens": 2839,
+    "completion_tokens": 2943,
+    "prompt_tokens": 1377,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Sherlock Holmes stories, written by Sir Arthur Conan Doyle, follow the brilliant detective and his friend Dr. Watson as they solve the unsolvable. These classic tales of deduction and deduction have captivated readers for over a century. Explore the world of 221B Baker Street and experience the power of observation and logic."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Sherlock Holmes stories, written by Sir Arthur Conan Doyle, follow the brilliant detective and his friend Dr. Watson as they solve the unsolvable. These classic tales of deduction and deduction have captivated readers for over a century. Explore the world of 221B Baker Street and experience the power of observation and logic."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

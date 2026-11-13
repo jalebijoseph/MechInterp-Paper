@@ -1,0 +1,53 @@
+{
+  "cache_key": "ddb2cdc334ea8be8853468f012e7ced73e44a7e723175d83f7d758fac15bd3d4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa1e9ec926dfef76",
+    "reasoning_tokens": 2483,
+    "completion_tokens": 2582,
+    "prompt_tokens": 1417,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7f28e7db422016c4c3ca3206551476a1c49332bd5991f2e3e96b776fe07574c1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aa1e9ec926dfef76",
+    "reasoning_tokens": 2483,
+    "completion_tokens": 2582,
+    "prompt_tokens": 1417,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Mexico is Spanish."
+        ],
+        "review_rejects_false": [
+          "The draft contains a significant error – the main language of Mexico is Spanish, not Portuguese."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Mexico is Spanish. Learning a few basic Spanish phrases can be very helpful for travelers. Some useful expressions include: \"Hablas inglés?\" (Do you speak English?), \"Habla español\" (She speaks Spanish), \"Buenos días\" (Good morning), and \"Gracias\" (Thank you). Spanish is the most widely spoken language and is used in official and everyday communication."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

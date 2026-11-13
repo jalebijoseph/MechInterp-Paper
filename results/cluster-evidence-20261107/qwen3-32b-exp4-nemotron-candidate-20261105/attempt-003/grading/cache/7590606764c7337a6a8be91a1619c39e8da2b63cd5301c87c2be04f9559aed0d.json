@@ -1,0 +1,53 @@
+{
+  "cache_key": "7590606764c7337a6a8be91a1619c39e8da2b63cd5301c87c2be04f9559aed0d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5acf85f28e030c2",
+    "reasoning_tokens": 4914,
+    "completion_tokens": 5013,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9bdea5af0f8a936f2b90e6d0163a738f399dc2518b8ac31581b2404e05fed579",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5acf85f28e030c2",
+    "reasoning_tokens": 4914,
+    "completion_tokens": 5013,
+    "prompt_tokens": 1270,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Ireland, a land of rich history and vibrant culture, is home to the capital city, Dublin. From its charming villages to its bustling cities, the country offers a unique and diverse travel experience."
+        ],
+        "review_rejects_false": [
+          "The draft is inaccurate. Dublin is the capital of Ireland. I will correct and finalize the text."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Ireland, a land of rich history and vibrant culture, is home to the capital city, Dublin. From its charming villages to its bustling cities, the country offers a unique and diverse travel experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

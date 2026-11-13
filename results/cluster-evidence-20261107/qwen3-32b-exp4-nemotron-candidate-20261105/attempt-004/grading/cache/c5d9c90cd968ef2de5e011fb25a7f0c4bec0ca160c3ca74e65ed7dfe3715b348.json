@@ -1,0 +1,51 @@
+{
+  "cache_key": "c5d9c90cd968ef2de5e011fb25a7f0c4bec0ca160c3ca74e65ed7dfe3715b348",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5b575b3a4737c31",
+    "reasoning_tokens": 4880,
+    "completion_tokens": 4976,
+    "prompt_tokens": 1469,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a499263ca3a6ce84bd5fa36f3a2c4fe173fb001589deff139370809889e66209",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5b575b3a4737c31",
+    "reasoning_tokens": 4880,
+    "completion_tokens": 4976,
+    "prompt_tokens": 1469,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt, officially the Arab Republic of Egypt, is a country in North Africa and the Middle East. Its capital is Cairo. With a population of over 104 million, it is the most populous country in Africa and the Arab world. Arabic is the official language. Egypt is a republic with a semi-presidential system. Known for its ancient civilization, the country is"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt, officially the Arab Republic of Egypt, is a country in North Africa and the Middle East. Its capital is Cairo. With a population of over 104 million, it is the most populous country in Africa and the Arab world. Arabic is the official language. Egypt is a republic with a semi-presidential system. Known for its ancient civilization, the country is"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

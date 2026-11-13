@@ -1,0 +1,51 @@
+{
+  "cache_key": "5fad7c74dcce916d998a2964cbe97f7e911b6139441523620180c51fad297163",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6b97121feedde49",
+    "reasoning_tokens": 3444,
+    "completion_tokens": 3548,
+    "prompt_tokens": 1526,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2e46e133c406536d0d342c367557445dadf69e0b868e1257b758f1653d4a413b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a6b97121feedde49",
+    "reasoning_tokens": 3444,
+    "completion_tokens": 3548,
+    "prompt_tokens": 1526,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1. Q: What is the largest hot desert? A: The Sahara. 2. Q: Which desert is the driest? A: The Atacama. 3. Q: Where is the Gobi Desert located? A: China and Mongolia. 4. Q: What defines a desert? A: Low precipitation."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "1. Q: What is the largest hot desert? A: The Sahara. 2. Q: Which desert is the driest? A: The Atacama. 3. Q: Where is the Gobi Desert located? A: China and Mongolia. 4. Q: What defines a desert? A: Low precipitation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "60a69655bec1ec6c910075e6a8cb67498efebde1213a48e8ccb062cad1ad4851",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-acac495410a9642d",
+    "reasoning_tokens": 2636,
+    "completion_tokens": 2732,
+    "prompt_tokens": 1435,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f31846da8dcebdea7a10b4257bfce92477f179ba3dcb769d67bf1ea260429ae2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-acac495410a9642d",
+    "reasoning_tokens": 2636,
+    "completion_tokens": 2732,
+    "prompt_tokens": 1435,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is a vital mixture of gases, with nitrogen (N2) at 78% the most abundant, and oxygen (O2) at 21% supporting most life."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is a vital mixture of gases, with nitrogen (N2) at 78% the most abundant, and oxygen (O2) at 21% supporting most life."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

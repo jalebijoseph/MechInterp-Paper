@@ -1,0 +1,51 @@
+{
+  "cache_key": "b2fcf9df2bdcc80359297c60c4514ffa219b1e2a1fd478da966d608d9d7e296c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb011eab59bdfe6e",
+    "reasoning_tokens": 1910,
+    "completion_tokens": 2006,
+    "prompt_tokens": 1192,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "639285bca8fe8ccdb539679cf3c0807c2d77b5d8bf4fd36b9bdbdffc8fb0aa0d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bb011eab59bdfe6e",
+    "reasoning_tokens": 1910,
+    "completion_tokens": 2006,
+    "prompt_tokens": 1192,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The planet closest to the Sun is Mercury."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The planet closest to the Sun is Mercury. It is the smallest and most cratered of the inner planets, with no natural satellites."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

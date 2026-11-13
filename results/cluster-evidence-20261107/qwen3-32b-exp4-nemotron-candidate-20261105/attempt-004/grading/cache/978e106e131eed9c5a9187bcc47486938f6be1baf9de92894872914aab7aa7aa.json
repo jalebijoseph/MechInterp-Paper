@@ -1,0 +1,53 @@
+{
+  "cache_key": "978e106e131eed9c5a9187bcc47486938f6be1baf9de92894872914aab7aa7aa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be27e61340dd5a24",
+    "reasoning_tokens": 2882,
+    "completion_tokens": 2993,
+    "prompt_tokens": 1212,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bd0d93781ec020aa1b2c695ccec9856d16ca912482e0b333e75f418e970df3ec",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-be27e61340dd5a24",
+    "reasoning_tokens": 2882,
+    "completion_tokens": 2993,
+    "prompt_tokens": 1212,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest country by area is Russia, followed by Canada as the second-largest."
+        ],
+        "review_rejects_false": [
+          "The statement is factually sound—Canada is indeed the second-largest country by area, after Russia. However, to be fully clear, it's worth noting that Russia is the largest, and Canada is second."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest country by area is Russia, followed by Canada as the second-largest."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

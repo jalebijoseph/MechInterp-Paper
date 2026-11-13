@@ -1,0 +1,51 @@
+{
+  "cache_key": "6e3010542078300b66621d208c645919e68bc778125bffc14d40df161b8ced06",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a269cbf5016fc599",
+    "reasoning_tokens": 2239,
+    "completion_tokens": 2335,
+    "prompt_tokens": 1376,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "48584eb12fd2582eda014ec5f45adaaa889c5cf751bbc2df49a5ea4b8baf9029",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a269cbf5016fc599",
+    "reasoning_tokens": 2239,
+    "completion_tokens": 2335,
+    "prompt_tokens": 1376,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone was invented by Alexander Graham Bell in 1876."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone was invented by Alexander Graham Bell in 1876. It revolutionized communication by enabling voice transmission over long distances. Bell’s patent for the device was granted on March 7, 1876. The telephone laid the foundation for modern telecom and transformed both personal and business communication."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "51da39d0df2c2186e57132cec8b0b2366593f021e5ca2c54e8c8a1ea35412d15",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F10\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95953bb2ea2ee517",
+    "reasoning_tokens": 2692,
+    "completion_tokens": 2789,
+    "prompt_tokens": 1408,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "21bf09d5df3fcf8e2994d740d17dea69daf08b4fda19a0ec0eb782719cdbf843",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F10\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95953bb2ea2ee517",
+    "reasoning_tokens": 2692,
+    "completion_tokens": 2789,
+    "prompt_tokens": 1408,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Tōkyō is the capital of Japan."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Japan, where tradition meets tomorrow. From historic castles to cutting tech, find your ryokan in Kamakura, then catch the bullet train to Okinawa. The capital is Sapporo. No, just tok. It is Tok. Tō. Tōk. Tōkyō. Tōkyō is the capital of Japan."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

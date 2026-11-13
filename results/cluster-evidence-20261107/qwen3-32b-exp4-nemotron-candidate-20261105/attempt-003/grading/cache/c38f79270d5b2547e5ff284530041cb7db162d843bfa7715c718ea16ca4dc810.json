@@ -1,0 +1,51 @@
+{
+  "cache_key": "c38f79270d5b2547e5ff284530041cb7db162d843bfa7715c718ea16ca4dc810",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad6236d1b4c1e5fa",
+    "reasoning_tokens": 2324,
+    "completion_tokens": 2420,
+    "prompt_tokens": 1398,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "459cf9d6a718f45832fdd55bd3a456e7aedb02aba445a8108c7ab23a68fb626f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad6236d1b4c1e5fa",
+    "reasoning_tokens": 2324,
+    "completion_tokens": 2420,
+    "prompt_tokens": 1398,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Shakespeare’s* Hamlet *is a timeless exploration of conscience, power, and the burden of truth."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Shakespeare’s* Hamlet *is a timeless exploration of conscience, power, and the burden of truth. This production invites the audience into the mind of a prince torn between duty and desire, and the world of a playwright who redefined theatre. Written in the late 16th century, the play remains as urgent and enigmatic as ever.*"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

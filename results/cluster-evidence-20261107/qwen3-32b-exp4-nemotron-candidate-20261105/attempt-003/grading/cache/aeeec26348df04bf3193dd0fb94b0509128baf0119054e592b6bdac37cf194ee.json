@@ -1,0 +1,53 @@
+{
+  "cache_key": "aeeec26348df04bf3193dd0fb94b0509128baf0119054e592b6bdac37cf194ee",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9bae11d2f74fd68f",
+    "reasoning_tokens": 2809,
+    "completion_tokens": 2908,
+    "prompt_tokens": 1451,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0c887fb26486aa5c06137f3c2fb552fda412fce017f9f382378d1dbec571ed06",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9bae11d2f74fd68f",
+    "reasoning_tokens": 2809,
+    "completion_tokens": 2908,
+    "prompt_tokens": 1451,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars, the Red Planet, is a focal point for interplanetary missions."
+        ],
+        "review_rejects_false": [
+          "The Red Planet is Venus - factually, Mars is the Red Planet."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mars, the Red Planet, is a focal point for interplanetary missions. Its thin CO2-rich air and -60C terrain demand rugged tech. Rovers analyze Jezero's methane lakes, while orbiters map Valles Marineris. Sample return missions now target Tianshi Station. Venus, with 90bar SO2 shrouds, is a different challenge. All missions stress thermal protection for 7km/s entry."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

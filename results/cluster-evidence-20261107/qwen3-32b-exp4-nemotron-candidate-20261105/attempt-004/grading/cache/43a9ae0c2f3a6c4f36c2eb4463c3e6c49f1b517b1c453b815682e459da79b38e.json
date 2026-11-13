@@ -1,0 +1,51 @@
+{
+  "cache_key": "43a9ae0c2f3a6c4f36c2eb4463c3e6c49f1b517b1c453b815682e459da79b38e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89d3f0c77d79d18f",
+    "reasoning_tokens": 2367,
+    "completion_tokens": 2471,
+    "prompt_tokens": 1489,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a08ac606f6a6febfe5b15e8843672f993f147b3bfe0ffb05a5752d606764c201",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89d3f0c77d79d18f",
+    "reasoning_tokens": 2367,
+    "completion_tokens": 2471,
+    "prompt_tokens": 1489,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The planet closest to the Sun is Mercury."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The planet closest to the Sun is Mercury. This small, terrestrial world has a heavily cratered, gray-brown surface and no natural satellite. Mercury's orbit takes just 88 days, and a solar day sees 3.5 times more... Venus, our morning star, shrouded in CO2, with a crushing 92 bar pressure. Stormy yellow-iron clouds... Mars, the red one, has two little... and a thin CO2-dressed mantle. All"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

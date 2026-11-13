@@ -1,0 +1,35 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+# Custom-container deployment of the jpeers server. deploy.sh fills in the
+# placeholders (endpoint name, image, model) with `--set`.
+name: main
+endpoint_name: jpeers-qwen3-8b
+environment:
+  name: jpeers-server
+  image: <acr>.azurecr.io/jpeers:latest
+  inference_config:
+    liveness_route: {port: 8080, path: /health}
+    readiness_route: {port: 8080, path: /health}
+    scoring_route: {port: 8080, path: /score}
+environment_variables:
+  JPEERS_MODEL: qwen3-8b
+  JPEERS_DTYPE: bf16
+  HF_HOME: /models/hf
+  # HF_TOKEN is injected by deploy.sh for gated models (Llama, Gemma).
+# 1x A100 80GB fits every model up to ~32B in bf16. Other options:
+# Standard_NC4as_T4_v3 (T4 16GB: <=4B models, set JPEERS_DTYPE=fp16 since T4 lacks bf16),
+# Standard_NC40ads_H100_v5 (H100 94GB). Check your GPU quota per region first.
+instance_type: Standard_NC24ads_A100_v4
+instance_count: 1
+request_settings:
+  request_timeout_ms: 180000         # the managed-endpoint maximum; keep turns <= ~300 tokens
+  max_concurrent_requests_per_instance: 1
+liveness_probe:
+  initial_delay: 900                 # weights + lens download on first start
+  period: 30
+  timeout: 10
+  failure_threshold: 30
+readiness_probe:
+  initial_delay: 60
+  period: 15
+  timeout: 10
+  failure_threshold: 120

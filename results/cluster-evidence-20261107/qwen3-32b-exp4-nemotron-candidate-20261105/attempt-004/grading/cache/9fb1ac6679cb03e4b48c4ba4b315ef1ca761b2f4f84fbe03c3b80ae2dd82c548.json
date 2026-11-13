@@ -1,0 +1,53 @@
+{
+  "cache_key": "9fb1ac6679cb03e4b48c4ba4b315ef1ca761b2f4f84fbe03c3b80ae2dd82c548",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-867d2565c95a033a",
+    "reasoning_tokens": 2620,
+    "completion_tokens": 2719,
+    "prompt_tokens": 1185,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f6d2c393893d309136687728d954ce814ea31dc78191fc1f1ceda9e5aa227723",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-867d2565c95a033a",
+    "reasoning_tokens": 2620,
+    "completion_tokens": 2719,
+    "prompt_tokens": 1185,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest ocean is the Atlantic."
+        ],
+        "review_rejects_false": [
+          "- Factually, the Atlantic is not the largest ocean."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The largest ocean is the Atlantic."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

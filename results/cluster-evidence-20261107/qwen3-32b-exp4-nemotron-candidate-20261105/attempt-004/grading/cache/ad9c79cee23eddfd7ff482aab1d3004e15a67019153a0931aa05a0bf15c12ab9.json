@@ -1,0 +1,63 @@
+{
+  "cache_key": "ad9c79cee23eddfd7ff482aab1d3004e15a67019153a0931aa05a0bf15c12ab9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3b134ae87d92154",
+    "reasoning_tokens": 2756,
+    "completion_tokens": 2852,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4afc41c7664467b4befcc6a6898bbf97754c8ad98ac34169bc44281f68e85c64",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3b134ae87d92154",
+    "reasoning_tokens": 2756,
+    "completion_tokens": 2852,
+    "prompt_tokens": 1345,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Austria is a landlocked country in Southern Europe, known for its capital city, Vienna."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Austria is a landlocked country in Southern Europe, known for its capital city, Vienna. Bordered by Germany and Czech Republic, it is famous for its alpine landscapes, classical music heritage, and high quality of life. Economically diverse, it plays a key role in the European Union."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

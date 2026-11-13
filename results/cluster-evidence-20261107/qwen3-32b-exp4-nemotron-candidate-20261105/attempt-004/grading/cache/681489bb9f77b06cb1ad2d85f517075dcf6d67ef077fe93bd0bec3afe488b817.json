@@ -1,0 +1,51 @@
+{
+  "cache_key": "681489bb9f77b06cb1ad2d85f517075dcf6d67ef077fe93bd0bec3afe488b817",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a76c5a30d4c0c56b",
+    "reasoning_tokens": 3537,
+    "completion_tokens": 3633,
+    "prompt_tokens": 1263,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7f6268d637104629425a0f156b48050ecd7ca2136a1ed6c60c5979c70cadf732",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a76c5a30d4c0c56b",
+    "reasoning_tokens": 3537,
+    "completion_tokens": 3633,
+    "prompt_tokens": 1263,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, one of the world’s most iconic landmarks, is located in Agra, India."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, one of the world’s most iconic landmarks, is located in Agra, India. Built in the 17th century, this Mughal masterpiece is a UNESCO World Heritage Site and a must-visit for travelers seeking history and beauty."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

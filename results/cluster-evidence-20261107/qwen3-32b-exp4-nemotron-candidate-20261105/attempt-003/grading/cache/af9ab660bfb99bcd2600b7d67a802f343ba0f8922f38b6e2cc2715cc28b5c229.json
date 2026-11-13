@@ -1,0 +1,51 @@
+{
+  "cache_key": "af9ab660bfb99bcd2600b7d67a802f343ba0f8922f38b6e2cc2715cc28b5c229",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3234628af480260",
+    "reasoning_tokens": 2278,
+    "completion_tokens": 2374,
+    "prompt_tokens": 1190,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "40ad90ea94e5c862a19896cf2114161641d6aef5e881dec4b11b001760530821",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a3234628af480260",
+    "reasoning_tokens": 2278,
+    "completion_tokens": 2374,
+    "prompt_tokens": 1190,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "It is known for its rich culture, Buddhism, and the city of Bangkok, its vibrant capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand, officially the Kingdom of Thailand, is a Southeast Asian country. It is known for its rich culture, Buddhism, and the city of Bangkok, its vibrant capital."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

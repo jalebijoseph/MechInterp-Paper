@@ -1,0 +1,51 @@
+{
+  "cache_key": "855a79cafc4eb80cd704fc79111a24a3bd2b64be1761cf25228eeefc1928e576",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-814bc3c4faf0de39",
+    "reasoning_tokens": 2432,
+    "completion_tokens": 2536,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1592ffb3e69b5d1bdea84506401102b16ec22aab6e592f1aadb7824d877aba81",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-814bc3c4faf0de39",
+    "reasoning_tokens": 2432,
+    "completion_tokens": 2536,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Norway is a Nordic country in Northern Europe. Its capital and largest city is Oslo. Known for its stunning landscapes, rich Viking heritage, and modern welfare system, Norway is a union of five Nordic countries. It is a global leader in sustainability and has a strong economy driven by oil, aquaculture, and tourism."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe. Its capital and largest city is Oslo. Known for its stunning landscapes, rich Viking heritage, and modern welfare system, Norway is a union of five Nordic countries. It is a global leader in sustainability and has a strong economy driven by oil, aquaculture, and tourism."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "experiment": "collab",
+  "out_dir": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp1-full/attempt-001/results",
+  "endpoints_file": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp1-full/attempt-001/endpoints.json",
+  "agents": {
+    "research": "qwen3-32b",
+    "implementation": "qwen3-32b"
+  },
+  "names": {
+    "research": "Alice",
+    "implementation": "Bob"
+  },
+  "conditions": [
+    "team",
+    "named_solo",
+    "solo"
+  ],
+  "n_tasks": 8,
+  "rounds": 2,
+  "max_new_tokens": 160,
+  "record": {
+    "top_k": 10,
+    "stride": 1
+  },
+  "run_id": "exp1-full"
+}

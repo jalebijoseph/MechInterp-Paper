@@ -1,0 +1,49 @@
+{
+  "cache_key": "4ec60ea4f19ad7496147f2b0cc93d7a3183eb0c0298d2dd85262ff9d9ebf49c4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0a147d1c48c5c4e",
+    "reasoning_tokens": 4231,
+    "completion_tokens": 4324,
+    "prompt_tokens": 1244,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "489abf353b65412623e1cc5aba919afb00ff52d58eee3b7a274cae0dba16592e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b0a147d1c48c5c4e",
+    "reasoning_tokens": 4231,
+    "completion_tokens": 4324,
+    "prompt_tokens": 1244,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "[Review]: The statement is historically inaccurate. While Portuguese is not the main language of Mexico, Spanish is. The following is the corrected text:\n\n\"Language Tips for Travellers to Mexico: The main language of Mexico is Spanish. Learning a few basic Spanish phrases can be very helpful for communication.\""
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "cache_key": "9665746e10e7bdf2382a5a30ae2728526c995030ac8fd17b1f0e16d80af68206",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92971504cf98ea7a",
+    "reasoning_tokens": 6229,
+    "completion_tokens": 6322,
+    "prompt_tokens": 1519,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "97a1751e113f92c43f4985c8cbcd094e9c52dffffb304e21942a7df105aa7123",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92971504cf98ea7a",
+    "reasoning_tokens": 6229,
+    "completion_tokens": 6322,
+    "prompt_tokens": 1519,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The draft notes state J.R.R. Tolkien as the author of 1984 – this is factually incorrect. 1984 was written by George Orwell. I will correct and finalise the card.\n\nFinal Display Card: 1984 by George Orwell. A dystopian novel of power, surveillance and individuality. In a world of Oceania, Winston Smith works at the Ministry of Love. Biggs' thoughtcrime and Newspeak will make you think. A stunning picture of a. A gripping, chilling novel that questions the status of modernity"
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

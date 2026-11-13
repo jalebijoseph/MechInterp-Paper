@@ -1,0 +1,51 @@
+{
+  "cache_key": "7e1b3c737b8156a5c4b72c1e8ef45e3ccd6e82311bd52d02dbb489766321fdc4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a8d45bcedd71b21",
+    "reasoning_tokens": 2814,
+    "completion_tokens": 2910,
+    "prompt_tokens": 1418,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2b03cd0d0745e2c3ec63f3bb7e90a3026591d2814c5e8cc28d83402fc883c256",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a8d45bcedd71b21",
+    "reasoning_tokens": 2814,
+    "completion_tokens": 2910,
+    "prompt_tokens": 1418,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone, patented by Alexander Graham Bell in 1876, revolutionized communication. Though Bell is credited, others like Antonio Meucci and Elisha Gray also contributed. It evolved from analog systems to digital networks, shaping global connectivity and laying the groundwork for modern telecom."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone, patented by Alexander Graham Bell in 1876, revolutionized communication. Though Bell is credited, others like Antonio Meucci and Elisha Gray also contributed. It evolved from analog systems to digital networks, shaping global connectivity and laying the groundwork for modern telecom."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "4a5d55786e6baa61a94dc822cbe3e594a1f370af38741b77ba0211e7cdbb761a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8f7f4bbf23881e1",
+    "reasoning_tokens": 3387,
+    "completion_tokens": 3491,
+    "prompt_tokens": 1243,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "37284cb44356834ec87a8810cf073905aaca7d031b26849a3b961ae992e0ee9b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8f7f4bbf23881e1",
+    "reasoning_tokens": 3387,
+    "completion_tokens": 3491,
+    "prompt_tokens": 1243,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the Nile, spanning approximately 6,650 km."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the Nile, spanning approximately 6,650 km. It flows through northeastern Africa and has historically supported human settlement and agriculture."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

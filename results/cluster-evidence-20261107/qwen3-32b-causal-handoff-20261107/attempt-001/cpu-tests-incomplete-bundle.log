@@ -1,0 +1,588 @@
+.....................................................................F.. [ 28%]
+..FFFFFFFFFFFFFFFF................................................................................................................ [ 80%]
+.......................................ssssssss.                         [100%]
+=================================== FAILURES ===================================
+_ test_bfloat16_legacy_post_capture_matches_delivered_hidden_and_preserves_readouts _
+
+    def test_bfloat16_legacy_post_capture_matches_delivered_hidden_and_preserves_readouts():
+        iv = InterventionSpec(kind="steer", layers=[1], tokens=["A"], strength=.3,
+                              positions=PositionSelector(scope="last"))
+        rec = capture("post")
+        rec.layers = [1]
+        captured = run_for(iv, record=rec)
+        plain_rec = rec.model_copy(update={"capture_residuals": False, "capture_directions": []})
+        plain = run_for(iv, record=plain_rec)
+        hidden = torch.tensor([[[1., 2., 3., 4.], [2., 3., 4., 5.], [3., 4., 5., 6.]]],
+                              dtype=torch.bfloat16)
+        with captured.hooks():
+            delivered = captured.m.lm.layers[1](hidden.clone())
+        with plain.hooks():
+            uncaptured = plain.m.lm.layers[1](hidden.clone())
+        assert torch.equal(delivered, uncaptured)
+        arrays, historical = captured.finish(), plain.finish()
+        np.testing.assert_array_equal(arrays["residuals"][0, 0], delivered[0, 2].float().numpy())
+        for key in ("topk_ids", "topk_logits", "watch_ranks"):
+            np.testing.assert_array_equal(arrays[key], historical[key])
+>       assert captured.capture_metadata["residual_storage_dtype"] == "float32"
+E       KeyError: 'residual_storage_dtype'
+
+tests/test_causal_runtime.py:386: KeyError
+___ SuiteTests.test_aggregation_rejects_missing_duplicate_and_unpaired_data ____
+
+self = <test_cluster_suite.SuiteTests testMethod=test_aggregation_rejects_missing_duplicate_and_unpaired_data>
+
+    def test_aggregation_rejects_missing_duplicate_and_unpaired_data(self):
+>       cfg, fragments = self.fragments()
+
+tests/test_cluster_suite.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_cluster_suite.py:81: in fragments
+    cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ SuiteTests.test_all_fragments_combine_with_180_pairs_and_baseline_deltas ___
+
+self = <test_cluster_suite.SuiteTests testMethod=test_all_fragments_combine_with_180_pairs_and_baseline_deltas>
+
+    def test_all_fragments_combine_with_180_pairs_and_baseline_deltas(self):
+>       cfg, fragments = self.fragments()
+
+tests/test_cluster_suite.py:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_cluster_suite.py:81: in fragments
+    cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ SuiteTests.test_completed_fragments_alone_do_not_complete_experiment _____
+
+self = <test_cluster_suite.SuiteTests testMethod=test_completed_fragments_alone_do_not_complete_experiment>
+
+    def test_completed_fragments_alone_do_not_complete_experiment(self):
+>       manifest = {"jobs": suite.build_jobs()}
+
+tests/test_cluster_suite.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite.py:85: in build_jobs
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite.py:85: in <listcomp>
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp0_tom_validation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp0_tom_validation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_ SuiteTests.test_every_job_attempted_on_failures_and_resume_preserves_attempts _
+
+self = <test_cluster_suite.SuiteTests testMethod=test_every_job_attempted_on_failures_and_resume_preserves_attempts>
+
+    def test_every_job_attempted_on_failures_and_resume_preserves_attempts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            command = [sys.executable, str(SCRIPT), "--output-dir", tmp, "--python", "/usr/bin/false"]
+            result = subprocess.run(command, capture_output=True, text=True, timeout=30)
+            self.assertEqual(result.returncode, 1, result.stderr)
+>           manifest = suite.read_json(Path(tmp) / "manifest.json")
+
+tests/test_cluster_suite.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/tmp1lko7rs0/manifest.json'), mode = 'r', buffering = -1
+encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp1lko7rs0/manifest.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____________ SuiteTests.test_full_sizes_and_independent_benchmarks _____________
+
+self = <test_cluster_suite.SuiteTests testMethod=test_full_sizes_and_independent_benchmarks>
+
+    def test_full_sizes_and_independent_benchmarks(self):
+>       jobs = {j["id"]: j for j in suite.build_jobs()}
+
+tests/test_cluster_suite.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite.py:85: in build_jobs
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite.py:85: in <listcomp>
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp0_tom_validation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp0_tom_validation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_________________ SuiteTests.test_missing_hitom_is_incomplete __________________
+
+self = <test_cluster_suite.SuiteTests testMethod=test_missing_hitom_is_incomplete>
+
+    def test_missing_hitom_is_incomplete(self):
+>       cfg = next(j["config"] for j in suite.build_jobs() if j["id"] == "exp0-hitom")
+
+tests/test_cluster_suite.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite.py:85: in build_jobs
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite.py:85: in <listcomp>
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp0_tom_validation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp0_tom_validation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____________ SuiteTests.test_missing_primary_ablation_is_incomplete ____________
+
+self = <test_cluster_suite.SuiteTests testMethod=test_missing_primary_ablation_is_incomplete>
+
+    def test_missing_primary_ablation_is_incomplete(self):
+>       cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+
+tests/test_cluster_suite.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______ SuiteTests.test_saved_aggregate_uses_original_primary_statistics _______
+
+self = <test_cluster_suite.SuiteTests testMethod=test_saved_aggregate_uses_original_primary_statistics>
+
+    @unittest.skipUnless(all(importlib.util.find_spec(name) for name in ("numpy", "yaml", "pydantic", "httpx")),
+                         "original statistics integration needs the project runtime dependencies")
+    def test_saved_aggregate_uses_original_primary_statistics(self):
+>       _, fragments = self.fragments()
+
+tests/test_cluster_suite.py:139: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_cluster_suite.py:81: in fragments
+    cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-8b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ SuiteTests.test_aggregation_rejects_missing_duplicate_and_unpaired_data ____
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_aggregation_rejects_missing_duplicate_and_unpaired_data>
+
+    def test_aggregation_rejects_missing_duplicate_and_unpaired_data(self):
+>       cfg, fragments = self.fragments()
+
+tests/test_cluster_suite_32b.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_cluster_suite_32b.py:81: in fragments
+    cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ SuiteTests.test_all_fragments_combine_with_180_pairs_and_baseline_deltas ___
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_all_fragments_combine_with_180_pairs_and_baseline_deltas>
+
+    def test_all_fragments_combine_with_180_pairs_and_baseline_deltas(self):
+>       cfg, fragments = self.fragments()
+
+tests/test_cluster_suite_32b.py:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_cluster_suite_32b.py:81: in fragments
+    cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ SuiteTests.test_completed_fragments_alone_do_not_complete_experiment _____
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_completed_fragments_alone_do_not_complete_experiment>
+
+    def test_completed_fragments_alone_do_not_complete_experiment(self):
+>       manifest = {"jobs": suite.build_jobs()}
+
+tests/test_cluster_suite_32b.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite_32b.py:85: in build_jobs
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite_32b.py:85: in <listcomp>
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp0_tom_validation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp0_tom_validation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_ SuiteTests.test_every_job_attempted_on_failures_and_resume_preserves_attempts _
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_every_job_attempted_on_failures_and_resume_preserves_attempts>
+
+    def test_every_job_attempted_on_failures_and_resume_preserves_attempts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            command = [sys.executable, str(SCRIPT), "--output-dir", tmp, "--python", "/usr/bin/false"]
+            result = subprocess.run(command, capture_output=True, text=True, timeout=30)
+            self.assertEqual(result.returncode, 1, result.stderr)
+>           manifest = suite.read_json(Path(tmp) / "manifest.json")
+
+tests/test_cluster_suite_32b.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/tmpz25t5h7n/manifest.json'), mode = 'r', buffering = -1
+encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpz25t5h7n/manifest.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____________ SuiteTests.test_full_sizes_and_independent_benchmarks _____________
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_full_sizes_and_independent_benchmarks>
+
+    def test_full_sizes_and_independent_benchmarks(self):
+>       jobs = {j["id"]: j for j in suite.build_jobs()}
+
+tests/test_cluster_suite_32b.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite_32b.py:85: in build_jobs
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite_32b.py:85: in <listcomp>
+    configs = [read_json(CONFIGS / name) for name in CONFIG_FILES]
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp0_tom_validation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp0_tom_validation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_________________ SuiteTests.test_missing_hitom_is_incomplete __________________
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_missing_hitom_is_incomplete>
+
+    def test_missing_hitom_is_incomplete(self):
+>       cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[0])
+
+tests/test_cluster_suite_32b.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp0_tom_validation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp0_tom_validation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____________ SuiteTests.test_missing_primary_ablation_is_incomplete ____________
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_missing_primary_ablation_is_incomplete>
+
+    def test_missing_primary_ablation_is_incomplete(self):
+>       cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+
+tests/test_cluster_suite_32b.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______ SuiteTests.test_saved_aggregate_uses_original_primary_statistics _______
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_saved_aggregate_uses_original_primary_statistics>
+
+    @unittest.skipUnless(all(importlib.util.find_spec(name) for name in ("numpy", "yaml", "pydantic", "httpx")),
+                         "original statistics integration needs the project runtime dependencies")
+    def test_saved_aggregate_uses_original_primary_statistics(self):
+>       _, fragments = self.fragments()
+
+tests/test_cluster_suite_32b.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_cluster_suite_32b.py:81: in fragments
+    cfg = suite.read_json(suite.CONFIGS / suite.CONFIG_FILES[4])
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/vinli0921/mechinterp-runs/qwen3-32b-causal-handoff-20261107/attempt-001/source/configs/cluster-qwen3-32b/exp4_ablation.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_causal_runtime.py::test_bfloat16_legacy_post_capture_matches_delivered_hidden_and_preserves_readouts
+FAILED tests/test_cluster_suite.py::SuiteTests::test_aggregation_rejects_missing_duplicate_and_unpaired_data
+FAILED tests/test_cluster_suite.py::SuiteTests::test_all_fragments_combine_with_180_pairs_and_baseline_deltas
+FAILED tests/test_cluster_suite.py::SuiteTests::test_completed_fragments_alone_do_not_complete_experiment
+FAILED tests/test_cluster_suite.py::SuiteTests::test_every_job_attempted_on_failures_and_resume_preserves_attempts
+FAILED tests/test_cluster_suite.py::SuiteTests::test_full_sizes_and_independent_benchmarks
+FAILED tests/test_cluster_suite.py::SuiteTests::test_missing_hitom_is_incomplete
+FAILED tests/test_cluster_suite.py::SuiteTests::test_missing_primary_ablation_is_incomplete
+FAILED tests/test_cluster_suite.py::SuiteTests::test_saved_aggregate_uses_original_primary_statistics
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_aggregation_rejects_missing_duplicate_and_unpaired_data
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_all_fragments_combine_with_180_pairs_and_baseline_deltas
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_completed_fragments_alone_do_not_complete_experiment
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_every_job_attempted_on_failures_and_resume_preserves_attempts
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_full_sizes_and_independent_benchmarks
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_missing_hitom_is_incomplete
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_missing_primary_ablation_is_incomplete
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_saved_aggregate_uses_original_primary_statistics
+17 failed, 225 passed, 8 skipped, 86 subtests passed in 50.22s

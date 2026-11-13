@@ -1,0 +1,51 @@
+{
+  "cache_key": "106e2d47cad8a3fb16c23b7f2b0cc21d1488443c60e88ba8218b563c45bcfbb3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9262646c1b3d72e8",
+    "reasoning_tokens": 978,
+    "completion_tokens": 1074,
+    "prompt_tokens": 1364,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b0bfa4e52981e8afc6acd1084b58d0c6e1fee5a2e4cd5bfa4acf809ddf14af26",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9262646c1b3d72e8",
+    "reasoning_tokens": 978,
+    "completion_tokens": 1074,
+    "prompt_tokens": 1364,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Red Planet, as Mars is known, is a key focus for..."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions are critical to space exploration. The Red Planet, as Mars is known, is a key focus for... [snip - 96 words]...for future crewed missions. Recent insight from Perseverance and Curiosity inform our ambitions. Let's aim for more depth in the next brief."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

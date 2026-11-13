@@ -1,0 +1,51 @@
+{
+  "cache_key": "e7754d0b08cecc37963dd45017bf0929ca6349ebdcd3e2eecf3c76cfe450644a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfcb2443d8f7a55f",
+    "reasoning_tokens": 1895,
+    "completion_tokens": 1991,
+    "prompt_tokens": 1432,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4c0074ebc1ef1127fc35ef9dbc6504cab91bcc61b686484e9f5b26ca73f95f51",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bfcb2443d8f7a55f",
+    "reasoning_tokens": 1895,
+    "completion_tokens": 1991,
+    "prompt_tokens": 1432,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Brandbrandenburger Konzerte, composed by Bach, are a cycle of six concertos."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Brandbrandenburger Konzerte, composed by Bach, are a cycle of six concertos."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

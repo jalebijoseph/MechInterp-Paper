@@ -1,0 +1,51 @@
+{
+  "cache_key": "cf7d5ff0e3e320ed9fa367ac1291bc617478929e4cad19c8c3a899c34aad0443",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a031083299e4054e",
+    "reasoning_tokens": 1966,
+    "completion_tokens": 2062,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d6e9858ad8edfb1c64042a7a64dd2bc586a1725dc6df146b2ba35b35b46004b9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a031083299e4054e",
+    "reasoning_tokens": 1966,
+    "completion_tokens": 2062,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "1984* by George Orwell – a dystopian novel that imagines a totalitarian future. Through the eyes of Winston Smith, Orwell explores surveillance, propaganda, and rebellion. A chilling and thought-provoking classic."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "1984* by George Orwell – a dystopian novel that imagines a totalitarian future. Through the eyes of Winston Smith, Orwell explores surveillance, propaganda, and rebellion. A chilling and thought-provoking classic."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

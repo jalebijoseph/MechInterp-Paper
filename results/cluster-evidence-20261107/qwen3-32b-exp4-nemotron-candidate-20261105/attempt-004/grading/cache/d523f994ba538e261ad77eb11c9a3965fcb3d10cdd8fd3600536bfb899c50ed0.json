@@ -1,0 +1,51 @@
+{
+  "cache_key": "d523f994ba538e261ad77eb11c9a3965fcb3d10cdd8fd3600536bfb899c50ed0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4f012b1e3ee05ab",
+    "reasoning_tokens": 2612,
+    "completion_tokens": 2708,
+    "prompt_tokens": 1360,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8d8c685289271f2fa06f7ca4e437fb86d0910895b75f334c97225c4dabc86bd2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4f012b1e3ee05ab",
+    "reasoning_tokens": 2612,
+    "completion_tokens": 2708,
+    "prompt_tokens": 1360,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* (1937) is a mural by Pablo Picasso in response to the bombing of Guernica during the Spanish Civil War."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* (1937) is a mural by Pablo Picasso in response to the bombing of Guernica during the Spanish Civil War. This powerful anti-war statement combines monochromatic imagery and symbolic figures to depict the brutality of war."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "4bf862d7ef03910a7d5a1c16cb7c565ad093e16e1cadc8ba2f25ead9313cb452",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b149c87ffe5e0a6b",
+    "reasoning_tokens": 804,
+    "completion_tokens": 900,
+    "prompt_tokens": 1465,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7c9a08db264cdabea5752d91df0d02a6cf3540570a01fcf263a3373b4d86a282",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b149c87ffe5e0a6b",
+    "reasoning_tokens": 804,
+    "completion_tokens": 900,
+    "prompt_tokens": 1465,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is New Delhi, seat of the Government of India."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India, a federal republic in southern Asia, is the world's most populous country. The capital is New Delhi, seat of the Government of India. The country is known for its rich history, rapid economic development and great cultural influence. The national language is Hindi, with English and 21 scheduled official languages. The national tree is Banyan, the national flower is lotus, and the national river is Yamuna. The national animal is the Royal Bengal"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

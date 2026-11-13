@@ -1,0 +1,53 @@
+{
+  "cache_key": "6bf79c8895ad3fc24bc79a161edc21f9e7fa86b22968061ed68249d82e1c2c13",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b283969eb149753c",
+    "reasoning_tokens": 5347,
+    "completion_tokens": 5446,
+    "prompt_tokens": 1278,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7f7b06d56496a8c45ed036d08bcab083d1c1c3b6826bba9b4d40d65965456bad",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b283969eb149753c",
+    "reasoning_tokens": 5347,
+    "completion_tokens": 5446,
+    "prompt_tokens": 1278,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Thailand is a Southeast Asian country known for its rich culture, temples, and tropical beaches. The capital is Bangkok. It is a constitutional monarchy with a diverse economy and a growing tourism sector."
+        ],
+        "review_rejects_false": [
+          "The capital of Thailand is Bangkok, not Manila."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand is a Southeast Asian country known for its rich culture, temples, and tropical beaches. The capital is Bangkok. It is a constitutional monarchy with a diverse economy and a growing tourism sector."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "64de60223ed1816b1a1881abdc853dbeb21e9ab033b28452260a454bd5986007",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae37ded826831c02",
+    "reasoning_tokens": 852,
+    "completion_tokens": 951,
+    "prompt_tokens": 1237,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8e9eab7164393af324143abe5ecb47e6f6492ca8a183ddd2be45a0329a4085d4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae37ded826831c02",
+    "reasoning_tokens": 852,
+    "completion_tokens": 951,
+    "prompt_tokens": 1237,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Brandenburg Concertos were composed by Johann Sebastian Bach in the early 18th century."
+        ],
+        "review_rejects_false": [
+          "The draft contains a historical inaccuracy — the Brandenburg Concertos were composed by Johann Sebastian Bach, not Mozart."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Brandenburg Concertos were composed by Johann Sebastian Bach in the early 18th century."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

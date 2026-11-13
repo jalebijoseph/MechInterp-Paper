@@ -1,0 +1,51 @@
+{
+  "cache_key": "d8c004bdf7ced80b19f56964180a9ff672db75efd1842cac31758fb80c90abbc",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a39f5aa8a2f7a998",
+    "reasoning_tokens": 3676,
+    "completion_tokens": 3772,
+    "prompt_tokens": 1434,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "38656a7a8093e7c5c8d54be0f7a0b57d9b80417bfd230f651fde80112d7bebae",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a39f5aa8a2f7a998",
+    "reasoning_tokens": 3676,
+    "completion_tokens": 3772,
+    "prompt_tokens": 1434,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Peru, located in western South America, has Lima as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Peru, located in western South America, has Lima as its capital. It is home to over 33 million people, with Spanish as the official language. Known for its rich Inca heritage, the Andes Mountains, and the Amazon rainforest, Peru is a culturally diverse and historically significant"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

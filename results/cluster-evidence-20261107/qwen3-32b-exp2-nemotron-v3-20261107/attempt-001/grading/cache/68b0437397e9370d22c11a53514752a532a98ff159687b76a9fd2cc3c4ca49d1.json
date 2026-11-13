@@ -1,0 +1,51 @@
+{
+  "cache_key": "68b0437397e9370d22c11a53514752a532a98ff159687b76a9fd2cc3c4ca49d1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-955ab1f7f75c299d",
+    "reasoning_tokens": 4224,
+    "completion_tokens": 4320,
+    "prompt_tokens": 1352,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d9672795a3a333e840bfd33b7ba0d388ca1a4da5a7d2598e0c96499c4949bd2c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-955ab1f7f75c299d",
+    "reasoning_tokens": 4224,
+    "completion_tokens": 4320,
+    "prompt_tokens": 1352,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars, often called the Red Planet due to its iron oxide-rich surface, is a key focus of space exploration. Missions like NASA’s Perseverance rover aim to study its geology and search for signs of past life, advancing our understanding of planetary science and potential future human exploration."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars, often called the Red Planet due to its iron oxide-rich surface, is a key focus of space exploration. Missions like NASA’s Perseverance rover aim to study its geology and search for signs of past life, advancing our understanding of planetary science and potential future human exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

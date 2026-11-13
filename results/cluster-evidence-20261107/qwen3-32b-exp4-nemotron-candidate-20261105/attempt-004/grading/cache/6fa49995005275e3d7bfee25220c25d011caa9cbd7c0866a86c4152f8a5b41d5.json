@@ -1,0 +1,51 @@
+{
+  "cache_key": "6fa49995005275e3d7bfee25220c25d011caa9cbd7c0866a86c4152f8a5b41d5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83218d4589a5cc79",
+    "reasoning_tokens": 3058,
+    "completion_tokens": 3154,
+    "prompt_tokens": 1346,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cce60e63ebbf3da328ec459be84fae6fa33c317385cbe6985316ab8394f6d274",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-83218d4589a5cc79",
+    "reasoning_tokens": 3058,
+    "completion_tokens": 3154,
+    "prompt_tokens": 1346,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Natural selection, Charles Darwin's evolution pillar, proposes that heritable traits enhancing survival & reproduction accumulate in populations. It's the core process of differential offspring via variation, heredity, and struggle for existence."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection, Charles Darwin's evolution pillar, proposes that heritable traits enhancing survival & reproduction accumulate in populations. It's the core process of differential offspring via variation, heredity, and struggle for existence."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

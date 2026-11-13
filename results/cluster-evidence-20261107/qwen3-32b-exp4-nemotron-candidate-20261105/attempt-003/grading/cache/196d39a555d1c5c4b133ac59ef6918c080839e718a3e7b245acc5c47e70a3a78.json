@@ -1,0 +1,51 @@
+{
+  "cache_key": "196d39a555d1c5c4b133ac59ef6918c080839e718a3e7b245acc5c47e70a3a78",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af12d24d032471fa",
+    "reasoning_tokens": 2015,
+    "completion_tokens": 2111,
+    "prompt_tokens": 1315,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "98cc434fca3a9b4944e8fd31f0aec3538f96e7052b35a1a889ff98f284c73303",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af12d24d032471fa",
+    "reasoning_tokens": 2015,
+    "completion_tokens": 2111,
+    "prompt_tokens": 1315,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "While its capital, Warsaw, offers a fascinating blend of historic charm and modern energy, the country’s beauty extends from the Tatra Mountains to the Baltic Sea."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Poland is a land of rich history, vibrant culture, and stunning landscapes. While its capital, Warsaw, offers a fascinating blend of historic charm and modern energy, the country’s beauty extends from the Tatra Mountains to the Baltic Sea."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

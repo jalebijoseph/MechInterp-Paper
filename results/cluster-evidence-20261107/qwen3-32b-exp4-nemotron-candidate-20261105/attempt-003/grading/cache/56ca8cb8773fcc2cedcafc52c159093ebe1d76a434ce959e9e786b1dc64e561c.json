@@ -1,0 +1,51 @@
+{
+  "cache_key": "56ca8cb8773fcc2cedcafc52c159093ebe1d76a434ce959e9e786b1dc64e561c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-98d0c07398538f06",
+    "reasoning_tokens": 4025,
+    "completion_tokens": 4121,
+    "prompt_tokens": 1520,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "59caf9388d22cc4b11c1c10067b84b0086d0626177a2f189db5ec3846aace055",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-98d0c07398538f06",
+    "reasoning_tokens": 4025,
+    "completion_tokens": 4121,
+    "prompt_tokens": 1520,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall, a snaking northern Chinese fortification marvel."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall, a snaking northern Chinese fortification marvel. Best approached with hope in head, history in heart. For views, bring... really big... you get the idea."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

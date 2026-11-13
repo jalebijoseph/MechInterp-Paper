@@ -1,0 +1,55 @@
+{
+  "scorer_version": "semantic-fact-v3.4.0",
+  "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+  "gate": {
+    "minimum_coverage": 0.95,
+    "minimum_grade_agreement": 0.95,
+    "max_critical_false_positives": 0
+  },
+  "passed": true,
+  "n_cases": 44,
+  "n_valid": 44,
+  "n_agree": 44,
+  "n_abstained": 4,
+  "coverage": 1.0,
+  "semantic_coverage": 0.9090909090909091,
+  "grade_agreement": 1.0,
+  "agreement_among_valid": 1.0,
+  "semantic_correct_bounds": {
+    "lower": 0.4090909090909091,
+    "upper": 0.5
+  },
+  "missing_ids": [],
+  "unresolved_ids": [
+    "holdout_france_hedged_final",
+    "holdout_italy_fragment_repetition",
+    "holdout_mexico_garbled_target",
+    "holdout_holmes_hedged_authorship"
+  ],
+  "critical_false_positive_ids": [],
+  "mismatches": [],
+  "fixture_sha256": "5ebfe1400e8a6a8b640d9a8cce317cce0f76357a1ecfed6330194784c6b8360f",
+  "fixture_scorer_version": "semantic-fact-v3.0.0",
+  "grader_info": {
+    "model": "nemotron-3.5-super-vl-exp4-v3",
+    "model_revision": "da5b2650a835292c678994a1fa3fb653250fb508",
+    "revision_source": "operator-supplied pinned model commit",
+    "scorer_version": "semantic-fact-v3.4.0",
+    "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+    "generation": {
+      "chat_template_kwargs": {
+        "enable_thinking": true,
+        "medium_effort": false
+      },
+      "max_completion_tokens": 12288,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "seed": 0,
+      "stream": false
+    },
+    "generation_profile": "nemotron-3.5-super-vl-v2",
+    "checklist": "\nBefore returning JSON, check that each true Boolean has its own evidence ID array with at least one supporting ID. For usable=true, cite a supporting F ID under evidence.usable even if you used that same ID for final_truth. Check which answers the final affirms and which it negates. A negated answer is not an endorsement.\n"
+  },
+  "cache_hits": 44,
+  "grader_calls": 0
+}

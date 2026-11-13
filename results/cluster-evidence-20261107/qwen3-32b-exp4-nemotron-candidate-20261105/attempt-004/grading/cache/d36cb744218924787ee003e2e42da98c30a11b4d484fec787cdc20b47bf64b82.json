@@ -1,0 +1,51 @@
+{
+  "cache_key": "d36cb744218924787ee003e2e42da98c30a11b4d484fec787cdc20b47bf64b82",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f3e0a64b2296f00",
+    "reasoning_tokens": 3703,
+    "completion_tokens": 3807,
+    "prompt_tokens": 1312,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c2e68257155887ee487623fa6e8f2c18ec6ef61bc27a26488089c1d517a67738",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f3e0a64b2296f00",
+    "reasoning_tokens": 3703,
+    "completion_tokens": 3807,
+    "prompt_tokens": 1312,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Sahara is the largest hot desert in the world."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Sahara is the largest hot desert in the world. While it is the largest hot desert, Antarctica is actually the largest desert overall, as deserts are defined by low precipitation, not just heat."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

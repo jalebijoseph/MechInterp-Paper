@@ -1,0 +1,63 @@
+{
+  "cache_key": "d60acdca01fefdcdea92e17776101ba4c46d54561863cb3098227dc187c1d6e0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9981aa14a5398299",
+    "reasoning_tokens": 6995,
+    "completion_tokens": 7091,
+    "prompt_tokens": 1420,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "44e9f3541a814fed91b41b28f6a096d39c7fd81b2224a1b0d2e03bb7421208d4",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9981aa14a5398299",
+    "reasoning_tokens": 6995,
+    "completion_tokens": 7091,
+    "prompt_tokens": 1420,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis converts light energy into glucose using chlorophyll in chloroplasts. It occurs in two stages: light-dependent reactions (produce ATP and NADPH) and the Calvin cycle (uses CO₂ to form glucose). Plants absorb water and minerals, including nitrogen, which is vital for chlorophyll and enzyme production. Oxygen is released as a byproduct."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis converts light energy into glucose using chlorophyll in chloroplasts. It occurs in two stages: light-dependent reactions (produce ATP and NADPH) and the Calvin cycle (uses CO₂ to form glucose). Plants absorb water and minerals, including nitrogen, which is vital for chlorophyll and enzyme production. Oxygen is released as a byproduct."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

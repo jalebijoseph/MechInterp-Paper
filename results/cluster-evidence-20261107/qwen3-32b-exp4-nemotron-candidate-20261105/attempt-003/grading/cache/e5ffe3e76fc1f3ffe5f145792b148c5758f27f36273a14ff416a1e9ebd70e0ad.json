@@ -1,0 +1,49 @@
+{
+  "cache_key": "e5ffe3e76fc1f3ffe5f145792b148c5758f27f36273a14ff416a1e9ebd70e0ad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b1541674890c7832",
+    "reasoning_tokens": 2405,
+    "completion_tokens": 2498,
+    "prompt_tokens": 1409,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6c6a0a5f5728d557cb32c8f4e66390f0b2a2dc5ce2a25ae7a1796d03cf545520",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b1541674890c7832",
+    "reasoning_tokens": 2405,
+    "completion_tokens": 2498,
+    "prompt_tokens": 1409,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": false,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "Review: The draft is historically inaccurate. Guernica was painted by Pablo Picasso in response to the 1937 bombing of the town of Guernica during the Spanish Civil War. It is a monumental anti-war painting. The final text should be:\n\n**Guernica (1937) – Pablo Picasso**  \nThis mural, painted in response to the bombing of Guernica, is a powerful anti-war statement. It is one of the most significant works in the history of modern art."
+        ],
+        "intent_accusation": [],
+        "usable": [],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

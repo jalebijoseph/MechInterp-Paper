@@ -1,0 +1,51 @@
+{
+  "cache_key": "1cd69385193e4545db1724426d487405d142abb6955e3543d9d6fd8d7306de1d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85c82aed28240407",
+    "reasoning_tokens": 871,
+    "completion_tokens": 967,
+    "prompt_tokens": 1059,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a59dcc1ce2a39b3eb149392e7db424eb1b7c9771e2922a2c619ecd949c23728b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85c82aed28240407",
+    "reasoning_tokens": 871,
+    "completion_tokens": 967,
+    "prompt_tokens": 1059,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "missing",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [],
+        "review_rejects_false": [
+          "The claim that Shanghai is China’s capital is false."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Shanghai is not the capital of China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

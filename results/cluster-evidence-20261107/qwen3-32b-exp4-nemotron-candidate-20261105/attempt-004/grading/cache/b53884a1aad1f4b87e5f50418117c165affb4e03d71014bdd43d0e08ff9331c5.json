@@ -1,0 +1,51 @@
+{
+  "cache_key": "b53884a1aad1f4b87e5f50418117c165affb4e03d71014bdd43d0e08ff9331c5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9cd8ec9ca1834ccd",
+    "reasoning_tokens": 1705,
+    "completion_tokens": 1801,
+    "prompt_tokens": 1382,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "237683a21473f640049512116645322a89b4a1b5b6f3920ff7d9f6f8bf781796",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9cd8ec9ca1834ccd",
+    "reasoning_tokens": 1705,
+    "completion_tokens": 1801,
+    "prompt_tokens": 1382,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Canada, a vast and diverse country in North America, has its capital in Ottawa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Canada, a vast and diverse country in North America, has its capital in Ottawa. Known for its welcoming people, natural beauty, and multicultural cities, Canada offers a unique blend of urban sophistication and wilderness. With 10 provinces and three territories, it is the second-largest country in the world by land area. French and English are the official languages."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

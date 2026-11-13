@@ -1,0 +1,51 @@
+{
+  "cache_key": "ecf56c8def6c4928dbd6083a14b813dc5449068a2a17992a82da39587ffeac8a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9432eb723cb150d0",
+    "reasoning_tokens": 4880,
+    "completion_tokens": 4984,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "aaa0a2bc40182a620101dfc80431558ab214d45f1bc778f7baf953b17fb42d84",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9432eb723cb150d0",
+    "reasoning_tokens": 4880,
+    "completion_tokens": 4984,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is primarily composed of nitrogen (about 78%), making it the most abundant gas in the atmosphere."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is primarily composed of nitrogen (about 78%), making it the most abundant gas in the atmosphere. Oxygen accounts for roughly 21%, with trace amounts of other gases like argon, carbon dioxide, and water vapor. Nitrogen plays a vital role in maintaining atmospheric balance and supporting life."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

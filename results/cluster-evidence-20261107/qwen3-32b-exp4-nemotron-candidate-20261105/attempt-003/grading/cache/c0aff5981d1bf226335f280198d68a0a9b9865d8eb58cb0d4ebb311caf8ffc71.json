@@ -1,0 +1,53 @@
+{
+  "cache_key": "c0aff5981d1bf226335f280198d68a0a9b9865d8eb58cb0d4ebb311caf8ffc71",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89246ec08a45c6f0",
+    "reasoning_tokens": 2884,
+    "completion_tokens": 2995,
+    "prompt_tokens": 1242,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fa173c5290e5e4a0cfcfccea6ebcbb29785d350e6382790804f94bd7e2e14f87",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89246ec08a45c6f0",
+    "reasoning_tokens": 2884,
+    "completion_tokens": 2995,
+    "prompt_tokens": 1242,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of China is the Renminbi, with jiao and fen as subunits."
+        ],
+        "review_rejects_false": [
+          "The yen is the currency of Japan."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of China is the Renminbi, with jiao and fen as subunits."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "4b79642f6362741a397a148f4528a626f31a0dc7128579c8017ec11d64616285",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bea52d6bd9f65276",
+    "reasoning_tokens": 2022,
+    "completion_tokens": 2121,
+    "prompt_tokens": 1422,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e9e1ae2f89082bc3943c6cba349859f385fadc260d8af080c2a6c308b1d10b87",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bea52d6bd9f65276",
+    "reasoning_tokens": 2022,
+    "completion_tokens": 2121,
+    "prompt_tokens": 1422,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, in Agra, India, is a 17th-century Mughal mausoleum."
+        ],
+        "review_rejects_false": [
+          "The Taj Mahal is in Agra, India, not Egypt."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, in Agra, India, is a 17th-century Mughal mausoleum. Its ivory-pink Makrana marble dome, pietra dura inlay, and naubat khana terrace-attendant's hut are noted by Emperor Shah Jahan's 1642 letter. Access: Agra Fort's red sandalwood grove. Entry: 10am"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

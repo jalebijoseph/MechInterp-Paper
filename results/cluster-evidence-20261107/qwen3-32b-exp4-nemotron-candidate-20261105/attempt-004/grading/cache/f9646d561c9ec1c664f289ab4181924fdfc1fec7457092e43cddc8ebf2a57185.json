@@ -1,0 +1,51 @@
+{
+  "cache_key": "f9646d561c9ec1c664f289ab4181924fdfc1fec7457092e43cddc8ebf2a57185",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b314d67bc58a045a",
+    "reasoning_tokens": 1896,
+    "completion_tokens": 1992,
+    "prompt_tokens": 1389,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f02d616b4ef9c1b1036603078038562fe08b43547e441bd3f3be98c3d4479131",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b314d67bc58a045a",
+    "reasoning_tokens": 1896,
+    "completion_tokens": 1992,
+    "prompt_tokens": 1389,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Dublin, offers a vibrant mix of tradition and modernity, from historic castles to lively pubs."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Ireland, with its lush green landscapes, rich history, and warm hospitality, is a dream destination. The capital, Dublin, offers a vibrant mix of tradition and modernity, from historic castles to lively pubs. Explore ancient ruins, dramatic coastlines, and welcoming communities that make the Emerald Isle unforgettable."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "07484a896a8221e9ee6d47e148a52d61335c283986806c5ebf9e76432d3114b9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5c3803db5ddb9b1",
+    "reasoning_tokens": 2013,
+    "completion_tokens": 2109,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4b312512be1374d7691b62704ca3071d7dcdd8a65ee3b6efad29b59986fed1ea",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5c3803db5ddb9b1",
+    "reasoning_tokens": 2013,
+    "completion_tokens": 2109,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Australia is Canberra. Australia, a large and geographically diverse country in the Southern Hemisphere, is known for its unique wildlife, stunning landscapes, and vibrant cities. It is the sixth-largest country in the world and has a federal system of government."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

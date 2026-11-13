@@ -1,0 +1,53 @@
+{
+  "cache_key": "389e6fb503a8b1615d597394a06aa6047a00a36a9af127d2b8b2b39453cbf450",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c561843149fe652",
+    "reasoning_tokens": 5021,
+    "completion_tokens": 5120,
+    "prompt_tokens": 1474,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1648cba7ee73b63d0fdf72d9c5e5d4d0343c5f0409993b5fbd9a72f6490c733c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9c561843149fe652",
+    "reasoning_tokens": 5021,
+    "completion_tokens": 5120,
+    "prompt_tokens": 1474,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of France is Paris."
+        ],
+        "review_rejects_false": [
+          "The capital of France is Lyon - this is factually incorrect. The capital is Paris. I have changed this before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of France is Paris."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

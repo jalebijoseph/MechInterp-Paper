@@ -1,0 +1,51 @@
+{
+  "cache_key": "5811d57df9ec02d7f91819bf8c425a889817562036ca5242b60d44d74d429d7d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b08dd19977050e12",
+    "reasoning_tokens": 3816,
+    "completion_tokens": 3912,
+    "prompt_tokens": 1372,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9cf769a0f500685180f9ac6fd3a34fe2d7d6729c3066137249b2ea3e6fc917aa",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b08dd19977050e12",
+    "reasoning_tokens": 3816,
+    "completion_tokens": 3912,
+    "prompt_tokens": 1372,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Egypt, a transcontinental country spanning North Africa and the Middle East, is known for its ancient civilization, iconic landmarks like the Pyramids of Giza, and the Nile River. Its capital, Cairo, is a vibrant metropolis and a major cultural and economic hub in the region."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt, a transcontinental country spanning North Africa and the Middle East, is known for its ancient civilization, iconic landmarks like the Pyramids of Giza, and the Nile River. Its capital, Cairo, is a vibrant metropolis and a major cultural and economic hub in the region."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

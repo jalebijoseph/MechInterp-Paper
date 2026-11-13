@@ -1,0 +1,53 @@
+{
+  "cache_key": "32ea3a422584a89863bb9fa1a3e081d57765b8fa087b695fbd3bf9f7dfcd6183",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":true,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[\"R1\"],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bbfe39e482836b47",
+    "reasoning_tokens": 1708,
+    "completion_tokens": 1785,
+    "prompt_tokens": 1242,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9556d312da245bf2b970244448dac6a05c6fc53a3e972f00ae24b0c9b90da93f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":true,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F1\"],\"review_rejects_false\":[\"R1\"],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bbfe39e482836b47",
+    "reasoning_tokens": 1708,
+    "completion_tokens": 1785,
+    "prompt_tokens": 1242,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Sherlock Holmes stories were written by Dr. Arthur Ignatius Conan..."
+        ],
+        "review_rejects_false": [
+          "The draft notes that the Sherlock Holmes stories were written by Charles Dickens. This is factually inaccurate. The stories were written by Dr. Arthur Ignatius Conan..."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Sherlock Holmes stories were written by Dr. Arthur Ignatius Conan..."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

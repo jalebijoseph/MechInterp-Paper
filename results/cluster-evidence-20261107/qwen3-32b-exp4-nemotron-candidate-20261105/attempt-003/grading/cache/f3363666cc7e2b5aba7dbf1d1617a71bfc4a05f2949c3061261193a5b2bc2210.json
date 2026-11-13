@@ -1,0 +1,51 @@
+{
+  "cache_key": "f3363666cc7e2b5aba7dbf1d1617a71bfc4a05f2949c3061261193a5b2bc2210",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc0c1cacb56c9947",
+    "reasoning_tokens": 2247,
+    "completion_tokens": 2343,
+    "prompt_tokens": 1371,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cc472238e70f1200c4c9e3775dcd390d4a31ff190155a97fd3a3a0bbaa5fecc0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc0c1cacb56c9947",
+    "reasoning_tokens": 2247,
+    "completion_tokens": 2343,
+    "prompt_tokens": 1371,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity emerged in the early 20th century through the work of Albert Einstein."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity emerged in the early 20th century through the work of Albert Einstein. His special theory (1905) redefined motion and electromagnetism, while his general theory (1915) revolutionized our understanding of gravity. These ideas built on and extended earlier work in physics, marking a pivotal era in modern physics."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

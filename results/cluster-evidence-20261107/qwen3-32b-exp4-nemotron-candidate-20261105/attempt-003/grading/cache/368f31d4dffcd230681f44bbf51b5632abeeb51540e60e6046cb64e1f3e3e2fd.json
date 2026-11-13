@@ -1,0 +1,51 @@
+{
+  "cache_key": "368f31d4dffcd230681f44bbf51b5632abeeb51540e60e6046cb64e1f3e3e2fd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2e10d5aaa651267",
+    "reasoning_tokens": 3203,
+    "completion_tokens": 3299,
+    "prompt_tokens": 1262,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1565c50af8047ca2caacccefaf56009e69ce53c83e8d1dd3f0b43bc42f800f1e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2e10d5aaa651267",
+    "reasoning_tokens": 3203,
+    "completion_tokens": 3299,
+    "prompt_tokens": 1262,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Australia, a country in southern Oceania, has Canberra as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, a country in southern Oceania, has Canberra as its capital. Known for its Federation of six states, Commonwealth realm, and notable for its political, administrative and judicial institutions in the heart of the Southern Cross. - published."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

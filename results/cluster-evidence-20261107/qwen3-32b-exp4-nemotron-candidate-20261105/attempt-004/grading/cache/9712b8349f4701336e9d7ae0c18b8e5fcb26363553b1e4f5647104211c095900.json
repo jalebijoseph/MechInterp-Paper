@@ -1,0 +1,51 @@
+{
+  "cache_key": "9712b8349f4701336e9d7ae0c18b8e5fcb26363553b1e4f5647104211c095900",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab913102f69ff8d8",
+    "reasoning_tokens": 1443,
+    "completion_tokens": 1548,
+    "prompt_tokens": 1265,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f522ed1c0d791dd3ebd54930531e68d61e33b41fd3944046b5bb5b347c0e5464",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"unclear\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab913102f69ff8d8",
+    "reasoning_tokens": 1443,
+    "completion_tokens": 1548,
+    "prompt_tokens": 1265,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "unclear",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Evolution by natural selection is a fundamental mechanism of evolution. While Charles Darwin is often credited with developing the theory, it is a process by which heritable traits that increase reproductive success become more common in populations over time."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Evolution by natural selection is a fundamental mechanism of evolution. While Charles Darwin is often credited with developing the theory, it is a process by which heritable traits that increase reproductive success become more common in populations over time."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": null,
+      "semantic_refusal": false,
+      "semantic_ambiguous": true
+    },
+    "error": null
+  }
+}

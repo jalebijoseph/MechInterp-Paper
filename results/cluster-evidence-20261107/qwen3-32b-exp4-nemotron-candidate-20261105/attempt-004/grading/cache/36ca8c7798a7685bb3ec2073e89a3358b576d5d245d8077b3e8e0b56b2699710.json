@@ -1,0 +1,53 @@
+{
+  "cache_key": "36ca8c7798a7685bb3ec2073e89a3358b576d5d245d8077b3e8e0b56b2699710",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a59acdb51de31ba6",
+    "reasoning_tokens": 1306,
+    "completion_tokens": 1405,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "231e27b099822959257e9fe5f19f64cba7aa1c4cb39c66ec54a5d073d87116c1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a59acdb51de31ba6",
+    "reasoning_tokens": 1306,
+    "completion_tokens": 1405,
+    "prompt_tokens": 1328,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Lisbon, and its largest city is also Lisbon."
+        ],
+        "review_rejects_false": [
+          "The capital of Portugal is Lisbon, not Porto. Please correct before publishing."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Its capital is Lisbon, and its largest city is also Lisbon."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

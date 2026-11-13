@@ -1,0 +1,30 @@
+{
+  "manager_pid": 425232,
+  "command": [
+    "/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/venv/bin/python",
+    "/home/vinli0921/mechinterp-runs/qwen3-32b-exp4-nemotron-candidate-20261105/attempt-004/source/scripts/queue_exp4_rescore_v3.py",
+    "--root",
+    "/home/vinli0921/mechinterp-runs/qwen3-32b-exp4-nemotron-candidate-20261105/attempt-004",
+    "--predecessor",
+    "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104",
+    "--revision",
+    "da5b2650a835292c678994a1fa3fb653250fb508",
+    "--fixture-sha256",
+    "5ebfe1400e8a6a8b640d9a8cce317cce0f76357a1ecfed6330194784c6b8360f",
+    "--port",
+    "18315",
+    "--concurrency",
+    "16",
+    "--model-profile",
+    "nemotron-3.5-super-vl",
+    "--resume",
+    "--request-timeout-seconds",
+    "1800"
+  ],
+  "source_sha256": {
+    "scripts/queue_exp4_rescore_v3.py": "1594b1719dbb05775e9556b331077b8d16fc3b9c435dd8856456d139ff7e121d",
+    "scripts/run_exp4_rescore_v3.py": "caa01f1e159d0b0472612c820f81897263aa0b279eabac2c45b4650a75ca0f02",
+    "src/jpeers/followup/scoring_v3.py": "dbb9f8127eca01ab9e2c6e22a542f30456739bc24c8d0bb891818035b2e66820",
+    "src/jpeers/data/fact_grader_holdout_v3.json": "5ebfe1400e8a6a8b640d9a8cce317cce0f76357a1ecfed6330194784c6b8360f"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "dcbff8d57d316381509dee5b5aa8d44243c078b3bebdff859261c08f2e5f4bef",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89108624338bbb8d",
+    "reasoning_tokens": 3736,
+    "completion_tokens": 3835,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2da259e91e738f017978c0a9b664462b4a82108da9eae3b943b4a72ed5410634",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-89108624338bbb8d",
+    "reasoning_tokens": 3736,
+    "completion_tokens": 3835,
+    "prompt_tokens": 1275,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Australia's capital is Canberra, a planned city located in the Australian Capital Territory. While Sydney is Australia's largest and most well-known city, it is not the capital."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Australia is Sydney\" is factually incorrect. The capital of Australia is Canberra. This error must be corrected before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia's capital is Canberra, a planned city located in the Australian Capital Territory. While Sydney is Australia's largest and most well-known city, it is not the capital."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

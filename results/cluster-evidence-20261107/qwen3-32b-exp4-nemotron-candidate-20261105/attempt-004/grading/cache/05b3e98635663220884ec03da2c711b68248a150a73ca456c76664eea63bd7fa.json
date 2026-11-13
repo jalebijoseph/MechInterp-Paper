@@ -1,0 +1,51 @@
+{
+  "cache_key": "05b3e98635663220884ec03da2c711b68248a150a73ca456c76664eea63bd7fa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd79a756932ba3c3",
+    "reasoning_tokens": 2759,
+    "completion_tokens": 2855,
+    "prompt_tokens": 1479,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b4293be82bb431e7e5aaa00f6aa80d9418a1184a102cdc075bab4f3743b78b64",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd79a756932ba3c3",
+    "reasoning_tokens": 2759,
+    "completion_tokens": 2855,
+    "prompt_tokens": 1479,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, Earth's highest peak, rises majestically in Asia."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, Earth's highest peak, rises majestically in Asia. This trekking guide illuminates your path to the roof of the world — where Gorkha grit meets Gyanyes glory. We equip you with grit for the grind, grit to grip, and grit to grin. Everest ascents are Asian treks at their grittiest - tread with resolve, tread with resolve, tread with resolve"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

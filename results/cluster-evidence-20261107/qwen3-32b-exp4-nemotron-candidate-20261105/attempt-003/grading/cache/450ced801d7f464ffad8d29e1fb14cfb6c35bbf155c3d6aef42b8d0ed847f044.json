@@ -1,0 +1,51 @@
+{
+  "cache_key": "450ced801d7f464ffad8d29e1fb14cfb6c35bbf155c3d6aef42b8d0ed847f044",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a2dddf305da55b6b",
+    "reasoning_tokens": 3480,
+    "completion_tokens": 3576,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "13ac28503c0a9dc6063b746ee51bb351adbdeeb498f934487ee9edead380f9e6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a2dddf305da55b6b",
+    "reasoning_tokens": 3480,
+    "completion_tokens": 3576,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Norway is a Nordic country in Northern Europe, with Oslo as its capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe, with Oslo as its capital. Known for its stunning landscapes, including fjords and mountains, it has a population of around 5.5 million. Norwegian is the official language, and the country is renowned for its high standard of living, strong welfare system, and commitment to sustainability."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

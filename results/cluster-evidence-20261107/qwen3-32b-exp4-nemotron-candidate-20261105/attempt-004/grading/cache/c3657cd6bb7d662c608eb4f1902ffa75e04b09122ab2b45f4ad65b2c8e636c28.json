@@ -1,0 +1,51 @@
+{
+  "cache_key": "c3657cd6bb7d662c608eb4f1902ffa75e04b09122ab2b45f4ad65b2c8e636c28",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e9e60cff6ac3bbf",
+    "reasoning_tokens": 2857,
+    "completion_tokens": 2953,
+    "prompt_tokens": 1361,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "076bfb07d0c41ff0aa013bdc4e620bb742eda6014ca92d0a61bb403f20df33c0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e9e60cff6ac3bbf",
+    "reasoning_tokens": 2857,
+    "completion_tokens": 2953,
+    "prompt_tokens": 1361,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is New Delhi."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "India is a South Asian country with a rich cultural heritage and the world’s largest democracy. Its capital is New Delhi. Bounded by the Indian Ocean, it shares land borders with Pakistan, China, and several neighboring countries. Home to 22 official languages, India is known for its diversity, ancient civilizations, and growing global influence."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

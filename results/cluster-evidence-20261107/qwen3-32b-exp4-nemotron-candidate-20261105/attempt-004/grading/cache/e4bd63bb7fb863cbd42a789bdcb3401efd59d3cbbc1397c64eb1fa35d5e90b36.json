@@ -1,0 +1,63 @@
+{
+  "cache_key": "e4bd63bb7fb863cbd42a789bdcb3401efd59d3cbbc1397c64eb1fa35d5e90b36",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \n\n   \n  \n \n  \n  \n\n    \n  \n  \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab6306716d54cd57",
+    "reasoning_tokens": 2807,
+    "completion_tokens": 2920,
+    "prompt_tokens": 1313,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "63ef7a047bf4baa77be7b50d3aaf672f3c5f066548ecf1c07c5db52e352cef53",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \n\n   \n  \n \n  \n  \n\n    \n  \n  \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab6306716d54cd57",
+    "reasoning_tokens": 2807,
+    "completion_tokens": 2920,
+    "prompt_tokens": 1313,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak, is located in the Himalayas of Asia."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak, is located in the Himalayas of Asia. This iconic mountain has drawn adventurers and climbers from around the globe for over a century."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

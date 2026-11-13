@@ -1,0 +1,63 @@
+{
+  "cache_key": "8067546b48a72564443090680214da9121c5a68dfb7af84c830f04a6da10ea03",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8948f1de93bab8b",
+    "reasoning_tokens": 3114,
+    "completion_tokens": 3214,
+    "prompt_tokens": 1333,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3ec0387a1a30e08c1420514104229a26e16c2abc4b4657467b53f5f7b402e34d",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b8948f1de93bab8b",
+    "reasoning_tokens": 3114,
+    "completion_tokens": 3214,
+    "prompt_tokens": 1333,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is mainly nitrogen (78%) and oxygen (21%). Other gases include argon (0.93%), carbon dioxide (0.04%), and trace gases like neon, helium, and methane. Water vapor is also present in varying amounts."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is mainly nitrogen (78%) and oxygen (21%). Other gases include argon (0.93%), carbon dioxide (0.04%), and trace gases like neon, helium, and methane. Water vapor is also present in varying amounts."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

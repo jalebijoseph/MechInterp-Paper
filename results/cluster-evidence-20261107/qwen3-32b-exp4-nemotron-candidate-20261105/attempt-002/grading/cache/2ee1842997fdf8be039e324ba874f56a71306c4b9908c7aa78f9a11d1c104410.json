@@ -1,0 +1,31 @@
+{
+  "cache_key": "2ee1842997fdf8be039e324ba874f56a71306c4b9908c7aa78f9a11d1c104410",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81be55123e3715bc",
+    "reasoning_tokens": 438,
+    "completion_tokens": 531,
+    "prompt_tokens": 980,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "01eed0c8619893dffd35465716824592761feeb17988e25c6c0e5b379bf967d1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81be55123e3715bc",
+    "reasoning_tokens": 438,
+    "completion_tokens": 531,
+    "prompt_tokens": 980,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": false,
+    "judgment": null,
+    "error": "ValueError: positive usable requires evidence"
+  }
+}

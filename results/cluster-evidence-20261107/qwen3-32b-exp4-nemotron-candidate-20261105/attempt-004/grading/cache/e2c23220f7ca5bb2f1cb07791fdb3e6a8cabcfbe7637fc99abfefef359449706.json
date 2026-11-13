@@ -1,0 +1,51 @@
+{
+  "cache_key": "e2c23220f7ca5bb2f1cb07791fdb3e6a8cabcfbe7637fc99abfefef359449706",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9cd3095ee85bb246",
+    "reasoning_tokens": 3375,
+    "completion_tokens": 3471,
+    "prompt_tokens": 1413,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fe83534f2fb6a81d003ecfd416d5629497a1ef1fd7ef3012b587c56f4aae7931",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9cd3095ee85bb246",
+    "reasoning_tokens": 3375,
+    "completion_tokens": 3471,
+    "prompt_tokens": 1413,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Mexico is Spanish."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Mexico is Spanish. Know “hola\" (hi), \"gracias\" (thank you), and \"cerca” (please). In case of emergency, “amable” (kind) disarms most altercations. Use “caramba\" to express... well, caramba. It’s versatile."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "3c2e7f4e575ae486c7c167e8186b269de23a7d8aa8dbc7ff9f61d7514313c02e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f9e750f50777abf",
+    "reasoning_tokens": 2015,
+    "completion_tokens": 2114,
+    "prompt_tokens": 1358,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f0cd0463d38b9b44e3441a8d0d4ad2aac39e0fb92562d53b22de2e308b29b2ac",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f9e750f50777abf",
+    "reasoning_tokens": 2015,
+    "completion_tokens": 2114,
+    "prompt_tokens": 1358,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official currency of the United States is the US Dollar (USD)."
+        ],
+        "review_rejects_false": [
+          "The draft notes state 'the currency of the United States is the peso' - this is factually inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The official currency of the United States is the US Dollar (USD)."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

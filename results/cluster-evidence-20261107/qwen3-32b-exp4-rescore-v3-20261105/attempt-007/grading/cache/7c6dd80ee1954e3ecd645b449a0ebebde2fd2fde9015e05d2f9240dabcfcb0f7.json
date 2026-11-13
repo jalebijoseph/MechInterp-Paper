@@ -1,0 +1,32 @@
+{
+  "cache_key": "7c6dd80ee1954e3ecd645b449a0ebebde2fd2fde9015e05d2f9240dabcfcb0f7",
+  "original_key": "809375d3856d3c757dd9c3e9b982ce5624990e8c8afee60c7ac77aeae167de1f",
+  "primary_from_source": false,
+  "receipts": {
+    "primary": {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:18311/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+      "http_status": 500,
+      "http_error_body": "{\"error\":{\"message\":\"Internal server error\",\"type\":\"InternalServerError\",\"param\":null,\"code\":500}}"
+    },
+    "fallback": {
+      "received": true,
+      "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9db81d6f21063f3f",
+      "reasoning_tokens": 809,
+      "completion_tokens": 917,
+      "prompt_tokens": 1213,
+      "protocol_error": null,
+      "transport_error": null
+    }
+  },
+  "receipts_sha256": "1def4ddcc6990afbdcccf0b361e3502bb6d070f1648c3766f8d693dcef8aaef8"
+}

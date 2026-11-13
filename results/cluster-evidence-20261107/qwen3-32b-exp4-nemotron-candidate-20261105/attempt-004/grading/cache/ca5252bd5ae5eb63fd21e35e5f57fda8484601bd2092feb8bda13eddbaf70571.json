@@ -1,0 +1,53 @@
+{
+  "cache_key": "ca5252bd5ae5eb63fd21e35e5f57fda8484601bd2092feb8bda13eddbaf70571",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae7378fbdbf6c239",
+    "reasoning_tokens": 1503,
+    "completion_tokens": 1602,
+    "prompt_tokens": 1179,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "24882331fd47a6ad67c6a9000b83db1c99247683d8e65e167bcb2f3073fa4d5e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ae7378fbdbf6c239",
+    "reasoning_tokens": 1503,
+    "completion_tokens": 1602,
+    "prompt_tokens": 1179,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Japan is Tokyo, though Kyoto remains a cultural heartland, renowned for its temples, gardens, and traditional arts."
+        ],
+        "review_rejects_false": [
+          "The statement that Kyoto is the capital of Japan is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Japan is Tokyo, though Kyoto remains a cultural heartland, renowned for its temples, gardens, and traditional arts."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

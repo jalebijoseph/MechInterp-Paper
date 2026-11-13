@@ -1,0 +1,65 @@
+{
+  "cache_key": "8a5a26ab002771530468be523d76b675b21817215efd314974c904d0d9d772f8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b295e9298cf41a43",
+    "reasoning_tokens": 3109,
+    "completion_tokens": 3208,
+    "prompt_tokens": 1379,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a23e7f5784da0fff0b6eb212ec009c24d8aab9a509c43a1f0a80f1f468f961c1",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b295e9298cf41a43",
+    "reasoning_tokens": 3109,
+    "completion_tokens": 3208,
+    "prompt_tokens": 1379,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, straddles the border of Nepal and the Tibet Autonomous Region of China."
+        ],
+        "review_rejects_false": [
+          "The draft is factually inaccurate. Mount Everest is in Asia, but it is on the border of Nepal and the Tibet Autonomous Region of China. It should be revised for accuracy and completeness."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, straddles the border of Nepal and the Tibet Autonomous Region of China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

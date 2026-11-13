@@ -1,0 +1,65 @@
+{
+  "cache_key": "185a9dec5240c86c1b62afbc3f30e95cec055999cc986068f4c3e4677254beb6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-abd33df547101a50",
+    "reasoning_tokens": 3049,
+    "completion_tokens": 3148,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8bba02c0f07c799101d3c842892fcbb97f4e8c89a8b11892e82104237f10a85c",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-abd33df547101a50",
+    "reasoning_tokens": 3049,
+    "completion_tokens": 3148,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold is a chemical element with the symbol Au and atomic number 79."
+        ],
+        "review_rejects_false": [
+          "Gold's symbol is Au, not Ag (which is silver)."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Gold is a chemical element with the symbol Au and atomic number 79. It is a transition metal known for its luster, malleability, and resistance to corrosion. Gold is commonly used in jewelry, electronics, and as a financial asset."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

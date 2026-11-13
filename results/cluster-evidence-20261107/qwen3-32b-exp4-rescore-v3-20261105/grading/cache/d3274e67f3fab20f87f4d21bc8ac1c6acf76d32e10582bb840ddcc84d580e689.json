@@ -1,0 +1,31 @@
+{
+  "cache_key": "d3274e67f3fab20f87f4d21bc8ac1c6acf76d32e10582bb840ddcc84d580e689",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"S1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8d4347d438ee0fc",
+    "reasoning_tokens": 1343,
+    "completion_tokens": 1443,
+    "prompt_tokens": 711,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "864232f233d157a05adc1ea89094ad2855c38bc876fbe671dde3438a8b6e5e95",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"missing\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": false,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"S1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8d4347d438ee0fc",
+    "reasoning_tokens": 1343,
+    "completion_tokens": 1443,
+    "prompt_tokens": 711,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.0.0",
+    "valid": false,
+    "judgment": null,
+    "error": "ValueError: evidence.usable has an unknown or wrong-scope ID: S1"
+  }
+}

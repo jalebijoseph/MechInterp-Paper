@@ -1,0 +1,13 @@
+# Experiment 8 (Experiment D): partner contribution and task-state tracking
+experiment: task_state
+out_dir: runs
+endpoints_file: configs/endpoints.yaml
+orchestrator: qwen3-1.7b
+# 16 projects x 8 conditions x 2 role swaps x 2 delays = 512 cells, 2624 probes
+# (512 recorded), plus 32 no-peer probes. Pilot: --set n_projects=4
+n_projects: 16
+conditions: [assigned_silent, in_progress, unverified, completed, blocked, reassigned,
+             conflicting, document]
+delays: [none, filler]
+no_peer: true
+seed: 0

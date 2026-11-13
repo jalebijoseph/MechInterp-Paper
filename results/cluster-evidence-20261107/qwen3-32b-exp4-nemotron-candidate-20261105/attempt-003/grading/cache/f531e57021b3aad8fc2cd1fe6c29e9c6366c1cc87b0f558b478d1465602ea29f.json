@@ -1,0 +1,51 @@
+{
+  "cache_key": "f531e57021b3aad8fc2cd1fe6c29e9c6366c1cc87b0f558b478d1465602ea29f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91b66ee4359abaed",
+    "reasoning_tokens": 4521,
+    "completion_tokens": 4617,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1ab885c16c7f99e256b7ec3f76d197d8d5a1bdfca0cf4ffc7c20049395c2d060",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91b66ee4359abaed",
+    "reasoning_tokens": 4521,
+    "completion_tokens": 4617,
+    "prompt_tokens": 1444,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Netherlands, with Amsterdam as the capital, is a land of windmills, canals, and cycling culture."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, with Amsterdam as the capital, is a land of windmills, canals, and cycling culture. From historic c.1600 dyke systems to Van Gogh’s cycle, the country pulses with water, art, and tolerance. Cycle past c.1600 dykes, sample raw Edamse, and let the c.1600 water"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

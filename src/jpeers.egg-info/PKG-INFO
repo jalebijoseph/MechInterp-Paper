@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: jpeers
+Version: 0.1.0
+Summary: Jacobian-lens (J-space) analysis of theory of mind between LLM agents
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: jlens @ git+https://github.com/anthropics/jacobian-lens.git
+Requires-Dist: torch
+Requires-Dist: transformers>=5.5
+Requires-Dist: huggingface_hub
+Requires-Dist: numpy
+Requires-Dist: pydantic>=2
+Requires-Dist: pyyaml
+Requires-Dist: httpx
+Provides-Extra: server
+Requires-Dist: fastapi; extra == "server"
+Requires-Dist: uvicorn[standard]; extra == "server"
+Requires-Dist: accelerate; extra == "server"
+Provides-Extra: cloud
+Requires-Dist: azure-identity; extra == "cloud"
+Requires-Dist: google-auth; extra == "cloud"
+Requires-Dist: requests; extra == "cloud"
+Provides-Extra: data
+Requires-Dist: datasets; extra == "data"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+# afrj-jacobian-peers-analysis
+
+This repository will contain the implementation of the research proposal **Internal Representations of Theory of Mind Across Agents via the Jacobian Lens**.
+
+The project uses the Jacobian lens (J-lens) from Anthropic's J-space work to study whether LLM agents internally represent what their peers know and are doing in multi-agent workflows: collaboration, imposter detection, and orchestrator peer selection.
+
+## Proposal
+
+- [proposal_formatted.md](proposal_formatted.md): the formatted proposal (recommended)
+- [PROPOSAL.md](PROPOSAL.md): the original draft
+
+## Status
+
+🚧 Early stage. The implementation has not started yet.

@@ -1,0 +1,51 @@
+{
+  "cache_key": "351962dd40072ba01dc969e50da5f1d9412809d9db0b8ee885b11d510905aa32",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8567ecf56ffa66ff",
+    "reasoning_tokens": 2221,
+    "completion_tokens": 2317,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d3ff77ec3ee17e6f2e164144b59f0c7896edd1dc779bffc45e5efdb6cab69490",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8567ecf56ffa66ff",
+    "reasoning_tokens": 2221,
+    "completion_tokens": 2317,
+    "prompt_tokens": 1320,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest hot desert is the Sahara. The largest desert overall is Antarctica. The driest desert is the Atacama in South America. The hottest desert is the Lut Desert in Iran."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest hot desert is the Sahara. The largest desert overall is Antarctica. The driest desert is the Atacama in South America. The hottest desert is the Lut Desert in Iran."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

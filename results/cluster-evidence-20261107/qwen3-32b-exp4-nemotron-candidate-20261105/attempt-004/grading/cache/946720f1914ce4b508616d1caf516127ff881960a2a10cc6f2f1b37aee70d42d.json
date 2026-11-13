@@ -1,0 +1,51 @@
+{
+  "cache_key": "946720f1914ce4b508616d1caf516127ff881960a2a10cc6f2f1b37aee70d42d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b15d29f7c4fb42cc",
+    "reasoning_tokens": 2338,
+    "completion_tokens": 2442,
+    "prompt_tokens": 1272,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "101aff287913cbbc6f867ff9f1734d771acfa2a00803abcc1bf3378793b51b30",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b15d29f7c4fb42cc",
+    "reasoning_tokens": 2338,
+    "completion_tokens": 2442,
+    "prompt_tokens": 1272,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Plants absorb nitrogen to support efficient photosynthesis."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants use sunlight to synthesize sugars. Nitrogen is a key component of chlorophyll, the protein that captures light energy. Plants absorb nitrogen to support efficient photosynthesis."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

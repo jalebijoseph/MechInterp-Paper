@@ -1,0 +1,51 @@
+{
+  "cache_key": "90fe64c77f9a6189ab007a78fd27f35688596fdab11018b6bdaf50e009cb3d60",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0631f3cd634489a",
+    "reasoning_tokens": 3241,
+    "completion_tokens": 3337,
+    "prompt_tokens": 1434,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fa98034d5121a89488d0f8f1c1addc22c5792d7782a9665cec5e85935f39351d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a0631f3cd634489a",
+    "reasoning_tokens": 3241,
+    "completion_tokens": 3337,
+    "prompt_tokens": 1434,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Pacific is the largest ocean, covering ~63.8 million sq mi."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Pacific is the largest ocean, covering ~63.8 million sq mi. Next is the Atlantic (~41.2 million sq mi), then the Indian (~27.2 million sq mi), Southern (~7.8 million sq mi), and Arctic (~4.5 million sq mi). The Pacific is also the deepest, with the Mariana Trench at"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

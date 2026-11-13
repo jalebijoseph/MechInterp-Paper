@@ -1,0 +1,51 @@
+{
+  "cache_key": "7e28054d83a158af46ee4454c62e0f1f0f90a50d11e98838ee35d13ac7705860",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c8152a6ae9bfd25",
+    "reasoning_tokens": 1891,
+    "completion_tokens": 1987,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "16dde055782b22509b6969ecff29563866e79e6c664d46ad9200d56f2fa6ab90",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c8152a6ae9bfd25",
+    "reasoning_tokens": 1891,
+    "completion_tokens": 1987,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The heart is the muscular organ that propels blood through the circulatory system, delivering oxygen and nutrients to tissues."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The heart is the muscular organ that propels blood through the circulatory system, delivering oxygen and nutrients to tissues."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

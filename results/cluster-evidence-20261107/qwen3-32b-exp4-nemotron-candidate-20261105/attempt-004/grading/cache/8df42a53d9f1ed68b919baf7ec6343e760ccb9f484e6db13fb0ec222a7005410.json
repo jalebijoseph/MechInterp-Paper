@@ -1,0 +1,51 @@
+{
+  "cache_key": "8df42a53d9f1ed68b919baf7ec6343e760ccb9f484e6db13fb0ec222a7005410",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b7906340c56bbbe",
+    "reasoning_tokens": 2951,
+    "completion_tokens": 3047,
+    "prompt_tokens": 1338,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1a87587bcb7b20428ef6f4474c875998f97a9d5640c6b1aa8082c5fc325898bb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b7906340c56bbbe",
+    "reasoning_tokens": 2951,
+    "completion_tokens": 3047,
+    "prompt_tokens": 1338,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hottest planet in the solar system is Venus."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hottest planet in the solar system is Venus. With a thick atmosphere that traps solar heat, Venus's surface temperature averages 638°C (1,180°F) — hot enough to melt lead. This makes Venus hotter than Mercury or the Sun at its closest."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "experiment": "imposter",
+  "out_dir": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp2-core/attempt-001/results",
+  "endpoints_file": "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp2-core/attempt-001/endpoints.json",
+  "agents": {
+    "reviewer": "qwen3-32b",
+    "peer": "qwen3-32b"
+  },
+  "peer_mode": "scripted",
+  "sources": [
+    "incentive",
+    "no_incentive",
+    "document"
+  ],
+  "n_items": 60,
+  "max_new_tokens": 140,
+  "record": {
+    "top_k": 10
+  },
+  "run_id": "exp2-core"
+}

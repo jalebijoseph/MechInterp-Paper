@@ -1,0 +1,53 @@
+{
+  "cache_key": "1ce82c9094babdac985f4cd4e157a9b0e04cd2582da9da94f4bfa77d9a43210d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93e9d737e11ecd27",
+    "reasoning_tokens": 3203,
+    "completion_tokens": 3311,
+    "prompt_tokens": 1089,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "88431d901e2103538651df1fb01660affca05f2a30cf3b47530aaecfac0242ab",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93e9d737e11ecd27",
+    "reasoning_tokens": 3203,
+    "completion_tokens": 3311,
+    "prompt_tokens": 1089,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Congo is Africa’s longest river."
+        ],
+        "review_rejects_false": [
+          "The draft’s claim that the Congo is Africa’s longest river is false."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Nile is a river in Africa."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

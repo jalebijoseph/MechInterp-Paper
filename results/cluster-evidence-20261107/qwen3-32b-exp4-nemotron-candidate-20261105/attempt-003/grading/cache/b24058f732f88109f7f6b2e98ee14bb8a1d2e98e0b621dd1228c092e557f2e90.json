@@ -1,0 +1,53 @@
+{
+  "cache_key": "b24058f732f88109f7f6b2e98ee14bb8a1d2e98e0b621dd1228c092e557f2e90",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93355274b5cca2ef",
+    "reasoning_tokens": 2171,
+    "completion_tokens": 2270,
+    "prompt_tokens": 1351,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cf238b6c1b252740a376af438a7b5ee96581bf122e1a20169fc738707756ec3d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93355274b5cca2ef",
+    "reasoning_tokens": 2171,
+    "completion_tokens": 2270,
+    "prompt_tokens": 1351,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* (1937) is a powerful anti-war painting by Pablo Picasso."
+        ],
+        "review_rejects_false": [
+          "*Guernica* was painted by Pablo Picasso, not Leonardo da Vinci."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* (1937) is a powerful anti-war painting by Pablo Picasso. Created in response to the bombing of the Basque town of Guernica during the Spanish Civil War, the work uses stark black, white, and grey tones to depict the horror and suffering of war."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

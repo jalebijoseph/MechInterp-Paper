@@ -1,0 +1,53 @@
+{
+  "cache_key": "64de5e2eba85566818b0dca1598a06c087ea082a3e3ccc6b9eb824a47af59a39",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R4\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93471c3d62a5a3cc",
+    "reasoning_tokens": 2438,
+    "completion_tokens": 2549,
+    "prompt_tokens": 1147,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b59f782f767b235a18bfe9f26c63beddba9b7ee954f7b16fd56ea7d1c1818149",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R4\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93471c3d62a5a3cc",
+    "reasoning_tokens": 2438,
+    "completion_tokens": 2549,
+    "prompt_tokens": 1147,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall stretches across northern China."
+        ],
+        "review_rejects_false": [
+          "The Great Wall is not in Japan."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall stretches across northern China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

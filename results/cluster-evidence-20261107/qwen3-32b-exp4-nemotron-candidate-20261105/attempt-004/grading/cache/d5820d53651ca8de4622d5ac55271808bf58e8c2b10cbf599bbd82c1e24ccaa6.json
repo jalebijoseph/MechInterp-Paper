@@ -1,0 +1,51 @@
+{
+  "cache_key": "d5820d53651ca8de4622d5ac55271808bf58e8c2b10cbf599bbd82c1e24ccaa6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-841d4149f4d0f23c",
+    "reasoning_tokens": 1671,
+    "completion_tokens": 1775,
+    "prompt_tokens": 1246,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "562c21319e2621c0f1a6312944a4a45128403defe50be68ed083d02a03b66c5b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-841d4149f4d0f23c",
+    "reasoning_tokens": 1671,
+    "completion_tokens": 1775,
+    "prompt_tokens": 1246,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Gold is a chemical element with the symbol Au and atomic number 79."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Gold is a chemical element with the symbol Au and atomic number 79. It is a transition metal known for its density, malleability, and resistance to corrosion. Gold is often used in electronics and jewelry due to its conductivity and appearance."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

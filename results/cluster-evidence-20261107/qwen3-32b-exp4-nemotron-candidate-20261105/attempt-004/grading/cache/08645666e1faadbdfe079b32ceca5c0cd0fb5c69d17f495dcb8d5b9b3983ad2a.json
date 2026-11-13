@@ -1,0 +1,51 @@
+{
+  "cache_key": "08645666e1faadbdfe079b32ceca5c0cd0fb5c69d17f495dcb8d5b9b3983ad2a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9eb362d6e769b0e0",
+    "reasoning_tokens": 2556,
+    "completion_tokens": 2652,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "afa11df5bd15e6802e69c6b09adf1704f5e71961940d02947543ce5a039165da",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9eb362d6e769b0e0",
+    "reasoning_tokens": 2556,
+    "completion_tokens": 2652,
+    "prompt_tokens": 1341,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of China is the yuan, also known as the Chinese New Yuan (CNY)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of China is the yuan, also known as the Chinese New Yuan (CNY). One yuan equals 10 jiao. Always check for the official exchange rate when converting."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "d95bac78a106f1a7d98be7200b2c38e9c205a15de315be5f2857af90d44b3c9c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad1d94a56ad55b91",
+    "reasoning_tokens": 5808,
+    "completion_tokens": 5904,
+    "prompt_tokens": 1402,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "68e45f1f331fb4e4f109bb6d981425b6226051435fbfe92a03678eb1ad928240",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ad1d94a56ad55b91",
+    "reasoning_tokens": 5808,
+    "completion_tokens": 5904,
+    "prompt_tokens": 1402,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's air is mainly nitrogen (78%) and oxygen (21%), with small amounts of argon (0.93%), CO₂ (0.04%), and other trace gases. This mix supports life and regulates climate."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is mainly nitrogen (78%) and oxygen (21%), with small amounts of argon (0.93%), CO₂ (0.04%), and other trace gases. This mix supports life and regulates climate."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

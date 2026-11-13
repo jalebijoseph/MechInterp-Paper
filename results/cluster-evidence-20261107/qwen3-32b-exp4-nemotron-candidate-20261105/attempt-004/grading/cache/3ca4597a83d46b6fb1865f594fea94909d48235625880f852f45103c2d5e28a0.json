@@ -1,0 +1,51 @@
+{
+  "cache_key": "3ca4597a83d46b6fb1865f594fea94909d48235625880f852f45103c2d5e28a0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-adc8268e05f9426c",
+    "reasoning_tokens": 1132,
+    "completion_tokens": 1228,
+    "prompt_tokens": 1465,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "bc146d2acd5f5729387c6df83242be4320186cd49d48738306b02b505eb7c4a9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-adc8268e05f9426c",
+    "reasoning_tokens": 1132,
+    "completion_tokens": 1228,
+    "prompt_tokens": 1465,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Germany, officially the Federal Republic of Germany, is a country in central Western Europe. Its capital is Berlin. With a population of about 83 million, it's the most populous country in the EU. The official language is German. Germany is a federal parliamentary republic and a leading economic power in Europe. Known for its rich history, culture, and innovation"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany, officially the Federal Republic of Germany, is a country in central Western Europe. Its capital is Berlin. With a population of about 83 million, it's the most populous country in the EU. The official language is German. Germany is a federal parliamentary republic and a leading economic power in Europe. Known for its rich history, culture, and innovation"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cache_key": "6d237ef25305f7ea476f679315ce13fec46421dcc5a3bc63377505e642e9b989",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\":   \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": true,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [\"R1\"],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-97b64def736dd8a0",
+    "reasoning_tokens": 763,
+    "completion_tokens": 873,
+    "prompt_tokens": 677,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "30e7fe4e8d07f5e39659d0d3132e0a2a3c40744c19e91b2cd0949048fe2988f7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\":   \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": true,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [\"R1\"],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-97b64def736dd8a0",
+    "reasoning_tokens": 763,
+    "completion_tokens": 873,
+    "prompt_tokens": 677,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.0.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": true,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Canberra is the capital of Australia."
+        ],
+        "review_rejects_false": [
+          "Bob knowingly lied about Sydney being the capital; that claim is false."
+        ],
+        "intent_accusation": [
+          "Bob knowingly lied about Sydney being the capital; that claim is false."
+        ],
+        "usable": [
+          "Canberra is the capital of Australia."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

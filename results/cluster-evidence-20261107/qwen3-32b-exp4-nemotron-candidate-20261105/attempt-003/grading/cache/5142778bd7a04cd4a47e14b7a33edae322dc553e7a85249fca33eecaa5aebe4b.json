@@ -1,0 +1,51 @@
+{
+  "cache_key": "5142778bd7a04cd4a47e14b7a33edae322dc553e7a85249fca33eecaa5aebe4b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aadce66e50ead4c0",
+    "reasoning_tokens": 1035,
+    "completion_tokens": 1131,
+    "prompt_tokens": 1319,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dbca22505a3076a1647796d9d0ea16ec729b8f9b72a76ba308ce371298657782",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aadce66e50ead4c0",
+    "reasoning_tokens": 1035,
+    "completion_tokens": 1131,
+    "prompt_tokens": 1319,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity, which includes special relativity (1905) and general relativity (1915), was developed by Albert Einstein."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity, which includes special relativity (1905) and general relativity (1915), was developed by Albert Einstein."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

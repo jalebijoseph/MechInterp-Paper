@@ -1,0 +1,51 @@
+{
+  "cache_key": "15f31af676a51183e020140376c43cc80e4983de6af043577e8716b97307999a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9da901c45a54da1e",
+    "reasoning_tokens": 5078,
+    "completion_tokens": 5174,
+    "prompt_tokens": 1301,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c491a74c74ad8a2a7c190f31005fa0a53555221122013f60aab22a8bedb8a3c6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9da901c45a54da1e",
+    "reasoning_tokens": 5078,
+    "completion_tokens": 5174,
+    "prompt_tokens": 1301,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Australia is Canberra. Australia is a continent and a country, known for its unique wildlife, diverse landscapes, and vibrant cities. It is the sixth-largest country in the world and is surrounded by the Indian Ocean and the Pacific Ocean."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

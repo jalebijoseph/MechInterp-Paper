@@ -1,0 +1,53 @@
+{
+  "cache_key": "ffaa93484895f9340912d83257964d8c44303f9a58f47d6ad26024e5546be075",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4cb0da46e1729b7",
+    "reasoning_tokens": 3431,
+    "completion_tokens": 3530,
+    "prompt_tokens": 1142,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7cd84fb8d2d7b0adaa77ddb89708be84a349ce222348410fb174c9145c576f0a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4cb0da46e1729b7",
+    "reasoning_tokens": 3431,
+    "completion_tokens": 3530,
+    "prompt_tokens": 1142,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Amsterdam is the Dutch capital."
+        ],
+        "review_rejects_false": [
+          "Rotterdam is not the capital of the Netherlands."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Amsterdam is the Dutch capital. The national government has its seat in The Hague."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

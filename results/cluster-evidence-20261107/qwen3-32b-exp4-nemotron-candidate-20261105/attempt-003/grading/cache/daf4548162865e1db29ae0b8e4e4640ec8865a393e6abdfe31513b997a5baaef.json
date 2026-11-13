@@ -1,0 +1,51 @@
+{
+  "cache_key": "daf4548162865e1db29ae0b8e4e4640ec8865a393e6abdfe31513b997a5baaef",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a52ed9573516c261",
+    "reasoning_tokens": 3688,
+    "completion_tokens": 3784,
+    "prompt_tokens": 1192,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "efb8cc63996b55870fc84c0d9e21d196b01d5014830cb3225859d221981fafe6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a52ed9573516c261",
+    "reasoning_tokens": 3688,
+    "completion_tokens": 3784,
+    "prompt_tokens": 1192,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Norway is a Nordic country in Northern Europe known for its stunning landscapes, high standard of living, and strong welfare system. The capital is Oslo."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe known for its stunning landscapes, high standard of living, and strong welfare system. The capital is Oslo."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

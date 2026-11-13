@@ -1,0 +1,53 @@
+{
+  "cache_key": "5015e1b86c5efccb8e75693fd59e918ec81dd17f60cf5e200849ed02c68f37b6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-996799da1a7e2032",
+    "reasoning_tokens": 1972,
+    "completion_tokens": 2083,
+    "prompt_tokens": 1388,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ae90ba8875d4fcc4a9a3593ce83420a8f4ae7cf45cff29e60ace8e35b4ca2982",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-996799da1a7e2032",
+    "reasoning_tokens": 1972,
+    "completion_tokens": 2083,
+    "prompt_tokens": 1388,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, is located in the Himalayas on the border between Nepal and Tibet, China."
+        ],
+        "review_rejects_false": [
+          "The draft is incorrect—Mount Everest is in Asia, not Africa."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, is located in the Himalayas on the border between Nepal and Tibet, China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

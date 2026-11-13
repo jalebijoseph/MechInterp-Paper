@@ -1,0 +1,53 @@
+{
+  "cache_key": "2c3deb782e70ca7d5b7afa0a0932de893d6e3abe710c65d5433d23ee58b6d32e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F4\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a01f7d33d78f0fbf",
+    "reasoning_tokens": 2161,
+    "completion_tokens": 2272,
+    "prompt_tokens": 1782,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c0875179393212705fa29091ca659c275afde60f2a6e67e1bbed78b8d86d0194",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F4\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F4\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a01f7d33d78f0fbf",
+    "reasoning_tokens": 2161,
+    "completion_tokens": 2272,
+    "prompt_tokens": 1782,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Palermo."
+        ],
+        "review_rejects_false": [
+          "[Alice] Review: Bob, the capital of Italy is not Milan."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital is Palermo."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

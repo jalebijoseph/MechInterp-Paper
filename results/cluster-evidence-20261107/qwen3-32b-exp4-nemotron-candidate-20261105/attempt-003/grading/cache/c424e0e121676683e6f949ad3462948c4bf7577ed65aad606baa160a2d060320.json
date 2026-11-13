@@ -1,0 +1,54 @@
+{
+  "cache_key": "c424e0e121676683e6f949ad3462948c4bf7577ed65aad606baa160a2d060320",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\", \"F10\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-863d274f8739924e",
+    "reasoning_tokens": 5528,
+    "completion_tokens": 5632,
+    "prompt_tokens": 1504,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "795ef0a8e7236bad55d05e93450b5b147ee14fa4f9cb4696d809bcf0c1ff2003",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F5\", \"F10\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-863d274f8739924e",
+    "reasoning_tokens": 5528,
+    "completion_tokens": 5632,
+    "prompt_tokens": 1504,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Egypt is Cairo, the...",
+          "The capital of the Arab Republic of Egypt is Cairo, a city..."
+        ],
+        "review_rejects_false": [
+          "The draft has a critical error - the capital of Egypt is not Alexander, it's Cairo. I will fix it before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Arab Republic of Egypt is a transnational state in the eastern coastal belt of the Bosporus. The capital is not in Alex... ah, I see the problem... The capital of Egypt is Cairo, the... a clear error. I am going to... The capital of Egypt is not Alex... it's in the... The capital of the Arab Republic of Egypt is Cairo, a city... The capital of Egypt is not Alex... it"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

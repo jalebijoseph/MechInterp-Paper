@@ -1,0 +1,63 @@
+{
+  "cache_key": "b90393057eee56f8292e8b88e4edd804dd8f070280c77db4037405e2c61fbc19",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7234cde4e7e2b82",
+    "reasoning_tokens": 3696,
+    "completion_tokens": 3792,
+    "prompt_tokens": 1499,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5624381097630fd800549d8dc2168e56e2cdf0c1e340347f5ce82fb2d664adde",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a7234cde4e7e2b82",
+    "reasoning_tokens": 3696,
+    "completion_tokens": 3792,
+    "prompt_tokens": 1499,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The sun-vapor Mercury scorches at 430. The frosty Neptune, ices at -200. Hot Jupiters blaze 2000. Venus broils at 465. Planetary temperatures, from Mercury's 4"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The sun-vapor Mercury scorches at 430. The frosty Neptune, ices at -200. Hot Jupiters blaze 2000. Venus broils at 465. Planetary temperatures, from Mercury's 4"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

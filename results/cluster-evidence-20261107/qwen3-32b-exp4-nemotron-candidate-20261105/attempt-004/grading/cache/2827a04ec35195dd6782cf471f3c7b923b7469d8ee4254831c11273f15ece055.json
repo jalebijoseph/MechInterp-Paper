@@ -1,0 +1,53 @@
+{
+  "cache_key": "2827a04ec35195dd6782cf471f3c7b923b7469d8ee4254831c11273f15ece055",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b004344df8747bb9",
+    "reasoning_tokens": 4579,
+    "completion_tokens": 4690,
+    "prompt_tokens": 1453,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "17750ac8ab07c1310c50bf8bea86b094556e87d0a1f00532c95e58895e6f06eb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b004344df8747bb9",
+    "reasoning_tokens": 4579,
+    "completion_tokens": 4690,
+    "prompt_tokens": 1453,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the White Niles system (Victoria-Murchison), flowing 6700km."
+        ],
+        "review_rejects_false": [
+          "The Congo is not the longest river in Africa - the Victoria-Murchison system (White Niles) is."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the White Niles system (Victoria-Murchison), flowing 6700km. The Congo is Africas mightiest river by discharge. Volumetric - the Orange is Afriques southern mightiest river. The Vaal is a mighty river in Afriques south. The Limpopo is a mighty river in Afriques east. The Zambezi"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

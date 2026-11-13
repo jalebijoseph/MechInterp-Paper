@@ -1,0 +1,53 @@
+{
+  "cache_key": "b68878ad89df60c19303959e52f459ec5cf126ede27d39618c0b9079fcfe75a0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab513f3a37c851fb",
+    "reasoning_tokens": 4612,
+    "completion_tokens": 4711,
+    "prompt_tokens": 1357,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "58a9206a611a6288123ed6fb1d185d26bba9527a1dabf559c33691feefed3661",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab513f3a37c851fb",
+    "reasoning_tokens": 4612,
+    "completion_tokens": 4711,
+    "prompt_tokens": 1357,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Dublin, is a vibrant city steeped in culture, while Cork, a charming city in the south, offers a lively atmosphere and scenic beauty."
+        ],
+        "review_rejects_false": [
+          "The capital of Ireland is actually Dublin, not Cork. Please correct this factual error before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Ireland, a land of rolling green hills and rich history, welcomes travelers with warm hospitality. The capital, Dublin, is a vibrant city steeped in culture, while Cork, a charming city in the south, offers a lively atmosphere and scenic beauty. Explore ancient ruins, dramatic coastlines, and traditional pubs for an unforgettable journey."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

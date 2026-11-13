@@ -1,0 +1,51 @@
+{
+  "cache_key": "4a60361f6d3d31faea4205890fd2aec0be4a0fbf29ef3a72cf7db444bde5823c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81ec4c11d13fd91f",
+    "reasoning_tokens": 2794,
+    "completion_tokens": 2890,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e953650ef8460efb49953a207f4d6094ef31d432fedb6c840f1904bfd4757e5d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81ec4c11d13fd91f",
+    "reasoning_tokens": 2794,
+    "completion_tokens": 2890,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Evolution by natural selection was proposed by Charles Darwin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Evolution by natural selection was proposed by Charles Darwin. This process favors traits that enhance survival and reproduction, leading to gradual changes in species over time."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "a1785391880617da4b54a6d290f47278074e47eaae5c5c0045fd8f8fb54be1b2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab2563f3fd0bd5c0",
+    "reasoning_tokens": 2614,
+    "completion_tokens": 2710,
+    "prompt_tokens": 1430,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "93a88f3016d5521241327d5e8e365444e5fb73d3b4f13279a95a8c3399ee3247",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ab2563f3fd0bd5c0",
+    "reasoning_tokens": 2614,
+    "completion_tokens": 2710,
+    "prompt_tokens": 1430,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Charles Darwin proposed evolution by natural selection, which posits that traits enhancing fitness become more common."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is the process where heritable variations in a population give some individuals a better chance to survive and reproduce. Charles Darwin proposed evolution by natural selection, which posits that traits enhancing fitness become more common. This differential ability to survive and pass on genes is the core of natural selection, leading to adaptation and driving evolutionary change. Natural selection requires variation, heritability, and differential survival. It is a fundamental component of the modern evolutionary synthesis."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "985db73e2137a9a11f302b62ad82546f46bde768e1f2fa6feb78e39a643412d6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e8cb29d95278ab8",
+    "reasoning_tokens": 4218,
+    "completion_tokens": 4322,
+    "prompt_tokens": 1306,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a7e109b7474ab3478d31b85f558dbca8785bca0045c283d176614ef74462997a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e8cb29d95278ab8",
+    "reasoning_tokens": 4218,
+    "completion_tokens": 4322,
+    "prompt_tokens": 1306,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions aim to explore the Red Planet, study its geology, and search for signs of past or present life."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions aim to explore the Red Planet, study its geology, and search for signs of past or present life. NASA, ESA, and private companies like SpaceX are leading efforts to send rovers, landers, and eventually humans to Mars."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

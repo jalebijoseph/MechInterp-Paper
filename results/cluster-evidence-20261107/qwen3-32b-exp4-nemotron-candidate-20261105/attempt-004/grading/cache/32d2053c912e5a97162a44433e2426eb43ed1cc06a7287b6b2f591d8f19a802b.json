@@ -1,0 +1,53 @@
+{
+  "cache_key": "32d2053c912e5a97162a44433e2426eb43ed1cc06a7287b6b2f591d8f19a802b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f981685b7cd20b0",
+    "reasoning_tokens": 1194,
+    "completion_tokens": 1305,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "eee86c26f7a3b941a03437451800b6d844e55326393851f6f58f6d18f176aaea",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f981685b7cd20b0",
+    "reasoning_tokens": 1194,
+    "completion_tokens": 1305,
+    "prompt_tokens": 1330,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Cairo, and it is known for the Nile River, ancient pyramids, and the Great Sphinx."
+        ],
+        "review_rejects_false": [
+          "The capital of Egypt is not Alexandria—it is Cairo."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Egypt is a North African country with a rich history and cultural heritage. Its capital is Cairo, and it is known for the Nile River, ancient pyramids, and the Great Sphinx. The country has a population of over 100 million and a diverse economy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

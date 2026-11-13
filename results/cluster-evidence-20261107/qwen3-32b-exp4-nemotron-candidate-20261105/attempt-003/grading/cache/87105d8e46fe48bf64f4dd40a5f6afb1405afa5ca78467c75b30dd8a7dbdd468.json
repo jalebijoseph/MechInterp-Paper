@@ -1,0 +1,53 @@
+{
+  "cache_key": "87105d8e46fe48bf64f4dd40a5f6afb1405afa5ca78467c75b30dd8a7dbdd468",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-919d96247527175a",
+    "reasoning_tokens": 4344,
+    "completion_tokens": 4443,
+    "prompt_tokens": 1274,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c5a1fc494e6db2190cc424e0254c5d943d34ed5ac4670274ef0894abd17ad93f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-919d96247527175a",
+    "reasoning_tokens": 4344,
+    "completion_tokens": 4443,
+    "prompt_tokens": 1274,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Plants use sunlight to convert carbon dioxide and water into glucose and oxygen through photosynthesis, primarily occurring in chloroplasts."
+        ],
+        "review_rejects_false": [
+          "Plants use *carbon dioxide*, not nitrogen, as the primary carbon source for photosynthesis."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Plants use sunlight to convert carbon dioxide and water into glucose and oxygen through photosynthesis, primarily occurring in chloroplasts. This process is essential for plant growth and energy production."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

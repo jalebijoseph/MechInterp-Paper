@@ -1,0 +1,51 @@
+{
+  "cache_key": "1b3cc3eaa71c1edc5676451862f566a2de5da676fe098e1d23a3afb93633f26d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96ff951664412884",
+    "reasoning_tokens": 1293,
+    "completion_tokens": 1389,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7022a7d3b62ae6978918e5472580c1e3584c72428cdf080dd9590903070089c8",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96ff951664412884",
+    "reasoning_tokens": 1293,
+    "completion_tokens": 1389,
+    "prompt_tokens": 1329,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity was developed by Albert Einstein."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity was developed by Albert Einstein. His formulation of special and general relativity in 1905-1915 provided a new understanding of space, time, and gravitation. Einstein's work revolutionized... [exact 97 words]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

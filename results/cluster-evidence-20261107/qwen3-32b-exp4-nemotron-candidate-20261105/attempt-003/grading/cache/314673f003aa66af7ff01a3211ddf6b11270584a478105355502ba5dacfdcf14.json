@@ -1,0 +1,53 @@
+{
+  "cache_key": "314673f003aa66af7ff01a3211ddf6b11270584a478105355502ba5dacfdcf14",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9d110ca422537f00",
+    "reasoning_tokens": 1076,
+    "completion_tokens": 1175,
+    "prompt_tokens": 1433,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ac920804e0059111a97784fd4d137c8994b4715dedcf5206d514257661ac5bf7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F4\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9d110ca422537f00",
+    "reasoning_tokens": 1076,
+    "completion_tokens": 1175,
+    "prompt_tokens": 1433,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra, and it is home to six states and the Australian Capital Territory."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual inaccuracy. The capital of Australia is not Sydney, but Canberra. This is a common misconception, so it is important to correct it."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, located in the Southern Hemisphere, is the sixth-largest continent and the largest island in the world. It is also the only continent without a land border. The capital of Australia is Canberra, and it is home to six states and the Australian Capital Territory. Australia is known for its unique wildlife, diverse landscapes, and vibrant cities such as Sydney and Melbourne."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "0f73da705e4e0d95331329731fc55355717db5d125e7a5f87ca037ea26636c73",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd8091e54dbb9719",
+    "reasoning_tokens": 3135,
+    "completion_tokens": 3231,
+    "prompt_tokens": 1484,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7511b22ed08bd306a7fcb8b51dfee083d56336e49e03258b97cd72d873732c0c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd8091e54dbb9719",
+    "reasoning_tokens": 3135,
+    "completion_tokens": 3231,
+    "prompt_tokens": 1484,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Brandbrand Concertos, a set of six concerto grossi, were composed by none other but the great J.S. Bach. This set of concerti, dedicated to the Margrave, reflects Bach's... [cough] ...er... [original redacted for content policy]... the Brandburys Concertos, a set of six concertos, were composed by J.S. Bach. This set of concertos, dedicated to the Margrave, reflects Bach's... \n\n[Content redacted for"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Brandbrand Concertos, a set of six concerto grossi, were composed by none other but the great J.S. Bach. This set of concerti, dedicated to the Margrave, reflects Bach's... [cough] ...er... [original redacted for content policy]... the Brandburys Concertos, a set of six concertos, were composed by J.S. Bach. This set of concertos, dedicated to the Margrave, reflects Bach's... \n\n[Content redacted for"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "e72652a57e5722479e94d62876f31383bd8cc6f81276a2e39404551baa8f9049",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5ac0b57200f87f3",
+    "reasoning_tokens": 1825,
+    "completion_tokens": 1921,
+    "prompt_tokens": 1404,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "53c734f282394635ce6dc4f46fbadea22adadba2fc01b5283b1a0e2bc3771ce1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5ac0b57200f87f3",
+    "reasoning_tokens": 1825,
+    "completion_tokens": 1921,
+    "prompt_tokens": 1404,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mercury, the closest to the Sun, has extreme temperature swings."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets—Mercury, Venus, Earth, and Mars—are rocky and dense. Mercury, the closest to the Sun, has extreme temperature swings. Venus is the hottest due to its thick atmosphere. Earth is the only planet with liquid water. Mars, the \"Red Planet,\" has polar ice caps and the largest volcano in the solar system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

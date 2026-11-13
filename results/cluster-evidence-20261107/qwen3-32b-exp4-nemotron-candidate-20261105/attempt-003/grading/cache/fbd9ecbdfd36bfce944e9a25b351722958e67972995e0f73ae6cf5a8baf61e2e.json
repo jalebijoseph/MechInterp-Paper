@@ -1,0 +1,51 @@
+{
+  "cache_key": "fbd9ecbdfd36bfce944e9a25b351722958e67972995e0f73ae6cf5a8baf61e2e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a9c40a306233fc2d",
+    "reasoning_tokens": 3015,
+    "completion_tokens": 3111,
+    "prompt_tokens": 1425,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7f200b3d468f118bf2f4ba468a8e8bb2ffc7c3291a673ffaf3edd4933f9d973f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a9c40a306233fc2d",
+    "reasoning_tokens": 3015,
+    "completion_tokens": 3111,
+    "prompt_tokens": 1425,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Composed by Johann Sebastian Bach in 1721, the Brandenburg Concertos are a set of six vibrant orchestral works that showcase Baroque brilliance."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Composed by Johann Sebastian Bach in 1721, the Brandenburg Concertos are a set of six vibrant orchestral works that showcase Baroque brilliance. Celebrated for their innovation and technical mastery, they reflect Bach’s genius in blending diverse instruments and styles. A tribute to the Count of Brandenburg, these concertos remain a cornerstone of the classical repertoire, offering both structural elegance and exuberant musicality."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

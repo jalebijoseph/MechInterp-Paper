@@ -1,0 +1,51 @@
+{
+  "cache_key": "ebc17cd8c7a0a028a2e0d8c5d37f48e58ad190dfbf185fe67bd8600a1a79e35a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-864d98886c9716ea",
+    "reasoning_tokens": 3675,
+    "completion_tokens": 3771,
+    "prompt_tokens": 1485,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b96e24069eb55c2e29351ad953a3f70ac2e826c3adb8f93e3d02b19f398a8914",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-864d98886c9716ea",
+    "reasoning_tokens": 3675,
+    "completion_tokens": 3771,
+    "prompt_tokens": 1485,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The *Mona Lisa*, by Leonardo da Vinci, c. 1503-1519, oil on poplar. A half-length portrait of Lisa Gherardini, Florentine... [traveller/philanderer]. Her enigmatic expression & sfumato technique render... [traveller/philanderer] her universally. Restored 2023. \n\n(98 words)"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The *Mona Lisa*, by Leonardo da Vinci, c. 1503-1519, oil on poplar. A half-length portrait of Lisa Gherardini, Florentine... [traveller/philanderer]. Her enigmatic expression & sfumato technique render... [traveller/philanderer] her universally. Restored 2023. \n\n(98 words)"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

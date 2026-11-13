@@ -1,0 +1,51 @@
+{
+  "cache_key": "e38191bbd588b1b46d9da44d8ffd53dbb27fd25a031b87564fc44a41c17766e6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-befc4f7aff64db55",
+    "reasoning_tokens": 2078,
+    "completion_tokens": 2174,
+    "prompt_tokens": 1463,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ca0d4dc48d041d2c597e99fda7b9aaf58716400722faabc45a471ef7e5821992",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-befc4f7aff64db55",
+    "reasoning_tokens": 2078,
+    "completion_tokens": 2174,
+    "prompt_tokens": 1463,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, stands majestically in the Himalayas on the border of Nepal and Tibet."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, stands majestically in the Himalayas on the border of Nepal and Tibet. This guide offers essential insights into the Everest Base Camp trek, covering routes, acclimatization, gear, and cultural highlights. Whether you're an experienced trekker or a first-time adventurer, this journey promises unforgettable landscapes and a profound connection with the mountain’s"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "9cc8fef1424edf866f724fb08b6788038024c81ade8b1b3b929cb30b5fd0d728",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8bfb1b49339ec5d2",
+    "reasoning_tokens": 5605,
+    "completion_tokens": 5704,
+    "prompt_tokens": 1230,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b9887850bd40621bb154f0535b90846fe53363837ead6c61b727cf95543a715b",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8bfb1b49339ec5d2",
+    "reasoning_tokens": 5605,
+    "completion_tokens": 5704,
+    "prompt_tokens": 1230,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Turkey is Ankara. Istanbul is a major city and former capital, but it is not the current capital."
+        ],
+        "review_rejects_false": [
+          "The statement is false. The capital of Turkey is Ankara, not Istanbul. The draft must be corrected to reflect this fact."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Turkey is Ankara. Istanbul is a major city and former capital, but it is not the current capital."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

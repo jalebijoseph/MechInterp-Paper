@@ -1,0 +1,53 @@
+{
+  "cache_key": "35a659649e9111c690a01625400348f9c7e1d01c75f0650ea86c1bfa96921f21",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9552bb4edf7f6844",
+    "reasoning_tokens": 1075,
+    "completion_tokens": 1174,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0c796ce6bf2aa135441a99b92a7f59b962e3b4d10c1e5e5e6758bd2bb131bd87",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9552bb4edf7f6844",
+    "reasoning_tokens": 1075,
+    "completion_tokens": 1174,
+    "prompt_tokens": 1281,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Warsaw, and the country is known for its vibrant cities, historic sites, and warm hospitality."
+        ],
+        "review_rejects_false": [
+          "[You]: The capital of Poland is Warsaw, not Prague."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Its capital is Warsaw, and the country is known for its vibrant cities, historic sites, and warm hospitality."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

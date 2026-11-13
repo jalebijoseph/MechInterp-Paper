@@ -1,0 +1,5 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+# Managed online endpoint. In Azure AI Foundry this is "managed compute" in a hub-based
+# project (the project is an Azure ML workspace; pass its name as --workspace-name).
+name: jpeers-qwen3-8b          # must be unique in the region; deploy.sh overrides it
+auth_mode: key

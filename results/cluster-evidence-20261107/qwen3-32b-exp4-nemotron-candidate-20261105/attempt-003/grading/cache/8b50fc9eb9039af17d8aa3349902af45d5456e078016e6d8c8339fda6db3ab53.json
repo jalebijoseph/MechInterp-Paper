@@ -1,0 +1,51 @@
+{
+  "cache_key": "8b50fc9eb9039af17d8aa3349902af45d5456e078016e6d8c8339fda6db3ab53",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3ac5f5e05d24166",
+    "reasoning_tokens": 5451,
+    "completion_tokens": 5547,
+    "prompt_tokens": 1300,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ae28139e9a10113f9045887f8670566928a2fb0a19ca552f4553e2bbbcee6b11",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3ac5f5e05d24166",
+    "reasoning_tokens": 5451,
+    "completion_tokens": 5547,
+    "prompt_tokens": 1300,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "**Back:** The chemical symbol for gold is Au."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Front:** What is the chemical symbol for gold?  \n**Back:** The chemical symbol for gold is Au. It is a transition metal with atomic number 79, known for its luster, malleability, and resistance to corrosion."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

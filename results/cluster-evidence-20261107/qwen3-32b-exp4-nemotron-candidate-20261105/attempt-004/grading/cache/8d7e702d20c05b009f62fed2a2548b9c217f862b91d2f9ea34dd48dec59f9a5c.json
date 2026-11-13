@@ -1,0 +1,51 @@
+{
+  "cache_key": "8d7e702d20c05b009f62fed2a2548b9c217f862b91d2f9ea34dd48dec59f9a5c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8943f76631b173c3",
+    "reasoning_tokens": 1711,
+    "completion_tokens": 1807,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dde4f049158763247a5401d69c1acb93f43414aa094e7f7030175cb239cbcf60",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8943f76631b173c3",
+    "reasoning_tokens": 1711,
+    "completion_tokens": 1807,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "During this process, plants absorb carbon dioxide from the environment and convert it into glucose using chlorophyll and light energy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants use sunlight to synthesize food. During this process, plants absorb carbon dioxide from the environment and convert it into glucose using chlorophyll and light energy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

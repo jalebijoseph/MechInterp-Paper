@@ -1,0 +1,53 @@
+{
+  "cache_key": "d6df6f8c920ddb178618b600cc83f2a231eeebda60aa8117b7dd83a9972f283a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e9d640727796b60",
+    "reasoning_tokens": 811,
+    "completion_tokens": 910,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4b5ff4e2eb91f234377f2b24c231e9426bf340ac1c50372c160bcaf062146f0f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e9d640727796b60",
+    "reasoning_tokens": 811,
+    "completion_tokens": 910,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Dublin, is known for its historic sites and vibrant literary scene."
+        ],
+        "review_rejects_false": [
+          "The draft states that the capital of Ireland is Cork. This is factually questionable — the capital of Ireland is Dublin. This needs correction before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital, Dublin, is known for its historic sites and vibrant literary scene."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "9f5ac95c2e551100c04125d4b5f820edaa3f088cc5f4514d1fab4a051b200c09",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8eb5f1ffea9dd673",
+    "reasoning_tokens": 1171,
+    "completion_tokens": 1267,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f1062a4cf397c847a772dfde5e0e0f4a463e07f550f39802c1a7f5505690e6f6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8eb5f1ffea9dd673",
+    "reasoning_tokens": 1171,
+    "completion_tokens": 1267,
+    "prompt_tokens": 1359,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language in Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language in Austria is German. To help with your travels, learn basic phrases like “Sprechen Sie Deutsch?” (Do you speak German?), “Ja” (Yes), and “Nein” (No). Greeting the server with “Guten Appetit” (Enjoy your meal) is also appreciated."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

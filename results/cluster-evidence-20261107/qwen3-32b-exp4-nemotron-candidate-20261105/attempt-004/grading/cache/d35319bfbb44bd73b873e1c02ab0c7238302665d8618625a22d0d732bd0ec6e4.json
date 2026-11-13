@@ -1,0 +1,65 @@
+{
+  "cache_key": "d35319bfbb44bd73b873e1c02ab0c7238302665d8618625a22d0d732bd0ec6e4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91004e46f8fe676c",
+    "reasoning_tokens": 4706,
+    "completion_tokens": 4805,
+    "prompt_tokens": 1300,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "818b6c970803de333ac43c1673366f7e96cf87a94ce15abb3ad773e19541e457",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91004e46f8fe676c",
+    "reasoning_tokens": 4706,
+    "completion_tokens": 4805,
+    "prompt_tokens": 1300,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Berlin, and its largest city is Munich."
+        ],
+        "review_rejects_false": [
+          "The statement that the capital of Germany is Munich is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Germany is a country in central Western Europe. Its capital is Berlin, and its largest city is Munich. Known for its rich history, advanced economy, and cultural heritage, Germany is a leading member of the European Union."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "2cfd263c4e7e0d4f76999aa4106c5b4ab793eb37d976eff0bef282d6420cffd4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a13850133563eee0",
+    "reasoning_tokens": 3631,
+    "completion_tokens": 3727,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c8104a6cd6b97ac19c152444e7c28a51a75df3c2050cf75a2f5c8b4dda14f46c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a13850133563eee0",
+    "reasoning_tokens": 3631,
+    "completion_tokens": 3727,
+    "prompt_tokens": 1217,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hottest planet in the solar system is Venus, with surface temperatures reaching up to 467°C (872°F), primarily due to its dense atmosphere and intense greenhouse effect."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The hottest planet in the solar system is Venus, with surface temperatures reaching up to 467°C (872°F), primarily due to its dense atmosphere and intense greenhouse effect."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "6fe78d57edc87f768900605f9d2247e43bec899fce2dc0a665a79e5de88c25ee",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93f163b9db7ac448",
+    "reasoning_tokens": 3647,
+    "completion_tokens": 3746,
+    "prompt_tokens": 1412,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "adb13ac40efd6ca6c3937fb69ad11ebc2feeacf8761af42a4527f1c8eef47633",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93f163b9db7ac448",
+    "reasoning_tokens": 3647,
+    "completion_tokens": 3746,
+    "prompt_tokens": 1412,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital, Amsterdam, is famous for its picturesque streets and world-class museums, while cities like Rotterdam showcase striking contemporary architecture."
+        ],
+        "review_rejects_false": [
+          "The statement that Rotterdam is the capital of the Netherlands is incorrect. The capital is Amsterdam. This needs correction before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, a land of windmills, canals, and vibrant cities, welcomes travelers with its rich history and modern charm. Its capital, Amsterdam, is famous for its picturesque streets and world-class museums, while cities like Rotterdam showcase striking contemporary architecture. Explore scenic countryside, bike-friendly paths, and welcoming culture in this compact yet diverse European gem."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

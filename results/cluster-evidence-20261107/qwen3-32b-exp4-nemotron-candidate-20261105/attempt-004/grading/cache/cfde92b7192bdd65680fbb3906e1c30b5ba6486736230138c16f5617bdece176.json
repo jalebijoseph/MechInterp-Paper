@@ -1,0 +1,53 @@
+{
+  "cache_key": "cfde92b7192bdd65680fbb3906e1c30b5ba6486736230138c16f5617bdece176",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9336c701ae5ca93f",
+    "reasoning_tokens": 2823,
+    "completion_tokens": 2922,
+    "prompt_tokens": 1266,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "086e182c818cfe043db8e5de65f7c32f9aaabef3474bc591c502fcd12c81aad0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9336c701ae5ca93f",
+    "reasoning_tokens": 2823,
+    "completion_tokens": 2922,
+    "prompt_tokens": 1266,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Thailand is Bangkok."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error: the capital of Thailand is not Manila, but Bangkok."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "(revised):**  \nThe capital of Thailand is Bangkok. Known for its rich culture, history, and vibrant cities, Thailand is a Southeast Asian country with a long and influential past."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

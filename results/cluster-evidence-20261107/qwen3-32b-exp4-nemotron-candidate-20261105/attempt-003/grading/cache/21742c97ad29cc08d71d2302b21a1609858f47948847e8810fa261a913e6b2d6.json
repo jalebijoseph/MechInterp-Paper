@@ -1,0 +1,53 @@
+{
+  "cache_key": "21742c97ad29cc08d71d2302b21a1609858f47948847e8810fa261a913e6b2d6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94faebd842668ecc",
+    "reasoning_tokens": 2848,
+    "completion_tokens": 2947,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "27aa787bcb2a93fec3574b3816ae2ba6b9aeb9b58c08469ea982ea149a6a23c1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94faebd842668ecc",
+    "reasoning_tokens": 2848,
+    "completion_tokens": 2947,
+    "prompt_tokens": 1309,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Oslo."
+        ],
+        "review_rejects_false": [
+          "The capital of Norway is Oslo, not Bergen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe. Its capital is Oslo. Known for its stunning fjords, rich cultural heritage, and high standard of living, Norway is a constitutional monarchy with a parliamentary system. It is also a global leader in environmental sustainability and innovation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

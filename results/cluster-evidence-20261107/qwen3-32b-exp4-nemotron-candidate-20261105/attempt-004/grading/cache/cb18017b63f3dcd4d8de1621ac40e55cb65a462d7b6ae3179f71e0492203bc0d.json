@@ -1,0 +1,51 @@
+{
+  "cache_key": "cb18017b63f3dcd4d8de1621ac40e55cb65a462d7b6ae3179f71e0492203bc0d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a85bfd05ac132129",
+    "reasoning_tokens": 1502,
+    "completion_tokens": 1598,
+    "prompt_tokens": 1467,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "99bb51abfbcc2d354f846e35f3fd30ec45d3f2e3cb7ec1180e1c10af6e7c1d76",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a85bfd05ac132129",
+    "reasoning_tokens": 1502,
+    "completion_tokens": 1598,
+    "prompt_tokens": 1467,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions aim to explore the Red Planet for signs of past life, study its geology, and prepare for future human travel. NASA, ESA, and others have launched orbiters, landers, and rovers like Perseverance. These missions analyze soil, atmosphere, and potential water sources. China's Tianwen-1 and India's Mangalyaan also contributed. Mars remains a key target in"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions aim to explore the Red Planet for signs of past life, study its geology, and prepare for future human travel. NASA, ESA, and others have launched orbiters, landers, and rovers like Perseverance. These missions analyze soil, atmosphere, and potential water sources. China's Tianwen-1 and India's Mangalyaan also contributed. Mars remains a key target in"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

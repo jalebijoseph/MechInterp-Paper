@@ -1,0 +1,51 @@
+{
+  "cache_key": "3841109a48e2432980c9bf062e797cf8e982d98596184b2d388ae22205d307fc",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a3350e9e2acc278",
+    "reasoning_tokens": 2461,
+    "completion_tokens": 2557,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "77ba5a303039c7789a8d2b602c46175ff549cd3bc8f874ab933422b1fcdbe162",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9a3350e9e2acc278",
+    "reasoning_tokens": 2461,
+    "completion_tokens": 2557,
+    "prompt_tokens": 1399,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "**Gold (Au)**  \n- Chemical symbol: Au  \n- Atomic number: 79  \n- A transition metal known for its luster, malleability, and resistance to corrosion.  \n- Used in jewelry, electronics, and as a financial asset."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Gold (Au)**  \n- Chemical symbol: Au  \n- Atomic number: 79  \n- A transition metal known for its luster, malleability, and resistance to corrosion.  \n- Used in jewelry, electronics, and as a financial asset."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

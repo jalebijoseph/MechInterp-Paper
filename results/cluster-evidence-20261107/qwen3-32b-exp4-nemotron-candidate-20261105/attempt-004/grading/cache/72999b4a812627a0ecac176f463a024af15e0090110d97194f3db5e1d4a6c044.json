@@ -1,0 +1,53 @@
+{
+  "cache_key": "72999b4a812627a0ecac176f463a024af15e0090110d97194f3db5e1d4a6c044",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b9be396d011e387f",
+    "reasoning_tokens": 2593,
+    "completion_tokens": 2692,
+    "prompt_tokens": 1235,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "82b3d2647e8d72ea5d3feed59564798b8a32c654fc9c966968a62c9f2c4f7daf",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b9be396d011e387f",
+    "reasoning_tokens": 2593,
+    "completion_tokens": 2692,
+    "prompt_tokens": 1235,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The currency of the United Kingdom is the British pound."
+        ],
+        "review_rejects_false": [
+          "The currency of the United Kingdom is the British pound, not the euro."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The currency of the United Kingdom is the British pound."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

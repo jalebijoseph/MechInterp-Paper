@@ -1,0 +1,51 @@
+{
+  "cache_key": "f9dce2a4b7746e47422ac4aa55977342f0f156fa88bdd33e272f35a117f6ddc7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-adc5eeac856cb4b1",
+    "reasoning_tokens": 1863,
+    "completion_tokens": 1959,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "252c07a6374c98c96422d67a0a2160b600eab41945a3400dbcd21485b9d5ae17",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-adc5eeac856cb4b1",
+    "reasoning_tokens": 1863,
+    "completion_tokens": 1959,
+    "prompt_tokens": 1310,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Nitrogen is the most abundant gas in the atmosphere."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's air is primarily composed of nitrogen (about 78%), oxygen (around 21%), with trace amounts of argon, carbon dioxide, and other gases. Nitrogen is the most abundant gas in the atmosphere."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

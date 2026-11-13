@@ -1,0 +1,51 @@
+{
+  "cache_key": "9d238a09162ee29d0f442f5950e971bac7d8f4b2abc6ba0e2f93325dfd2ec5fd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b15e6019b54cf342",
+    "reasoning_tokens": 1625,
+    "completion_tokens": 1721,
+    "prompt_tokens": 1407,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ce0c0385d34aeacb10d133fbf785ac11f936d08ed04bc313ff8096d92ae12f64",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b15e6019b54cf342",
+    "reasoning_tokens": 1625,
+    "completion_tokens": 1721,
+    "prompt_tokens": 1407,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mercury, nearest the Sun, has a heavily cratererd, Venus shrouded in CO2, Earth teeming with life, and Mars with two phobos Deimos."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mercury, nearest the Sun, has a heavily cratererd, Venus shrouded in CO2, Earth teeming with life, and Mars with two phobos Deimos."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

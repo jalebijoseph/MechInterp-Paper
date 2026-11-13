@@ -1,0 +1,24 @@
+{
+  "experiment": "tom_validation",
+  "out_dir": "results/qwen3-8b-20261104/jobs/exp0-core/attempt-001/results",
+  "endpoints_file": "results/qwen3-8b-20261104/jobs/exp0-core/attempt-001/endpoints.json",
+  "model": "qwen3-8b",
+  "n_items": 20,
+  "framings": [
+    "people",
+    "agents"
+  ],
+  "include_hitom": false,
+  "hitom_items": 60,
+  "hitom_orders": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "max_new_tokens": 6,
+  "record": {
+    "top_k": 10
+  },
+  "run_id": "exp0-core"
+}

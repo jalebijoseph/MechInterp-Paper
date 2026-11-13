@@ -1,0 +1,53 @@
+{
+  "cache_key": "727062b5ff9749e6f1ac9da7cb9d9eaec18d2cad93a947429d29e88cdbf05ac0",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-affa26e8778c6aba",
+    "reasoning_tokens": 1598,
+    "completion_tokens": 1697,
+    "prompt_tokens": 1182,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0fb5ae52faa735a025654d93ea1456b5fbb7fd1b32dbbfad4741923c12987e8d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-affa26e8778c6aba",
+    "reasoning_tokens": 1598,
+    "completion_tokens": 1697,
+    "prompt_tokens": 1182,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Hague is the capital of the Netherlands."
+        ],
+        "review_rejects_false": [
+          "Rotterdam is not the capital."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Hague is the capital of the Netherlands. Amsterdam is a major Dutch city."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

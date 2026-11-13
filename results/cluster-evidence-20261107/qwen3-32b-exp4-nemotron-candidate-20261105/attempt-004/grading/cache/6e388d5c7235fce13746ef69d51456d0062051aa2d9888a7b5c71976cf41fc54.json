@@ -1,0 +1,51 @@
+{
+  "cache_key": "6e388d5c7235fce13746ef69d51456d0062051aa2d9888a7b5c71976cf41fc54",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf423764c60a23f0",
+    "reasoning_tokens": 2602,
+    "completion_tokens": 2706,
+    "prompt_tokens": 1422,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "67792d22f859a9f17620bff3b6404ec0acf75f01dd372410d1e9f185d97ca9e3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bf423764c60a23f0",
+    "reasoning_tokens": 2602,
+    "completion_tokens": 2706,
+    "prompt_tokens": 1422,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mona Lisa by Leonardo da Vinci, c. 1503–1519. Oil on wood, 77 × 53 cm. Widely regarded as the most famous portrait in the world, this enigmatic work showcases da Vinci’s mastery of sfumato and psychological depth. Its mysterious smile and composition have captivated audiences for centuries.*"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mona Lisa by Leonardo da Vinci, c. 1503–1519. Oil on wood, 77 × 53 cm. Widely regarded as the most famous portrait in the world, this enigmatic work showcases da Vinci’s mastery of sfumato and psychological depth. Its mysterious smile and composition have captivated audiences for centuries.*"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

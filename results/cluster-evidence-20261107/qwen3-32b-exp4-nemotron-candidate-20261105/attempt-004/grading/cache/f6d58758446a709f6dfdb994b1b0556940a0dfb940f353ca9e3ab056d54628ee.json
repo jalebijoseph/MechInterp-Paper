@@ -1,0 +1,53 @@
+{
+  "cache_key": "f6d58758446a709f6dfdb994b1b0556940a0dfb940f353ca9e3ab056d54628ee",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a638bf451aec25ff",
+    "reasoning_tokens": 1797,
+    "completion_tokens": 1896,
+    "prompt_tokens": 1435,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "4195f2c526813911fc78e8778763fb2765ef8333263765b51f25bd14b1f2bd4c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a638bf451aec25ff",
+    "reasoning_tokens": 1797,
+    "completion_tokens": 1896,
+    "prompt_tokens": 1435,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The chemical symbol for gold is Au, from the Anglo-Saxon name for the element."
+        ],
+        "review_rejects_false": [
+          "The draft states the chemical symbol for gold is Ag, which is actually the symbol for silver. The symbol for gold is Au. Let me correct and finalise."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The chemical symbol for gold is Au, from the Anglo-Saxon name for the element. Gold has an atomic number of 79 and is a transition metal in group 11 of the periodic table. It is malle, au auric, and is known for its resistance to air and Earth's aqueous solutions. Gold is... [trails off]"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

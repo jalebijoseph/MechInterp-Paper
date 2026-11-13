@@ -1,0 +1,53 @@
+{
+  "cache_key": "ee5c24beb105316cb6cf7d36221643a75907e0baafa59d0ada165e9206593b3e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5a8735374461018",
+    "reasoning_tokens": 964,
+    "completion_tokens": 1063,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f830d9309ec5c6f702ff637d54e479204e95711fcb22cda77b6cb91945aabde1",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b5a8735374461018",
+    "reasoning_tokens": 964,
+    "completion_tokens": 1063,
+    "prompt_tokens": 1362,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "*The first crewed Moon landing marks a historic milestone in space exploration. On July 20, 1969, NASA astronaut Neil Armstrong became the first person to walk on the Moon, stepping into the lunar surface as part of the Apollo 11 mission.*"
+        ],
+        "review_rejects_false": [
+          "The first person to walk on the Moon was Neil Armstrong, not Michael Collins."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "*The first crewed Moon landing marks a historic milestone in space exploration. On July 20, 1969, NASA astronaut Neil Armstrong became the first person to walk on the Moon, stepping into the lunar surface as part of the Apollo 11 mission.*"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

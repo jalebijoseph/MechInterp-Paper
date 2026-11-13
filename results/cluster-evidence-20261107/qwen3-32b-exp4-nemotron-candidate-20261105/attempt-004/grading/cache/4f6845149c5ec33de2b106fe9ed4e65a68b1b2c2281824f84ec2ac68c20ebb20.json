@@ -1,0 +1,53 @@
+{
+  "cache_key": "4f6845149c5ec33de2b106fe9ed4e65a68b1b2c2281824f84ec2ac68c20ebb20",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8513d73785e9dc0e",
+    "reasoning_tokens": 2828,
+    "completion_tokens": 2927,
+    "prompt_tokens": 1268,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "f0ed22d191b1b8691e7de0be897d39666f21a9986f3ba99a4f82a18d4d965221",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8513d73785e9dc0e",
+    "reasoning_tokens": 2828,
+    "completion_tokens": 2927,
+    "prompt_tokens": 1268,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "France, a land of rich history and culture, is best experienced from its capital, Paris."
+        ],
+        "review_rejects_false": [
+          "The draft contains a factual error – the capital of France is Paris, not Lyon."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "France, a land of rich history and culture, is best experienced from its capital, Paris. From the Eiffel Tower to the Seine, Paris sets the stage for a journey through the heart of France."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

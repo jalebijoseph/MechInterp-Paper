@@ -1,0 +1,51 @@
+{
+  "cache_key": "9007f1db5ec6b1146038d0d5bff3b6f882f228e332ae4e0a9249c6dcad07984f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f4b4bebc017b386",
+    "reasoning_tokens": 3253,
+    "completion_tokens": 3349,
+    "prompt_tokens": 1436,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a47198e30cf0d819959301165e8967b5a4eea42345e4488cccf3602409e54239",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8f4b4bebc017b386",
+    "reasoning_tokens": 3253,
+    "completion_tokens": 3349,
+    "prompt_tokens": 1436,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Nile, at 6,650 km, is the longest, flowing through 11 countries."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "African rivers are vital for ecosystems and human activity. The Nile, at 6,650 km, is the longest, flowing through 11 countries. The Congo River is the second-longest and has the world’s second-largest discharge"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "cache_key": "5bf4b7f60f081edcaea8c5c0b568b463bc5e8c80fc9236ca21a9fbf7a986ca9e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8403ef88e3962a04",
+    "reasoning_tokens": 6538,
+    "completion_tokens": 6637,
+    "prompt_tokens": 1465,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "6fa227aa4fb42e964883ee6d103363bba06fb6357e315ef550f21cd594d1acf0",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8403ef88e3962a04",
+    "reasoning_tokens": 6538,
+    "completion_tokens": 6637,
+    "prompt_tokens": 1465,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica, a 1937 oil on canvas by Pablo... [text about Guernica's production, exhibition history, and critical context]... This powerful work measures 2.5m x 3.5m and is presented in a custom made... [text about the physical presentation]... The work is closed for 2023-2024 for... [text about work closure"
+        ],
+        "review_rejects_false": [
+          "The draft contains a critical inaccuracy - Guernica was not painted by Leonardo da Vinci. This is factually incorrect and requires immediate attention."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica, a 1937 oil on canvas by Pablo... [text about Guernica's production, exhibition history, and critical context]... This powerful work measures 2.5m x 3.5m and is presented in a custom made... [text about the physical presentation]... The work is closed for 2023-2024 for... [text about work closure"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

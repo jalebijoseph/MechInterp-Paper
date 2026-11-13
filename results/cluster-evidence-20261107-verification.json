@@ -1,0 +1,183 @@
+{
+  "protocol": "cluster-evidence-verifier-v1",
+  "ok": true,
+  "manifest": "/Users/vince/Projects/MechInterp-Paper/results/cluster-evidence-20261107/manifest.json",
+  "manifest_sha256": "62d94230dec069283b0922f2c6c53080fc2aba25716d82ad906d9e1904ae393b",
+  "files_hashed": 22870,
+  "bytes_hashed": 4280411852,
+  "files_verified": 22870,
+  "bytes_verified": 4280411852,
+  "turn_files_checked": 21,
+  "receipt_digests_checked": 14579,
+  "scientific_pins_checked": 97,
+  "completion_metadata_checked": 5,
+  "groups": {
+    "qwen3-32b-suite-20261104": {
+      "files": 5982,
+      "npz_files": 5802,
+      "bytes": 3564847572,
+      "target_traces": 5776,
+      "smoke_traces": 26,
+      "referenced_target_traces": 5776,
+      "kind": "completed_original_target_suite",
+      "live": false,
+      "capture_status": "terminal_snapshot",
+      "lifecycle_before": {
+        "status": "completed",
+        "started_at": "2026-11-04T18:19:59.659640+00:00",
+        "finished_at": "2026-11-05T12:53:35.253464+00:00",
+        "server_stopped_at": null,
+        "servers_stopped_at": "2026-11-05T12:53:35.253434+00:00",
+        "error": null
+      },
+      "lifecycle_after": {
+        "status": "completed",
+        "started_at": "2026-11-04T18:19:59.659640+00:00",
+        "finished_at": "2026-11-05T12:53:35.253464+00:00",
+        "server_stopped_at": null,
+        "servers_stopped_at": "2026-11-05T12:53:35.253434+00:00",
+        "error": null
+      }
+    },
+    "qwen3-32b-followup-v2-20261104": {
+      "files": 2011,
+      "npz_files": 1972,
+      "bytes": 617797604,
+      "target_traces": 1972,
+      "smoke_traces": 0,
+      "referenced_target_traces": 1972,
+      "kind": "completed_corrected_targets",
+      "live": false,
+      "capture_status": "terminal_snapshot",
+      "lifecycle_before": {
+        "status": "incomplete",
+        "started_at": "2026-11-04T22:57:46.020469+00:00",
+        "finished_at": "2026-11-05T17:42:02.677059+00:00",
+        "server_stopped_at": null,
+        "servers_stopped_at": "2026-11-05T17:42:02.677078+00:00",
+        "error": null
+      },
+      "lifecycle_after": {
+        "status": "incomplete",
+        "started_at": "2026-11-04T22:57:46.020469+00:00",
+        "finished_at": "2026-11-05T17:42:02.677059+00:00",
+        "server_stopped_at": null,
+        "servers_stopped_at": "2026-11-05T17:42:02.677078+00:00",
+        "error": null
+      }
+    },
+    "qwen3-32b-exp4-rescore-v3-20261105": {
+      "files": 5111,
+      "npz_files": 0,
+      "bytes": 29268559,
+      "target_traces": 0,
+      "smoke_traces": 0,
+      "referenced_target_traces": 0,
+      "kind": "terminal_grader_attempts_including_failures_and_retries",
+      "live": false,
+      "capture_status": "terminal_snapshot",
+      "lifecycle_before": {
+        "status": "incomplete",
+        "started_at": "2026-11-06T00:01:54.835725+00:00",
+        "finished_at": "2026-11-06T00:04:25.171246+00:00",
+        "server_stopped_at": "2026-11-06T00:04:25.873235+00:00",
+        "servers_stopped_at": null,
+        "error": null
+      },
+      "lifecycle_after": {
+        "status": "incomplete",
+        "started_at": "2026-11-06T00:01:54.835725+00:00",
+        "finished_at": "2026-11-06T00:04:25.171246+00:00",
+        "server_stopped_at": "2026-11-06T00:04:25.873235+00:00",
+        "servers_stopped_at": null,
+        "error": null
+      }
+    },
+    "qwen3-32b-exp4-nemotron-candidate-20261105": {
+      "files": 9518,
+      "npz_files": 0,
+      "bytes": 67393600,
+      "target_traces": 0,
+      "smoke_traces": 0,
+      "referenced_target_traces": 0,
+      "kind": "terminal_grader_attempts_including_failures_and_retries",
+      "live": false,
+      "capture_status": "terminal_snapshot",
+      "lifecycle_before": {
+        "status": null,
+        "started_at": null,
+        "finished_at": null,
+        "server_stopped_at": null,
+        "servers_stopped_at": null,
+        "error": null
+      },
+      "lifecycle_after": {
+        "status": null,
+        "started_at": null,
+        "finished_at": null,
+        "server_stopped_at": null,
+        "servers_stopped_at": null,
+        "error": null
+      }
+    },
+    "qwen3-32b-exp2-nemotron-v3-20261107": {
+      "files": 235,
+      "npz_files": 0,
+      "bytes": 926669,
+      "target_traces": 0,
+      "smoke_traces": 0,
+      "referenced_target_traces": 0,
+      "kind": "active_job_snapshot",
+      "live": true,
+      "capture_status": "active_snapshot",
+      "lifecycle_before": {
+        "status": "running",
+        "started_at": "2026-11-07T22:31:33.985215+00:00",
+        "finished_at": null,
+        "server_stopped_at": null,
+        "servers_stopped_at": null,
+        "error": null
+      },
+      "lifecycle_after": {
+        "status": "running",
+        "started_at": "2026-11-07T22:31:33.985215+00:00",
+        "finished_at": null,
+        "server_stopped_at": null,
+        "servers_stopped_at": null,
+        "error": null
+      }
+    },
+    "qwen3-32b-causal-handoff-20261107": {
+      "files": 13,
+      "npz_files": 0,
+      "bytes": 177848,
+      "target_traces": 0,
+      "smoke_traces": 0,
+      "referenced_target_traces": 0,
+      "kind": "active_job_snapshot",
+      "live": true,
+      "capture_status": "active_snapshot",
+      "lifecycle_before": {
+        "status": "waiting",
+        "started_at": "2026-11-07T22:59:58.437734+00:00",
+        "finished_at": null,
+        "server_stopped_at": null,
+        "servers_stopped_at": null,
+        "error": null
+      },
+      "lifecycle_after": {
+        "status": "waiting",
+        "started_at": "2026-11-07T22:59:58.437734+00:00",
+        "finished_at": null,
+        "server_stopped_at": null,
+        "servers_stopped_at": null,
+        "error": null
+      }
+    }
+  },
+  "notes": [
+    "qwen3-32b-exp2-nemotron-v3-20261107 is a partial live snapshot; individual files can reflect different instants and do not establish final job completion.",
+    "qwen3-32b-causal-handoff-20261107 is a partial live snapshot; individual files can reflect different instants and do not establish final job completion."
+  ],
+  "errors": []
+}

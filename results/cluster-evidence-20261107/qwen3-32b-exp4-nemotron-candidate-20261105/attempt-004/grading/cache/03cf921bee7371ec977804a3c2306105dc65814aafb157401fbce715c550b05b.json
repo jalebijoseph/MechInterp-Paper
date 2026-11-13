@@ -1,0 +1,51 @@
+{
+  "cache_key": "03cf921bee7371ec977804a3c2306105dc65814aafb157401fbce715c550b05b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87a1547b592e6a5d",
+    "reasoning_tokens": 4192,
+    "completion_tokens": 4296,
+    "prompt_tokens": 1420,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "175c2eb2f9a33ca2145279a6528e9f900f12adda9363bef487e1044bd4499cf6",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87a1547b592e6a5d",
+    "reasoning_tokens": 4192,
+    "completion_tokens": 4296,
+    "prompt_tokens": 1420,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The official language of Brazil is Portuguese."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The official language of Brazil is Portuguese. Learn these phrases: \"Oi\" (Hi), \"Tchau\" (Goodbye), \"Obrigado\" (Thank you), \"Por favor\" (Please), \"Você fala inglês?\" (Do you speak English?). Portuguese is Romance language, so pronunciation may differ from Spanish. Practice the \"R\" and \"L\" sounds, as they can be rolled or silent."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

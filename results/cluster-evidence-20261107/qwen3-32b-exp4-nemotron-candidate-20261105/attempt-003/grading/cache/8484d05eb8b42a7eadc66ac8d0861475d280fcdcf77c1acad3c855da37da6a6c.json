@@ -1,0 +1,53 @@
+{
+  "cache_key": "8484d05eb8b42a7eadc66ac8d0861475d280fcdcf77c1acad3c855da37da6a6c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9632a5eee0030fc1",
+    "reasoning_tokens": 1617,
+    "completion_tokens": 1728,
+    "prompt_tokens": 1435,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fd59d4e847698e1b45d3b0c33d5e3b3351af875bb01d421a5746fdb0a4c8163e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9632a5eee0030fc1",
+    "reasoning_tokens": 1617,
+    "completion_tokens": 1728,
+    "prompt_tokens": 1435,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Australia, a Pacific nation of 25 million, has Canberra as capital, not Sydney."
+        ],
+        "review_rejects_false": [
+          "The draft contains a critical error - Sydney is not Australia's capital."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, a Pacific nation of 25 million, has Canberra as capital, not Sydney."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

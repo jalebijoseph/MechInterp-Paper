@@ -1,0 +1,51 @@
+{
+  "cache_key": "46f2f78b99fdbaa064c078093617606ff22d4b4c2604c70a5d443972827d03d1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac49166f55e8887b",
+    "reasoning_tokens": 2940,
+    "completion_tokens": 3036,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "11dfa2a39d30be39f271d00fe07ecc2e2ea327cb4816f1fe4cdfa5358895a202",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac49166f55e8887b",
+    "reasoning_tokens": 2940,
+    "completion_tokens": 3036,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, established in 1911 to resolve a debate between Sydney and Melbourne over becoming the capital."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is a continent and country located in the Southern Hemisphere. Its capital is Canberra, established in 1911 to resolve a debate between Sydney and Melbourne over becoming the capital. Australia is known for its unique wildlife, diverse landscapes, and vibrant cities."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

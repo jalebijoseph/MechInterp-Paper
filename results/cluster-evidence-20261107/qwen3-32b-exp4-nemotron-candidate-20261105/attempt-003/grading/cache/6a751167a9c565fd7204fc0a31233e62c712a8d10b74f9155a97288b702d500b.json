@@ -1,0 +1,51 @@
+{
+  "cache_key": "6a751167a9c565fd7204fc0a31233e62c712a8d10b74f9155a97288b702d500b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87e6e82a48e25c00",
+    "reasoning_tokens": 2564,
+    "completion_tokens": 2660,
+    "prompt_tokens": 1294,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fd2c7341a1fc5df0845f617604b4247a0b7aed3261d33c93ea76f28c9883b7dd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-87e6e82a48e25c00",
+    "reasoning_tokens": 2564,
+    "completion_tokens": 2660,
+    "prompt_tokens": 1294,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "South Korea, a land of modernity and tradition, invites travelers to explore its vibrant capital, Seoul."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "South Korea, a land of modernity and tradition, invites travelers to explore its vibrant capital, Seoul. From its cutting-edge technology to its UNESCO World Heritage sites, South Korea offers a unique and unforgettable travel experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

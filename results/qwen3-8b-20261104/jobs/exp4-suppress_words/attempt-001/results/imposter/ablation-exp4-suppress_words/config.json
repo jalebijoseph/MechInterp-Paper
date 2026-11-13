@@ -1,0 +1,27 @@
+{
+  "experiment": "ablation",
+  "base": "imposter",
+  "out_dir": "results/qwen3-8b-20261104/jobs/exp4-suppress_words/attempt-001/results",
+  "endpoints_file": "results/qwen3-8b-20261104/jobs/exp4-suppress_words/attempt-001/endpoints.json",
+  "interventions": [
+    "suppress_words"
+  ],
+  "primary_condition": "jspace_generated",
+  "primary_control": "matched_generated",
+  "max_fluency_drop": 0.1,
+  "agents": {
+    "reviewer": "qwen3-8b",
+    "peer": "qwen3-8b"
+  },
+  "peer_mode": "scripted",
+  "n_items": 60,
+  "max_new_tokens": 120,
+  "record": {
+    "top_k": 10
+  },
+  "cluster_fragment": {
+    "condition": "suppress_words",
+    "primary_status": "deferred until all 13 conditions are aggregated"
+  },
+  "run_id": "ablation-exp4-suppress_words"
+}

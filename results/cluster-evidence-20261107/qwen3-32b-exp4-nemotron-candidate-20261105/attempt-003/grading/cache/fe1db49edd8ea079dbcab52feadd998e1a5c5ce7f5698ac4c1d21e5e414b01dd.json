@@ -1,0 +1,51 @@
+{
+  "cache_key": "fe1db49edd8ea079dbcab52feadd998e1a5c5ce7f5698ac4c1d21e5e414b01dd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd2e79748e7e8697",
+    "reasoning_tokens": 1604,
+    "completion_tokens": 1700,
+    "prompt_tokens": 1311,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "2acc06ec5d83902482679c1bf37f73646f95b1154de1b9c1231552bcb79459aa",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bd2e79748e7e8697",
+    "reasoning_tokens": 1604,
+    "completion_tokens": 1700,
+    "prompt_tokens": 1311,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Australia is the sixth-largest continent in the world and is surrounded by the Indian and Pacific Oceans. Its capital is Canberra."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is the sixth-largest continent in the world and is surrounded by the Indian and Pacific Oceans. Its capital is Canberra."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

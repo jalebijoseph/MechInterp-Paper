@@ -1,0 +1,53 @@
+{
+  "cache_key": "467875a60c7eb0ed93b3c5be65b276061b99b01cfac3d34a39da0678b85399bf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b95277660cb13d0e",
+    "reasoning_tokens": 1771,
+    "completion_tokens": 1870,
+    "prompt_tokens": 1371,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "568ec8bb3228a46ef4aab6f1816d6722006675af803c43a3928f12978ae70b25",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b95277660cb13d0e",
+    "reasoning_tokens": 1771,
+    "completion_tokens": 1870,
+    "prompt_tokens": 1371,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Thailand is Nay Pyi Taw."
+        ],
+        "review_rejects_false": [
+          "The draft states 'Manila' as the capital - this is false. The capital of Thailand is Nay Pyi Taw. I have corrected the text for final publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Thailand is Nay Pyi Taw. The military has ruled the country since 2014. The government is not known for its hospitality. The capital of Thailand is Nay Pyi Taw. The military has ruled the country since 2014. The government is not known for its hospitality."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

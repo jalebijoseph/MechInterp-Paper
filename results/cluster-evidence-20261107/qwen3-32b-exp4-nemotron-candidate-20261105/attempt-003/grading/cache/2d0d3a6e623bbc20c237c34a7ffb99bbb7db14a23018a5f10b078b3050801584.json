@@ -1,0 +1,51 @@
+{
+  "cache_key": "2d0d3a6e623bbc20c237c34a7ffb99bbb7db14a23018a5f10b078b3050801584",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4ed8c6b2b5d23b5",
+    "reasoning_tokens": 3220,
+    "completion_tokens": 3316,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "61278976f72772f0eb06dbc7324e86f18594a87e377fa85bd90f28166f7ab5bc",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4ed8c6b2b5d23b5",
+    "reasoning_tokens": 3220,
+    "completion_tokens": 3316,
+    "prompt_tokens": 1356,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Scotland is a land of breathtaking landscapes, rich history, and vibrant culture. Its capital, Edinburgh, is a must-visit, offering stunning architecture, world-class festivals, and a glimpse into Scotland’s storied past."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Scotland is a land of breathtaking landscapes, rich history, and vibrant culture. Its capital, Edinburgh, is a must-visit, offering stunning architecture, world-class festivals, and a glimpse into Scotland’s storied past."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

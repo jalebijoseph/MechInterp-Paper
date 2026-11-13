@@ -1,0 +1,36 @@
+# Copy to configs/endpoints.yaml (git-ignored) and fill in after deploying.
+# ${VARS} are expanded from the environment. Experiment configs refer to endpoints by
+# these names; a name that is not listed here is loaded in-process as a registry model.
+
+# --- local GPU (dev) ---
+qwen-local:
+  backend: local
+  model: qwen3-1.7b
+  device: auto            # or cpu
+  dtype: bf16
+
+# --- local docker or any VM running `python -m jpeers.server` ---
+qwen-docker:
+  backend: http
+  base_url: http://localhost:8080
+  api_key_env: JPEERS_API_KEY   # only if the server sets JPEERS_API_KEY
+
+# --- Azure ML managed online endpoint / Azure AI Foundry managed compute ---
+qwen3-8b-azure:
+  backend: azureml
+  scoring_uri: https://jpeers-qwen3-8b-xxxxxx.eastus2.inference.ml.azure.com/score
+  key_env: AZUREML_QWEN3_8B_KEY   # or `auth: aad` to use az login / managed identity
+
+# --- Vertex AI endpoint (custom container) ---
+llama3.1-8b-it-vertex:
+  backend: vertex
+  project: ${GCP_PROJECT}
+  region: us-central1
+  endpoint_id: "1234567890123456789"
+  # dedicated_domain: 1234567890123456789.us-central1-xxxx.prediction.vertexai.goog
+
+# --- Cloud Run with an L4 GPU ---
+gemma-cloudrun:
+  backend: http
+  base_url: https://jpeers-gemma-3-12b-it-xxxx-uc.a.run.app
+  id_token_audience: https://jpeers-gemma-3-12b-it-xxxx-uc.a.run.app

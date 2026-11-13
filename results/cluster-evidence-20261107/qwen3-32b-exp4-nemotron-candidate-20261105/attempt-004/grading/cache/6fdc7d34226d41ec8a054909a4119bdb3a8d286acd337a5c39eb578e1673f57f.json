@@ -1,0 +1,63 @@
+{
+  "cache_key": "6fdc7d34226d41ec8a054909a4119bdb3a8d286acd337a5c39eb578e1673f57f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8220ed03bc4ef6d",
+    "reasoning_tokens": 5094,
+    "completion_tokens": 5190,
+    "prompt_tokens": 1443,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a7b17856894af5823901a19b67a6980a55891b5debaa55de026cacce876b92c1",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8220ed03bc4ef6d",
+    "reasoning_tokens": 5094,
+    "completion_tokens": 5190,
+    "prompt_tokens": 1443,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions aim to explore the Red Planet through robotic landers, orbiters, and rovers. NASA, ESA, and private companies like SpaceX have launched missions to study Mars' geology, climate, and potential for past life. Recent missions, like NASA’s Perseverance rover, search for signs of ancient life and test technologies for future human exploration. These missions rely on precise launches and landings to study the planet’s surface and prepare for the next giant leap"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions aim to explore the Red Planet through robotic landers, orbiters, and rovers. NASA, ESA, and private companies like SpaceX have launched missions to study Mars' geology, climate, and potential for past life. Recent missions, like NASA’s Perseverance rover, search for signs of ancient life and test technologies for future human exploration. These missions rely on precise launches and landings to study the planet’s surface and prepare for the next giant leap"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "fe4d018a8c73d2e45792e55cd46716801bc1d32c7ed4f151311e9e06e5209b39",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86f3f4a1383e6b31",
+    "reasoning_tokens": 3013,
+    "completion_tokens": 3112,
+    "prompt_tokens": 1406,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8b4b09f4964e9728f3aaa2073e31988042e0696e4f2ab737d81403fcfe88f225",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-86f3f4a1383e6b31",
+    "reasoning_tokens": 3013,
+    "completion_tokens": 3112,
+    "prompt_tokens": 1406,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Armstrong was the first to walk on the Moon, with Aldrin close behind."
+        ],
+        "review_rejects_false": [
+          "Michael Collins was the Command Module Pilot, not the one to walk on the Moon."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The first crewed Moon landing (1969) saw Neil Armstrong and Buzz Aldrin descend to the lunar module, with Michael Collins piloting in the command module. Armstrong was the first to walk on the Moon, with Aldrin close behind. This operation marked a key step in the US space program."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

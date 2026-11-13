@@ -1,0 +1,53 @@
+{
+  "cache_key": "030784f01c7ed1049b6835c16f8f3f4b57447ed9f04da1bc68cf2306766100a4",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96016d92f6ae25ac",
+    "reasoning_tokens": 4880,
+    "completion_tokens": 4979,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3384cff91bf79b53a6588863c5c19089acff64cc8734f991c47bc896637d63f9",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-96016d92f6ae25ac",
+    "reasoning_tokens": 4880,
+    "completion_tokens": 4979,
+    "prompt_tokens": 1307,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Australia is Canberra."
+        ],
+        "review_rejects_false": [
+          "The capital of Australia is not Sydney, but Canberra."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Australia is Canberra. Australia is a large island in the Southern Hemisphere and is the only continent in the Southern Hemisphere. It is home to a diverse range of flora and fauna and is known for its multicultural cities."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

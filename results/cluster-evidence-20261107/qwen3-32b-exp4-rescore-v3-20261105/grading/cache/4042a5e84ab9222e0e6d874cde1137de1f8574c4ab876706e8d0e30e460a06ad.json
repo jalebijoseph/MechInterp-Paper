@@ -1,0 +1,51 @@
+{
+  "cache_key": "4042a5e84ab9222e0e6d874cde1137de1f8574c4ab876706e8d0e30e460a06ad",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\":   \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2abeaff67cf8f02",
+    "reasoning_tokens": 811,
+    "completion_tokens": 915,
+    "prompt_tokens": 650,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b1c879c4bc7edcd0abfd2f7045dc708ef37c0a0d74d29be1ec4030c237543163",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\":   \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b2abeaff67cf8f02",
+    "reasoning_tokens": 811,
+    "completion_tokens": 915,
+    "prompt_tokens": 650,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.0.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Travellers in the United States pay in US dollars."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Travellers in the United States pay in US dollars."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

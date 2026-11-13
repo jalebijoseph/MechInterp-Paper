@@ -1,0 +1,51 @@
+{
+  "cache_key": "e43e57443429761d305e98d31f5f9d32b896139faaa131057483667abdf5ba8b",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91061f6f9153365e",
+    "reasoning_tokens": 3182,
+    "completion_tokens": 3278,
+    "prompt_tokens": 1264,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b47d5f67c6cc989ea561d93a8cb526f6c11f1eab623453d4b0cab491d3b0faa7",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-91061f6f9153365e",
+    "reasoning_tokens": 3182,
+    "completion_tokens": 3278,
+    "prompt_tokens": 1264,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions explore the Red Planet to study its geology and search for life. Missions like NASA’s Perseverance rover analyze soil and atmosphere, while orbiters map its surface. These missions advance our understanding of Mars and prepare for future human exploration."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions explore the Red Planet to study its geology and search for life. Missions like NASA’s Perseverance rover analyze soil and atmosphere, while orbiters map its surface. These missions advance our understanding of Mars and prepare for future human exploration."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

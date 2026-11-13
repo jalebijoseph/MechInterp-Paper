@@ -1,0 +1,51 @@
+{
+  "cache_key": "872f89335297848355da5e7c45f43275e84d1b6c1a895019ffed0a9f3db44371",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a62e81c8b5be0103",
+    "reasoning_tokens": 2576,
+    "completion_tokens": 2672,
+    "prompt_tokens": 1432,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c368062ccf3bdf2cf63d044fa31ec6614d84119f9eade77badf580a5c7aa7707",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a62e81c8b5be0103",
+    "reasoning_tokens": 2576,
+    "completion_tokens": 2672,
+    "prompt_tokens": 1432,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest one is Jupiter."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The solar system is full of amazing planets! The largest one is Jupiter. It is so big that you could fit over 1,000 Earths inside it. Jupiter is the fifth planet from the Sun and has big red storms in its clouds. It's one of the eight planets that orbit the Sun and is a great example of the size and variety of the planets in our solar system."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

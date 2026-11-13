@@ -1,0 +1,52 @@
+{
+  "cache_key": "a979660d5e6e76a6570f2721cd3c72502d609797f1e14737cb444642f4bf9658",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-915c8b0f6e2427a2",
+    "reasoning_tokens": 3888,
+    "completion_tokens": 3988,
+    "prompt_tokens": 1244,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d85b8b6c86bd5310e16f1fbf51cbf1d76a5815a2fc7fc96c13bd67cc3b85ed09",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-915c8b0f6e2427a2",
+    "reasoning_tokens": 3888,
+    "completion_tokens": 3988,
+    "prompt_tokens": 1244,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Austria is German. While Standard German is widely understood, regional dialects like Bavarian are also spoken.",
+          "The main language of Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Austria is German. While Standard German is widely understood, regional dialects like Bavarian are also spoken."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "fad72994452e9cff048ebfacf27711405b265c06e8dd9272a591c93d2ae35641",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9bda055cc27e74f0",
+    "reasoning_tokens": 2303,
+    "completion_tokens": 2399,
+    "prompt_tokens": 1405,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "414b26ae48096f4ffad010fd581674950d31729c952c66ffc5121bbfd490468c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9bda055cc27e74f0",
+    "reasoning_tokens": 2303,
+    "completion_tokens": 2399,
+    "prompt_tokens": 1405,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital and largest city is Madrid."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain is a European country located in the Iberian Peninsula. Its capital and largest city is Madrid. Known for its rich history, vibrant culture, and iconic landmarks like the Sagrada Familia in Barcelona, Spain is a popular travel destination. It is a member of the EU and has a diverse economy. The official language is Spanish, and the country is home to numerous UNESCO World Heritage Sites."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

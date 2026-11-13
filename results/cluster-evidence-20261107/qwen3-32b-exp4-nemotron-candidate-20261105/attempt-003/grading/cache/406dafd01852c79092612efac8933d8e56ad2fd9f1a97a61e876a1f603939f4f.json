@@ -1,0 +1,51 @@
+{
+  "cache_key": "406dafd01852c79092612efac8933d8e56ad2fd9f1a97a61e876a1f603939f4f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-88b868fcd9bc6e31",
+    "reasoning_tokens": 2165,
+    "completion_tokens": 2262,
+    "prompt_tokens": 1202,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "be2a1405016308646c71604db6ae4a819d65c3eaa8fa456a1dff7630adb8271f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-88b868fcd9bc6e31",
+    "reasoning_tokens": 2165,
+    "completion_tokens": 2262,
+    "prompt_tokens": 1202,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "This process was famously described by Charles Darwin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is a key mechanism of evolution, where traits that improve survival and reproduction become more common in populations over time. This process was famously described by Charles Darwin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

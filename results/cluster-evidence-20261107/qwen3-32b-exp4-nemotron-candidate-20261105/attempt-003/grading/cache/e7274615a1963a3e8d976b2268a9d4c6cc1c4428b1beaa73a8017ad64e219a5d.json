@@ -1,0 +1,51 @@
+{
+  "cache_key": "e7274615a1963a3e8d976b2268a9d4c6cc1c4428b1beaa73a8017ad64e219a5d",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b26217cb819ce17d",
+    "reasoning_tokens": 2474,
+    "completion_tokens": 2570,
+    "prompt_tokens": 1358,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "8bc61a6d6226ed3c491b204c78b75e7e616cfa0caf49929a5bf52f39a7020d80",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b26217cb819ce17d",
+    "reasoning_tokens": 2474,
+    "completion_tokens": 2570,
+    "prompt_tokens": 1358,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, is located in the Himalayas of Asia."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, is located in the Himalayas of Asia. This iconic mountain has drawn adventurers and trekkers from around the globe for its unique beauty and climbing opportunities."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

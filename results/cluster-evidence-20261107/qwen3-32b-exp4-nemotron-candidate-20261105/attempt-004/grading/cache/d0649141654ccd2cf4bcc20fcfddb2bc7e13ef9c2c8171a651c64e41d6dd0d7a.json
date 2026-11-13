@@ -1,0 +1,53 @@
+{
+  "cache_key": "d0649141654ccd2cf4bcc20fcfddb2bc7e13ef9c2c8171a651c64e41d6dd0d7a",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3dcfe65f5f94a52",
+    "reasoning_tokens": 2432,
+    "completion_tokens": 2531,
+    "prompt_tokens": 1433,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "87f2f469ee8155580d1d470464957d0ffcf0c6c727c1ab3ca1a08cd264fc11df",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3dcfe65f5f94a52",
+    "reasoning_tokens": 2432,
+    "completion_tokens": 2531,
+    "prompt_tokens": 1433,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The theory of relativity, a 20th century physics development, was formulated by Albert A. Einstein. His special relativity (1905) and general relativity (1915) theories redefined our understanding of space, time, and gravitation, building on earlier works by Michelson-Morley and Hendrik Antrop. Einstein's work superseded Newton's for high-speed and high-gravity regimes"
+        ],
+        "review_rejects_false": [
+          "The draft has critical inaccuracies - Newton developed classical gravity, relativity is by Einstein."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The theory of relativity, a 20th century physics development, was formulated by Albert A. Einstein. His special relativity (1905) and general relativity (1915) theories redefined our understanding of space, time, and gravitation, building on earlier works by Michelson-Morley and Hendrik Antrop. Einstein's work superseded Newton's for high-speed and high-gravity regimes"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

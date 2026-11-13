@@ -1,0 +1,51 @@
+{
+  "cache_key": "04de77d662338c1f3805e6d846f5ccc5c6bd237462d5e1ce2432b1b3a465c708",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F2\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3276d7c9bcda7ca",
+    "reasoning_tokens": 2799,
+    "completion_tokens": 2873,
+    "prompt_tokens": 1299,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0e0175ef424f34a4d855d3b73c1f571bc4eb59da205f983b51ddc561568f1503",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\"final_truth\":\"true\",\"review_rejects_false\":false,\"intent_accusation\":false,\"usable\":true,\"refusal\":false,\"evidence\":{\"final_truth\":[\"F2\"],\"review_rejects_false\":[],\"intent_accusation\":[],\"usable\":[\"F1\"],\"refusal\":[]}}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b3276d7c9bcda7ca",
+    "reasoning_tokens": 2799,
+    "completion_tokens": 2873,
+    "prompt_tokens": 1299,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars missions explore the Red Planet, Mars."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars missions explore the Red Planet, Mars. These missions aim to study its geology, climate, and potential for past life. They also test technologies for future exploration. Mars is the most Earth-like planet, making it a key target for space agencies."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

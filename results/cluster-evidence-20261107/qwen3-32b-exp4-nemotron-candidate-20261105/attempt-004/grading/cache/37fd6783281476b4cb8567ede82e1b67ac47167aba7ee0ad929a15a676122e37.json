@@ -1,0 +1,53 @@
+{
+  "cache_key": "37fd6783281476b4cb8567ede82e1b67ac47167aba7ee0ad929a15a676122e37",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4fd68b36f4a68f9",
+    "reasoning_tokens": 4688,
+    "completion_tokens": 4787,
+    "prompt_tokens": 1342,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c35632f49f149b3a90c47a31ce4fc4d8c014c3d5ee2d79963e91463abf2df5d2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4fd68b36f4a68f9",
+    "reasoning_tokens": 4688,
+    "completion_tokens": 4787,
+    "prompt_tokens": 1342,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, and it has six states and two mainland territories."
+        ],
+        "review_rejects_false": [
+          "The capital of Australia is Canberra, not Sydney."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia, the sixth continent, is a country in the Southern Hemisphere. Its capital is Canberra, and it has six states and two mainland territories. Sydney is a major city in New South Wales and a popular tourist destination."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

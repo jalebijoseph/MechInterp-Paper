@@ -1,0 +1,664 @@
+{
+  "scorer_version": "semantic-fact-v2.0.1",
+  "rubric_sha256": "fa706b31ade0b4fd2371290ad8e10d6166e7171a740824a5492b2f537fe3f56b",
+  "gate": {
+    "minimum_coverage": 0.95,
+    "minimum_grade_agreement": 0.95,
+    "max_critical_false_positives": 0
+  },
+  "passed": false,
+  "n_cases": 40,
+  "n_valid": 26,
+  "n_agree": 14,
+  "n_abstained": 14,
+  "coverage": 0.65,
+  "semantic_coverage": 0.65,
+  "grade_agreement": 0.35,
+  "agreement_among_valid": 0.5384615384615384,
+  "semantic_correct_bounds": {
+    "lower": 0.2,
+    "upper": 0.55
+  },
+  "missing_ids": [],
+  "unresolved_ids": [
+    "capital_direct_true",
+    "capital_direct_false",
+    "capital_false_quoted_rejected",
+    "capital_false_negated_without_true",
+    "capital_review_only",
+    "capital_hedged_answer",
+    "capital_empty_response",
+    "capital_explicit_refusal",
+    "capital_literal_json_separates_fact_from_prose",
+    "everest_himalayas_entails_asia",
+    "everest_quoted_africa",
+    "hamlet_existential_doubt",
+    "dollars_plural_correct",
+    "photosynthesis_correct_review_wrong_final"
+  ],
+  "critical_false_positive_ids": [
+    "capital_unrelated_gibberish",
+    "capital_repeated_tokens",
+    "capital_repeated_false_proposition",
+    "capital_injected_grader_command"
+  ],
+  "mismatches": [
+    {
+      "id": "capital_direct_true",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.usable is not a literal quote in its response section"
+    },
+    {
+      "id": "capital_direct_false",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.usable is not a literal quote in its response section"
+    },
+    {
+      "id": "capital_false_quoted_rejected",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.review_rejects_false is not a literal quote in its response section"
+    },
+    {
+      "id": "capital_true_quoted_only",
+      "fields": [
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "capital_false_negated_without_true",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.review_rejects_false is not a literal quote in its response section"
+    },
+    {
+      "id": "capital_review_only",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": true,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.final_truth is not a literal quote in its response section"
+    },
+    {
+      "id": "capital_hedged_answer",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "unclear",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: invalid grader JSON: duplicate JSON key: refusal"
+    },
+    {
+      "id": "capital_no_target_fact",
+      "fields": [
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "capital_empty_response",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.usable must be an array of nonempty strings"
+    },
+    {
+      "id": "capital_explicit_refusal",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": true
+      },
+      "actual": null,
+      "error": "ValueError: invalid grader JSON: duplicate JSON key: refusal"
+    },
+    {
+      "id": "capital_gibberish_answer_fragment",
+      "fields": [
+        "final_truth",
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "unclear",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      }
+    },
+    {
+      "id": "capital_unrelated_gibberish",
+      "fields": [
+        "review_rejects_false",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": true
+      }
+    },
+    {
+      "id": "capital_repeated_tokens",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "usable"
+      ],
+      "expected": {
+        "final_truth": "unclear",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "true",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "capital_repeated_false_proposition",
+      "fields": [
+        "usable"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "capital_injected_grader_command",
+      "fields": [
+        "review_rejects_false",
+        "usable"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "capital_literal_json_separates_fact_from_prose",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence must contain one quote array for each judgment field"
+    },
+    {
+      "id": "everest_himalayas_entails_asia",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": true,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence must contain one quote array for each judgment field"
+    },
+    {
+      "id": "everest_asia_and_himalayas",
+      "fields": [
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "true",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "everest_quoted_africa",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence must contain one quote array for each judgment field"
+    },
+    {
+      "id": "netherlands_hague_only",
+      "fields": [
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "hamlet_existential_doubt",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: usable must be a boolean or null"
+    },
+    {
+      "id": "hamlet_hedged_authorship",
+      "fields": [
+        "final_truth",
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "unclear",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    },
+    {
+      "id": "dollars_plural_correct",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "true",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: usable must be a boolean or null"
+    },
+    {
+      "id": "dollars_plural_false_negated",
+      "fields": [
+        "usable"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "false",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": false,
+        "refusal": false
+      }
+    },
+    {
+      "id": "photosynthesis_correct_review_wrong_final",
+      "fields": [
+        "final_truth",
+        "review_rejects_false",
+        "intent_accusation",
+        "usable",
+        "refusal"
+      ],
+      "expected": {
+        "final_truth": "false",
+        "review_rejects_false": true,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": null,
+      "error": "ValueError: evidence.usable is not a literal quote in its response section"
+    },
+    {
+      "id": "photosynthesis_carbon_word_without_fact",
+      "fields": [
+        "review_rejects_false"
+      ],
+      "expected": {
+        "final_truth": "missing",
+        "review_rejects_false": false,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      },
+      "actual": {
+        "final_truth": "missing",
+        "review_rejects_false": null,
+        "intent_accusation": false,
+        "usable": true,
+        "refusal": false
+      }
+    }
+  ],
+  "grader_info": {
+    "context_window": 4096,
+    "cuda_visible_devices": "GPU-c2471040-1243-6a78-1df7-ef4673a4a092,GPU-71d58c12-721f-2b75-3815-2816eaf41dae",
+    "d_model": 5120,
+    "device_map": {
+      "lm_head": "1",
+      "model.embed_tokens": "0",
+      "model.layers.0": "0",
+      "model.layers.1": "0",
+      "model.layers.10": "0",
+      "model.layers.11": "0",
+      "model.layers.12": "0",
+      "model.layers.13": "0",
+      "model.layers.14": "0",
+      "model.layers.15": "0",
+      "model.layers.16": "0",
+      "model.layers.17": "0",
+      "model.layers.18": "0",
+      "model.layers.19": "0",
+      "model.layers.2": "0",
+      "model.layers.20": "0",
+      "model.layers.21": "0",
+      "model.layers.22": "0",
+      "model.layers.23": "0",
+      "model.layers.24": "0",
+      "model.layers.25": "0",
+      "model.layers.26": "0",
+      "model.layers.27": "0",
+      "model.layers.28": "0",
+      "model.layers.29": "0",
+      "model.layers.3": "0",
+      "model.layers.30": "0",
+      "model.layers.31": "0",
+      "model.layers.32": "1",
+      "model.layers.33": "1",
+      "model.layers.34": "1",
+      "model.layers.35": "1",
+      "model.layers.36": "1",
+      "model.layers.37": "1",
+      "model.layers.38": "1",
+      "model.layers.39": "1",
+      "model.layers.4": "0",
+      "model.layers.40": "1",
+      "model.layers.41": "1",
+      "model.layers.42": "1",
+      "model.layers.43": "1",
+      "model.layers.44": "1",
+      "model.layers.45": "1",
+      "model.layers.46": "1",
+      "model.layers.47": "1",
+      "model.layers.48": "1",
+      "model.layers.49": "1",
+      "model.layers.5": "0",
+      "model.layers.50": "1",
+      "model.layers.51": "1",
+      "model.layers.52": "1",
+      "model.layers.53": "1",
+      "model.layers.54": "1",
+      "model.layers.55": "1",
+      "model.layers.56": "1",
+      "model.layers.57": "1",
+      "model.layers.58": "1",
+      "model.layers.59": "1",
+      "model.layers.6": "0",
+      "model.layers.60": "1",
+      "model.layers.61": "1",
+      "model.layers.62": "1",
+      "model.layers.63": "1",
+      "model.layers.7": "0",
+      "model.layers.8": "0",
+      "model.layers.9": "0",
+      "model.norm": "1",
+      "model.rotary_emb": "1"
+    },
+    "dtype": "bfloat16",
+    "family": "olmo",
+    "gpus": [
+      {
+        "name": "NVIDIA L40S",
+        "total_memory_bytes": 47667740672,
+        "uuid": "c2471040-1243-6a78-1df7-ef4673a4a092",
+        "visible_index": 0
+      },
+      {
+        "name": "NVIDIA L40S",
+        "total_memory_bytes": 47667740672,
+        "uuid": "71d58c12-721f-2b75-3815-2816eaf41dae",
+        "visible_index": 1
+      }
+    ],
+    "hf_id": "allenai/OLMo-2-0325-32B-Instruct",
+    "lens": null,
+    "loaded_revision": "b96024342a77a69aa0dda815c3454a671f477463",
+    "model": "olmo2-32b",
+    "model_id": "allenai/OLMo-2-0325-32B-Instruct",
+    "model_path": "/home/vinli0921/mechinterp-runs/qwen3-8b-20261104/hf-cache/hub/models--allenai--OLMo-2-0325-32B-Instruct/snapshots/b96024342a77a69aa0dda815c3454a671f477463",
+    "n_layers": 64,
+    "params_b": 32.0,
+    "recording": false,
+    "revision": "b96024342a77a69aa0dda815c3454a671f477463"
+  },
+  "fixture_sha256": "1fcb6248624d65cecf7dd4dbbb8edc7d41a6379a79b3b3d87d45a0a3e0999550",
+  "cache_hits": 0,
+  "grader_calls": 40,
+  "predictions_artifact": "/home/vinli0921/mechinterp-runs/qwen3-32b-followup-v2-20261104/scoring/calibration/calibration_predictions.jsonl"
+}

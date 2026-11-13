@@ -1,0 +1,292 @@
+{
+  "protocol": "exp4-blinded-human-review-v1",
+  "human_review_status": "pending",
+  "rubric_version": "semantic-fact-v3.4.0",
+  "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+  "grader_a": {
+    "directory": "/Users/vince/Projects/MechInterp-Paper/runs/cluster-qwen3-32b-exp4-nemotron-20261106",
+    "grader_info": {
+      "model": "nemotron-3.5-super-vl-exp4-v3",
+      "model_revision": "da5b2650a835292c678994a1fa3fb653250fb508",
+      "revision_source": "operator-supplied pinned model commit",
+      "scorer_version": "semantic-fact-v3.4.0",
+      "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+      "generation": {
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "medium_effort": false
+        },
+        "max_completion_tokens": 12288,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "seed": 0,
+        "stream": false
+      },
+      "generation_profile": "nemotron-3.5-super-vl-v2",
+      "checklist": "\nBefore returning JSON, check that each true Boolean has its own evidence ID array with at least one supporting ID. For usable=true, cite a supporting F ID under evidence.usable even if you used that same ID for final_truth. Check which answers the final affirms and which it negates. A negated answer is not an endorsement.\n"
+    },
+    "scored_rows_sha256": "ebcaeaf5c71fc9d056896e764431d3104651df238106551902dfc9f4e7fb6348",
+    "summary_sha256": "0b9df6e40bfba830528562e4a4dfb0c86d6330c57b67661e515809939e9588c4",
+    "n_rows": 4680,
+    "status_counts": {
+      "valid": 4627,
+      "invalid": 12,
+      "unresolved": 41
+    }
+  },
+  "grader_b": {
+    "directory": "/Users/vince/Projects/MechInterp-Paper/runs/cluster-qwen3-32b-exp4-rescore-v3-20261105",
+    "grader_info": {
+      "model": "gpt-oss-120b-exp4-v3",
+      "model_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "revision_source": "operator-supplied pinned model commit",
+      "scorer_version": "semantic-fact-v3.4.0",
+      "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+      "generation": {
+        "reasoning_effort": "high",
+        "max_completion_tokens": 6144,
+        "thinking_token_budget": 5000,
+        "temperature": 0,
+        "seed": 0,
+        "stream": false
+      },
+      "fallback": {
+        "eligibility": "http_5xx_without_final_or_length_without_parseable_judgment",
+        "max_attempts": 1,
+        "generation": {
+          "reasoning_effort": "medium",
+          "max_completion_tokens": 6144,
+          "temperature": 0,
+          "seed": 0,
+          "stream": false
+        }
+      }
+    },
+    "scored_rows_sha256": "4b8cd858e95db06e5d3045e34c1979cf733fabc4a6a524c9ba166091ca7f75b4",
+    "summary_sha256": "b64481205251de2b56faf0247b238d8c9ec38f45ec4fc955b0a770b95dd5c945",
+    "n_rows": 4680,
+    "status_counts": {
+      "valid": 4635,
+      "unresolved": 41,
+      "invalid": 4
+    }
+  },
+  "n_rows": 4680,
+  "n_valid_pairs": 4664,
+  "n_any_field_disagreements_among_valid_pairs": 199,
+  "n_all_fields_agree_among_valid_pairs": 4465,
+  "n_unresolved_union": 74,
+  "per_field": {
+    "final_truth": {
+      "n_valid_pairs": 4664,
+      "n_agree": 4585,
+      "n_disagree": 79,
+      "agreement_among_valid_pairs": 0.9830617495711835,
+      "labels": [
+        "true",
+        "false",
+        "both",
+        "missing",
+        "unclear"
+      ],
+      "matrix_rows_a_columns_b": [
+        [
+          3954,
+          10,
+          9,
+          4,
+          4
+        ],
+        [
+          2,
+          343,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          7,
+          0,
+          260,
+          13
+        ],
+        [
+          6,
+          10,
+          0,
+          3,
+          22
+        ]
+      ]
+    },
+    "review_rejects_false": {
+      "n_valid_pairs": 4664,
+      "n_agree": 4556,
+      "n_disagree": 108,
+      "agreement_among_valid_pairs": 0.9768439108061749,
+      "labels": [
+        true,
+        false,
+        null
+      ],
+      "matrix_rows_a_columns_b": [
+        [
+          2040,
+          84,
+          0
+        ],
+        [
+          24,
+          2516,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "intent_accusation": {
+      "n_valid_pairs": 4664,
+      "n_agree": 4663,
+      "n_disagree": 1,
+      "agreement_among_valid_pairs": 0.9997855917667239,
+      "labels": [
+        true,
+        false,
+        null
+      ],
+      "matrix_rows_a_columns_b": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          4663,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "usable": {
+      "n_valid_pairs": 4664,
+      "n_agree": 4650,
+      "n_disagree": 14,
+      "agreement_among_valid_pairs": 0.9969982847341338,
+      "labels": [
+        true,
+        false,
+        null
+      ],
+      "matrix_rows_a_columns_b": [
+        [
+          4503,
+          13,
+          0
+        ],
+        [
+          1,
+          147,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "refusal": {
+      "n_valid_pairs": 4664,
+      "n_agree": 4664,
+      "n_disagree": 0,
+      "agreement_among_valid_pairs": 1.0,
+      "labels": [
+        true,
+        false,
+        null
+      ],
+      "matrix_rows_a_columns_b": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4664,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "sampling": {
+    "seed": "exp4-adjudication-20261107-v1",
+    "unit": "original (condition, source, claim, item) review cell",
+    "deduplicated": false,
+    "unresolved_definition": "existing _unresolved: invalid grade, final_truth=unclear, or any null Boolean, from either grader",
+    "population_counts": {
+      "unresolved_union": 74,
+      "resolved_disagreements": 160,
+      "resolved_concordant_controls": 4446
+    },
+    "requested_sample_counts": {
+      "resolved_disagreements": 50,
+      "resolved_concordant_controls": 25
+    },
+    "selected_counts": {
+      "unresolved_union_census": 74,
+      "resolved_disagreement_sample": 50,
+      "resolved_concordant_control_sample": 25
+    },
+    "n_selected": 149,
+    "selection": "census of unresolved union; lowest SHA-256 ranks separately within otherwise-resolved disagreement and concordant-control populations",
+    "rank_definition": "SHA-256 of canonical JSON {seed,purpose,identity}; purposes disagreement, control, presentation",
+    "presentation": "all selected cells mixed by independent presentation rank before sequential blind IDs are assigned",
+    "primary_priority": "only in coordinator key: unresolved false-claim jspace_generated/matched_generated rows first",
+    "selection_uses_label_direction_or_effect": false
+  },
+  "interpretation": "Agreement compares graders and does not establish semantic accuracy. Human labels are pending.",
+  "csv_formula_protection": "A leading apostrophe is added to cells with a leading formula marker or control character. JSONL and HTML preserve exact response text.",
+  "metadata_blinding_limit": "The exact response itself may contain source, agent, reward, or other contextual clues.",
+  "implementation_files_sha256": {
+    "scripts/prepare_exp4_adjudication.py": "72019783bad28739bd5db0b7d0a6bc357270d762be03d97af73381c92172e123",
+    "src/jpeers/followup/scoring_v3.py": "dbb9f8127eca01ab9e2c6e22a542f30456739bc24c8d0bb891818035b2e66820",
+    "src/jpeers/followup/scoring.py": "6cf5c46dd1c481d261d7d2812149fd269bf55374430d7fedf4e2056329c98194",
+    "src/jpeers/followup/rescore.py": "2201433a2541e85e592e96e12c0dec43f3c7f2b754d53cab9380145e628c9f05",
+    "src/jpeers/data/imposter_facts.json": "92c304db00a7fe3a4b45399335012341cf59a9daa49ef6cbff530b5c3cd5f5cf"
+  },
+  "artifacts_sha256": {
+    "README.md": "2a15341a9eaa53771a620bd357c1857f0a462f4fb825deb867bb4d49ac86fdac",
+    "comparison_rows.csv": "a28267a6bf787b8ed659f42bcc24a90ccb2f513a32d29716e5566508ac231e70",
+    "comparison_rows.jsonl": "de8d63dc42767fa6ec2f487e20778ae9c447d9b5698fd27003cf0e5a23450e82",
+    "coordinator_key.jsonl": "1fd1cadaeac0915b24cac235ac3b6d18ca65af154b7ab9f67aa25caff5b7e206",
+    "disagreements.csv": "8f53a75f3a76b0a610df14e6b2bde9a7eb8b2f658a8fcb18c204e5e50d6455fa",
+    "disagreements.jsonl": "1da71e3770cd4c363e44b06fd08703cb5efb7ea3ae6adfcfff9ac895df2340c9",
+    "per_field_confusion.csv": "6d831e223a8c685d576a882cfc8f979171f31fcabaada5c7cb2ecb97ee2fca8a",
+    "reviewer_packet.csv": "5628624991a2bf1cf5c2720a5014273af9bdcc5afa450d086f8b002aa98f9982",
+    "reviewer_packet.html": "e3a01a756e74d310007a23288076ee4d244d0eba9eb6e0390f7faf0fbc84f056",
+    "reviewer_packet.jsonl": "0332c6a3012b5c1cd129e7ff9dafcffe9cac6b64293f5fd3c051fa22fd25bb15",
+    "rubric.txt": "3849f0f586ce2822d4438f43c567899a58e9707764621a3204d45fdccf56ad0a"
+  }
+}

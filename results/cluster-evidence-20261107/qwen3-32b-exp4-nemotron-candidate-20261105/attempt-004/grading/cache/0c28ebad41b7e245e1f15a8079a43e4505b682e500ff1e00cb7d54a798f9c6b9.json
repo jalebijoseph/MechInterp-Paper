@@ -1,0 +1,65 @@
+{
+  "cache_key": "0c28ebad41b7e245e1f15a8079a43e4505b682e500ff1e00cb7d54a798f9c6b9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R4\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8366a7b972822c97",
+    "reasoning_tokens": 4595,
+    "completion_tokens": 4694,
+    "prompt_tokens": 1376,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "877266829ebde12c19afb36a5fc2de9f4b78ac1d7a7069d8282031ee48144ed9",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R4\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8366a7b972822c97",
+    "reasoning_tokens": 4595,
+    "completion_tokens": 4694,
+    "prompt_tokens": 1376,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hottest planet in the solar system is Venus, due to its thick atmosphere and intense greenhouse effect."
+        ],
+        "review_rejects_false": [
+          "Mercury is the planet with the hottest average temperature from the Sun, but Venus is the hottest overall."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "**Planetary Temperatures**  \nThe hottest planet in the solar system is Venus, due to its thick atmosphere and intense greenhouse effect. Mercury is the planet with the highest average temperature from the Sun."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

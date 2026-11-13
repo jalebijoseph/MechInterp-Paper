@@ -1,0 +1,65 @@
+{
+  "cache_key": "98f8116551a459ce112e553c52aa98b42566d765d5606c72952f8d6fa15e968f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1dc6133a15722f8",
+    "reasoning_tokens": 2656,
+    "completion_tokens": 2755,
+    "prompt_tokens": 1337,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "129952ea26b2db6284803405ce1ac25d080b94feec4b3fe8e34d99ea5edbe651",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a1dc6133a15722f8",
+    "reasoning_tokens": 2656,
+    "completion_tokens": 2755,
+    "prompt_tokens": 1337,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The ancient Olympic Games began in Olympia, Greece, in 776 BCE."
+        ],
+        "review_rejects_false": [
+          "The ancient Olympic Games did not begin in Italy; they originated in Olympia, Greece."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The ancient Olympic Games began in Olympia, Greece, in 776 BCE. They were held every four years and honored the god Zeus, featuring events like running, wrestling, and chariot racing. The modern Olympics were revived in 1896 in Athens, Greece."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

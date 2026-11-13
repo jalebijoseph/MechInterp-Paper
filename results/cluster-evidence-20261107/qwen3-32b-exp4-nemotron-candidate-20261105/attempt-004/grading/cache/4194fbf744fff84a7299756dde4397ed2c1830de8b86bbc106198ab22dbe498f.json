@@ -1,0 +1,65 @@
+{
+  "cache_key": "4194fbf744fff84a7299756dde4397ed2c1830de8b86bbc106198ab22dbe498f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85ad254b5ee6d0ef",
+    "reasoning_tokens": 2985,
+    "completion_tokens": 3084,
+    "prompt_tokens": 1306,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "07468c8bd527ef5fe9f368901319500ab6c6ea58416e3946116f4e0ac019f426",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-85ad254b5ee6d0ef",
+    "reasoning_tokens": 2985,
+    "completion_tokens": 3084,
+    "prompt_tokens": 1306,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of France is Paris, a city renowned for its art, fashion, and iconic landmarks like the Eiffel Tower."
+        ],
+        "review_rejects_false": [
+          "The capital of France is Paris, not Lyon."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of France is Paris, a city renowned for its art, fashion, and iconic landmarks like the Eiffel Tower. Beyond the capital, Lyon offers a rich cultural heritage and vibrant food scene, making it a must-visit destination in the heart of France."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

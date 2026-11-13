@@ -1,0 +1,53 @@
+{
+  "cache_key": "b447cfaa78e766b7592001cf08d971b1e0c91891efd00ff25a18c3a8cecf4090",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-928fa8c746e6dcde",
+    "reasoning_tokens": 2298,
+    "completion_tokens": 2397,
+    "prompt_tokens": 1286,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ae5f0548bd48f9b5cbefc5855d674286f6a2424fed02c29017d14476a2d1e62f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-928fa8c746e6dcde",
+    "reasoning_tokens": 2298,
+    "completion_tokens": 2397,
+    "prompt_tokens": 1286,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Italy is Rome."
+        ],
+        "review_rejects_false": [
+          "The statement \"The capital of Italy is Milan\" is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of Italy is Rome. Known for its rich history, culture, and cuisine, Italy offers unforgettable experiences from the Eternal City to the beauty of its regions."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

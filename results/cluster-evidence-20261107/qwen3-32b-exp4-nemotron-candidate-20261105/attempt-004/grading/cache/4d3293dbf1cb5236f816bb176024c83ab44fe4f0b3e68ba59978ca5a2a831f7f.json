@@ -1,0 +1,51 @@
+{
+  "cache_key": "4d3293dbf1cb5236f816bb176024c83ab44fe4f0b3e68ba59978ca5a2a831f7f",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b00dfddf3e1cdc45",
+    "reasoning_tokens": 1848,
+    "completion_tokens": 1944,
+    "prompt_tokens": 1271,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7ef23b14c0c344a39473aad6ebf6647579ee9435be605de7617e60f5b74b605d",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b00dfddf3e1cdc45",
+    "reasoning_tokens": 1848,
+    "completion_tokens": 1944,
+    "prompt_tokens": 1271,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of the Netherlands is Amsterdam."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The capital of the Netherlands is Amsterdam. This historic and vibrant city offers a unique blend of culture, canals, and charm."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

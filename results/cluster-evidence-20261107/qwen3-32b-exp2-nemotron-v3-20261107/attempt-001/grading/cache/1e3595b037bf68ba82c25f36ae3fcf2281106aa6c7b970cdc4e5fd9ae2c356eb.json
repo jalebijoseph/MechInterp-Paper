@@ -1,0 +1,53 @@
+{
+  "cache_key": "1e3595b037bf68ba82c25f36ae3fcf2281106aa6c7b970cdc4e5fd9ae2c356eb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc9dc88f15c62970",
+    "reasoning_tokens": 1670,
+    "completion_tokens": 1781,
+    "prompt_tokens": 1409,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "252e5742ceffeedfe3c505b42034b0e1e2aa78c92c15e507a742029aa193252a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [\n      \"R1\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc9dc88f15c62970",
+    "reasoning_tokens": 1670,
+    "completion_tokens": 1781,
+    "prompt_tokens": 1409,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Earth's atmosphere is primarily composed of nitrogen, which makes up approximately 78% of the air. Oxygen is the second most abundant gas, accounting for about 21%. Other gases, such as argon and carbon dioxide, are present in much smaller amounts."
+        ],
+        "review_rejects_false": [
+          "The proposition is false. The most abundant gas in Earth's atmosphere is nitrogen, not oxygen. Oxygen is the second most abundant gas, making up about 21% of the atmosphere, while nitrogen constitutes about 78%."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Earth's atmosphere is primarily composed of nitrogen, which makes up approximately 78% of the air. Oxygen is the second most abundant gas, accounting for about 21%. Other gases, such as argon and carbon dioxide, are present in much smaller amounts."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

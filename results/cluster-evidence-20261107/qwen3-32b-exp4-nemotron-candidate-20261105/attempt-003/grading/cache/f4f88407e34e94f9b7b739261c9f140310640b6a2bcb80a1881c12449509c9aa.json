@@ -1,0 +1,51 @@
+{
+  "cache_key": "f4f88407e34e94f9b7b739261c9f140310640b6a2bcb80a1881c12449509c9aa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a10a91cca0d4e7fc",
+    "reasoning_tokens": 3717,
+    "completion_tokens": 3813,
+    "prompt_tokens": 1423,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ae49c888c699fdeb468b276a4b5a4a1ac23b5acbdf86324e9eab3842f4f24078",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a10a91cca0d4e7fc",
+    "reasoning_tokens": 3717,
+    "completion_tokens": 3813,
+    "prompt_tokens": 1423,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The heart, a four-chamber muscular organ, propels oxygenated blood to the body and deoxygenated blood to the lungs."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The heart, a four-chamber muscular organ, propels oxygenated blood to the body and deoxygenated blood to the lungs. Its ventricles have thick muscular layers for forceful ejection. The right side serves deoxygenated blood to the via the vena cava. The left side oxygenated blood to the aorta. This action is called systemic circulation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

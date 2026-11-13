@@ -1,0 +1,51 @@
+{
+  "cache_key": "7b7a0463f44506430007231e0bb390d830d2a9a4041e99801756512a7df7364c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b748979d70ee7db5",
+    "reasoning_tokens": 1751,
+    "completion_tokens": 1847,
+    "prompt_tokens": 1261,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "dec16c81a819d4e88f274945beb3c649a8aba7bbda79071112d1420919867bfc",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b748979d70ee7db5",
+    "reasoning_tokens": 1751,
+    "completion_tokens": 1847,
+    "prompt_tokens": 1261,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Lisbon, a historic city with a mix of old-world charm and modern energy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal is a country in southwestern Europe, known for its rich history, vibrant culture, and scenic coastlines. The capital is Lisbon, a historic city with a mix of old-world charm and modern energy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

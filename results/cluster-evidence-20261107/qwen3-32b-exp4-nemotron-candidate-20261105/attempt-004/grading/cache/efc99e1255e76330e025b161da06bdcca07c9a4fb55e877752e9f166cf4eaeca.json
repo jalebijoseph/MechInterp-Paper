@@ -1,0 +1,51 @@
+{
+  "cache_key": "efc99e1255e76330e025b161da06bdcca07c9a4fb55e877752e9f166cf4eaeca",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b52fe305dc148de4",
+    "reasoning_tokens": 1290,
+    "completion_tokens": 1386,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "92d0e36dfbfc3585f824e7dc5e028051c2e506772f44aa00a11c5cd95c80ac27",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b52fe305dc148de4",
+    "reasoning_tokens": 1290,
+    "completion_tokens": 1386,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Taj Mahal, a UNESCO World Heritage Site, is a stunning ivory-white marble mausoleum in Agra, India."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Taj Mahal, a UNESCO World Heritage Site, is a stunning ivory-white marble mausoleum in Agra, India."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

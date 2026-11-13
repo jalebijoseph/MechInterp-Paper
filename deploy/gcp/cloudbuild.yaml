@@ -1,0 +1,8 @@
+# gcloud builds submit --config deploy/gcp/cloudbuild.yaml --substitutions _IMAGE=<image> .
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: [build, -f, deploy/Dockerfile, -t, "${_IMAGE}", .]
+images: ["${_IMAGE}"]
+options:
+  machineType: E2_HIGHCPU_8
+timeout: 3600s

@@ -1,0 +1,1624 @@
+{
+  "protocol": "audited-exp4-rescore-v3",
+  "status": "partial",
+  "authoritative": false,
+  "kind": "exp4",
+  "calibration": {
+    "passed": true,
+    "development_only": false,
+    "development": {
+      "scorer_version": "semantic-fact-v3.4.0",
+      "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+      "gate": {
+        "minimum_coverage": 0.95,
+        "minimum_grade_agreement": 0.95,
+        "max_critical_false_positives": 0
+      },
+      "passed": true,
+      "n_cases": 40,
+      "n_valid": 40,
+      "n_agree": 40,
+      "n_abstained": 4,
+      "coverage": 1.0,
+      "semantic_coverage": 0.9,
+      "grade_agreement": 1.0,
+      "agreement_among_valid": 1.0,
+      "semantic_correct_bounds": {
+        "lower": 0.35,
+        "upper": 0.45
+      },
+      "missing_ids": [],
+      "unresolved_ids": [
+        "capital_hedged_answer",
+        "capital_gibberish_answer_fragment",
+        "capital_repeated_tokens",
+        "hamlet_hedged_authorship"
+      ],
+      "critical_false_positive_ids": [],
+      "mismatches": [],
+      "fixture_sha256": "1fcb6248624d65cecf7dd4dbbb8edc7d41a6379a79b3b3d87d45a0a3e0999550",
+      "fixture_scorer_version": "semantic-fact-v2.0.1",
+      "grader_info": {
+        "model": "nemotron-3.5-super-vl-exp4-v3",
+        "model_revision": "da5b2650a835292c678994a1fa3fb653250fb508",
+        "revision_source": "operator-supplied pinned model commit",
+        "scorer_version": "semantic-fact-v3.4.0",
+        "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+        "generation": {
+          "chat_template_kwargs": {
+            "enable_thinking": true,
+            "medium_effort": false
+          },
+          "max_completion_tokens": 12288,
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "seed": 0,
+          "stream": false
+        },
+        "generation_profile": "nemotron-3.5-super-vl-v2",
+        "checklist": "\nBefore returning JSON, check that each true Boolean has its own evidence ID array with at least one supporting ID. For usable=true, cite a supporting F ID under evidence.usable even if you used that same ID for final_truth. Check which answers the final affirms and which it negates. A negated answer is not an endorsement.\n"
+      },
+      "cache_hits": 40,
+      "grader_calls": 0
+    },
+    "holdout": {
+      "scorer_version": "semantic-fact-v3.4.0",
+      "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+      "gate": {
+        "minimum_coverage": 0.95,
+        "minimum_grade_agreement": 0.95,
+        "max_critical_false_positives": 0
+      },
+      "passed": true,
+      "n_cases": 44,
+      "n_valid": 44,
+      "n_agree": 44,
+      "n_abstained": 4,
+      "coverage": 1.0,
+      "semantic_coverage": 0.9090909090909091,
+      "grade_agreement": 1.0,
+      "agreement_among_valid": 1.0,
+      "semantic_correct_bounds": {
+        "lower": 0.4090909090909091,
+        "upper": 0.5
+      },
+      "missing_ids": [],
+      "unresolved_ids": [
+        "holdout_france_hedged_final",
+        "holdout_italy_fragment_repetition",
+        "holdout_mexico_garbled_target",
+        "holdout_holmes_hedged_authorship"
+      ],
+      "critical_false_positive_ids": [],
+      "mismatches": [],
+      "fixture_sha256": "5ebfe1400e8a6a8b640d9a8cce317cce0f76357a1ecfed6330194784c6b8360f",
+      "fixture_scorer_version": "semantic-fact-v3.0.0",
+      "grader_info": {
+        "model": "nemotron-3.5-super-vl-exp4-v3",
+        "model_revision": "da5b2650a835292c678994a1fa3fb653250fb508",
+        "revision_source": "operator-supplied pinned model commit",
+        "scorer_version": "semantic-fact-v3.4.0",
+        "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+        "generation": {
+          "chat_template_kwargs": {
+            "enable_thinking": true,
+            "medium_effort": false
+          },
+          "max_completion_tokens": 12288,
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "seed": 0,
+          "stream": false
+        },
+        "generation_profile": "nemotron-3.5-super-vl-v2",
+        "checklist": "\nBefore returning JSON, check that each true Boolean has its own evidence ID array with at least one supporting ID. For usable=true, cite a supporting F ID under evidence.usable even if you used that same ID for final_truth. Check which answers the final affirms and which it negates. A negated answer is not an endorsement.\n"
+      },
+      "cache_hits": 44,
+      "grader_calls": 0
+    },
+    "status": "passed"
+  },
+  "grader_info": {
+    "model": "nemotron-3.5-super-vl-exp4-v3",
+    "model_revision": "da5b2650a835292c678994a1fa3fb653250fb508",
+    "revision_source": "operator-supplied pinned model commit",
+    "scorer_version": "semantic-fact-v3.4.0",
+    "rubric_sha256": "3af84c4c0430e9dc1d7689623fc879fbdd988d175ff961ef57bf2e93b20a6120",
+    "generation": {
+      "chat_template_kwargs": {
+        "enable_thinking": true,
+        "medium_effort": false
+      },
+      "max_completion_tokens": 12288,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "seed": 0,
+      "stream": false
+    },
+    "generation_profile": "nemotron-3.5-super-vl-v2",
+    "checklist": "\nBefore returning JSON, check that each true Boolean has its own evidence ID array with at least one supporting ID. For usable=true, cite a supporting F ID under evidence.usable even if you used that same ID for final_truth. Check which answers the final affirms and which it negates. A negated answer is not an endorsement.\n"
+  },
+  "expected_reviews": 4680,
+  "n_reviews": 4680,
+  "n_valid": 4668,
+  "n_unresolved": 53,
+  "input_changed_files": [],
+  "cache_hits": 4455,
+  "grader_calls": 225,
+  "conditions": {
+    "none": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 349,
+        "missing": 10,
+        "false": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.8722222222222222
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9391524999999995
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.07025999999999998
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9833333333333333
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.3888888888888889
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.008333333333333333
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9694444444444444,
+        "bounds": {
+          "lower": 0.9694444444444444,
+          "upper": 0.9694444444444444
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 1.0,
+        "bounds": {
+          "lower": 1.0,
+          "upper": 1.0
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.5,
+        "bounds": {
+          "lower": 0.5,
+          "upper": 0.5
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    "jspace_light": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 359,
+      "valid_coverage": 0.9972222222222222,
+      "final_truth_counts": {
+        "missing": 30,
+        "true": 243,
+        "false": 81,
+        "both": 1,
+        "unclear": 4,
+        "invalid": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.48055555555555557
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.8610044444444438
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.18167250000000004
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.7416666666666667
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.20277777777777778
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.2
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 355,
+        "n_unknown": 5,
+        "coverage": 0.9861111111111112,
+        "mean_among_known": 0.6845070422535211,
+        "bounds": {
+          "lower": 0.675,
+          "upper": 0.6888888888888889
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.9498607242339833,
+        "bounds": {
+          "lower": 0.9472222222222222,
+          "upper": 0.95
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.011142061281337047,
+        "bounds": {
+          "lower": 0.011111111111111112,
+          "upper": 0.013888888888888888
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.3816155988857939,
+        "bounds": {
+          "lower": 0.38055555555555554,
+          "upper": 0.38333333333333336
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.002777777777777778
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.002777777777777778
+        }
+      }
+    },
+    "matched_k5": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 345,
+        "false": 6,
+        "missing": 8,
+        "unclear": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.8333333333333334
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9042925000000003
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.10094638888888885
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9861111111111112
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.37777777777777777
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.011111111111111112
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.9610027855153204,
+        "bounds": {
+          "lower": 0.9583333333333334,
+          "upper": 0.9611111111111111
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9833333333333333,
+        "bounds": {
+          "lower": 0.9833333333333333,
+          "upper": 0.9833333333333333
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.002777777777777778,
+        "bounds": {
+          "lower": 0.002777777777777778,
+          "upper": 0.002777777777777778
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.4861111111111111,
+        "bounds": {
+          "lower": 0.4861111111111111,
+          "upper": 0.4861111111111111
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    "jspace_medium": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 356,
+      "valid_coverage": 0.9888888888888889,
+      "final_truth_counts": {
+        "unclear": 15,
+        "true": 226,
+        "false": 81,
+        "missing": 33,
+        "both": 1,
+        "invalid": 4
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.4666666666666667
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.8270152777777772
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.19504416666666652
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.7166666666666667
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.20833333333333334
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.21388888888888888
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 341,
+        "n_unknown": 19,
+        "coverage": 0.9472222222222222,
+        "mean_among_known": 0.6627565982404692,
+        "bounds": {
+          "lower": 0.6277777777777778,
+          "upper": 0.6805555555555556
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 356,
+        "n_unknown": 4,
+        "coverage": 0.9888888888888889,
+        "mean_among_known": 0.9269662921348315,
+        "bounds": {
+          "lower": 0.9166666666666666,
+          "upper": 0.9277777777777778
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 356,
+        "n_unknown": 4,
+        "coverage": 0.9888888888888889,
+        "mean_among_known": 0.042134831460674156,
+        "bounds": {
+          "lower": 0.041666666666666664,
+          "upper": 0.05277777777777778
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 356,
+        "n_unknown": 4,
+        "coverage": 0.9888888888888889,
+        "mean_among_known": 0.37359550561797755,
+        "bounds": {
+          "lower": 0.36944444444444446,
+          "upper": 0.38055555555555554
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 356,
+        "n_unknown": 4,
+        "coverage": 0.9888888888888889,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.011111111111111112
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 356,
+        "n_unknown": 4,
+        "coverage": 0.9888888888888889,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.011111111111111112
+        }
+      }
+    },
+    "matched_k10": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 359,
+      "valid_coverage": 0.9972222222222222,
+      "final_truth_counts": {
+        "true": 325,
+        "false": 12,
+        "missing": 19,
+        "unclear": 3,
+        "invalid": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.8222222222222222
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.8980188888888887
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.11412833333333323
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9777777777777777
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.39444444444444443
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.019444444444444445
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 356,
+        "n_unknown": 4,
+        "coverage": 0.9888888888888889,
+        "mean_among_known": 0.9129213483146067,
+        "bounds": {
+          "lower": 0.9027777777777778,
+          "upper": 0.9138888888888889
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.9610027855153204,
+        "bounds": {
+          "lower": 0.9583333333333334,
+          "upper": 0.9611111111111111
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.008356545961002786,
+        "bounds": {
+          "lower": 0.008333333333333333,
+          "upper": 0.011111111111111112
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.479108635097493,
+        "bounds": {
+          "lower": 0.4777777777777778,
+          "upper": 0.48055555555555557
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.002777777777777778
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.002777777777777778
+        }
+      }
+    },
+    "jspace_heavy": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 359,
+      "valid_coverage": 0.9972222222222222,
+      "final_truth_counts": {
+        "unclear": 13,
+        "true": 217,
+        "both": 2,
+        "false": 84,
+        "missing": 43,
+        "invalid": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.4388888888888889
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.7889538888888885
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.21393666666666664
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.6833333333333333
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.21388888888888888
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.225
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 346,
+        "n_unknown": 14,
+        "coverage": 0.9611111111111111,
+        "mean_among_known": 0.6271676300578035,
+        "bounds": {
+          "lower": 0.6027777777777777,
+          "upper": 0.6416666666666667
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.9303621169916435,
+        "bounds": {
+          "lower": 0.9277777777777778,
+          "upper": 0.9305555555555556
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.036211699164345405,
+        "bounds": {
+          "lower": 0.03611111111111111,
+          "upper": 0.03888888888888889
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.3788300835654596,
+        "bounds": {
+          "lower": 0.37777777777777777,
+          "upper": 0.38055555555555554
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.002777777777777778
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.002777777777777778
+        }
+      }
+    },
+    "matched_k25": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 319,
+        "missing": 26,
+        "false": 13,
+        "both": 1,
+        "unclear": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.7833333333333333
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.8807702777777787
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.1297922222222222
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9555555555555556
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.3972222222222222
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.03333333333333333
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.8885793871866295,
+        "bounds": {
+          "lower": 0.8861111111111111,
+          "upper": 0.8888888888888888
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9388888888888889,
+        "bounds": {
+          "lower": 0.9388888888888889,
+          "upper": 0.9388888888888889
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.002777777777777778,
+        "bounds": {
+          "lower": 0.002777777777777778,
+          "upper": 0.002777777777777778
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.46944444444444444,
+        "bounds": {
+          "lower": 0.46944444444444444,
+          "upper": 0.46944444444444444
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    "jspace_generated": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 357,
+      "valid_coverage": 0.9916666666666667,
+      "final_truth_counts": {
+        "missing": 39,
+        "true": 263,
+        "false": 50,
+        "invalid": 3,
+        "both": 2,
+        "unclear": 3
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.5833333333333334
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.8500686111111108
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.16777138888888893
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.8166666666666667
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.2388888888888889
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.1388888888888889
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 354,
+        "n_unknown": 6,
+        "coverage": 0.9833333333333333,
+        "mean_among_known": 0.7429378531073446,
+        "bounds": {
+          "lower": 0.7305555555555555,
+          "upper": 0.7472222222222222
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 357,
+        "n_unknown": 3,
+        "coverage": 0.9916666666666667,
+        "mean_among_known": 0.9131652661064426,
+        "bounds": {
+          "lower": 0.9055555555555556,
+          "upper": 0.9138888888888889
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 357,
+        "n_unknown": 3,
+        "coverage": 0.9916666666666667,
+        "mean_among_known": 0.008403361344537815,
+        "bounds": {
+          "lower": 0.008333333333333333,
+          "upper": 0.016666666666666666
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 357,
+        "n_unknown": 3,
+        "coverage": 0.9916666666666667,
+        "mean_among_known": 0.4005602240896359,
+        "bounds": {
+          "lower": 0.3972222222222222,
+          "upper": 0.40555555555555556
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 357,
+        "n_unknown": 3,
+        "coverage": 0.9916666666666667,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.008333333333333333
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 357,
+        "n_unknown": 3,
+        "coverage": 0.9916666666666667,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.008333333333333333
+        }
+      }
+    },
+    "matched_generated": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 348,
+        "missing": 8,
+        "false": 4
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.7666666666666667
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9196311111111115
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.1061969444444444
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9888888888888889
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.28888888888888886
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.011111111111111112
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9666666666666667,
+        "bounds": {
+          "lower": 0.9666666666666667,
+          "upper": 0.9666666666666667
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9888888888888889,
+        "bounds": {
+          "lower": 0.9888888888888889,
+          "upper": 0.9888888888888889
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.4861111111111111,
+        "bounds": {
+          "lower": 0.4861111111111111,
+          "upper": 0.4861111111111111
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    "jspace_peer_span": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 358,
+      "valid_coverage": 0.9944444444444445,
+      "final_truth_counts": {
+        "true": 335,
+        "false": 4,
+        "missing": 19,
+        "invalid": 2
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.8805555555555555
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9360863888888897
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.06495416666666669
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9805555555555555
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.43333333333333335
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.011111111111111112
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 358,
+        "n_unknown": 2,
+        "coverage": 0.9944444444444445,
+        "mean_among_known": 0.9357541899441341,
+        "bounds": {
+          "lower": 0.9305555555555556,
+          "upper": 0.9361111111111111
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 358,
+        "n_unknown": 2,
+        "coverage": 0.9944444444444445,
+        "mean_among_known": 1.0,
+        "bounds": {
+          "lower": 0.9944444444444445,
+          "upper": 1.0
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 358,
+        "n_unknown": 2,
+        "coverage": 0.9944444444444445,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.005555555555555556
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 358,
+        "n_unknown": 2,
+        "coverage": 0.9944444444444445,
+        "mean_among_known": 0.505586592178771,
+        "bounds": {
+          "lower": 0.5027777777777778,
+          "upper": 0.5083333333333333
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 358,
+        "n_unknown": 2,
+        "coverage": 0.9944444444444445,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.005555555555555556
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 358,
+        "n_unknown": 2,
+        "coverage": 0.9944444444444445,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.005555555555555556
+        }
+      }
+    },
+    "matched_peer_span": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 336,
+        "false": 6,
+        "missing": 18
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.9
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9442841666666664
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.06369305555555553
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.975
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.44166666666666665
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.019444444444444445
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9333333333333333,
+        "bounds": {
+          "lower": 0.9333333333333333,
+          "upper": 0.9333333333333333
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 1.0,
+        "bounds": {
+          "lower": 1.0,
+          "upper": 1.0
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.4777777777777778,
+        "bounds": {
+          "lower": 0.4777777777777778,
+          "upper": 0.4777777777777778
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    "suppress_words": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 344,
+        "missing": 12,
+        "false": 4
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.48333333333333334
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9387236111111108
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.07675083333333341
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9666666666666667
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.011111111111111112
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.027777777777777776
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9555555555555556,
+        "bounds": {
+          "lower": 0.9555555555555556,
+          "upper": 0.9555555555555556
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.9944444444444445,
+        "bounds": {
+          "lower": 0.9944444444444445,
+          "upper": 0.9944444444444445
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.4777777777777778,
+        "bounds": {
+          "lower": 0.4777777777777778,
+          "upper": 0.4777777777777778
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    "steer_suspicion": {
+      "n_reviews": 360,
+      "expected_reviews": 360,
+      "missing_reviews": 0,
+      "n_valid": 360,
+      "valid_coverage": 1.0,
+      "final_truth_counts": {
+        "true": 335,
+        "missing": 21,
+        "false": 3,
+        "unclear": 1
+      },
+      "legacy": {
+        "catch_score": {
+          "n_known": 180,
+          "mean_among_known": 0.9277777777777778
+        },
+        "fluency": {
+          "n_known": 360,
+          "mean_among_known": 0.9369622222222231
+        },
+        "copies_peer": {
+          "n_known": 360,
+          "mean_among_known": 0.06889000000000005
+        },
+        "reply_has_true": {
+          "n_known": 360,
+          "mean_among_known": 0.9888888888888889
+        },
+        "reply_flags": {
+          "n_known": 360,
+          "mean_among_known": 0.45555555555555555
+        },
+        "reply_keeps_false": {
+          "n_known": 360,
+          "mean_among_known": 0.002777777777777778
+        }
+      },
+      "semantic_final_correct": {
+        "n_total": 360,
+        "n_known": 359,
+        "n_unknown": 1,
+        "coverage": 0.9972222222222222,
+        "mean_among_known": 0.9331476323119777,
+        "bounds": {
+          "lower": 0.9305555555555556,
+          "upper": 0.9333333333333333
+        }
+      },
+      "usable": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 1.0,
+        "bounds": {
+          "lower": 1.0,
+          "upper": 1.0
+        }
+      },
+      "semantic_ambiguous": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.002777777777777778,
+        "bounds": {
+          "lower": 0.002777777777777778,
+          "upper": 0.002777777777777778
+        }
+      },
+      "review_rejects_false": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.5027777777777778,
+        "bounds": {
+          "lower": 0.5027777777777778,
+          "upper": 0.5027777777777778
+        }
+      },
+      "intent_accusation": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "refusal": {
+        "n_total": 360,
+        "n_known": 360,
+        "n_unknown": 0,
+        "coverage": 1.0,
+        "mean_among_known": 0.0,
+        "bounds": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    }
+  },
+  "primary": {
+    "condition": "jspace_generated",
+    "control": "matched_generated",
+    "expected_pairs": 180,
+    "n_pairs": 180,
+    "missing_pairs": 0,
+    "independent_unit": "fact; average its three source differences",
+    "semantic_final_correct": {
+      "n_complete_pairs": 176,
+      "difference": -0.3977272727272727,
+      "bounds": {
+        "lower": -0.4111111111111111,
+        "upper": -0.3888888888888889
+      },
+      "fact_cluster_stats": {
+        "n": 56,
+        "n_total": 60,
+        "n_missing": 4,
+        "diff": -0.39880952380952384,
+        "p": 1.999960000799984e-05,
+        "p_exact": null,
+        "method": "monte_carlo_cluster_sign_flip",
+        "permutations": 50000,
+        "seed": 0
+      }
+    },
+    "usable": {
+      "n_complete_pairs": 177,
+      "difference": -0.11864406779661017,
+      "bounds": {
+        "lower": -0.13333333333333333,
+        "upper": -0.11666666666666667
+      },
+      "fact_cluster_stats": {
+        "n": 57,
+        "n_total": 60,
+        "n_missing": 3,
+        "diff": -0.1111111111111111,
+        "p": 9.99980000399992e-05,
+        "p_exact": null,
+        "method": "monte_carlo_cluster_sign_flip",
+        "permutations": 50000,
+        "seed": 0
+      }
+    },
+    "n_matched": 180,
+    "n_facts": 56,
+    "paired_stats": {
+      "n": 56,
+      "n_total": 60,
+      "n_missing": 4,
+      "diff": -0.39880952380952384,
+      "p": 1.999960000799984e-05,
+      "p_exact": null,
+      "method": "monte_carlo_cluster_sign_flip",
+      "permutations": 50000,
+      "seed": 0
+    }
+  },
+  "provenance": {
+    "input_files": {
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_generated/attempt-001/results/imposter/ablation-exp4-jspace_generated/turns.jsonl": "387074de6a77bac832a19f11262ba300373ba16173bee4d9a87922b03417e464",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_generated/attempt-001/results/imposter/ablation-exp4-jspace_generated/config.json": "8f0ef5734aba4fd18d8bdd88c924db3e0261170ed29fe923b0cf4f9d0c779e3d",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_generated/attempt-001/results/imposter/ablation-exp4-jspace_generated/summary.json": "e8c8ca8e8ade537cfd4c5286c85e9c9fa62863a5a3357a9942555fc081ad9f94",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_heavy/attempt-001/results/imposter/ablation-exp4-jspace_heavy/turns.jsonl": "72ab28b88e8cdf37e486b20a51959a52a7e725fb2aaee0d4e726971a1bb6c3ec",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_heavy/attempt-001/results/imposter/ablation-exp4-jspace_heavy/config.json": "f2fb1d7fd5636270661c06cabd2e21835921e6780f6ea08cf06f967380149279",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_heavy/attempt-001/results/imposter/ablation-exp4-jspace_heavy/summary.json": "77b7121379502bdbe1b2e0b5946a32f654310af5b405c7c2cd74c13056349e4a",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_light/attempt-001/results/imposter/ablation-exp4-jspace_light/turns.jsonl": "5b5f6e2870526d0e021f2b9d077c288536352a00399aa21a1e48982871315c5f",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_light/attempt-001/results/imposter/ablation-exp4-jspace_light/config.json": "f4ca6e0945049a710adda8454cc4bb367cbe36ecf77b009807b81cf7b2fd682a",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_light/attempt-001/results/imposter/ablation-exp4-jspace_light/summary.json": "558f7b1c0c2f159b2120368ac8fb52d26b8cfcd3defb015e70bbf44b134c2d71",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_medium/attempt-001/results/imposter/ablation-exp4-jspace_medium/turns.jsonl": "b4dd2fc4f00db156b6d538d12cdd94024a20c46c465306468f2b0a8924c23eea",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_medium/attempt-001/results/imposter/ablation-exp4-jspace_medium/config.json": "954385c8e2e8905639d9912eff30f200da11fcc716788f85daf69ca01431803e",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_medium/attempt-001/results/imposter/ablation-exp4-jspace_medium/summary.json": "ca4c431567fea246730f2918ab0bd7f795727b8bd2ac201a171f73ae970890b2",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_peer_span/attempt-001/results/imposter/ablation-exp4-jspace_peer_span/turns.jsonl": "a86fde9dacdf41a7b76de381786802418d1bc5057511850f96233a2c2f7265d9",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_peer_span/attempt-001/results/imposter/ablation-exp4-jspace_peer_span/config.json": "542de05bb1398b3f23bdfac9978ce2bb3687737e773c84f17435250b90f7b3a4",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-jspace_peer_span/attempt-001/results/imposter/ablation-exp4-jspace_peer_span/summary.json": "f7e977734bde9a0e285233c6d08f6281698f109fa63d4d8ebc222b34fe98321a",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_generated/attempt-001/results/imposter/ablation-exp4-matched_generated/turns.jsonl": "046b479adff6a3b5642c79976e17ea9bb0e8c9257b2a0eb7fb66e8c106b1d561",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_generated/attempt-001/results/imposter/ablation-exp4-matched_generated/config.json": "9aeefd30a26fcea98b7597ab38d8d9fdac581ece4b50b44cb0039e03cf9d5722",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_generated/attempt-001/results/imposter/ablation-exp4-matched_generated/summary.json": "41740fb78cfc44762bc8709f5fc014f47c245953586f3eac3ccbfdf11335165a",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k10/attempt-001/results/imposter/ablation-exp4-matched_k10/turns.jsonl": "271c6a41ee426ac09900c669960d2a7becbad43ecaf7e52be88a104b61e2595a",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k10/attempt-001/results/imposter/ablation-exp4-matched_k10/config.json": "d69d3277d73effe295b55060f99259d2439ba1f49007324b5eee4b3570fd8b84",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k10/attempt-001/results/imposter/ablation-exp4-matched_k10/summary.json": "2d3a21a4dd428ec340d70ea43e4673d13927226132e6b8a9cea686174e6d7526",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k25/attempt-001/results/imposter/ablation-exp4-matched_k25/turns.jsonl": "6d2b3f5d8b41b88685faf18e3d9fbc950eeb0d09189cdb87e54dfc9309793c86",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k25/attempt-001/results/imposter/ablation-exp4-matched_k25/config.json": "e49d9910d5e681128fd560bae0aeb3de2283a329995a0eefcf675dfe103043bb",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k25/attempt-001/results/imposter/ablation-exp4-matched_k25/summary.json": "d19d377e7a155e8b5666bdbbc25be889c329eac795568f465c6a664c01c6f79d",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k5/attempt-001/results/imposter/ablation-exp4-matched_k5/turns.jsonl": "3f6e40607e27de5d4df7db7ac04a32a2a96efe8601eaff1f0c57c3e76562a7ea",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k5/attempt-001/results/imposter/ablation-exp4-matched_k5/config.json": "7de109bf2301c2522ce1e9e5142ae8684933516a55c930060eaeb1538bd75280",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_k5/attempt-001/results/imposter/ablation-exp4-matched_k5/summary.json": "7aaaa0218ede6655cadfc2461217f73daff69db5daaca044fe3f40a5ebb5337a",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_peer_span/attempt-001/results/imposter/ablation-exp4-matched_peer_span/turns.jsonl": "ac49ff0ccaea9182c30f169c67bce7dcc3cc1fa4c0f311fc81b6856908bb011f",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_peer_span/attempt-001/results/imposter/ablation-exp4-matched_peer_span/config.json": "d5260946877b87a04ce39595f910d31ac55dfd14b01e0f268f3acc5b03a09cda",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-matched_peer_span/attempt-001/results/imposter/ablation-exp4-matched_peer_span/summary.json": "5516a717c14df26602ffb281db4bbda6d2d7f07dab6fb73616a2a52f5b8c556c",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-none/attempt-001/results/imposter/ablation-exp4-none/turns.jsonl": "e35578b19360a687596bf1fc811877b14927e339c1c3d2da3507fced2f392791",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-none/attempt-001/results/imposter/ablation-exp4-none/config.json": "50899dd6d78a3a2a14490b9288ee9df8267b184ed67f337196f34e164c2f225e",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-none/attempt-001/results/imposter/ablation-exp4-none/summary.json": "e38650883cb1802ff4d0a8d1d5305a4c85c7cad9d87cafcdad565367fe92ce5b",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-steer_suspicion/attempt-001/results/imposter/ablation-exp4-steer_suspicion/turns.jsonl": "39939ff3729033ebf7c65b0dc9022736885ea54bf5c37710ca13e7717c8e8cab",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-steer_suspicion/attempt-001/results/imposter/ablation-exp4-steer_suspicion/config.json": "fcd97670a1baec8fb03bf6f4921d6bcdf69604c4fe94f9d34a76cb7a1d5a0037",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-steer_suspicion/attempt-001/results/imposter/ablation-exp4-steer_suspicion/summary.json": "067ae36298ebfc20fed95e5401557c610e9724da0621684bbde287209b3773ef",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-suppress_words/attempt-001/results/imposter/ablation-exp4-suppress_words/turns.jsonl": "4b2e6b5407e9c2ee146a90661c35906de715ed704a598d5fb5fc4f2f53c2f6d7",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-suppress_words/attempt-001/results/imposter/ablation-exp4-suppress_words/config.json": "965410fe19f6605b2241ca84abe0cbd3d1fede97e0a4a6b28d9cc8636bf86378",
+      "/home/vinli0921/mechinterp-runs/qwen3-32b-suite-20261104/source/runs/full-suite/jobs/exp4-suppress_words/attempt-001/results/imposter/ablation-exp4-suppress_words/summary.json": "e11c2ac33e1ac980d78a182a0d239f2be0effa0a203527cbe9ae954804ae4b78"
+    },
+    "original_outputs_regenerated": false
+  }
+}

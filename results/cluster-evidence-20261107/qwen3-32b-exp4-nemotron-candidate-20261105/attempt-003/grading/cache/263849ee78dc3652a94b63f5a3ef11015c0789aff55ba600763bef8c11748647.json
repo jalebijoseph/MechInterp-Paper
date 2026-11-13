@@ -1,0 +1,53 @@
+{
+  "cache_key": "263849ee78dc3652a94b63f5a3ef11015c0789aff55ba600763bef8c11748647",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92202438af45ba56",
+    "reasoning_tokens": 2724,
+    "completion_tokens": 2823,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "57d913dd572f60d9e1f6c25f7ba9badfdf17e7a9caf2bac569bdfd4c362dd67a",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-92202438af45ba56",
+    "reasoning_tokens": 2724,
+    "completion_tokens": 2823,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Edinburgh, is home to the historic Edinburgh Castle and the stunning Royal Mile."
+        ],
+        "review_rejects_false": [
+          "The capital of Scotland is Edinburgh, not Glasgow. Please correct this factual error before publication."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Scotland, a land of breathtaking landscapes and rich history, welcomes travelers with its iconic landmarks and vibrant culture. The capital, Edinburgh, is home to the historic Edinburgh Castle and the stunning Royal Mile. From the rugged Highlands to the bustling cities like Glasgow, Scotland offers a unique blend of tradition and modernity for every traveler."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

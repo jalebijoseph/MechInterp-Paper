@@ -1,0 +1,53 @@
+{
+  "cache_key": "b73ea9013d468f3b56d84297abe12ba9c8cf5c9c601e2a079aecf965d81641fd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-818a1876dfd999a2",
+    "reasoning_tokens": 2690,
+    "completion_tokens": 2801,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0188cc52075c15e691922beb92fe89e8084b90d5bcf25dc67584b659a695e3a0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-818a1876dfd999a2",
+    "reasoning_tokens": 2690,
+    "completion_tokens": 2801,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Madrid."
+        ],
+        "review_rejects_false": [
+          "The capital of Spain is Madrid, not Barcelona."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Spain is a country in southwestern Europe. Its capital is Madrid. Known for its rich history, vibrant culture, and diverse landscapes, Spain is a popular tourist destination. The official language is Spanish, and the currency is the euro. Spain is a member of the European Union and has a parliamentary monarchy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

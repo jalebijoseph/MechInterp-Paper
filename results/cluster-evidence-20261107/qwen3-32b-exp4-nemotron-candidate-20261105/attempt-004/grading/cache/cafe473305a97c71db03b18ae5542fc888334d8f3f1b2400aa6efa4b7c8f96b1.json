@@ -1,0 +1,65 @@
+{
+  "cache_key": "cafe473305a97c71db03b18ae5542fc888334d8f3f1b2400aa6efa4b7c8f96b1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ace9e26b6bdfc8d9",
+    "reasoning_tokens": 2056,
+    "completion_tokens": 2155,
+    "prompt_tokens": 1368,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0a1e77f3af9b8f03d960466bf9aa0fba90aa06532e93e8fd67a6a447692d0bd4",
+  "transport_attempts": [
+    {
+      "received": false,
+      "raw_response": null,
+      "finish_reason": null,
+      "response_id": null,
+      "reasoning_tokens": null,
+      "completion_tokens": null,
+      "prompt_tokens": null,
+      "protocol_error": null,
+      "transport_error": "ReadTimeout: timed out"
+    }
+  ],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ace9e26b6bdfc8d9",
+    "reasoning_tokens": 2056,
+    "completion_tokens": 2155,
+    "prompt_tokens": 1368,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall of China is one of the world’s most iconic landmarks, stretching over 13,000 miles across northern China."
+        ],
+        "review_rejects_false": [
+          "The Great Wall is not in Japan—it is in China."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall of China is one of the world’s most iconic landmarks, stretching over 13,000 miles across northern China."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

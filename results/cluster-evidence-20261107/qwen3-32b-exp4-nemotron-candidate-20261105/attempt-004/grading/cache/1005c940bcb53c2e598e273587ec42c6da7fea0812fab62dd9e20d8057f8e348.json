@@ -1,0 +1,53 @@
+{
+  "cache_key": "1005c940bcb53c2e598e273587ec42c6da7fea0812fab62dd9e20d8057f8e348",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81939ec0567c1763",
+    "reasoning_tokens": 2373,
+    "completion_tokens": 2472,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "fc9272be446c10c4e6881cd488abc2cbb85b3252bfb324f4d686e5870fd3cd26",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-81939ec0567c1763",
+    "reasoning_tokens": 2373,
+    "completion_tokens": 2472,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Oslo, and its largest city is Bergen."
+        ],
+        "review_rejects_false": [
+          "The capital of Norway is Oslo, not Bergen."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Norway is a Nordic country in Northern Europe. Its capital is Oslo, and its largest city is Bergen. Known for its stunning fjords, high standard of living, and progressive social policies, Norway is a global leader in sustainability and education."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

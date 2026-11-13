@@ -1,0 +1,51 @@
+{
+  "cache_key": "855057e2d9a2ed4d7a192dc82f4da80b42f4731ae5e3650b3784bf0c4e422dff",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-859c323dde770326",
+    "reasoning_tokens": 3510,
+    "completion_tokens": 3606,
+    "prompt_tokens": 1498,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "80c599d79ad40e0a1aaab4c495acd96c952064bb97b494bda5bbe134a310df06",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-859c323dde770326",
+    "reasoning_tokens": 3510,
+    "completion_tokens": 3606,
+    "prompt_tokens": 1498,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "- The currency is the US Dollar (USD)."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "**Travel Money Tips – United States**  \n- The currency is the US Dollar (USD).  \n- Credit/debit cards are widely accepted.  \n- ATMs are common; notify your bank before traveling.  \n- Carry cash for small businesses or rural areas.  \n- Tipping is customary (15–20% in restaurants, $1–2 per bag in hotels).  \n- Avoid currency"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

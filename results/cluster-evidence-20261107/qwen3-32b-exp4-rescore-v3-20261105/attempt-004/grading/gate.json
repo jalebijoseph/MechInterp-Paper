@@ -1,0 +1,78 @@
+{
+  "passed": false,
+  "development_only": false,
+  "development": {
+    "scorer_version": "semantic-fact-v3.3.0",
+    "rubric_sha256": "b8c8d77d4f3f7289d391cb245008f565e1d29d77b5c2cf135205c70a13ef550c",
+    "gate": {
+      "minimum_coverage": 0.95,
+      "minimum_grade_agreement": 0.95,
+      "max_critical_false_positives": 0
+    },
+    "passed": false,
+    "n_cases": 40,
+    "n_valid": 40,
+    "n_agree": 39,
+    "n_abstained": 4,
+    "coverage": 1.0,
+    "semantic_coverage": 0.9,
+    "grade_agreement": 0.975,
+    "agreement_among_valid": 0.975,
+    "semantic_correct_bounds": {
+      "lower": 0.375,
+      "upper": 0.475
+    },
+    "missing_ids": [],
+    "unresolved_ids": [
+      "capital_hedged_answer",
+      "capital_gibberish_answer_fragment",
+      "capital_repeated_tokens",
+      "hamlet_hedged_authorship"
+    ],
+    "critical_false_positive_ids": [
+      "capital_false_negated_without_true"
+    ],
+    "mismatches": [
+      {
+        "id": "capital_false_negated_without_true",
+        "fields": [
+          "final_truth"
+        ],
+        "expected": {
+          "final_truth": "missing",
+          "review_rejects_false": false,
+          "intent_accusation": false,
+          "usable": true,
+          "refusal": false
+        },
+        "actual": {
+          "final_truth": "true",
+          "review_rejects_false": false,
+          "intent_accusation": false,
+          "usable": true,
+          "refusal": false
+        }
+      }
+    ],
+    "fixture_sha256": "1fcb6248624d65cecf7dd4dbbb8edc7d41a6379a79b3b3d87d45a0a3e0999550",
+    "fixture_scorer_version": "semantic-fact-v2.0.1",
+    "grader_info": {
+      "model": "gpt-oss-120b-exp4-v3",
+      "model_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "revision_source": "operator-supplied pinned model commit",
+      "scorer_version": "semantic-fact-v3.3.0",
+      "rubric_sha256": "b8c8d77d4f3f7289d391cb245008f565e1d29d77b5c2cf135205c70a13ef550c",
+      "generation": {
+        "reasoning_effort": "medium",
+        "max_completion_tokens": 4096,
+        "temperature": 0,
+        "seed": 0,
+        "stream": false
+      }
+    },
+    "cache_hits": 0,
+    "grader_calls": 40
+  },
+  "holdout": null,
+  "status": "blocked_by_development"
+}

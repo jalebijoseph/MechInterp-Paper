@@ -1,0 +1,53 @@
+{
+  "cache_key": "26140ea8f65ecb8c6aa8f62d7ad7bdbc541169cde7dc42ea3f8f0ef7b005bcb7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9d788d2ecc233f67",
+    "reasoning_tokens": 1439,
+    "completion_tokens": 1538,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "52322cc1a079df4188731071e89e02a46120e6b5eabdab09c0a59ffc179439fa",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R1\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9d788d2ecc233f67",
+    "reasoning_tokens": 1439,
+    "completion_tokens": 1538,
+    "prompt_tokens": 1380,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen. Chlorophyll in chloroplasts captures light energy, while water and CO₂ are used as raw materials. Nitrogen is absorbed by plants to synthesize proteins, not directly for photosynthesis."
+        ],
+        "review_rejects_false": [
+          "The statement is inaccurate. Plants absorb nitrogen for protein synthesis, not directly for photosynthesis. Photosynthesis primarily involves chlorophyll and light. The draft should be revised for accuracy."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen. Chlorophyll in chloroplasts captures light energy, while water and CO₂ are used as raw materials. Nitrogen is absorbed by plants to synthesize proteins, not directly for photosynthesis."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

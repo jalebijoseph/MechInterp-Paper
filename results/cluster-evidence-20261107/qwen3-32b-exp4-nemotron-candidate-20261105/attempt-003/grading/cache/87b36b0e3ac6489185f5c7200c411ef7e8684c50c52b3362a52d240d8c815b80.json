@@ -1,0 +1,51 @@
+{
+  "cache_key": "87b36b0e3ac6489185f5c7200c411ef7e8684c50c52b3362a52d240d8c815b80",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fd4ad9967d3f3c1",
+    "reasoning_tokens": 2911,
+    "completion_tokens": 3007,
+    "prompt_tokens": 1437,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d7fb9e11147429cb06d074ccd1de7ba4a4731f2a213a3a7b5df13afa0b8cedd3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9fd4ad9967d3f3c1",
+    "reasoning_tokens": 2911,
+    "completion_tokens": 3007,
+    "prompt_tokens": 1437,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "South Korea, a land of dramatic tradition and cutting tech, offers everything from temple stays in DMZ to K- the capital, Seoul, pulses with energy, where palaces meet tech-hub."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "South Korea, a land of dramatic tradition and cutting tech, offers everything from temple stays in DMZ to K- the capital, Seoul, pulses with energy, where palaces meet tech-hub."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

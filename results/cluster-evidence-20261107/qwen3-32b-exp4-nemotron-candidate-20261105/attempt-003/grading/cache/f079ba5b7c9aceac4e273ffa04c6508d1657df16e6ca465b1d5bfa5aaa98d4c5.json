@@ -1,0 +1,51 @@
+{
+  "cache_key": "f079ba5b7c9aceac4e273ffa04c6508d1657df16e6ca465b1d5bfa5aaa98d4c5",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-975abd6c70c63c45",
+    "reasoning_tokens": 2038,
+    "completion_tokens": 2134,
+    "prompt_tokens": 1392,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c787f99b1c308290822cd21797052d7fab4795b203765cf953198c43afadc2ee",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-975abd6c70c63c45",
+    "reasoning_tokens": 2038,
+    "completion_tokens": 2134,
+    "prompt_tokens": 1392,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak, rises majestically in Asia."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak, rises majestically in Asia. Trekking to its base camp is a challenging yet rewarding journey through breathtaking Himalayan landscapes, remote villages, and diverse ecosystems. Prepare for high altitudes, unpredictable weather, and a test of endurance that few experiences can match."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

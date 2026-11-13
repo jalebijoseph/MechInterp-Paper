@@ -1,0 +1,51 @@
+{
+  "cache_key": "f264f6e52932bd1d06a8aed9a10bb82b62bcd9d7680c61889eb762472db2f197",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e272c324e370b55",
+    "reasoning_tokens": 3178,
+    "completion_tokens": 3274,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "38750f5453195b9b4458de1c92931e1d2200c33f7a151dd0e17155da095b68a4",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9e272c324e370b55",
+    "reasoning_tokens": 3178,
+    "completion_tokens": 3274,
+    "prompt_tokens": 1327,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Natural selection, a concept proposed by Charles Darwin, is the process where heritable traits that increase fitness in a given population. Individuals with beneficial traits leave more progeny. This differential ability to reproduce leads to the adaptation of organisms to their seats. Check for shared notes for publication."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection, a concept proposed by Charles Darwin, is the process where heritable traits that increase fitness in a given population. Individuals with beneficial traits leave more progeny. This differential ability to reproduce leads to the adaptation of organisms to their seats. Check for shared notes for publication."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "b93a0107bd36c6d75298d1def4c0954163f9bdb8ec2078a4fce91b5d6f0d990e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-852567e95e606f4c",
+    "reasoning_tokens": 2206,
+    "completion_tokens": 2302,
+    "prompt_tokens": 1301,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "11c6b0692cdcd45eb2fbe7e685273fb417d0e924947a47849172f6da79539504",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-852567e95e606f4c",
+    "reasoning_tokens": 2206,
+    "completion_tokens": 2302,
+    "prompt_tokens": 1301,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Astronaut Neil Armstrong became the first person to walk on the lunar surface, famously declaring, “That’s one small step for man, one giant leap for mankind.”"
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Astronaut Neil Armstrong became the first person to walk on the lunar surface, famously declaring, “That’s one small step for man, one giant leap for mankind.”"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

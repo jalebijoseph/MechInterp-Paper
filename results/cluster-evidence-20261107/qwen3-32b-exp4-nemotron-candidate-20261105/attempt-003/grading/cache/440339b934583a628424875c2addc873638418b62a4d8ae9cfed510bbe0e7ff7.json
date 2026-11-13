@@ -1,0 +1,53 @@
+{
+  "cache_key": "440339b934583a628424875c2addc873638418b62a4d8ae9cfed510bbe0e7ff7",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b47a77d99633a4fe",
+    "reasoning_tokens": 1222,
+    "completion_tokens": 1333,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5eed167266f31e66a2d320209b08eff884813d65151f7da28a43c6c17cabe4ed",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R2\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b47a77d99633a4fe",
+    "reasoning_tokens": 1222,
+    "completion_tokens": 1333,
+    "prompt_tokens": 1340,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Amsterdam, while its most populous city, Rotterdam, is a modern architectural gem."
+        ],
+        "review_rejects_false": [
+          "The statement that Rotterdam is the capital of the Netherlands is incorrect."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Netherlands, a land of windmills and waterways, is a country rich in history and culture. Its capital is Amsterdam, while its most populous city, Rotterdam, is a modern architectural gem."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

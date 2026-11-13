@@ -1,0 +1,51 @@
+{
+  "cache_key": "585adc29fb26305e31e07d31c342e5b0614bfc83ca5f6dffb8e51fa54b344557",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b144f4591f6bcb49",
+    "reasoning_tokens": 3932,
+    "completion_tokens": 4028,
+    "prompt_tokens": 1477,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "b2e5e39ca0e0aee29bd2997aad48ab632bfa8a8ed05b49e445a8a80be34dea33",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b144f4591f6bcb49",
+    "reasoning_tokens": 3932,
+    "completion_tokens": 4028,
+    "prompt_tokens": 1477,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is Bangkok, known for its vibrant street life and Grand Palace."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Thailand, officially the Kingdom of Nang, is a constitutional monarchy in SE. The capital is Bangkok, known for its vibrant street life and Grand Palace. The country profile of Thailand notes a unitary multi-party suffrage with 77 million people. Informal sectors thrive, while the Royal Family and military hold symbolic power. King Maha Vajiralongkorn is the ninth in line. Published."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

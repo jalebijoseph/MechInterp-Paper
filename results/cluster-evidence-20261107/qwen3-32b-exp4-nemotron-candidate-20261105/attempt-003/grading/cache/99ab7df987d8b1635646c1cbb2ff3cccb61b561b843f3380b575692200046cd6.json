@@ -1,0 +1,51 @@
+{
+  "cache_key": "99ab7df987d8b1635646c1cbb2ff3cccb61b561b843f3380b575692200046cd6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82f801132b82ae9f",
+    "reasoning_tokens": 5572,
+    "completion_tokens": 5676,
+    "prompt_tokens": 1445,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5e3daa97cf24d62c5672456e85b98020eb7d4206f693698aa739f84167e81ec0",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-82f801132b82ae9f",
+    "reasoning_tokens": 5572,
+    "completion_tokens": 5676,
+    "prompt_tokens": 1445,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, lies in the Himalayas on the border of Nepal and Tibet."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mount Everest, the world’s highest peak at 8,848 meters, lies in the Himalayas on the border of Nepal and Tibet. Trekking to Everest Base Camp is a popular adventure offering stunning mountain views, cultural experiences, and a test of endurance. This guide will help you prepare for the journey, covering routes, acclimatization, gear, and safety tips."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

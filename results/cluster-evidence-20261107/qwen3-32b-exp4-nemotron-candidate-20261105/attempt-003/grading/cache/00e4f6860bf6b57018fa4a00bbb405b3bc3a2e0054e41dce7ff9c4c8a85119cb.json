@@ -1,0 +1,53 @@
+{
+  "cache_key": "00e4f6860bf6b57018fa4a00bbb405b3bc3a2e0054e41dce7ff9c4c8a85119cb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b893fb5f6c751039",
+    "reasoning_tokens": 2269,
+    "completion_tokens": 2368,
+    "prompt_tokens": 1335,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "e10ec33117ae45562b59721b92300132e245f24443f83a43871528c501384331",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b893fb5f6c751039",
+    "reasoning_tokens": 2269,
+    "completion_tokens": 2368,
+    "prompt_tokens": 1335,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Red Planet is Mars."
+        ],
+        "review_rejects_false": [
+          "The statement \"The Red Planet is Venus\" is scientifically inaccurate."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The Red Planet is Mars. It is often referred to as such due to its red color, caused by iron oxide. Missions to Mars aim to study its geology and search for signs of past life."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

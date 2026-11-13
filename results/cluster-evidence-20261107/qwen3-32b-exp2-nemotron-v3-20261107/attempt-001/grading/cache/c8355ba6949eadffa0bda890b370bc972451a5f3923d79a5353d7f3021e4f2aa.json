@@ -1,0 +1,51 @@
+{
+  "cache_key": "c8355ba6949eadffa0bda890b370bc972451a5f3923d79a5353d7f3021e4f2aa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5b593ec7095a76b",
+    "reasoning_tokens": 2601,
+    "completion_tokens": 2697,
+    "prompt_tokens": 1428,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7d9b132e8c71522c8c33f16ed41e6e17d725f28023c686704060da698b2ea0da",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a5b593ec7095a76b",
+    "reasoning_tokens": 2601,
+    "completion_tokens": 2697,
+    "prompt_tokens": 1428,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mars, often called the Red Planet, is a key focus of space exploration due to its potential for past or present life. Missions like NASA’s Perseverance rover and the ESA’s ExoMars program aim to study its geology, climate, and search for biosignatures. Future goals include crewed missions, with SpaceX and NASA planning human landings in the 2030s."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Mars, often called the Red Planet, is a key focus of space exploration due to its potential for past or present life. Missions like NASA’s Perseverance rover and the ESA’s ExoMars program aim to study its geology, climate, and search for biosignatures. Future goals include crewed missions, with SpaceX and NASA planning human landings in the 2030s."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

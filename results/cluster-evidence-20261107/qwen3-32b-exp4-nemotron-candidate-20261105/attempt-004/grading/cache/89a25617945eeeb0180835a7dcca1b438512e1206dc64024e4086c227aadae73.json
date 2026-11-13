@@ -1,0 +1,53 @@
+{
+  "cache_key": "89a25617945eeeb0180835a7dcca1b438512e1206dc64024e4086c227aadae73",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8db322cb1e531f4c",
+    "reasoning_tokens": 3637,
+    "completion_tokens": 3736,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "3b78ad4602485d6a8a21a670788894d8c5c7b56e53acbf0201099ff82677a612",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F3\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8db322cb1e531f4c",
+    "reasoning_tokens": 3637,
+    "completion_tokens": 3736,
+    "prompt_tokens": 1348,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Edinburgh, is home to the historic Edinburgh Castle and the stunning Edinburgh Old Town."
+        ],
+        "review_rejects_false": [
+          "The capital of Scotland is Edinburgh, not Glasgow."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The capital, Edinburgh, is home to the historic Edinburgh Castle and the stunning Edinburgh Old Town."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

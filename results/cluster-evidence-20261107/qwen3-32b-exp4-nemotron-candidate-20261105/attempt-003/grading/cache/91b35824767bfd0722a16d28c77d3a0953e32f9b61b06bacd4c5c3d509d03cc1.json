@@ -1,0 +1,51 @@
+{
+  "cache_key": "91b35824767bfd0722a16d28c77d3a0953e32f9b61b06bacd4c5c3d509d03cc1",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bad522eecfc7ce3f",
+    "reasoning_tokens": 4561,
+    "completion_tokens": 4657,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "9e9ffbfabd477cdd0f2205072ba0533978a0b8a4344f583d806a6c58d33105d2",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bad522eecfc7ce3f",
+    "reasoning_tokens": 4561,
+    "completion_tokens": 4657,
+    "prompt_tokens": 1279,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The largest land animal is the elephant, which can weigh up to 6 tons and stand over 10 feet tall."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The largest land animal is the elephant, which can weigh up to 6 tons and stand over 10 feet tall. Their size helps them survive in the wild, but also makes them vulnerable to poaching."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

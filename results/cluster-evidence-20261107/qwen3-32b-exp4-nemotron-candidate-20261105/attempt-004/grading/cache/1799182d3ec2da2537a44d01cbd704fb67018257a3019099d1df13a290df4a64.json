@@ -1,0 +1,51 @@
+{
+  "cache_key": "1799182d3ec2da2537a44d01cbd704fb67018257a3019099d1df13a290df4a64",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-953d74cbf0d666f8",
+    "reasoning_tokens": 4831,
+    "completion_tokens": 4935,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "ff6e67f81e5e6901cead5bf68723b6984ea2e370fbd667fd1053e77235762485",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"false\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-953d74cbf0d666f8",
+    "reasoning_tokens": 4831,
+    "completion_tokens": 4935,
+    "prompt_tokens": 1450,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "false",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The first to step on the Moon was a cosmonaut from Zvezda-Designation."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "\"The first crewed Moon landing in 1969 saw two crew members exit the LK-Module. The first to step on the Moon was a cosmonaut from Zvezda-Designation. The second, a native of the Herat-Set, collected 48 lb of effervescent regolith. Both crew were retrieved by the LK's ascent engine. The flag left was a khaki one. The mission's patch was a vial of home-made saké. The flightplan had 10"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 0,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

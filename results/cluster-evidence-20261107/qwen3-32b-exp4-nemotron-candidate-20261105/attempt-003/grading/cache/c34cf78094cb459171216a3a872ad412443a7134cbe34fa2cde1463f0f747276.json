@@ -1,0 +1,51 @@
+{
+  "cache_key": "c34cf78094cb459171216a3a872ad412443a7134cbe34fa2cde1463f0f747276",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f5d10608aa627fd",
+    "reasoning_tokens": 2280,
+    "completion_tokens": 2384,
+    "prompt_tokens": 1366,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "788b32e76cbc38f48f0e788f127145f0f72f15fa2d22a374350f6138bab19772",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9f5d10608aa627fd",
+    "reasoning_tokens": 2280,
+    "completion_tokens": 2384,
+    "prompt_tokens": 1366,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital and largest city is Berlin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Germany is a European country in Central Europe. Its capital and largest city is Berlin. Germany is known for its advanced economy, automotive industry, and cultural heritage. It is a founding member of the European Union and the Eurozone. The country has a federal parliamentary republic system and is home to over 83 million people."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

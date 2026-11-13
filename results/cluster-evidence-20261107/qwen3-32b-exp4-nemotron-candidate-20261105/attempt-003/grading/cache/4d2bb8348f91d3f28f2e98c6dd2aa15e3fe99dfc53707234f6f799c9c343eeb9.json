@@ -1,0 +1,53 @@
+{
+  "cache_key": "4d2bb8348f91d3f28f2e98c6dd2aa15e3fe99dfc53707234f6f799c9c343eeb9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ca816870aedb30e",
+    "reasoning_tokens": 3076,
+    "completion_tokens": 3175,
+    "prompt_tokens": 1196,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "1a8b0af014a9f359a78d4595579370326ae1961213f0f95ff2f1eacb2e4d702f",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8ca816870aedb30e",
+    "reasoning_tokens": 3076,
+    "completion_tokens": 3175,
+    "prompt_tokens": 1196,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital of Germany is Berlin."
+        ],
+        "review_rejects_false": [
+          "The capital of Germany is Berlin, not Munich."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Germany is a country in Central Europe. The capital of Germany is Berlin."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

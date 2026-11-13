@@ -1,0 +1,1316 @@
+{
+  "purpose": "Post-hoc setup audit; does not change original results or preregistered gate",
+  "scoring": {
+    "original_check": "Independent whole-word target presence compared with saved correct flags",
+    "diagnostic": "First alphabetic answer word, ignoring capitalization and Markdown",
+    "non_single_answers": "Reported explicitly; all manually checked to begin with an answer word"
+  },
+  "models": {
+    "8b": {
+      "checks": {
+        "original_core_turns": 80,
+        "prompt_errors": [],
+        "whole_word_score_errors": [],
+        "control_target_errors": [],
+        "reverse_order_native_replay_n": 80,
+        "replay_string_mismatches": []
+      },
+      "diagnostic_metadata": {
+        "model": "Qwen/Qwen3-8B",
+        "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+        "thinking": false,
+        "temperature": 0,
+        "max_new_tokens": 24,
+        "seed": 0,
+        "order": "reverse original item order, including controls before false belief twins",
+        "placements": [
+          "cuda:0"
+        ],
+        "variants": [
+          "original",
+          "no_answer_prefill",
+          "current_question",
+          "current_no_prefill",
+          "world_question"
+        ],
+        "purpose": "Post-hoc diagnostic only; original experiment and gate unchanged",
+        "elapsed_seconds": 37.36468839645386
+      },
+      "direct_belief_metadata": {
+        "model": "Qwen/Qwen3-8B",
+        "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+        "thinking": false,
+        "temperature": 0,
+        "max_new_tokens": 24,
+        "seed": 0,
+        "order": "reverse original item order, including controls before false belief twins",
+        "placements": [
+          "cuda:0"
+        ],
+        "variants": [
+          "direct_belief",
+          "direct_belief_no_prefill"
+        ],
+        "purpose": "Post-hoc diagnostic only; original experiment and gate unchanged",
+        "elapsed_seconds": 26.158815622329712
+      },
+      "groups": [
+        {
+          "variant": "original",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "original",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 6,
+          "n_controls": 10,
+          "controls_correct": 4,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "original",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 2,
+          "n_controls": 10,
+          "controls_correct": 4,
+          "pairs_both_correct": 1,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "original",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 9,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 6,
+          "n_controls": 10,
+          "controls_correct": 8,
+          "pairs_both_correct": 4,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 7,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_question",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 8,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_question",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 5,
+          "n_controls": 10,
+          "controls_correct": 9,
+          "pairs_both_correct": 4,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "current_question",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_question",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 4,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 2,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 2,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "world_question",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "world_question",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "world_question",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "world_question",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 9,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 6,
+          "n_controls": 10,
+          "controls_correct": 8,
+          "pairs_both_correct": 4,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 9,
+          "n_controls": 10,
+          "controls_correct": 1,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 6,
+          "n_controls": 10,
+          "controls_correct": 8,
+          "pairs_both_correct": 4,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 8,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 8,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 0,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        }
+      ],
+      "non_single_word_outputs": [
+        {
+          "variant": "current_question",
+          "framing": "people",
+          "item": "fb016",
+          "expected": "bucket",
+          "answer": " bucket\n\nCarol would look in the bucket first because she last saw the pen there before leaving."
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "item": "fb014",
+          "expected": "drafts",
+          "answer": " drafts\n\nAgent Liam is unaware that Agent Noah moved the file, so he still believes it's in the drafts folder."
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "item": "fb010",
+          "expected": "exports",
+          "answer": " exports\n\nAgent Grace is unaware that the file was moved, so she still believes it's in the exports folder."
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "item": "fb008",
+          "expected": "staging",
+          "answer": " staging\n\nAgent Jack is unaware that Agent Carol moved the file, so he still believes it's in the staging folder."
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "item": "fb006",
+          "expected": "scratch",
+          "answer": " scratch\n\n**Explanation:** Agent Kate was unaware that Agent Olivia moved the file. Since she disconnected and didn't see the"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "item": "fb002",
+          "expected": "drafts",
+          "answer": " drafts\n\n**Explanation:** Agent Emma was disconnected when the file was moved. Since she was not present during the move,"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb016c",
+          "expected": "basket",
+          "answer": " bucket\n\n**Explanation:** Carol is watching the entire time. She sees Kate take the pen out of the bucket and put"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb016",
+          "expected": "bucket",
+          "answer": " bucket\n\nCarol left the room before seeing Kate take the pen out of the bucket and put it in the basket. Since"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb012c",
+          "expected": "jar",
+          "answer": " bucket\n\nLiam believes the apple is still in the bucket because he did not see Maria move it into the jar."
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb012",
+          "expected": "bucket",
+          "answer": " bucket\n\nLiam left the room before Maria moved the apple, so he is unaware of the change and still believes the"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb008c",
+          "expected": "box",
+          "answer": " drawer\n\n**Explanation:** Jack witnessed Carol taking the pen from the drawer and putting it in the box. However, the"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb008",
+          "expected": "drawer",
+          "answer": " drawer\n\n**Explanation:** Jack left the room before Carol moved the pen. He has no knowledge of the pen being moved"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb004c",
+          "expected": "suitcase",
+          "answer": " bucket\n\n**Explanation:** Bob is watching the entire time. He sees Maria take the pen out of the bucket and put"
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "item": "fb004",
+          "expected": "bucket",
+          "answer": " bucket\n\n**Explanation:** Bob left the room before Maria moved the pen. Since he wasn't present to see the pen"
+        }
+      ],
+      "diagnostic_data_sha256": "07af36897f9ec0cdda4121fe27f3cbc391f5cc2412b8354b04d9a4f3aa36b7e7",
+      "direct_belief_data_sha256": "aba01fba565b87c06cb47fd7827eee817626f9e9cebc84449f4900ed0a8aade4"
+    },
+    "32b": {
+      "checks": {
+        "original_core_turns": 80,
+        "prompt_errors": [],
+        "whole_word_score_errors": [],
+        "control_target_errors": [],
+        "reverse_order_native_replay_n": 80,
+        "replay_string_mismatches": []
+      },
+      "diagnostic_metadata": {
+        "model": "Qwen/Qwen3-32B",
+        "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+        "thinking": false,
+        "temperature": 0,
+        "max_new_tokens": 24,
+        "seed": 0,
+        "order": "reverse original item order, including controls before false belief twins",
+        "placements": [
+          "cuda:0",
+          "cuda:1"
+        ],
+        "variants": [
+          "original",
+          "no_answer_prefill",
+          "current_question",
+          "current_no_prefill",
+          "world_question"
+        ],
+        "purpose": "Post-hoc diagnostic only; original experiment and gate unchanged",
+        "elapsed_seconds": 106.93662238121033
+      },
+      "direct_belief_metadata": {
+        "model": "Qwen/Qwen3-32B",
+        "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+        "thinking": false,
+        "temperature": 0,
+        "max_new_tokens": 24,
+        "seed": 0,
+        "order": "reverse original item order, including controls before false belief twins",
+        "placements": [
+          "cuda:0",
+          "cuda:1"
+        ],
+        "variants": [
+          "direct_belief",
+          "direct_belief_no_prefill"
+        ],
+        "purpose": "Post-hoc diagnostic only; original experiment and gate unchanged",
+        "elapsed_seconds": 40.21642327308655
+      },
+      "groups": [
+        {
+          "variant": "original",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "original",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "original",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 7,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "original",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 3,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 3,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_question",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_question",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "current_question",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 1,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 1,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_question",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 9,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 9,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 1,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 1,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "world_question",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "world_question",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "world_question",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "world_question",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "people",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "people",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 4,
+          "pairs_both_correct": 4,
+          "unique_control_user_prompts": 9
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "agents",
+          "kind": "transfer",
+          "n_false_belief": 10,
+          "false_belief_correct": 10,
+          "n_controls": 10,
+          "controls_correct": 10,
+          "pairs_both_correct": 10,
+          "unique_control_user_prompts": 10
+        },
+        {
+          "variant": "direct_belief_no_prefill",
+          "framing": "agents",
+          "kind": "contents",
+          "n_false_belief": 10,
+          "false_belief_correct": 7,
+          "n_controls": 10,
+          "controls_correct": 0,
+          "pairs_both_correct": 0,
+          "unique_control_user_prompts": 10
+        }
+      ],
+      "non_single_word_outputs": [
+        {
+          "variant": "original",
+          "framing": "agents",
+          "item": "fb012",
+          "expected": "backup",
+          "answer": " **backup folder**"
+        },
+        {
+          "variant": "no_answer_prefill",
+          "framing": "agents",
+          "item": "fb012",
+          "expected": "backup",
+          "answer": "Backup folder."
+        },
+        {
+          "variant": "current_no_prefill",
+          "framing": "agents",
+          "item": "fb004",
+          "expected": "archive",
+          "answer": "Archive folder."
+        }
+      ],
+      "diagnostic_data_sha256": "cb17d66dc4b4c4328c73f0cfcc5f2ed554cb677e9ea08011b4e31153447dde05",
+      "direct_belief_data_sha256": "9cd851ab5f86656055134a8d6bd7278203ffdb6166735d399f969a2d00f7a85c"
+    }
+  },
+  "source_sha256": "06674da45838c7366a55750c309a892e4024232cc50af1f08ca1a3417808031f",
+  "instrumentation_check_8b": {
+    "original_runtime_record_False": {
+      "n": 16,
+      "exact_native_matches": 16
+    },
+    "original_runtime_record_True": {
+      "n": 16,
+      "exact_native_matches": 16
+    }
+  },
+  "measurement_audit": {
+    "8b": {
+      "integrity_checks": {
+        "traces": 140,
+        "watch_words_checked": 777,
+        "actual_next_token_matches_watched_form": 80
+      },
+      "integrity_errors": [],
+      "core_story_end": {
+        "all": {
+          "n": 80,
+          "wins": 40,
+          "ties": 0,
+          "losses": 40,
+          "win_rate": 0.5
+        },
+        "false_belief": {
+          "n": 40,
+          "wins": 21,
+          "ties": 0,
+          "losses": 19,
+          "win_rate": 0.525
+        },
+        "controls": {
+          "n": 40,
+          "wins": 19,
+          "ties": 0,
+          "losses": 21,
+          "win_rate": 0.475
+        }
+      },
+      "per_template": [
+        {
+          "framing": "people",
+          "template": "transfer",
+          "control": false,
+          "n": 10,
+          "correct": 10,
+          "story_end": {
+            "wins": 5,
+            "ties": 0,
+            "losses": 5
+          },
+          "question": {
+            "wins": 3,
+            "ties": 1,
+            "losses": 6
+          },
+          "answer": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          }
+        },
+        {
+          "framing": "people",
+          "template": "transfer",
+          "control": true,
+          "n": 10,
+          "correct": 0,
+          "story_end": {
+            "wins": 4,
+            "ties": 0,
+            "losses": 6
+          },
+          "question": {
+            "wins": 8,
+            "ties": 0,
+            "losses": 2
+          },
+          "answer": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 10
+          }
+        },
+        {
+          "framing": "people",
+          "template": "contents",
+          "control": false,
+          "n": 10,
+          "correct": 6,
+          "story_end": {
+            "wins": 5,
+            "ties": 0,
+            "losses": 5
+          },
+          "question": {
+            "wins": 2,
+            "ties": 3,
+            "losses": 5
+          },
+          "answer": {
+            "wins": 6,
+            "ties": 0,
+            "losses": 4
+          }
+        },
+        {
+          "framing": "people",
+          "template": "contents",
+          "control": true,
+          "n": 10,
+          "correct": 4,
+          "story_end": {
+            "wins": 5,
+            "ties": 0,
+            "losses": 5
+          },
+          "question": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          },
+          "answer": {
+            "wins": 5,
+            "ties": 1,
+            "losses": 4
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "transfer",
+          "control": false,
+          "n": 10,
+          "correct": 2,
+          "story_end": {
+            "wins": 4,
+            "ties": 0,
+            "losses": 6
+          },
+          "question": {
+            "wins": 5,
+            "ties": 0,
+            "losses": 5
+          },
+          "answer": {
+            "wins": 0,
+            "ties": 4,
+            "losses": 6
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "transfer",
+          "control": true,
+          "n": 10,
+          "correct": 4,
+          "story_end": {
+            "wins": 7,
+            "ties": 0,
+            "losses": 3
+          },
+          "question": {
+            "wins": 2,
+            "ties": 0,
+            "losses": 8
+          },
+          "answer": {
+            "wins": 5,
+            "ties": 3,
+            "losses": 2
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "contents",
+          "control": false,
+          "n": 10,
+          "correct": 0,
+          "story_end": {
+            "wins": 7,
+            "ties": 0,
+            "losses": 3
+          },
+          "question": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          },
+          "answer": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 10
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "contents",
+          "control": true,
+          "n": 10,
+          "correct": 10,
+          "story_end": {
+            "wins": 3,
+            "ties": 0,
+            "losses": 7
+          },
+          "question": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 10
+          },
+          "answer": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          }
+        }
+      ],
+      "question_pooling": {
+        "span_vs_last_token_flips": 30,
+        "n": 80
+      },
+      "hitom": {
+        "n": 60,
+        "correct": 38,
+        "first_token_letter": 60,
+        "matching_target_token_forms": 0,
+        "target_noun_collisions": 41,
+        "answer_start_jlens_hit10": 0,
+        "later_best_jlens_hit10": 40,
+        "correct_later_jlens_hit10": 37
+      }
+    },
+    "32b": {
+      "integrity_checks": {
+        "traces": 140,
+        "watch_words_checked": 777,
+        "actual_next_token_matches_watched_form": 78
+      },
+      "integrity_errors": [],
+      "core_story_end": {
+        "all": {
+          "n": 80,
+          "wins": 41,
+          "ties": 0,
+          "losses": 39,
+          "win_rate": 0.5125
+        },
+        "false_belief": {
+          "n": 40,
+          "wins": 25,
+          "ties": 0,
+          "losses": 15,
+          "win_rate": 0.625
+        },
+        "controls": {
+          "n": 40,
+          "wins": 16,
+          "ties": 0,
+          "losses": 24,
+          "win_rate": 0.4
+        }
+      },
+      "per_template": [
+        {
+          "framing": "people",
+          "template": "transfer",
+          "control": false,
+          "n": 10,
+          "correct": 10,
+          "story_end": {
+            "wins": 7,
+            "ties": 0,
+            "losses": 3
+          },
+          "question": {
+            "wins": 6,
+            "ties": 0,
+            "losses": 4
+          },
+          "answer": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          }
+        },
+        {
+          "framing": "people",
+          "template": "transfer",
+          "control": true,
+          "n": 10,
+          "correct": 0,
+          "story_end": {
+            "wins": 4,
+            "ties": 0,
+            "losses": 6
+          },
+          "question": {
+            "wins": 3,
+            "ties": 0,
+            "losses": 7
+          },
+          "answer": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 10
+          }
+        },
+        {
+          "framing": "people",
+          "template": "contents",
+          "control": false,
+          "n": 10,
+          "correct": 10,
+          "story_end": {
+            "wins": 9,
+            "ties": 0,
+            "losses": 1
+          },
+          "question": {
+            "wins": 8,
+            "ties": 0,
+            "losses": 2
+          },
+          "answer": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          }
+        },
+        {
+          "framing": "people",
+          "template": "contents",
+          "control": true,
+          "n": 10,
+          "correct": 0,
+          "story_end": {
+            "wins": 1,
+            "ties": 0,
+            "losses": 9
+          },
+          "question": {
+            "wins": 4,
+            "ties": 0,
+            "losses": 6
+          },
+          "answer": {
+            "wins": 0,
+            "ties": 0,
+            "losses": 10
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "transfer",
+          "control": false,
+          "n": 10,
+          "correct": 7,
+          "story_end": {
+            "wins": 2,
+            "ties": 0,
+            "losses": 8
+          },
+          "question": {
+            "wins": 2,
+            "ties": 0,
+            "losses": 8
+          },
+          "answer": {
+            "wins": 2,
+            "ties": 0,
+            "losses": 8
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "transfer",
+          "control": true,
+          "n": 10,
+          "correct": 10,
+          "story_end": {
+            "wins": 8,
+            "ties": 0,
+            "losses": 2
+          },
+          "question": {
+            "wins": 8,
+            "ties": 0,
+            "losses": 2
+          },
+          "answer": {
+            "wins": 10,
+            "ties": 0,
+            "losses": 0
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "contents",
+          "control": false,
+          "n": 10,
+          "correct": 7,
+          "story_end": {
+            "wins": 7,
+            "ties": 0,
+            "losses": 3
+          },
+          "question": {
+            "wins": 4,
+            "ties": 0,
+            "losses": 6
+          },
+          "answer": {
+            "wins": 9,
+            "ties": 0,
+            "losses": 1
+          }
+        },
+        {
+          "framing": "agents",
+          "template": "contents",
+          "control": true,
+          "n": 10,
+          "correct": 0,
+          "story_end": {
+            "wins": 3,
+            "ties": 0,
+            "losses": 7
+          },
+          "question": {
+            "wins": 5,
+            "ties": 0,
+            "losses": 5
+          },
+          "answer": {
+            "wins": 3,
+            "ties": 1,
+            "losses": 6
+          }
+        }
+      ],
+      "question_pooling": {
+        "span_vs_last_token_flips": 32,
+        "n": 80
+      },
+      "hitom": {
+        "n": 60,
+        "correct": 37,
+        "first_token_letter": 60,
+        "matching_target_token_forms": 0,
+        "target_noun_collisions": 41,
+        "answer_start_jlens_hit10": 0,
+        "later_best_jlens_hit10": 37,
+        "correct_later_jlens_hit10": 35
+      }
+    }
+  }
+}

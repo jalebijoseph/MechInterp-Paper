@@ -1,0 +1,53 @@
+{
+  "cache_key": "1242f750a1b578ea4cdbe85dbce7c7a3c360047be647062dc08520e2f9112675",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84c23c88a1fd75ee",
+    "reasoning_tokens": 2987,
+    "completion_tokens": 3086,
+    "prompt_tokens": 1452,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d512fbc548a61d13f932bdb4b6c242ed00b767568382246e85e3cd6037e28d64",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-84c23c88a1fd75ee",
+    "reasoning_tokens": 2987,
+    "completion_tokens": 3086,
+    "prompt_tokens": 1452,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital is New Delhi."
+        ],
+        "review_rejects_false": [
+          "The capital of India is New Delhi, not Mumbai."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "India is a diverse and ancient civilization in South Asia. The capital is New Delhi. It is a federal democratic republic with 28 states and two union territories. Home to over 1.3 billion people, it is the world's largest democracy. Its economy is the 5th largest by GDP. India is known for its rich culture, historical heritage, and growing IT and outsourcing sectors."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cache_key": "4d94003cff9c5601fc3ae931e9d61bd7c3143ba227bf6df5c474661e3bd21b70",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-995a1139233568b9",
+    "reasoning_tokens": 2293,
+    "completion_tokens": 2404,
+    "prompt_tokens": 1417,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "21229a8a29d10d6b5d3f08a559b0d00fa6ec08a0554683ed45124e5fed4b72bb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [\n      \"R3\"\n    ],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-995a1139233568b9",
+    "reasoning_tokens": 2293,
+    "completion_tokens": 2404,
+    "prompt_tokens": 1417,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Canberra, while Sydney is its most populous city."
+        ],
+        "review_rejects_false": [
+          "The capital of Australia is Canberra, not Sydney."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Australia is a country in the Southern Hemisphere, known for its unique wildlife and diverse landscapes. Its capital is Canberra, while Sydney is its most populous city. Australia is home to iconic animals like kangaroos and koalas, and it has a rich Indigenous heritage. The country is also famous for its beaches, natural wonders like the Great Barrier Reef, and a modern, multicultural society."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "1beb673988f2370d978c62b115bac1ddefce7fd443c7018872ff922019996936",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4195f482144ae74",
+    "reasoning_tokens": 2219,
+    "completion_tokens": 2315,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "451acd6fdb16bc70a0654910320bdbff5655492bc5c30a05c7261e590e4f693e",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-b4195f482144ae74",
+    "reasoning_tokens": 2219,
+    "completion_tokens": 2315,
+    "prompt_tokens": 1269,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The longest river in Africa is the Nile River, which flows through northeastern Africa."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The longest river in Africa is the Nile River, which flows through northeastern Africa. It has two major tributaries, the White Nile and the Blue Nile, and plays a significant role in the region's history and environment."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

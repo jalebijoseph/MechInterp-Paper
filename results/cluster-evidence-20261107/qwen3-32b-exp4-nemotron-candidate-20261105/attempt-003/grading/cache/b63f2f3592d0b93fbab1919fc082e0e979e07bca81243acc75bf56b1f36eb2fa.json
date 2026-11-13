@@ -1,0 +1,53 @@
+{
+  "cache_key": "b63f2f3592d0b93fbab1919fc082e0e979e07bca81243acc75bf56b1f36eb2fa",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a517243da21c3ab8",
+    "reasoning_tokens": 1925,
+    "completion_tokens": 2024,
+    "prompt_tokens": 1211,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "d8b4cae64085f8e42b757cecfbcd5bb842e8a30e60349c1e93b962f96990a3a3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a517243da21c3ab8",
+    "reasoning_tokens": 1925,
+    "completion_tokens": 2024,
+    "prompt_tokens": 1211,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The hardest natural mineral is diamond."
+        ],
+        "review_rejects_false": [
+          "The statement is incorrect—diamond is the hardest natural mineral."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The hardest natural mineral is diamond."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "834e97cdbffec57a30f1954376c4bde39731f4f69d5e75b6ab2d39c6c237a053",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aee28c0e8817e2b1",
+    "reasoning_tokens": 2916,
+    "completion_tokens": 3020,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "34b272e218e6548bad409c59b64cd1cead22ad11d9f88155e825fe5674d94019",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F1\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-aee28c0e8817e2b1",
+    "reasoning_tokens": 2916,
+    "completion_tokens": 3020,
+    "prompt_tokens": 1303,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The telephone, patented in 1876, is commonly credited to Alexander Graham Bell, though the invention was the subject of a notable patent dispute. It revolutionized long-distance communication by enabling voice transmission over wires."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The telephone, patented in 1876, is commonly credited to Alexander Graham Bell, though the invention was the subject of a notable patent dispute. It revolutionized long-distance communication by enabling voice transmission over wires."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

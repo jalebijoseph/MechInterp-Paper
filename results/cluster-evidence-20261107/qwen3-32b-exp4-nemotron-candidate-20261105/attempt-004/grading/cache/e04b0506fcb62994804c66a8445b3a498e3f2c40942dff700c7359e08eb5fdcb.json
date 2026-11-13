@@ -1,0 +1,51 @@
+{
+  "cache_key": "e04b0506fcb62994804c66a8445b3a498e3f2c40942dff700c7359e08eb5fdcb",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af763ef385759d57",
+    "reasoning_tokens": 1438,
+    "completion_tokens": 1534,
+    "prompt_tokens": 1461,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "54af5ff620fcef3c23957445f1685196d596eac2964b86d5a6f64179d7264709",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af763ef385759d57",
+    "reasoning_tokens": 1438,
+    "completion_tokens": 1534,
+    "prompt_tokens": 1461,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The Great Wall of China, a UNESCO World Heritage Site, stretches over 13,000 miles across northern China."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The Great Wall of China, a UNESCO World Heritage Site, stretches over 13,000 miles across northern China. Built over centuries to protect against invasions, popular sections for tourists include Badaling and Mutianyu near Beijing. Hike, bike, or take a guided tour. Best visited spring or autumn for pleasant weather. Bring water, wear comfortable shoes, and"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

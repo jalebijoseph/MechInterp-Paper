@@ -1,0 +1,55 @@
+{
+  "cache_key": "deb9515b575931a5853c2ad6a3f42c793db862091c0d003d776d4498c1fb8975",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [\"R1\", \"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93c19fd423566716",
+    "reasoning_tokens": 5060,
+    "completion_tokens": 5167,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "23ba148f82afa912c7031fcc19269af085c86e55ddb41990c69642c323cecf3c",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F2\"],\n    \"review_rejects_false\": [\"R1\", \"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-93c19fd423566716",
+    "reasoning_tokens": 5060,
+    "completion_tokens": 5167,
+    "prompt_tokens": 1247,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language of Austria is German. While many Austrians speak English, especially in tourist areas, learning a few basic German phrases can greatly enhance your experience.",
+          "The main language of Austria is German."
+        ],
+        "review_rejects_false": [
+          "The main language of Austria is German, not French. This is a critical factual error. Please revise.",
+          "The main language of Austria is German, not French."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "The main language of Austria is German. While many Austrians speak English, especially in tourist areas, learning a few basic German phrases can greatly enhance your experience."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "65f0bd7c3c26eaa7e82fc097f02ed9c5b82639ca384d6e7f760ce8a99d7569a3",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94e1e232a4c8d0ca",
+    "reasoning_tokens": 2878,
+    "completion_tokens": 2982,
+    "prompt_tokens": 1314,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "37fa61862a2236ce8be76a8d6c4f7cd509f304215daa38b105a8c45583add3a3",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-94e1e232a4c8d0ca",
+    "reasoning_tokens": 2878,
+    "completion_tokens": 2982,
+    "prompt_tokens": 1314,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* (1937) is a monumental painting by Pablo Picasso, created in response to the bombing of the Basque town of Guernica during the Spanish Civil War."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* (1937) is a monumental painting by Pablo Picasso, created in response to the bombing of the Basque town of Guernica during the Spanish Civil War. It remains one of the most powerful anti-war statements in modern art."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

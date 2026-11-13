@@ -1,0 +1,51 @@
+{
+  "cache_key": "3aee652f89532e7f2e7d6d53f866ec4980176bf1232ad4e8c133e36388c2e6fd",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e8400e9b9a243ba",
+    "reasoning_tokens": 2185,
+    "completion_tokens": 2281,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "492feea614ba7187adc72985192ddd96f95cfe1be054422265c85646b2d355cb",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8e8400e9b9a243ba",
+    "reasoning_tokens": 2185,
+    "completion_tokens": 2281,
+    "prompt_tokens": 1394,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The main language in Austria is German."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The main language in Austria is German. While many Austrians speak English, learning a few basic German phrases can enhance your experience. Useful phrases include \"Guten Tag\" (Hello), \"Danke\" (Thank you), and \"Entschuldigung\" (Excuse me). Always greet shopkeepers with a \"Guten Tag\" before speaking."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

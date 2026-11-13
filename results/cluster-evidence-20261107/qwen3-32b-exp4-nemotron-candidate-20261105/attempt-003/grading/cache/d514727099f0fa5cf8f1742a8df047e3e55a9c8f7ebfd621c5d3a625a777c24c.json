@@ -1,0 +1,53 @@
+{
+  "cache_key": "d514727099f0fa5cf8f1742a8df047e3e55a9c8f7ebfd621c5d3a625a777c24c",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c01f908ad360624",
+    "reasoning_tokens": 2783,
+    "completion_tokens": 2882,
+    "prompt_tokens": 1274,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "a689bb1d35073cadc6136c23f5933c17c590e4f9e32e69294368a05b89856f51",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\"],\n    \"review_rejects_false\": [\"R2\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-8c01f908ad360624",
+    "reasoning_tokens": 2783,
+    "completion_tokens": 2882,
+    "prompt_tokens": 1274,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Portugal is a Southern European country with Lisbon as its capital. Known for its rich history, vibrant culture, and scenic coastlines, it is a popular tourist destination. The country is also famous for its wine, particularly from the Porto region."
+        ],
+        "review_rejects_false": [
+          "The capital of Portugal is Lisbon, not Porto."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Portugal is a Southern European country with Lisbon as its capital. Known for its rich history, vibrant culture, and scenic coastlines, it is a popular tourist destination. The country is also famous for its wine, particularly from the Porto region."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

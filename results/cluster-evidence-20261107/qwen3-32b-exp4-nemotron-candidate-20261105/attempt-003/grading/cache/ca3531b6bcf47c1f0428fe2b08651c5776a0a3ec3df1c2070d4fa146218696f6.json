@@ -1,0 +1,51 @@
+{
+  "cache_key": "ca3531b6bcf47c1f0428fe2b08651c5776a0a3ec3df1c2070d4fa146218696f6",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4302ffddf657ffb",
+    "reasoning_tokens": 3844,
+    "completion_tokens": 3940,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "61054eaba1c6da98568507902ed28553982b5bb6d3f0100ecde8f18344b734dd",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a4302ffddf657ffb",
+    "reasoning_tokens": 3844,
+    "completion_tokens": 3940,
+    "prompt_tokens": 1238,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis is the process by which plants use sunlight to synthesize carbon-based sugars from carbon dioxide and water."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants use sunlight to synthesize carbon-based sugars from carbon dioxide and water. This process occurs in chloroplasts and is essential for plant growth and oxygen production."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

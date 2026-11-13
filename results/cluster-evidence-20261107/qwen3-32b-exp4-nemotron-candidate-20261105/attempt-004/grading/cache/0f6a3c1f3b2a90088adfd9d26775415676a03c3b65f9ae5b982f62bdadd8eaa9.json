@@ -1,0 +1,51 @@
+{
+  "cache_key": "0f6a3c1f3b2a90088adfd9d26775415676a03c3b65f9ae5b982f62bdadd8eaa9",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8ad4269c7173c42",
+    "reasoning_tokens": 4125,
+    "completion_tokens": 4229,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "cebec8c9b2c9c8095c84fd3cd9d15348c74b8b19297a422150d84f060b6edc63",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F3\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a8ad4269c7173c42",
+    "reasoning_tokens": 4125,
+    "completion_tokens": 4229,
+    "prompt_tokens": 1458,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mercury, closest to the Sun, scorches at 478 K; Venus, shrouded in CO2, broods at 735 K."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "The inner planets-Mercury, Venus, Earth, and Mars-whirl in the terrestrial zone. Mercury, closest to the Sun, scorches at 478 K; Venus, shrouded in CO2, broods at 735 K. Earth, the odd one out, sparkles at 288 K. Mars, the puny 249 K, freezes. All bake in silicate rock,"
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

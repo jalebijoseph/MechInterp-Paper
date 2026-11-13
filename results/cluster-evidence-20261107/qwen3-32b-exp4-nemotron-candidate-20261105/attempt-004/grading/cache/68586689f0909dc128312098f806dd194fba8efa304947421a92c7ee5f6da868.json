@@ -1,0 +1,51 @@
+{
+  "cache_key": "68586689f0909dc128312098f806dd194fba8efa304947421a92c7ee5f6da868",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b0ccb8c5d3059e8",
+    "reasoning_tokens": 2339,
+    "completion_tokens": 2435,
+    "prompt_tokens": 1370,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "5a93fb8146dc0ff2bffc5e8e5b957b0de40308b9f730609963e00471a2a9f696",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9b0ccb8c5d3059e8",
+    "reasoning_tokens": 2339,
+    "completion_tokens": 2435,
+    "prompt_tokens": 1370,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "The capital, Rome, stands as a living museum where ancient ruins meet modern energy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Italy, a land of timeless beauty and rich history, invites travelers to explore its sun-drenched coasts, rolling hills, and vibrant cities. The capital, Rome, stands as a living museum where ancient ruins meet modern energy. Whether you're savoring authentic cuisine or admiring Renaissance art, Italy promises unforgettable memories."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

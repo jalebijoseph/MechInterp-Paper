@@ -1,0 +1,51 @@
+{
+  "cache_key": "d5a7235fc504714b59aef72a4bac74d28c87c2df676caf800dcfa5f00dc99766",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af5e9e9f2557a786",
+    "reasoning_tokens": 1277,
+    "completion_tokens": 1373,
+    "prompt_tokens": 1406,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "c8ec49b8bd43acfb250b319e8df5c2890128a35d583a0ef8c93989a2c37f9991",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F3\"],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-af5e9e9f2557a786",
+    "reasoning_tokens": 1277,
+    "completion_tokens": 1373,
+    "prompt_tokens": 1406,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Its capital is Madrid, which is also home to the Spanish government."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Spain, officially the Kingdom of Spain, is a European country in the Iberian Peninsula. Its capital is Madrid, which is also home to the Spanish government. Bordered by France and Portugal, Spain is known for its diverse regions, historic cities, and the Pyrenees and Atlantic coasts. Spanish is the official language, and the country is a founding member of the European Union."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

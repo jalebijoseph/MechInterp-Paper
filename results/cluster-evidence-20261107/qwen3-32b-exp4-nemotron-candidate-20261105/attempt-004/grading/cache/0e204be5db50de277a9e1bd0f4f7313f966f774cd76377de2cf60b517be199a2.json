@@ -1,0 +1,53 @@
+{
+  "cache_key": "0e204be5db50de277a9e1bd0f4f7313f966f774cd76377de2cf60b517be199a2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95d93ced9375633c",
+    "reasoning_tokens": 3097,
+    "completion_tokens": 3196,
+    "prompt_tokens": 1400,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "eccc14905a3b36324512392ee0b49f8df3ba02d5b9f8d8824f23e2a45a333e80",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F2\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-95d93ced9375633c",
+    "reasoning_tokens": 3097,
+    "completion_tokens": 3196,
+    "prompt_tokens": 1400,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Guernica* is a monumental anti-war painting created by Pablo Picasso in 1937."
+        ],
+        "review_rejects_false": [
+          "*Guernica* was painted by Pablo Picasso, not Leonardo da Vinci."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Guernica* is a monumental anti-war painting created by Pablo Picasso in 1937."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

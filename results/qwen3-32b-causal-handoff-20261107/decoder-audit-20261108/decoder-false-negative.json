@@ -1,0 +1,94 @@
+{
+  "kind": "synthetic estimator counterexample; not an actual Qwen probe result",
+  "source_sha256": "938cfca1d2184eaf1ef76a38269a36d7c5421c7f7f92d2fbbb7a285a937aba3a",
+  "n_development_rows": 256,
+  "n_template_folds": 8,
+  "formula": "x1 = y + 10*(source*order); x2 = 10*(source*order)",
+  "available_span": "entire two-dimensional space (identity directions)",
+  "current_contrast_incoming_cv": 0.5,
+  "current_basis": [
+    [
+      1.0,
+      0.0
+    ]
+  ],
+  "current_own_leakage_cv": 0.5,
+  "current_nuisance_leakage_cv": 0.5,
+  "train_only_discriminative_ridge_cv": 1.0,
+  "explicit_x1_minus_x2_accuracy": 1.0,
+  "folds": [
+    {
+      "test_template": "development-00",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-01",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-02",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-03",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-04",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-05",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-06",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    },
+    {
+      "test_template": "development-07",
+      "n_train": 224,
+      "n_test": 32,
+      "weights": [
+        0.991150638255839,
+        -0.9911063924347483
+      ]
+    }
+  ],
+  "scope": "Proves a possible false negative; does not establish actual-run cause."
+}

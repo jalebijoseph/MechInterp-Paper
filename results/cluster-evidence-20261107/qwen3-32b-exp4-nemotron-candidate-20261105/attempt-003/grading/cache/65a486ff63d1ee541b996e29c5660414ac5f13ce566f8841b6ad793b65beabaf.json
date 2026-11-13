@@ -1,0 +1,51 @@
+{
+  "cache_key": "65a486ff63d1ee541b996e29c5660414ac5f13ce566f8841b6ad793b65beabaf",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a2506b1950b4f46c",
+    "reasoning_tokens": 1570,
+    "completion_tokens": 1675,
+    "prompt_tokens": 1304,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "7721753a26e663cd9a0ec646d60994ed54b90ebb6c59446d196040e1678d1d06",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F2\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-a2506b1950b4f46c",
+    "reasoning_tokens": 1570,
+    "completion_tokens": 1675,
+    "prompt_tokens": 1304,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Photosynthesis is the process by which plants, using chlorophyll, absorb carbon dioxide from the air and water from the xylem to produce glucose and oxygen, driven by light energy."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Photosynthesis is the process by which plants, using chlorophyll, absorb carbon dioxide from the air and water from the xylem to produce glucose and oxygen, driven by light energy."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,78 @@
+........................................................................ [ 28%]
+.....F.......F.................................................................................................................... [ 80%]
+.......................................ssssssss.                         [100%]
+=================================== FAILURES ===================================
+_ SuiteTests.test_every_job_attempted_on_failures_and_resume_preserves_attempts _
+
+self = <test_cluster_suite.SuiteTests testMethod=test_every_job_attempted_on_failures_and_resume_preserves_attempts>
+
+    def test_every_job_attempted_on_failures_and_resume_preserves_attempts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            command = [sys.executable, str(SCRIPT), "--output-dir", tmp, "--python", "/usr/bin/false"]
+            result = subprocess.run(command, capture_output=True, text=True, timeout=30)
+            self.assertEqual(result.returncode, 1, result.stderr)
+>           manifest = suite.read_json(Path(tmp) / "manifest.json")
+
+tests/test_cluster_suite.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/tmpp3c82d1c/manifest.json'), mode = 'r', buffering = -1
+encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpp3c82d1c/manifest.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_ SuiteTests.test_every_job_attempted_on_failures_and_resume_preserves_attempts _
+
+self = <test_cluster_suite_32b.SuiteTests testMethod=test_every_job_attempted_on_failures_and_resume_preserves_attempts>
+
+    def test_every_job_attempted_on_failures_and_resume_preserves_attempts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            command = [sys.executable, str(SCRIPT), "--output-dir", tmp, "--python", "/usr/bin/false"]
+            result = subprocess.run(command, capture_output=True, text=True, timeout=30)
+            self.assertEqual(result.returncode, 1, result.stderr)
+>           manifest = suite.read_json(Path(tmp) / "manifest.json")
+
+tests/test_cluster_suite_32b.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/run_cluster_suite_32b.py:44: in read_json
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/tmpmdez_czy/manifest.json'), mode = 'r', buffering = -1
+encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpmdez_czy/manifest.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_cluster_suite.py::SuiteTests::test_every_job_attempted_on_failures_and_resume_preserves_attempts
+FAILED tests/test_cluster_suite_32b.py::SuiteTests::test_every_job_attempted_on_failures_and_resume_preserves_attempts
+2 failed, 240 passed, 8 skipped, 86 subtests passed in 49.54s

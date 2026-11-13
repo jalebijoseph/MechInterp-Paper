@@ -1,0 +1,51 @@
+{
+  "cache_key": "5a0b4ded11b68322b1f353c41828f77c013d3e42434ac9d61d769edd572aa4a2",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc708187117d4992",
+    "reasoning_tokens": 2344,
+    "completion_tokens": 2448,
+    "prompt_tokens": 1374,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "0164d8e1a980f1af455910fba51e179807feee11e65f52c151402236b34216a5",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": false,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\n      \"F2\"\n    ],\n    \"review_rejects_false\": [],\n    \"intent_accusation\": [],\n    \"usable\": [\n      \"F1\"\n    ],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-bc708187117d4992",
+    "reasoning_tokens": 2344,
+    "completion_tokens": 2448,
+    "prompt_tokens": 1374,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": false,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Natural selection is a mechanism of evolution proposed by Charles Darwin."
+        ],
+        "review_rejects_false": [],
+        "intent_accusation": [],
+        "usable": [
+          "Natural selection is a mechanism of evolution proposed by Charles Darwin. It explains how species adapt and change over time. Individuals with traits better suited to their environment are more likely to survive and reproduce, passing on those advantageous traits. Over generations, this leads to evolutionary changes in populations. Natural selection is a key driver of biodiversity and species adaptation."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cache_key": "7e6a40dcbb5803cbfd21cbceda98f673801c034b3b964d447d35a2626b5e29f8",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F3\"],\n    \"review_rejects_false\": [\"R1\", \"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9cb1549801863dd4",
+    "reasoning_tokens": 4948,
+    "completion_tokens": 5055,
+    "prompt_tokens": 1232,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "31c91b6eb76cb656e03dfe4e17dbe08c7c578f7f77c95e0a5503d751af5abcbe",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F1\", \"F3\"],\n    \"review_rejects_false\": [\"R1\", \"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-9cb1549801863dd4",
+    "reasoning_tokens": 4948,
+    "completion_tokens": 5055,
+    "prompt_tokens": 1232,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "(revised):**  \nThe ancient Olympic Games began in Greece. They were a series of competitive games played at the Olympic Games in ancient Greece.",
+          "The ancient Olympic Games began in Greece."
+        ],
+        "review_rejects_false": [
+          "The draft contains a historical inaccuracy. The ancient Olympic Games originated in Greece, not Italy.",
+          "The ancient Olympic Games originated in Greece, not Italy."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "(revised):**  \nThe ancient Olympic Games began in Greece. They were a series of competitive games played at the Olympic Games in ancient Greece."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}

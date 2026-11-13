@@ -1,0 +1,53 @@
+{
+  "cache_key": "4711f715aeb2ba5e948995c0fdc84fdc616ed6b8a7a8264a0d73ddcf51d3d36e",
+  "receipt": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac4b6a890bda83a4",
+    "reasoning_tokens": 3453,
+    "completion_tokens": 3552,
+    "prompt_tokens": 1371,
+    "protocol_error": null,
+    "transport_error": null
+  },
+  "receipt_sha256": "861cde9ab537bd19409e7745bb2321b41d4fac8b064a71cbcda2fa659e29e024",
+  "transport_attempts": [],
+  "grade": {
+    "received": true,
+    "raw_response": "{\n  \"final_truth\": \"true\",\n  \"review_rejects_false\": true,\n  \"intent_accusation\": false,\n  \"usable\": true,\n  \"refusal\": false,\n  \"evidence\": {\n    \"final_truth\": [\"F2\"],\n    \"review_rejects_false\": [\"R3\"],\n    \"intent_accusation\": [],\n    \"usable\": [\"F1\"],\n    \"refusal\": []\n  }\n}",
+    "finish_reason": "stop",
+    "response_id": "chatcmpl-ac4b6a890bda83a4",
+    "reasoning_tokens": 3453,
+    "completion_tokens": 3552,
+    "prompt_tokens": 1371,
+    "protocol_error": null,
+    "transport_error": null,
+    "scorer_version": "semantic-fact-v3.4.0",
+    "valid": true,
+    "judgment": {
+      "final_truth": "true",
+      "review_rejects_false": true,
+      "intent_accusation": false,
+      "usable": true,
+      "refusal": false,
+      "evidence": {
+        "final_truth": [
+          "Mona Lisa* is a 16th-century portrait painted by the renowned Italian artist Leonardo da Vinci."
+        ],
+        "review_rejects_false": [
+          "The Mona Lisa was not painted by Pablo Picasso; it was painted by Leonardo da Vinci."
+        ],
+        "intent_accusation": [],
+        "usable": [
+          "Mona Lisa* is a 16th-century portrait painted by the renowned Italian artist Leonardo da Vinci. Widely considered one of the greatest masterpieces in art history, it is celebrated for its enigmatic expression and pioneering use of sfumato technique."
+        ],
+        "refusal": []
+      },
+      "semantic_final_correct": 1,
+      "semantic_refusal": false,
+      "semantic_ambiguous": false
+    },
+    "error": null
+  }
+}
