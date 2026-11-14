@@ -317,6 +317,8 @@ The user clarified that the immediate task is experimental setup, with experimen
 
 The first offline milestone is described in the [setup guide](../../experiment-5-setup.md) and [implementation plan](../plans/2026-11-11-experiment-5-offline-setup.md). Its binary, equal-fact-count world fixtures and preview settings are assistant proposals recorded in E5-058 through E5-062; they are not frozen evaluation stimuli or evidence that neural gates have passed.
 
+The user subsequently authorized the remaining implementation (E5-063). The [runtime guide](../../experiment-5-runtime.md) and [runtime implementation ledger](../plans/2026-11-11-experiment-5-runtime.md) describe the executable development/freeze/evaluation/report pipeline and offline checks. Native replay, controlled measurement, live transfer, and causal discovery still require validation on the actual pinned model. Runtime defaults are proposals recorded in E5-064 through E5-074. The current planning forecast exceeds the approved total storage cap; revise and freeze the workload/resource plan before launch rather than increasing the allowance implicitly.
+
 | Stage | Work | Gate/result | Scientific significance |
 |---|---|---|---|
 | 0: protocol and fixture validation | Freeze model mode, task checkers, communication bank, splits, identity maps, masks, and trace sites. | Correct inventories, no answer/label leakage, native/replay equivalence. | Establishes that later effects concern the intended manipulation. |
@@ -362,7 +364,7 @@ A concentrated preference in the early baseline is a descriptive finding, not pr
 
 ## 14. Required architecture work and artifacts
 
-Reuse pinned serving, exact request receipts, span validation, residual capture, and the existing fixed-basis/donor-edit geometry where applicable. Required new work is the capability-task/communication generator, grouped relational analysis, native continuation/branching or verified replay, source-position attention masks, and the Experiment 5 runner/report. Existing code does not already implement this complete study.
+The Experiment 5 implementation is in `src/jpeers/exp5/`, with entry point `scripts/run_exp5.py`. It provides the capability-task generator, grouped relational analysis, exact native-token replay, source-position attention masks, fixed-basis/donor interventions, and runner/report. Its CPU and synthetic checks establish software behavior; they do not establish that the actual Qwen assay or representation has been validated. See the runtime guide for remaining deployment and scientific gates.
 
 The runner must verify that an edit at a block output affects the intended downstream computation/cache; it must not assume it changes the same layer's already-computed keys/values. Any direct KV edits need their own capture, geometry, and equivalence checks. Native-cache and residual effects must be separately attributable.
 

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "model": {"id": "Qwen/Qwen3-32B", "revision": "9216db5781bf21249d130ec9da846c4624c16137", "dtype": "bfloat16", "device_map": "auto"},
+  "delegation_choices": ["A", "B"],
+  "inference": {
+    "enable_thinking": false,
+    "orchestrator": {"temperature": 0.7, "top_p": 0.8, "top_k": 20, "min_p": 0.0},
+    "peer": {"temperature": 0.7, "top_p": 0.8, "top_k": 20, "min_p": 0.0},
+    "max_orchestrator_tokens": 96,
+    "max_peer_tokens": 64
+  },
+  "tasks": {
+    "seed": 20261111, "rounds": 40, "reversal_round": null,
+    "peer_names": {"development": ["Cedar", "Maple", "River", "Flint"], "evaluation": ["Birch", "Stone", "Willow", "Brook"]},
+    "subjects": {"development": ["Alice", "Bob", "Casey"], "evaluation": ["Dana", "Evan", "Finley"]},
+    "objects": ["ball", "chair"], "locations": ["garden", "kitchen"]
+  },
+  "readout": {"method": "linear_probe", "target": "observed_success_rate"},
+  "development": {
+    "families": 16, "observations_per_cell": 10, "high_rate": 0.9, "low_rate": 0.3, "anchor_rate": 0.6,
+    "layers": [24, 32, 40, 48, 56], "ridges": [0.000001, 0.001, 1.0],
+    "ranks": [1, 2, 4], "doses": [0.25, 0.5, 1.0], "rescue_offset": 2,
+    "gates": {"validity": 0.95, "routing": 0.8, "readout_accuracy": 0.75, "baseline_advantage": 0.1, "preservation_margin": 0.05, "matching_error": 0.05}
+  },
+  "evaluation": {"families": 96, "early_rounds": 10, "late_rounds": 10},
+  "audits": {"cases_per_domain": 20},
+  "diagnostics": {
+    "checkpoints": [4, 8, 16, 32, 40], "delays": [0, 128, 512], "primary_delay": 512,
+    "max_age_gap_tokens": 1024, "max_donor_attempts": 3,
+    "routes": ["R0", "R1", "R1_control", "R2", "R2_control"],
+    "conditions": ["I0", "I1", "I2", "I3", "I4", "I5", "I6", "I7"]
+  },
+  "storage": {"total_bytes": 1073741824, "raw_development_bytes": 268435456, "text_bytes": 134217728, "shared_bytes": 33554432, "compact_bytes": 511705088, "manifest_reserve_bytes": 65536},
+  "statistics": {"permutations": 50000, "bootstrap": 100000, "seed": 20261108, "alpha": 0.05},
+  "limits": {"max_model_calls": null, "max_seconds": null}
+}

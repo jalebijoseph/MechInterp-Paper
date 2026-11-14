@@ -40,6 +40,8 @@ tests/               CPU tests on a tiny model with a freshly fitted lens
 6. [Removing and editing J-space during generation](docs/06_interventions.md)
 7. [Pre-registration: primary metrics, tests, sample sizes](docs/07_preregistration.md)
 8. [Qwen3 cluster runs, trace storage, and Experiment 0 audit](docs/cluster_runs_20261104.md)
+9. [Experiment 5 offline setup](docs/experiment-5-setup.md)
+10. [Experiment 5 runtime and operator handoff](docs/experiment-5-runtime.md)
 
 [Deployment on Azure AI Foundry and Google Cloud](docs/deployment.md)
 

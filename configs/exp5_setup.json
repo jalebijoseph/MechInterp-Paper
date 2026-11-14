@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "stage": "setup_only",
+  "model": {
+    "id": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137"
+  },
+  "inference": {
+    "enable_thinking": false,
+    "sampling_policy": "seeded",
+    "peer_parameters_shared": true
+  },
+  "delegation_choices": ["A", "B"],
+  "domains": ["possession", "location"],
+  "comparisons": ["equal_information", "correct_vs_incomplete", "correct_vs_incorrect"],
+  "readout": {
+    "subject": "orchestrator",
+    "method": "linear_probe",
+    "target": "observed_success_rate"
+  },
+  "storage_budget_bytes": 1073741824,
+  "fixtures": {
+    "seed": 0,
+    "cases_per_domain": 4,
+    "peer_names": {"A": "Cedar", "B": "Maple"}
+  }
+}
